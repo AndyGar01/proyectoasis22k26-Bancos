@@ -67,8 +67,6 @@ namespace CapaVista_Ventas.Properties
         { get { return ((global::System.Drawing.Bitmap)(ResourceManager.GetObject("IconoListadoPreciosVentas", resourceCulture))); } }
         internal static global::System.Drawing.Bitmap IconoMovimientosClientesVentas
         { get { return ((global::System.Drawing.Bitmap)(ResourceManager.GetObject("IconoMovimientosClientesVentas", resourceCulture))); } }
-        internal static global::System.Drawing.Bitmap IconoEnlaceContableVentas
-        { get { return ((global::System.Drawing.Bitmap)(ResourceManager.GetObject("IconoEnlaceContableVentas", resourceCulture))); } }
         internal static global::System.Drawing.Bitmap IconoRecepcionPagosVentas
         { get { return ((global::System.Drawing.Bitmap)(ResourceManager.GetObject("IconoRecepcionPagosVentas", resourceCulture))); } }
         internal static global::System.Drawing.Bitmap IconoReportesVentas

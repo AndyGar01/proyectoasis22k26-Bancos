@@ -101,14 +101,15 @@ namespace CapaVista_Ventas
             // Aquí se puede agregar la acción específica del botón Inicio.
         }
 
-        // Abre la opción de listado de precios.
+        // Listado de precios se desarrollará como página web en Blazor, no como formulario.
+        // Equipo: Matthew y Diego. Encargado: Diego.
         private void VentasBtnListadoPrecios_Click(object sender, EventArgs e)
         {
-            // Abre la base de trabajo del equipo como ventana modal sobre el MDI.
-            using (FrmListadoPreciosVentas Formulario = new FrmListadoPreciosVentas())
-            {
-                Formulario.ShowDialog(this);
-            }
+            // Cuando el equipo entregue la URL de la página, este Click podrá abrirla en el navegador.
+            // Por ahora no se configura una dirección ni se inicia un servidor web.
+            MessageBox.Show(this, "El listado de precios se desarrollará como página web en Blazor.\n\n" +
+                "Su acceso estará disponible cuando el equipo proporcione la dirección de la página.",
+                "Listado de precios", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         // Abre la opción de movimientos de clientes.
@@ -116,16 +117,6 @@ namespace CapaVista_Ventas
         {
             // Abre la base de trabajo del equipo como ventana modal sobre el MDI.
             using (FrmMovimientosClientesVentas Formulario = new FrmMovimientosClientesVentas())
-            {
-                Formulario.ShowDialog(this);
-            }
-        }
-
-        // Abre la opción de enlace contable y módulos.
-        private void VentasBtnEnlaceContable_Click(object sender, EventArgs e)
-        {
-            // Abre la base de trabajo del equipo como ventana modal sobre el MDI.
-            using (FrmEnlaceContableVentas Formulario = new FrmEnlaceContableVentas())
             {
                 Formulario.ShowDialog(this);
             }

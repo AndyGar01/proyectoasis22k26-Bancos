@@ -121,9 +121,6 @@
   <data name="IconoMovimientosClientesVentas" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\..\..\..\recursos\modulos\ventas\iconoMovimientosClientesVentas.png;System.Drawing.Bitmap, System.Drawing</value>
   </data>
-  <data name="IconoEnlaceContableVentas" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\..\..\..\recursos\modulos\ventas\iconoEnlaceContableVentas.png;System.Drawing.Bitmap, System.Drawing</value>
-  </data>
   <data name="IconoRecepcionPagosVentas" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\..\..\..\recursos\modulos\ventas\iconoRecepcionPagosVentas.png;System.Drawing.Bitmap, System.Drawing</value>
   </data>

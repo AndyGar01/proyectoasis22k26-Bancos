@@ -55,7 +55,6 @@ namespace CapaVista_Ventas
             this.VentasBtnInicio = new System.Windows.Forms.Button();
             this.VentasBtnListadoPrecios = new System.Windows.Forms.Button();
             this.VentasBtnMovimientosClientes = new System.Windows.Forms.Button();
-            this.VentasBtnEnlaceContable = new System.Windows.Forms.Button();
             this.VentasBtnRecepcionPagos = new System.Windows.Forms.Button();
             this.VentasBtnReportes = new System.Windows.Forms.Button();
             this.VentasBtnCotizacionesPedidosFacturas = new System.Windows.Forms.Button();
@@ -466,30 +465,28 @@ namespace CapaVista_Ventas
             this.VentasTlpMenu.Controls.Add(this.VentasBtnInicio, 0, 1);
             this.VentasTlpMenu.Controls.Add(this.VentasBtnListadoPrecios, 0, 2);
             this.VentasTlpMenu.Controls.Add(this.VentasBtnMovimientosClientes, 0, 3);
-            this.VentasTlpMenu.Controls.Add(this.VentasBtnEnlaceContable, 0, 4);
-            this.VentasTlpMenu.Controls.Add(this.VentasBtnRecepcionPagos, 0, 5);
-            this.VentasTlpMenu.Controls.Add(this.VentasBtnReportes, 0, 6);
-            this.VentasTlpMenu.Controls.Add(this.VentasBtnCotizacionesPedidosFacturas, 0, 7);
-            this.VentasTlpMenu.Controls.Add(this.VentasBtnComisionesVendedores, 0, 8);
-            this.VentasTlpMenu.Controls.Add(this.VentasBtnMantenimientos, 0, 9);
-            this.VentasTlpMenu.Controls.Add(this.VentasBtnCierreMovimientos, 0, 10);
-            this.VentasTlpMenu.Controls.Add(this.VentasBtnCerrarSesion, 0, 11);
+            this.VentasTlpMenu.Controls.Add(this.VentasBtnRecepcionPagos, 0, 4);
+            this.VentasTlpMenu.Controls.Add(this.VentasBtnReportes, 0, 5);
+            this.VentasTlpMenu.Controls.Add(this.VentasBtnCotizacionesPedidosFacturas, 0, 6);
+            this.VentasTlpMenu.Controls.Add(this.VentasBtnComisionesVendedores, 0, 7);
+            this.VentasTlpMenu.Controls.Add(this.VentasBtnMantenimientos, 0, 8);
+            this.VentasTlpMenu.Controls.Add(this.VentasBtnCierreMovimientos, 0, 9);
+            this.VentasTlpMenu.Controls.Add(this.VentasBtnCerrarSesion, 0, 10);
             this.VentasTlpMenu.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left;
             this.VentasTlpMenu.Location = new System.Drawing.Point(6, 8);
             this.VentasTlpMenu.Name = "VentasTlpMenu";
-            this.VentasTlpMenu.RowCount = 12;
+            this.VentasTlpMenu.RowCount = 11;
             this.VentasTlpMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 127F));
-            this.VentasTlpMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
-            this.VentasTlpMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
-            this.VentasTlpMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
-            this.VentasTlpMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
-            this.VentasTlpMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
-            this.VentasTlpMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
-            this.VentasTlpMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
-            this.VentasTlpMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
-            this.VentasTlpMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
-            this.VentasTlpMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
-            this.VentasTlpMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
+            this.VentasTlpMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.VentasTlpMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.VentasTlpMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.VentasTlpMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.VentasTlpMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.VentasTlpMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.VentasTlpMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.VentasTlpMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.VentasTlpMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.VentasTlpMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.VentasTlpMenu.Size = new System.Drawing.Size(258, 982);
             this.VentasTlpMenu.TabIndex = 0;
             // 
@@ -605,39 +602,6 @@ namespace CapaVista_Ventas
             this.VentasBtnMovimientosClientes.MouseEnter += new System.EventHandler(this.VentasBtnOpcion_MouseEnter);
             this.VentasBtnMovimientosClientes.MouseLeave += new System.EventHandler(this.VentasBtnOpcion_MouseLeave);
             // 
-            // VentasBtnEnlaceContable
-            // 
-            this.VentasBtnEnlaceContable.AccessibleName = "Enlace contable y módulos";
-            this.VentasBtnEnlaceContable.BackColor = System.Drawing.Color.Transparent;
-            this.VentasBtnEnlaceContable.BackgroundImage = global::CapaVista_Ventas.Properties.Resources.BotonMenuNormalVentas;
-            this.VentasBtnEnlaceContable.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.VentasBtnEnlaceContable.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.VentasBtnEnlaceContable.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.VentasBtnEnlaceContable.FlatAppearance.BorderSize = 0;
-            this.VentasBtnEnlaceContable.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.VentasBtnEnlaceContable.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.VentasBtnEnlaceContable.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.VentasBtnEnlaceContable.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.VentasBtnEnlaceContable.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
-            this.VentasBtnEnlaceContable.Location = new System.Drawing.Point(0, 360);
-            this.VentasBtnEnlaceContable.Margin = new System.Windows.Forms.Padding(0, 2, 0, 2);
-            this.VentasBtnEnlaceContable.Name = "VentasBtnEnlaceContable";
-            this.VentasBtnEnlaceContable.Image = global::CapaVista_Ventas.Properties.Resources.IconoEnlaceContableVentas;
-            this.VentasBtnEnlaceContable.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.VentasBtnEnlaceContable.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.VentasBtnEnlaceContable.Padding = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.VentasBtnEnlaceContable.Size = new System.Drawing.Size(258, 73);
-            this.VentasBtnEnlaceContable.TabIndex = 3;
-            this.VentasBtnEnlaceContable.Tag = "EnlaceContable";
-            this.VentasBtnEnlaceContable.Text = "Enlace contable y\r\nmódulos";
-            this.VentasBtnEnlaceContable.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.VentasTtpMenu.SetToolTip(this.VentasBtnEnlaceContable, "Enlace contable y módulos");
-            this.VentasBtnEnlaceContable.UseCompatibleTextRendering = true;
-            this.VentasBtnEnlaceContable.UseVisualStyleBackColor = false;
-            this.VentasBtnEnlaceContable.Click += new System.EventHandler(this.VentasBtnEnlaceContable_Click);
-            this.VentasBtnEnlaceContable.MouseEnter += new System.EventHandler(this.VentasBtnOpcion_MouseEnter);
-            this.VentasBtnEnlaceContable.MouseLeave += new System.EventHandler(this.VentasBtnOpcion_MouseLeave);
-            // 
             // VentasBtnRecepcionPagos
             // 
             this.VentasBtnRecepcionPagos.AccessibleName = "Recepción de pagos";
@@ -660,7 +624,7 @@ namespace CapaVista_Ventas
             this.VentasBtnRecepcionPagos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.VentasBtnRecepcionPagos.Padding = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.VentasBtnRecepcionPagos.Size = new System.Drawing.Size(258, 73);
-            this.VentasBtnRecepcionPagos.TabIndex = 4;
+            this.VentasBtnRecepcionPagos.TabIndex = 3;
             this.VentasBtnRecepcionPagos.Tag = "RecepcionPagos";
             this.VentasBtnRecepcionPagos.Text = "Recepción de pagos";
             this.VentasBtnRecepcionPagos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -693,7 +657,7 @@ namespace CapaVista_Ventas
             this.VentasBtnReportes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.VentasBtnReportes.Padding = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.VentasBtnReportes.Size = new System.Drawing.Size(258, 73);
-            this.VentasBtnReportes.TabIndex = 5;
+            this.VentasBtnReportes.TabIndex = 4;
             this.VentasBtnReportes.Tag = "Reportes";
             this.VentasBtnReportes.Text = "Reportes";
             this.VentasBtnReportes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -726,7 +690,7 @@ namespace CapaVista_Ventas
             this.VentasBtnCotizacionesPedidosFacturas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.VentasBtnCotizacionesPedidosFacturas.Padding = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.VentasBtnCotizacionesPedidosFacturas.Size = new System.Drawing.Size(258, 73);
-            this.VentasBtnCotizacionesPedidosFacturas.TabIndex = 6;
+            this.VentasBtnCotizacionesPedidosFacturas.TabIndex = 5;
             this.VentasBtnCotizacionesPedidosFacturas.Tag = "CotizacionesPedidosFacturas";
             this.VentasBtnCotizacionesPedidosFacturas.Text = "Cotizaciones, pedidos\r\ny facturas";
             this.VentasBtnCotizacionesPedidosFacturas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -759,7 +723,7 @@ namespace CapaVista_Ventas
             this.VentasBtnComisionesVendedores.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.VentasBtnComisionesVendedores.Padding = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.VentasBtnComisionesVendedores.Size = new System.Drawing.Size(258, 73);
-            this.VentasBtnComisionesVendedores.TabIndex = 7;
+            this.VentasBtnComisionesVendedores.TabIndex = 6;
             this.VentasBtnComisionesVendedores.Tag = "ComisionesVendedores";
             this.VentasBtnComisionesVendedores.Text = "Comisiones de vendedores";
             this.VentasBtnComisionesVendedores.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -792,7 +756,7 @@ namespace CapaVista_Ventas
             this.VentasBtnMantenimientos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.VentasBtnMantenimientos.Padding = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.VentasBtnMantenimientos.Size = new System.Drawing.Size(258, 73);
-            this.VentasBtnMantenimientos.TabIndex = 8;
+            this.VentasBtnMantenimientos.TabIndex = 7;
             this.VentasBtnMantenimientos.Tag = "Mantenimientos";
             this.VentasBtnMantenimientos.Text = "Mantenimientos";
             this.VentasBtnMantenimientos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -825,7 +789,7 @@ namespace CapaVista_Ventas
             this.VentasBtnCierreMovimientos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.VentasBtnCierreMovimientos.Padding = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.VentasBtnCierreMovimientos.Size = new System.Drawing.Size(258, 73);
-            this.VentasBtnCierreMovimientos.TabIndex = 9;
+            this.VentasBtnCierreMovimientos.TabIndex = 8;
             this.VentasBtnCierreMovimientos.Tag = "CierreMovimientos";
             this.VentasBtnCierreMovimientos.Text = "Cierre de movimientos";
             this.VentasBtnCierreMovimientos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -858,7 +822,7 @@ namespace CapaVista_Ventas
             this.VentasBtnCerrarSesion.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.VentasBtnCerrarSesion.Padding = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.VentasBtnCerrarSesion.Size = new System.Drawing.Size(258, 81);
-            this.VentasBtnCerrarSesion.TabIndex = 10;
+            this.VentasBtnCerrarSesion.TabIndex = 9;
             this.VentasBtnCerrarSesion.Tag = "CerrarSesion";
             this.VentasBtnCerrarSesion.Text = "Cerrar sesión";
             this.VentasBtnCerrarSesion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1383,7 +1347,6 @@ namespace CapaVista_Ventas
         private System.Windows.Forms.Button VentasBtnInicio;
         private System.Windows.Forms.Button VentasBtnListadoPrecios;
         private System.Windows.Forms.Button VentasBtnMovimientosClientes;
-        private System.Windows.Forms.Button VentasBtnEnlaceContable;
         private System.Windows.Forms.Button VentasBtnRecepcionPagos;
         private System.Windows.Forms.Button VentasBtnReportes;
         private System.Windows.Forms.Button VentasBtnCotizacionesPedidosFacturas;

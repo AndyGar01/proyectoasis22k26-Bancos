@@ -160,9 +160,6 @@
     <None Include="..\..\..\..\..\recursos\modulos\ventas\iconoMovimientosClientesVentas.png">
       <Link>Recursos\iconoMovimientosClientesVentas.png</Link>
     </None>
-    <None Include="..\..\..\..\..\recursos\modulos\ventas\iconoEnlaceContableVentas.png">
-      <Link>Recursos\iconoEnlaceContableVentas.png</Link>
-    </None>
     <None Include="..\..\..\..\..\recursos\modulos\ventas\iconoRecepcionPagosVentas.png">
       <Link>Recursos\iconoRecepcionPagosVentas.png</Link>
     </None>
@@ -197,15 +194,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FrmListadoPreciosVentas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmListadoPreciosVentas.Designer.cs">
-      <DependentUpon>FrmListadoPreciosVentas.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="FrmListadoPreciosVentas.resx">
-      <DependentUpon>FrmListadoPreciosVentas.cs</DependentUpon>
-    </EmbeddedResource>
     <Compile Include="FrmMovimientosClientesVentas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -214,15 +202,6 @@
     </Compile>
     <EmbeddedResource Include="FrmMovimientosClientesVentas.resx">
       <DependentUpon>FrmMovimientosClientesVentas.cs</DependentUpon>
-    </EmbeddedResource>
-    <Compile Include="FrmEnlaceContableVentas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmEnlaceContableVentas.Designer.cs">
-      <DependentUpon>FrmEnlaceContableVentas.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="FrmEnlaceContableVentas.resx">
-      <DependentUpon>FrmEnlaceContableVentas.cs</DependentUpon>
     </EmbeddedResource>
     <Compile Include="FrmRecepcionPagosVentas.cs">
       <SubType>Form</SubType>

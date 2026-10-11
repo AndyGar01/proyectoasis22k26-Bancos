@@ -105,11 +105,21 @@ namespace CapaVista_Ventas
         // Equipo: Matthew y Diego. Encargado: Diego.
         private void VentasBtnListadoPrecios_Click(object sender, EventArgs e)
         {
-            // Cuando el equipo entregue la URL de la página, este Click podrá abrirla en el navegador.
-            // Por ahora no se configura una dirección ni se inicia un servidor web.
-            MessageBox.Show(this, "El listado de precios se desarrollará como página web en Blazor.\n\n" +
-                "Su acceso estará disponible cuando el equipo proporcione la dirección de la página.",
-                "Listado de precios", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            // adicion de la URL de la página web de Blazor que se abrirá en el navegador.
+            string urlBlazor = "http://localhost:5000/ventas-listado-precios";
+
+            try
+            {
+                System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo
+                {
+                    FileName = urlBlazor,
+                    UseShellExecute = true
+                });
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(this, "No se pudo abrir el navegador: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         // Abre la opción de movimientos de clientes.

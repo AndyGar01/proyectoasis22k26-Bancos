@@ -135,7 +135,7 @@ namespace CapaVista_Compras
             }
         }
 
-        // En filas "Anulado" solo se muestra el botón Ver (como en la imagen)
+        // visualización filas anuladas para las columnas de accion 
         private void DgvPagos_CellPainting(object sender, DataGridViewCellPaintingEventArgs e)
         {
             if (e.RowIndex < 0 || e.ColumnIndex < 0) return;

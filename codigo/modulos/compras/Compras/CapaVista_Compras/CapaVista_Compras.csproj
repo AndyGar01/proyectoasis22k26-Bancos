@@ -34,6 +34,9 @@
     <Reference Include="CapaVista_Consultas">
       <HintPath>..\..\..\..\..\..\..\TERMINUS\Componente — Consultas\proyectoasis22k26-Consultas\codigo\componentes\consultas\Consultas\CapaVista_Consultas\bin\Debug\CapaVista_Consultas.dll</HintPath>
     </Reference>
+    <Reference Include="CapaVista_Navegador">
+      <HintPath>..\..\..\..\..\..\..\..\..\..\..\asis22p2k26---Miguel-Contreras\codigo\componentes\navegador\Navegador\CapaVista_Navegador\bin\Debug\CapaVista_Navegador.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
@@ -46,6 +49,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Componentes\UsManteniminetoMetodoPago.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Componentes\UsManteniminetoMetodoPago.Designer.cs">
+      <DependentUpon>UsManteniminetoMetodoPago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Componentes\UsrMantenimnetoProveedor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Componentes\UsrMantenimnetoProveedor.Designer.cs">
+      <DependentUpon>UsrMantenimnetoProveedor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ClsTemaCompras.cs" />
   </ItemGroup>
@@ -113,6 +128,9 @@
     <Compile Include="Componentes\UsrComboBoxCompras.Designer.cs">
       <DependentUpon>UsrComboBoxCompras.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Componentes\UsManteniminetoMetodoPago.resx">
+      <DependentUpon>UsManteniminetoMetodoPago.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Componentes\UsrComboBoxCompras.resx">
       <DependentUpon>UsrComboBoxCompras.cs</DependentUpon>
       <LogicalName>CapaVista_Compras.Componentes.UsrComboBoxCompras.resources</LogicalName>
@@ -135,6 +153,9 @@
     <EmbeddedResource Include="Componentes\UsrLabelCompras.resx">
       <DependentUpon>UsrLabelCompras.cs</DependentUpon>
       <LogicalName>CapaVista_Compras.Componentes.UsrLabelCompras.resources</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Componentes\UsrMantenimnetoProveedor.resx">
+      <DependentUpon>UsrMantenimnetoProveedor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Componentes\UsrTextBoxCompras.resx">
       <DependentUpon>UsrTextBoxCompras.cs</DependentUpon>

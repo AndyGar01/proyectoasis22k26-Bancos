@@ -37,6 +37,8 @@ namespace CapaVista_Compras
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.ComprasPnlMain = new CapaVista_Compras.Componentes.ClsPanelCompras();
             this.clsTableLayoutPanelCompras2 = new CapaVista_Compras.Componentes.ClsTableLayoutPanelCompras();
+            this.clsButtonMDICompras8 = new CapaVista_Compras.Componentes.ClsButtonMDICompras();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.clsTableLayoutPanelCompras1.SuspendLayout();
             this.clsTableLayoutPanelNavegadorCompras.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -47,6 +49,7 @@ namespace CapaVista_Compras
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.SuspendLayout();
             // 
             // clsTableLayoutPanelCompras1
@@ -71,12 +74,13 @@ namespace CapaVista_Compras
             // 
             // clsTableLayoutPanelNavegadorCompras
             // 
-            this.clsTableLayoutPanelNavegadorCompras.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.clsTableLayoutPanelNavegadorCompras.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.clsTableLayoutPanelNavegadorCompras.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
             this.clsTableLayoutPanelNavegadorCompras.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.clsTableLayoutPanelNavegadorCompras.ColumnCount = 2;
             this.clsTableLayoutPanelNavegadorCompras.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 65F));
             this.clsTableLayoutPanelNavegadorCompras.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.clsTableLayoutPanelNavegadorCompras.Controls.Add(this.pictureBox9, 0, 8);
             this.clsTableLayoutPanelNavegadorCompras.Controls.Add(this.pictureBox8, 0, 7);
             this.clsTableLayoutPanelNavegadorCompras.Controls.Add(this.pictureBox7, 0, 6);
             this.clsTableLayoutPanelNavegadorCompras.Controls.Add(this.pictureBox6, 0, 5);
@@ -92,13 +96,14 @@ namespace CapaVista_Compras
             this.clsTableLayoutPanelNavegadorCompras.Controls.Add(this.clsButtonMDICompras1, 1, 1);
             this.clsTableLayoutPanelNavegadorCompras.Controls.Add(this.pictureBox1, 0, 0);
             this.clsTableLayoutPanelNavegadorCompras.Controls.Add(this.pictureBox2, 0, 1);
+            this.clsTableLayoutPanelNavegadorCompras.Controls.Add(this.clsButtonMDICompras8, 1, 8);
             this.clsTableLayoutPanelNavegadorCompras.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
             this.clsTableLayoutPanelNavegadorCompras.GrowStyle = System.Windows.Forms.TableLayoutPanelGrowStyle.FixedSize;
             this.clsTableLayoutPanelNavegadorCompras.Location = new System.Drawing.Point(30, 4);
             this.clsTableLayoutPanelNavegadorCompras.Margin = new System.Windows.Forms.Padding(4);
             this.clsTableLayoutPanelNavegadorCompras.Name = "clsTableLayoutPanelNavegadorCompras";
             this.clsTableLayoutPanelNavegadorCompras.Padding = new System.Windows.Forms.Padding(2);
-            this.clsTableLayoutPanelNavegadorCompras.RowCount = 9;
+            this.clsTableLayoutPanelNavegadorCompras.RowCount = 10;
             this.clsTableLayoutPanelCompras1.SetRowSpan(this.clsTableLayoutPanelNavegadorCompras, 2);
             this.clsTableLayoutPanelNavegadorCompras.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 171F));
             this.clsTableLayoutPanelNavegadorCompras.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 65F));
@@ -108,8 +113,8 @@ namespace CapaVista_Compras
             this.clsTableLayoutPanelNavegadorCompras.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 65F));
             this.clsTableLayoutPanelNavegadorCompras.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 65F));
             this.clsTableLayoutPanelNavegadorCompras.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 65F));
+            this.clsTableLayoutPanelNavegadorCompras.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 65F));
             this.clsTableLayoutPanelNavegadorCompras.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.clsTableLayoutPanelNavegadorCompras.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.clsTableLayoutPanelNavegadorCompras.Size = new System.Drawing.Size(360, 720);
             this.clsTableLayoutPanelNavegadorCompras.TabIndex = 1;
             // 
@@ -356,8 +361,10 @@ namespace CapaVista_Compras
             // 
             // ComprasPnlMain
             // 
+            this.ComprasPnlMain.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.ComprasPnlMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
-            this.ComprasPnlMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ComprasPnlMain.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
             this.ComprasPnlMain.Location = new System.Drawing.Point(420, 60);
             this.ComprasPnlMain.Margin = new System.Windows.Forms.Padding(0);
@@ -382,6 +389,38 @@ namespace CapaVista_Compras
             this.clsTableLayoutPanelCompras2.Size = new System.Drawing.Size(1062, 60);
             this.clsTableLayoutPanelCompras2.TabIndex = 3;
             // 
+            // clsButtonMDICompras8
+            // 
+            this.clsButtonMDICompras8.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.clsButtonMDICompras8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(220)))), ((int)(((byte)(239)))));
+            this.clsButtonMDICompras8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.clsButtonMDICompras8.Cursor = System.Windows.Forms.Cursors.Default;
+            this.clsButtonMDICompras8.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this.clsButtonMDICompras8.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(173)))), ((int)(((byte)(213)))));
+            this.clsButtonMDICompras8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(193)))), ((int)(((byte)(224)))));
+            this.clsButtonMDICompras8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.clsButtonMDICompras8.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.clsButtonMDICompras8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this.clsButtonMDICompras8.Location = new System.Drawing.Point(67, 634);
+            this.clsButtonMDICompras8.Margin = new System.Windows.Forms.Padding(0);
+            this.clsButtonMDICompras8.Name = "clsButtonMDICompras8";
+            this.clsButtonMDICompras8.Size = new System.Drawing.Size(291, 52);
+            this.clsButtonMDICompras8.TabIndex = 18;
+            this.clsButtonMDICompras8.Text = "Bitácora";
+            this.clsButtonMDICompras8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.clsButtonMDICompras8.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox9.BackgroundImage")));
+            this.pictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox9.Location = new System.Drawing.Point(5, 631);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(59, 59);
+            this.pictureBox9.TabIndex = 19;
+            this.pictureBox9.TabStop = false;
+            // 
             // FrmMDICompras
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
@@ -404,6 +443,7 @@ namespace CapaVista_Compras
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -429,5 +469,7 @@ namespace CapaVista_Compras
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox4;
         private Componentes.ClsTableLayoutPanelCompras clsTableLayoutPanelCompras2;
+        private System.Windows.Forms.PictureBox pictureBox9;
+        private Componentes.ClsButtonMDICompras clsButtonMDICompras8;
     }
 }

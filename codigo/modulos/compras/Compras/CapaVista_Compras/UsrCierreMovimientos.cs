@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Windows.Forms;
 using CapaControlador_Compras;
 
@@ -8,11 +8,11 @@ namespace CapaVista_Compras
     // Formulario 3.8 Cierre de Movimientos (prototipo).
     // El formulario solo captura y muestra datos; toda validación y cálculo vive en ClsCierreMovimientos.
     
-    public partial class FrmCierre_Movimientos : Form
+    public partial class UsrCierreMovimientos : Componentes.UsrBaseCompras
     {
         private readonly ClsCierreMovimientos _Controlador = new ClsCierreMovimientos();
 
-        public FrmCierre_Movimientos()
+        public UsrCierreMovimientos()
         {
             InitializeComponent();
             ComprasProcConfigurarTablas();
@@ -21,7 +21,7 @@ namespace CapaVista_Compras
             ComprasBtnEjecutarCierre.Click += ComprasMetEjecutarCierre;
             ComprasBtnImprimir.Click += ComprasMetImprimir;
             ComprasBtnAyuda.Click += ComprasMetAyuda;
-            ComprasBtnSalir.Click += (Remitente, Evento) => Close();
+            ComprasBtnSalir.Click += (Remitente, Evento) => Hide();
         }
 
         private void ComprasProcConfigurarTablas()
@@ -127,7 +127,7 @@ namespace CapaVista_Compras
                 "Ayuda", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        private void FrmCierre_Movimientos_Load(object sender, EventArgs e)
+        private void UsrCierreMovimientos_Load(object sender, EventArgs e)
         {
 
         }

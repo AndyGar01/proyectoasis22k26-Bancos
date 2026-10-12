@@ -1,6 +1,6 @@
-﻿namespace CapaVista_Compras
+namespace CapaVista_Compras
 {
-    partial class FrmCierre_Movimientos
+    partial class UsrCierreMovimientos
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCierre_Movimientos));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UsrCierreMovimientos));
             this.ComprasTlpPrincipal = new CapaVista_Compras.Componentes.ClsTableLayoutPanelCompras();
             this.ComprasLblTitulo = new CapaVista_Compras.Componentes.UsrLabelCompras();
             this.ComprasGbxPeriodo = new CapaVista_Compras.Componentes.ClsGroupBoxCompras();
@@ -482,17 +482,17 @@
             this.ComprasBtnSalir.TabIndex = 4;
             this.ComprasBtnSalir.UseVisualStyleBackColor = false;
             // 
-            // FrmCierre_Movimientos
+            // UsrCierreMovimientos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
-            this.ClientSize = new System.Drawing.Size(1162, 733);
+            this.MaximumSize = System.Drawing.Size.Empty;
+            this.Size = new System.Drawing.Size(1162, 733);
             this.Controls.Add(this.ComprasTlpPrincipal);
-            this.Name = "FrmCierre_Movimientos";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Name = "UsrCierreMovimientos";
             this.Text = "Cierre de Movimientos";
-            this.Load += new System.EventHandler(this.FrmCierre_Movimientos_Load);
+            this.Load += new System.EventHandler(this.UsrCierreMovimientos_Load);
             this.ComprasTlpPrincipal.ResumeLayout(false);
             this.ComprasGbxPeriodo.ResumeLayout(false);
             this.ComprasTlpContenido.ResumeLayout(false);

@@ -21,6 +21,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x64</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -29,10 +30,18 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x64</PlatformTarget>
   </PropertyGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CapaControlador_Compras\CapaControlador_Compras.csproj">
+      <Project>{E519FCF9-D06B-4B99-BBFD-2E6FEEFC2E2E}</Project>
+      <Name>CapaControlador_Compras</Name>
+    </ProjectReference>
     <Reference Include="CapaVista_Consultas">
-      <HintPath>..\..\..\..\..\..\..\TERMINUS\Componente — Consultas\proyectoasis22k26-Consultas\codigo\componentes\consultas\Consultas\CapaVista_Consultas\bin\Debug\CapaVista_Consultas.dll</HintPath>
+      <HintPath>..\..\..\..\componentes\consultas\Consultas\CapaVista_Consultas\bin\Debug\CapaVista_Consultas.dll</HintPath>
+    </Reference>
+    <Reference Include="CapaVista_Navegador">
+      <HintPath>..\..\..\..\componentes\navegador\Navegador\CapaVista_Navegador\bin\Debug\CapaVista_Navegador.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Drawing" />
@@ -46,18 +55,90 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FrmCierre_Movimientos.cs">
+    <Compile Include="UsrCierreMovimientos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UsrCierreMovimientos.Designer.cs">
+      <DependentUpon>UsrCierreMovimientos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UsrMantenimientoMetodoPago.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UsrMantenimientoMetodoPago.Designer.cs">
+      <DependentUpon>UsrMantenimientoMetodoPago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UsrMantenimientoProveedor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UsrMantenimientoProveedor.Designer.cs">
+      <DependentUpon>UsrMantenimientoProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAprobarOrden.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmCierre_Movimientos.Designer.cs">
-      <DependentUpon>FrmCierre_Movimientos.cs</DependentUpon>
+    <Compile Include="FrmAprobarOrden.Designer.cs">
+      <DependentUpon>FrmAprobarOrden.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRechazarOrden.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRechazarOrden.Designer.cs">
+      <DependentUpon>FrmRechazarOrden.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UsrEvaluarOrden.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UsrEvaluarOrden.Designer.cs">
+      <DependentUpon>UsrEvaluarOrden.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UsrOrdenesDisponibles.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UsrOrdenesDisponibles.Designer.cs">
+      <DependentUpon>UsrOrdenesDisponibles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Componentes\ClsButtonMDICompras.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Componentes\ClsConsultasCompras.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FrmMDICompras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMDICompras.Designer.cs">
+      <DependentUpon>FrmMDICompras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMDISeguridad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMDISeguridad.Designer.cs">
+      <DependentUpon>FrmMDISeguridad.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ClsTemaCompras.cs" />
+    <Compile Include="UsrPagosProveedores.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UsrPagosProveedores.Designer.cs">
+      <DependentUpon>UsrPagosProveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UsrEstadoDeCuenta.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UsrEstadoDeCuenta.Designer.cs">
+      <DependentUpon>UsrEstadoDeCuenta.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UsrOrdenesDeCompras.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UsrOrdenesDeCompras.Designer.cs">
+      <DependentUpon>UsrOrdenesDeCompras.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -124,6 +205,12 @@
     <Compile Include="Componentes\UsrComboBoxCompras.Designer.cs">
       <DependentUpon>UsrComboBoxCompras.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UsrCierreMovimientos.resx">
+      <DependentUpon>UsrCierreMovimientos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsrMantenimientoMetodoPago.resx">
+      <DependentUpon>UsrMantenimientoMetodoPago.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Componentes\UsrComboBoxCompras.resx">
       <DependentUpon>UsrComboBoxCompras.cs</DependentUpon>
       <LogicalName>CapaVista_Compras.Componentes.UsrComboBoxCompras.resources</LogicalName>
@@ -147,23 +234,44 @@
       <DependentUpon>UsrLabelCompras.cs</DependentUpon>
       <LogicalName>CapaVista_Compras.Componentes.UsrLabelCompras.resources</LogicalName>
     </EmbeddedResource>
+    <EmbeddedResource Include="UsrMantenimientoProveedor.resx">
+      <DependentUpon>UsrMantenimientoProveedor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Componentes\UsrTextBoxCompras.resx">
       <DependentUpon>UsrTextBoxCompras.cs</DependentUpon>
       <LogicalName>CapaVista_Compras.Componentes.UsrTextBoxCompras.resources</LogicalName>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmCierre_Movimientos.resx">
-      <DependentUpon>FrmCierre_Movimientos.cs</DependentUpon>
+    <EmbeddedResource Include="UsrPagosProveedores.resx">
+      <DependentUpon>UsrPagosProveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAprobarOrden.resx">
+      <DependentUpon>FrmAprobarOrden.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRechazarOrden.resx">
+      <DependentUpon>FrmRechazarOrden.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsrEvaluarOrden.resx">
+      <DependentUpon>UsrEvaluarOrden.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsrOrdenesDisponibles.resx">
+      <DependentUpon>UsrOrdenesDisponibles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsrEstadoDeCuenta.resx">
+      <DependentUpon>UsrEstadoDeCuenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMDICompras.resx">
+      <DependentUpon>FrmMDICompras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMDISeguridad.resx">
+      <DependentUpon>FrmMDISeguridad.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\CapaControlador_Compras\CapaControlador_Compras.csproj">
-      <Project>{e519fcf9-d06b-4b99-bbfd-2e6feefc2e2e}</Project>
-      <Name>CapaControlador_Compras</Name>
-    </ProjectReference>
+    <EmbeddedResource Include="UsrOrdenesDeCompras.resx">
+      <DependentUpon>UsrOrdenesDeCompras.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

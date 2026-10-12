@@ -21,6 +21,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x64</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -29,6 +30,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x64</PlatformTarget>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -47,12 +49,6 @@
     <Folder Include="Contratos\" />
     <Folder Include="Entidades\" />
     <Folder Include="Repositorios\" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\CapaControlador_Compras\CapaControlador_Compras.csproj">
-      <Project>{e519fcf9-d06b-4b99-bbfd-2e6feefc2e2e}</Project>
-      <Name>CapaControlador_Compras</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

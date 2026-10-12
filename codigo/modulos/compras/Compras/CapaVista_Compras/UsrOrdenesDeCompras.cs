@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CapaVista_Compras.Componentes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,11 +9,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Ejecucion_Compras
+namespace CapaVista_Compras
 {
-    public partial class Form1 : Form
+    public partial class UsrOrdenesDeCompras : UsrBaseCompras
     {
-        public Form1()
+        public UsrOrdenesDeCompras()
         {
             InitializeComponent();
         }

@@ -48,5 +48,11 @@
     <Folder Include="Entidades\" />
     <Folder Include="Repositorios\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CapaControlador_Compras\CapaControlador_Compras.csproj">
+      <Project>{e519fcf9-d06b-4b99-bbfd-2e6feefc2e2e}</Project>
+      <Name>CapaControlador_Compras</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

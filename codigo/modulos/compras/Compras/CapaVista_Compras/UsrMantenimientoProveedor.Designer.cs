@@ -1,6 +1,6 @@
-﻿namespace CapaVista_Compras.Componentes
+namespace CapaVista_Compras
 {
-    partial class UsrMantenimnetoProveedor
+    partial class UsrMantenimientoProveedor
     {
         /// <summary> 
         /// Variable del diseñador necesaria.
@@ -39,12 +39,12 @@
             this.navegador1.Size = new System.Drawing.Size(1438, 111);
             this.navegador1.TabIndex = 0;
             // 
-            // UsrMantenimnetoProveedor
+            // UsrMantenimientoProveedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.navegador1);
-            this.Name = "UsrMantenimnetoProveedor";
+            this.Name = "UsrMantenimientoProveedor";
             this.ResumeLayout(false);
 
         }

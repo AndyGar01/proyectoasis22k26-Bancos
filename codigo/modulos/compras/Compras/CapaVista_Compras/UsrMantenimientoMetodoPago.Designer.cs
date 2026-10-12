@@ -1,6 +1,6 @@
-﻿namespace CapaVista_Compras.Componentes
+namespace CapaVista_Compras
 {
-    partial class UsManteniminetoMetodoPago
+    partial class UsrMantenimientoMetodoPago
     {
         /// <summary> 
         /// Variable del diseñador necesaria.
@@ -33,19 +33,20 @@
             // 
             // navegador1
             // 
-            this.navegador1.Location = new System.Drawing.Point(12, 16);
+            this.navegador1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.navegador1.Location = new System.Drawing.Point(0, 0);
             this.navegador1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.navegador1.Name = "navegador1";
-            this.navegador1.Size = new System.Drawing.Size(1438, 111);
+            this.navegador1.Size = new System.Drawing.Size(1150, 750);
             this.navegador1.TabIndex = 0;
             // 
-            // UsManteniminetoMetodoPago
+            // UsrMantenimientoMetodoPago
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.navegador1);
-            this.Name = "UsManteniminetoMetodoPago";
-            this.Load += new System.EventHandler(this.UsManteniminetoMetodoPago_Load);
+            this.Name = "UsrMantenimientoMetodoPago";
+            this.Load += new System.EventHandler(this.UsrMantenimientoMetodoPago_Load);
             this.ResumeLayout(false);
 
         }

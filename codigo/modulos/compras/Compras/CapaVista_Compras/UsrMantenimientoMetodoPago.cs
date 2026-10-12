@@ -1,4 +1,5 @@
-﻿using CapaVista_Navegador;
+using CapaVista_Compras.Componentes;
+using CapaVista_Navegador;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,18 +10,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CapaVista_Compras.Componentes
+namespace CapaVista_Compras
 {
-    public partial class UsManteniminetoMetodoPago : UsrBaseCompras
+    public partial class UsrMantenimientoMetodoPago : UsrBaseCompras
     {
-        public UsManteniminetoMetodoPago()
+        public UsrMantenimientoMetodoPago()
         {
             InitializeComponent();
             navegador1.NavegadorMetConfigurar("tlbMetodopago", 4, 5);
         }
 
         
-        private void UsManteniminetoMetodoPago_Load(object sender, EventArgs e)
+        private void UsrMantenimientoMetodoPago_Load(object sender, EventArgs e)
         {
 
         }

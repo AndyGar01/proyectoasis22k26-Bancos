@@ -8,15 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CapaVista_Compras.Componentes
+namespace CapaVista_Compras
 {
-    public partial class UsrMantenimnetoProveedor : UsrBaseCompras
+    public partial class UsrEvaluarOrden : UserControl
     {
-        public UsrMantenimnetoProveedor()
+        public UsrEvaluarOrden()
         {
             InitializeComponent();
-            navegador1.NavegadorMetConfigurar("tblproveedor", 4, 5);
-
         }
     }
 }

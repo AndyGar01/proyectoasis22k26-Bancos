@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Ejecucion_Compras
+namespace CapaVista_Compras
 {
-    public partial class Form1 : Form
+    public partial class FrmAprobarOrden : Form
     {
-        public Form1()
+        public FrmAprobarOrden()
         {
             InitializeComponent();
         }

@@ -8,14 +8,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CapaVista_Seguridad
+namespace CapaVista_Compras
 {
-    public partial class FrmNavegador : Form
+    public partial class UsrOrdenesDisponibles : UserControl
     {
-        public FrmNavegador()
+        public UsrOrdenesDisponibles()
         {
             InitializeComponent();
-            navegador1.NavegadorMetConfigurar("tblempleado", 4, 5);
         }
+
+        
     }
 }

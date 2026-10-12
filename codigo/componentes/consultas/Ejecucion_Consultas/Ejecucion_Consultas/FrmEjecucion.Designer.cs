@@ -38,7 +38,6 @@
             // consultas1
             // 
             this.consultas1.CampoRetorno = "queryConsulta";
-            this.consultas1.ControlRetorno = this.ConsultasUsrCampoRetornado;
             this.consultas1.Location = new System.Drawing.Point(87, 180);
             this.consultas1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.consultas1.Name = "consultas1";

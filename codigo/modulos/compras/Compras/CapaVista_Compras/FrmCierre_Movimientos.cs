@@ -89,6 +89,15 @@ namespace CapaVista_Compras
 
             ComprasBtnEjecutarCierre.Enabled = Resumen.PuedeCerrar;
             ComprasBtnImprimir.Enabled = true;
+
+            ComprasTxtTotalAbonos.Entrada.SelectAll();
+            ComprasTxtTotalAbonos.Entrada.SelectionAlignment = HorizontalAlignment.Right;
+
+            ComprasTxtTotalCargos.Entrada.SelectAll();
+            ComprasTxtTotalCargos.Entrada.SelectionAlignment = HorizontalAlignment.Right;
+
+            ComprasTxtSaldoFinal.Entrada.SelectAll();
+            ComprasTxtSaldoFinal.Entrada.SelectionAlignment = HorizontalAlignment.Right;
         }
 
         private void ComprasMetEjecutarCierre(object Remitente, EventArgs Evento)

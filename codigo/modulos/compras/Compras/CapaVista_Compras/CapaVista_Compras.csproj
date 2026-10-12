@@ -48,6 +48,12 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ClsTemaCompras.cs" />
+    <Compile Include="UsrPagosProveedores.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UsrPagosProveedores.Designer.cs">
+      <DependentUpon>UsrPagosProveedores.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Componentes\ClsActualizacionDisenoCompras.cs">
@@ -139,6 +145,9 @@
     <EmbeddedResource Include="Componentes\UsrTextBoxCompras.resx">
       <DependentUpon>UsrTextBoxCompras.cs</DependentUpon>
       <LogicalName>CapaVista_Compras.Componentes.UsrTextBoxCompras.resources</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsrPagosProveedores.resx">
+      <DependentUpon>UsrPagosProveedores.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

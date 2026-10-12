@@ -1,4 +1,4 @@
-﻿namespace CapaVista_Compras
+namespace CapaVista_Compras
 {
     partial class FrmMDICompras
     {
@@ -35,7 +35,7 @@
             this.clsButtonMDICompras1 = new CapaVista_Compras.Componentes.ClsButtonMDICompras();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.clsPanelCompras1 = new CapaVista_Compras.Componentes.ClsPanelCompras();
+            this.ComprasPnlMain = new CapaVista_Compras.Componentes.ClsPanelCompras();
             this.clsTableLayoutPanelCompras2 = new CapaVista_Compras.Componentes.ClsTableLayoutPanelCompras();
             this.clsTableLayoutPanelCompras1.SuspendLayout();
             this.clsTableLayoutPanelNavegadorCompras.SuspendLayout();
@@ -56,7 +56,7 @@
             this.clsTableLayoutPanelCompras1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 420F));
             this.clsTableLayoutPanelCompras1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.clsTableLayoutPanelCompras1.Controls.Add(this.clsTableLayoutPanelNavegadorCompras, 0, 0);
-            this.clsTableLayoutPanelCompras1.Controls.Add(this.clsPanelCompras1, 1, 1);
+            this.clsTableLayoutPanelCompras1.Controls.Add(this.ComprasPnlMain, 1, 1);
             this.clsTableLayoutPanelCompras1.Controls.Add(this.clsTableLayoutPanelCompras2, 1, 0);
             this.clsTableLayoutPanelCompras1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.clsTableLayoutPanelCompras1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
@@ -66,7 +66,7 @@
             this.clsTableLayoutPanelCompras1.RowCount = 2;
             this.clsTableLayoutPanelCompras1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
             this.clsTableLayoutPanelCompras1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.clsTableLayoutPanelCompras1.Size = new System.Drawing.Size(1482, 834);
+            this.clsTableLayoutPanelCompras1.Size = new System.Drawing.Size(1482, 728);
             this.clsTableLayoutPanelCompras1.TabIndex = 0;
             // 
             // clsTableLayoutPanelNavegadorCompras
@@ -110,7 +110,7 @@
             this.clsTableLayoutPanelNavegadorCompras.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 65F));
             this.clsTableLayoutPanelNavegadorCompras.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.clsTableLayoutPanelNavegadorCompras.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.clsTableLayoutPanelNavegadorCompras.Size = new System.Drawing.Size(360, 826);
+            this.clsTableLayoutPanelNavegadorCompras.Size = new System.Drawing.Size(360, 720);
             this.clsTableLayoutPanelNavegadorCompras.TabIndex = 1;
             // 
             // pictureBox8
@@ -263,6 +263,7 @@
             this.clsButtonMDICompras4.Text = "Ordenes de Compras";
             this.clsButtonMDICompras4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.clsButtonMDICompras4.UseVisualStyleBackColor = false;
+            this.clsButtonMDICompras4.Click += new System.EventHandler(this.clsButtonMDICompras4_Click);
             // 
             // clsButtonMDICompras3
             // 
@@ -326,6 +327,7 @@
             this.clsButtonMDICompras1.Text = "Movimientos de Proveedores";
             this.clsButtonMDICompras1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.clsButtonMDICompras1.UseVisualStyleBackColor = false;
+            this.clsButtonMDICompras1.Click += new System.EventHandler(this.clsButtonMDICompras1_Click);
             // 
             // pictureBox1
             // 
@@ -352,16 +354,16 @@
             this.pictureBox2.TabIndex = 11;
             this.pictureBox2.TabStop = false;
             // 
-            // clsPanelCompras1
+            // ComprasPnlMain
             // 
-            this.clsPanelCompras1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
-            this.clsPanelCompras1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.clsPanelCompras1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
-            this.clsPanelCompras1.Location = new System.Drawing.Point(420, 60);
-            this.clsPanelCompras1.Margin = new System.Windows.Forms.Padding(0);
-            this.clsPanelCompras1.Name = "clsPanelCompras1";
-            this.clsPanelCompras1.Size = new System.Drawing.Size(1062, 774);
-            this.clsPanelCompras1.TabIndex = 2;
+            this.ComprasPnlMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
+            this.ComprasPnlMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ComprasPnlMain.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this.ComprasPnlMain.Location = new System.Drawing.Point(420, 60);
+            this.ComprasPnlMain.Margin = new System.Windows.Forms.Padding(0);
+            this.ComprasPnlMain.Name = "ComprasPnlMain";
+            this.ComprasPnlMain.Size = new System.Drawing.Size(1062, 668);
+            this.ComprasPnlMain.TabIndex = 2;
             // 
             // clsTableLayoutPanelCompras2
             // 
@@ -382,12 +384,14 @@
             // 
             // FrmMDICompras
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
-            this.ClientSize = new System.Drawing.Size(1482, 834);
+            this.ClientSize = new System.Drawing.Size(1482, 728);
             this.Controls.Add(this.clsTableLayoutPanelCompras1);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.IsMdiContainer = true;
             this.Name = "FrmMDICompras";
             this.Text = "FrmMDICompras";
             this.clsTableLayoutPanelCompras1.ResumeLayout(false);
@@ -416,7 +420,7 @@
         private Componentes.ClsButtonMDICompras clsButtonMDICompras3;
         private Componentes.ClsButtonMDICompras clsButtonMDICompras2;
         private Componentes.ClsButtonMDICompras clsButtonMDICompras1;
-        private Componentes.ClsPanelCompras clsPanelCompras1;
+        private Componentes.ClsPanelCompras ComprasPnlMain;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox8;

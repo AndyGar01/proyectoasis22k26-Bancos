@@ -15,6 +15,11 @@ namespace CapaVista_Ventas
             InitializeComponent();
             // Formulario vacío: el equipo agregará sus controles desde el diseñador.
         }
+
+        private void label2_Click(object sender, System.EventArgs e)
+        {
+
+        }
     }
 }
 

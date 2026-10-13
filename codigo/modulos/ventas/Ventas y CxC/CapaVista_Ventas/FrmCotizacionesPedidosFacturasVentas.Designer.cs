@@ -1,6 +1,6 @@
 ﻿/*
  * INICIO DEL CÓDIGO — Jose Torres
- * Carné: 0901-23-1091 | Fecha: 10/10/2026
+ * Carné: 0901-23-1091 | Fecha: 12/10/2026
  * Área: Ventas y cuentas por cobrar
  * Propósito: Definir las propiedades estandarizadas de la ventana vacía de cotizaciones, pedidos y facturas.
  */
@@ -495,4 +495,4 @@ namespace CapaVista_Ventas
     }
 }
 
-// FIN DEL CÓDIGO — Jose Torres | Carné: 0901-23-1091 | Fecha: 10/10/2026
+// FIN DEL CÓDIGO — Jose Torres | Carné: 0901-23-1091 | Fecha: 12/10/2026

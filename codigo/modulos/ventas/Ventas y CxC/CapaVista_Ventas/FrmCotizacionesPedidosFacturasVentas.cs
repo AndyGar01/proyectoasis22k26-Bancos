@@ -1,8 +1,8 @@
 ﻿/*
  * INICIO DEL CÓDIGO — Jose Torres
- * Carné: 0901-23-1091 | Fecha: 10/10/2026
+ * Carné: 0901-23-1091 | Fecha: 12/10/2026
  * Área: Ventas y cuentas por cobrar
- * Propósito: Dejar una base vacía y editable para cotizaciones, pedidos y facturas.
+ * Propósito: Mantener una base vacía para desarrollar cotizaciones, pedidos y facturas.
  */
 using System.Windows.Forms;
 
@@ -13,7 +13,6 @@ namespace CapaVista_Ventas
         public FrmCotizacionesPedidosFacturasVentas()
         {
             InitializeComponent();
-            // Formulario vacío: el equipo agregará sus controles desde el diseñador.
         }
 
         private void label2_Click(object sender, System.EventArgs e)
@@ -23,4 +22,4 @@ namespace CapaVista_Ventas
     }
 }
 
-// FIN DEL CÓDIGO — Jose Torres | Carné: 0901-23-1091 | Fecha: 10/10/2026
+// FIN DEL CÓDIGO — Jose Torres | Carné: 0901-23-1091 | Fecha: 12/10/2026

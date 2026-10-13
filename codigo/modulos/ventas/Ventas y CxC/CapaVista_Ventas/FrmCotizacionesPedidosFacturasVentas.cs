@@ -13,7 +13,14 @@ namespace CapaVista_Ventas
         public FrmCotizacionesPedidosFacturasVentas()
         {
             InitializeComponent();
-            // Formulario vacío: el equipo agregará sus controles desde el diseñador.
+        }
+
+        private void VentasBtnAbrirPedidos_Click(object sender, System.EventArgs e)
+        {
+            using (FrmPedidoVentas Formulario = new FrmPedidoVentas())
+            {
+                Formulario.ShowDialog(this);
+            }
         }
     }
 }

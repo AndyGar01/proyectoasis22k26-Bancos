@@ -1,6 +1,6 @@
-/*
+﻿/*
  * INICIO DEL CÓDIGO — Jose Torres
- * Carné: 0901-23-1091 | Fecha: 10/10/2026
+ * Carné: 0901-23-1091 | Fecha: 12/10/2026
  * Área: Ventas y cuentas por cobrar
  * Propósito: Definir controles visibles desde el diseñador de Windows Forms.
  */
@@ -114,7 +114,7 @@ namespace CapaVista_Ventas
 
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.ComisionesPnlEncabezado = new System.Windows.Forms.Panel();
             this.ComisionesPicMarca = new System.Windows.Forms.PictureBox();
             this.ComisionesLblTitulo = new System.Windows.Forms.Label();
@@ -122,80 +122,80 @@ namespace CapaVista_Ventas
             this.ComisionesLblPeriodo = new System.Windows.Forms.Label();
             this.ComisionesTabControl = new System.Windows.Forms.TabControl();
             this.ComisionesTabCalculo = new System.Windows.Forms.TabPage();
-            this.ComisionesTabConsulta = new System.Windows.Forms.TabPage();
-            this.ComisionesTabAutorizacion = new System.Windows.Forms.TabPage();
             this.ComisionesLblDesde = new System.Windows.Forms.Label();
-            this.ComisionesLblHasta = new System.Windows.Forms.Label();
-            this.ComisionesLblVendedor = new System.Windows.Forms.Label();
-            this.ComisionesLblRegla = new System.Windows.Forms.Label();
             this.ComisionesTxtDesde = new System.Windows.Forms.TextBox();
+            this.ComisionesLblHasta = new System.Windows.Forms.Label();
             this.ComisionesTxtHasta = new System.Windows.Forms.TextBox();
+            this.ComisionesLblVendedor = new System.Windows.Forms.Label();
             this.ComisionesTxtVendedor = new System.Windows.Forms.TextBox();
+            this.ComisionesLblRegla = new System.Windows.Forms.Label();
             this.ComisionesTxtRegla = new System.Windows.Forms.TextBox();
             this.ComisionesBtnCalcular = new System.Windows.Forms.Button();
             this.ComisionesPnlCardVentas = new System.Windows.Forms.Panel();
-            this.ComisionesPnlCardMonto = new System.Windows.Forms.Panel();
-            this.ComisionesPnlCardEstado = new System.Windows.Forms.Panel();
             this.ComisionesLblCardVentas = new System.Windows.Forms.Label();
             this.ComisionesLblCardVentasValor = new System.Windows.Forms.Label();
             this.ComisionesLblCardVentasDetalle = new System.Windows.Forms.Label();
+            this.ComisionesPnlCardMonto = new System.Windows.Forms.Panel();
             this.ComisionesLblCardMonto = new System.Windows.Forms.Label();
             this.ComisionesLblCardMontoValor = new System.Windows.Forms.Label();
             this.ComisionesLblCardMontoDetalle = new System.Windows.Forms.Label();
+            this.ComisionesPnlCardEstado = new System.Windows.Forms.Panel();
             this.ComisionesLblCardEstado = new System.Windows.Forms.Label();
             this.ComisionesLblCardEstadoValor = new System.Windows.Forms.Label();
             this.ComisionesLblCardEstadoDetalle = new System.Windows.Forms.Label();
             this.ComisionesLblVentasElegibles = new System.Windows.Forms.Label();
             this.ComisionesLblAyudaElegibles = new System.Windows.Forms.Label();
             this.ComisionesDgvVentas = new System.Windows.Forms.DataGridView();
-            this.ComisionesColVentaFecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ComisionesColVentaDocumento = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ComisionesColVentaCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ComisionesColVentaBase = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ComisionesColVentaTasa = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ComisionesColVentaComision = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ComisionesColVentaEstado = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ComisionesVentaFecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ComisionesVentaDocumento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ComisionesVentaCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ComisionesVentaBase = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ComisionesVentaTasa = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ComisionesVentaImporte = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ComisionesVentaEstado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ComisionesLblPaginacion = new System.Windows.Forms.Label();
             this.ComisionesBtnAnterior = new System.Windows.Forms.Button();
             this.ComisionesBtnSiguiente = new System.Windows.Forms.Button();
             this.ComisionesPnlPieCalculo = new System.Windows.Forms.Panel();
             this.ComisionesLblAvisoAutorizacion = new System.Windows.Forms.Label();
             this.ComisionesBtnSolicitar = new System.Windows.Forms.Button();
+            this.ComisionesTabConsulta = new System.Windows.Forms.TabPage();
             this.ComisionesLblConsultaVendedor = new System.Windows.Forms.Label();
-            this.ComisionesLblConsultaPeriodo = new System.Windows.Forms.Label();
-            this.ComisionesLblConsultaDocumento = new System.Windows.Forms.Label();
-            this.ComisionesLblConsultaEstado = new System.Windows.Forms.Label();
             this.ComisionesTxtConsultaVendedor = new System.Windows.Forms.TextBox();
+            this.ComisionesLblConsultaPeriodo = new System.Windows.Forms.Label();
             this.ComisionesTxtConsultaPeriodo = new System.Windows.Forms.TextBox();
+            this.ComisionesLblConsultaDocumento = new System.Windows.Forms.Label();
             this.ComisionesTxtConsultaDocumento = new System.Windows.Forms.TextBox();
+            this.ComisionesLblConsultaEstado = new System.Windows.Forms.Label();
             this.ComisionesTxtConsultaEstado = new System.Windows.Forms.TextBox();
             this.ComisionesBtnBuscar = new System.Windows.Forms.Button();
             this.ComisionesLblHistorial = new System.Windows.Forms.Label();
             this.ComisionesDgvHistorial = new System.Windows.Forms.DataGridView();
-            this.ComisionesColHistorialPeriodo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ComisionesColHistorialVendedor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ComisionesColHistorialVentas = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ComisionesColHistorialComision = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ComisionesColHistorialDocumento = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ComisionesColHistorialEstado = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ComisionesHistorialPeriodo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ComisionesHistorialVendedor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ComisionesHistorialVentas = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ComisionesHistorialImporte = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ComisionesHistorialDocumento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ComisionesHistorialEstado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ComisionesPnlHistorialCard1 = new System.Windows.Forms.Panel();
-            this.ComisionesPnlHistorialCard2 = new System.Windows.Forms.Panel();
-            this.ComisionesPnlHistorialCard3 = new System.Windows.Forms.Panel();
             this.ComisionesLblHistorialCard1 = new System.Windows.Forms.Label();
-            this.ComisionesLblHistorialCard2 = new System.Windows.Forms.Label();
-            this.ComisionesLblHistorialCard3 = new System.Windows.Forms.Label();
             this.ComisionesLblHistorialCard1Detalle = new System.Windows.Forms.Label();
+            this.ComisionesPnlHistorialCard2 = new System.Windows.Forms.Panel();
+            this.ComisionesLblHistorialCard2 = new System.Windows.Forms.Label();
             this.ComisionesLblHistorialCard2Detalle = new System.Windows.Forms.Label();
+            this.ComisionesPnlHistorialCard3 = new System.Windows.Forms.Panel();
+            this.ComisionesLblHistorialCard3 = new System.Windows.Forms.Label();
             this.ComisionesLblHistorialCard3Detalle = new System.Windows.Forms.Label();
+            this.ComisionesTabAutorizacion = new System.Windows.Forms.TabPage();
             this.ComisionesLblBandeja = new System.Windows.Forms.Label();
             this.ComisionesLblAyudaBandeja = new System.Windows.Forms.Label();
             this.ComisionesDgvAutorizacion = new System.Windows.Forms.DataGridView();
-            this.ComisionesColAutorizacionPeriodo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ComisionesColAutorizacionVendedor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ComisionesColAutorizacionVentas = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ComisionesColAutorizacionMonto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ComisionesColAutorizacionSolicitada = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ComisionesColAutorizacionEstado = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ComisionesAutorizacionPeriodo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ComisionesAutorizacionVendedor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ComisionesAutorizacionVentas = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ComisionesAutorizacionMonto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ComisionesAutorizacionSolicitada = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ComisionesAutorizacionEstado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ComisionesPnlResumen = new System.Windows.Forms.Panel();
             this.ComisionesLblResumenTitulo = new System.Windows.Forms.Label();
             this.ComisionesLblResumenVendedor = new System.Windows.Forms.Label();
@@ -209,27 +209,29 @@ namespace CapaVista_Ventas
             this.ComisionesPnlPieAutorizacion = new System.Windows.Forms.Panel();
             this.ComisionesLblAvisoEnvio = new System.Windows.Forms.Label();
             this.ComisionesBtnEnviar = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.ComisionesPicMarca)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ComisionesDgvVentas)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ComisionesDgvHistorial)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ComisionesDgvAutorizacion)).BeginInit();
             this.ComisionesPnlEncabezado.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ComisionesPicMarca)).BeginInit();
             this.ComisionesTabControl.SuspendLayout();
             this.ComisionesTabCalculo.SuspendLayout();
-            this.ComisionesTabConsulta.SuspendLayout();
-            this.ComisionesTabAutorizacion.SuspendLayout();
             this.ComisionesPnlCardVentas.SuspendLayout();
             this.ComisionesPnlCardMonto.SuspendLayout();
             this.ComisionesPnlCardEstado.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ComisionesDgvVentas)).BeginInit();
             this.ComisionesPnlPieCalculo.SuspendLayout();
+            this.ComisionesTabConsulta.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ComisionesDgvHistorial)).BeginInit();
             this.ComisionesPnlHistorialCard1.SuspendLayout();
             this.ComisionesPnlHistorialCard2.SuspendLayout();
             this.ComisionesPnlHistorialCard3.SuspendLayout();
+            this.ComisionesTabAutorizacion.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ComisionesDgvAutorizacion)).BeginInit();
             this.ComisionesPnlResumen.SuspendLayout();
             this.ComisionesPnlPieAutorizacion.SuspendLayout();
             this.SuspendLayout();
-            // Encabezado y marca
-            this.ComisionesPnlEncabezado.BackColor = System.Drawing.Color.FromArgb(59, 29, 74);
+            // 
+            // ComisionesPnlEncabezado
+            // 
+            this.ComisionesPnlEncabezado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
             this.ComisionesPnlEncabezado.Controls.Add(this.ComisionesPicMarca);
             this.ComisionesPnlEncabezado.Controls.Add(this.ComisionesLblTitulo);
             this.ComisionesPnlEncabezado.Controls.Add(this.ComisionesLblSubtitulo);
@@ -239,39 +241,53 @@ namespace CapaVista_Ventas
             this.ComisionesPnlEncabezado.Name = "ComisionesPnlEncabezado";
             this.ComisionesPnlEncabezado.Size = new System.Drawing.Size(1060, 82);
             this.ComisionesPnlEncabezado.TabIndex = 0;
-            this.ComisionesPicMarca.Image = global::CapaVista_Ventas.Properties.Resources.ComisionesVentas;
+            // 
+            // ComisionesPicMarca
+            // 
+            this.ComisionesPicMarca.Image = global::CapaVista_Ventas.Properties.Resources.IconoVentasImagen;
             this.ComisionesPicMarca.Location = new System.Drawing.Point(20, 14);
             this.ComisionesPicMarca.Name = "ComisionesPicMarca";
             this.ComisionesPicMarca.Size = new System.Drawing.Size(52, 52);
             this.ComisionesPicMarca.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ComisionesPicMarca.TabIndex = 0;
             this.ComisionesPicMarca.TabStop = false;
+            // 
+            // ComisionesLblTitulo
+            // 
             this.ComisionesLblTitulo.AutoSize = true;
             this.ComisionesLblTitulo.Font = new System.Drawing.Font("Lucida Sans", 17F, System.Drawing.FontStyle.Bold);
             this.ComisionesLblTitulo.ForeColor = System.Drawing.Color.White;
             this.ComisionesLblTitulo.Location = new System.Drawing.Point(86, 14);
             this.ComisionesLblTitulo.Name = "ComisionesLblTitulo";
-            this.ComisionesLblTitulo.Size = new System.Drawing.Size(395, 26);
+            this.ComisionesLblTitulo.Size = new System.Drawing.Size(467, 33);
             this.ComisionesLblTitulo.TabIndex = 1;
             this.ComisionesLblTitulo.Text = "COMISIONES DE VENDEDORES";
+            // 
+            // ComisionesLblSubtitulo
+            // 
             this.ComisionesLblSubtitulo.AutoSize = true;
             this.ComisionesLblSubtitulo.Font = new System.Drawing.Font("Segoe UI", 9.5F);
-            this.ComisionesLblSubtitulo.ForeColor = System.Drawing.Color.FromArgb(228, 212, 234);
+            this.ComisionesLblSubtitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(212)))), ((int)(((byte)(234)))));
             this.ComisionesLblSubtitulo.Location = new System.Drawing.Point(88, 45);
             this.ComisionesLblSubtitulo.Name = "ComisionesLblSubtitulo";
-            this.ComisionesLblSubtitulo.Size = new System.Drawing.Size(294, 17);
+            this.ComisionesLblSubtitulo.Size = new System.Drawing.Size(330, 21);
             this.ComisionesLblSubtitulo.TabIndex = 2;
             this.ComisionesLblSubtitulo.Text = "Cálculo, consulta y autorización de comisiones";
-            this.ComisionesLblPeriodo.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
+            // 
+            // ComisionesLblPeriodo
+            // 
+            this.ComisionesLblPeriodo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ComisionesLblPeriodo.AutoSize = true;
             this.ComisionesLblPeriodo.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.ComisionesLblPeriodo.ForeColor = System.Drawing.Color.White;
             this.ComisionesLblPeriodo.Location = new System.Drawing.Point(827, 31);
             this.ComisionesLblPeriodo.Name = "ComisionesLblPeriodo";
-            this.ComisionesLblPeriodo.Size = new System.Drawing.Size(209, 14);
+            this.ComisionesLblPeriodo.Size = new System.Drawing.Size(217, 18);
             this.ComisionesLblPeriodo.TabIndex = 3;
             this.ComisionesLblPeriodo.Text = "PERIODO  ·  OCTUBRE 2026";
-            // Pestañas
+            // 
+            // ComisionesTabControl
+            // 
             this.ComisionesTabControl.Controls.Add(this.ComisionesTabCalculo);
             this.ComisionesTabControl.Controls.Add(this.ComisionesTabConsulta);
             this.ComisionesTabControl.Controls.Add(this.ComisionesTabAutorizacion);
@@ -283,7 +299,10 @@ namespace CapaVista_Ventas
             this.ComisionesTabControl.SelectedIndex = 0;
             this.ComisionesTabControl.Size = new System.Drawing.Size(1060, 578);
             this.ComisionesTabControl.TabIndex = 1;
-            this.ComisionesTabCalculo.BackColor = System.Drawing.Color.FromArgb(248, 245, 249);
+            // 
+            // ComisionesTabCalculo
+            // 
+            this.ComisionesTabCalculo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
             this.ComisionesTabCalculo.Controls.Add(this.ComisionesLblDesde);
             this.ComisionesTabCalculo.Controls.Add(this.ComisionesTxtDesde);
             this.ComisionesTabCalculo.Controls.Add(this.ComisionesLblHasta);
@@ -309,67 +328,94 @@ namespace CapaVista_Ventas
             this.ComisionesTabCalculo.Size = new System.Drawing.Size(1052, 532);
             this.ComisionesTabCalculo.TabIndex = 0;
             this.ComisionesTabCalculo.Text = "Calcular comisión";
+            // 
+            // ComisionesLblDesde
+            // 
             this.ComisionesLblDesde.AutoSize = true;
             this.ComisionesLblDesde.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.ComisionesLblDesde.ForeColor = System.Drawing.Color.FromArgb(59, 29, 74);
+            this.ComisionesLblDesde.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
             this.ComisionesLblDesde.Location = new System.Drawing.Point(24, 18);
             this.ComisionesLblDesde.Name = "ComisionesLblDesde";
-            this.ComisionesLblDesde.Size = new System.Drawing.Size(69, 14);
+            this.ComisionesLblDesde.Size = new System.Drawing.Size(111, 18);
             this.ComisionesLblDesde.TabIndex = 0;
             this.ComisionesLblDesde.Text = "Periodo · Desde";
+            // 
+            // ComisionesTxtDesde
+            // 
             this.ComisionesTxtDesde.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.ComisionesTxtDesde.Location = new System.Drawing.Point(24, 42);
             this.ComisionesTxtDesde.Name = "ComisionesTxtDesde";
             this.ComisionesTxtDesde.ReadOnly = true;
-            this.ComisionesTxtDesde.Size = new System.Drawing.Size(145, 25);
+            this.ComisionesTxtDesde.Size = new System.Drawing.Size(145, 30);
             this.ComisionesTxtDesde.TabIndex = 1;
             this.ComisionesTxtDesde.Text = "01/10/2026";
+            // 
+            // ComisionesLblHasta
+            // 
             this.ComisionesLblHasta.AutoSize = true;
             this.ComisionesLblHasta.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.ComisionesLblHasta.ForeColor = System.Drawing.Color.FromArgb(59, 29, 74);
+            this.ComisionesLblHasta.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
             this.ComisionesLblHasta.Location = new System.Drawing.Point(180, 18);
             this.ComisionesLblHasta.Name = "ComisionesLblHasta";
-            this.ComisionesLblHasta.Size = new System.Drawing.Size(39, 14);
+            this.ComisionesLblHasta.Size = new System.Drawing.Size(46, 18);
             this.ComisionesLblHasta.TabIndex = 2;
             this.ComisionesLblHasta.Text = "Hasta";
+            // 
+            // ComisionesTxtHasta
+            // 
             this.ComisionesTxtHasta.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.ComisionesTxtHasta.Location = new System.Drawing.Point(180, 42);
             this.ComisionesTxtHasta.Name = "ComisionesTxtHasta";
             this.ComisionesTxtHasta.ReadOnly = true;
-            this.ComisionesTxtHasta.Size = new System.Drawing.Size(145, 25);
+            this.ComisionesTxtHasta.Size = new System.Drawing.Size(145, 30);
             this.ComisionesTxtHasta.TabIndex = 3;
             this.ComisionesTxtHasta.Text = "31/10/2026";
+            // 
+            // ComisionesLblVendedor
+            // 
             this.ComisionesLblVendedor.AutoSize = true;
             this.ComisionesLblVendedor.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.ComisionesLblVendedor.ForeColor = System.Drawing.Color.FromArgb(59, 29, 74);
+            this.ComisionesLblVendedor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
             this.ComisionesLblVendedor.Location = new System.Drawing.Point(337, 18);
             this.ComisionesLblVendedor.Name = "ComisionesLblVendedor";
-            this.ComisionesLblVendedor.Size = new System.Drawing.Size(53, 14);
+            this.ComisionesLblVendedor.Size = new System.Drawing.Size(70, 18);
             this.ComisionesLblVendedor.TabIndex = 4;
             this.ComisionesLblVendedor.Text = "Vendedor";
+            // 
+            // ComisionesTxtVendedor
+            // 
             this.ComisionesTxtVendedor.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.ComisionesTxtVendedor.Location = new System.Drawing.Point(337, 42);
             this.ComisionesTxtVendedor.Name = "ComisionesTxtVendedor";
             this.ComisionesTxtVendedor.ReadOnly = true;
-            this.ComisionesTxtVendedor.Size = new System.Drawing.Size(220, 25);
+            this.ComisionesTxtVendedor.Size = new System.Drawing.Size(220, 30);
             this.ComisionesTxtVendedor.TabIndex = 5;
             this.ComisionesTxtVendedor.Text = "Todos los vendedores  ▾";
+            // 
+            // ComisionesLblRegla
+            // 
             this.ComisionesLblRegla.AutoSize = true;
             this.ComisionesLblRegla.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.ComisionesLblRegla.ForeColor = System.Drawing.Color.FromArgb(59, 29, 74);
+            this.ComisionesLblRegla.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
             this.ComisionesLblRegla.Location = new System.Drawing.Point(569, 18);
             this.ComisionesLblRegla.Name = "ComisionesLblRegla";
-            this.ComisionesLblRegla.Size = new System.Drawing.Size(92, 14);
+            this.ComisionesLblRegla.Size = new System.Drawing.Size(124, 18);
             this.ComisionesLblRegla.TabIndex = 6;
             this.ComisionesLblRegla.Text = "Regla de comisión";
+            // 
+            // ComisionesTxtRegla
+            // 
             this.ComisionesTxtRegla.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.ComisionesTxtRegla.Location = new System.Drawing.Point(569, 42);
             this.ComisionesTxtRegla.Name = "ComisionesTxtRegla";
             this.ComisionesTxtRegla.ReadOnly = true;
-            this.ComisionesTxtRegla.Size = new System.Drawing.Size(220, 25);
+            this.ComisionesTxtRegla.Size = new System.Drawing.Size(220, 30);
             this.ComisionesTxtRegla.TabIndex = 7;
             this.ComisionesTxtRegla.Text = "Comisión estándar  ▾";
-            this.ComisionesBtnCalcular.BackColor = System.Drawing.Color.FromArgb(123, 63, 147);
+            // 
+            // ComisionesBtnCalcular
+            // 
+            this.ComisionesBtnCalcular.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(63)))), ((int)(((byte)(147)))));
             this.ComisionesBtnCalcular.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ComisionesBtnCalcular.ForeColor = System.Drawing.Color.White;
             this.ComisionesBtnCalcular.Location = new System.Drawing.Point(807, 37);
@@ -378,7 +424,9 @@ namespace CapaVista_Ventas
             this.ComisionesBtnCalcular.TabIndex = 8;
             this.ComisionesBtnCalcular.Text = "Calcular comisión";
             this.ComisionesBtnCalcular.UseVisualStyleBackColor = false;
-            // Tarjetas resumen
+            // 
+            // ComisionesPnlCardVentas
+            // 
             this.ComisionesPnlCardVentas.BackColor = System.Drawing.Color.White;
             this.ComisionesPnlCardVentas.Controls.Add(this.ComisionesLblCardVentas);
             this.ComisionesPnlCardVentas.Controls.Add(this.ComisionesLblCardVentasValor);
@@ -387,6 +435,42 @@ namespace CapaVista_Ventas
             this.ComisionesPnlCardVentas.Name = "ComisionesPnlCardVentas";
             this.ComisionesPnlCardVentas.Size = new System.Drawing.Size(313, 76);
             this.ComisionesPnlCardVentas.TabIndex = 9;
+            // 
+            // ComisionesLblCardVentas
+            // 
+            this.ComisionesLblCardVentas.AutoSize = true;
+            this.ComisionesLblCardVentas.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold);
+            this.ComisionesLblCardVentas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(63)))), ((int)(((byte)(147)))));
+            this.ComisionesLblCardVentas.Location = new System.Drawing.Point(14, 10);
+            this.ComisionesLblCardVentas.Name = "ComisionesLblCardVentas";
+            this.ComisionesLblCardVentas.Size = new System.Drawing.Size(149, 17);
+            this.ComisionesLblCardVentas.TabIndex = 0;
+            this.ComisionesLblCardVentas.Text = "VENTAS ELEGIBLES";
+            // 
+            // ComisionesLblCardVentasValor
+            // 
+            this.ComisionesLblCardVentasValor.AutoSize = true;
+            this.ComisionesLblCardVentasValor.Font = new System.Drawing.Font("Lucida Sans", 14F, System.Drawing.FontStyle.Bold);
+            this.ComisionesLblCardVentasValor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
+            this.ComisionesLblCardVentasValor.Location = new System.Drawing.Point(14, 29);
+            this.ComisionesLblCardVentasValor.Name = "ComisionesLblCardVentasValor";
+            this.ComisionesLblCardVentasValor.Size = new System.Drawing.Size(155, 27);
+            this.ComisionesLblCardVentasValor.TabIndex = 1;
+            this.ComisionesLblCardVentasValor.Text = "Q 48,750.00";
+            // 
+            // ComisionesLblCardVentasDetalle
+            // 
+            this.ComisionesLblCardVentasDetalle.AutoSize = true;
+            this.ComisionesLblCardVentasDetalle.Font = new System.Drawing.Font("Segoe UI", 8.5F);
+            this.ComisionesLblCardVentasDetalle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(102)))), ((int)(((byte)(117)))));
+            this.ComisionesLblCardVentasDetalle.Location = new System.Drawing.Point(15, 54);
+            this.ComisionesLblCardVentasDetalle.Name = "ComisionesLblCardVentasDetalle";
+            this.ComisionesLblCardVentasDetalle.Size = new System.Drawing.Size(201, 20);
+            this.ComisionesLblCardVentasDetalle.TabIndex = 2;
+            this.ComisionesLblCardVentasDetalle.Text = "12 ventas dentro del periodo";
+            // 
+            // ComisionesPnlCardMonto
+            // 
             this.ComisionesPnlCardMonto.BackColor = System.Drawing.Color.White;
             this.ComisionesPnlCardMonto.Controls.Add(this.ComisionesLblCardMonto);
             this.ComisionesPnlCardMonto.Controls.Add(this.ComisionesLblCardMontoValor);
@@ -395,6 +479,42 @@ namespace CapaVista_Ventas
             this.ComisionesPnlCardMonto.Name = "ComisionesPnlCardMonto";
             this.ComisionesPnlCardMonto.Size = new System.Drawing.Size(313, 76);
             this.ComisionesPnlCardMonto.TabIndex = 10;
+            // 
+            // ComisionesLblCardMonto
+            // 
+            this.ComisionesLblCardMonto.AutoSize = true;
+            this.ComisionesLblCardMonto.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold);
+            this.ComisionesLblCardMonto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(63)))), ((int)(((byte)(147)))));
+            this.ComisionesLblCardMonto.Location = new System.Drawing.Point(14, 10);
+            this.ComisionesLblCardMonto.Name = "ComisionesLblCardMonto";
+            this.ComisionesLblCardMonto.Size = new System.Drawing.Size(166, 17);
+            this.ComisionesLblCardMonto.TabIndex = 0;
+            this.ComisionesLblCardMonto.Text = "COMISIÓN ESTIMADA";
+            // 
+            // ComisionesLblCardMontoValor
+            // 
+            this.ComisionesLblCardMontoValor.AutoSize = true;
+            this.ComisionesLblCardMontoValor.Font = new System.Drawing.Font("Lucida Sans", 14F, System.Drawing.FontStyle.Bold);
+            this.ComisionesLblCardMontoValor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
+            this.ComisionesLblCardMontoValor.Location = new System.Drawing.Point(14, 29);
+            this.ComisionesLblCardMontoValor.Name = "ComisionesLblCardMontoValor";
+            this.ComisionesLblCardMontoValor.Size = new System.Drawing.Size(140, 27);
+            this.ComisionesLblCardMontoValor.TabIndex = 1;
+            this.ComisionesLblCardMontoValor.Text = "Q 2,437.50";
+            // 
+            // ComisionesLblCardMontoDetalle
+            // 
+            this.ComisionesLblCardMontoDetalle.AutoSize = true;
+            this.ComisionesLblCardMontoDetalle.Font = new System.Drawing.Font("Segoe UI", 8.5F);
+            this.ComisionesLblCardMontoDetalle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(102)))), ((int)(((byte)(117)))));
+            this.ComisionesLblCardMontoDetalle.Location = new System.Drawing.Point(15, 54);
+            this.ComisionesLblCardMontoDetalle.Name = "ComisionesLblCardMontoDetalle";
+            this.ComisionesLblCardMontoDetalle.Size = new System.Drawing.Size(144, 20);
+            this.ComisionesLblCardMontoDetalle.TabIndex = 2;
+            this.ComisionesLblCardMontoDetalle.Text = "Tasa aplicada: 5.00%";
+            // 
+            // ComisionesPnlCardEstado
+            // 
             this.ComisionesPnlCardEstado.BackColor = System.Drawing.Color.White;
             this.ComisionesPnlCardEstado.Controls.Add(this.ComisionesLblCardEstado);
             this.ComisionesPnlCardEstado.Controls.Add(this.ComisionesLblCardEstadoValor);
@@ -403,119 +523,184 @@ namespace CapaVista_Ventas
             this.ComisionesPnlCardEstado.Name = "ComisionesPnlCardEstado";
             this.ComisionesPnlCardEstado.Size = new System.Drawing.Size(348, 76);
             this.ComisionesPnlCardEstado.TabIndex = 11;
-            this.ComisionesLblCardVentas.AutoSize = true;
-            this.ComisionesLblCardVentas.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold);
-            this.ComisionesLblCardVentas.ForeColor = System.Drawing.Color.FromArgb(123, 63, 147);
-            this.ComisionesLblCardVentas.Location = new System.Drawing.Point(14, 10);
-            this.ComisionesLblCardVentas.Text = "VENTAS ELEGIBLES";
-            this.ComisionesLblCardVentasValor.AutoSize = true;
-            this.ComisionesLblCardVentasValor.Font = new System.Drawing.Font("Lucida Sans", 14F, System.Drawing.FontStyle.Bold);
-            this.ComisionesLblCardVentasValor.ForeColor = System.Drawing.Color.FromArgb(59, 29, 74);
-            this.ComisionesLblCardVentasValor.Location = new System.Drawing.Point(14, 29);
-            this.ComisionesLblCardVentasValor.Text = "Q 48,750.00";
-            this.ComisionesLblCardVentasDetalle.AutoSize = true;
-            this.ComisionesLblCardVentasDetalle.Font = new System.Drawing.Font("Segoe UI", 8.5F);
-            this.ComisionesLblCardVentasDetalle.ForeColor = System.Drawing.Color.FromArgb(112, 102, 117);
-            this.ComisionesLblCardVentasDetalle.Location = new System.Drawing.Point(15, 54);
-            this.ComisionesLblCardVentasDetalle.Text = "12 ventas dentro del periodo";
-            this.ComisionesLblCardMonto.AutoSize = true;
-            this.ComisionesLblCardMonto.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold);
-            this.ComisionesLblCardMonto.ForeColor = System.Drawing.Color.FromArgb(123, 63, 147);
-            this.ComisionesLblCardMonto.Location = new System.Drawing.Point(14, 10);
-            this.ComisionesLblCardMonto.Text = "COMISIÓN ESTIMADA";
-            this.ComisionesLblCardMontoValor.AutoSize = true;
-            this.ComisionesLblCardMontoValor.Font = new System.Drawing.Font("Lucida Sans", 14F, System.Drawing.FontStyle.Bold);
-            this.ComisionesLblCardMontoValor.ForeColor = System.Drawing.Color.FromArgb(59, 29, 74);
-            this.ComisionesLblCardMontoValor.Location = new System.Drawing.Point(14, 29);
-            this.ComisionesLblCardMontoValor.Text = "Q 2,437.50";
-            this.ComisionesLblCardMontoDetalle.AutoSize = true;
-            this.ComisionesLblCardMontoDetalle.Font = new System.Drawing.Font("Segoe UI", 8.5F);
-            this.ComisionesLblCardMontoDetalle.ForeColor = System.Drawing.Color.FromArgb(112, 102, 117);
-            this.ComisionesLblCardMontoDetalle.Location = new System.Drawing.Point(15, 54);
-            this.ComisionesLblCardMontoDetalle.Text = "Tasa aplicada: 5.00%";
+            // 
+            // ComisionesLblCardEstado
+            // 
             this.ComisionesLblCardEstado.AutoSize = true;
             this.ComisionesLblCardEstado.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold);
-            this.ComisionesLblCardEstado.ForeColor = System.Drawing.Color.FromArgb(123, 63, 147);
+            this.ComisionesLblCardEstado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(63)))), ((int)(((byte)(147)))));
             this.ComisionesLblCardEstado.Location = new System.Drawing.Point(14, 10);
+            this.ComisionesLblCardEstado.Name = "ComisionesLblCardEstado";
+            this.ComisionesLblCardEstado.Size = new System.Drawing.Size(168, 17);
+            this.ComisionesLblCardEstado.TabIndex = 0;
             this.ComisionesLblCardEstado.Text = "ESTADO DEL PERIODO";
+            // 
+            // ComisionesLblCardEstadoValor
+            // 
             this.ComisionesLblCardEstadoValor.AutoSize = true;
             this.ComisionesLblCardEstadoValor.Font = new System.Drawing.Font("Lucida Sans", 14F, System.Drawing.FontStyle.Bold);
-            this.ComisionesLblCardEstadoValor.ForeColor = System.Drawing.Color.FromArgb(59, 29, 74);
+            this.ComisionesLblCardEstadoValor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
             this.ComisionesLblCardEstadoValor.Location = new System.Drawing.Point(14, 29);
+            this.ComisionesLblCardEstadoValor.Name = "ComisionesLblCardEstadoValor";
+            this.ComisionesLblCardEstadoValor.Size = new System.Drawing.Size(118, 27);
+            this.ComisionesLblCardEstadoValor.TabIndex = 1;
             this.ComisionesLblCardEstadoValor.Text = "Borrador";
+            // 
+            // ComisionesLblCardEstadoDetalle
+            // 
             this.ComisionesLblCardEstadoDetalle.AutoSize = true;
             this.ComisionesLblCardEstadoDetalle.Font = new System.Drawing.Font("Segoe UI", 8.5F);
-            this.ComisionesLblCardEstadoDetalle.ForeColor = System.Drawing.Color.FromArgb(112, 102, 117);
+            this.ComisionesLblCardEstadoDetalle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(102)))), ((int)(((byte)(117)))));
             this.ComisionesLblCardEstadoDetalle.Location = new System.Drawing.Point(15, 54);
+            this.ComisionesLblCardEstadoDetalle.Name = "ComisionesLblCardEstadoDetalle";
+            this.ComisionesLblCardEstadoDetalle.Size = new System.Drawing.Size(231, 20);
+            this.ComisionesLblCardEstadoDetalle.TabIndex = 2;
             this.ComisionesLblCardEstadoDetalle.Text = "Pendiente de solicitar aprobación";
-            // Tabla de ventas elegibles
+            // 
+            // ComisionesLblVentasElegibles
+            // 
             this.ComisionesLblVentasElegibles.AutoSize = true;
             this.ComisionesLblVentasElegibles.Font = new System.Drawing.Font("Lucida Sans", 12F, System.Drawing.FontStyle.Bold);
-            this.ComisionesLblVentasElegibles.ForeColor = System.Drawing.Color.FromArgb(59, 29, 74);
+            this.ComisionesLblVentasElegibles.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
             this.ComisionesLblVentasElegibles.Location = new System.Drawing.Point(24, 194);
             this.ComisionesLblVentasElegibles.Name = "ComisionesLblVentasElegibles";
+            this.ComisionesLblVentasElegibles.Size = new System.Drawing.Size(183, 23);
+            this.ComisionesLblVentasElegibles.TabIndex = 12;
             this.ComisionesLblVentasElegibles.Text = "Ventas elegibles";
+            // 
+            // ComisionesLblAyudaElegibles
+            // 
             this.ComisionesLblAyudaElegibles.AutoSize = true;
             this.ComisionesLblAyudaElegibles.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.ComisionesLblAyudaElegibles.ForeColor = System.Drawing.Color.FromArgb(112, 102, 117);
+            this.ComisionesLblAyudaElegibles.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(102)))), ((int)(((byte)(117)))));
             this.ComisionesLblAyudaElegibles.Location = new System.Drawing.Point(24, 220);
+            this.ComisionesLblAyudaElegibles.Name = "ComisionesLblAyudaElegibles";
+            this.ComisionesLblAyudaElegibles.Size = new System.Drawing.Size(424, 20);
+            this.ComisionesLblAyudaElegibles.TabIndex = 13;
             this.ComisionesLblAyudaElegibles.Text = "Las ventas anuladas o fuera de vigencia se excluyen de la base.";
+            // 
+            // ComisionesDgvVentas
+            // 
             this.ComisionesDgvVentas.AllowUserToAddRows = false;
             this.ComisionesDgvVentas.AllowUserToDeleteRows = false;
             this.ComisionesDgvVentas.AllowUserToResizeRows = false;
             this.ComisionesDgvVentas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.ComisionesDgvVentas.BackgroundColor = System.Drawing.Color.White;
             this.ComisionesDgvVentas.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Tahoma", 8.5F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.ComisionesDgvVentas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.ComisionesDgvVentas.ColumnHeadersHeight = 38;
+            this.ComisionesDgvVentas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ComisionesVentaFecha,
+            this.ComisionesVentaDocumento,
+            this.ComisionesVentaCliente,
+            this.ComisionesVentaBase,
+            this.ComisionesVentaTasa,
+            this.ComisionesVentaImporte,
+            this.ComisionesVentaEstado});
             this.ComisionesDgvVentas.EnableHeadersVisualStyles = false;
-            this.ComisionesDgvVentas.Location = new System.Drawing.Point(24, 252);
+            this.ComisionesDgvVentas.Location = new System.Drawing.Point(34, 243);
             this.ComisionesDgvVentas.Name = "ComisionesDgvVentas";
             this.ComisionesDgvVentas.ReadOnly = true;
             this.ComisionesDgvVentas.RowHeadersVisible = false;
+            this.ComisionesDgvVentas.RowHeadersWidth = 51;
             this.ComisionesDgvVentas.RowTemplate.Height = 38;
             this.ComisionesDgvVentas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.ComisionesDgvVentas.Size = new System.Drawing.Size(998, 198);
+            this.ComisionesDgvVentas.Size = new System.Drawing.Size(971, 159);
             this.ComisionesDgvVentas.TabIndex = 12;
-            this.ComisionesColVentaFecha.HeaderText = "Fecha";
-            this.ComisionesColVentaFecha.Name = "ComisionesVentaFecha";
-            this.ComisionesColVentaDocumento.HeaderText = "Documento";
-            this.ComisionesColVentaDocumento.Name = "ComisionesVentaDocumento";
-            this.ComisionesColVentaCliente.HeaderText = "Cliente";
-            this.ComisionesColVentaCliente.Name = "ComisionesVentaCliente";
-            this.ComisionesColVentaBase.HeaderText = "Base de comisión";
-            this.ComisionesColVentaBase.Name = "ComisionesVentaBase";
-            this.ComisionesColVentaTasa.HeaderText = "Tasa";
-            this.ComisionesColVentaTasa.Name = "ComisionesVentaTasa";
-            this.ComisionesColVentaComision.HeaderText = "Comisión";
-            this.ComisionesColVentaComision.Name = "ComisionesVentaImporte";
-            this.ComisionesColVentaEstado.HeaderText = "Estado";
-            this.ComisionesColVentaEstado.Name = "ComisionesVentaEstado";
-            this.ComisionesDgvVentas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] { this.ComisionesColVentaFecha, this.ComisionesColVentaDocumento, this.ComisionesColVentaCliente, this.ComisionesColVentaBase, this.ComisionesColVentaTasa, this.ComisionesColVentaComision, this.ComisionesColVentaEstado });
-            this.ComisionesDgvVentas.ColumnHeadersDefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(59, 29, 74);
-            this.ComisionesDgvVentas.ColumnHeadersDefaultCellStyle.ForeColor = System.Drawing.Color.White;
-            this.ComisionesDgvVentas.ColumnHeadersDefaultCellStyle.Font = new System.Drawing.Font("Tahoma", 8.5F, System.Drawing.FontStyle.Bold);
-            this.ComisionesDgvVentas.DefaultCellStyle.ForeColor = System.Drawing.Color.FromArgb(59, 29, 74);
+            // 
+            // ComisionesVentaFecha
+            // 
+            this.ComisionesVentaFecha.HeaderText = "Fecha";
+            this.ComisionesVentaFecha.MinimumWidth = 6;
+            this.ComisionesVentaFecha.Name = "ComisionesVentaFecha";
+            this.ComisionesVentaFecha.ReadOnly = true;
+            // 
+            // ComisionesVentaDocumento
+            // 
+            this.ComisionesVentaDocumento.HeaderText = "Documento";
+            this.ComisionesVentaDocumento.MinimumWidth = 6;
+            this.ComisionesVentaDocumento.Name = "ComisionesVentaDocumento";
+            this.ComisionesVentaDocumento.ReadOnly = true;
+            // 
+            // ComisionesVentaCliente
+            // 
+            this.ComisionesVentaCliente.HeaderText = "Cliente";
+            this.ComisionesVentaCliente.MinimumWidth = 6;
+            this.ComisionesVentaCliente.Name = "ComisionesVentaCliente";
+            this.ComisionesVentaCliente.ReadOnly = true;
+            // 
+            // ComisionesVentaBase
+            // 
+            this.ComisionesVentaBase.HeaderText = "Base de comisión";
+            this.ComisionesVentaBase.MinimumWidth = 6;
+            this.ComisionesVentaBase.Name = "ComisionesVentaBase";
+            this.ComisionesVentaBase.ReadOnly = true;
+            // 
+            // ComisionesVentaTasa
+            // 
+            this.ComisionesVentaTasa.HeaderText = "Tasa";
+            this.ComisionesVentaTasa.MinimumWidth = 6;
+            this.ComisionesVentaTasa.Name = "ComisionesVentaTasa";
+            this.ComisionesVentaTasa.ReadOnly = true;
+            // 
+            // ComisionesVentaImporte
+            // 
+            this.ComisionesVentaImporte.HeaderText = "Comisión";
+            this.ComisionesVentaImporte.MinimumWidth = 6;
+            this.ComisionesVentaImporte.Name = "ComisionesVentaImporte";
+            this.ComisionesVentaImporte.ReadOnly = true;
+            // 
+            // ComisionesVentaEstado
+            // 
+            this.ComisionesVentaEstado.HeaderText = "Estado";
+            this.ComisionesVentaEstado.MinimumWidth = 6;
+            this.ComisionesVentaEstado.Name = "ComisionesVentaEstado";
+            this.ComisionesVentaEstado.ReadOnly = true;
+            // 
+            // ComisionesLblPaginacion
+            // 
             this.ComisionesLblPaginacion.AutoSize = true;
             this.ComisionesLblPaginacion.Font = new System.Drawing.Font("Segoe UI", 8.5F);
-            this.ComisionesLblPaginacion.ForeColor = System.Drawing.Color.FromArgb(112, 102, 117);
+            this.ComisionesLblPaginacion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(102)))), ((int)(((byte)(117)))));
             this.ComisionesLblPaginacion.Location = new System.Drawing.Point(24, 462);
+            this.ComisionesLblPaginacion.Name = "ComisionesLblPaginacion";
+            this.ComisionesLblPaginacion.Size = new System.Drawing.Size(244, 20);
+            this.ComisionesLblPaginacion.TabIndex = 14;
             this.ComisionesLblPaginacion.Text = "Mostrando 3 de 12 ventas elegibles";
-            this.ComisionesBtnAnterior.BackColor = System.Drawing.Color.FromArgb(228, 212, 234);
+            // 
+            // ComisionesBtnAnterior
+            // 
+            this.ComisionesBtnAnterior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(212)))), ((int)(((byte)(234)))));
             this.ComisionesBtnAnterior.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ComisionesBtnAnterior.ForeColor = System.Drawing.Color.FromArgb(59, 29, 74);
-            this.ComisionesBtnAnterior.Location = new System.Drawing.Point(800, 456);
+            this.ComisionesBtnAnterior.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
+            this.ComisionesBtnAnterior.Location = new System.Drawing.Point(770, 426);
             this.ComisionesBtnAnterior.Name = "ComisionesBtnAnterior";
             this.ComisionesBtnAnterior.Size = new System.Drawing.Size(105, 30);
+            this.ComisionesBtnAnterior.TabIndex = 15;
             this.ComisionesBtnAnterior.Text = "Anterior";
             this.ComisionesBtnAnterior.UseVisualStyleBackColor = false;
-            this.ComisionesBtnSiguiente.BackColor = System.Drawing.Color.FromArgb(228, 212, 234);
+            // 
+            // ComisionesBtnSiguiente
+            // 
+            this.ComisionesBtnSiguiente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(212)))), ((int)(((byte)(234)))));
             this.ComisionesBtnSiguiente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ComisionesBtnSiguiente.ForeColor = System.Drawing.Color.FromArgb(59, 29, 74);
-            this.ComisionesBtnSiguiente.Location = new System.Drawing.Point(914, 456);
+            this.ComisionesBtnSiguiente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
+            this.ComisionesBtnSiguiente.Location = new System.Drawing.Point(897, 426);
             this.ComisionesBtnSiguiente.Name = "ComisionesBtnSiguiente";
             this.ComisionesBtnSiguiente.Size = new System.Drawing.Size(108, 30);
+            this.ComisionesBtnSiguiente.TabIndex = 16;
             this.ComisionesBtnSiguiente.Text = "Siguiente";
             this.ComisionesBtnSiguiente.UseVisualStyleBackColor = false;
+            // 
+            // ComisionesPnlPieCalculo
+            // 
             this.ComisionesPnlPieCalculo.BackColor = System.Drawing.Color.White;
             this.ComisionesPnlPieCalculo.Controls.Add(this.ComisionesLblAvisoAutorizacion);
             this.ComisionesPnlPieCalculo.Controls.Add(this.ComisionesBtnSolicitar);
@@ -524,21 +709,33 @@ namespace CapaVista_Ventas
             this.ComisionesPnlPieCalculo.Name = "ComisionesPnlPieCalculo";
             this.ComisionesPnlPieCalculo.Size = new System.Drawing.Size(1032, 60);
             this.ComisionesPnlPieCalculo.TabIndex = 13;
+            // 
+            // ComisionesLblAvisoAutorizacion
+            // 
             this.ComisionesLblAvisoAutorizacion.AutoSize = true;
             this.ComisionesLblAvisoAutorizacion.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.ComisionesLblAvisoAutorizacion.ForeColor = System.Drawing.Color.FromArgb(112, 102, 117);
+            this.ComisionesLblAvisoAutorizacion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(102)))), ((int)(((byte)(117)))));
             this.ComisionesLblAvisoAutorizacion.Location = new System.Drawing.Point(20, 23);
+            this.ComisionesLblAvisoAutorizacion.Name = "ComisionesLblAvisoAutorizacion";
+            this.ComisionesLblAvisoAutorizacion.Size = new System.Drawing.Size(523, 20);
+            this.ComisionesLblAvisoAutorizacion.TabIndex = 0;
             this.ComisionesLblAvisoAutorizacion.Text = "La comisión requiere autorización antes de enviarse a Contabilidad / Nómina.";
-            this.ComisionesBtnSolicitar.BackColor = System.Drawing.Color.FromArgb(123, 63, 147);
+            // 
+            // ComisionesBtnSolicitar
+            // 
+            this.ComisionesBtnSolicitar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(63)))), ((int)(((byte)(147)))));
             this.ComisionesBtnSolicitar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ComisionesBtnSolicitar.ForeColor = System.Drawing.Color.White;
             this.ComisionesBtnSolicitar.Location = new System.Drawing.Point(780, 9);
             this.ComisionesBtnSolicitar.Name = "ComisionesBtnSolicitar";
             this.ComisionesBtnSolicitar.Size = new System.Drawing.Size(242, 42);
+            this.ComisionesBtnSolicitar.TabIndex = 1;
             this.ComisionesBtnSolicitar.Text = "Solicitar aprobación";
             this.ComisionesBtnSolicitar.UseVisualStyleBackColor = false;
-            // Consulta de comisiones
-            this.ComisionesTabConsulta.BackColor = System.Drawing.Color.FromArgb(248, 245, 249);
+            // 
+            // ComisionesTabConsulta
+            // 
+            this.ComisionesTabConsulta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
             this.ComisionesTabConsulta.Controls.Add(this.ComisionesLblConsultaVendedor);
             this.ComisionesTabConsulta.Controls.Add(this.ComisionesTxtConsultaVendedor);
             this.ComisionesTabConsulta.Controls.Add(this.ComisionesLblConsultaPeriodo);
@@ -559,107 +756,258 @@ namespace CapaVista_Ventas
             this.ComisionesTabConsulta.Size = new System.Drawing.Size(1052, 532);
             this.ComisionesTabConsulta.TabIndex = 1;
             this.ComisionesTabConsulta.Text = "Consultar comisiones";
+            // 
+            // ComisionesLblConsultaVendedor
+            // 
             this.ComisionesLblConsultaVendedor.AutoSize = true;
             this.ComisionesLblConsultaVendedor.Location = new System.Drawing.Point(24, 22);
+            this.ComisionesLblConsultaVendedor.Name = "ComisionesLblConsultaVendedor";
+            this.ComisionesLblConsultaVendedor.Size = new System.Drawing.Size(84, 23);
+            this.ComisionesLblConsultaVendedor.TabIndex = 0;
             this.ComisionesLblConsultaVendedor.Text = "Vendedor";
+            // 
+            // ComisionesTxtConsultaVendedor
+            // 
             this.ComisionesTxtConsultaVendedor.Location = new System.Drawing.Point(24, 46);
+            this.ComisionesTxtConsultaVendedor.Name = "ComisionesTxtConsultaVendedor";
             this.ComisionesTxtConsultaVendedor.ReadOnly = true;
-            this.ComisionesTxtConsultaVendedor.Size = new System.Drawing.Size(225, 25);
+            this.ComisionesTxtConsultaVendedor.Size = new System.Drawing.Size(225, 30);
+            this.ComisionesTxtConsultaVendedor.TabIndex = 1;
             this.ComisionesTxtConsultaVendedor.Text = "Todos los vendedores  ▾";
+            // 
+            // ComisionesLblConsultaPeriodo
+            // 
             this.ComisionesLblConsultaPeriodo.AutoSize = true;
             this.ComisionesLblConsultaPeriodo.Location = new System.Drawing.Point(266, 22);
+            this.ComisionesLblConsultaPeriodo.Name = "ComisionesLblConsultaPeriodo";
+            this.ComisionesLblConsultaPeriodo.Size = new System.Drawing.Size(68, 23);
+            this.ComisionesLblConsultaPeriodo.TabIndex = 2;
             this.ComisionesLblConsultaPeriodo.Text = "Periodo";
+            // 
+            // ComisionesTxtConsultaPeriodo
+            // 
             this.ComisionesTxtConsultaPeriodo.Location = new System.Drawing.Point(266, 46);
+            this.ComisionesTxtConsultaPeriodo.Name = "ComisionesTxtConsultaPeriodo";
             this.ComisionesTxtConsultaPeriodo.ReadOnly = true;
-            this.ComisionesTxtConsultaPeriodo.Size = new System.Drawing.Size(240, 25);
+            this.ComisionesTxtConsultaPeriodo.Size = new System.Drawing.Size(240, 30);
+            this.ComisionesTxtConsultaPeriodo.TabIndex = 3;
             this.ComisionesTxtConsultaPeriodo.Text = "01/10/2026 – 31/10/2026";
+            // 
+            // ComisionesLblConsultaDocumento
+            // 
             this.ComisionesLblConsultaDocumento.AutoSize = true;
             this.ComisionesLblConsultaDocumento.Location = new System.Drawing.Point(523, 22);
+            this.ComisionesLblConsultaDocumento.Name = "ComisionesLblConsultaDocumento";
+            this.ComisionesLblConsultaDocumento.Size = new System.Drawing.Size(100, 23);
+            this.ComisionesLblConsultaDocumento.TabIndex = 4;
             this.ComisionesLblConsultaDocumento.Text = "Documento";
+            // 
+            // ComisionesTxtConsultaDocumento
+            // 
             this.ComisionesTxtConsultaDocumento.Location = new System.Drawing.Point(523, 46);
+            this.ComisionesTxtConsultaDocumento.Name = "ComisionesTxtConsultaDocumento";
             this.ComisionesTxtConsultaDocumento.ReadOnly = true;
-            this.ComisionesTxtConsultaDocumento.Size = new System.Drawing.Size(220, 25);
+            this.ComisionesTxtConsultaDocumento.Size = new System.Drawing.Size(220, 30);
+            this.ComisionesTxtConsultaDocumento.TabIndex = 5;
             this.ComisionesTxtConsultaDocumento.Text = "Buscar por número";
+            // 
+            // ComisionesLblConsultaEstado
+            // 
             this.ComisionesLblConsultaEstado.AutoSize = true;
             this.ComisionesLblConsultaEstado.Location = new System.Drawing.Point(760, 22);
+            this.ComisionesLblConsultaEstado.Name = "ComisionesLblConsultaEstado";
+            this.ComisionesLblConsultaEstado.Size = new System.Drawing.Size(61, 23);
+            this.ComisionesLblConsultaEstado.TabIndex = 6;
             this.ComisionesLblConsultaEstado.Text = "Estado";
+            // 
+            // ComisionesTxtConsultaEstado
+            // 
             this.ComisionesTxtConsultaEstado.Location = new System.Drawing.Point(760, 46);
+            this.ComisionesTxtConsultaEstado.Name = "ComisionesTxtConsultaEstado";
             this.ComisionesTxtConsultaEstado.ReadOnly = true;
-            this.ComisionesTxtConsultaEstado.Size = new System.Drawing.Size(205, 25);
+            this.ComisionesTxtConsultaEstado.Size = new System.Drawing.Size(205, 30);
+            this.ComisionesTxtConsultaEstado.TabIndex = 7;
             this.ComisionesTxtConsultaEstado.Text = "Todos los estados  ▾";
-            this.ComisionesBtnBuscar.BackColor = System.Drawing.Color.FromArgb(123, 63, 147);
+            // 
+            // ComisionesBtnBuscar
+            // 
+            this.ComisionesBtnBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(63)))), ((int)(((byte)(147)))));
             this.ComisionesBtnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ComisionesBtnBuscar.ForeColor = System.Drawing.Color.White;
             this.ComisionesBtnBuscar.Location = new System.Drawing.Point(888, 105);
+            this.ComisionesBtnBuscar.Name = "ComisionesBtnBuscar";
             this.ComisionesBtnBuscar.Size = new System.Drawing.Size(134, 42);
+            this.ComisionesBtnBuscar.TabIndex = 8;
             this.ComisionesBtnBuscar.Text = "Buscar";
             this.ComisionesBtnBuscar.UseVisualStyleBackColor = false;
+            // 
+            // ComisionesLblHistorial
+            // 
             this.ComisionesLblHistorial.AutoSize = true;
             this.ComisionesLblHistorial.Font = new System.Drawing.Font("Lucida Sans", 13F, System.Drawing.FontStyle.Bold);
-            this.ComisionesLblHistorial.ForeColor = System.Drawing.Color.FromArgb(59, 29, 74);
+            this.ComisionesLblHistorial.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
             this.ComisionesLblHistorial.Location = new System.Drawing.Point(24, 120);
+            this.ComisionesLblHistorial.Name = "ComisionesLblHistorial";
+            this.ComisionesLblHistorial.Size = new System.Drawing.Size(276, 25);
+            this.ComisionesLblHistorial.TabIndex = 9;
             this.ComisionesLblHistorial.Text = "Historial de comisiones";
+            // 
+            // ComisionesDgvHistorial
+            // 
             this.ComisionesDgvHistorial.AllowUserToAddRows = false;
             this.ComisionesDgvHistorial.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.ComisionesDgvHistorial.BackgroundColor = System.Drawing.Color.White;
+            this.ComisionesDgvHistorial.ColumnHeadersHeight = 29;
+            this.ComisionesDgvHistorial.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ComisionesHistorialPeriodo,
+            this.ComisionesHistorialVendedor,
+            this.ComisionesHistorialVentas,
+            this.ComisionesHistorialImporte,
+            this.ComisionesHistorialDocumento,
+            this.ComisionesHistorialEstado});
             this.ComisionesDgvHistorial.Location = new System.Drawing.Point(24, 158);
+            this.ComisionesDgvHistorial.Name = "ComisionesDgvHistorial";
             this.ComisionesDgvHistorial.ReadOnly = true;
             this.ComisionesDgvHistorial.RowHeadersVisible = false;
+            this.ComisionesDgvHistorial.RowHeadersWidth = 51;
             this.ComisionesDgvHistorial.Size = new System.Drawing.Size(998, 275);
-            this.ComisionesColHistorialPeriodo.HeaderText = "Periodo";
-            this.ComisionesColHistorialPeriodo.Name = "ComisionesHistorialPeriodo";
-            this.ComisionesColHistorialVendedor.HeaderText = "Vendedor";
-            this.ComisionesColHistorialVendedor.Name = "ComisionesHistorialVendedor";
-            this.ComisionesColHistorialVentas.HeaderText = "Ventas";
-            this.ComisionesColHistorialVentas.Name = "ComisionesHistorialVentas";
-            this.ComisionesColHistorialComision.HeaderText = "Comisión";
-            this.ComisionesColHistorialComision.Name = "ComisionesHistorialImporte";
-            this.ComisionesColHistorialDocumento.HeaderText = "Documento";
-            this.ComisionesColHistorialDocumento.Name = "ComisionesHistorialDocumento";
-            this.ComisionesColHistorialEstado.HeaderText = "Estado";
-            this.ComisionesColHistorialEstado.Name = "ComisionesHistorialEstado";
-            this.ComisionesDgvHistorial.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] { this.ComisionesColHistorialPeriodo, this.ComisionesColHistorialVendedor, this.ComisionesColHistorialVentas, this.ComisionesColHistorialComision, this.ComisionesColHistorialDocumento, this.ComisionesColHistorialEstado });
+            this.ComisionesDgvHistorial.TabIndex = 10;
+            // 
+            // ComisionesHistorialPeriodo
+            // 
+            this.ComisionesHistorialPeriodo.HeaderText = "Periodo";
+            this.ComisionesHistorialPeriodo.MinimumWidth = 6;
+            this.ComisionesHistorialPeriodo.Name = "ComisionesHistorialPeriodo";
+            this.ComisionesHistorialPeriodo.ReadOnly = true;
+            // 
+            // ComisionesHistorialVendedor
+            // 
+            this.ComisionesHistorialVendedor.HeaderText = "Vendedor";
+            this.ComisionesHistorialVendedor.MinimumWidth = 6;
+            this.ComisionesHistorialVendedor.Name = "ComisionesHistorialVendedor";
+            this.ComisionesHistorialVendedor.ReadOnly = true;
+            // 
+            // ComisionesHistorialVentas
+            // 
+            this.ComisionesHistorialVentas.HeaderText = "Ventas";
+            this.ComisionesHistorialVentas.MinimumWidth = 6;
+            this.ComisionesHistorialVentas.Name = "ComisionesHistorialVentas";
+            this.ComisionesHistorialVentas.ReadOnly = true;
+            // 
+            // ComisionesHistorialImporte
+            // 
+            this.ComisionesHistorialImporte.HeaderText = "Comisión";
+            this.ComisionesHistorialImporte.MinimumWidth = 6;
+            this.ComisionesHistorialImporte.Name = "ComisionesHistorialImporte";
+            this.ComisionesHistorialImporte.ReadOnly = true;
+            // 
+            // ComisionesHistorialDocumento
+            // 
+            this.ComisionesHistorialDocumento.HeaderText = "Documento";
+            this.ComisionesHistorialDocumento.MinimumWidth = 6;
+            this.ComisionesHistorialDocumento.Name = "ComisionesHistorialDocumento";
+            this.ComisionesHistorialDocumento.ReadOnly = true;
+            // 
+            // ComisionesHistorialEstado
+            // 
+            this.ComisionesHistorialEstado.HeaderText = "Estado";
+            this.ComisionesHistorialEstado.MinimumWidth = 6;
+            this.ComisionesHistorialEstado.Name = "ComisionesHistorialEstado";
+            this.ComisionesHistorialEstado.ReadOnly = true;
+            // 
+            // ComisionesPnlHistorialCard1
+            // 
             this.ComisionesPnlHistorialCard1.BackColor = System.Drawing.Color.White;
             this.ComisionesPnlHistorialCard1.Controls.Add(this.ComisionesLblHistorialCard1);
             this.ComisionesPnlHistorialCard1.Controls.Add(this.ComisionesLblHistorialCard1Detalle);
             this.ComisionesPnlHistorialCard1.Location = new System.Drawing.Point(24, 456);
+            this.ComisionesPnlHistorialCard1.Name = "ComisionesPnlHistorialCard1";
             this.ComisionesPnlHistorialCard1.Size = new System.Drawing.Size(313, 68);
+            this.ComisionesPnlHistorialCard1.TabIndex = 11;
+            // 
+            // ComisionesLblHistorialCard1
+            // 
+            this.ComisionesLblHistorialCard1.AutoSize = true;
+            this.ComisionesLblHistorialCard1.Font = new System.Drawing.Font("Lucida Sans", 13F, System.Drawing.FontStyle.Bold);
+            this.ComisionesLblHistorialCard1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
+            this.ComisionesLblHistorialCard1.Location = new System.Drawing.Point(14, 10);
+            this.ComisionesLblHistorialCard1.Name = "ComisionesLblHistorialCard1";
+            this.ComisionesLblHistorialCard1.Size = new System.Drawing.Size(160, 25);
+            this.ComisionesLblHistorialCard1.TabIndex = 0;
+            this.ComisionesLblHistorialCard1.Text = "4 comisiones";
+            // 
+            // ComisionesLblHistorialCard1Detalle
+            // 
+            this.ComisionesLblHistorialCard1Detalle.AutoSize = true;
+            this.ComisionesLblHistorialCard1Detalle.Location = new System.Drawing.Point(15, 40);
+            this.ComisionesLblHistorialCard1Detalle.Name = "ComisionesLblHistorialCard1Detalle";
+            this.ComisionesLblHistorialCard1Detalle.Size = new System.Drawing.Size(182, 23);
+            this.ComisionesLblHistorialCard1Detalle.TabIndex = 1;
+            this.ComisionesLblHistorialCard1Detalle.Text = "Resultados de ejemplo";
+            // 
+            // ComisionesPnlHistorialCard2
+            // 
             this.ComisionesPnlHistorialCard2.BackColor = System.Drawing.Color.White;
             this.ComisionesPnlHistorialCard2.Controls.Add(this.ComisionesLblHistorialCard2);
             this.ComisionesPnlHistorialCard2.Controls.Add(this.ComisionesLblHistorialCard2Detalle);
             this.ComisionesPnlHistorialCard2.Location = new System.Drawing.Point(349, 456);
+            this.ComisionesPnlHistorialCard2.Name = "ComisionesPnlHistorialCard2";
             this.ComisionesPnlHistorialCard2.Size = new System.Drawing.Size(313, 68);
+            this.ComisionesPnlHistorialCard2.TabIndex = 12;
+            // 
+            // ComisionesLblHistorialCard2
+            // 
+            this.ComisionesLblHistorialCard2.AutoSize = true;
+            this.ComisionesLblHistorialCard2.Font = new System.Drawing.Font("Lucida Sans", 13F, System.Drawing.FontStyle.Bold);
+            this.ComisionesLblHistorialCard2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
+            this.ComisionesLblHistorialCard2.Location = new System.Drawing.Point(14, 10);
+            this.ComisionesLblHistorialCard2.Name = "ComisionesLblHistorialCard2";
+            this.ComisionesLblHistorialCard2.Size = new System.Drawing.Size(131, 25);
+            this.ComisionesLblHistorialCard2.TabIndex = 0;
+            this.ComisionesLblHistorialCard2.Text = "Q 7,427.50";
+            // 
+            // ComisionesLblHistorialCard2Detalle
+            // 
+            this.ComisionesLblHistorialCard2Detalle.AutoSize = true;
+            this.ComisionesLblHistorialCard2Detalle.Location = new System.Drawing.Point(15, 40);
+            this.ComisionesLblHistorialCard2Detalle.Name = "ComisionesLblHistorialCard2Detalle";
+            this.ComisionesLblHistorialCard2Detalle.Size = new System.Drawing.Size(217, 23);
+            this.ComisionesLblHistorialCard2Detalle.TabIndex = 1;
+            this.ComisionesLblHistorialCard2Detalle.Text = "Total ilustrativo del periodo";
+            // 
+            // ComisionesPnlHistorialCard3
+            // 
             this.ComisionesPnlHistorialCard3.BackColor = System.Drawing.Color.White;
             this.ComisionesPnlHistorialCard3.Controls.Add(this.ComisionesLblHistorialCard3);
             this.ComisionesPnlHistorialCard3.Controls.Add(this.ComisionesLblHistorialCard3Detalle);
             this.ComisionesPnlHistorialCard3.Location = new System.Drawing.Point(674, 456);
+            this.ComisionesPnlHistorialCard3.Name = "ComisionesPnlHistorialCard3";
             this.ComisionesPnlHistorialCard3.Size = new System.Drawing.Size(348, 68);
-            this.ComisionesLblHistorialCard1.AutoSize = true;
-            this.ComisionesLblHistorialCard1.Font = new System.Drawing.Font("Lucida Sans", 13F, System.Drawing.FontStyle.Bold);
-            this.ComisionesLblHistorialCard1.ForeColor = System.Drawing.Color.FromArgb(59, 29, 74);
-            this.ComisionesLblHistorialCard1.Location = new System.Drawing.Point(14, 10);
-            this.ComisionesLblHistorialCard1.Text = "4 comisiones";
-            this.ComisionesLblHistorialCard1Detalle.AutoSize = true;
-            this.ComisionesLblHistorialCard1Detalle.Location = new System.Drawing.Point(15, 40);
-            this.ComisionesLblHistorialCard1Detalle.Text = "Resultados de ejemplo";
-            this.ComisionesLblHistorialCard2.AutoSize = true;
-            this.ComisionesLblHistorialCard2.Font = new System.Drawing.Font("Lucida Sans", 13F, System.Drawing.FontStyle.Bold);
-            this.ComisionesLblHistorialCard2.ForeColor = System.Drawing.Color.FromArgb(59, 29, 74);
-            this.ComisionesLblHistorialCard2.Location = new System.Drawing.Point(14, 10);
-            this.ComisionesLblHistorialCard2.Text = "Q 7,427.50";
-            this.ComisionesLblHistorialCard2Detalle.AutoSize = true;
-            this.ComisionesLblHistorialCard2Detalle.Location = new System.Drawing.Point(15, 40);
-            this.ComisionesLblHistorialCard2Detalle.Text = "Total ilustrativo del periodo";
+            this.ComisionesPnlHistorialCard3.TabIndex = 13;
+            // 
+            // ComisionesLblHistorialCard3
+            // 
             this.ComisionesLblHistorialCard3.AutoSize = true;
             this.ComisionesLblHistorialCard3.Font = new System.Drawing.Font("Lucida Sans", 12F, System.Drawing.FontStyle.Bold);
-            this.ComisionesLblHistorialCard3.ForeColor = System.Drawing.Color.FromArgb(59, 29, 74);
+            this.ComisionesLblHistorialCard3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
             this.ComisionesLblHistorialCard3.Location = new System.Drawing.Point(14, 10);
+            this.ComisionesLblHistorialCard3.Name = "ComisionesLblHistorialCard3";
+            this.ComisionesLblHistorialCard3.Size = new System.Drawing.Size(245, 23);
+            this.ComisionesLblHistorialCard3.TabIndex = 0;
             this.ComisionesLblHistorialCard3.Text = "Seleccione un registro";
+            // 
+            // ComisionesLblHistorialCard3Detalle
+            // 
             this.ComisionesLblHistorialCard3Detalle.AutoSize = true;
             this.ComisionesLblHistorialCard3Detalle.Location = new System.Drawing.Point(15, 40);
+            this.ComisionesLblHistorialCard3Detalle.Name = "ComisionesLblHistorialCard3Detalle";
+            this.ComisionesLblHistorialCard3Detalle.Size = new System.Drawing.Size(190, 23);
+            this.ComisionesLblHistorialCard3Detalle.TabIndex = 1;
             this.ComisionesLblHistorialCard3Detalle.Text = "Detalle, ventas y estado";
-            // Bandeja de autorización
-            this.ComisionesTabAutorizacion.BackColor = System.Drawing.Color.FromArgb(248, 245, 249);
+            // 
+            // ComisionesTabAutorizacion
+            // 
+            this.ComisionesTabAutorizacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
             this.ComisionesTabAutorizacion.Controls.Add(this.ComisionesLblBandeja);
             this.ComisionesTabAutorizacion.Controls.Add(this.ComisionesLblAyudaBandeja);
             this.ComisionesTabAutorizacion.Controls.Add(this.ComisionesDgvAutorizacion);
@@ -675,35 +1023,93 @@ namespace CapaVista_Ventas
             this.ComisionesTabAutorizacion.Size = new System.Drawing.Size(1052, 532);
             this.ComisionesTabAutorizacion.TabIndex = 2;
             this.ComisionesTabAutorizacion.Text = "Autorizar comisión";
+            // 
+            // ComisionesLblBandeja
+            // 
             this.ComisionesLblBandeja.AutoSize = true;
             this.ComisionesLblBandeja.Font = new System.Drawing.Font("Lucida Sans", 13F, System.Drawing.FontStyle.Bold);
-            this.ComisionesLblBandeja.ForeColor = System.Drawing.Color.FromArgb(59, 29, 74);
+            this.ComisionesLblBandeja.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
             this.ComisionesLblBandeja.Location = new System.Drawing.Point(24, 20);
+            this.ComisionesLblBandeja.Name = "ComisionesLblBandeja";
+            this.ComisionesLblBandeja.Size = new System.Drawing.Size(286, 25);
+            this.ComisionesLblBandeja.TabIndex = 0;
             this.ComisionesLblBandeja.Text = "Bandeja de autorización";
+            // 
+            // ComisionesLblAyudaBandeja
+            // 
             this.ComisionesLblAyudaBandeja.AutoSize = true;
-            this.ComisionesLblAyudaBandeja.ForeColor = System.Drawing.Color.FromArgb(112, 102, 117);
+            this.ComisionesLblAyudaBandeja.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(102)))), ((int)(((byte)(117)))));
             this.ComisionesLblAyudaBandeja.Location = new System.Drawing.Point(24, 48);
+            this.ComisionesLblAyudaBandeja.Name = "ComisionesLblAyudaBandeja";
+            this.ComisionesLblAyudaBandeja.Size = new System.Drawing.Size(462, 23);
+            this.ComisionesLblAyudaBandeja.TabIndex = 1;
             this.ComisionesLblAyudaBandeja.Text = "Revise el resumen del periodo antes de aprobar o rechazar.";
+            // 
+            // ComisionesDgvAutorizacion
+            // 
             this.ComisionesDgvAutorizacion.AllowUserToAddRows = false;
             this.ComisionesDgvAutorizacion.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.ComisionesDgvAutorizacion.BackgroundColor = System.Drawing.Color.White;
+            this.ComisionesDgvAutorizacion.ColumnHeadersHeight = 29;
+            this.ComisionesDgvAutorizacion.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ComisionesAutorizacionPeriodo,
+            this.ComisionesAutorizacionVendedor,
+            this.ComisionesAutorizacionVentas,
+            this.ComisionesAutorizacionMonto,
+            this.ComisionesAutorizacionSolicitada,
+            this.ComisionesAutorizacionEstado});
             this.ComisionesDgvAutorizacion.Location = new System.Drawing.Point(24, 82);
+            this.ComisionesDgvAutorizacion.Name = "ComisionesDgvAutorizacion";
             this.ComisionesDgvAutorizacion.ReadOnly = true;
             this.ComisionesDgvAutorizacion.RowHeadersVisible = false;
+            this.ComisionesDgvAutorizacion.RowHeadersWidth = 51;
             this.ComisionesDgvAutorizacion.Size = new System.Drawing.Size(998, 190);
-            this.ComisionesColAutorizacionPeriodo.HeaderText = "Periodo";
-            this.ComisionesColAutorizacionPeriodo.Name = "ComisionesAutorizacionPeriodo";
-            this.ComisionesColAutorizacionVendedor.HeaderText = "Vendedor";
-            this.ComisionesColAutorizacionVendedor.Name = "ComisionesAutorizacionVendedor";
-            this.ComisionesColAutorizacionVentas.HeaderText = "Ventas";
-            this.ComisionesColAutorizacionVentas.Name = "ComisionesAutorizacionVentas";
-            this.ComisionesColAutorizacionMonto.HeaderText = "Monto";
-            this.ComisionesColAutorizacionMonto.Name = "ComisionesAutorizacionMonto";
-            this.ComisionesColAutorizacionSolicitada.HeaderText = "Solicitada";
-            this.ComisionesColAutorizacionSolicitada.Name = "ComisionesAutorizacionSolicitada";
-            this.ComisionesColAutorizacionEstado.HeaderText = "Estado";
-            this.ComisionesColAutorizacionEstado.Name = "ComisionesAutorizacionEstado";
-            this.ComisionesDgvAutorizacion.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] { this.ComisionesColAutorizacionPeriodo, this.ComisionesColAutorizacionVendedor, this.ComisionesColAutorizacionVentas, this.ComisionesColAutorizacionMonto, this.ComisionesColAutorizacionSolicitada, this.ComisionesColAutorizacionEstado });
+            this.ComisionesDgvAutorizacion.TabIndex = 2;
+            // 
+            // ComisionesAutorizacionPeriodo
+            // 
+            this.ComisionesAutorizacionPeriodo.HeaderText = "Periodo";
+            this.ComisionesAutorizacionPeriodo.MinimumWidth = 6;
+            this.ComisionesAutorizacionPeriodo.Name = "ComisionesAutorizacionPeriodo";
+            this.ComisionesAutorizacionPeriodo.ReadOnly = true;
+            // 
+            // ComisionesAutorizacionVendedor
+            // 
+            this.ComisionesAutorizacionVendedor.HeaderText = "Vendedor";
+            this.ComisionesAutorizacionVendedor.MinimumWidth = 6;
+            this.ComisionesAutorizacionVendedor.Name = "ComisionesAutorizacionVendedor";
+            this.ComisionesAutorizacionVendedor.ReadOnly = true;
+            // 
+            // ComisionesAutorizacionVentas
+            // 
+            this.ComisionesAutorizacionVentas.HeaderText = "Ventas";
+            this.ComisionesAutorizacionVentas.MinimumWidth = 6;
+            this.ComisionesAutorizacionVentas.Name = "ComisionesAutorizacionVentas";
+            this.ComisionesAutorizacionVentas.ReadOnly = true;
+            // 
+            // ComisionesAutorizacionMonto
+            // 
+            this.ComisionesAutorizacionMonto.HeaderText = "Monto";
+            this.ComisionesAutorizacionMonto.MinimumWidth = 6;
+            this.ComisionesAutorizacionMonto.Name = "ComisionesAutorizacionMonto";
+            this.ComisionesAutorizacionMonto.ReadOnly = true;
+            // 
+            // ComisionesAutorizacionSolicitada
+            // 
+            this.ComisionesAutorizacionSolicitada.HeaderText = "Solicitada";
+            this.ComisionesAutorizacionSolicitada.MinimumWidth = 6;
+            this.ComisionesAutorizacionSolicitada.Name = "ComisionesAutorizacionSolicitada";
+            this.ComisionesAutorizacionSolicitada.ReadOnly = true;
+            // 
+            // ComisionesAutorizacionEstado
+            // 
+            this.ComisionesAutorizacionEstado.HeaderText = "Estado";
+            this.ComisionesAutorizacionEstado.MinimumWidth = 6;
+            this.ComisionesAutorizacionEstado.Name = "ComisionesAutorizacionEstado";
+            this.ComisionesAutorizacionEstado.ReadOnly = true;
+            // 
+            // ComisionesPnlResumen
+            // 
             this.ComisionesPnlResumen.BackColor = System.Drawing.Color.White;
             this.ComisionesPnlResumen.Controls.Add(this.ComisionesLblResumenTitulo);
             this.ComisionesPnlResumen.Controls.Add(this.ComisionesLblResumenVendedor);
@@ -711,113 +1117,206 @@ namespace CapaVista_Ventas
             this.ComisionesPnlResumen.Controls.Add(this.ComisionesLblResumenVentas);
             this.ComisionesPnlResumen.Controls.Add(this.ComisionesLblResumenMonto);
             this.ComisionesPnlResumen.Location = new System.Drawing.Point(24, 286);
+            this.ComisionesPnlResumen.Name = "ComisionesPnlResumen";
             this.ComisionesPnlResumen.Size = new System.Drawing.Size(998, 132);
+            this.ComisionesPnlResumen.TabIndex = 3;
+            // 
+            // ComisionesLblResumenTitulo
+            // 
             this.ComisionesLblResumenTitulo.AutoSize = true;
             this.ComisionesLblResumenTitulo.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
-            this.ComisionesLblResumenTitulo.ForeColor = System.Drawing.Color.FromArgb(123, 63, 147);
+            this.ComisionesLblResumenTitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(63)))), ((int)(((byte)(147)))));
             this.ComisionesLblResumenTitulo.Location = new System.Drawing.Point(18, 16);
+            this.ComisionesLblResumenTitulo.Name = "ComisionesLblResumenTitulo";
+            this.ComisionesLblResumenTitulo.Size = new System.Drawing.Size(343, 18);
+            this.ComisionesLblResumenTitulo.TabIndex = 0;
             this.ComisionesLblResumenTitulo.Text = "RESUMEN DE LA SOLICITUD SELECCIONADA";
+            // 
+            // ComisionesLblResumenVendedor
+            // 
             this.ComisionesLblResumenVendedor.AutoSize = true;
             this.ComisionesLblResumenVendedor.Location = new System.Drawing.Point(20, 50);
+            this.ComisionesLblResumenVendedor.Name = "ComisionesLblResumenVendedor";
+            this.ComisionesLblResumenVendedor.Size = new System.Drawing.Size(90, 46);
+            this.ComisionesLblResumenVendedor.TabIndex = 1;
             this.ComisionesLblResumenVendedor.Text = "Vendedor\nAna López";
+            // 
+            // ComisionesLblResumenPeriodo
+            // 
             this.ComisionesLblResumenPeriodo.AutoSize = true;
             this.ComisionesLblResumenPeriodo.Location = new System.Drawing.Point(240, 50);
+            this.ComisionesLblResumenPeriodo.Name = "ComisionesLblResumenPeriodo";
+            this.ComisionesLblResumenPeriodo.Size = new System.Drawing.Size(205, 46);
+            this.ComisionesLblResumenPeriodo.TabIndex = 2;
             this.ComisionesLblResumenPeriodo.Text = "Periodo\n01/10/2026 al 31/10/2026";
+            // 
+            // ComisionesLblResumenVentas
+            // 
             this.ComisionesLblResumenVentas.AutoSize = true;
             this.ComisionesLblResumenVentas.Location = new System.Drawing.Point(520, 50);
+            this.ComisionesLblResumenVentas.Name = "ComisionesLblResumenVentas";
+            this.ComisionesLblResumenVentas.Size = new System.Drawing.Size(132, 46);
+            this.ComisionesLblResumenVentas.TabIndex = 3;
             this.ComisionesLblResumenVentas.Text = "Ventas elegibles\n12 documentos";
+            // 
+            // ComisionesLblResumenMonto
+            // 
             this.ComisionesLblResumenMonto.AutoSize = true;
             this.ComisionesLblResumenMonto.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.ComisionesLblResumenMonto.Location = new System.Drawing.Point(770, 50);
+            this.ComisionesLblResumenMonto.Name = "ComisionesLblResumenMonto";
+            this.ComisionesLblResumenMonto.Size = new System.Drawing.Size(98, 46);
+            this.ComisionesLblResumenMonto.TabIndex = 4;
             this.ComisionesLblResumenMonto.Text = "Comisión\nQ 2,437.50";
+            // 
+            // ComisionesLblComentario
+            // 
             this.ComisionesLblComentario.AutoSize = true;
             this.ComisionesLblComentario.Location = new System.Drawing.Point(24, 432);
+            this.ComisionesLblComentario.Name = "ComisionesLblComentario";
+            this.ComisionesLblComentario.Size = new System.Drawing.Size(223, 23);
+            this.ComisionesLblComentario.TabIndex = 4;
             this.ComisionesLblComentario.Text = "Comentario de autorización";
+            // 
+            // ComisionesTxtComentario
+            // 
             this.ComisionesTxtComentario.Location = new System.Drawing.Point(24, 456);
+            this.ComisionesTxtComentario.Name = "ComisionesTxtComentario";
             this.ComisionesTxtComentario.ReadOnly = true;
-            this.ComisionesTxtComentario.Size = new System.Drawing.Size(620, 25);
+            this.ComisionesTxtComentario.Size = new System.Drawing.Size(620, 30);
+            this.ComisionesTxtComentario.TabIndex = 5;
             this.ComisionesTxtComentario.Text = "Agregar comentario (opcional)";
-            this.ComisionesBtnRechazar.BackColor = System.Drawing.Color.FromArgb(228, 212, 234);
+            // 
+            // ComisionesBtnRechazar
+            // 
+            this.ComisionesBtnRechazar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(212)))), ((int)(((byte)(234)))));
             this.ComisionesBtnRechazar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ComisionesBtnRechazar.ForeColor = System.Drawing.Color.FromArgb(59, 29, 74);
+            this.ComisionesBtnRechazar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
             this.ComisionesBtnRechazar.Location = new System.Drawing.Point(665, 452);
+            this.ComisionesBtnRechazar.Name = "ComisionesBtnRechazar";
             this.ComisionesBtnRechazar.Size = new System.Drawing.Size(170, 38);
+            this.ComisionesBtnRechazar.TabIndex = 6;
             this.ComisionesBtnRechazar.Text = "Rechazar";
-            this.ComisionesBtnAprobar.BackColor = System.Drawing.Color.FromArgb(123, 63, 147);
+            this.ComisionesBtnRechazar.UseVisualStyleBackColor = false;
+            // 
+            // ComisionesBtnAprobar
+            // 
+            this.ComisionesBtnAprobar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(63)))), ((int)(((byte)(147)))));
             this.ComisionesBtnAprobar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ComisionesBtnAprobar.ForeColor = System.Drawing.Color.White;
             this.ComisionesBtnAprobar.Location = new System.Drawing.Point(846, 452);
+            this.ComisionesBtnAprobar.Name = "ComisionesBtnAprobar";
             this.ComisionesBtnAprobar.Size = new System.Drawing.Size(176, 38);
+            this.ComisionesBtnAprobar.TabIndex = 7;
             this.ComisionesBtnAprobar.Text = "Aprobar comisión";
+            this.ComisionesBtnAprobar.UseVisualStyleBackColor = false;
+            // 
+            // ComisionesPnlPieAutorizacion
+            // 
             this.ComisionesPnlPieAutorizacion.BackColor = System.Drawing.Color.White;
             this.ComisionesPnlPieAutorizacion.Controls.Add(this.ComisionesLblAvisoEnvio);
             this.ComisionesPnlPieAutorizacion.Controls.Add(this.ComisionesBtnEnviar);
             this.ComisionesPnlPieAutorizacion.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.ComisionesPnlPieAutorizacion.Location = new System.Drawing.Point(10, 462);
+            this.ComisionesPnlPieAutorizacion.Name = "ComisionesPnlPieAutorizacion";
             this.ComisionesPnlPieAutorizacion.Size = new System.Drawing.Size(1032, 60);
+            this.ComisionesPnlPieAutorizacion.TabIndex = 8;
+            // 
+            // ComisionesLblAvisoEnvio
+            // 
             this.ComisionesLblAvisoEnvio.AutoSize = true;
-            this.ComisionesLblAvisoEnvio.ForeColor = System.Drawing.Color.FromArgb(112, 102, 117);
+            this.ComisionesLblAvisoEnvio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(102)))), ((int)(((byte)(117)))));
             this.ComisionesLblAvisoEnvio.Location = new System.Drawing.Point(20, 21);
+            this.ComisionesLblAvisoEnvio.Name = "ComisionesLblAvisoEnvio";
+            this.ComisionesLblAvisoEnvio.Size = new System.Drawing.Size(555, 23);
+            this.ComisionesLblAvisoEnvio.TabIndex = 0;
             this.ComisionesLblAvisoEnvio.Text = "Al aprobar, el resumen queda listo para envío a Contabilidad / Nómina.";
-            this.ComisionesBtnEnviar.BackColor = System.Drawing.Color.FromArgb(123, 63, 147);
+            // 
+            // ComisionesBtnEnviar
+            // 
+            this.ComisionesBtnEnviar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(63)))), ((int)(((byte)(147)))));
             this.ComisionesBtnEnviar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ComisionesBtnEnviar.ForeColor = System.Drawing.Color.White;
             this.ComisionesBtnEnviar.Location = new System.Drawing.Point(760, 9);
+            this.ComisionesBtnEnviar.Name = "ComisionesBtnEnviar";
             this.ComisionesBtnEnviar.Size = new System.Drawing.Size(262, 42);
+            this.ComisionesBtnEnviar.TabIndex = 1;
             this.ComisionesBtnEnviar.Text = "Enviar resumen aprobado";
-            // Ventana modal
+            this.ComisionesBtnEnviar.UseVisualStyleBackColor = false;
+            // 
+            // FrmComisionesVendedoresVentas
+            // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.Color.FromArgb(248, 245, 249);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
             this.ClientSize = new System.Drawing.Size(1060, 660);
-            this.ControlBox = true;
+            this.Controls.Add(this.ComisionesTabControl);
+            this.Controls.Add(this.ComisionesPnlEncabezado);
             this.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.ForeColor = System.Drawing.Color.FromArgb(59, 29, 74);
+            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Icon = global::CapaVista_Ventas.Properties.Resources.ComisionesVentasIcon;
+            this.Icon = global::CapaVista_Ventas.Properties.Resources.IconoVentas;
             this.MaximizeBox = false;
-            this.MinimizeBox = true;
             this.Name = "FrmComisionesVendedoresVentas";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "7008 – ComisionesVendedores";
-            this.Controls.Add(this.ComisionesTabControl);
-            this.Controls.Add(this.ComisionesPnlEncabezado);
-            ((System.ComponentModel.ISupportInitialize)(this.ComisionesPicMarca)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ComisionesDgvVentas)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ComisionesDgvHistorial)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ComisionesDgvAutorizacion)).EndInit();
             this.ComisionesPnlEncabezado.ResumeLayout(false);
             this.ComisionesPnlEncabezado.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ComisionesPicMarca)).EndInit();
             this.ComisionesTabControl.ResumeLayout(false);
             this.ComisionesTabCalculo.ResumeLayout(false);
             this.ComisionesTabCalculo.PerformLayout();
-            this.ComisionesTabConsulta.ResumeLayout(false);
-            this.ComisionesTabConsulta.PerformLayout();
-            this.ComisionesTabAutorizacion.ResumeLayout(false);
-            this.ComisionesTabAutorizacion.PerformLayout();
             this.ComisionesPnlCardVentas.ResumeLayout(false);
             this.ComisionesPnlCardVentas.PerformLayout();
             this.ComisionesPnlCardMonto.ResumeLayout(false);
             this.ComisionesPnlCardMonto.PerformLayout();
             this.ComisionesPnlCardEstado.ResumeLayout(false);
             this.ComisionesPnlCardEstado.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ComisionesDgvVentas)).EndInit();
             this.ComisionesPnlPieCalculo.ResumeLayout(false);
             this.ComisionesPnlPieCalculo.PerformLayout();
+            this.ComisionesTabConsulta.ResumeLayout(false);
+            this.ComisionesTabConsulta.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ComisionesDgvHistorial)).EndInit();
             this.ComisionesPnlHistorialCard1.ResumeLayout(false);
             this.ComisionesPnlHistorialCard1.PerformLayout();
             this.ComisionesPnlHistorialCard2.ResumeLayout(false);
             this.ComisionesPnlHistorialCard2.PerformLayout();
             this.ComisionesPnlHistorialCard3.ResumeLayout(false);
             this.ComisionesPnlHistorialCard3.PerformLayout();
+            this.ComisionesTabAutorizacion.ResumeLayout(false);
+            this.ComisionesTabAutorizacion.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ComisionesDgvAutorizacion)).EndInit();
             this.ComisionesPnlResumen.ResumeLayout(false);
             this.ComisionesPnlResumen.PerformLayout();
             this.ComisionesPnlPieAutorizacion.ResumeLayout(false);
             this.ComisionesPnlPieAutorizacion.PerformLayout();
             this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.DataGridViewTextBoxColumn ComisionesVentaFecha;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ComisionesVentaDocumento;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ComisionesVentaCliente;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ComisionesVentaBase;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ComisionesVentaTasa;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ComisionesVentaImporte;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ComisionesVentaEstado;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ComisionesHistorialPeriodo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ComisionesHistorialVendedor;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ComisionesHistorialVentas;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ComisionesHistorialImporte;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ComisionesHistorialDocumento;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ComisionesHistorialEstado;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ComisionesAutorizacionPeriodo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ComisionesAutorizacionVendedor;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ComisionesAutorizacionVentas;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ComisionesAutorizacionMonto;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ComisionesAutorizacionSolicitada;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ComisionesAutorizacionEstado;
     }
 }
 
-// FIN DEL CÓDIGO — Jose Torres | Carné: 0901-23-1091 | Fecha: 10/10/2026
+// FIN DEL CÓDIGO — Jose Torres | Carné: 0901-23-1091 | Fecha: 12/10/2026

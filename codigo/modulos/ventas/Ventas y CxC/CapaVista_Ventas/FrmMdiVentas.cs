@@ -1,6 +1,6 @@
 ﻿/*
  * INICIO DEL CÓDIGO — Jose Torres
- * Carné: 0901-23-1091 | Fecha: 10/10/2026
+ * Carné: 0901-23-1091 | Fecha: 12/10/2026
  * Área: Ventas y cuentas por cobrar
  * Propósito: Presentar el dashboard, sus indicadores y la navegación del módulo de Ventas.
  */
@@ -152,11 +152,28 @@ namespace CapaVista_Ventas
             }
         }
 
-        // Abre la opción de cotizaciones, pedidos y facturas.
-        private void VentasBtnCotizacionesPedidosFacturas_Click(object sender, EventArgs e)
+        // Abre el formulario independiente de cotizaciones.
+        private void VentasBtnCotizaciones_Click(object sender, EventArgs e)
         {
-            // Abre la base de trabajo del equipo como ventana modal sobre el MDI.
-            using (FrmCotizacionesPedidosFacturasVentas Formulario = new FrmCotizacionesPedidosFacturasVentas())
+            using (FrmCotizacionVentas Formulario = new FrmCotizacionVentas())
+            {
+                Formulario.ShowDialog(this);
+            }
+        }
+
+        // Abre el formulario independiente de pedidos.
+        private void VentasBtnPedidos_Click(object sender, EventArgs e)
+        {
+            using (FrmPedidoVentas Formulario = new FrmPedidoVentas())
+            {
+                Formulario.ShowDialog(this);
+            }
+        }
+
+        // Abre el formulario independiente de facturas.
+        private void VentasBtnFacturas_Click(object sender, EventArgs e)
+        {
+            using (FrmFacturas Formulario = new FrmFacturas())
             {
                 Formulario.ShowDialog(this);
             }
@@ -212,4 +229,4 @@ namespace CapaVista_Ventas
     }
 }
 
-// FIN DEL CÓDIGO — Jose Torres | Carné: 0901-23-1091 | Fecha: 10/10/2026
+// FIN DEL CÓDIGO — Jose Torres | Carné: 0901-23-1091 | Fecha: 12/10/2026

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="15.0">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -208,12 +208,15 @@
   <ItemGroup>
     <Compile Include="FrmMovimientosClientesVentas.cs">
       <SubType>Form</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="FrmMovimientosClientesVentas.Designer.cs">
       <DependentUpon>FrmMovimientosClientesVentas.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <EmbeddedResource Include="FrmMovimientosClientesVentas.resx">
       <DependentUpon>FrmMovimientosClientesVentas.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
     <Compile Include="FrmRecepcionPagosVentas.cs">
       <SubType>Form</SubType>
@@ -233,14 +236,14 @@
     <EmbeddedResource Include="FrmReportesVentas.resx">
       <DependentUpon>FrmReportesVentas.cs</DependentUpon>
     </EmbeddedResource>
-    <Compile Include="FrmCotizacionesPedidosFacturasVentas.cs">
+    <Compile Include="FrmFacturas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmCotizacionesPedidosFacturasVentas.Designer.cs">
-      <DependentUpon>FrmCotizacionesPedidosFacturasVentas.cs</DependentUpon>
+    <Compile Include="FrmFacturas.Designer.cs">
+      <DependentUpon>FrmFacturas.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="FrmCotizacionesPedidosFacturasVentas.resx">
-      <DependentUpon>FrmCotizacionesPedidosFacturasVentas.cs</DependentUpon>
+    <EmbeddedResource Include="FrmFacturas.resx">
+      <DependentUpon>FrmFacturas.cs</DependentUpon>
     </EmbeddedResource>
     <Compile Include="FrmComisionesVendedoresVentas.cs">
       <SubType>Form</SubType>
@@ -268,6 +271,17 @@
     </Compile>
     <EmbeddedResource Include="FrmCierreMovimientosVentas.resx">
       <DependentUpon>FrmCierreMovimientosVentas.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmCotizacionVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCotizacionVentas.Designer.cs">
+      <DependentUpon>FrmCotizacionVentas.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FrmCotizacionVentas.resx">
+      <DependentUpon>FrmCotizacionVentas.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
 </Project>

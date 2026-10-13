@@ -2,22 +2,17 @@
  * INICIO DEL CÓDIGO — Jose Torres
  * Carné: 0901-23-1091 | Fecha: 12/10/2026
  * Área: Ventas y cuentas por cobrar
- * Propósito: Mantener una base vacía para desarrollar cotizaciones, pedidos y facturas.
+ * Propósito: Prototipo visual estandarizado de cotizaciones, sin lógica de negocio.
  */
 using System.Windows.Forms;
 
 namespace CapaVista_Ventas
 {
-    public partial class FrmCotizacionesPedidosFacturasVentas : Form
+    public partial class FrmCotizacionVentas : Form
     {
-        public FrmCotizacionesPedidosFacturasVentas()
+        public FrmCotizacionVentas()
         {
             InitializeComponent();
-        }
-
-        private void label2_Click(object sender, System.EventArgs e)
-        {
-
         }
     }
 }

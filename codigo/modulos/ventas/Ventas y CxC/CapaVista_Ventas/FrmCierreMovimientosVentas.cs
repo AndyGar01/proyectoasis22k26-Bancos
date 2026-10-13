@@ -1,8 +1,8 @@
 ﻿/*
  * INICIO DEL CÓDIGO — Jose Torres
- * Carné: 0901-23-1091 | Fecha: 10/10/2026
+ * Carné: 0901-23-1091 | Fecha: 12/10/2026
  * Área: Ventas y cuentas por cobrar
- * Propósito: Dejar una base vacía y editable para cierre de movimientos.
+ * Propósito: Mostrar únicamente el diseño estandarizado de cierre de movimientos.
  */
 using System.Windows.Forms;
 
@@ -13,9 +13,8 @@ namespace CapaVista_Ventas
         public FrmCierreMovimientosVentas()
         {
             InitializeComponent();
-            // Formulario vacío: el equipo agregará sus controles desde el diseñador.
         }
     }
 }
 
-// FIN DEL CÓDIGO — Jose Torres | Carné: 0901-23-1091 | Fecha: 10/10/2026
+// FIN DEL CÓDIGO — Jose Torres | Carné: 0901-23-1091 | Fecha: 12/10/2026

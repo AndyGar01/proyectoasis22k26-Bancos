@@ -1,6 +1,6 @@
 ﻿/*
  * INICIO DEL CÓDIGO — Jose Torres
- * Carné: 0901-23-1091 | Fecha: 10/10/2026
+ * Carné: 0901-23-1091 | Fecha: 12/10/2026
  * Área: Ventas y cuentas por cobrar
  * Propósito: Declarar controles estándar editables, su distribución, iconos y propiedades visuales del MDI.
  */
@@ -57,7 +57,9 @@ namespace CapaVista_Ventas
             this.VentasBtnMovimientosClientes = new System.Windows.Forms.Button();
             this.VentasBtnRecepcionPagos = new System.Windows.Forms.Button();
             this.VentasBtnReportes = new System.Windows.Forms.Button();
-            this.VentasBtnCotizacionesPedidosFacturas = new System.Windows.Forms.Button();
+            this.VentasBtnCotizaciones = new System.Windows.Forms.Button();
+            this.VentasBtnPedidos = new System.Windows.Forms.Button();
+            this.VentasBtnFacturas = new System.Windows.Forms.Button();
             this.VentasBtnComisionesVendedores = new System.Windows.Forms.Button();
             this.VentasBtnMantenimientos = new System.Windows.Forms.Button();
             this.VentasBtnCierreMovimientos = new System.Windows.Forms.Button();
@@ -467,26 +469,30 @@ namespace CapaVista_Ventas
             this.VentasTlpMenu.Controls.Add(this.VentasBtnMovimientosClientes, 0, 3);
             this.VentasTlpMenu.Controls.Add(this.VentasBtnRecepcionPagos, 0, 4);
             this.VentasTlpMenu.Controls.Add(this.VentasBtnReportes, 0, 5);
-            this.VentasTlpMenu.Controls.Add(this.VentasBtnCotizacionesPedidosFacturas, 0, 6);
-            this.VentasTlpMenu.Controls.Add(this.VentasBtnComisionesVendedores, 0, 7);
-            this.VentasTlpMenu.Controls.Add(this.VentasBtnMantenimientos, 0, 8);
-            this.VentasTlpMenu.Controls.Add(this.VentasBtnCierreMovimientos, 0, 9);
-            this.VentasTlpMenu.Controls.Add(this.VentasBtnCerrarSesion, 0, 10);
+            this.VentasTlpMenu.Controls.Add(this.VentasBtnCotizaciones, 0, 6);
+            this.VentasTlpMenu.Controls.Add(this.VentasBtnPedidos, 0, 7);
+            this.VentasTlpMenu.Controls.Add(this.VentasBtnFacturas, 0, 8);
+            this.VentasTlpMenu.Controls.Add(this.VentasBtnComisionesVendedores, 0, 9);
+            this.VentasTlpMenu.Controls.Add(this.VentasBtnMantenimientos, 0, 10);
+            this.VentasTlpMenu.Controls.Add(this.VentasBtnCierreMovimientos, 0, 11);
+            this.VentasTlpMenu.Controls.Add(this.VentasBtnCerrarSesion, 0, 12);
             this.VentasTlpMenu.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left;
             this.VentasTlpMenu.Location = new System.Drawing.Point(6, 8);
             this.VentasTlpMenu.Name = "VentasTlpMenu";
-            this.VentasTlpMenu.RowCount = 11;
-            this.VentasTlpMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 127F));
-            this.VentasTlpMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.VentasTlpMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.VentasTlpMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.VentasTlpMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.VentasTlpMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.VentasTlpMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.VentasTlpMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.VentasTlpMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.VentasTlpMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.VentasTlpMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.VentasTlpMenu.RowCount = 13;
+            this.VentasTlpMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 100F));
+            this.VentasTlpMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.333333F));
+            this.VentasTlpMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.333333F));
+            this.VentasTlpMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.333333F));
+            this.VentasTlpMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.333333F));
+            this.VentasTlpMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.333333F));
+            this.VentasTlpMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.333333F));
+            this.VentasTlpMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.333333F));
+            this.VentasTlpMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.333333F));
+            this.VentasTlpMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.333333F));
+            this.VentasTlpMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.333333F));
+            this.VentasTlpMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.333333F));
+            this.VentasTlpMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.333333F));
             this.VentasTlpMenu.Size = new System.Drawing.Size(258, 982);
             this.VentasTlpMenu.TabIndex = 0;
             // 
@@ -667,40 +673,106 @@ namespace CapaVista_Ventas
             this.VentasBtnReportes.Click += new System.EventHandler(this.VentasBtnReportes_Click);
             this.VentasBtnReportes.MouseEnter += new System.EventHandler(this.VentasBtnOpcion_MouseEnter);
             this.VentasBtnReportes.MouseLeave += new System.EventHandler(this.VentasBtnOpcion_MouseLeave);
-            // 
-            // VentasBtnCotizacionesPedidosFacturas
-            // 
-            this.VentasBtnCotizacionesPedidosFacturas.AccessibleName = "Cotizaciones, pedidos y facturas";
-            this.VentasBtnCotizacionesPedidosFacturas.BackColor = System.Drawing.Color.Transparent;
-            this.VentasBtnCotizacionesPedidosFacturas.BackgroundImage = global::CapaVista_Ventas.Properties.Resources.BotonMenuNormalVentas;
-            this.VentasBtnCotizacionesPedidosFacturas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.VentasBtnCotizacionesPedidosFacturas.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.VentasBtnCotizacionesPedidosFacturas.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.VentasBtnCotizacionesPedidosFacturas.FlatAppearance.BorderSize = 0;
-            this.VentasBtnCotizacionesPedidosFacturas.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.VentasBtnCotizacionesPedidosFacturas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.VentasBtnCotizacionesPedidosFacturas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.VentasBtnCotizacionesPedidosFacturas.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.VentasBtnCotizacionesPedidosFacturas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
-            this.VentasBtnCotizacionesPedidosFacturas.Location = new System.Drawing.Point(0, 591);
-            this.VentasBtnCotizacionesPedidosFacturas.Margin = new System.Windows.Forms.Padding(0, 2, 0, 2);
-            this.VentasBtnCotizacionesPedidosFacturas.Name = "VentasBtnCotizacionesPedidosFacturas";
-            this.VentasBtnCotizacionesPedidosFacturas.Image = global::CapaVista_Ventas.Properties.Resources.IconoCotizacionesPedidosFacturasVentas;
-            this.VentasBtnCotizacionesPedidosFacturas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.VentasBtnCotizacionesPedidosFacturas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.VentasBtnCotizacionesPedidosFacturas.Padding = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.VentasBtnCotizacionesPedidosFacturas.Size = new System.Drawing.Size(258, 73);
-            this.VentasBtnCotizacionesPedidosFacturas.TabIndex = 5;
-            this.VentasBtnCotizacionesPedidosFacturas.Tag = "CotizacionesPedidosFacturas";
-            this.VentasBtnCotizacionesPedidosFacturas.Text = "Cotizaciones, pedidos\r\ny facturas";
-            this.VentasBtnCotizacionesPedidosFacturas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.VentasTtpMenu.SetToolTip(this.VentasBtnCotizacionesPedidosFacturas, "Cotizaciones, pedidos y facturas");
-            this.VentasBtnCotizacionesPedidosFacturas.UseCompatibleTextRendering = true;
-            this.VentasBtnCotizacionesPedidosFacturas.UseVisualStyleBackColor = false;
-            this.VentasBtnCotizacionesPedidosFacturas.Click += new System.EventHandler(this.VentasBtnCotizacionesPedidosFacturas_Click);
-            this.VentasBtnCotizacionesPedidosFacturas.MouseEnter += new System.EventHandler(this.VentasBtnOpcion_MouseEnter);
-            this.VentasBtnCotizacionesPedidosFacturas.MouseLeave += new System.EventHandler(this.VentasBtnOpcion_MouseLeave);
-            // 
+            //
+            // VentasBtnCotizaciones
+            //
+            this.VentasBtnCotizaciones.AccessibleName = "Cotizaciones";
+            this.VentasBtnCotizaciones.BackColor = System.Drawing.Color.Transparent;
+            this.VentasBtnCotizaciones.BackgroundImage = global::CapaVista_Ventas.Properties.Resources.BotonMenuNormalVentas;
+            this.VentasBtnCotizaciones.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.VentasBtnCotizaciones.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.VentasBtnCotizaciones.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.VentasBtnCotizaciones.FlatAppearance.BorderSize = 0;
+            this.VentasBtnCotizaciones.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.VentasBtnCotizaciones.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.VentasBtnCotizaciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.VentasBtnCotizaciones.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.VentasBtnCotizaciones.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
+            this.VentasBtnCotizaciones.Location = new System.Drawing.Point(0, 591);
+            this.VentasBtnCotizaciones.Margin = new System.Windows.Forms.Padding(0, 2, 0, 2);
+            this.VentasBtnCotizaciones.Name = "VentasBtnCotizaciones";
+            this.VentasBtnCotizaciones.Image = global::CapaVista_Ventas.Properties.Resources.IconoMovimientosClientesVentas;
+            this.VentasBtnCotizaciones.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.VentasBtnCotizaciones.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.VentasBtnCotizaciones.Padding = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.VentasBtnCotizaciones.Size = new System.Drawing.Size(258, 73);
+            this.VentasBtnCotizaciones.TabIndex = 5;
+            this.VentasBtnCotizaciones.Tag = "Cotizaciones";
+            this.VentasBtnCotizaciones.Text = "Cotizaciones";
+            this.VentasBtnCotizaciones.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.VentasTtpMenu.SetToolTip(this.VentasBtnCotizaciones, "Cotizaciones");
+            this.VentasBtnCotizaciones.UseCompatibleTextRendering = true;
+            this.VentasBtnCotizaciones.UseVisualStyleBackColor = false;
+            this.VentasBtnCotizaciones.Click += new System.EventHandler(this.VentasBtnCotizaciones_Click);
+            this.VentasBtnCotizaciones.MouseEnter += new System.EventHandler(this.VentasBtnOpcion_MouseEnter);
+            this.VentasBtnCotizaciones.MouseLeave += new System.EventHandler(this.VentasBtnOpcion_MouseLeave);
+            //
+            // VentasBtnPedidos
+            //
+            this.VentasBtnPedidos.AccessibleName = "Pedidos";
+            this.VentasBtnPedidos.BackColor = System.Drawing.Color.Transparent;
+            this.VentasBtnPedidos.BackgroundImage = global::CapaVista_Ventas.Properties.Resources.BotonMenuNormalVentas;
+            this.VentasBtnPedidos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.VentasBtnPedidos.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.VentasBtnPedidos.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.VentasBtnPedidos.FlatAppearance.BorderSize = 0;
+            this.VentasBtnPedidos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.VentasBtnPedidos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.VentasBtnPedidos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.VentasBtnPedidos.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.VentasBtnPedidos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
+            this.VentasBtnPedidos.Location = new System.Drawing.Point(0, 591);
+            this.VentasBtnPedidos.Margin = new System.Windows.Forms.Padding(0, 2, 0, 2);
+            this.VentasBtnPedidos.Name = "VentasBtnPedidos";
+            this.VentasBtnPedidos.Image = global::CapaVista_Ventas.Properties.Resources.IconoRecepcionPagosVentas;
+            this.VentasBtnPedidos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.VentasBtnPedidos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.VentasBtnPedidos.Padding = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.VentasBtnPedidos.Size = new System.Drawing.Size(258, 73);
+            this.VentasBtnPedidos.TabIndex = 6;
+            this.VentasBtnPedidos.Tag = "Pedidos";
+            this.VentasBtnPedidos.Text = "Pedidos";
+            this.VentasBtnPedidos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.VentasTtpMenu.SetToolTip(this.VentasBtnPedidos, "Pedidos");
+            this.VentasBtnPedidos.UseCompatibleTextRendering = true;
+            this.VentasBtnPedidos.UseVisualStyleBackColor = false;
+            this.VentasBtnPedidos.Click += new System.EventHandler(this.VentasBtnPedidos_Click);
+            this.VentasBtnPedidos.MouseEnter += new System.EventHandler(this.VentasBtnOpcion_MouseEnter);
+            this.VentasBtnPedidos.MouseLeave += new System.EventHandler(this.VentasBtnOpcion_MouseLeave);
+            //
+            // VentasBtnFacturas
+            //
+            this.VentasBtnFacturas.AccessibleName = "Facturas";
+            this.VentasBtnFacturas.BackColor = System.Drawing.Color.Transparent;
+            this.VentasBtnFacturas.BackgroundImage = global::CapaVista_Ventas.Properties.Resources.BotonMenuNormalVentas;
+            this.VentasBtnFacturas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.VentasBtnFacturas.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.VentasBtnFacturas.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.VentasBtnFacturas.FlatAppearance.BorderSize = 0;
+            this.VentasBtnFacturas.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.VentasBtnFacturas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.VentasBtnFacturas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.VentasBtnFacturas.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.VentasBtnFacturas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
+            this.VentasBtnFacturas.Location = new System.Drawing.Point(0, 591);
+            this.VentasBtnFacturas.Margin = new System.Windows.Forms.Padding(0, 2, 0, 2);
+            this.VentasBtnFacturas.Name = "VentasBtnFacturas";
+            this.VentasBtnFacturas.Image = global::CapaVista_Ventas.Properties.Resources.IconoCotizacionesPedidosFacturasVentas;
+            this.VentasBtnFacturas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.VentasBtnFacturas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.VentasBtnFacturas.Padding = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.VentasBtnFacturas.Size = new System.Drawing.Size(258, 73);
+            this.VentasBtnFacturas.TabIndex = 7;
+            this.VentasBtnFacturas.Tag = "Facturas";
+            this.VentasBtnFacturas.Text = "Facturas";
+            this.VentasBtnFacturas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.VentasTtpMenu.SetToolTip(this.VentasBtnFacturas, "Facturas");
+            this.VentasBtnFacturas.UseCompatibleTextRendering = true;
+            this.VentasBtnFacturas.UseVisualStyleBackColor = false;
+            this.VentasBtnFacturas.Click += new System.EventHandler(this.VentasBtnFacturas_Click);
+            this.VentasBtnFacturas.MouseEnter += new System.EventHandler(this.VentasBtnOpcion_MouseEnter);
+            this.VentasBtnFacturas.MouseLeave += new System.EventHandler(this.VentasBtnOpcion_MouseLeave);
+            //
             // VentasBtnComisionesVendedores
             // 
             this.VentasBtnComisionesVendedores.AccessibleName = "Comisiones de vendedores";
@@ -723,7 +795,7 @@ namespace CapaVista_Ventas
             this.VentasBtnComisionesVendedores.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.VentasBtnComisionesVendedores.Padding = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.VentasBtnComisionesVendedores.Size = new System.Drawing.Size(258, 73);
-            this.VentasBtnComisionesVendedores.TabIndex = 6;
+            this.VentasBtnComisionesVendedores.TabIndex = 8;
             this.VentasBtnComisionesVendedores.Tag = "ComisionesVendedores";
             this.VentasBtnComisionesVendedores.Text = "Comisiones de vendedores";
             this.VentasBtnComisionesVendedores.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -756,7 +828,7 @@ namespace CapaVista_Ventas
             this.VentasBtnMantenimientos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.VentasBtnMantenimientos.Padding = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.VentasBtnMantenimientos.Size = new System.Drawing.Size(258, 73);
-            this.VentasBtnMantenimientos.TabIndex = 7;
+            this.VentasBtnMantenimientos.TabIndex = 9;
             this.VentasBtnMantenimientos.Tag = "Mantenimientos";
             this.VentasBtnMantenimientos.Text = "Mantenimientos";
             this.VentasBtnMantenimientos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -789,7 +861,7 @@ namespace CapaVista_Ventas
             this.VentasBtnCierreMovimientos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.VentasBtnCierreMovimientos.Padding = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.VentasBtnCierreMovimientos.Size = new System.Drawing.Size(258, 73);
-            this.VentasBtnCierreMovimientos.TabIndex = 8;
+            this.VentasBtnCierreMovimientos.TabIndex = 10;
             this.VentasBtnCierreMovimientos.Tag = "CierreMovimientos";
             this.VentasBtnCierreMovimientos.Text = "Cierre de movimientos";
             this.VentasBtnCierreMovimientos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -822,7 +894,7 @@ namespace CapaVista_Ventas
             this.VentasBtnCerrarSesion.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.VentasBtnCerrarSesion.Padding = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.VentasBtnCerrarSesion.Size = new System.Drawing.Size(258, 81);
-            this.VentasBtnCerrarSesion.TabIndex = 9;
+            this.VentasBtnCerrarSesion.TabIndex = 11;
             this.VentasBtnCerrarSesion.Tag = "CerrarSesion";
             this.VentasBtnCerrarSesion.Text = "Cerrar sesión";
             this.VentasBtnCerrarSesion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1349,7 +1421,9 @@ namespace CapaVista_Ventas
         private System.Windows.Forms.Button VentasBtnMovimientosClientes;
         private System.Windows.Forms.Button VentasBtnRecepcionPagos;
         private System.Windows.Forms.Button VentasBtnReportes;
-        private System.Windows.Forms.Button VentasBtnCotizacionesPedidosFacturas;
+        private System.Windows.Forms.Button VentasBtnCotizaciones;
+        private System.Windows.Forms.Button VentasBtnPedidos;
+        private System.Windows.Forms.Button VentasBtnFacturas;
         private System.Windows.Forms.Button VentasBtnComisionesVendedores;
         private System.Windows.Forms.Button VentasBtnMantenimientos;
         private System.Windows.Forms.Button VentasBtnCierreMovimientos;
@@ -1385,4 +1459,4 @@ namespace CapaVista_Ventas
     }
 }
 
-// FIN DEL CÓDIGO — Jose Torres | Carné: 0901-23-1091 | Fecha: 10/10/2026
+// FIN DEL CÓDIGO — Jose Torres | Carné: 0901-23-1091 | Fecha: 12/10/2026

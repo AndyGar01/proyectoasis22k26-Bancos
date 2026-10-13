@@ -29,7 +29,7 @@ color 0A
 :: ---------------------------------------------------------------------------
 :: Si tienes Professional o Enterprise, cambia "Community" por la edicion.
 set "MSBUILD_PATH=C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\MSBuild.exe"
-set "COMP=C:\proyectoasis22k26-Navegador\codigo\componentes"
+set "COMP=C:\proyectoasis22k26\codigo\componentes"
 
 set "ROOT_DIR=%~dp0"
 cd /d "%ROOT_DIR%"
@@ -172,7 +172,11 @@ echo Compilando: %~nx1
 echo ------------------------------------------------
 echo. >> "%LOG%"
 echo ##### %~1 >> "%LOG%"
-"%MSBUILD_PATH%" "%~1" /restore /t:Rebuild /p:Configuration=Debug /v:minimal >> "%LOG%" 2>&1
+if /i "%~x1"==".csproj" (
+    "%MSBUILD_PATH%" "%~1" /restore /p:RestorePackagesConfig=true /p:SolutionDir="%~dp1..\\" /t:Rebuild /p:Configuration=Debug /v:minimal >> "%LOG%" 2>&1
+) else (
+    "%MSBUILD_PATH%" "%~1" /restore /t:Rebuild /p:Configuration=Debug /v:minimal >> "%LOG%" 2>&1
+)
 if errorlevel 1 (
     echo [ERROR] %~nx1  ^(ver log^)
     echo [ERROR] %~1 >> "%LOG%"

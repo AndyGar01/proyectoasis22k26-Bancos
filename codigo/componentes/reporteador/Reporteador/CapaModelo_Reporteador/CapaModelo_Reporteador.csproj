@@ -31,6 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CapaVista_BtnLimpiar_Reporteador">
+      <HintPath>..\..\BtnLimpiar_Reporteador\CapaVista_BtnLimpiar_Reporteador\bin\Debug\CapaVista_BtnLimpiar_Reporteador.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -43,6 +46,7 @@
   <ItemGroup>
     <Compile Include="Contratos\ClsIRepositorioGenerico.cs" />
     <Compile Include="Contratos\ClsIRepositorioReporteador.cs" />
+    <Compile Include="Entidades\ClsAplicacionReporteador.cs" />
     <Compile Include="Entidades\ClsReporteador.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositorios\ClsRepositorio.cs" />

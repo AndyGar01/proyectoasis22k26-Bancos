@@ -15,7 +15,7 @@ namespace CapaVista_Seguridad
         public FrmNavegador()
         {
             InitializeComponent();
-            navegador1.NavegadorMetConfigurar("tblbitacora", 4, 5);
+            navegador1.NavegadorMetConfigurar("tblempleado", 4, 5);
         }
     }
 }

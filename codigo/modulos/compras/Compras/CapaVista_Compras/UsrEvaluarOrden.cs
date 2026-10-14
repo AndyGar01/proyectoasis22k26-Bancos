@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CapaVista_Compras.Componentes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,7 +11,7 @@ using System.Windows.Forms;
 
 namespace CapaVista_Compras
 {
-    public partial class UsrEvaluarOrden : UserControl
+    public partial class UsrEvaluarOrden : UsrBaseCompras
     {
         public UsrEvaluarOrden()
         {

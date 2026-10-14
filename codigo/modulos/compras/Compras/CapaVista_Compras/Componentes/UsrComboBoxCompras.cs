@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
@@ -9,7 +9,7 @@ namespace CapaVista_Compras.Componentes
     [DefaultEvent("SelectedIndexChanged")]
     public partial class UsrComboBoxCompras : UserControl
     {
-        
+
         private bool _ErrorVisible;
         private bool _MostrarEtiquetaError = true;
         private int _AlturaEtiquetaError = 22;
@@ -50,8 +50,8 @@ namespace CapaVista_Compras.Componentes
 
         private void ComprasProcActualizarEspacioError()
         {
-            if (ComprasUsrError == null || ComprasTlpMain == null) return;
-            using (new ClsActualizacionDisenoCompras(ComprasTlpMain))
+            if (ComprasUsrError == null || _ComprasTlpMain == null) return;
+            using (new ClsActualizacionDisenoCompras(_ComprasTlpMain))
             {
                 int Altura = Math.Max(_AlturaEtiquetaError, _AlturaErrorAmpliada);
                 int AlturaFila = _MostrarEtiquetaError ? Altura + ComprasUsrError.Margin.Vertical : 0;
@@ -60,7 +60,7 @@ namespace CapaVista_Compras.Componentes
                 ComprasUsrError.MinimumSize = Size.Empty;
                 ComprasUsrError.MaximumSize = new Size(0, Altura);
                 ComprasUsrError.Visible = _MostrarEtiquetaError;
-                ClsActualizacionDisenoCompras.ComprasProcAltura(ComprasTlpMain.RowStyles[1], AlturaFila);
+                ClsActualizacionDisenoCompras.ComprasProcAltura(_ComprasTlpMain.RowStyles[1], AlturaFila);
                 if (Diferencia != 0) Height = Math.Max(1, Height + Diferencia);
             }
         }
@@ -70,24 +70,24 @@ namespace CapaVista_Compras.Componentes
             InitializeComponent();
             DoubleBuffered = true;
             ComprasUsrError.ComprasProcConservarRojo();
-            ComprasCboEntrada.TextChanged += (Sender, Evento) => ComprasProcTextoCambiado(Evento);
-            Enter += (Sender, Evento) => ComprasCboEntrada.Focus();
-            ComprasCboEntrada.KeyDown += (Sender, Evento) => OnKeyDown(Evento);
-            ComprasCboEntrada.KeyPress += (Sender, Evento) => OnKeyPress(Evento);
-            ComprasCboEntrada.KeyUp += (Sender, Evento) => OnKeyUp(Evento);
-            ComprasCboEntrada.MouseClick += (Sender, Evento) => OnMouseClick(Evento);
-            ComprasCboEntrada.Enter += (Sender, Evento) => ComprasProcActualizarBorde();
-            ComprasCboEntrada.Leave += (Sender, Evento) => ComprasProcActualizarBorde();
-            ComprasCboEntrada.SelectedIndexChanged += (Sender, Evento) =>
+            _ComprasCboEntrada.TextChanged += (Sender, Evento) => ComprasProcTextoCambiado(Evento);
+            Enter += (Sender, Evento) => _ComprasCboEntrada.Focus();
+            _ComprasCboEntrada.KeyDown += (Sender, Evento) => OnKeyDown(Evento);
+            _ComprasCboEntrada.KeyPress += (Sender, Evento) => OnKeyPress(Evento);
+            _ComprasCboEntrada.KeyUp += (Sender, Evento) => OnKeyUp(Evento);
+            _ComprasCboEntrada.MouseClick += (Sender, Evento) => OnMouseClick(Evento);
+            _ComprasCboEntrada.Enter += (Sender, Evento) => ComprasProcActualizarBorde();
+            _ComprasCboEntrada.Leave += (Sender, Evento) => ComprasProcActualizarBorde();
+            _ComprasCboEntrada.SelectedIndexChanged += (Sender, Evento) =>
             {
                 ComprasMetLimpiarError();
                 SelectedIndexChanged?.Invoke(this, Evento);
             };
-            ComprasCboEntrada.SelectedValueChanged += (Sender, Evento) => SelectedValueChanged?.Invoke(this, Evento);
-            ComprasCboEntrada.SelectionChangeCommitted += (Sender, Evento) => SelectionChangeCommitted?.Invoke(this, Evento);
-            ComprasCboEntrada.DropDown += (Sender, Evento) => DropDown?.Invoke(this, Evento);
-            ComprasCboEntrada.DropDownClosed += (Sender, Evento) => DropDownClosed?.Invoke(this, Evento);
-            ComprasCboEntrada.DataSourceChanged += (Sender, Evento) => DataSourceChanged?.Invoke(this, Evento);
+            _ComprasCboEntrada.SelectedValueChanged += (Sender, Evento) => SelectedValueChanged?.Invoke(this, Evento);
+            _ComprasCboEntrada.SelectionChangeCommitted += (Sender, Evento) => SelectionChangeCommitted?.Invoke(this, Evento);
+            _ComprasCboEntrada.DropDown += (Sender, Evento) => DropDown?.Invoke(this, Evento);
+            _ComprasCboEntrada.DropDownClosed += (Sender, Evento) => DropDownClosed?.Invoke(this, Evento);
+            _ComprasCboEntrada.DataSourceChanged += (Sender, Evento) => DataSourceChanged?.Invoke(this, Evento);
             ComprasProcAjustarAlturaEntrada();
             ComprasMetLimpiarError();
         }
@@ -107,17 +107,17 @@ namespace CapaVista_Compras.Componentes
         {
             get
             {
-                return ComprasCboEntrada == null ? base.Text : ComprasCboEntrada.Text;
+                return _ComprasCboEntrada == null ? base.Text : _ComprasCboEntrada.Text;
             }
             set
             {
-                if (ComprasCboEntrada != null)
+                if (_ComprasCboEntrada != null)
                 {
                     string Nuevo = value ?? string.Empty;
-                    string Anterior = ComprasCboEntrada.Text;
+                    string Anterior = _ComprasCboEntrada.Text;
                     int Version = _VersionTexto;
-                    ComprasCboEntrada.Text = Nuevo;
-                    if (Anterior != ComprasCboEntrada.Text && Version == _VersionTexto)
+                    _ComprasCboEntrada.Text = Nuevo;
+                    if (Anterior != _ComprasCboEntrada.Text && Version == _VersionTexto)
                         ComprasProcTextoCambiado(EventArgs.Empty);
                 }
                 else
@@ -127,91 +127,91 @@ namespace CapaVista_Compras.Componentes
             }
         }
 
-        internal ClsComboBoxCompras ComprasCboInterno => ComprasCboEntrada;
+        internal ClsSelectorCompras ComprasCboInterno => _ComprasCboEntrada;
 
         [Browsable(false)]
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
-        public ClsComboBoxCompras Entrada => ComprasCboEntrada;
+        public ClsSelectorCompras Entrada => _ComprasCboEntrada;
 
         [Category("Datos")]
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
-        public ComboBox.ObjectCollection Items => ComprasCboEntrada.Items;
+        public ComboBox.ObjectCollection Items => _ComprasCboEntrada.Items;
 
         [Category("Datos")]
         [DefaultValue(null)]
         [AttributeProvider(typeof(IListSource))]
-        public object DataSource { get => ComprasCboEntrada.DataSource; set => ComprasCboEntrada.DataSource = value; }
+        public object DataSource { get => _ComprasCboEntrada.DataSource; set => _ComprasCboEntrada.DataSource = value; }
 
         [Category("Datos")]
         [DefaultValue("")]
-        public string DisplayMember { get => ComprasCboEntrada.DisplayMember; set => ComprasCboEntrada.DisplayMember = value; }
+        public string DisplayMember { get => _ComprasCboEntrada.DisplayMember; set => _ComprasCboEntrada.DisplayMember = value; }
 
         [Category("Datos")]
         [DefaultValue("")]
-        public string ValueMember { get => ComprasCboEntrada.ValueMember; set => ComprasCboEntrada.ValueMember = value; }
+        public string ValueMember { get => _ComprasCboEntrada.ValueMember; set => _ComprasCboEntrada.ValueMember = value; }
 
         [Browsable(false)]
         [Bindable(true)]
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
-        public object SelectedValue { get => ComprasCboEntrada.SelectedValue; set => ComprasCboEntrada.SelectedValue = value; }
+        public object SelectedValue { get => _ComprasCboEntrada.SelectedValue; set => _ComprasCboEntrada.SelectedValue = value; }
 
         [Browsable(false)]
         [Bindable(true)]
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
-        public object SelectedItem { get => ComprasCboEntrada.SelectedItem; set => ComprasCboEntrada.SelectedItem = value; }
+        public object SelectedItem { get => _ComprasCboEntrada.SelectedItem; set => _ComprasCboEntrada.SelectedItem = value; }
 
         [Category("Datos")]
         [DefaultValue(-1)]
         [Bindable(true)]
-        public int SelectedIndex { get => ComprasCboEntrada.SelectedIndex; set => ComprasCboEntrada.SelectedIndex = value; }
+        public int SelectedIndex { get => _ComprasCboEntrada.SelectedIndex; set => _ComprasCboEntrada.SelectedIndex = value; }
 
         [Category("Comportamiento")]
         [DefaultValue(ComboBoxStyle.DropDownList)]
         [RefreshProperties(RefreshProperties.All)]
         public ComboBoxStyle DropDownStyle
         {
-            get => ComprasCboEntrada.DropDownStyle;
-            set { ComprasCboEntrada.DropDownStyle = value; ComprasProcAjustarAlturaEntrada(); }
+            get => _ComprasCboEntrada.DropDownStyle;
+            set { _ComprasCboEntrada.DropDownStyle = value; ComprasProcAjustarAlturaEntrada(); }
         }
 
         [Category("Comportamiento")]
         [DefaultValue(false)]
-        public bool Sorted { get => ComprasCboEntrada.Sorted; set => ComprasCboEntrada.Sorted = value; }
+        public bool Sorted { get => _ComprasCboEntrada.Sorted; set => _ComprasCboEntrada.Sorted = value; }
 
         [Category("Comportamiento")]
         [DefaultValue(8)]
-        public int MaxDropDownItems { get => ComprasCboEntrada.MaxDropDownItems; set => ComprasCboEntrada.MaxDropDownItems = value; }
+        public int MaxDropDownItems { get => _ComprasCboEntrada.MaxDropDownItems; set => _ComprasCboEntrada.MaxDropDownItems = value; }
 
         [Category("Comportamiento")]
         [DefaultValue(true)]
-        public bool IntegralHeight { get => ComprasCboEntrada.IntegralHeight; set => ComprasCboEntrada.IntegralHeight = value; }
+        public bool IntegralHeight { get => _ComprasCboEntrada.IntegralHeight; set => _ComprasCboEntrada.IntegralHeight = value; }
 
         [Category("Comportamiento")]
         [DefaultValue(AutoCompleteMode.None)]
-        public AutoCompleteMode AutoCompleteMode { get => ComprasCboEntrada.AutoCompleteMode; set => ComprasCboEntrada.AutoCompleteMode = value; }
+        public AutoCompleteMode AutoCompleteMode { get => _ComprasCboEntrada.AutoCompleteMode; set => _ComprasCboEntrada.AutoCompleteMode = value; }
 
         [Category("Comportamiento")]
         [DefaultValue(AutoCompleteSource.None)]
-        public AutoCompleteSource AutoCompleteSource { get => ComprasCboEntrada.AutoCompleteSource; set => ComprasCboEntrada.AutoCompleteSource = value; }
+        public AutoCompleteSource AutoCompleteSource { get => _ComprasCboEntrada.AutoCompleteSource; set => _ComprasCboEntrada.AutoCompleteSource = value; }
 
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
-        public AutoCompleteStringCollection AutoCompleteCustomSource => ComprasCboEntrada.AutoCompleteCustomSource;
+        public AutoCompleteStringCollection AutoCompleteCustomSource => _ComprasCboEntrada.AutoCompleteCustomSource;
 
         [Browsable(false)]
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
-        public bool DroppedDown { get => ComprasCboEntrada.DroppedDown; set => ComprasCboEntrada.DroppedDown = value; }
+        public bool DroppedDown { get => _ComprasCboEntrada.DroppedDown; set => _ComprasCboEntrada.DroppedDown = value; }
 
         [Browsable(false)]
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
-        public int SelectionStart { get => ComprasCboEntrada.SelectionStart; set => ComprasCboEntrada.SelectionStart = value; }
+        public int SelectionStart { get => _ComprasCboEntrada.SelectionStart; set => _ComprasCboEntrada.SelectionStart = value; }
 
         [Browsable(false)]
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
-        public int SelectionLength { get => ComprasCboEntrada.SelectionLength; set => ComprasCboEntrada.SelectionLength = value; }
+        public int SelectionLength { get => _ComprasCboEntrada.SelectionLength; set => _ComprasCboEntrada.SelectionLength = value; }
 
         [Browsable(false)]
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
-        public string SelectedText { get => ComprasCboEntrada.SelectedText; set => ComprasCboEntrada.SelectedText = value; }
+        public string SelectedText { get => _ComprasCboEntrada.SelectedText; set => _ComprasCboEntrada.SelectedText = value; }
 
         public event EventHandler SelectedIndexChanged;
         public event EventHandler SelectedValueChanged;
@@ -220,62 +220,62 @@ namespace CapaVista_Compras.Componentes
         public event EventHandler DropDownClosed;
         public event EventHandler DataSourceChanged;
 
-        public void BeginUpdate() => ComprasCboEntrada.BeginUpdate();
-        public void EndUpdate() => ComprasCboEntrada.EndUpdate();
-        public int FindString(string Texto) => ComprasCboEntrada.FindString(Texto);
-        public int FindStringExact(string Texto) => ComprasCboEntrada.FindStringExact(Texto);
-        public string GetItemText(object Elemento) => ComprasCboEntrada.GetItemText(Elemento);
-        public void Select(int Inicio, int Longitud) => ComprasCboEntrada.Select(Inicio, Longitud);
-        public void SelectAll() => ComprasCboEntrada.SelectAll();
+        public void BeginUpdate() => _ComprasCboEntrada.BeginUpdate();
+        public void EndUpdate() => _ComprasCboEntrada.EndUpdate();
+        public int FindString(string Texto) => _ComprasCboEntrada.FindString(Texto);
+        public int FindStringExact(string Texto) => _ComprasCboEntrada.FindStringExact(Texto);
+        public string GetItemText(object Elemento) => _ComprasCboEntrada.GetItemText(Elemento);
+        public void Select(int Inicio, int Longitud) => _ComprasCboEntrada.Select(Inicio, Longitud);
+        public void SelectAll() => _ComprasCboEntrada.SelectAll();
 
         private void ComprasProcAjustarAlturaEntrada()
         {
-            if (ComprasCboEntrada == null || ComprasPnlBorde == null) return;
-            ComprasPnlBorde.MaximumSize = DropDownStyle == ComboBoxStyle.Simple ? Size.Empty :
-                new Size(0, ComprasCboEntrada.PreferredHeight + ComprasPnlBorde.Padding.Vertical);
+            if (_ComprasCboEntrada == null || _ComprasPnlBorde == null) return;
+            _ComprasPnlBorde.MaximumSize = DropDownStyle == ComboBoxStyle.Simple ? Size.Empty :
+                new Size(0, _ComprasCboEntrada.PreferredHeight + _ComprasPnlBorde.Padding.Vertical);
         }
 
         protected override void OnFontChanged(EventArgs Evento)
         {
             base.OnFontChanged(Evento);
-            if (ComprasCboEntrada != null) ComprasCboEntrada.Font = Font;
+            if (_ComprasCboEntrada != null) _ComprasCboEntrada.Font = Font;
             ComprasProcAjustarAlturaEntrada();
         }
 
         protected override void OnForeColorChanged(EventArgs Evento)
         {
             base.OnForeColorChanged(Evento);
-            if (ComprasCboEntrada != null) ComprasCboEntrada.ForeColor = ForeColor;
+            if (_ComprasCboEntrada != null) _ComprasCboEntrada.ForeColor = ForeColor;
         }
 
         protected override void OnBackColorChanged(EventArgs Evento)
         {
             base.OnBackColorChanged(Evento);
-            if (ComprasCboEntrada != null) ComprasCboEntrada.BackColor = BackColor;
-            if (ComprasTlpMain != null) ComprasTlpMain.BackColor = BackColor;
+            if (_ComprasCboEntrada != null) _ComprasCboEntrada.BackColor = BackColor;
+            if (_ComprasTlpMain != null) _ComprasTlpMain.BackColor = BackColor;
         }
 
         private void ComprasProcActualizarBorde()
         {
-            ComprasPnlBorde.BackColor = _ErrorVisible ? Color.Red :
-                ComprasCboEntrada.Focused ? ClsTemaCompras.AcentoNavegador : ClsTemaCompras.PrincipalNavegador;
+            _ComprasPnlBorde.BackColor = _ErrorVisible ? Color.Red :
+                _ComprasCboEntrada.Focused ? ClsTemaCompras.AcentoNavegador : ClsTemaCompras.PrincipalNavegador;
         }
 
         protected override void OnCausesValidationChanged(EventArgs Evento)
         {
             base.OnCausesValidationChanged(Evento);
-            if (ComprasCboEntrada != null) ComprasCboEntrada.CausesValidation = CausesValidation;
+            if (_ComprasCboEntrada != null) _ComprasCboEntrada.CausesValidation = CausesValidation;
         }
 
         public int MaxLength
         {
             get
             {
-                return ComprasCboEntrada.MaxLength;
+                return _ComprasCboEntrada.MaxLength;
             }
             set
             {
-                ComprasCboEntrada.MaxLength = value;
+                _ComprasCboEntrada.MaxLength = value;
             }
         }
 
@@ -283,11 +283,11 @@ namespace CapaVista_Compras.Componentes
         {
             add
             {
-                ComprasCboEntrada.KeyDown += value;
+                _ComprasCboEntrada.KeyDown += value;
             }
             remove
             {
-                ComprasCboEntrada.KeyDown -= value;
+                _ComprasCboEntrada.KeyDown -= value;
             }
         }
 
@@ -299,13 +299,13 @@ namespace CapaVista_Compras.Componentes
                 return;
             }
 
-            using (new ClsActualizacionDisenoCompras(ComprasTlpMain))
+            using (new ClsActualizacionDisenoCompras(_ComprasTlpMain))
             {
                 if (ComprasUsrError.Texto != Mensaje) ComprasUsrError.Texto = Mensaje;
                 if (ComprasUsrError.ColorTexto != Color.Red) ComprasUsrError.ColorTexto = Color.Red;
                 _ErrorVisible = true;
                 ComprasProcActualizarEspacioError();
-                if (ComprasPnlBorde.BackColor != Color.Red) ComprasPnlBorde.BackColor = Color.Red;
+                if (_ComprasPnlBorde.BackColor != Color.Red) _ComprasPnlBorde.BackColor = Color.Red;
             }
         }
 
@@ -313,20 +313,20 @@ namespace CapaVista_Compras.Componentes
         {
             int Ancho = System.Math.Max(1, Width - 12);
             int Altura = System.Math.Max(22, TextRenderer.MeasureText(Mensaje, ComprasUsrError.Font, new Size(Ancho, int.MaxValue), TextFormatFlags.WordBreak).Height);
-            int AlturaEntrada = Math.Max(25, ComprasPnlBorde.Height) + ComprasTlpMain.Padding.Vertical;
+            int AlturaEntrada = Math.Max(25, _ComprasPnlBorde.Height) + _ComprasTlpMain.Padding.Vertical;
             return AlturaEntrada + (_MostrarEtiquetaError ? Math.Max(_AlturaEtiquetaError, Altura) + ComprasUsrError.Margin.Vertical : 0);
         }
 
         internal void ComprasProcAmpliarError(int AlturaFila)
         {
-            _AlturaErrorAmpliada = Math.Max(0, AlturaFila - Math.Max(25, ComprasPnlBorde.Height)
-                - ComprasTlpMain.Padding.Vertical - ComprasUsrError.Margin.Vertical);
+            _AlturaErrorAmpliada = Math.Max(0, AlturaFila - Math.Max(25, _ComprasPnlBorde.Height)
+                - _ComprasTlpMain.Padding.Vertical - ComprasUsrError.Margin.Vertical);
             ComprasProcActualizarEspacioError();
         }
 
         public void ComprasMetLimpiarError()
         {
-            using (new ClsActualizacionDisenoCompras(ComprasTlpMain))
+            using (new ClsActualizacionDisenoCompras(_ComprasTlpMain))
             {
                 if (ComprasUsrError.Texto != string.Empty) ComprasUsrError.Texto = string.Empty;
                 _ErrorVisible = false;
@@ -335,6 +335,6 @@ namespace CapaVista_Compras.Componentes
                 ComprasProcActualizarBorde();
             }
         }
-        
+
     }
 }

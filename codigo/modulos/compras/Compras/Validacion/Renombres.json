@@ -1,0 +1,210 @@
+{
+  "Clases": {
+    "UsrBaseCompras": "ClsBaseCompras",
+    "UsrComboBoxCompras": "ClsComboBoxCompras",
+    "UsrDataGridViewCompras": "ClsDataGridViewCompras",
+    "UsrLabelCompras": "ClsLabelCompras",
+    "UsrTextBoxCompras": "ClsTextBoxCompras",
+    "UsrCierreMovimientos": "ClsCierreMovimientos",
+    "UsrDashboardCompras": "ClsDashboardCompras",
+    "UsrEstadoDeCuenta": "ClsEstadoDeCuenta",
+    "UsrEvaluarOrden": "ClsEvaluarOrden",
+    "UsrMantenimientoMetodoPago": "ClsMantenimientoMetodoPago",
+    "UsrMantenimientoProveedor": "ClsMantenimientoProveedor",
+    "UsrOrdenesDeCompras": "ClsOrdenesDeCompras",
+    "UsrOrdenesDisponibles": "ClsOrdenesDisponibles",
+    "UsrPagosProveedores": "ClsPagosProveedores"
+  },
+  "Controles": {
+    "ClsCierreMovimientos": {
+      "_ComprasTlpPrincipal": "ComprasTlpPrincipal",
+      "_ComprasGbxPeriodo": "ComprasGbxPeriodo",
+      "_ComprasCboPeriodo": "ComprasCboPeriodo",
+      "_ComprasTlpContenido": "ComprasTlpContenido",
+      "_ComprasGbxValidaciones": "ComprasGbxValidaciones",
+      "_ComprasGbxSaldos": "ComprasGbxSaldos",
+      "_ComprasTlpTotales": "ComprasTlpTotales",
+      "_ComprasTlpBotones": "ComprasTlpBotones",
+      "_ComprasBtnValidar": "ComprasBtnValidar",
+      "_ComprasBtnEjecutarCierre": "ComprasBtnEjecutarCierre",
+      "_ComprasBtnImprimir": "ComprasBtnImprimir",
+      "_ComprasBtnAyuda": "ComprasBtnAyuda",
+      "_ComprasBtnSalir": "ComprasBtnSalir"
+    },
+    "ClsDashboardCompras": {
+      "_ComprasPnlDashboard": "ComprasPnlDashboard",
+      "_ComprasPnlKPI5": "ComprasPnlKPI5",
+      "_ComprasLblKPIResp5": "ComprasLblKPIResp5",
+      "_ComprasLblKPI5": "ComprasLblKPI5",
+      "_ComprasPnlKPI4": "ComprasPnlKPI4",
+      "_ComprasLblKPIResp4": "ComprasLblKPIResp4",
+      "_ComprasLblKPI4": "ComprasLblKPI4",
+      "_ComprasPnlKPI3": "ComprasPnlKPI3",
+      "_ComprasLblKPIResp3": "ComprasLblKPIResp3",
+      "_ComprasLblKPI3": "ComprasLblKPI3",
+      "_ComprasPnlKPI2": "ComprasPnlKPI2",
+      "_ComprasLblKPIResp2": "ComprasLblKPIResp2",
+      "_ComprasLblKPI2": "ComprasLblKPI2",
+      "_ComprasPnlKPI1": "ComprasPnlKPI1",
+      "_ComprasLblKPIResp1": "ComprasLblKPIResp1",
+      "_ComprasLblKPI1": "ComprasLblKPI1",
+      "_ComprasLblResumen": "ComprasLblResumen",
+      "_ComprasLblParrafo": "ComprasLblParrafo",
+      "_ComprasLblBienvenido": "ComprasLblBienvenido",
+      "_ComprasPbButti": "ComprasPbButti"
+    },
+    "ClsEstadoDeCuenta": {
+      "_ComprasLblProveedor": "ComprasLblProveedor",
+      "_ComprasPnlFiltros": "ComprasPnlFiltros",
+      "_ComprasBtnBuscar": "ComprasBtnBuscar",
+      "_ComprasDtpHasta": "ComprasDtpHasta",
+      "_ComprasDtpDesde": "ComprasDtpDesde",
+      "_ComprasLblHasta": "ComprasLblHasta",
+      "_ComprasLblDesde": "ComprasLblDesde",
+      "_ComprasLblEstado": "ComprasLblEstado",
+      "_ComprasLblTipoDeMovimiento": "ComprasLblTipoDeMovimiento",
+      "_ComprasPnlProveedor": "ComprasPnlProveedor",
+      "_ComprasLblCorreo": "ComprasLblCorreo",
+      "_ComprasLblSeparadorCorreo": "ComprasLblSeparadorCorreo",
+      "_ComprasLblSeparadorTelefono": "ComprasLblSeparadorTelefono",
+      "_ComprasLblTelefono": "ComprasLblTelefono",
+      "_ComprasLblTituloTelefono": "ComprasLblTituloTelefono",
+      "_ComprasLblNit": "ComprasLblNit",
+      "_ComprasLblTituloNit": "ComprasLblTituloNit",
+      "_ComprasLblNombreProveedor": "ComprasLblNombreProveedor",
+      "_ComprasColFecha": "ComprasColFecha",
+      "_ComprasColTipoMovimiento": "ComprasColTipoMovimiento",
+      "_ComprasColDocumento": "ComprasColDocumento",
+      "_ComprasColDescripcion": "ComprasColDescripcion",
+      "_ComprasColDebe": "ComprasColDebe",
+      "_ComprasColHaber": "ComprasColHaber",
+      "_ComprasColSaldo": "ComprasColSaldo",
+      "_ComprasColEstado": "ComprasColEstado"
+    },
+    "ClsEvaluarOrden": {
+      "_ComprasBtnRegresar": "ComprasBtnRegresar",
+      "_ComprasBtnRechazar": "ComprasBtnRechazar",
+      "_ComprasBtnAprobar": "ComprasBtnAprobar",
+      "_ComprasLblEvaluacion": "ComprasLblEvaluacion"
+    },
+    "ClsMantenimientoMetodoPago": {
+      "_ComprasPnlMantenimiento": "ComprasPnlMantenimiento"
+    },
+    "ClsMantenimientoProveedor": {
+      "_ComprasPnlMantenimiento": "ComprasPnlMantenimiento"
+    },
+    "ClsOrdenesDeCompras": {
+      "_ComprasTlpPrincipal": "ComprasTlpPrincipal",
+      "_ComprasGbxEncabezado": "ComprasGbxEncabezado",
+      "_ComprasTlpEncabezado": "ComprasTlpEncabezado",
+      "_ComprasTlpResponsable": "ComprasTlpResponsable",
+      "_ComprasBtnConsultarResponsable": "ComprasBtnConsultarResponsable",
+      "_ComprasTlpProveedor": "ComprasTlpProveedor",
+      "_ComprasBtnConsultarProveedor": "ComprasBtnConsultarProveedor",
+      "_ComprasGbxFinalizacion": "ComprasGbxFinalizacion",
+      "_ComprasTlpFinalizacion": "ComprasTlpFinalizacion",
+      "_ComprasTlpImportes": "ComprasTlpImportes",
+      "_ComprasTlpTotales": "ComprasTlpTotales",
+      "_ComprasTlpAcciones": "ComprasTlpAcciones",
+      "_ComprasBtnDescartar": "ComprasBtnDescartar",
+      "_ComprasBtnGuardar": "ComprasBtnGuardar",
+      "_ComprasGbxDetalles": "ComprasGbxDetalles",
+      "_ComprasTlpDetalles": "ComprasTlpDetalles",
+      "_ComprasPnlArticulos": "ComprasPnlArticulos",
+      "_ComprasBtnArticulos": "ComprasBtnArticulos",
+      "_ComprasBtnLogistica": "ComprasBtnLogistica",
+      "_ComprasBtnFinanzas": "ComprasBtnFinanzas",
+      "_ComprasBtnAnexos": "ComprasBtnAnexos",
+      "_ComprasBtnPorcentaje": "ComprasBtnPorcentaje"
+    },
+    "ClsOrdenesDisponibles": {
+      "_ComprasLblTitulo": "ComprasLblTitulo",
+      "_ComprasBtnVer": "ComprasBtnVer",
+      "_ComprasBtnEvaluar": "ComprasBtnEvaluar",
+      "_ComprasBtnRegresar": "ComprasBtnRegresar"
+    },
+    "ClsPagosProveedores": {
+      "_ComprasPnlEncabezado": "ComprasPnlEncabezado",
+      "_ComprasBtnNuevoPago": "ComprasBtnNuevoPago",
+      "_ComprasTlpFiltros": "ComprasTlpFiltros",
+      "_ComprasCboProveedor": "ComprasCboProveedor",
+      "_ComprasCboEstado": "ComprasCboEstado",
+      "_ComprasGbxRegistrarPago": "ComprasGbxRegistrarPago",
+      "_ComprasTlpRegistro": "ComprasTlpRegistro",
+      "_ComprasCboProveedorPago": "ComprasCboProveedorPago",
+      "_ComprasCboFactura": "ComprasCboFactura",
+      "_ComprasCboMetodo": "ComprasCboMetodo",
+      "_ComprasPnlBotones": "ComprasPnlBotones",
+      "_ComprasBtnCancelar": "ComprasBtnCancelar",
+      "_ComprasBtnGuardar": "ComprasBtnGuardar"
+    },
+    "FrmAprobarOrden": {
+      "_ComprasBtnNoAprobar": "ComprasBtnNoAprobar",
+      "_ComprasBtnSiAprobar": "ComprasBtnSiAprobar"
+    },
+    "FrmMDICompras": {
+      "_ComprasTlpPrincipal": "ComprasTlpPrincipal",
+      "_ComprasTlpNavegador": "ComprasTlpNavegador",
+      "_ComprasPbMarca": "ComprasPbMarca",
+      "_ComprasBtnCierreMovimientos": "ComprasBtnCierreMovimientos",
+      "_ComprasBtnAprobacionFinanciera": "ComprasBtnAprobacionFinanciera",
+      "_ComprasBtnPagosProveedores": "ComprasBtnPagosProveedores",
+      "_ComprasBtnOrdenesCompra": "ComprasBtnOrdenesCompra",
+      "_ComprasBtnMetodosPago": "ComprasBtnMetodosPago",
+      "_ComprasBtnProveedores": "ComprasBtnProveedores",
+      "_ComprasBtnMovimientosProveedores": "ComprasBtnMovimientosProveedores",
+      "_ComprasPnlMain": "ComprasPnlMain",
+      "_ComprasTlpEncabezado": "ComprasTlpEncabezado",
+      "_ComprasBtnBitacora": "ComprasBtnBitacora",
+      "_ComprasBtnIconoMovimientosProveedores": "ComprasBtnIconoMovimientosProveedores",
+      "_ComprasBtnIconoBitacora": "ComprasBtnIconoBitacora",
+      "_ComprasBtnIconoCierreMovimientos": "ComprasBtnIconoCierreMovimientos",
+      "_ComprasBtnIconoAprobacionFinanciera": "ComprasBtnIconoAprobacionFinanciera",
+      "_ComprasBtnIconoPagosProveedores": "ComprasBtnIconoPagosProveedores",
+      "_ComprasBtnIconoOrdenesCompra": "ComprasBtnIconoOrdenesCompra",
+      "_ComprasBtnIconoMetodosPago": "ComprasBtnIconoMetodosPago",
+      "_ComprasBtnIconoProveedores": "ComprasBtnIconoProveedores",
+      "_ComprasBtnAlternarNavegador": "ComprasBtnAlternarNavegador",
+      "_ComprasBtnIconoSalir": "ComprasBtnIconoSalir",
+      "_ComprasBtnSalir": "ComprasBtnSalir",
+      "_ComprasBtnIconoInicio": "ComprasBtnIconoInicio",
+      "_ComprasBtnInicio": "ComprasBtnInicio"
+    },
+    "FrmRechazarOrden": {
+      "_ComprasBtnSiRechazar": "ComprasBtnSiRechazar",
+      "_ComprasBtnNoRechazar": "ComprasBtnNoRechazar"
+    },
+    "FrmSplash": {
+      "_ComprasPgbCarga": "ComprasPgbCarga",
+      "_ComprasTmrContenido": "ComprasTmrContenido",
+      "_ComprasLblTitulo": "ComprasLblTitulo",
+      "_ComprasLblMensaje": "ComprasLblMensaje",
+      "_ComprasLblPorcentaje": "ComprasLblPorcentaje",
+      "_ComprasPbMarca": "ComprasPbMarca"
+    },
+    "ClsBaseCompras": {},
+    "ClsButtonCompras": {},
+    "ClsGroupBoxCompras": {},
+    "ClsSelectorCompras": {},
+    "UsrComboBoxCompras": {
+      "_ComprasTlpMain": "ComprasTlpMain",
+      "_ComprasPnlBorde": "ComprasPnlBorde",
+      "_ComprasLblError": "ComprasLblError",
+      "_ComprasCboEntrada": "ComprasCboEntrada"
+    },
+    "UsrDataGridViewCompras": {
+      "_ComprasPnlBorde": "ComprasPnlBorde",
+      "_ComprasDgvMain": "ComprasDgvMain"
+    },
+    "UsrLabelCompras": {
+      "_ComprasTlpMain": "ComprasTlpMain",
+      "_ComprasLblTexto": "ComprasLblTexto",
+      "_ComprasLblAsterisco": "ComprasLblAsterisco"
+    },
+    "UsrTextBoxCompras": {
+      "_ComprasTlpMain": "ComprasTlpMain",
+      "_ComprasPnlBorde": "ComprasPnlBorde",
+      "_ComprasLblError": "ComprasLblError"
+    }
+  }
+}

@@ -1,4 +1,4 @@
-namespace CapaVista_Compras.Componentes
+﻿namespace CapaVista_Compras.Componentes
 {
     partial class UsrBaseCompras
     {
@@ -25,9 +25,10 @@ namespace CapaVista_Compras.Componentes
             this.ForeColor = ClsTemaCompras.PrincipalNavegador;
             this.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.Margin = new System.Windows.Forms.Padding(0);
-            this.MaximumSize = new System.Drawing.Size(1150, 750);
+            this.MaximumSize = new System.Drawing.Size(1807, 0);
+            this.MinimumSize = new System.Drawing.Size(1610, 723);
             this.Name = "UsrBaseCompras";
-            this.Size = new System.Drawing.Size(1150, 750);
+            this.Size = new System.Drawing.Size(1610, 723);
             this.ResumeLayout(false);
 
         }

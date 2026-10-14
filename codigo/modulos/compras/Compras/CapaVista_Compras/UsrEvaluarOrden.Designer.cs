@@ -2,136 +2,141 @@
 {
     partial class UsrEvaluarOrden
     {
-        /// <summary> 
+        /// <summary>
         /// Variable del diseñador necesaria.
         /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        private System.ComponentModel.IContainer _Componentes = null;
 
-        /// <summary> 
+        /// <summary>
         /// Limpiar los recursos que se estén usando.
         /// </summary>
         /// <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
-        protected override void Dispose(bool disposing)
+        protected override void Dispose(bool LiberarRecursos)
         {
-            if (disposing && (components != null))
+            if (LiberarRecursos && (_Componentes != null))
             {
-                components.Dispose();
+                _Componentes.Dispose();
             }
-            base.Dispose(disposing);
+            base.Dispose(LiberarRecursos);
         }
 
         #region Código generado por el Diseñador de componentes
 
-        /// <summary> 
+        /// <summary>
         /// Método necesario para admitir el Diseñador. No se puede modificar
         /// el contenido de este método con el editor de código.
         /// </summary>
         private void InitializeComponent()
         {
-            this.ComprasBtnRegresar = new CapaVista_Compras.Componentes.ClsButtonCompras();
-            this.ComprasBtnRechazar = new CapaVista_Compras.Componentes.ClsButtonCompras();
-            this.ComprasBtnAprobar = new CapaVista_Compras.Componentes.ClsButtonCompras();
-            this.ComprasLblEvaluación = new CapaVista_Compras.Componentes.ClsEtiquetaCompras();
-            this.ComprasDgvDetalleOrden = new CapaVista_Compras.Componentes.UsrDataGridViewCompras();
+            this._ComprasBtnRegresar = new CapaVista_Compras.Componentes.ClsButtonCompras();
+            this._ComprasBtnRechazar = new CapaVista_Compras.Componentes.ClsButtonCompras();
+            this._ComprasBtnAprobar = new CapaVista_Compras.Componentes.ClsButtonCompras();
+            this._ComprasLblEvaluacion = new CapaVista_Compras.Componentes.ClsEtiquetaCompras();
+            this.ComprasUsrDetalleOrden = new CapaVista_Compras.Componentes.UsrDataGridViewCompras();
             this.SuspendLayout();
             // 
-            // ComprasBtnRegresar
+            // _ComprasBtnRegresar
             // 
-            this.ComprasBtnRegresar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.ComprasBtnRegresar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(220)))), ((int)(((byte)(239)))));
-            this.ComprasBtnRegresar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ComprasBtnRegresar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ComprasBtnRegresar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
-            this.ComprasBtnRegresar.FlatAppearance.BorderSize = 0;
-            this.ComprasBtnRegresar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(173)))), ((int)(((byte)(213)))));
-            this.ComprasBtnRegresar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(193)))), ((int)(((byte)(224)))));
-            this.ComprasBtnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ComprasBtnRegresar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
-            this.ComprasBtnRegresar.Location = new System.Drawing.Point(512, 312);
-            this.ComprasBtnRegresar.Margin = new System.Windows.Forms.Padding(0);
-            this.ComprasBtnRegresar.MaximumSize = new System.Drawing.Size(80, 80);
-            this.ComprasBtnRegresar.MinimumSize = new System.Drawing.Size(80, 20);
-            this.ComprasBtnRegresar.Name = "ComprasBtnRegresar";
-            this.ComprasBtnRegresar.Size = new System.Drawing.Size(80, 40);
-            this.ComprasBtnRegresar.TabIndex = 9;
-            this.ComprasBtnRegresar.Text = "Regresar";
-            this.ComprasBtnRegresar.UseVisualStyleBackColor = false;
+            this._ComprasBtnRegresar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this._ComprasBtnRegresar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(220)))), ((int)(((byte)(239)))));
+            this._ComprasBtnRegresar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this._ComprasBtnRegresar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this._ComprasBtnRegresar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this._ComprasBtnRegresar.FlatAppearance.BorderSize = 0;
+            this._ComprasBtnRegresar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(173)))), ((int)(((byte)(213)))));
+            this._ComprasBtnRegresar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(193)))), ((int)(((byte)(224)))));
+            this._ComprasBtnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._ComprasBtnRegresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._ComprasBtnRegresar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this._ComprasBtnRegresar.Location = new System.Drawing.Point(254, 233);
+            this._ComprasBtnRegresar.Margin = new System.Windows.Forms.Padding(0);
+            this._ComprasBtnRegresar.MaximumSize = new System.Drawing.Size(107, 98);
+            this._ComprasBtnRegresar.MinimumSize = new System.Drawing.Size(107, 25);
+            this._ComprasBtnRegresar.Name = "_ComprasBtnRegresar";
+            this._ComprasBtnRegresar.Size = new System.Drawing.Size(107, 49);
+            this._ComprasBtnRegresar.TabIndex = 9;
+            this._ComprasBtnRegresar.Text = "Regresar";
+            this._ComprasBtnRegresar.UseVisualStyleBackColor = false;
             // 
-            // ComprasBtnRechazar
+            // _ComprasBtnRechazar
             // 
-            this.ComprasBtnRechazar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.ComprasBtnRechazar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(220)))), ((int)(((byte)(239)))));
-            this.ComprasBtnRechazar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ComprasBtnRechazar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ComprasBtnRechazar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
-            this.ComprasBtnRechazar.FlatAppearance.BorderSize = 0;
-            this.ComprasBtnRechazar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(173)))), ((int)(((byte)(213)))));
-            this.ComprasBtnRechazar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(193)))), ((int)(((byte)(224)))));
-            this.ComprasBtnRechazar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ComprasBtnRechazar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
-            this.ComprasBtnRechazar.Location = new System.Drawing.Point(361, 312);
-            this.ComprasBtnRechazar.Margin = new System.Windows.Forms.Padding(0);
-            this.ComprasBtnRechazar.MaximumSize = new System.Drawing.Size(80, 80);
-            this.ComprasBtnRechazar.MinimumSize = new System.Drawing.Size(80, 20);
-            this.ComprasBtnRechazar.Name = "ComprasBtnRechazar";
-            this.ComprasBtnRechazar.Size = new System.Drawing.Size(80, 40);
-            this.ComprasBtnRechazar.TabIndex = 8;
-            this.ComprasBtnRechazar.Text = "Rechazar";
-            this.ComprasBtnRechazar.UseVisualStyleBackColor = false;
+            this._ComprasBtnRechazar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this._ComprasBtnRechazar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(220)))), ((int)(((byte)(239)))));
+            this._ComprasBtnRechazar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this._ComprasBtnRechazar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this._ComprasBtnRechazar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this._ComprasBtnRechazar.FlatAppearance.BorderSize = 0;
+            this._ComprasBtnRechazar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(173)))), ((int)(((byte)(213)))));
+            this._ComprasBtnRechazar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(193)))), ((int)(((byte)(224)))));
+            this._ComprasBtnRechazar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._ComprasBtnRechazar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._ComprasBtnRechazar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this._ComprasBtnRechazar.Location = new System.Drawing.Point(52, 233);
+            this._ComprasBtnRechazar.Margin = new System.Windows.Forms.Padding(0);
+            this._ComprasBtnRechazar.MaximumSize = new System.Drawing.Size(107, 98);
+            this._ComprasBtnRechazar.MinimumSize = new System.Drawing.Size(107, 25);
+            this._ComprasBtnRechazar.Name = "_ComprasBtnRechazar";
+            this._ComprasBtnRechazar.Size = new System.Drawing.Size(107, 49);
+            this._ComprasBtnRechazar.TabIndex = 8;
+            this._ComprasBtnRechazar.Text = "Rechazar";
+            this._ComprasBtnRechazar.UseVisualStyleBackColor = false;
             // 
-            // ComprasBtnAprobar
+            // _ComprasBtnAprobar
             // 
-            this.ComprasBtnAprobar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.ComprasBtnAprobar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(220)))), ((int)(((byte)(239)))));
-            this.ComprasBtnAprobar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ComprasBtnAprobar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ComprasBtnAprobar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
-            this.ComprasBtnAprobar.FlatAppearance.BorderSize = 0;
-            this.ComprasBtnAprobar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(173)))), ((int)(((byte)(213)))));
-            this.ComprasBtnAprobar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(193)))), ((int)(((byte)(224)))));
-            this.ComprasBtnAprobar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ComprasBtnAprobar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
-            this.ComprasBtnAprobar.Location = new System.Drawing.Point(212, 312);
-            this.ComprasBtnAprobar.Margin = new System.Windows.Forms.Padding(0);
-            this.ComprasBtnAprobar.MaximumSize = new System.Drawing.Size(80, 80);
-            this.ComprasBtnAprobar.MinimumSize = new System.Drawing.Size(80, 20);
-            this.ComprasBtnAprobar.Name = "ComprasBtnAprobar";
-            this.ComprasBtnAprobar.Size = new System.Drawing.Size(80, 40);
-            this.ComprasBtnAprobar.TabIndex = 7;
-            this.ComprasBtnAprobar.Text = "Aprobar";
-            this.ComprasBtnAprobar.UseVisualStyleBackColor = false;
+            this._ComprasBtnAprobar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this._ComprasBtnAprobar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(220)))), ((int)(((byte)(239)))));
+            this._ComprasBtnAprobar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this._ComprasBtnAprobar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this._ComprasBtnAprobar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this._ComprasBtnAprobar.FlatAppearance.BorderSize = 0;
+            this._ComprasBtnAprobar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(173)))), ((int)(((byte)(213)))));
+            this._ComprasBtnAprobar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(193)))), ((int)(((byte)(224)))));
+            this._ComprasBtnAprobar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._ComprasBtnAprobar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._ComprasBtnAprobar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this._ComprasBtnAprobar.Location = new System.Drawing.Point(-146, 233);
+            this._ComprasBtnAprobar.Margin = new System.Windows.Forms.Padding(0);
+            this._ComprasBtnAprobar.MaximumSize = new System.Drawing.Size(107, 98);
+            this._ComprasBtnAprobar.MinimumSize = new System.Drawing.Size(107, 25);
+            this._ComprasBtnAprobar.Name = "_ComprasBtnAprobar";
+            this._ComprasBtnAprobar.Size = new System.Drawing.Size(107, 49);
+            this._ComprasBtnAprobar.TabIndex = 7;
+            this._ComprasBtnAprobar.Text = "Aprobar";
+            this._ComprasBtnAprobar.UseVisualStyleBackColor = false;
             // 
-            // ComprasLblEvaluación
+            // _ComprasLblEvaluacion
             // 
-            this.ComprasLblEvaluación.AutoSize = true;
-            this.ComprasLblEvaluación.Font = new System.Drawing.Font("Lucida Fax", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ComprasLblEvaluación.Location = new System.Drawing.Point(27, 16);
-            this.ComprasLblEvaluación.Name = "ComprasLblEvaluación";
-            this.ComprasLblEvaluación.Size = new System.Drawing.Size(452, 28);
-            this.ComprasLblEvaluación.TabIndex = 6;
-            this.ComprasLblEvaluación.Text = "Evaluación de la Órden de Compra";
+            this._ComprasLblEvaluacion.AutoSize = true;
+            this._ComprasLblEvaluacion.Font = new System.Drawing.Font("Lucida Fax", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._ComprasLblEvaluacion.Location = new System.Drawing.Point(36, 20);
+            this._ComprasLblEvaluacion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this._ComprasLblEvaluacion.Name = "_ComprasLblEvaluacion";
+            this._ComprasLblEvaluacion.Size = new System.Drawing.Size(566, 34);
+            this._ComprasLblEvaluacion.TabIndex = 6;
+            this._ComprasLblEvaluacion.Text = "Evaluación de la Órden de Compra";
             // 
-            // ComprasDgvDetalleOrden
+            // ComprasUsrDetalleOrden
             // 
-            this.ComprasDgvDetalleOrden.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
-            this.ComprasDgvDetalleOrden.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
-            this.ComprasDgvDetalleOrden.Location = new System.Drawing.Point(17, 54);
-            this.ComprasDgvDetalleOrden.Margin = new System.Windows.Forms.Padding(0);
-            this.ComprasDgvDetalleOrden.Name = "ComprasDgvDetalleOrden";
-            this.ComprasDgvDetalleOrden.Size = new System.Drawing.Size(722, 238);
-            this.ComprasDgvDetalleOrden.TabIndex = 5;
+            this.ComprasUsrDetalleOrden.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
+            this.ComprasUsrDetalleOrden.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this.ComprasUsrDetalleOrden.Location = new System.Drawing.Point(23, 66);
+            this.ComprasUsrDetalleOrden.Margin = new System.Windows.Forms.Padding(0);
+            this.ComprasUsrDetalleOrden.Name = "ComprasUsrDetalleOrden";
+            this.ComprasUsrDetalleOrden.Size = new System.Drawing.Size(963, 293);
+            this.ComprasUsrDetalleOrden.TabIndex = 5;
             // 
             // UsrEvaluarOrden
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.ComprasBtnRegresar);
-            this.Controls.Add(this.ComprasBtnRechazar);
-            this.Controls.Add(this.ComprasBtnAprobar);
-            this.Controls.Add(this.ComprasLblEvaluación);
-            this.Controls.Add(this.ComprasDgvDetalleOrden);
+            this.Controls.Add(this._ComprasBtnRegresar);
+            this.Controls.Add(this._ComprasBtnRechazar);
+            this.Controls.Add(this._ComprasBtnAprobar);
+            this.Controls.Add(this._ComprasLblEvaluacion);
+            this.Controls.Add(this.ComprasUsrDetalleOrden);
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximumSize = new System.Drawing.Size(0, 0);
             this.Name = "UsrEvaluarOrden";
-            this.Size = new System.Drawing.Size(756, 368);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -139,10 +144,10 @@
 
         #endregion
 
-        private Componentes.ClsButtonCompras ComprasBtnRegresar;
-        private Componentes.ClsButtonCompras ComprasBtnRechazar;
-        private Componentes.ClsButtonCompras ComprasBtnAprobar;
-        private Componentes.ClsEtiquetaCompras ComprasLblEvaluación;
-        private Componentes.UsrDataGridViewCompras ComprasDgvDetalleOrden;
+        private Componentes.ClsButtonCompras _ComprasBtnRegresar;
+        private Componentes.ClsButtonCompras _ComprasBtnRechazar;
+        private Componentes.ClsButtonCompras _ComprasBtnAprobar;
+        private Componentes.ClsEtiquetaCompras _ComprasLblEvaluacion;
+        private Componentes.UsrDataGridViewCompras ComprasUsrDetalleOrden;
     }
 }

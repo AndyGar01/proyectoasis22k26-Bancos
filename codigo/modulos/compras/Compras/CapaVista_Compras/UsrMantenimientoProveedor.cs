@@ -1,4 +1,4 @@
-using CapaVista_Compras.Componentes;
+﻿using CapaVista_Compras.Componentes;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,7 +16,7 @@ namespace CapaVista_Compras
         public UsrMantenimientoProveedor()
         {
             InitializeComponent();
-            navegador1.NavegadorMetConfigurar("tblproveedor", 4, 5);
+            ComprasUsrMantenimiento.NavegadorMetConfigurar("tblproveedor", 4, 5);
 
         }
     }

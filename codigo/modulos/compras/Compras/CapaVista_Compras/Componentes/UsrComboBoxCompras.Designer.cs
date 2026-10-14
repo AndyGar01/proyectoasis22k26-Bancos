@@ -1,4 +1,4 @@
-
+﻿
 namespace CapaVista_Compras.Componentes
 {
     partial class UsrComboBoxCompras
@@ -18,61 +18,61 @@ namespace CapaVista_Compras.Componentes
 
         private void InitializeComponent()
         {
-            this.ComprasTlpMain = new CapaVista_Compras.Componentes.ClsTableLayoutPanelCompras();
-            this.ComprasPnlBorde = new System.Windows.Forms.Panel();
-            this.ComprasCboEntrada = new CapaVista_Compras.Componentes.ClsComboBoxCompras();
+            this._ComprasTlpMain = new CapaVista_Compras.Componentes.ClsTableLayoutPanelCompras();
+            this._ComprasPnlBorde = new System.Windows.Forms.Panel();
+            this._ComprasCboEntrada = new CapaVista_Compras.Componentes.ClsSelectorCompras();
             this.ComprasUsrError = new CapaVista_Compras.Componentes.UsrLabelCompras();
-            this.ComprasTlpMain.SuspendLayout();
-            this.ComprasPnlBorde.SuspendLayout();
+            this._ComprasTlpMain.SuspendLayout();
+            this._ComprasPnlBorde.SuspendLayout();
             this.SuspendLayout();
-            // 
+            //
             // ComprasTlpMain
-            // 
-            this.ComprasTlpMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
-            this.ComprasTlpMain.ColumnCount = 1;
-            this.ComprasTlpMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.ComprasTlpMain.Controls.Add(this.ComprasPnlBorde, 0, 0);
-            this.ComprasTlpMain.Controls.Add(this.ComprasUsrError, 0, 1);
-            this.ComprasTlpMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ComprasTlpMain.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
-            this.ComprasTlpMain.Location = new System.Drawing.Point(0, 0);
-            this.ComprasTlpMain.Margin = new System.Windows.Forms.Padding(0);
-            this.ComprasTlpMain.Name = "ComprasTlpMain";
-            this.ComprasTlpMain.Padding = new System.Windows.Forms.Padding(3);
-            this.ComprasTlpMain.RowCount = 2;
-            this.ComprasTlpMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.ComprasTlpMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.ComprasTlpMain.Size = new System.Drawing.Size(174, 66);
-            this.ComprasTlpMain.TabIndex = 0;
-            // 
+            //
+            this._ComprasTlpMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
+            this._ComprasTlpMain.ColumnCount = 1;
+            this._ComprasTlpMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this._ComprasTlpMain.Controls.Add(this._ComprasPnlBorde, 0, 0);
+            this._ComprasTlpMain.Controls.Add(this.ComprasUsrError, 0, 1);
+            this._ComprasTlpMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._ComprasTlpMain.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this._ComprasTlpMain.Location = new System.Drawing.Point(0, 0);
+            this._ComprasTlpMain.Margin = new System.Windows.Forms.Padding(0);
+            this._ComprasTlpMain.Name = "ComprasTlpMain";
+            this._ComprasTlpMain.Padding = new System.Windows.Forms.Padding(3);
+            this._ComprasTlpMain.RowCount = 2;
+            this._ComprasTlpMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this._ComprasTlpMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this._ComprasTlpMain.Size = new System.Drawing.Size(174, 66);
+            this._ComprasTlpMain.TabIndex = 0;
+            //
             // ComprasPnlBorde
-            // 
-            this.ComprasPnlBorde.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
-            this.ComprasPnlBorde.Controls.Add(this.ComprasCboEntrada);
-            this.ComprasPnlBorde.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ComprasPnlBorde.Location = new System.Drawing.Point(3, 3);
-            this.ComprasPnlBorde.Margin = new System.Windows.Forms.Padding(0);
-            this.ComprasPnlBorde.Name = "ComprasPnlBorde";
-            this.ComprasPnlBorde.Padding = new System.Windows.Forms.Padding(1);
-            this.ComprasPnlBorde.Size = new System.Drawing.Size(168, 30);
-            this.ComprasPnlBorde.TabIndex = 2;
-            // 
+            //
+            this._ComprasPnlBorde.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this._ComprasPnlBorde.Controls.Add(this._ComprasCboEntrada);
+            this._ComprasPnlBorde.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._ComprasPnlBorde.Location = new System.Drawing.Point(3, 3);
+            this._ComprasPnlBorde.Margin = new System.Windows.Forms.Padding(0);
+            this._ComprasPnlBorde.Name = "ComprasPnlBorde";
+            this._ComprasPnlBorde.Padding = new System.Windows.Forms.Padding(1);
+            this._ComprasPnlBorde.Size = new System.Drawing.Size(168, 30);
+            this._ComprasPnlBorde.TabIndex = 2;
+            //
             // ComprasCboEntrada
-            // 
-            this.ComprasCboEntrada.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
-            this.ComprasCboEntrada.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ComprasCboEntrada.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ComprasCboEntrada.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ComprasCboEntrada.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.ComprasCboEntrada.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
-            this.ComprasCboEntrada.Location = new System.Drawing.Point(1, 1);
-            this.ComprasCboEntrada.Margin = new System.Windows.Forms.Padding(0);
-            this.ComprasCboEntrada.Name = "ComprasCboEntrada";
-            this.ComprasCboEntrada.Size = new System.Drawing.Size(166, 31);
-            this.ComprasCboEntrada.TabIndex = 0;
-            // 
+            //
+            this._ComprasCboEntrada.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
+            this._ComprasCboEntrada.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._ComprasCboEntrada.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this._ComprasCboEntrada.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._ComprasCboEntrada.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this._ComprasCboEntrada.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this._ComprasCboEntrada.Location = new System.Drawing.Point(1, 1);
+            this._ComprasCboEntrada.Margin = new System.Windows.Forms.Padding(0);
+            this._ComprasCboEntrada.Name = "ComprasCboEntrada";
+            this._ComprasCboEntrada.Size = new System.Drawing.Size(166, 31);
+            this._ComprasCboEntrada.TabIndex = 0;
+            //
             // ComprasUsrError
-            // 
+            //
             this.ComprasUsrError.AlineacionTexto = System.Drawing.ContentAlignment.MiddleLeft;
             this.ComprasUsrError.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
             this.ComprasUsrError.ColorTexto = System.Drawing.Color.Red;
@@ -90,29 +90,29 @@ namespace CapaVista_Compras.Componentes
             this.ComprasUsrError.Text = "";
             this.ComprasUsrError.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ComprasUsrError.Texto = "";
-            // 
+            //
             // UsrComboBoxCompras
-            // 
+            //
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
-            this.Controls.Add(this.ComprasTlpMain);
+            this.Controls.Add(this._ComprasTlpMain);
             this.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "UsrComboBoxCompras";
             this.Size = new System.Drawing.Size(174, 66);
-            this.ComprasTlpMain.ResumeLayout(false);
-            this.ComprasPnlBorde.ResumeLayout(false);
+            this._ComprasTlpMain.ResumeLayout(false);
+            this._ComprasPnlBorde.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private CapaVista_Compras.Componentes.ClsTableLayoutPanelCompras ComprasTlpMain;
-        private System.Windows.Forms.Panel ComprasPnlBorde;
+        private CapaVista_Compras.Componentes.ClsTableLayoutPanelCompras _ComprasTlpMain;
+        private System.Windows.Forms.Panel _ComprasPnlBorde;
         private UsrLabelCompras ComprasUsrError;
-        private CapaVista_Compras.Componentes.ClsComboBoxCompras ComprasCboEntrada;
+        private CapaVista_Compras.Componentes.ClsSelectorCompras _ComprasCboEntrada;
     }
 }

@@ -1,6 +1,6 @@
-namespace CapaVista_Compras.Componentes
+﻿namespace CapaVista_Compras.Componentes
 {
-    partial class ClsComboBoxCompras
+    partial class ClsSelectorCompras
     {
         private System.ComponentModel.IContainer _Componentes = null;
 

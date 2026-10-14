@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -44,7 +44,11 @@
       <HintPath>..\..\..\..\componentes\navegador\Navegador\CapaVista_Navegador\bin\Debug\CapaVista_Navegador.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="CapaControlador_Seguridad">
+      <HintPath>..\..\..\..\componentes\seguridad\Seguridad\CapaControlador_Seguridad\bin\Debug\CapaControlador_Seguridad.dll</HintPath>
+    </Reference>
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Design" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -55,11 +59,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmSplash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSplash.Designer.cs">
+      <DependentUpon>FrmSplash.cs</DependentUpon>
+    </Compile>
     <Compile Include="UsrCierreMovimientos.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UsrCierreMovimientos.Designer.cs">
       <DependentUpon>UsrCierreMovimientos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UsrDashboardCompras.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UsrDashboardCompras.Designer.cs">
+      <DependentUpon>UsrDashboardCompras.cs</DependentUpon>
     </Compile>
     <Compile Include="UsrMantenimientoMetodoPago.cs">
       <SubType>UserControl</SubType>
@@ -96,9 +112,6 @@
     </Compile>
     <Compile Include="UsrOrdenesDisponibles.Designer.cs">
       <DependentUpon>UsrOrdenesDisponibles.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Componentes\ClsButtonMDICompras.cs">
-      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Componentes\ClsConsultasCompras.cs">
       <SubType>Component</SubType>
@@ -151,11 +164,11 @@
     <Compile Include="Componentes\ClsButtonCompras.Designer.cs">
       <DependentUpon>ClsButtonCompras.cs</DependentUpon>
     </Compile>
-    <Compile Include="Componentes\ClsComboBoxCompras.cs">
+    <Compile Include="Componentes\ClsSelectorCompras.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Componentes\ClsComboBoxCompras.Designer.cs">
-      <DependentUpon>ClsComboBoxCompras.cs</DependentUpon>
+    <Compile Include="Componentes\ClsSelectorCompras.Designer.cs">
+      <DependentUpon>ClsSelectorCompras.cs</DependentUpon>
     </Compile>
     <Compile Include="Componentes\ClsGroupBoxCompras.cs">
       <SubType>Component</SubType>
@@ -170,9 +183,6 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Componentes\ClsRadioButtonCompras.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Componentes\ClsTableButtonCompras.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Componentes\ClsTableLayoutPanelCompras.cs">
@@ -205,22 +215,28 @@
     <Compile Include="Componentes\UsrComboBoxCompras.Designer.cs">
       <DependentUpon>UsrComboBoxCompras.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FrmSplash.resx">
+      <DependentUpon>FrmSplash.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UsrCierreMovimientos.resx">
       <DependentUpon>UsrCierreMovimientos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsrDashboardCompras.resx">
+      <DependentUpon>UsrDashboardCompras.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UsrMantenimientoMetodoPago.resx">
       <DependentUpon>UsrMantenimientoMetodoPago.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Componentes\UsrComboBoxCompras.resx">
-      <DependentUpon>UsrComboBoxCompras.cs</DependentUpon>
-      <LogicalName>CapaVista_Compras.Componentes.UsrComboBoxCompras.resources</LogicalName>
+    <EmbeddedResource Include="Componentes\ClsSelectorCompras.resx">
+      <DependentUpon>ClsSelectorCompras.cs</DependentUpon>
+      <LogicalName>CapaVista_Compras.Componentes.ClsSelectorCompras.resources</LogicalName>
     </EmbeddedResource>
     <Compile Include="Componentes\UsrTextBoxCompras.Designer.cs">
       <DependentUpon>UsrTextBoxCompras.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Componentes\ClsComboBoxCompras.resx">
-      <DependentUpon>ClsComboBoxCompras.cs</DependentUpon>
-      <LogicalName>CapaVista_Compras.Componentes.ClsComboBoxCompras.resources</LogicalName>
+    <EmbeddedResource Include="Componentes\UsrComboBoxCompras.resx">
+      <DependentUpon>UsrComboBoxCompras.cs</DependentUpon>
+      <LogicalName>CapaVista_Compras.Componentes.UsrComboBoxCompras.resources</LogicalName>
     </EmbeddedResource>
     <EmbeddedResource Include="Componentes\UsrBaseCompras.resx">
       <DependentUpon>UsrBaseCompras.cs</DependentUpon>

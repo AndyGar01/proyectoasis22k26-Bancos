@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
@@ -9,7 +9,7 @@ namespace CapaVista_Compras.Componentes
     [DefaultEvent("TextChanged")]
     public partial class UsrTextBoxCompras : UserControl
     {
-        
+
         private bool _ErrorVisible;
         private bool _MostrarEtiquetaError = true;
         private int _AlturaEtiquetaError = 22;
@@ -50,8 +50,8 @@ namespace CapaVista_Compras.Componentes
 
         private void ComprasProcActualizarEspacioError()
         {
-            if (ComprasUsrError == null || ComprasTlpMain == null) return;
-            using (new ClsActualizacionDisenoCompras(ComprasTlpMain))
+            if (ComprasUsrError == null || _ComprasTlpMain == null) return;
+            using (new ClsActualizacionDisenoCompras(_ComprasTlpMain))
             {
                 int Altura = Math.Max(_AlturaEtiquetaError, _AlturaErrorAmpliada);
                 int AlturaFila = _MostrarEtiquetaError ? Altura + ComprasUsrError.Margin.Vertical : 0;
@@ -60,7 +60,7 @@ namespace CapaVista_Compras.Componentes
                 ComprasUsrError.MinimumSize = Size.Empty;
                 ComprasUsrError.MaximumSize = new Size(0, Altura);
                 ComprasUsrError.Visible = _MostrarEtiquetaError;
-                ClsActualizacionDisenoCompras.ComprasProcAltura(ComprasTlpMain.RowStyles[1], AlturaFila);
+                ClsActualizacionDisenoCompras.ComprasProcAltura(_ComprasTlpMain.RowStyles[1], AlturaFila);
                 if (Diferencia != 0) Height = Math.Max(1, Height + Diferencia);
             }
         }
@@ -124,7 +124,12 @@ namespace CapaVista_Compras.Componentes
 
         [DefaultValue(false)]
         public bool ReadOnly { get => ComprasTxtTexto.ReadOnly; set => ComprasTxtTexto.ReadOnly = value; }
+        [Category("Compras")]
+        [Description("Permite escribir varias líneas cuando es True y una sola línea cuando es False.")]
         [DefaultValue(false)]
+        [Browsable(true)]
+        [RefreshProperties(RefreshProperties.All)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
         public bool Multiline { get => ComprasTxtTexto.Multiline; set => ComprasTxtTexto.Multiline = value; }
         [Browsable(false)]
         public int SelectionStart { get => ComprasTxtTexto.SelectionStart; set => ComprasTxtTexto.SelectionStart = value; }
@@ -159,12 +164,12 @@ namespace CapaVista_Compras.Componentes
         {
             base.OnBackColorChanged(Evento);
             if (ComprasTxtTexto != null) ComprasTxtTexto.BackColor = BackColor;
-            if (ComprasTlpMain != null) ComprasTlpMain.BackColor = BackColor;
+            if (_ComprasTlpMain != null) _ComprasTlpMain.BackColor = BackColor;
         }
 
         private void ComprasProcActualizarBorde()
         {
-            ComprasPnlBorde.BackColor = _ErrorVisible ? Color.Red :
+            _ComprasPnlBorde.BackColor = _ErrorVisible ? Color.Red :
                 ComprasTxtTexto.Focused ? ClsTemaCompras.AcentoNavegador : ClsTemaCompras.PrincipalNavegador;
         }
 
@@ -206,13 +211,13 @@ namespace CapaVista_Compras.Componentes
                 return;
             }
 
-            using (new ClsActualizacionDisenoCompras(ComprasTlpMain))
+            using (new ClsActualizacionDisenoCompras(_ComprasTlpMain))
             {
                 if (ComprasUsrError.Texto != Mensaje) ComprasUsrError.Texto = Mensaje;
                 if (ComprasUsrError.ColorTexto != Color.Red) ComprasUsrError.ColorTexto = Color.Red;
                 _ErrorVisible = true;
                 ComprasProcActualizarEspacioError();
-                if (ComprasPnlBorde.BackColor != Color.Red) ComprasPnlBorde.BackColor = Color.Red;
+                if (_ComprasPnlBorde.BackColor != Color.Red) _ComprasPnlBorde.BackColor = Color.Red;
             }
         }
 
@@ -220,20 +225,20 @@ namespace CapaVista_Compras.Componentes
         {
             int Ancho = System.Math.Max(1, Width - 12);
             int Altura = System.Math.Max(22, TextRenderer.MeasureText(Mensaje, ComprasUsrError.Font, new Size(Ancho, int.MaxValue), TextFormatFlags.WordBreak).Height);
-            int AlturaEntrada = Math.Max(25, ComprasPnlBorde.Height) + ComprasTlpMain.Padding.Vertical;
+            int AlturaEntrada = Math.Max(25, _ComprasPnlBorde.Height) + _ComprasTlpMain.Padding.Vertical;
             return AlturaEntrada + (_MostrarEtiquetaError ? Math.Max(_AlturaEtiquetaError, Altura) + ComprasUsrError.Margin.Vertical : 0);
         }
 
         internal void ComprasProcAmpliarError(int AlturaFila)
         {
-            _AlturaErrorAmpliada = Math.Max(0, AlturaFila - Math.Max(25, ComprasPnlBorde.Height)
-                - ComprasTlpMain.Padding.Vertical - ComprasUsrError.Margin.Vertical);
+            _AlturaErrorAmpliada = Math.Max(0, AlturaFila - Math.Max(25, _ComprasPnlBorde.Height)
+                - _ComprasTlpMain.Padding.Vertical - ComprasUsrError.Margin.Vertical);
             ComprasProcActualizarEspacioError();
         }
 
         public void ComprasMetLimpiarError()
         {
-            using (new ClsActualizacionDisenoCompras(ComprasTlpMain))
+            using (new ClsActualizacionDisenoCompras(_ComprasTlpMain))
             {
                 if (ComprasUsrError.Texto != string.Empty) ComprasUsrError.Texto = string.Empty;
                 _ErrorVisible = false;
@@ -242,6 +247,6 @@ namespace CapaVista_Compras.Componentes
                 ComprasProcActualizarBorde();
             }
         }
-        
+
     }
 }

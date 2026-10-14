@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CapaVista_Compras.Componentes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,13 +11,13 @@ using System.Windows.Forms;
 
 namespace CapaVista_Compras
 {
-    public partial class UsrOrdenesDisponibles : UserControl
+    public partial class UsrOrdenesDisponibles : UsrBaseCompras
     {
         public UsrOrdenesDisponibles()
         {
             InitializeComponent();
         }
 
-        
+
     }
 }

@@ -15,6 +15,12 @@ namespace CapaVista_Compras.Componentes
         private bool _ActualizandoImagen;
 
         [Category("Compras")]
+        [Description("Control que recibe el foco antes de abrir la consulta.")]
+        [DefaultValue(null)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
+        public Control ControlFocoAlternativo { get; set; }
+
+        [Category("Compras")]
         [Description("Imagen de fondo que se muestra cuando el botón está deshabilitado.")]
         [DefaultValue(null)]
         [Browsable(true)]
@@ -50,6 +56,20 @@ namespace CapaVista_Compras.Componentes
         }
 
         protected override Size DefaultSize => new Size(80, 80);
+
+        protected override void OnClick(EventArgs Evento)
+        {
+            if (!DesignMode && LicenseManager.UsageMode != LicenseUsageMode.Designtime)
+            {
+                Control Destino = ControlFocoAlternativo;
+                if (Destino != null && !Destino.IsDisposed && Destino.CanFocus &&
+                    !ReferenceEquals(Destino, this) && ReferenceEquals(Destino.FindForm(), FindForm()))
+                {
+                    Destino.Focus();
+                }
+            }
+            base.OnClick(Evento);
+        }
 
         protected override void OnPaint(PaintEventArgs Evento)
         {

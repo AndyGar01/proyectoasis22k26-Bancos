@@ -1,13 +1,5 @@
 ﻿using CapaVista_Compras.Componentes;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace CapaVista_Compras
 {
@@ -16,6 +8,60 @@ namespace CapaVista_Compras
         public UsrOrdenesDeCompras()
         {
             InitializeComponent();
+            ComprasProcConfigurarArticulos();
+            _ComprasBtnConsultarProveedor.ConsultasEvtSeleccion += ComprasMetSeleccionarProveedor;
+        }
+
+        private void ComprasProcConfigurarArticulos()
+        {
+            ComprasProcAgregarColumna(ComprasUsrArticulos, "IDarticulo", "ID artículo", 8, false);
+            ComprasProcAgregarColumna(ComprasUsrArticulos, "nombre", "Nombre", 22, false);
+            ComprasProcAgregarColumna(ComprasUsrArticulos, "unidad", "Unidad", 7, false);
+            ComprasProcAgregarColumna(ComprasUsrArticulos, "cantidad", "Cantidad", 8, true);
+            ComprasProcAgregarColumna(ComprasUsrArticulos, "precioUnitario", "Precio unitario", 11, true);
+            ComprasProcAgregarColumna(ComprasUsrArticulos, "subtotal", "Subtotal", 11, true);
+            ComprasProcAgregarColumna(ComprasUsrArticulos, "descuento", "Descuento", 10, true);
+            ComprasProcAgregarColumna(ComprasUsrArticulos, "porcentajeImpuesto", "Impuesto %", 8, false);
+            ComprasProcAgregarColumna(ComprasUsrArticulos, "impuesto", "Impuesto", 10, true);
+            ComprasProcAgregarColumna(ComprasUsrArticulos, "total", "Total", 12, true);
+            ComprasUsrArticulos.Columns["ComprasColporcentajeImpuesto"].DefaultCellStyle.Format = "P0";
+            ComprasUsrArticulos.Tabla.DefaultCellStyle.Alignment =
+                System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            ComprasUsrArticulos.Tabla.ColumnHeadersDefaultCellStyle.Alignment =
+                System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            foreach (System.Windows.Forms.DataGridViewColumn Columna in ComprasUsrArticulos.Columns)
+            {
+                Columna.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            }
+            ComprasUsrArticulos.ReadOnly = true;
+            ComprasUsrArticulos.AllowUserToAddRows = false;
+            ComprasUsrArticulos.AllowUserToDeleteRows = false;
+
+            ComprasProcAgregarArticuloEjemplo(1, "Carne de cerdo", "kg", 25M, 32.50M, 25M, 0.12M);
+            ComprasProcAgregarArticuloEjemplo(2, "Carne de res", "kg", 15M, 45M, 0M, 0.12M);
+            ComprasProcAgregarArticuloEjemplo(3, "Sal refinada", "kg", 10M, 4.75M, 0M, 0.12M);
+            ComprasProcAgregarArticuloEjemplo(4, "Mezcla de especias", "kg", 3M, 68M, 10M, 0.12M);
+            ComprasProcAgregarArticuloEjemplo(5, "Tripas para embutidos", "m", 100M, 2.25M, 5M, 0.12M);
+            ComprasProcAgregarArticuloEjemplo(6, "Bolsas de empaque", "unidad", 200M, 0.80M, 0M, 0.12M);
+            ComprasUsrArticulos.ClearSelection();
+        }
+
+        private void ComprasProcAgregarArticuloEjemplo(int IdArticulo, string Nombre, string Unidad,
+            decimal Cantidad, decimal PrecioUnitario, decimal Descuento, decimal PorcentajeImpuesto)
+        {
+            decimal Subtotal = Math.Round(Cantidad * PrecioUnitario, 2);
+            decimal Impuesto = Math.Round((Subtotal - Descuento) * PorcentajeImpuesto, 2);
+            decimal Total = Subtotal - Descuento + Impuesto;
+            ComprasUsrArticulos.Rows.Add(IdArticulo, Nombre, Unidad, Cantidad, PrecioUnitario,
+                Subtotal, Descuento, PorcentajeImpuesto, Impuesto, Total);
+        }
+
+        private void ComprasMetSeleccionarProveedor(object Remitente, EventArgs Evento)
+        {
+            ComprasUsrNombreProveedor.Text = _ComprasBtnConsultarProveedor.ConsultasFuncObtenerCampoSeleccionado("nombreComercial");
+            ComprasUsrTelefonoProveedor.Text = _ComprasBtnConsultarProveedor.ConsultasFuncObtenerCampoSeleccionado("telefono");
+            ComprasUsrCorreoProveedor.Text = _ComprasBtnConsultarProveedor.ConsultasFuncObtenerCampoSeleccionado("email");
+            ComprasUsrContactoProveedor.Text = _ComprasBtnConsultarProveedor.ConsultasFuncObtenerCampoSeleccionado("contacto");
         }
     }
 }

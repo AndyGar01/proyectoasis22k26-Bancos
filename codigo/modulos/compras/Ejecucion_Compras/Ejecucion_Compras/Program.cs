@@ -7,7 +7,7 @@ using System.Windows.Forms;
 
 namespace Ejecucion_Compras
 {
-    internal static class Program
+    internal static class ClsPrograma
     {
         /// <summary>
         /// Punto de entrada principal para la aplicación.
@@ -17,7 +17,7 @@ namespace Ejecucion_Compras
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmMDICompras());
+            Application.Run(new FrmSplash());
         }
     }
 }

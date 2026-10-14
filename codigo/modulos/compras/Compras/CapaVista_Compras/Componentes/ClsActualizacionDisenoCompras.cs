@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
 
@@ -6,7 +6,7 @@ namespace CapaVista_Compras.Componentes
 {
     internal sealed class ClsActualizacionDisenoCompras : IDisposable
     {
-        
+
         private readonly List<Control> _Contenedores = new List<Control>();
         private readonly ClsTableLayoutPanelCompras _PanelOculto;
         private bool _Finalizado;
@@ -55,6 +55,6 @@ namespace CapaVista_Compras.Componentes
             if (Fila.SizeType != SizeType.Absolute) Fila.SizeType = SizeType.Absolute;
             if (Fila.Height != Altura) Fila.Height = Altura;
         }
-        
+
     }
 }

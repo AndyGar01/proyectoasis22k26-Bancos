@@ -2,1098 +2,1217 @@
 {
     partial class UsrOrdenesDeCompras
     {
-        /// <summary> 
+        /// <summary>
         /// Variable del diseñador necesaria.
         /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        private System.ComponentModel.IContainer _Componentes = null;
 
-        /// <summary> 
+        /// <summary>
         /// Limpiar los recursos que se estén usando.
         /// </summary>
         /// <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
-        protected override void Dispose(bool disposing)
+        protected override void Dispose(bool LiberarRecursos)
         {
-            if (disposing && (components != null))
+            if (LiberarRecursos && (_Componentes != null))
             {
-                components.Dispose();
+                _Componentes.Dispose();
             }
-            base.Dispose(disposing);
+            base.Dispose(LiberarRecursos);
         }
 
         #region Código generado por el Diseñador de componentes
 
-        /// <summary> 
+        /// <summary>
         /// Método necesario para admitir el Diseñador. No se puede modificar
         /// el contenido de este método con el editor de código.
         /// </summary>
         private void InitializeComponent()
         {
-            this.clsTableLayoutPanelCompras1 = new CapaVista_Compras.Componentes.ClsTableLayoutPanelCompras();
-            this.clsGroupBoxCompras1 = new CapaVista_Compras.Componentes.ClsGroupBoxCompras();
-            this.clsTableLayoutPanelCompras6 = new CapaVista_Compras.Componentes.ClsTableLayoutPanelCompras();
-            this.clsTableLayoutPanelCompras8 = new CapaVista_Compras.Componentes.ClsTableLayoutPanelCompras();
-            this.usrTextBoxCompras7 = new CapaVista_Compras.Componentes.UsrTextBoxCompras();
-            this.usrTextBoxCompras6 = new CapaVista_Compras.Componentes.UsrTextBoxCompras();
-            this.usrTextBoxCompras5 = new CapaVista_Compras.Componentes.UsrTextBoxCompras();
-            this.usrLabelCompras9 = new CapaVista_Compras.Componentes.UsrLabelCompras();
-            this.usrTextBoxCompras3 = new CapaVista_Compras.Componentes.UsrTextBoxCompras();
-            this.usrLabelCompras10 = new CapaVista_Compras.Componentes.UsrLabelCompras();
-            this.usrLabelCompras11 = new CapaVista_Compras.Componentes.UsrLabelCompras();
-            this.usrLabelCompras12 = new CapaVista_Compras.Componentes.UsrLabelCompras();
-            this.usrLabelCompras13 = new CapaVista_Compras.Componentes.UsrLabelCompras();
-            this.clsConsultasCompras2 = new CapaVista_Compras.Componentes.ClsConsultasCompras();
-            this.clsTableLayoutPanelCompras7 = new CapaVista_Compras.Componentes.ClsTableLayoutPanelCompras();
-            this.usrTextBoxCompras10 = new CapaVista_Compras.Componentes.UsrTextBoxCompras();
-            this.usrTextBoxCompras9 = new CapaVista_Compras.Componentes.UsrTextBoxCompras();
-            this.usrTextBoxCompras8 = new CapaVista_Compras.Componentes.UsrTextBoxCompras();
-            this.usrLabelCompras8 = new CapaVista_Compras.Componentes.UsrLabelCompras();
-            this.usrTextBoxCompras4 = new CapaVista_Compras.Componentes.UsrTextBoxCompras();
-            this.clsConsultasCompras1 = new CapaVista_Compras.Componentes.ClsConsultasCompras();
-            this.usrLabelCompras5 = new CapaVista_Compras.Componentes.UsrLabelCompras();
-            this.usrLabelCompras4 = new CapaVista_Compras.Componentes.UsrLabelCompras();
-            this.usrLabelCompras7 = new CapaVista_Compras.Componentes.UsrLabelCompras();
-            this.usrLabelCompras6 = new CapaVista_Compras.Componentes.UsrLabelCompras();
-            this.clsGroupBoxCompras2 = new CapaVista_Compras.Componentes.ClsGroupBoxCompras();
-            this.clsTableLayoutPanelCompras4 = new CapaVista_Compras.Componentes.ClsTableLayoutPanelCompras();
-            this.clsTableLayoutPanelCompras5 = new CapaVista_Compras.Componentes.ClsTableLayoutPanelCompras();
-            this.clsTableLayoutPanelCompras9 = new CapaVista_Compras.Componentes.ClsTableLayoutPanelCompras();
-            this.clsButtonCompras2 = new CapaVista_Compras.Componentes.ClsButtonCompras();
-            this.clsButtonCompras1 = new CapaVista_Compras.Componentes.ClsButtonCompras();
-            this.clsButtonCompras3 = new CapaVista_Compras.Componentes.ClsButtonCompras();
-            this.clsButtonCompras4 = new CapaVista_Compras.Componentes.ClsButtonCompras();
-            this.usrLabelCompras16 = new CapaVista_Compras.Componentes.UsrLabelCompras();
-            this.clsTableLayoutPanelCompras2 = new CapaVista_Compras.Componentes.ClsTableLayoutPanelCompras();
-            this.usrTextBoxCompras13 = new CapaVista_Compras.Componentes.UsrTextBoxCompras();
-            this.usrLabelCompras1 = new CapaVista_Compras.Componentes.UsrLabelCompras();
-            this.usrTextBoxCompras1 = new CapaVista_Compras.Componentes.UsrTextBoxCompras();
-            this.usrTextBoxCompras2 = new CapaVista_Compras.Componentes.UsrTextBoxCompras();
-            this.usrTextBoxCompras11 = new CapaVista_Compras.Componentes.UsrTextBoxCompras();
-            this.usrLabelCompras2 = new CapaVista_Compras.Componentes.UsrLabelCompras();
-            this.usrLabelCompras3 = new CapaVista_Compras.Componentes.UsrLabelCompras();
-            this.usrLabelCompras14 = new CapaVista_Compras.Componentes.UsrLabelCompras();
-            this.usrLabelCompras15 = new CapaVista_Compras.Componentes.UsrLabelCompras();
-            this.usrTextBoxCompras12 = new CapaVista_Compras.Componentes.UsrTextBoxCompras();
-            this.clsGroupBoxCompras3 = new CapaVista_Compras.Componentes.ClsGroupBoxCompras();
-            this.clsTableLayoutPanelCompras3 = new CapaVista_Compras.Componentes.ClsTableLayoutPanelCompras();
-            this.clsPanelCompras1 = new CapaVista_Compras.Componentes.ClsPanelCompras();
-            this.clsTableLayoutPanelCompras1.SuspendLayout();
-            this.clsGroupBoxCompras1.SuspendLayout();
-            this.clsTableLayoutPanelCompras6.SuspendLayout();
-            this.clsTableLayoutPanelCompras8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.clsConsultasCompras2)).BeginInit();
-            this.clsTableLayoutPanelCompras7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.clsConsultasCompras1)).BeginInit();
-            this.clsGroupBoxCompras2.SuspendLayout();
-            this.clsTableLayoutPanelCompras4.SuspendLayout();
-            this.clsTableLayoutPanelCompras5.SuspendLayout();
-            this.clsTableLayoutPanelCompras9.SuspendLayout();
-            this.clsTableLayoutPanelCompras2.SuspendLayout();
-            this.clsGroupBoxCompras3.SuspendLayout();
-            this.clsTableLayoutPanelCompras3.SuspendLayout();
+            this._ComprasTlpPrincipal = new CapaVista_Compras.Componentes.ClsTableLayoutPanelCompras();
+            this._ComprasGbxEncabezado = new CapaVista_Compras.Componentes.ClsGroupBoxCompras();
+            this._ComprasTlpEncabezado = new CapaVista_Compras.Componentes.ClsTableLayoutPanelCompras();
+            this._ComprasTlpProveedor = new CapaVista_Compras.Componentes.ClsTableLayoutPanelCompras();
+            this.ComprasUsrContactoProveedor = new CapaVista_Compras.Componentes.UsrTextBoxCompras();
+            this.ComprasUsrCorreoProveedor = new CapaVista_Compras.Componentes.UsrTextBoxCompras();
+            this.ComprasUsrTelefonoProveedor = new CapaVista_Compras.Componentes.UsrTextBoxCompras();
+            this.ComprasUsrProveedor = new CapaVista_Compras.Componentes.UsrLabelCompras();
+            this.ComprasUsrNombreProveedor = new CapaVista_Compras.Componentes.UsrTextBoxCompras();
+            this.ComprasUsrEtiquetaNombreProveedor = new CapaVista_Compras.Componentes.UsrLabelCompras();
+            this.ComprasUsrEtiquetaTelefonoProveedor = new CapaVista_Compras.Componentes.UsrLabelCompras();
+            this.ComprasUsrEtiquetaCorreoProveedor = new CapaVista_Compras.Componentes.UsrLabelCompras();
+            this.ComprasUsrEtiquetaContactoProveedor = new CapaVista_Compras.Componentes.UsrLabelCompras();
+            this._ComprasBtnConsultarProveedor = new CapaVista_Compras.Componentes.ClsConsultasCompras();
+            this._ComprasBtnConsultarResponsable = new CapaVista_Compras.Componentes.ClsConsultasCompras();
+            this._ComprasTlpResponsable = new CapaVista_Compras.Componentes.ClsTableLayoutPanelCompras();
+            this.ComprasUsrCorreoResponsable = new CapaVista_Compras.Componentes.UsrTextBoxCompras();
+            this.ComprasUsrPuestoResponsable = new CapaVista_Compras.Componentes.UsrTextBoxCompras();
+            this.ComprasUsrNombreResponsable = new CapaVista_Compras.Componentes.UsrTextBoxCompras();
+            this.ComprasUsrResponsable = new CapaVista_Compras.Componentes.UsrLabelCompras();
+            this.ComprasUsrCodigoResponsable = new CapaVista_Compras.Componentes.UsrTextBoxCompras();
+            this.ComprasUsrEtiquetaNombreResponsable = new CapaVista_Compras.Componentes.UsrLabelCompras();
+            this.ComprasUsrEtiquetaCodigoResponsable = new CapaVista_Compras.Componentes.UsrLabelCompras();
+            this.ComprasUsrEtiquetaCorreoResponsable = new CapaVista_Compras.Componentes.UsrLabelCompras();
+            this.ComprasUsrEtiquetaPuestoResponsable = new CapaVista_Compras.Componentes.UsrLabelCompras();
+            this._ComprasGbxFinalizacion = new CapaVista_Compras.Componentes.ClsGroupBoxCompras();
+            this._ComprasTlpFinalizacion = new CapaVista_Compras.Componentes.ClsTableLayoutPanelCompras();
+            this._ComprasTlpImportes = new CapaVista_Compras.Componentes.ClsTableLayoutPanelCompras();
+            this._ComprasTlpAcciones = new CapaVista_Compras.Componentes.ClsTableLayoutPanelCompras();
+            this._ComprasBtnGuardar = new CapaVista_Compras.Componentes.ClsButtonCompras();
+            this._ComprasBtnDescartar = new CapaVista_Compras.Componentes.ClsButtonCompras();
+            this.ComprasUsrEtiquetaComentario = new CapaVista_Compras.Componentes.UsrLabelCompras();
+            this.ComprasUsrComentario = new CapaVista_Compras.Componentes.UsrTextBoxCompras();
+            this._ComprasTlpTotales = new CapaVista_Compras.Componentes.ClsTableLayoutPanelCompras();
+            this.ComprasUsrImpuesto = new CapaVista_Compras.Componentes.UsrTextBoxCompras();
+            this.ComprasUsrEtiquetaSubtotal = new CapaVista_Compras.Componentes.UsrLabelCompras();
+            this.ComprasUsrSubtotal = new CapaVista_Compras.Componentes.UsrTextBoxCompras();
+            this.ComprasUsrDescuento = new CapaVista_Compras.Componentes.UsrTextBoxCompras();
+            this.ComprasUsrGastosAdicionales = new CapaVista_Compras.Componentes.UsrTextBoxCompras();
+            this.ComprasUsrEtiquetaDescuento = new CapaVista_Compras.Componentes.UsrLabelCompras();
+            this.ComprasUsrEtiquetaGastosAdicionales = new CapaVista_Compras.Componentes.UsrLabelCompras();
+            this.ComprasUsrEtiquetaImpuesto = new CapaVista_Compras.Componentes.UsrLabelCompras();
+            this.ComprasUsrEtiquetaTotal = new CapaVista_Compras.Componentes.UsrLabelCompras();
+            this.ComprasUsrTotal = new CapaVista_Compras.Componentes.UsrTextBoxCompras();
+            this._ComprasBtnPorcentaje = new CapaVista_Compras.Componentes.ClsButtonCompras();
+            this._ComprasGbxDetalles = new CapaVista_Compras.Componentes.ClsGroupBoxCompras();
+            this._ComprasTlpDetalles = new CapaVista_Compras.Componentes.ClsTableLayoutPanelCompras();
+            this._ComprasPnlArticulos = new CapaVista_Compras.Componentes.ClsPanelCompras();
+            this.ComprasUsrArticulos = new CapaVista_Compras.Componentes.UsrDataGridViewCompras();
+            this._ComprasBtnArticulos = new CapaVista_Compras.Componentes.ClsButtonCompras();
+            this._ComprasBtnLogistica = new CapaVista_Compras.Componentes.ClsButtonCompras();
+            this._ComprasBtnFinanzas = new CapaVista_Compras.Componentes.ClsButtonCompras();
+            this._ComprasBtnAnexos = new CapaVista_Compras.Componentes.ClsButtonCompras();
+            this._ComprasTlpPrincipal.SuspendLayout();
+            this._ComprasGbxEncabezado.SuspendLayout();
+            this._ComprasTlpEncabezado.SuspendLayout();
+            this._ComprasTlpProveedor.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this._ComprasBtnConsultarProveedor)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._ComprasBtnConsultarResponsable)).BeginInit();
+            this._ComprasTlpResponsable.SuspendLayout();
+            this._ComprasGbxFinalizacion.SuspendLayout();
+            this._ComprasTlpFinalizacion.SuspendLayout();
+            this._ComprasTlpImportes.SuspendLayout();
+            this._ComprasTlpAcciones.SuspendLayout();
+            this._ComprasTlpTotales.SuspendLayout();
+            this._ComprasGbxDetalles.SuspendLayout();
+            this._ComprasTlpDetalles.SuspendLayout();
+            this._ComprasPnlArticulos.SuspendLayout();
             this.SuspendLayout();
             // 
-            // clsTableLayoutPanelCompras1
-            // 
-            this.clsTableLayoutPanelCompras1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
-            this.clsTableLayoutPanelCompras1.ColumnCount = 1;
-            this.clsTableLayoutPanelCompras1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.clsTableLayoutPanelCompras1.Controls.Add(this.clsGroupBoxCompras1, 0, 0);
-            this.clsTableLayoutPanelCompras1.Controls.Add(this.clsGroupBoxCompras2, 0, 2);
-            this.clsTableLayoutPanelCompras1.Controls.Add(this.clsGroupBoxCompras3, 0, 1);
-            this.clsTableLayoutPanelCompras1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.clsTableLayoutPanelCompras1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
-            this.clsTableLayoutPanelCompras1.Location = new System.Drawing.Point(0, 0);
-            this.clsTableLayoutPanelCompras1.Margin = new System.Windows.Forms.Padding(0);
-            this.clsTableLayoutPanelCompras1.Name = "clsTableLayoutPanelCompras1";
-            this.clsTableLayoutPanelCompras1.RowCount = 3;
-            this.clsTableLayoutPanelCompras1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 240F));
-            this.clsTableLayoutPanelCompras1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.clsTableLayoutPanelCompras1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 250F));
-            this.clsTableLayoutPanelCompras1.Size = new System.Drawing.Size(1150, 900);
-            this.clsTableLayoutPanelCompras1.TabIndex = 0;
-            // 
-            // clsGroupBoxCompras1
-            // 
-            this.clsGroupBoxCompras1.BackColor = System.Drawing.Color.Transparent;
-            this.clsGroupBoxCompras1.Controls.Add(this.clsTableLayoutPanelCompras6);
-            this.clsGroupBoxCompras1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.clsGroupBoxCompras1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.clsGroupBoxCompras1.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
-            this.clsGroupBoxCompras1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
-            this.clsGroupBoxCompras1.Location = new System.Drawing.Point(3, 3);
-            this.clsGroupBoxCompras1.Name = "clsGroupBoxCompras1";
-            this.clsGroupBoxCompras1.Size = new System.Drawing.Size(1144, 234);
-            this.clsGroupBoxCompras1.TabIndex = 4;
-            this.clsGroupBoxCompras1.TabStop = false;
-            this.clsGroupBoxCompras1.Text = "Encabezado";
-            // 
-            // clsTableLayoutPanelCompras6
-            // 
-            this.clsTableLayoutPanelCompras6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
-            this.clsTableLayoutPanelCompras6.ColumnCount = 3;
-            this.clsTableLayoutPanelCompras6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.clsTableLayoutPanelCompras6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.clsTableLayoutPanelCompras6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.clsTableLayoutPanelCompras6.Controls.Add(this.clsTableLayoutPanelCompras8, 0, 0);
-            this.clsTableLayoutPanelCompras6.Controls.Add(this.clsTableLayoutPanelCompras7, 2, 0);
-            this.clsTableLayoutPanelCompras6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.clsTableLayoutPanelCompras6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
-            this.clsTableLayoutPanelCompras6.Location = new System.Drawing.Point(3, 24);
-            this.clsTableLayoutPanelCompras6.Margin = new System.Windows.Forms.Padding(0);
-            this.clsTableLayoutPanelCompras6.Name = "clsTableLayoutPanelCompras6";
-            this.clsTableLayoutPanelCompras6.RowCount = 1;
-            this.clsTableLayoutPanelCompras6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.clsTableLayoutPanelCompras6.Size = new System.Drawing.Size(1138, 207);
-            this.clsTableLayoutPanelCompras6.TabIndex = 3;
-            // 
-            // clsTableLayoutPanelCompras8
-            // 
-            this.clsTableLayoutPanelCompras8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
-            this.clsTableLayoutPanelCompras8.ColumnCount = 3;
-            this.clsTableLayoutPanelCompras8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 130F));
-            this.clsTableLayoutPanelCompras8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.clsTableLayoutPanelCompras8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 90F));
-            this.clsTableLayoutPanelCompras8.Controls.Add(this.usrTextBoxCompras7, 1, 4);
-            this.clsTableLayoutPanelCompras8.Controls.Add(this.usrTextBoxCompras6, 1, 3);
-            this.clsTableLayoutPanelCompras8.Controls.Add(this.usrTextBoxCompras5, 1, 2);
-            this.clsTableLayoutPanelCompras8.Controls.Add(this.usrLabelCompras9, 0, 0);
-            this.clsTableLayoutPanelCompras8.Controls.Add(this.usrTextBoxCompras3, 1, 1);
-            this.clsTableLayoutPanelCompras8.Controls.Add(this.usrLabelCompras10, 0, 1);
-            this.clsTableLayoutPanelCompras8.Controls.Add(this.usrLabelCompras11, 0, 2);
-            this.clsTableLayoutPanelCompras8.Controls.Add(this.usrLabelCompras12, 0, 3);
-            this.clsTableLayoutPanelCompras8.Controls.Add(this.usrLabelCompras13, 0, 4);
-            this.clsTableLayoutPanelCompras8.Controls.Add(this.clsConsultasCompras2, 2, 1);
-            this.clsTableLayoutPanelCompras8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.clsTableLayoutPanelCompras8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
-            this.clsTableLayoutPanelCompras8.Location = new System.Drawing.Point(0, 0);
-            this.clsTableLayoutPanelCompras8.Margin = new System.Windows.Forms.Padding(0);
-            this.clsTableLayoutPanelCompras8.Name = "clsTableLayoutPanelCompras8";
-            this.clsTableLayoutPanelCompras8.RowCount = 6;
-            this.clsTableLayoutPanelCompras8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.clsTableLayoutPanelCompras8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.clsTableLayoutPanelCompras8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.clsTableLayoutPanelCompras8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.clsTableLayoutPanelCompras8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.clsTableLayoutPanelCompras8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.clsTableLayoutPanelCompras8.Size = new System.Drawing.Size(559, 207);
-            this.clsTableLayoutPanelCompras8.TabIndex = 4;
-            // 
-            // usrTextBoxCompras7
-            // 
-            this.usrTextBoxCompras7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.usrTextBoxCompras7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
-            this.usrTextBoxCompras7.Enabled = false;
-            this.usrTextBoxCompras7.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.usrTextBoxCompras7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
-            this.usrTextBoxCompras7.Location = new System.Drawing.Point(132, 152);
-            this.usrTextBoxCompras7.Margin = new System.Windows.Forms.Padding(2);
-            this.usrTextBoxCompras7.MaxLength = 2147483647;
-            this.usrTextBoxCompras7.MostrarEtiquetaError = false;
-            this.usrTextBoxCompras7.Name = "usrTextBoxCompras7";
-            this.usrTextBoxCompras7.SelectedText = "";
-            this.usrTextBoxCompras7.SelectionLength = 0;
-            this.usrTextBoxCompras7.SelectionStart = 0;
-            this.usrTextBoxCompras7.Size = new System.Drawing.Size(335, 36);
-            this.usrTextBoxCompras7.TabIndex = 10;
-            this.usrTextBoxCompras7.Text = "usrTextBoxCompras7";
-            // 
-            // usrTextBoxCompras6
-            // 
-            this.usrTextBoxCompras6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.usrTextBoxCompras6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
-            this.usrTextBoxCompras6.Enabled = false;
-            this.usrTextBoxCompras6.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.usrTextBoxCompras6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
-            this.usrTextBoxCompras6.Location = new System.Drawing.Point(132, 112);
-            this.usrTextBoxCompras6.Margin = new System.Windows.Forms.Padding(2);
-            this.usrTextBoxCompras6.MaxLength = 2147483647;
-            this.usrTextBoxCompras6.MostrarEtiquetaError = false;
-            this.usrTextBoxCompras6.Name = "usrTextBoxCompras6";
-            this.usrTextBoxCompras6.SelectedText = "";
-            this.usrTextBoxCompras6.SelectionLength = 0;
-            this.usrTextBoxCompras6.SelectionStart = 0;
-            this.usrTextBoxCompras6.Size = new System.Drawing.Size(335, 36);
-            this.usrTextBoxCompras6.TabIndex = 9;
-            this.usrTextBoxCompras6.Text = "usrTextBoxCompras6";
-            // 
-            // usrTextBoxCompras5
-            // 
-            this.usrTextBoxCompras5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.usrTextBoxCompras5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
-            this.usrTextBoxCompras5.Enabled = false;
-            this.usrTextBoxCompras5.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.usrTextBoxCompras5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
-            this.usrTextBoxCompras5.Location = new System.Drawing.Point(132, 72);
-            this.usrTextBoxCompras5.Margin = new System.Windows.Forms.Padding(2);
-            this.usrTextBoxCompras5.MaxLength = 2147483647;
-            this.usrTextBoxCompras5.MostrarEtiquetaError = false;
-            this.usrTextBoxCompras5.Name = "usrTextBoxCompras5";
-            this.usrTextBoxCompras5.SelectedText = "";
-            this.usrTextBoxCompras5.SelectionLength = 0;
-            this.usrTextBoxCompras5.SelectionStart = 0;
-            this.usrTextBoxCompras5.Size = new System.Drawing.Size(335, 36);
-            this.usrTextBoxCompras5.TabIndex = 8;
-            this.usrTextBoxCompras5.Text = "usrTextBoxCompras5";
-            // 
-            // usrLabelCompras9
-            // 
-            this.usrLabelCompras9.AlineacionTexto = System.Drawing.ContentAlignment.MiddleCenter;
-            this.usrLabelCompras9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
-            this.clsTableLayoutPanelCompras8.SetColumnSpan(this.usrLabelCompras9, 3);
-            this.usrLabelCompras9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.usrLabelCompras9.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.usrLabelCompras9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
-            this.usrLabelCompras9.Location = new System.Drawing.Point(4, 4);
-            this.usrLabelCompras9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.usrLabelCompras9.MaximumSize = new System.Drawing.Size(1250, 27);
-            this.usrLabelCompras9.MostrarAsterisco = false;
-            this.usrLabelCompras9.Name = "usrLabelCompras9";
-            this.usrLabelCompras9.Size = new System.Drawing.Size(551, 22);
-            this.usrLabelCompras9.TabIndex = 7;
-            this.usrLabelCompras9.TabStop = false;
-            this.usrLabelCompras9.Text = "PROVEEDOR";
-            this.usrLabelCompras9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.usrLabelCompras9.Texto = "PROVEEDOR";
-            // 
-            // usrTextBoxCompras3
-            // 
-            this.usrTextBoxCompras3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.usrTextBoxCompras3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
-            this.usrTextBoxCompras3.Enabled = false;
-            this.usrTextBoxCompras3.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.usrTextBoxCompras3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
-            this.usrTextBoxCompras3.Location = new System.Drawing.Point(132, 32);
-            this.usrTextBoxCompras3.Margin = new System.Windows.Forms.Padding(2);
-            this.usrTextBoxCompras3.MaxLength = 2147483647;
-            this.usrTextBoxCompras3.MostrarEtiquetaError = false;
-            this.usrTextBoxCompras3.Name = "usrTextBoxCompras3";
-            this.usrTextBoxCompras3.SelectedText = "";
-            this.usrTextBoxCompras3.SelectionLength = 0;
-            this.usrTextBoxCompras3.SelectionStart = 0;
-            this.usrTextBoxCompras3.Size = new System.Drawing.Size(335, 36);
-            this.usrTextBoxCompras3.TabIndex = 5;
-            this.usrTextBoxCompras3.Text = "usrTextBoxCompras3";
-            // 
-            // usrLabelCompras10
-            // 
-            this.usrLabelCompras10.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.usrLabelCompras10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
-            this.usrLabelCompras10.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.usrLabelCompras10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
-            this.usrLabelCompras10.Location = new System.Drawing.Point(3, 41);
-            this.usrLabelCompras10.MaximumSize = new System.Drawing.Size(1000, 22);
-            this.usrLabelCompras10.MostrarAsterisco = false;
-            this.usrLabelCompras10.Name = "usrLabelCompras10";
-            this.usrLabelCompras10.Size = new System.Drawing.Size(124, 18);
-            this.usrLabelCompras10.TabIndex = 1;
-            this.usrLabelCompras10.TabStop = false;
-            this.usrLabelCompras10.Text = "Nombre";
-            this.usrLabelCompras10.Texto = "Nombre";
-            // 
-            // usrLabelCompras11
-            // 
-            this.usrLabelCompras11.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.usrLabelCompras11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
-            this.usrLabelCompras11.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.usrLabelCompras11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
-            this.usrLabelCompras11.Location = new System.Drawing.Point(3, 81);
-            this.usrLabelCompras11.MaximumSize = new System.Drawing.Size(1000, 22);
-            this.usrLabelCompras11.MostrarAsterisco = false;
-            this.usrLabelCompras11.Name = "usrLabelCompras11";
-            this.usrLabelCompras11.Size = new System.Drawing.Size(124, 18);
-            this.usrLabelCompras11.TabIndex = 2;
-            this.usrLabelCompras11.TabStop = false;
-            this.usrLabelCompras11.Text = "Teléfono";
-            this.usrLabelCompras11.Texto = "Teléfono";
-            // 
-            // usrLabelCompras12
-            // 
-            this.usrLabelCompras12.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.usrLabelCompras12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
-            this.usrLabelCompras12.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.usrLabelCompras12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
-            this.usrLabelCompras12.Location = new System.Drawing.Point(3, 121);
-            this.usrLabelCompras12.MaximumSize = new System.Drawing.Size(1000, 22);
-            this.usrLabelCompras12.MostrarAsterisco = false;
-            this.usrLabelCompras12.Name = "usrLabelCompras12";
-            this.usrLabelCompras12.Size = new System.Drawing.Size(124, 18);
-            this.usrLabelCompras12.TabIndex = 3;
-            this.usrLabelCompras12.TabStop = false;
-            this.usrLabelCompras12.Text = "Correo";
-            this.usrLabelCompras12.Texto = "Correo";
-            // 
-            // usrLabelCompras13
-            // 
-            this.usrLabelCompras13.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.usrLabelCompras13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
-            this.usrLabelCompras13.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.usrLabelCompras13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
-            this.usrLabelCompras13.Location = new System.Drawing.Point(3, 161);
-            this.usrLabelCompras13.MaximumSize = new System.Drawing.Size(1000, 22);
-            this.usrLabelCompras13.MostrarAsterisco = false;
-            this.usrLabelCompras13.Name = "usrLabelCompras13";
-            this.usrLabelCompras13.Size = new System.Drawing.Size(124, 18);
-            this.usrLabelCompras13.TabIndex = 4;
-            this.usrLabelCompras13.TabStop = false;
-            this.usrLabelCompras13.Text = "Estado";
-            this.usrLabelCompras13.Texto = "Estado";
-            // 
-            // clsConsultasCompras2
-            // 
-            this.clsConsultasCompras2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.clsConsultasCompras2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(220)))), ((int)(((byte)(239)))));
-            this.clsConsultasCompras2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.clsConsultasCompras2.CampoRetorno = "nombrePaci";
-            this.clsConsultasCompras2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.clsConsultasCompras2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
-            this.clsConsultasCompras2.FlatAppearance.BorderSize = 0;
-            this.clsConsultasCompras2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(173)))), ((int)(((byte)(213)))));
-            this.clsConsultasCompras2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(193)))), ((int)(((byte)(224)))));
-            this.clsConsultasCompras2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.clsConsultasCompras2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
-            this.clsConsultasCompras2.Location = new System.Drawing.Point(474, 70);
-            this.clsConsultasCompras2.Margin = new System.Windows.Forms.Padding(0);
-            this.clsConsultasCompras2.MaximumSize = new System.Drawing.Size(80, 80);
-            this.clsConsultasCompras2.MinimumSize = new System.Drawing.Size(80, 80);
-            this.clsConsultasCompras2.Name = "clsConsultasCompras2";
-            this.clsTableLayoutPanelCompras8.SetRowSpan(this.clsConsultasCompras2, 4);
-            this.clsConsultasCompras2.Size = new System.Drawing.Size(80, 80);
-            this.clsConsultasCompras2.TabIndex = 6;
-            this.clsConsultasCompras2.Tabla = "tbl_paciente";
-            this.clsConsultasCompras2.Text = "Consultar";
-            this.clsConsultasCompras2.UseVisualStyleBackColor = false;
-            // 
-            // clsTableLayoutPanelCompras7
-            // 
-            this.clsTableLayoutPanelCompras7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
-            this.clsTableLayoutPanelCompras7.ColumnCount = 3;
-            this.clsTableLayoutPanelCompras7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 130F));
-            this.clsTableLayoutPanelCompras7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.clsTableLayoutPanelCompras7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 90F));
-            this.clsTableLayoutPanelCompras7.Controls.Add(this.usrTextBoxCompras10, 1, 4);
-            this.clsTableLayoutPanelCompras7.Controls.Add(this.usrTextBoxCompras9, 1, 3);
-            this.clsTableLayoutPanelCompras7.Controls.Add(this.usrTextBoxCompras8, 1, 2);
-            this.clsTableLayoutPanelCompras7.Controls.Add(this.usrLabelCompras8, 0, 0);
-            this.clsTableLayoutPanelCompras7.Controls.Add(this.usrTextBoxCompras4, 1, 1);
-            this.clsTableLayoutPanelCompras7.Controls.Add(this.clsConsultasCompras1, 2, 1);
-            this.clsTableLayoutPanelCompras7.Controls.Add(this.usrLabelCompras5, 0, 1);
-            this.clsTableLayoutPanelCompras7.Controls.Add(this.usrLabelCompras4, 0, 2);
-            this.clsTableLayoutPanelCompras7.Controls.Add(this.usrLabelCompras7, 0, 3);
-            this.clsTableLayoutPanelCompras7.Controls.Add(this.usrLabelCompras6, 0, 4);
-            this.clsTableLayoutPanelCompras7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.clsTableLayoutPanelCompras7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
-            this.clsTableLayoutPanelCompras7.Location = new System.Drawing.Point(579, 0);
-            this.clsTableLayoutPanelCompras7.Margin = new System.Windows.Forms.Padding(0);
-            this.clsTableLayoutPanelCompras7.Name = "clsTableLayoutPanelCompras7";
-            this.clsTableLayoutPanelCompras7.RowCount = 6;
-            this.clsTableLayoutPanelCompras7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.clsTableLayoutPanelCompras7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.clsTableLayoutPanelCompras7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.clsTableLayoutPanelCompras7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.clsTableLayoutPanelCompras7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.clsTableLayoutPanelCompras7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.clsTableLayoutPanelCompras7.Size = new System.Drawing.Size(559, 207);
-            this.clsTableLayoutPanelCompras7.TabIndex = 3;
-            // 
-            // usrTextBoxCompras10
-            // 
-            this.usrTextBoxCompras10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.usrTextBoxCompras10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
-            this.usrTextBoxCompras10.Enabled = false;
-            this.usrTextBoxCompras10.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.usrTextBoxCompras10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
-            this.usrTextBoxCompras10.Location = new System.Drawing.Point(132, 152);
-            this.usrTextBoxCompras10.Margin = new System.Windows.Forms.Padding(2);
-            this.usrTextBoxCompras10.MaxLength = 2147483647;
-            this.usrTextBoxCompras10.MostrarEtiquetaError = false;
-            this.usrTextBoxCompras10.Name = "usrTextBoxCompras10";
-            this.usrTextBoxCompras10.SelectedText = "";
-            this.usrTextBoxCompras10.SelectionLength = 0;
-            this.usrTextBoxCompras10.SelectionStart = 0;
-            this.usrTextBoxCompras10.Size = new System.Drawing.Size(335, 36);
-            this.usrTextBoxCompras10.TabIndex = 10;
-            this.usrTextBoxCompras10.Text = "usrTextBoxCompras10";
-            // 
-            // usrTextBoxCompras9
-            // 
-            this.usrTextBoxCompras9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.usrTextBoxCompras9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
-            this.usrTextBoxCompras9.Enabled = false;
-            this.usrTextBoxCompras9.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.usrTextBoxCompras9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
-            this.usrTextBoxCompras9.Location = new System.Drawing.Point(132, 112);
-            this.usrTextBoxCompras9.Margin = new System.Windows.Forms.Padding(2);
-            this.usrTextBoxCompras9.MaxLength = 2147483647;
-            this.usrTextBoxCompras9.MostrarEtiquetaError = false;
-            this.usrTextBoxCompras9.Name = "usrTextBoxCompras9";
-            this.usrTextBoxCompras9.SelectedText = "";
-            this.usrTextBoxCompras9.SelectionLength = 0;
-            this.usrTextBoxCompras9.SelectionStart = 0;
-            this.usrTextBoxCompras9.Size = new System.Drawing.Size(335, 36);
-            this.usrTextBoxCompras9.TabIndex = 9;
-            this.usrTextBoxCompras9.Text = "usrTextBoxCompras9";
-            // 
-            // usrTextBoxCompras8
-            // 
-            this.usrTextBoxCompras8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.usrTextBoxCompras8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
-            this.usrTextBoxCompras8.Enabled = false;
-            this.usrTextBoxCompras8.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.usrTextBoxCompras8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
-            this.usrTextBoxCompras8.Location = new System.Drawing.Point(132, 72);
-            this.usrTextBoxCompras8.Margin = new System.Windows.Forms.Padding(2);
-            this.usrTextBoxCompras8.MaxLength = 2147483647;
-            this.usrTextBoxCompras8.MostrarEtiquetaError = false;
-            this.usrTextBoxCompras8.Name = "usrTextBoxCompras8";
-            this.usrTextBoxCompras8.SelectedText = "";
-            this.usrTextBoxCompras8.SelectionLength = 0;
-            this.usrTextBoxCompras8.SelectionStart = 0;
-            this.usrTextBoxCompras8.Size = new System.Drawing.Size(335, 36);
-            this.usrTextBoxCompras8.TabIndex = 8;
-            this.usrTextBoxCompras8.Text = "usrTextBoxCompras8";
-            // 
-            // usrLabelCompras8
-            // 
-            this.usrLabelCompras8.AlineacionTexto = System.Drawing.ContentAlignment.MiddleCenter;
-            this.usrLabelCompras8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
-            this.clsTableLayoutPanelCompras7.SetColumnSpan(this.usrLabelCompras8, 3);
-            this.usrLabelCompras8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.usrLabelCompras8.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.usrLabelCompras8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
-            this.usrLabelCompras8.Location = new System.Drawing.Point(4, 4);
-            this.usrLabelCompras8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.usrLabelCompras8.MaximumSize = new System.Drawing.Size(1250, 27);
-            this.usrLabelCompras8.MostrarAsterisco = false;
-            this.usrLabelCompras8.Name = "usrLabelCompras8";
-            this.usrLabelCompras8.Size = new System.Drawing.Size(551, 22);
-            this.usrLabelCompras8.TabIndex = 7;
-            this.usrLabelCompras8.TabStop = false;
-            this.usrLabelCompras8.Text = "RESPONSABLE DE COMPRA";
-            this.usrLabelCompras8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.usrLabelCompras8.Texto = "RESPONSABLE DE COMPRA";
-            // 
-            // usrTextBoxCompras4
-            // 
-            this.usrTextBoxCompras4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.usrTextBoxCompras4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
-            this.usrTextBoxCompras4.Enabled = false;
-            this.usrTextBoxCompras4.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.usrTextBoxCompras4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
-            this.usrTextBoxCompras4.Location = new System.Drawing.Point(132, 32);
-            this.usrTextBoxCompras4.Margin = new System.Windows.Forms.Padding(2);
-            this.usrTextBoxCompras4.MaxLength = 2147483647;
-            this.usrTextBoxCompras4.MostrarEtiquetaError = false;
-            this.usrTextBoxCompras4.Name = "usrTextBoxCompras4";
-            this.usrTextBoxCompras4.SelectedText = "";
-            this.usrTextBoxCompras4.SelectionLength = 0;
-            this.usrTextBoxCompras4.SelectionStart = 0;
-            this.usrTextBoxCompras4.Size = new System.Drawing.Size(335, 36);
-            this.usrTextBoxCompras4.TabIndex = 5;
-            this.usrTextBoxCompras4.Text = "usrTextBoxCompras4";
-            // 
-            // clsConsultasCompras1
-            // 
-            this.clsConsultasCompras1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.clsConsultasCompras1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(220)))), ((int)(((byte)(239)))));
-            this.clsConsultasCompras1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.clsConsultasCompras1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.clsConsultasCompras1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
-            this.clsConsultasCompras1.FlatAppearance.BorderSize = 0;
-            this.clsConsultasCompras1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(173)))), ((int)(((byte)(213)))));
-            this.clsConsultasCompras1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(193)))), ((int)(((byte)(224)))));
-            this.clsConsultasCompras1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.clsConsultasCompras1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
-            this.clsConsultasCompras1.Location = new System.Drawing.Point(474, 70);
-            this.clsConsultasCompras1.Margin = new System.Windows.Forms.Padding(0);
-            this.clsConsultasCompras1.MaximumSize = new System.Drawing.Size(80, 80);
-            this.clsConsultasCompras1.MinimumSize = new System.Drawing.Size(80, 80);
-            this.clsConsultasCompras1.Name = "clsConsultasCompras1";
-            this.clsTableLayoutPanelCompras7.SetRowSpan(this.clsConsultasCompras1, 4);
-            this.clsConsultasCompras1.Size = new System.Drawing.Size(80, 80);
-            this.clsConsultasCompras1.TabIndex = 6;
-            this.clsConsultasCompras1.Text = "Consultar";
-            this.clsConsultasCompras1.UseVisualStyleBackColor = false;
-            // 
-            // usrLabelCompras5
-            // 
-            this.usrLabelCompras5.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.usrLabelCompras5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
-            this.usrLabelCompras5.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.usrLabelCompras5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
-            this.usrLabelCompras5.Location = new System.Drawing.Point(3, 41);
-            this.usrLabelCompras5.MaximumSize = new System.Drawing.Size(1000, 22);
-            this.usrLabelCompras5.MostrarAsterisco = false;
-            this.usrLabelCompras5.Name = "usrLabelCompras5";
-            this.usrLabelCompras5.Size = new System.Drawing.Size(124, 18);
-            this.usrLabelCompras5.TabIndex = 2;
-            this.usrLabelCompras5.TabStop = false;
-            this.usrLabelCompras5.Text = "Nombre";
-            this.usrLabelCompras5.Texto = "Nombre";
-            // 
-            // usrLabelCompras4
-            // 
-            this.usrLabelCompras4.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.usrLabelCompras4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
-            this.usrLabelCompras4.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.usrLabelCompras4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
-            this.usrLabelCompras4.Location = new System.Drawing.Point(3, 81);
-            this.usrLabelCompras4.MaximumSize = new System.Drawing.Size(1000, 22);
-            this.usrLabelCompras4.MostrarAsterisco = false;
-            this.usrLabelCompras4.Name = "usrLabelCompras4";
-            this.usrLabelCompras4.Size = new System.Drawing.Size(124, 18);
-            this.usrLabelCompras4.TabIndex = 1;
-            this.usrLabelCompras4.TabStop = false;
-            this.usrLabelCompras4.Text = "Código";
-            this.usrLabelCompras4.Texto = "Código";
-            // 
-            // usrLabelCompras7
-            // 
-            this.usrLabelCompras7.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.usrLabelCompras7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
-            this.usrLabelCompras7.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.usrLabelCompras7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
-            this.usrLabelCompras7.Location = new System.Drawing.Point(3, 121);
-            this.usrLabelCompras7.MaximumSize = new System.Drawing.Size(1000, 22);
-            this.usrLabelCompras7.MostrarAsterisco = false;
-            this.usrLabelCompras7.Name = "usrLabelCompras7";
-            this.usrLabelCompras7.Size = new System.Drawing.Size(124, 18);
-            this.usrLabelCompras7.TabIndex = 4;
-            this.usrLabelCompras7.TabStop = false;
-            this.usrLabelCompras7.Text = "Correo";
-            this.usrLabelCompras7.Texto = "Correo";
-            // 
-            // usrLabelCompras6
-            // 
-            this.usrLabelCompras6.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.usrLabelCompras6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
-            this.usrLabelCompras6.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.usrLabelCompras6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
-            this.usrLabelCompras6.Location = new System.Drawing.Point(3, 161);
-            this.usrLabelCompras6.MaximumSize = new System.Drawing.Size(1000, 22);
-            this.usrLabelCompras6.MostrarAsterisco = false;
-            this.usrLabelCompras6.Name = "usrLabelCompras6";
-            this.usrLabelCompras6.Size = new System.Drawing.Size(124, 18);
-            this.usrLabelCompras6.TabIndex = 3;
-            this.usrLabelCompras6.TabStop = false;
-            this.usrLabelCompras6.Text = "Puesto";
-            this.usrLabelCompras6.Texto = "Puesto";
-            // 
-            // clsGroupBoxCompras2
-            // 
-            this.clsGroupBoxCompras2.BackColor = System.Drawing.Color.Transparent;
-            this.clsGroupBoxCompras2.Controls.Add(this.clsTableLayoutPanelCompras4);
-            this.clsGroupBoxCompras2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.clsGroupBoxCompras2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.clsGroupBoxCompras2.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
-            this.clsGroupBoxCompras2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
-            this.clsGroupBoxCompras2.Location = new System.Drawing.Point(3, 653);
-            this.clsGroupBoxCompras2.Name = "clsGroupBoxCompras2";
-            this.clsGroupBoxCompras2.Size = new System.Drawing.Size(1144, 244);
-            this.clsGroupBoxCompras2.TabIndex = 5;
-            this.clsGroupBoxCompras2.TabStop = false;
-            this.clsGroupBoxCompras2.Text = "Finalización";
-            // 
-            // clsTableLayoutPanelCompras4
-            // 
-            this.clsTableLayoutPanelCompras4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
-            this.clsTableLayoutPanelCompras4.ColumnCount = 2;
-            this.clsTableLayoutPanelCompras4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.clsTableLayoutPanelCompras4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.clsTableLayoutPanelCompras4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.clsTableLayoutPanelCompras4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.clsTableLayoutPanelCompras4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.clsTableLayoutPanelCompras4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.clsTableLayoutPanelCompras4.Controls.Add(this.clsTableLayoutPanelCompras5, 1, 0);
-            this.clsTableLayoutPanelCompras4.Controls.Add(this.clsTableLayoutPanelCompras2, 0, 0);
-            this.clsTableLayoutPanelCompras4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.clsTableLayoutPanelCompras4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
-            this.clsTableLayoutPanelCompras4.Location = new System.Drawing.Point(3, 24);
-            this.clsTableLayoutPanelCompras4.Margin = new System.Windows.Forms.Padding(0);
-            this.clsTableLayoutPanelCompras4.Name = "clsTableLayoutPanelCompras4";
-            this.clsTableLayoutPanelCompras4.RowCount = 1;
-            this.clsTableLayoutPanelCompras4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.clsTableLayoutPanelCompras4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 217F));
-            this.clsTableLayoutPanelCompras4.Size = new System.Drawing.Size(1138, 217);
-            this.clsTableLayoutPanelCompras4.TabIndex = 3;
-            // 
-            // clsTableLayoutPanelCompras5
-            // 
-            this.clsTableLayoutPanelCompras5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
-            this.clsTableLayoutPanelCompras5.ColumnCount = 2;
-            this.clsTableLayoutPanelCompras5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 130F));
-            this.clsTableLayoutPanelCompras5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.clsTableLayoutPanelCompras5.Controls.Add(this.clsTableLayoutPanelCompras9, 0, 2);
-            this.clsTableLayoutPanelCompras5.Controls.Add(this.usrLabelCompras16, 0, 0);
-            this.clsTableLayoutPanelCompras5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.clsTableLayoutPanelCompras5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
-            this.clsTableLayoutPanelCompras5.Location = new System.Drawing.Point(569, 0);
-            this.clsTableLayoutPanelCompras5.Margin = new System.Windows.Forms.Padding(0);
-            this.clsTableLayoutPanelCompras5.Name = "clsTableLayoutPanelCompras5";
-            this.clsTableLayoutPanelCompras5.RowCount = 4;
-            this.clsTableLayoutPanelCompras5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 100F));
-            this.clsTableLayoutPanelCompras5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10F));
-            this.clsTableLayoutPanelCompras5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 90F));
-            this.clsTableLayoutPanelCompras5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.clsTableLayoutPanelCompras5.Size = new System.Drawing.Size(569, 217);
-            this.clsTableLayoutPanelCompras5.TabIndex = 6;
-            // 
-            // clsTableLayoutPanelCompras9
-            // 
-            this.clsTableLayoutPanelCompras9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
-            this.clsTableLayoutPanelCompras9.ColumnCount = 7;
-            this.clsTableLayoutPanelCompras5.SetColumnSpan(this.clsTableLayoutPanelCompras9, 2);
-            this.clsTableLayoutPanelCompras9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 130F));
-            this.clsTableLayoutPanelCompras9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.clsTableLayoutPanelCompras9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 90F));
-            this.clsTableLayoutPanelCompras9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 90F));
-            this.clsTableLayoutPanelCompras9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 90F));
-            this.clsTableLayoutPanelCompras9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 90F));
-            this.clsTableLayoutPanelCompras9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.clsTableLayoutPanelCompras9.Controls.Add(this.clsButtonCompras2, 2, 0);
-            this.clsTableLayoutPanelCompras9.Controls.Add(this.clsButtonCompras1, 3, 0);
-            this.clsTableLayoutPanelCompras9.Controls.Add(this.clsButtonCompras3, 4, 0);
-            this.clsTableLayoutPanelCompras9.Controls.Add(this.clsButtonCompras4, 5, 0);
-            this.clsTableLayoutPanelCompras9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.clsTableLayoutPanelCompras9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
-            this.clsTableLayoutPanelCompras9.Location = new System.Drawing.Point(0, 110);
-            this.clsTableLayoutPanelCompras9.Margin = new System.Windows.Forms.Padding(0);
-            this.clsTableLayoutPanelCompras9.Name = "clsTableLayoutPanelCompras9";
-            this.clsTableLayoutPanelCompras9.RowCount = 1;
-            this.clsTableLayoutPanelCompras9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.clsTableLayoutPanelCompras9.Size = new System.Drawing.Size(569, 90);
-            this.clsTableLayoutPanelCompras9.TabIndex = 13;
-            // 
-            // clsButtonCompras2
-            // 
-            this.clsButtonCompras2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.clsButtonCompras2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(220)))), ((int)(((byte)(239)))));
-            this.clsButtonCompras2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.clsButtonCompras2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.clsButtonCompras2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
-            this.clsButtonCompras2.FlatAppearance.BorderSize = 0;
-            this.clsButtonCompras2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(173)))), ((int)(((byte)(213)))));
-            this.clsButtonCompras2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(193)))), ((int)(((byte)(224)))));
-            this.clsButtonCompras2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.clsButtonCompras2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
-            this.clsButtonCompras2.Location = new System.Drawing.Point(174, 5);
-            this.clsButtonCompras2.Margin = new System.Windows.Forms.Padding(0);
-            this.clsButtonCompras2.MaximumSize = new System.Drawing.Size(80, 80);
-            this.clsButtonCompras2.MinimumSize = new System.Drawing.Size(80, 80);
-            this.clsButtonCompras2.Name = "clsButtonCompras2";
-            this.clsButtonCompras2.Size = new System.Drawing.Size(80, 80);
-            this.clsButtonCompras2.TabIndex = 1;
-            this.clsButtonCompras2.Text = "clsButtonCompras2";
-            this.clsButtonCompras2.UseVisualStyleBackColor = false;
-            // 
-            // clsButtonCompras1
-            // 
-            this.clsButtonCompras1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.clsButtonCompras1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(220)))), ((int)(((byte)(239)))));
-            this.clsButtonCompras1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.clsButtonCompras1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.clsButtonCompras1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
-            this.clsButtonCompras1.FlatAppearance.BorderSize = 0;
-            this.clsButtonCompras1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(173)))), ((int)(((byte)(213)))));
-            this.clsButtonCompras1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(193)))), ((int)(((byte)(224)))));
-            this.clsButtonCompras1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.clsButtonCompras1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
-            this.clsButtonCompras1.Location = new System.Drawing.Point(264, 5);
-            this.clsButtonCompras1.Margin = new System.Windows.Forms.Padding(0);
-            this.clsButtonCompras1.MaximumSize = new System.Drawing.Size(80, 80);
-            this.clsButtonCompras1.MinimumSize = new System.Drawing.Size(80, 80);
-            this.clsButtonCompras1.Name = "clsButtonCompras1";
-            this.clsButtonCompras1.Size = new System.Drawing.Size(80, 80);
-            this.clsButtonCompras1.TabIndex = 0;
-            this.clsButtonCompras1.Text = "clsButtonCompras1";
-            this.clsButtonCompras1.UseVisualStyleBackColor = false;
-            // 
-            // clsButtonCompras3
-            // 
-            this.clsButtonCompras3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.clsButtonCompras3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(220)))), ((int)(((byte)(239)))));
-            this.clsButtonCompras3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.clsButtonCompras3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.clsButtonCompras3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
-            this.clsButtonCompras3.FlatAppearance.BorderSize = 0;
-            this.clsButtonCompras3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(173)))), ((int)(((byte)(213)))));
-            this.clsButtonCompras3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(193)))), ((int)(((byte)(224)))));
-            this.clsButtonCompras3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.clsButtonCompras3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
-            this.clsButtonCompras3.Location = new System.Drawing.Point(354, 5);
-            this.clsButtonCompras3.Margin = new System.Windows.Forms.Padding(0);
-            this.clsButtonCompras3.MaximumSize = new System.Drawing.Size(80, 80);
-            this.clsButtonCompras3.MinimumSize = new System.Drawing.Size(80, 80);
-            this.clsButtonCompras3.Name = "clsButtonCompras3";
-            this.clsButtonCompras3.Size = new System.Drawing.Size(80, 80);
-            this.clsButtonCompras3.TabIndex = 2;
-            this.clsButtonCompras3.Text = "clsButtonCompras3";
-            this.clsButtonCompras3.UseVisualStyleBackColor = false;
-            // 
-            // clsButtonCompras4
-            // 
-            this.clsButtonCompras4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.clsButtonCompras4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(220)))), ((int)(((byte)(239)))));
-            this.clsButtonCompras4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.clsButtonCompras4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.clsButtonCompras4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
-            this.clsButtonCompras4.FlatAppearance.BorderSize = 0;
-            this.clsButtonCompras4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(173)))), ((int)(((byte)(213)))));
-            this.clsButtonCompras4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(193)))), ((int)(((byte)(224)))));
-            this.clsButtonCompras4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.clsButtonCompras4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
-            this.clsButtonCompras4.Location = new System.Drawing.Point(444, 5);
-            this.clsButtonCompras4.Margin = new System.Windows.Forms.Padding(0);
-            this.clsButtonCompras4.MaximumSize = new System.Drawing.Size(80, 80);
-            this.clsButtonCompras4.MinimumSize = new System.Drawing.Size(80, 80);
-            this.clsButtonCompras4.Name = "clsButtonCompras4";
-            this.clsButtonCompras4.Size = new System.Drawing.Size(80, 80);
-            this.clsButtonCompras4.TabIndex = 3;
-            this.clsButtonCompras4.Text = "clsButtonCompras4";
-            this.clsButtonCompras4.UseVisualStyleBackColor = false;
-            // 
-            // usrLabelCompras16
-            // 
-            this.usrLabelCompras16.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.usrLabelCompras16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
-            this.usrLabelCompras16.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.usrLabelCompras16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
-            this.usrLabelCompras16.Location = new System.Drawing.Point(3, 41);
-            this.usrLabelCompras16.MaximumSize = new System.Drawing.Size(1000, 22);
-            this.usrLabelCompras16.MostrarAsterisco = false;
-            this.usrLabelCompras16.Name = "usrLabelCompras16";
-            this.usrLabelCompras16.Size = new System.Drawing.Size(124, 18);
-            this.usrLabelCompras16.TabIndex = 12;
-            this.usrLabelCompras16.TabStop = false;
-            this.usrLabelCompras16.Text = "Nombre";
-            this.usrLabelCompras16.Texto = "Nombre";
-            // 
-            // clsTableLayoutPanelCompras2
-            // 
-            this.clsTableLayoutPanelCompras2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
-            this.clsTableLayoutPanelCompras2.ColumnCount = 3;
-            this.clsTableLayoutPanelCompras2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 130F));
-            this.clsTableLayoutPanelCompras2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.clsTableLayoutPanelCompras2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 90F));
-            this.clsTableLayoutPanelCompras2.Controls.Add(this.usrTextBoxCompras13, 1, 0);
-            this.clsTableLayoutPanelCompras2.Controls.Add(this.usrLabelCompras1, 0, 0);
-            this.clsTableLayoutPanelCompras2.Controls.Add(this.usrTextBoxCompras1, 1, 4);
-            this.clsTableLayoutPanelCompras2.Controls.Add(this.usrTextBoxCompras2, 1, 3);
-            this.clsTableLayoutPanelCompras2.Controls.Add(this.usrTextBoxCompras11, 1, 2);
-            this.clsTableLayoutPanelCompras2.Controls.Add(this.usrLabelCompras2, 0, 1);
-            this.clsTableLayoutPanelCompras2.Controls.Add(this.usrLabelCompras3, 0, 2);
-            this.clsTableLayoutPanelCompras2.Controls.Add(this.usrLabelCompras14, 0, 3);
-            this.clsTableLayoutPanelCompras2.Controls.Add(this.usrLabelCompras15, 0, 4);
-            this.clsTableLayoutPanelCompras2.Controls.Add(this.usrTextBoxCompras12, 1, 1);
-            this.clsTableLayoutPanelCompras2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.clsTableLayoutPanelCompras2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
-            this.clsTableLayoutPanelCompras2.Location = new System.Drawing.Point(0, 0);
-            this.clsTableLayoutPanelCompras2.Margin = new System.Windows.Forms.Padding(0);
-            this.clsTableLayoutPanelCompras2.Name = "clsTableLayoutPanelCompras2";
-            this.clsTableLayoutPanelCompras2.RowCount = 6;
-            this.clsTableLayoutPanelCompras2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.clsTableLayoutPanelCompras2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.clsTableLayoutPanelCompras2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.clsTableLayoutPanelCompras2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.clsTableLayoutPanelCompras2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.clsTableLayoutPanelCompras2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.clsTableLayoutPanelCompras2.Size = new System.Drawing.Size(569, 217);
-            this.clsTableLayoutPanelCompras2.TabIndex = 5;
-            // 
-            // usrTextBoxCompras13
-            // 
-            this.usrTextBoxCompras13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.usrTextBoxCompras13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
-            this.usrTextBoxCompras13.Enabled = false;
-            this.usrTextBoxCompras13.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.usrTextBoxCompras13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
-            this.usrTextBoxCompras13.Location = new System.Drawing.Point(132, 2);
-            this.usrTextBoxCompras13.Margin = new System.Windows.Forms.Padding(2);
-            this.usrTextBoxCompras13.MaxLength = 2147483647;
-            this.usrTextBoxCompras13.MostrarEtiquetaError = false;
-            this.usrTextBoxCompras13.Name = "usrTextBoxCompras13";
-            this.usrTextBoxCompras13.SelectedText = "";
-            this.usrTextBoxCompras13.SelectionLength = 0;
-            this.usrTextBoxCompras13.SelectionStart = 0;
-            this.usrTextBoxCompras13.Size = new System.Drawing.Size(345, 36);
-            this.usrTextBoxCompras13.TabIndex = 12;
-            this.usrTextBoxCompras13.Text = "usrTextBoxCompras13";
-            // 
-            // usrLabelCompras1
-            // 
-            this.usrLabelCompras1.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.usrLabelCompras1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
-            this.usrLabelCompras1.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.usrLabelCompras1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
-            this.usrLabelCompras1.Location = new System.Drawing.Point(3, 11);
-            this.usrLabelCompras1.MaximumSize = new System.Drawing.Size(1000, 22);
-            this.usrLabelCompras1.MostrarAsterisco = false;
-            this.usrLabelCompras1.Name = "usrLabelCompras1";
-            this.usrLabelCompras1.Size = new System.Drawing.Size(124, 18);
-            this.usrLabelCompras1.TabIndex = 11;
-            this.usrLabelCompras1.TabStop = false;
-            this.usrLabelCompras1.Text = "Nombre";
-            this.usrLabelCompras1.Texto = "Nombre";
-            // 
-            // usrTextBoxCompras1
-            // 
-            this.usrTextBoxCompras1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.usrTextBoxCompras1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
-            this.usrTextBoxCompras1.Enabled = false;
-            this.usrTextBoxCompras1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.usrTextBoxCompras1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
-            this.usrTextBoxCompras1.Location = new System.Drawing.Point(132, 162);
-            this.usrTextBoxCompras1.Margin = new System.Windows.Forms.Padding(2);
-            this.usrTextBoxCompras1.MaxLength = 2147483647;
-            this.usrTextBoxCompras1.MostrarEtiquetaError = false;
-            this.usrTextBoxCompras1.Name = "usrTextBoxCompras1";
-            this.usrTextBoxCompras1.SelectedText = "";
-            this.usrTextBoxCompras1.SelectionLength = 0;
-            this.usrTextBoxCompras1.SelectionStart = 0;
-            this.usrTextBoxCompras1.Size = new System.Drawing.Size(345, 36);
-            this.usrTextBoxCompras1.TabIndex = 10;
-            this.usrTextBoxCompras1.Text = "usrTextBoxCompras1";
-            // 
-            // usrTextBoxCompras2
-            // 
-            this.usrTextBoxCompras2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.usrTextBoxCompras2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
-            this.usrTextBoxCompras2.Enabled = false;
-            this.usrTextBoxCompras2.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.usrTextBoxCompras2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
-            this.usrTextBoxCompras2.Location = new System.Drawing.Point(132, 122);
-            this.usrTextBoxCompras2.Margin = new System.Windows.Forms.Padding(2);
-            this.usrTextBoxCompras2.MaxLength = 2147483647;
-            this.usrTextBoxCompras2.MostrarEtiquetaError = false;
-            this.usrTextBoxCompras2.Name = "usrTextBoxCompras2";
-            this.usrTextBoxCompras2.SelectedText = "";
-            this.usrTextBoxCompras2.SelectionLength = 0;
-            this.usrTextBoxCompras2.SelectionStart = 0;
-            this.usrTextBoxCompras2.Size = new System.Drawing.Size(345, 36);
-            this.usrTextBoxCompras2.TabIndex = 9;
-            this.usrTextBoxCompras2.Text = "usrTextBoxCompras2";
-            // 
-            // usrTextBoxCompras11
-            // 
-            this.usrTextBoxCompras11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.usrTextBoxCompras11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
-            this.usrTextBoxCompras11.Enabled = false;
-            this.usrTextBoxCompras11.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.usrTextBoxCompras11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
-            this.usrTextBoxCompras11.Location = new System.Drawing.Point(132, 82);
-            this.usrTextBoxCompras11.Margin = new System.Windows.Forms.Padding(2);
-            this.usrTextBoxCompras11.MaxLength = 2147483647;
-            this.usrTextBoxCompras11.MostrarEtiquetaError = false;
-            this.usrTextBoxCompras11.Name = "usrTextBoxCompras11";
-            this.usrTextBoxCompras11.SelectedText = "";
-            this.usrTextBoxCompras11.SelectionLength = 0;
-            this.usrTextBoxCompras11.SelectionStart = 0;
-            this.usrTextBoxCompras11.Size = new System.Drawing.Size(345, 36);
-            this.usrTextBoxCompras11.TabIndex = 8;
-            this.usrTextBoxCompras11.Text = "usrTextBoxCompras11";
-            // 
-            // usrLabelCompras2
-            // 
-            this.usrLabelCompras2.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.usrLabelCompras2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
-            this.usrLabelCompras2.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.usrLabelCompras2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
-            this.usrLabelCompras2.Location = new System.Drawing.Point(3, 51);
-            this.usrLabelCompras2.MaximumSize = new System.Drawing.Size(1000, 22);
-            this.usrLabelCompras2.MostrarAsterisco = false;
-            this.usrLabelCompras2.Name = "usrLabelCompras2";
-            this.usrLabelCompras2.Size = new System.Drawing.Size(124, 18);
-            this.usrLabelCompras2.TabIndex = 1;
-            this.usrLabelCompras2.TabStop = false;
-            this.usrLabelCompras2.Text = "Nombre";
-            this.usrLabelCompras2.Texto = "Nombre";
-            // 
-            // usrLabelCompras3
-            // 
-            this.usrLabelCompras3.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.usrLabelCompras3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
-            this.usrLabelCompras3.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.usrLabelCompras3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
-            this.usrLabelCompras3.Location = new System.Drawing.Point(3, 91);
-            this.usrLabelCompras3.MaximumSize = new System.Drawing.Size(1000, 22);
-            this.usrLabelCompras3.MostrarAsterisco = false;
-            this.usrLabelCompras3.Name = "usrLabelCompras3";
-            this.usrLabelCompras3.Size = new System.Drawing.Size(124, 18);
-            this.usrLabelCompras3.TabIndex = 2;
-            this.usrLabelCompras3.TabStop = false;
-            this.usrLabelCompras3.Text = "Teléfono";
-            this.usrLabelCompras3.Texto = "Teléfono";
-            // 
-            // usrLabelCompras14
-            // 
-            this.usrLabelCompras14.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.usrLabelCompras14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
-            this.usrLabelCompras14.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.usrLabelCompras14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
-            this.usrLabelCompras14.Location = new System.Drawing.Point(3, 131);
-            this.usrLabelCompras14.MaximumSize = new System.Drawing.Size(1000, 22);
-            this.usrLabelCompras14.MostrarAsterisco = false;
-            this.usrLabelCompras14.Name = "usrLabelCompras14";
-            this.usrLabelCompras14.Size = new System.Drawing.Size(124, 18);
-            this.usrLabelCompras14.TabIndex = 3;
-            this.usrLabelCompras14.TabStop = false;
-            this.usrLabelCompras14.Text = "Correo";
-            this.usrLabelCompras14.Texto = "Correo";
-            // 
-            // usrLabelCompras15
-            // 
-            this.usrLabelCompras15.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.usrLabelCompras15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
-            this.usrLabelCompras15.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.usrLabelCompras15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
-            this.usrLabelCompras15.Location = new System.Drawing.Point(3, 171);
-            this.usrLabelCompras15.MaximumSize = new System.Drawing.Size(1000, 22);
-            this.usrLabelCompras15.MostrarAsterisco = false;
-            this.usrLabelCompras15.Name = "usrLabelCompras15";
-            this.usrLabelCompras15.Size = new System.Drawing.Size(124, 18);
-            this.usrLabelCompras15.TabIndex = 4;
-            this.usrLabelCompras15.TabStop = false;
-            this.usrLabelCompras15.Text = "Estado";
-            this.usrLabelCompras15.Texto = "Estado";
-            // 
-            // usrTextBoxCompras12
-            // 
-            this.usrTextBoxCompras12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.usrTextBoxCompras12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
-            this.usrTextBoxCompras12.Enabled = false;
-            this.usrTextBoxCompras12.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.usrTextBoxCompras12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
-            this.usrTextBoxCompras12.Location = new System.Drawing.Point(132, 42);
-            this.usrTextBoxCompras12.Margin = new System.Windows.Forms.Padding(2);
-            this.usrTextBoxCompras12.MaxLength = 2147483647;
-            this.usrTextBoxCompras12.MostrarEtiquetaError = false;
-            this.usrTextBoxCompras12.Name = "usrTextBoxCompras12";
-            this.usrTextBoxCompras12.SelectedText = "";
-            this.usrTextBoxCompras12.SelectionLength = 0;
-            this.usrTextBoxCompras12.SelectionStart = 0;
-            this.usrTextBoxCompras12.Size = new System.Drawing.Size(345, 36);
-            this.usrTextBoxCompras12.TabIndex = 5;
-            this.usrTextBoxCompras12.Text = "usrTextBoxCompras12";
-            // 
-            // clsGroupBoxCompras3
-            // 
-            this.clsGroupBoxCompras3.BackColor = System.Drawing.Color.Transparent;
-            this.clsGroupBoxCompras3.Controls.Add(this.clsTableLayoutPanelCompras3);
-            this.clsGroupBoxCompras3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.clsGroupBoxCompras3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.clsGroupBoxCompras3.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
-            this.clsGroupBoxCompras3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
-            this.clsGroupBoxCompras3.Location = new System.Drawing.Point(3, 243);
-            this.clsGroupBoxCompras3.Name = "clsGroupBoxCompras3";
-            this.clsGroupBoxCompras3.Size = new System.Drawing.Size(1144, 404);
-            this.clsGroupBoxCompras3.TabIndex = 6;
-            this.clsGroupBoxCompras3.TabStop = false;
-            this.clsGroupBoxCompras3.Text = "Detalles";
-            // 
-            // clsTableLayoutPanelCompras3
-            // 
-            this.clsTableLayoutPanelCompras3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
-            this.clsTableLayoutPanelCompras3.ColumnCount = 4;
-            this.clsTableLayoutPanelCompras3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.clsTableLayoutPanelCompras3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.clsTableLayoutPanelCompras3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.clsTableLayoutPanelCompras3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.clsTableLayoutPanelCompras3.Controls.Add(this.clsPanelCompras1, 0, 1);
-            this.clsTableLayoutPanelCompras3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.clsTableLayoutPanelCompras3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
-            this.clsTableLayoutPanelCompras3.Location = new System.Drawing.Point(3, 24);
-            this.clsTableLayoutPanelCompras3.Name = "clsTableLayoutPanelCompras3";
-            this.clsTableLayoutPanelCompras3.RowCount = 2;
-            this.clsTableLayoutPanelCompras3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.clsTableLayoutPanelCompras3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.clsTableLayoutPanelCompras3.Size = new System.Drawing.Size(1138, 377);
-            this.clsTableLayoutPanelCompras3.TabIndex = 0;
-            // 
-            // clsPanelCompras1
-            // 
-            this.clsPanelCompras1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
-            this.clsTableLayoutPanelCompras3.SetColumnSpan(this.clsPanelCompras1, 4);
-            this.clsPanelCompras1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.clsPanelCompras1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
-            this.clsPanelCompras1.Location = new System.Drawing.Point(0, 40);
-            this.clsPanelCompras1.Margin = new System.Windows.Forms.Padding(0);
-            this.clsPanelCompras1.Name = "clsPanelCompras1";
-            this.clsPanelCompras1.Size = new System.Drawing.Size(1138, 337);
-            this.clsPanelCompras1.TabIndex = 0;
+            // _ComprasTlpPrincipal
+            // 
+            this._ComprasTlpPrincipal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
+            this._ComprasTlpPrincipal.ColumnCount = 1;
+            this._ComprasTlpPrincipal.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this._ComprasTlpPrincipal.Controls.Add(this._ComprasGbxEncabezado, 0, 0);
+            this._ComprasTlpPrincipal.Controls.Add(this._ComprasGbxFinalizacion, 0, 2);
+            this._ComprasTlpPrincipal.Controls.Add(this._ComprasGbxDetalles, 0, 1);
+            this._ComprasTlpPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._ComprasTlpPrincipal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this._ComprasTlpPrincipal.Location = new System.Drawing.Point(0, 0);
+            this._ComprasTlpPrincipal.Margin = new System.Windows.Forms.Padding(0);
+            this._ComprasTlpPrincipal.Name = "_ComprasTlpPrincipal";
+            this._ComprasTlpPrincipal.RowCount = 3;
+            this._ComprasTlpPrincipal.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 240F));
+            this._ComprasTlpPrincipal.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this._ComprasTlpPrincipal.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 250F));
+            this._ComprasTlpPrincipal.Size = new System.Drawing.Size(1610, 723);
+            this._ComprasTlpPrincipal.TabIndex = 0;
+            // 
+            // _ComprasGbxEncabezado
+            // 
+            this._ComprasGbxEncabezado.BackColor = System.Drawing.Color.Transparent;
+            this._ComprasGbxEncabezado.Controls.Add(this._ComprasTlpEncabezado);
+            this._ComprasGbxEncabezado.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._ComprasGbxEncabezado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._ComprasGbxEncabezado.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
+            this._ComprasGbxEncabezado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this._ComprasGbxEncabezado.Location = new System.Drawing.Point(3, 3);
+            this._ComprasGbxEncabezado.Name = "_ComprasGbxEncabezado";
+            this._ComprasGbxEncabezado.Size = new System.Drawing.Size(1604, 234);
+            this._ComprasGbxEncabezado.TabIndex = 4;
+            this._ComprasGbxEncabezado.TabStop = false;
+            this._ComprasGbxEncabezado.Text = "Encabezado";
+            // 
+            // _ComprasTlpEncabezado
+            // 
+            this._ComprasTlpEncabezado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
+            this._ComprasTlpEncabezado.ColumnCount = 3;
+            this._ComprasTlpEncabezado.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this._ComprasTlpEncabezado.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this._ComprasTlpEncabezado.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this._ComprasTlpEncabezado.Controls.Add(this._ComprasTlpProveedor, 0, 0);
+            this._ComprasTlpEncabezado.Controls.Add(this._ComprasTlpResponsable, 2, 0);
+            this._ComprasTlpEncabezado.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._ComprasTlpEncabezado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this._ComprasTlpEncabezado.Location = new System.Drawing.Point(3, 24);
+            this._ComprasTlpEncabezado.Margin = new System.Windows.Forms.Padding(0);
+            this._ComprasTlpEncabezado.Name = "_ComprasTlpEncabezado";
+            this._ComprasTlpEncabezado.RowCount = 1;
+            this._ComprasTlpEncabezado.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this._ComprasTlpEncabezado.Size = new System.Drawing.Size(1598, 207);
+            this._ComprasTlpEncabezado.TabIndex = 3;
+            // 
+            // _ComprasTlpProveedor
+            // 
+            this._ComprasTlpProveedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
+            this._ComprasTlpProveedor.ColumnCount = 3;
+            this._ComprasTlpProveedor.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 130F));
+            this._ComprasTlpProveedor.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this._ComprasTlpProveedor.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 90F));
+            this._ComprasTlpProveedor.Controls.Add(this.ComprasUsrContactoProveedor, 1, 4);
+            this._ComprasTlpProveedor.Controls.Add(this.ComprasUsrCorreoProveedor, 1, 3);
+            this._ComprasTlpProveedor.Controls.Add(this.ComprasUsrTelefonoProveedor, 1, 2);
+            this._ComprasTlpProveedor.Controls.Add(this.ComprasUsrProveedor, 0, 0);
+            this._ComprasTlpProveedor.Controls.Add(this.ComprasUsrNombreProveedor, 1, 1);
+            this._ComprasTlpProveedor.Controls.Add(this.ComprasUsrEtiquetaNombreProveedor, 0, 1);
+            this._ComprasTlpProveedor.Controls.Add(this.ComprasUsrEtiquetaTelefonoProveedor, 0, 2);
+            this._ComprasTlpProveedor.Controls.Add(this.ComprasUsrEtiquetaCorreoProveedor, 0, 3);
+            this._ComprasTlpProveedor.Controls.Add(this.ComprasUsrEtiquetaContactoProveedor, 0, 4);
+            this._ComprasTlpProveedor.Controls.Add(this._ComprasBtnConsultarProveedor, 2, 1);
+            this._ComprasTlpProveedor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._ComprasTlpProveedor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this._ComprasTlpProveedor.Location = new System.Drawing.Point(0, 0);
+            this._ComprasTlpProveedor.Margin = new System.Windows.Forms.Padding(0);
+            this._ComprasTlpProveedor.Name = "_ComprasTlpProveedor";
+            this._ComprasTlpProveedor.RowCount = 6;
+            this._ComprasTlpProveedor.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this._ComprasTlpProveedor.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this._ComprasTlpProveedor.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this._ComprasTlpProveedor.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this._ComprasTlpProveedor.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this._ComprasTlpProveedor.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this._ComprasTlpProveedor.Size = new System.Drawing.Size(789, 207);
+            this._ComprasTlpProveedor.TabIndex = 4;
+            // 
+            // ComprasUsrContactoProveedor
+            // 
+            this.ComprasUsrContactoProveedor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.ComprasUsrContactoProveedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
+            this.ComprasUsrContactoProveedor.Enabled = false;
+            this.ComprasUsrContactoProveedor.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.ComprasUsrContactoProveedor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this.ComprasUsrContactoProveedor.Location = new System.Drawing.Point(132, 152);
+            this.ComprasUsrContactoProveedor.Margin = new System.Windows.Forms.Padding(2);
+            this.ComprasUsrContactoProveedor.MaxLength = 2147483647;
+            this.ComprasUsrContactoProveedor.MostrarEtiquetaError = false;
+            this.ComprasUsrContactoProveedor.Name = "ComprasUsrContactoProveedor";
+            this.ComprasUsrContactoProveedor.SelectedText = "";
+            this.ComprasUsrContactoProveedor.SelectionLength = 0;
+            this.ComprasUsrContactoProveedor.SelectionStart = 0;
+            this.ComprasUsrContactoProveedor.Size = new System.Drawing.Size(565, 36);
+            this.ComprasUsrContactoProveedor.TabIndex = 10;
+            // 
+            // ComprasUsrCorreoProveedor
+            // 
+            this.ComprasUsrCorreoProveedor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.ComprasUsrCorreoProveedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
+            this.ComprasUsrCorreoProveedor.Enabled = false;
+            this.ComprasUsrCorreoProveedor.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.ComprasUsrCorreoProveedor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this.ComprasUsrCorreoProveedor.Location = new System.Drawing.Point(132, 112);
+            this.ComprasUsrCorreoProveedor.Margin = new System.Windows.Forms.Padding(2);
+            this.ComprasUsrCorreoProveedor.MaxLength = 2147483647;
+            this.ComprasUsrCorreoProveedor.MostrarEtiquetaError = false;
+            this.ComprasUsrCorreoProveedor.Name = "ComprasUsrCorreoProveedor";
+            this.ComprasUsrCorreoProveedor.SelectedText = "";
+            this.ComprasUsrCorreoProveedor.SelectionLength = 0;
+            this.ComprasUsrCorreoProveedor.SelectionStart = 0;
+            this.ComprasUsrCorreoProveedor.Size = new System.Drawing.Size(565, 36);
+            this.ComprasUsrCorreoProveedor.TabIndex = 9;
+            // 
+            // ComprasUsrTelefonoProveedor
+            // 
+            this.ComprasUsrTelefonoProveedor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.ComprasUsrTelefonoProveedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
+            this.ComprasUsrTelefonoProveedor.Enabled = false;
+            this.ComprasUsrTelefonoProveedor.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.ComprasUsrTelefonoProveedor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this.ComprasUsrTelefonoProveedor.Location = new System.Drawing.Point(132, 72);
+            this.ComprasUsrTelefonoProveedor.Margin = new System.Windows.Forms.Padding(2);
+            this.ComprasUsrTelefonoProveedor.MaxLength = 2147483647;
+            this.ComprasUsrTelefonoProveedor.MostrarEtiquetaError = false;
+            this.ComprasUsrTelefonoProveedor.Name = "ComprasUsrTelefonoProveedor";
+            this.ComprasUsrTelefonoProveedor.SelectedText = "";
+            this.ComprasUsrTelefonoProveedor.SelectionLength = 0;
+            this.ComprasUsrTelefonoProveedor.SelectionStart = 0;
+            this.ComprasUsrTelefonoProveedor.Size = new System.Drawing.Size(565, 36);
+            this.ComprasUsrTelefonoProveedor.TabIndex = 8;
+            // 
+            // ComprasUsrProveedor
+            // 
+            this.ComprasUsrProveedor.AlineacionTexto = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ComprasUsrProveedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
+            this._ComprasTlpProveedor.SetColumnSpan(this.ComprasUsrProveedor, 3);
+            this.ComprasUsrProveedor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ComprasUsrProveedor.Font = new System.Drawing.Font("Tahoma", 10.8F);
+            this.ComprasUsrProveedor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this.ComprasUsrProveedor.Location = new System.Drawing.Point(4, 4);
+            this.ComprasUsrProveedor.Margin = new System.Windows.Forms.Padding(4);
+            this.ComprasUsrProveedor.MaximumSize = new System.Drawing.Size(1250, 27);
+            this.ComprasUsrProveedor.MostrarAsterisco = false;
+            this.ComprasUsrProveedor.Name = "ComprasUsrProveedor";
+            this.ComprasUsrProveedor.Size = new System.Drawing.Size(781, 22);
+            this.ComprasUsrProveedor.TabIndex = 7;
+            this.ComprasUsrProveedor.TabStop = false;
+            this.ComprasUsrProveedor.TamanoTipografia = 10.8F;
+            this.ComprasUsrProveedor.Text = "PROVEEDOR";
+            this.ComprasUsrProveedor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ComprasUsrProveedor.Texto = "PROVEEDOR";
+            // 
+            // ComprasUsrNombreProveedor
+            // 
+            this.ComprasUsrNombreProveedor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.ComprasUsrNombreProveedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
+            this.ComprasUsrNombreProveedor.Enabled = false;
+            this.ComprasUsrNombreProveedor.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.ComprasUsrNombreProveedor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this.ComprasUsrNombreProveedor.Location = new System.Drawing.Point(132, 32);
+            this.ComprasUsrNombreProveedor.Margin = new System.Windows.Forms.Padding(2);
+            this.ComprasUsrNombreProveedor.MaxLength = 2147483647;
+            this.ComprasUsrNombreProveedor.MostrarEtiquetaError = false;
+            this.ComprasUsrNombreProveedor.Name = "ComprasUsrNombreProveedor";
+            this.ComprasUsrNombreProveedor.SelectedText = "";
+            this.ComprasUsrNombreProveedor.SelectionLength = 0;
+            this.ComprasUsrNombreProveedor.SelectionStart = 0;
+            this.ComprasUsrNombreProveedor.Size = new System.Drawing.Size(565, 36);
+            this.ComprasUsrNombreProveedor.TabIndex = 5;
+            // 
+            // ComprasUsrEtiquetaNombreProveedor
+            // 
+            this.ComprasUsrEtiquetaNombreProveedor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ComprasUsrEtiquetaNombreProveedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
+            this.ComprasUsrEtiquetaNombreProveedor.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.ComprasUsrEtiquetaNombreProveedor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this.ComprasUsrEtiquetaNombreProveedor.Location = new System.Drawing.Point(3, 33);
+            this.ComprasUsrEtiquetaNombreProveedor.MaximumSize = new System.Drawing.Size(1000, 22);
+            this.ComprasUsrEtiquetaNombreProveedor.MostrarAsterisco = false;
+            this.ComprasUsrEtiquetaNombreProveedor.Name = "ComprasUsrEtiquetaNombreProveedor";
+            this.ComprasUsrEtiquetaNombreProveedor.Size = new System.Drawing.Size(124, 18);
+            this.ComprasUsrEtiquetaNombreProveedor.TabIndex = 1;
+            this.ComprasUsrEtiquetaNombreProveedor.TabStop = false;
+            this.ComprasUsrEtiquetaNombreProveedor.TamanoTipografia = 9F;
+            this.ComprasUsrEtiquetaNombreProveedor.Text = "Nombre";
+            this.ComprasUsrEtiquetaNombreProveedor.Texto = "Nombre";
+            // 
+            // ComprasUsrEtiquetaTelefonoProveedor
+            // 
+            this.ComprasUsrEtiquetaTelefonoProveedor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ComprasUsrEtiquetaTelefonoProveedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
+            this.ComprasUsrEtiquetaTelefonoProveedor.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.ComprasUsrEtiquetaTelefonoProveedor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this.ComprasUsrEtiquetaTelefonoProveedor.Location = new System.Drawing.Point(3, 73);
+            this.ComprasUsrEtiquetaTelefonoProveedor.MaximumSize = new System.Drawing.Size(1000, 22);
+            this.ComprasUsrEtiquetaTelefonoProveedor.MostrarAsterisco = false;
+            this.ComprasUsrEtiquetaTelefonoProveedor.Name = "ComprasUsrEtiquetaTelefonoProveedor";
+            this.ComprasUsrEtiquetaTelefonoProveedor.Size = new System.Drawing.Size(124, 18);
+            this.ComprasUsrEtiquetaTelefonoProveedor.TabIndex = 2;
+            this.ComprasUsrEtiquetaTelefonoProveedor.TabStop = false;
+            this.ComprasUsrEtiquetaTelefonoProveedor.TamanoTipografia = 9F;
+            this.ComprasUsrEtiquetaTelefonoProveedor.Text = "Teléfono";
+            this.ComprasUsrEtiquetaTelefonoProveedor.Texto = "Teléfono";
+            // 
+            // ComprasUsrEtiquetaCorreoProveedor
+            // 
+            this.ComprasUsrEtiquetaCorreoProveedor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ComprasUsrEtiquetaCorreoProveedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
+            this.ComprasUsrEtiquetaCorreoProveedor.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.ComprasUsrEtiquetaCorreoProveedor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this.ComprasUsrEtiquetaCorreoProveedor.Location = new System.Drawing.Point(3, 113);
+            this.ComprasUsrEtiquetaCorreoProveedor.MaximumSize = new System.Drawing.Size(1000, 22);
+            this.ComprasUsrEtiquetaCorreoProveedor.MostrarAsterisco = false;
+            this.ComprasUsrEtiquetaCorreoProveedor.Name = "ComprasUsrEtiquetaCorreoProveedor";
+            this.ComprasUsrEtiquetaCorreoProveedor.Size = new System.Drawing.Size(124, 18);
+            this.ComprasUsrEtiquetaCorreoProveedor.TabIndex = 3;
+            this.ComprasUsrEtiquetaCorreoProveedor.TabStop = false;
+            this.ComprasUsrEtiquetaCorreoProveedor.TamanoTipografia = 9F;
+            this.ComprasUsrEtiquetaCorreoProveedor.Text = "Correo";
+            this.ComprasUsrEtiquetaCorreoProveedor.Texto = "Correo";
+            // 
+            // ComprasUsrEtiquetaContactoProveedor
+            // 
+            this.ComprasUsrEtiquetaContactoProveedor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ComprasUsrEtiquetaContactoProveedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
+            this.ComprasUsrEtiquetaContactoProveedor.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.ComprasUsrEtiquetaContactoProveedor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this.ComprasUsrEtiquetaContactoProveedor.Location = new System.Drawing.Point(3, 153);
+            this.ComprasUsrEtiquetaContactoProveedor.MaximumSize = new System.Drawing.Size(1000, 22);
+            this.ComprasUsrEtiquetaContactoProveedor.MostrarAsterisco = false;
+            this.ComprasUsrEtiquetaContactoProveedor.Name = "ComprasUsrEtiquetaContactoProveedor";
+            this.ComprasUsrEtiquetaContactoProveedor.Size = new System.Drawing.Size(124, 18);
+            this.ComprasUsrEtiquetaContactoProveedor.TabIndex = 4;
+            this.ComprasUsrEtiquetaContactoProveedor.TabStop = false;
+            this.ComprasUsrEtiquetaContactoProveedor.TamanoTipografia = 9F;
+            this.ComprasUsrEtiquetaContactoProveedor.Text = "Contacto";
+            this.ComprasUsrEtiquetaContactoProveedor.Texto = "Contacto";
+            // 
+            // _ComprasBtnConsultarProveedor
+            // 
+            this._ComprasBtnConsultarProveedor.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this._ComprasBtnConsultarProveedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(220)))), ((int)(((byte)(239)))));
+            this._ComprasBtnConsultarProveedor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this._ComprasBtnConsultarProveedor.CampoRetorno = "nombreComercial";
+            this._ComprasBtnConsultarProveedor.ControlFocoAlternativo = this._ComprasBtnConsultarResponsable;
+            this._ComprasBtnConsultarProveedor.Cursor = System.Windows.Forms.Cursors.Hand;
+            this._ComprasBtnConsultarProveedor.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this._ComprasBtnConsultarProveedor.FlatAppearance.BorderSize = 0;
+            this._ComprasBtnConsultarProveedor.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(173)))), ((int)(((byte)(213)))));
+            this._ComprasBtnConsultarProveedor.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(193)))), ((int)(((byte)(224)))));
+            this._ComprasBtnConsultarProveedor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._ComprasBtnConsultarProveedor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this._ComprasBtnConsultarProveedor.Location = new System.Drawing.Point(704, 70);
+            this._ComprasBtnConsultarProveedor.Margin = new System.Windows.Forms.Padding(0);
+            this._ComprasBtnConsultarProveedor.MaximumSize = new System.Drawing.Size(80, 80);
+            this._ComprasBtnConsultarProveedor.MinimumSize = new System.Drawing.Size(80, 80);
+            this._ComprasBtnConsultarProveedor.Name = "_ComprasBtnConsultarProveedor";
+            this._ComprasTlpProveedor.SetRowSpan(this._ComprasBtnConsultarProveedor, 4);
+            this._ComprasBtnConsultarProveedor.Size = new System.Drawing.Size(80, 80);
+            this._ComprasBtnConsultarProveedor.TabIndex = 6;
+            this._ComprasBtnConsultarProveedor.Tabla = "tblproveedor";
+            this._ComprasBtnConsultarProveedor.Text = "Consultar";
+            this._ComprasBtnConsultarProveedor.UseVisualStyleBackColor = false;
+            // 
+            // _ComprasBtnConsultarResponsable
+            // 
+            this._ComprasBtnConsultarResponsable.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this._ComprasBtnConsultarResponsable.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(220)))), ((int)(((byte)(239)))));
+            this._ComprasBtnConsultarResponsable.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this._ComprasBtnConsultarResponsable.ControlFocoAlternativo = this._ComprasBtnConsultarProveedor;
+            this._ComprasBtnConsultarResponsable.Cursor = System.Windows.Forms.Cursors.Hand;
+            this._ComprasBtnConsultarResponsable.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this._ComprasBtnConsultarResponsable.FlatAppearance.BorderSize = 0;
+            this._ComprasBtnConsultarResponsable.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(173)))), ((int)(((byte)(213)))));
+            this._ComprasBtnConsultarResponsable.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(193)))), ((int)(((byte)(224)))));
+            this._ComprasBtnConsultarResponsable.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._ComprasBtnConsultarResponsable.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this._ComprasBtnConsultarResponsable.Location = new System.Drawing.Point(704, 70);
+            this._ComprasBtnConsultarResponsable.Margin = new System.Windows.Forms.Padding(0);
+            this._ComprasBtnConsultarResponsable.MaximumSize = new System.Drawing.Size(80, 80);
+            this._ComprasBtnConsultarResponsable.MinimumSize = new System.Drawing.Size(80, 80);
+            this._ComprasBtnConsultarResponsable.Name = "_ComprasBtnConsultarResponsable";
+            this._ComprasTlpResponsable.SetRowSpan(this._ComprasBtnConsultarResponsable, 4);
+            this._ComprasBtnConsultarResponsable.Size = new System.Drawing.Size(80, 80);
+            this._ComprasBtnConsultarResponsable.TabIndex = 6;
+            this._ComprasBtnConsultarResponsable.Text = "Consultar";
+            this._ComprasBtnConsultarResponsable.UseVisualStyleBackColor = false;
+            // 
+            // _ComprasTlpResponsable
+            // 
+            this._ComprasTlpResponsable.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
+            this._ComprasTlpResponsable.ColumnCount = 3;
+            this._ComprasTlpResponsable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 130F));
+            this._ComprasTlpResponsable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this._ComprasTlpResponsable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 90F));
+            this._ComprasTlpResponsable.Controls.Add(this.ComprasUsrCorreoResponsable, 1, 4);
+            this._ComprasTlpResponsable.Controls.Add(this.ComprasUsrPuestoResponsable, 1, 3);
+            this._ComprasTlpResponsable.Controls.Add(this.ComprasUsrNombreResponsable, 1, 2);
+            this._ComprasTlpResponsable.Controls.Add(this.ComprasUsrResponsable, 0, 0);
+            this._ComprasTlpResponsable.Controls.Add(this.ComprasUsrCodigoResponsable, 1, 1);
+            this._ComprasTlpResponsable.Controls.Add(this._ComprasBtnConsultarResponsable, 2, 1);
+            this._ComprasTlpResponsable.Controls.Add(this.ComprasUsrEtiquetaNombreResponsable, 0, 1);
+            this._ComprasTlpResponsable.Controls.Add(this.ComprasUsrEtiquetaCodigoResponsable, 0, 2);
+            this._ComprasTlpResponsable.Controls.Add(this.ComprasUsrEtiquetaCorreoResponsable, 0, 3);
+            this._ComprasTlpResponsable.Controls.Add(this.ComprasUsrEtiquetaPuestoResponsable, 0, 4);
+            this._ComprasTlpResponsable.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._ComprasTlpResponsable.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this._ComprasTlpResponsable.Location = new System.Drawing.Point(809, 0);
+            this._ComprasTlpResponsable.Margin = new System.Windows.Forms.Padding(0);
+            this._ComprasTlpResponsable.Name = "_ComprasTlpResponsable";
+            this._ComprasTlpResponsable.RowCount = 6;
+            this._ComprasTlpResponsable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this._ComprasTlpResponsable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this._ComprasTlpResponsable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this._ComprasTlpResponsable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this._ComprasTlpResponsable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this._ComprasTlpResponsable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this._ComprasTlpResponsable.Size = new System.Drawing.Size(789, 207);
+            this._ComprasTlpResponsable.TabIndex = 3;
+            // 
+            // ComprasUsrCorreoResponsable
+            // 
+            this.ComprasUsrCorreoResponsable.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.ComprasUsrCorreoResponsable.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
+            this.ComprasUsrCorreoResponsable.Enabled = false;
+            this.ComprasUsrCorreoResponsable.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.ComprasUsrCorreoResponsable.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this.ComprasUsrCorreoResponsable.Location = new System.Drawing.Point(132, 152);
+            this.ComprasUsrCorreoResponsable.Margin = new System.Windows.Forms.Padding(2);
+            this.ComprasUsrCorreoResponsable.MaxLength = 2147483647;
+            this.ComprasUsrCorreoResponsable.MostrarEtiquetaError = false;
+            this.ComprasUsrCorreoResponsable.Name = "ComprasUsrCorreoResponsable";
+            this.ComprasUsrCorreoResponsable.SelectedText = "";
+            this.ComprasUsrCorreoResponsable.SelectionLength = 0;
+            this.ComprasUsrCorreoResponsable.SelectionStart = 0;
+            this.ComprasUsrCorreoResponsable.Size = new System.Drawing.Size(565, 36);
+            this.ComprasUsrCorreoResponsable.TabIndex = 10;
+            // 
+            // ComprasUsrPuestoResponsable
+            // 
+            this.ComprasUsrPuestoResponsable.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.ComprasUsrPuestoResponsable.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
+            this.ComprasUsrPuestoResponsable.Enabled = false;
+            this.ComprasUsrPuestoResponsable.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.ComprasUsrPuestoResponsable.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this.ComprasUsrPuestoResponsable.Location = new System.Drawing.Point(132, 112);
+            this.ComprasUsrPuestoResponsable.Margin = new System.Windows.Forms.Padding(2);
+            this.ComprasUsrPuestoResponsable.MaxLength = 2147483647;
+            this.ComprasUsrPuestoResponsable.MostrarEtiquetaError = false;
+            this.ComprasUsrPuestoResponsable.Name = "ComprasUsrPuestoResponsable";
+            this.ComprasUsrPuestoResponsable.SelectedText = "";
+            this.ComprasUsrPuestoResponsable.SelectionLength = 0;
+            this.ComprasUsrPuestoResponsable.SelectionStart = 0;
+            this.ComprasUsrPuestoResponsable.Size = new System.Drawing.Size(565, 36);
+            this.ComprasUsrPuestoResponsable.TabIndex = 9;
+            // 
+            // ComprasUsrNombreResponsable
+            // 
+            this.ComprasUsrNombreResponsable.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.ComprasUsrNombreResponsable.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
+            this.ComprasUsrNombreResponsable.Enabled = false;
+            this.ComprasUsrNombreResponsable.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.ComprasUsrNombreResponsable.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this.ComprasUsrNombreResponsable.Location = new System.Drawing.Point(132, 72);
+            this.ComprasUsrNombreResponsable.Margin = new System.Windows.Forms.Padding(2);
+            this.ComprasUsrNombreResponsable.MaxLength = 2147483647;
+            this.ComprasUsrNombreResponsable.MostrarEtiquetaError = false;
+            this.ComprasUsrNombreResponsable.Name = "ComprasUsrNombreResponsable";
+            this.ComprasUsrNombreResponsable.SelectedText = "";
+            this.ComprasUsrNombreResponsable.SelectionLength = 0;
+            this.ComprasUsrNombreResponsable.SelectionStart = 0;
+            this.ComprasUsrNombreResponsable.Size = new System.Drawing.Size(565, 36);
+            this.ComprasUsrNombreResponsable.TabIndex = 8;
+            // 
+            // ComprasUsrResponsable
+            // 
+            this.ComprasUsrResponsable.AlineacionTexto = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ComprasUsrResponsable.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
+            this._ComprasTlpResponsable.SetColumnSpan(this.ComprasUsrResponsable, 3);
+            this.ComprasUsrResponsable.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ComprasUsrResponsable.Font = new System.Drawing.Font("Tahoma", 10.8F);
+            this.ComprasUsrResponsable.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this.ComprasUsrResponsable.Location = new System.Drawing.Point(4, 4);
+            this.ComprasUsrResponsable.Margin = new System.Windows.Forms.Padding(4);
+            this.ComprasUsrResponsable.MaximumSize = new System.Drawing.Size(1250, 27);
+            this.ComprasUsrResponsable.MostrarAsterisco = false;
+            this.ComprasUsrResponsable.Name = "ComprasUsrResponsable";
+            this.ComprasUsrResponsable.Size = new System.Drawing.Size(781, 22);
+            this.ComprasUsrResponsable.TabIndex = 7;
+            this.ComprasUsrResponsable.TabStop = false;
+            this.ComprasUsrResponsable.TamanoTipografia = 10.8F;
+            this.ComprasUsrResponsable.Text = "RESPONSABLE DE COMPRA";
+            this.ComprasUsrResponsable.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ComprasUsrResponsable.Texto = "RESPONSABLE DE COMPRA";
+            // 
+            // ComprasUsrCodigoResponsable
+            // 
+            this.ComprasUsrCodigoResponsable.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.ComprasUsrCodigoResponsable.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
+            this.ComprasUsrCodigoResponsable.Enabled = false;
+            this.ComprasUsrCodigoResponsable.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.ComprasUsrCodigoResponsable.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this.ComprasUsrCodigoResponsable.Location = new System.Drawing.Point(132, 32);
+            this.ComprasUsrCodigoResponsable.Margin = new System.Windows.Forms.Padding(2);
+            this.ComprasUsrCodigoResponsable.MaxLength = 2147483647;
+            this.ComprasUsrCodigoResponsable.MostrarEtiquetaError = false;
+            this.ComprasUsrCodigoResponsable.Name = "ComprasUsrCodigoResponsable";
+            this.ComprasUsrCodigoResponsable.SelectedText = "";
+            this.ComprasUsrCodigoResponsable.SelectionLength = 0;
+            this.ComprasUsrCodigoResponsable.SelectionStart = 0;
+            this.ComprasUsrCodigoResponsable.Size = new System.Drawing.Size(565, 36);
+            this.ComprasUsrCodigoResponsable.TabIndex = 5;
+            // 
+            // ComprasUsrEtiquetaNombreResponsable
+            // 
+            this.ComprasUsrEtiquetaNombreResponsable.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ComprasUsrEtiquetaNombreResponsable.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
+            this.ComprasUsrEtiquetaNombreResponsable.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.ComprasUsrEtiquetaNombreResponsable.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this.ComprasUsrEtiquetaNombreResponsable.Location = new System.Drawing.Point(3, 33);
+            this.ComprasUsrEtiquetaNombreResponsable.MaximumSize = new System.Drawing.Size(1000, 22);
+            this.ComprasUsrEtiquetaNombreResponsable.MostrarAsterisco = false;
+            this.ComprasUsrEtiquetaNombreResponsable.Name = "ComprasUsrEtiquetaNombreResponsable";
+            this.ComprasUsrEtiquetaNombreResponsable.Size = new System.Drawing.Size(124, 18);
+            this.ComprasUsrEtiquetaNombreResponsable.TabIndex = 2;
+            this.ComprasUsrEtiquetaNombreResponsable.TabStop = false;
+            this.ComprasUsrEtiquetaNombreResponsable.TamanoTipografia = 9F;
+            this.ComprasUsrEtiquetaNombreResponsable.Text = "Nombre";
+            this.ComprasUsrEtiquetaNombreResponsable.Texto = "Nombre";
+            // 
+            // ComprasUsrEtiquetaCodigoResponsable
+            // 
+            this.ComprasUsrEtiquetaCodigoResponsable.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ComprasUsrEtiquetaCodigoResponsable.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
+            this.ComprasUsrEtiquetaCodigoResponsable.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.ComprasUsrEtiquetaCodigoResponsable.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this.ComprasUsrEtiquetaCodigoResponsable.Location = new System.Drawing.Point(3, 73);
+            this.ComprasUsrEtiquetaCodigoResponsable.MaximumSize = new System.Drawing.Size(1000, 22);
+            this.ComprasUsrEtiquetaCodigoResponsable.MostrarAsterisco = false;
+            this.ComprasUsrEtiquetaCodigoResponsable.Name = "ComprasUsrEtiquetaCodigoResponsable";
+            this.ComprasUsrEtiquetaCodigoResponsable.Size = new System.Drawing.Size(124, 18);
+            this.ComprasUsrEtiquetaCodigoResponsable.TabIndex = 1;
+            this.ComprasUsrEtiquetaCodigoResponsable.TabStop = false;
+            this.ComprasUsrEtiquetaCodigoResponsable.TamanoTipografia = 9F;
+            this.ComprasUsrEtiquetaCodigoResponsable.Text = "Código";
+            this.ComprasUsrEtiquetaCodigoResponsable.Texto = "Código";
+            // 
+            // ComprasUsrEtiquetaCorreoResponsable
+            // 
+            this.ComprasUsrEtiquetaCorreoResponsable.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ComprasUsrEtiquetaCorreoResponsable.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
+            this.ComprasUsrEtiquetaCorreoResponsable.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.ComprasUsrEtiquetaCorreoResponsable.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this.ComprasUsrEtiquetaCorreoResponsable.Location = new System.Drawing.Point(3, 113);
+            this.ComprasUsrEtiquetaCorreoResponsable.MaximumSize = new System.Drawing.Size(1000, 22);
+            this.ComprasUsrEtiquetaCorreoResponsable.MostrarAsterisco = false;
+            this.ComprasUsrEtiquetaCorreoResponsable.Name = "ComprasUsrEtiquetaCorreoResponsable";
+            this.ComprasUsrEtiquetaCorreoResponsable.Size = new System.Drawing.Size(124, 18);
+            this.ComprasUsrEtiquetaCorreoResponsable.TabIndex = 4;
+            this.ComprasUsrEtiquetaCorreoResponsable.TabStop = false;
+            this.ComprasUsrEtiquetaCorreoResponsable.TamanoTipografia = 9F;
+            this.ComprasUsrEtiquetaCorreoResponsable.Text = "Correo";
+            this.ComprasUsrEtiquetaCorreoResponsable.Texto = "Correo";
+            // 
+            // ComprasUsrEtiquetaPuestoResponsable
+            // 
+            this.ComprasUsrEtiquetaPuestoResponsable.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ComprasUsrEtiquetaPuestoResponsable.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
+            this.ComprasUsrEtiquetaPuestoResponsable.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.ComprasUsrEtiquetaPuestoResponsable.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this.ComprasUsrEtiquetaPuestoResponsable.Location = new System.Drawing.Point(3, 153);
+            this.ComprasUsrEtiquetaPuestoResponsable.MaximumSize = new System.Drawing.Size(1000, 22);
+            this.ComprasUsrEtiquetaPuestoResponsable.MostrarAsterisco = false;
+            this.ComprasUsrEtiquetaPuestoResponsable.Name = "ComprasUsrEtiquetaPuestoResponsable";
+            this.ComprasUsrEtiquetaPuestoResponsable.Size = new System.Drawing.Size(124, 18);
+            this.ComprasUsrEtiquetaPuestoResponsable.TabIndex = 3;
+            this.ComprasUsrEtiquetaPuestoResponsable.TabStop = false;
+            this.ComprasUsrEtiquetaPuestoResponsable.TamanoTipografia = 9F;
+            this.ComprasUsrEtiquetaPuestoResponsable.Text = "Puesto";
+            this.ComprasUsrEtiquetaPuestoResponsable.Texto = "Puesto";
+            // 
+            // _ComprasGbxFinalizacion
+            // 
+            this._ComprasGbxFinalizacion.BackColor = System.Drawing.Color.Transparent;
+            this._ComprasGbxFinalizacion.Controls.Add(this._ComprasTlpFinalizacion);
+            this._ComprasGbxFinalizacion.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._ComprasGbxFinalizacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._ComprasGbxFinalizacion.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
+            this._ComprasGbxFinalizacion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this._ComprasGbxFinalizacion.Location = new System.Drawing.Point(3, 476);
+            this._ComprasGbxFinalizacion.Name = "_ComprasGbxFinalizacion";
+            this._ComprasGbxFinalizacion.Size = new System.Drawing.Size(1604, 244);
+            this._ComprasGbxFinalizacion.TabIndex = 5;
+            this._ComprasGbxFinalizacion.TabStop = false;
+            this._ComprasGbxFinalizacion.Text = "Finalización";
+            // 
+            // _ComprasTlpFinalizacion
+            // 
+            this._ComprasTlpFinalizacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
+            this._ComprasTlpFinalizacion.ColumnCount = 2;
+            this._ComprasTlpFinalizacion.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this._ComprasTlpFinalizacion.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this._ComprasTlpFinalizacion.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this._ComprasTlpFinalizacion.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this._ComprasTlpFinalizacion.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this._ComprasTlpFinalizacion.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this._ComprasTlpFinalizacion.Controls.Add(this._ComprasTlpImportes, 1, 0);
+            this._ComprasTlpFinalizacion.Controls.Add(this._ComprasTlpTotales, 0, 0);
+            this._ComprasTlpFinalizacion.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._ComprasTlpFinalizacion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this._ComprasTlpFinalizacion.Location = new System.Drawing.Point(3, 24);
+            this._ComprasTlpFinalizacion.Margin = new System.Windows.Forms.Padding(0);
+            this._ComprasTlpFinalizacion.Name = "_ComprasTlpFinalizacion";
+            this._ComprasTlpFinalizacion.RowCount = 1;
+            this._ComprasTlpFinalizacion.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this._ComprasTlpFinalizacion.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 217F));
+            this._ComprasTlpFinalizacion.Size = new System.Drawing.Size(1598, 217);
+            this._ComprasTlpFinalizacion.TabIndex = 3;
+            // 
+            // _ComprasTlpImportes
+            // 
+            this._ComprasTlpImportes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
+            this._ComprasTlpImportes.ColumnCount = 2;
+            this._ComprasTlpImportes.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 95F));
+            this._ComprasTlpImportes.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this._ComprasTlpImportes.Controls.Add(this._ComprasTlpAcciones, 0, 2);
+            this._ComprasTlpImportes.Controls.Add(this.ComprasUsrEtiquetaComentario, 0, 0);
+            this._ComprasTlpImportes.Controls.Add(this.ComprasUsrComentario, 1, 0);
+            this._ComprasTlpImportes.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._ComprasTlpImportes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this._ComprasTlpImportes.Location = new System.Drawing.Point(799, 0);
+            this._ComprasTlpImportes.Margin = new System.Windows.Forms.Padding(0);
+            this._ComprasTlpImportes.Name = "_ComprasTlpImportes";
+            this._ComprasTlpImportes.RowCount = 4;
+            this._ComprasTlpImportes.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 100F));
+            this._ComprasTlpImportes.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10F));
+            this._ComprasTlpImportes.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 90F));
+            this._ComprasTlpImportes.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this._ComprasTlpImportes.Size = new System.Drawing.Size(799, 217);
+            this._ComprasTlpImportes.TabIndex = 6;
+            // 
+            // _ComprasTlpAcciones
+            // 
+            this._ComprasTlpAcciones.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
+            this._ComprasTlpAcciones.ColumnCount = 3;
+            this._ComprasTlpImportes.SetColumnSpan(this._ComprasTlpAcciones, 2);
+            this._ComprasTlpAcciones.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this._ComprasTlpAcciones.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 90F));
+            this._ComprasTlpAcciones.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 90F));
+            this._ComprasTlpAcciones.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this._ComprasTlpAcciones.Controls.Add(this._ComprasBtnGuardar, 1, 0);
+            this._ComprasTlpAcciones.Controls.Add(this._ComprasBtnDescartar, 2, 0);
+            this._ComprasTlpAcciones.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._ComprasTlpAcciones.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this._ComprasTlpAcciones.Location = new System.Drawing.Point(0, 110);
+            this._ComprasTlpAcciones.Margin = new System.Windows.Forms.Padding(0);
+            this._ComprasTlpAcciones.Name = "_ComprasTlpAcciones";
+            this._ComprasTlpAcciones.RowCount = 1;
+            this._ComprasTlpAcciones.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this._ComprasTlpAcciones.Size = new System.Drawing.Size(799, 90);
+            this._ComprasTlpAcciones.TabIndex = 13;
+            // 
+            // _ComprasBtnGuardar
+            // 
+            this._ComprasBtnGuardar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this._ComprasBtnGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(220)))), ((int)(((byte)(239)))));
+            this._ComprasBtnGuardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this._ComprasBtnGuardar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this._ComprasBtnGuardar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this._ComprasBtnGuardar.FlatAppearance.BorderSize = 0;
+            this._ComprasBtnGuardar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(173)))), ((int)(((byte)(213)))));
+            this._ComprasBtnGuardar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(193)))), ((int)(((byte)(224)))));
+            this._ComprasBtnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._ComprasBtnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._ComprasBtnGuardar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this._ComprasBtnGuardar.Location = new System.Drawing.Point(624, 5);
+            this._ComprasBtnGuardar.Margin = new System.Windows.Forms.Padding(0);
+            this._ComprasBtnGuardar.MaximumSize = new System.Drawing.Size(80, 80);
+            this._ComprasBtnGuardar.MinimumSize = new System.Drawing.Size(80, 80);
+            this._ComprasBtnGuardar.Name = "_ComprasBtnGuardar";
+            this._ComprasBtnGuardar.Size = new System.Drawing.Size(80, 80);
+            this._ComprasBtnGuardar.TabIndex = 1;
+            this._ComprasBtnGuardar.Text = "GUARDAR";
+            this._ComprasBtnGuardar.UseVisualStyleBackColor = false;
+            // 
+            // _ComprasBtnDescartar
+            // 
+            this._ComprasBtnDescartar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this._ComprasBtnDescartar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(220)))), ((int)(((byte)(239)))));
+            this._ComprasBtnDescartar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this._ComprasBtnDescartar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this._ComprasBtnDescartar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this._ComprasBtnDescartar.FlatAppearance.BorderSize = 0;
+            this._ComprasBtnDescartar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(173)))), ((int)(((byte)(213)))));
+            this._ComprasBtnDescartar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(193)))), ((int)(((byte)(224)))));
+            this._ComprasBtnDescartar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._ComprasBtnDescartar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._ComprasBtnDescartar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this._ComprasBtnDescartar.Location = new System.Drawing.Point(714, 5);
+            this._ComprasBtnDescartar.Margin = new System.Windows.Forms.Padding(0);
+            this._ComprasBtnDescartar.MaximumSize = new System.Drawing.Size(80, 80);
+            this._ComprasBtnDescartar.MinimumSize = new System.Drawing.Size(80, 80);
+            this._ComprasBtnDescartar.Name = "_ComprasBtnDescartar";
+            this._ComprasBtnDescartar.Size = new System.Drawing.Size(80, 80);
+            this._ComprasBtnDescartar.TabIndex = 0;
+            this._ComprasBtnDescartar.Text = "DESCARTAR";
+            this._ComprasBtnDescartar.UseVisualStyleBackColor = false;
+            // 
+            // ComprasUsrEtiquetaComentario
+            // 
+            this.ComprasUsrEtiquetaComentario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ComprasUsrEtiquetaComentario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
+            this.ComprasUsrEtiquetaComentario.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.ComprasUsrEtiquetaComentario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this.ComprasUsrEtiquetaComentario.Location = new System.Drawing.Point(3, 3);
+            this.ComprasUsrEtiquetaComentario.MaximumSize = new System.Drawing.Size(1000, 22);
+            this.ComprasUsrEtiquetaComentario.MostrarAsterisco = false;
+            this.ComprasUsrEtiquetaComentario.Name = "ComprasUsrEtiquetaComentario";
+            this.ComprasUsrEtiquetaComentario.Size = new System.Drawing.Size(89, 18);
+            this.ComprasUsrEtiquetaComentario.TabIndex = 12;
+            this.ComprasUsrEtiquetaComentario.TabStop = false;
+            this.ComprasUsrEtiquetaComentario.TamanoTipografia = 9F;
+            this.ComprasUsrEtiquetaComentario.Text = "Comentario";
+            this.ComprasUsrEtiquetaComentario.Texto = "Comentario";
+            // 
+            // ComprasUsrComentario
+            // 
+            this.ComprasUsrComentario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
+            this.ComprasUsrComentario.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ComprasUsrComentario.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.ComprasUsrComentario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this.ComprasUsrComentario.Location = new System.Drawing.Point(95, 0);
+            this.ComprasUsrComentario.Margin = new System.Windows.Forms.Padding(0);
+            this.ComprasUsrComentario.MaxLength = 2147483647;
+            this.ComprasUsrComentario.MostrarEtiquetaError = false;
+            this.ComprasUsrComentario.Multiline = true;
+            this.ComprasUsrComentario.Name = "ComprasUsrComentario";
+            this.ComprasUsrComentario.SelectedText = "";
+            this.ComprasUsrComentario.SelectionLength = 0;
+            this.ComprasUsrComentario.SelectionStart = 0;
+            this.ComprasUsrComentario.Size = new System.Drawing.Size(704, 100);
+            this.ComprasUsrComentario.TabIndex = 14;
+            // 
+            // _ComprasTlpTotales
+            // 
+            this._ComprasTlpTotales.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
+            this._ComprasTlpTotales.ColumnCount = 3;
+            this._ComprasTlpTotales.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 210F));
+            this._ComprasTlpTotales.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this._ComprasTlpTotales.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this._ComprasTlpTotales.Controls.Add(this.ComprasUsrImpuesto, 1, 0);
+            this._ComprasTlpTotales.Controls.Add(this.ComprasUsrEtiquetaSubtotal, 0, 0);
+            this._ComprasTlpTotales.Controls.Add(this.ComprasUsrSubtotal, 1, 4);
+            this._ComprasTlpTotales.Controls.Add(this.ComprasUsrDescuento, 1, 3);
+            this._ComprasTlpTotales.Controls.Add(this.ComprasUsrGastosAdicionales, 1, 2);
+            this._ComprasTlpTotales.Controls.Add(this.ComprasUsrEtiquetaDescuento, 0, 1);
+            this._ComprasTlpTotales.Controls.Add(this.ComprasUsrEtiquetaGastosAdicionales, 0, 2);
+            this._ComprasTlpTotales.Controls.Add(this.ComprasUsrEtiquetaImpuesto, 0, 3);
+            this._ComprasTlpTotales.Controls.Add(this.ComprasUsrEtiquetaTotal, 0, 4);
+            this._ComprasTlpTotales.Controls.Add(this.ComprasUsrTotal, 1, 1);
+            this._ComprasTlpTotales.Controls.Add(this._ComprasBtnPorcentaje, 2, 1);
+            this._ComprasTlpTotales.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._ComprasTlpTotales.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this._ComprasTlpTotales.Location = new System.Drawing.Point(0, 0);
+            this._ComprasTlpTotales.Margin = new System.Windows.Forms.Padding(0);
+            this._ComprasTlpTotales.Name = "_ComprasTlpTotales";
+            this._ComprasTlpTotales.RowCount = 6;
+            this._ComprasTlpTotales.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this._ComprasTlpTotales.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this._ComprasTlpTotales.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this._ComprasTlpTotales.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this._ComprasTlpTotales.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this._ComprasTlpTotales.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this._ComprasTlpTotales.Size = new System.Drawing.Size(799, 217);
+            this._ComprasTlpTotales.TabIndex = 5;
+            // 
+            // ComprasUsrImpuesto
+            // 
+            this.ComprasUsrImpuesto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.ComprasUsrImpuesto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
+            this._ComprasTlpTotales.SetColumnSpan(this.ComprasUsrImpuesto, 2);
+            this.ComprasUsrImpuesto.Enabled = false;
+            this.ComprasUsrImpuesto.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.ComprasUsrImpuesto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this.ComprasUsrImpuesto.Location = new System.Drawing.Point(212, 2);
+            this.ComprasUsrImpuesto.Margin = new System.Windows.Forms.Padding(2);
+            this.ComprasUsrImpuesto.MaxLength = 2147483647;
+            this.ComprasUsrImpuesto.MostrarEtiquetaError = false;
+            this.ComprasUsrImpuesto.Name = "ComprasUsrImpuesto";
+            this.ComprasUsrImpuesto.SelectedText = "";
+            this.ComprasUsrImpuesto.SelectionLength = 0;
+            this.ComprasUsrImpuesto.SelectionStart = 0;
+            this.ComprasUsrImpuesto.Size = new System.Drawing.Size(585, 36);
+            this.ComprasUsrImpuesto.TabIndex = 12;
+            // 
+            // ComprasUsrEtiquetaSubtotal
+            // 
+            this.ComprasUsrEtiquetaSubtotal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.ComprasUsrEtiquetaSubtotal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
+            this.ComprasUsrEtiquetaSubtotal.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.ComprasUsrEtiquetaSubtotal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this.ComprasUsrEtiquetaSubtotal.Location = new System.Drawing.Point(3, 11);
+            this.ComprasUsrEtiquetaSubtotal.MaximumSize = new System.Drawing.Size(1000, 22);
+            this.ComprasUsrEtiquetaSubtotal.MostrarAsterisco = false;
+            this.ComprasUsrEtiquetaSubtotal.Name = "ComprasUsrEtiquetaSubtotal";
+            this.ComprasUsrEtiquetaSubtotal.Size = new System.Drawing.Size(204, 18);
+            this.ComprasUsrEtiquetaSubtotal.TabIndex = 11;
+            this.ComprasUsrEtiquetaSubtotal.TabStop = false;
+            this.ComprasUsrEtiquetaSubtotal.TamanoTipografia = 9F;
+            this.ComprasUsrEtiquetaSubtotal.Text = "Total antes del descuento";
+            this.ComprasUsrEtiquetaSubtotal.Texto = "Total antes del descuento";
+            // 
+            // ComprasUsrSubtotal
+            // 
+            this.ComprasUsrSubtotal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.ComprasUsrSubtotal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
+            this._ComprasTlpTotales.SetColumnSpan(this.ComprasUsrSubtotal, 2);
+            this.ComprasUsrSubtotal.Enabled = false;
+            this.ComprasUsrSubtotal.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.ComprasUsrSubtotal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this.ComprasUsrSubtotal.Location = new System.Drawing.Point(212, 162);
+            this.ComprasUsrSubtotal.Margin = new System.Windows.Forms.Padding(2);
+            this.ComprasUsrSubtotal.MaxLength = 2147483647;
+            this.ComprasUsrSubtotal.MostrarEtiquetaError = false;
+            this.ComprasUsrSubtotal.Name = "ComprasUsrSubtotal";
+            this.ComprasUsrSubtotal.SelectedText = "";
+            this.ComprasUsrSubtotal.SelectionLength = 0;
+            this.ComprasUsrSubtotal.SelectionStart = 0;
+            this.ComprasUsrSubtotal.Size = new System.Drawing.Size(585, 36);
+            this.ComprasUsrSubtotal.TabIndex = 10;
+            // 
+            // ComprasUsrDescuento
+            // 
+            this.ComprasUsrDescuento.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.ComprasUsrDescuento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
+            this._ComprasTlpTotales.SetColumnSpan(this.ComprasUsrDescuento, 2);
+            this.ComprasUsrDescuento.Enabled = false;
+            this.ComprasUsrDescuento.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.ComprasUsrDescuento.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this.ComprasUsrDescuento.Location = new System.Drawing.Point(212, 122);
+            this.ComprasUsrDescuento.Margin = new System.Windows.Forms.Padding(2);
+            this.ComprasUsrDescuento.MaxLength = 2147483647;
+            this.ComprasUsrDescuento.MostrarEtiquetaError = false;
+            this.ComprasUsrDescuento.Name = "ComprasUsrDescuento";
+            this.ComprasUsrDescuento.SelectedText = "";
+            this.ComprasUsrDescuento.SelectionLength = 0;
+            this.ComprasUsrDescuento.SelectionStart = 0;
+            this.ComprasUsrDescuento.Size = new System.Drawing.Size(585, 36);
+            this.ComprasUsrDescuento.TabIndex = 9;
+            // 
+            // ComprasUsrGastosAdicionales
+            // 
+            this.ComprasUsrGastosAdicionales.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.ComprasUsrGastosAdicionales.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
+            this._ComprasTlpTotales.SetColumnSpan(this.ComprasUsrGastosAdicionales, 2);
+            this.ComprasUsrGastosAdicionales.Enabled = false;
+            this.ComprasUsrGastosAdicionales.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.ComprasUsrGastosAdicionales.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this.ComprasUsrGastosAdicionales.Location = new System.Drawing.Point(212, 82);
+            this.ComprasUsrGastosAdicionales.Margin = new System.Windows.Forms.Padding(2);
+            this.ComprasUsrGastosAdicionales.MaxLength = 2147483647;
+            this.ComprasUsrGastosAdicionales.MostrarEtiquetaError = false;
+            this.ComprasUsrGastosAdicionales.Name = "ComprasUsrGastosAdicionales";
+            this.ComprasUsrGastosAdicionales.SelectedText = "";
+            this.ComprasUsrGastosAdicionales.SelectionLength = 0;
+            this.ComprasUsrGastosAdicionales.SelectionStart = 0;
+            this.ComprasUsrGastosAdicionales.Size = new System.Drawing.Size(585, 36);
+            this.ComprasUsrGastosAdicionales.TabIndex = 8;
+            // 
+            // ComprasUsrEtiquetaDescuento
+            // 
+            this.ComprasUsrEtiquetaDescuento.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.ComprasUsrEtiquetaDescuento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
+            this.ComprasUsrEtiquetaDescuento.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.ComprasUsrEtiquetaDescuento.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this.ComprasUsrEtiquetaDescuento.Location = new System.Drawing.Point(3, 51);
+            this.ComprasUsrEtiquetaDescuento.MaximumSize = new System.Drawing.Size(1000, 22);
+            this.ComprasUsrEtiquetaDescuento.MostrarAsterisco = false;
+            this.ComprasUsrEtiquetaDescuento.Name = "ComprasUsrEtiquetaDescuento";
+            this.ComprasUsrEtiquetaDescuento.Size = new System.Drawing.Size(204, 18);
+            this.ComprasUsrEtiquetaDescuento.TabIndex = 1;
+            this.ComprasUsrEtiquetaDescuento.TabStop = false;
+            this.ComprasUsrEtiquetaDescuento.TamanoTipografia = 9F;
+            this.ComprasUsrEtiquetaDescuento.Text = "Descuento";
+            this.ComprasUsrEtiquetaDescuento.Texto = "Descuento";
+            // 
+            // ComprasUsrEtiquetaGastosAdicionales
+            // 
+            this.ComprasUsrEtiquetaGastosAdicionales.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.ComprasUsrEtiquetaGastosAdicionales.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
+            this.ComprasUsrEtiquetaGastosAdicionales.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.ComprasUsrEtiquetaGastosAdicionales.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this.ComprasUsrEtiquetaGastosAdicionales.Location = new System.Drawing.Point(3, 91);
+            this.ComprasUsrEtiquetaGastosAdicionales.MaximumSize = new System.Drawing.Size(1000, 22);
+            this.ComprasUsrEtiquetaGastosAdicionales.MostrarAsterisco = false;
+            this.ComprasUsrEtiquetaGastosAdicionales.Name = "ComprasUsrEtiquetaGastosAdicionales";
+            this.ComprasUsrEtiquetaGastosAdicionales.Size = new System.Drawing.Size(204, 18);
+            this.ComprasUsrEtiquetaGastosAdicionales.TabIndex = 2;
+            this.ComprasUsrEtiquetaGastosAdicionales.TabStop = false;
+            this.ComprasUsrEtiquetaGastosAdicionales.TamanoTipografia = 9F;
+            this.ComprasUsrEtiquetaGastosAdicionales.Text = "Gastos Adicionales";
+            this.ComprasUsrEtiquetaGastosAdicionales.Texto = "Gastos Adicionales";
+            // 
+            // ComprasUsrEtiquetaImpuesto
+            // 
+            this.ComprasUsrEtiquetaImpuesto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.ComprasUsrEtiquetaImpuesto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
+            this.ComprasUsrEtiquetaImpuesto.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.ComprasUsrEtiquetaImpuesto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this.ComprasUsrEtiquetaImpuesto.Location = new System.Drawing.Point(3, 131);
+            this.ComprasUsrEtiquetaImpuesto.MaximumSize = new System.Drawing.Size(1000, 22);
+            this.ComprasUsrEtiquetaImpuesto.MostrarAsterisco = false;
+            this.ComprasUsrEtiquetaImpuesto.Name = "ComprasUsrEtiquetaImpuesto";
+            this.ComprasUsrEtiquetaImpuesto.Size = new System.Drawing.Size(204, 18);
+            this.ComprasUsrEtiquetaImpuesto.TabIndex = 3;
+            this.ComprasUsrEtiquetaImpuesto.TabStop = false;
+            this.ComprasUsrEtiquetaImpuesto.TamanoTipografia = 9F;
+            this.ComprasUsrEtiquetaImpuesto.Text = "Impuesto";
+            this.ComprasUsrEtiquetaImpuesto.Texto = "Impuesto";
+            // 
+            // ComprasUsrEtiquetaTotal
+            // 
+            this.ComprasUsrEtiquetaTotal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.ComprasUsrEtiquetaTotal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
+            this.ComprasUsrEtiquetaTotal.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.ComprasUsrEtiquetaTotal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this.ComprasUsrEtiquetaTotal.Location = new System.Drawing.Point(3, 171);
+            this.ComprasUsrEtiquetaTotal.MaximumSize = new System.Drawing.Size(1000, 22);
+            this.ComprasUsrEtiquetaTotal.MostrarAsterisco = false;
+            this.ComprasUsrEtiquetaTotal.Name = "ComprasUsrEtiquetaTotal";
+            this.ComprasUsrEtiquetaTotal.Size = new System.Drawing.Size(204, 18);
+            this.ComprasUsrEtiquetaTotal.TabIndex = 4;
+            this.ComprasUsrEtiquetaTotal.TabStop = false;
+            this.ComprasUsrEtiquetaTotal.TamanoTipografia = 9F;
+            this.ComprasUsrEtiquetaTotal.Text = "Total pago vencido";
+            this.ComprasUsrEtiquetaTotal.Texto = "Total pago vencido";
+            // 
+            // ComprasUsrTotal
+            // 
+            this.ComprasUsrTotal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.ComprasUsrTotal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
+            this.ComprasUsrTotal.Enabled = false;
+            this.ComprasUsrTotal.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.ComprasUsrTotal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this.ComprasUsrTotal.Location = new System.Drawing.Point(212, 42);
+            this.ComprasUsrTotal.Margin = new System.Windows.Forms.Padding(2);
+            this.ComprasUsrTotal.MaxLength = 2147483647;
+            this.ComprasUsrTotal.MostrarEtiquetaError = false;
+            this.ComprasUsrTotal.Name = "ComprasUsrTotal";
+            this.ComprasUsrTotal.SelectedText = "";
+            this.ComprasUsrTotal.SelectionLength = 0;
+            this.ComprasUsrTotal.SelectionStart = 0;
+            this.ComprasUsrTotal.Size = new System.Drawing.Size(545, 36);
+            this.ComprasUsrTotal.TabIndex = 5;
+            this._ComprasBtnPorcentaje.TipoBoton = CapaVista_Compras.Componentes.ComprasTipoBoton.Libre;
+            // 
+            // _ComprasBtnPorcentaje
+            // 
+            this._ComprasBtnPorcentaje.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this._ComprasBtnPorcentaje.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(220)))), ((int)(((byte)(239)))));
+            this._ComprasBtnPorcentaje.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this._ComprasBtnPorcentaje.Cursor = System.Windows.Forms.Cursors.Hand;
+            this._ComprasBtnPorcentaje.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this._ComprasBtnPorcentaje.FlatAppearance.BorderSize = 0;
+            this._ComprasBtnPorcentaje.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(173)))), ((int)(((byte)(213)))));
+            this._ComprasBtnPorcentaje.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(193)))), ((int)(((byte)(224)))));
+            this._ComprasBtnPorcentaje.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._ComprasBtnPorcentaje.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._ComprasBtnPorcentaje.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this._ComprasBtnPorcentaje.Location = new System.Drawing.Point(762, 43);
+            this._ComprasBtnPorcentaje.Margin = new System.Windows.Forms.Padding(0);
+            this._ComprasBtnPorcentaje.Name = "_ComprasBtnPorcentaje";
+            this._ComprasBtnPorcentaje.Size = new System.Drawing.Size(34, 34);
+            this._ComprasBtnPorcentaje.TabIndex = 13;
+            this._ComprasBtnPorcentaje.Text = "%";
+            this._ComprasBtnPorcentaje.UseVisualStyleBackColor = false;
+            // 
+            // _ComprasGbxDetalles
+            // 
+            this._ComprasGbxDetalles.BackColor = System.Drawing.Color.Transparent;
+            this._ComprasGbxDetalles.Controls.Add(this._ComprasTlpDetalles);
+            this._ComprasGbxDetalles.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._ComprasGbxDetalles.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._ComprasGbxDetalles.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
+            this._ComprasGbxDetalles.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this._ComprasGbxDetalles.Location = new System.Drawing.Point(3, 243);
+            this._ComprasGbxDetalles.Name = "_ComprasGbxDetalles";
+            this._ComprasGbxDetalles.Size = new System.Drawing.Size(1604, 227);
+            this._ComprasGbxDetalles.TabIndex = 6;
+            this._ComprasGbxDetalles.TabStop = false;
+            this._ComprasGbxDetalles.Text = "Detalles";
+            // 
+            // _ComprasTlpDetalles
+            // 
+            this._ComprasTlpDetalles.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
+            this._ComprasTlpDetalles.ColumnCount = 4;
+            this._ComprasTlpDetalles.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this._ComprasTlpDetalles.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this._ComprasTlpDetalles.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this._ComprasTlpDetalles.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this._ComprasTlpDetalles.Controls.Add(this._ComprasPnlArticulos, 0, 1);
+            this._ComprasTlpDetalles.Controls.Add(this._ComprasBtnArticulos, 0, 0);
+            this._ComprasTlpDetalles.Controls.Add(this._ComprasBtnLogistica, 1, 0);
+            this._ComprasTlpDetalles.Controls.Add(this._ComprasBtnFinanzas, 2, 0);
+            this._ComprasTlpDetalles.Controls.Add(this._ComprasBtnAnexos, 3, 0);
+            this._ComprasTlpDetalles.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._ComprasTlpDetalles.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this._ComprasTlpDetalles.Location = new System.Drawing.Point(3, 24);
+            this._ComprasTlpDetalles.Name = "_ComprasTlpDetalles";
+            this._ComprasTlpDetalles.RowCount = 2;
+            this._ComprasTlpDetalles.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this._ComprasTlpDetalles.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this._ComprasTlpDetalles.Size = new System.Drawing.Size(1598, 200);
+            this._ComprasTlpDetalles.TabIndex = 0;
+            // 
+            // _ComprasPnlArticulos
+            // 
+            this._ComprasPnlArticulos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
+            this._ComprasTlpDetalles.SetColumnSpan(this._ComprasPnlArticulos, 4);
+            this._ComprasPnlArticulos.Controls.Add(this.ComprasUsrArticulos);
+            this._ComprasPnlArticulos.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._ComprasPnlArticulos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this._ComprasPnlArticulos.Location = new System.Drawing.Point(0, 40);
+            this._ComprasPnlArticulos.Margin = new System.Windows.Forms.Padding(0);
+            this._ComprasPnlArticulos.Name = "_ComprasPnlArticulos";
+            this._ComprasPnlArticulos.Size = new System.Drawing.Size(1598, 160);
+            this._ComprasPnlArticulos.TabIndex = 0;
+            // 
+            // ComprasUsrArticulos
+            // 
+            this.ComprasUsrArticulos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
+            this.ComprasUsrArticulos.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ComprasUsrArticulos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this.ComprasUsrArticulos.Location = new System.Drawing.Point(0, 0);
+            this.ComprasUsrArticulos.Margin = new System.Windows.Forms.Padding(0);
+            this.ComprasUsrArticulos.Name = "ComprasUsrArticulos";
+            this.ComprasUsrArticulos.Size = new System.Drawing.Size(1598, 160);
+            this.ComprasUsrArticulos.TabIndex = 0;
+            this._ComprasBtnArticulos.TipoBoton = CapaVista_Compras.Componentes.ComprasTipoBoton.Libre;
+            // 
+            // _ComprasBtnArticulos
+            // 
+            this._ComprasBtnArticulos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(220)))), ((int)(((byte)(239)))));
+            this._ComprasBtnArticulos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this._ComprasBtnArticulos.Cursor = System.Windows.Forms.Cursors.Hand;
+            this._ComprasBtnArticulos.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._ComprasBtnArticulos.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this._ComprasBtnArticulos.FlatAppearance.BorderSize = 0;
+            this._ComprasBtnArticulos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(173)))), ((int)(((byte)(213)))));
+            this._ComprasBtnArticulos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(193)))), ((int)(((byte)(224)))));
+            this._ComprasBtnArticulos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._ComprasBtnArticulos.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._ComprasBtnArticulos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this._ComprasBtnArticulos.Location = new System.Drawing.Point(0, 0);
+            this._ComprasBtnArticulos.Margin = new System.Windows.Forms.Padding(0);
+            this._ComprasBtnArticulos.Name = "_ComprasBtnArticulos";
+            this._ComprasBtnArticulos.Size = new System.Drawing.Size(399, 40);
+            this._ComprasBtnArticulos.TabIndex = 1;
+            this._ComprasBtnArticulos.Text = "ARTÍCULOS";
+            this._ComprasBtnArticulos.UseVisualStyleBackColor = false;
+            this._ComprasBtnLogistica.TipoBoton = CapaVista_Compras.Componentes.ComprasTipoBoton.Libre;
+            // 
+            // _ComprasBtnLogistica
+            // 
+            this._ComprasBtnLogistica.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(220)))), ((int)(((byte)(239)))));
+            this._ComprasBtnLogistica.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this._ComprasBtnLogistica.Cursor = System.Windows.Forms.Cursors.Hand;
+            this._ComprasBtnLogistica.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._ComprasBtnLogistica.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this._ComprasBtnLogistica.FlatAppearance.BorderSize = 0;
+            this._ComprasBtnLogistica.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(173)))), ((int)(((byte)(213)))));
+            this._ComprasBtnLogistica.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(193)))), ((int)(((byte)(224)))));
+            this._ComprasBtnLogistica.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._ComprasBtnLogistica.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._ComprasBtnLogistica.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this._ComprasBtnLogistica.Location = new System.Drawing.Point(399, 0);
+            this._ComprasBtnLogistica.Margin = new System.Windows.Forms.Padding(0);
+            this._ComprasBtnLogistica.Name = "_ComprasBtnLogistica";
+            this._ComprasBtnLogistica.Size = new System.Drawing.Size(399, 40);
+            this._ComprasBtnLogistica.TabIndex = 2;
+            this._ComprasBtnLogistica.Text = "LOGÍSTICA";
+            this._ComprasBtnLogistica.UseVisualStyleBackColor = false;
+            this._ComprasBtnFinanzas.TipoBoton = CapaVista_Compras.Componentes.ComprasTipoBoton.Libre;
+            // 
+            // _ComprasBtnFinanzas
+            // 
+            this._ComprasBtnFinanzas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(220)))), ((int)(((byte)(239)))));
+            this._ComprasBtnFinanzas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this._ComprasBtnFinanzas.Cursor = System.Windows.Forms.Cursors.Hand;
+            this._ComprasBtnFinanzas.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._ComprasBtnFinanzas.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this._ComprasBtnFinanzas.FlatAppearance.BorderSize = 0;
+            this._ComprasBtnFinanzas.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(173)))), ((int)(((byte)(213)))));
+            this._ComprasBtnFinanzas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(193)))), ((int)(((byte)(224)))));
+            this._ComprasBtnFinanzas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._ComprasBtnFinanzas.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._ComprasBtnFinanzas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this._ComprasBtnFinanzas.Location = new System.Drawing.Point(798, 0);
+            this._ComprasBtnFinanzas.Margin = new System.Windows.Forms.Padding(0);
+            this._ComprasBtnFinanzas.Name = "_ComprasBtnFinanzas";
+            this._ComprasBtnFinanzas.Size = new System.Drawing.Size(399, 40);
+            this._ComprasBtnFinanzas.TabIndex = 3;
+            this._ComprasBtnFinanzas.Text = "FINANZAS";
+            this._ComprasBtnFinanzas.UseVisualStyleBackColor = false;
+            this._ComprasBtnAnexos.TipoBoton = CapaVista_Compras.Componentes.ComprasTipoBoton.Libre;
+            // 
+            // _ComprasBtnAnexos
+            // 
+            this._ComprasBtnAnexos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(220)))), ((int)(((byte)(239)))));
+            this._ComprasBtnAnexos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this._ComprasBtnAnexos.Cursor = System.Windows.Forms.Cursors.Hand;
+            this._ComprasBtnAnexos.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._ComprasBtnAnexos.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this._ComprasBtnAnexos.FlatAppearance.BorderSize = 0;
+            this._ComprasBtnAnexos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(173)))), ((int)(((byte)(213)))));
+            this._ComprasBtnAnexos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(193)))), ((int)(((byte)(224)))));
+            this._ComprasBtnAnexos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._ComprasBtnAnexos.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._ComprasBtnAnexos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this._ComprasBtnAnexos.Location = new System.Drawing.Point(1197, 0);
+            this._ComprasBtnAnexos.Margin = new System.Windows.Forms.Padding(0);
+            this._ComprasBtnAnexos.Name = "_ComprasBtnAnexos";
+            this._ComprasBtnAnexos.Size = new System.Drawing.Size(401, 40);
+            this._ComprasBtnAnexos.TabIndex = 4;
+            this._ComprasBtnAnexos.Text = "ANEXOS";
+            this._ComprasBtnAnexos.UseVisualStyleBackColor = false;
             // 
             // UsrOrdenesDeCompras
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
-            this.Controls.Add(this.clsTableLayoutPanelCompras1);
-            this.MaximumSize = new System.Drawing.Size(1150, 900);
+            this.AutoSize = true;
+            this.Controls.Add(this._ComprasTlpPrincipal);
             this.Name = "UsrOrdenesDeCompras";
-            this.Size = new System.Drawing.Size(1150, 900);
-            this.clsTableLayoutPanelCompras1.ResumeLayout(false);
-            this.clsGroupBoxCompras1.ResumeLayout(false);
-            this.clsTableLayoutPanelCompras6.ResumeLayout(false);
-            this.clsTableLayoutPanelCompras8.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.clsConsultasCompras2)).EndInit();
-            this.clsTableLayoutPanelCompras7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.clsConsultasCompras1)).EndInit();
-            this.clsGroupBoxCompras2.ResumeLayout(false);
-            this.clsTableLayoutPanelCompras4.ResumeLayout(false);
-            this.clsTableLayoutPanelCompras5.ResumeLayout(false);
-            this.clsTableLayoutPanelCompras9.ResumeLayout(false);
-            this.clsTableLayoutPanelCompras2.ResumeLayout(false);
-            this.clsGroupBoxCompras3.ResumeLayout(false);
-            this.clsTableLayoutPanelCompras3.ResumeLayout(false);
+            this._ComprasTlpPrincipal.ResumeLayout(false);
+            this._ComprasGbxEncabezado.ResumeLayout(false);
+            this._ComprasTlpEncabezado.ResumeLayout(false);
+            this._ComprasTlpProveedor.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this._ComprasBtnConsultarProveedor)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._ComprasBtnConsultarResponsable)).EndInit();
+            this._ComprasTlpResponsable.ResumeLayout(false);
+            this._ComprasGbxFinalizacion.ResumeLayout(false);
+            this._ComprasTlpFinalizacion.ResumeLayout(false);
+            this._ComprasTlpImportes.ResumeLayout(false);
+            this._ComprasTlpAcciones.ResumeLayout(false);
+            this._ComprasTlpTotales.ResumeLayout(false);
+            this._ComprasGbxDetalles.ResumeLayout(false);
+            this._ComprasTlpDetalles.ResumeLayout(false);
+            this._ComprasPnlArticulos.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private Componentes.ClsTableLayoutPanelCompras clsTableLayoutPanelCompras1;
-        private Componentes.ClsGroupBoxCompras clsGroupBoxCompras1;
-        private Componentes.ClsTableLayoutPanelCompras clsTableLayoutPanelCompras6;
-        private Componentes.ClsTableLayoutPanelCompras clsTableLayoutPanelCompras7;
-        private Componentes.UsrTextBoxCompras usrTextBoxCompras4;
-        private Componentes.UsrLabelCompras usrLabelCompras4;
-        private Componentes.UsrLabelCompras usrLabelCompras5;
-        private Componentes.UsrLabelCompras usrLabelCompras6;
-        private Componentes.UsrLabelCompras usrLabelCompras7;
-        private Componentes.UsrLabelCompras usrLabelCompras8;
-        private Componentes.ClsConsultasCompras clsConsultasCompras1;
-        private Componentes.ClsTableLayoutPanelCompras clsTableLayoutPanelCompras8;
-        private Componentes.UsrLabelCompras usrLabelCompras9;
-        private Componentes.UsrTextBoxCompras usrTextBoxCompras3;
-        private Componentes.UsrLabelCompras usrLabelCompras10;
-        private Componentes.UsrLabelCompras usrLabelCompras11;
-        private Componentes.UsrLabelCompras usrLabelCompras12;
-        private Componentes.UsrLabelCompras usrLabelCompras13;
-        private Componentes.ClsConsultasCompras clsConsultasCompras2;
-        private Componentes.UsrTextBoxCompras usrTextBoxCompras7;
-        private Componentes.UsrTextBoxCompras usrTextBoxCompras6;
-        private Componentes.UsrTextBoxCompras usrTextBoxCompras5;
-        private Componentes.UsrTextBoxCompras usrTextBoxCompras10;
-        private Componentes.UsrTextBoxCompras usrTextBoxCompras9;
-        private Componentes.UsrTextBoxCompras usrTextBoxCompras8;
-        private Componentes.ClsGroupBoxCompras clsGroupBoxCompras2;
-        private Componentes.ClsTableLayoutPanelCompras clsTableLayoutPanelCompras4;
-        private Componentes.ClsTableLayoutPanelCompras clsTableLayoutPanelCompras5;
-        private Componentes.ClsTableLayoutPanelCompras clsTableLayoutPanelCompras2;
-        private Componentes.UsrTextBoxCompras usrTextBoxCompras13;
-        private Componentes.UsrLabelCompras usrLabelCompras1;
-        private Componentes.UsrTextBoxCompras usrTextBoxCompras1;
-        private Componentes.UsrTextBoxCompras usrTextBoxCompras2;
-        private Componentes.UsrTextBoxCompras usrTextBoxCompras11;
-        private Componentes.UsrTextBoxCompras usrTextBoxCompras12;
-        private Componentes.UsrLabelCompras usrLabelCompras2;
-        private Componentes.UsrLabelCompras usrLabelCompras3;
-        private Componentes.UsrLabelCompras usrLabelCompras14;
-        private Componentes.UsrLabelCompras usrLabelCompras15;
-        private Componentes.UsrLabelCompras usrLabelCompras16;
-        private Componentes.ClsTableLayoutPanelCompras clsTableLayoutPanelCompras9;
-        private Componentes.ClsButtonCompras clsButtonCompras1;
-        private Componentes.ClsButtonCompras clsButtonCompras2;
-        private Componentes.ClsButtonCompras clsButtonCompras3;
-        private Componentes.ClsButtonCompras clsButtonCompras4;
-        private Componentes.ClsGroupBoxCompras clsGroupBoxCompras3;
-        private Componentes.ClsTableLayoutPanelCompras clsTableLayoutPanelCompras3;
-        private Componentes.ClsPanelCompras clsPanelCompras1;
+        private Componentes.ClsTableLayoutPanelCompras _ComprasTlpPrincipal;
+        private Componentes.ClsGroupBoxCompras _ComprasGbxEncabezado;
+        private Componentes.ClsTableLayoutPanelCompras _ComprasTlpEncabezado;
+        private Componentes.ClsTableLayoutPanelCompras _ComprasTlpResponsable;
+        private Componentes.UsrTextBoxCompras ComprasUsrCodigoResponsable;
+        private Componentes.UsrLabelCompras ComprasUsrEtiquetaCodigoResponsable;
+        private Componentes.UsrLabelCompras ComprasUsrEtiquetaNombreResponsable;
+        private Componentes.UsrLabelCompras ComprasUsrEtiquetaPuestoResponsable;
+        private Componentes.UsrLabelCompras ComprasUsrEtiquetaCorreoResponsable;
+        private Componentes.UsrLabelCompras ComprasUsrResponsable;
+        private Componentes.ClsConsultasCompras _ComprasBtnConsultarResponsable;
+        private Componentes.ClsTableLayoutPanelCompras _ComprasTlpProveedor;
+        private Componentes.UsrLabelCompras ComprasUsrProveedor;
+        private Componentes.UsrTextBoxCompras ComprasUsrNombreProveedor;
+        private Componentes.UsrLabelCompras ComprasUsrEtiquetaNombreProveedor;
+        private Componentes.UsrLabelCompras ComprasUsrEtiquetaTelefonoProveedor;
+        private Componentes.UsrLabelCompras ComprasUsrEtiquetaCorreoProveedor;
+        private Componentes.UsrLabelCompras ComprasUsrEtiquetaContactoProveedor;
+        private Componentes.ClsConsultasCompras _ComprasBtnConsultarProveedor;
+        private Componentes.UsrTextBoxCompras ComprasUsrContactoProveedor;
+        private Componentes.UsrTextBoxCompras ComprasUsrCorreoProveedor;
+        private Componentes.UsrTextBoxCompras ComprasUsrTelefonoProveedor;
+        private Componentes.UsrTextBoxCompras ComprasUsrCorreoResponsable;
+        private Componentes.UsrTextBoxCompras ComprasUsrPuestoResponsable;
+        private Componentes.UsrTextBoxCompras ComprasUsrNombreResponsable;
+        private Componentes.ClsGroupBoxCompras _ComprasGbxFinalizacion;
+        private Componentes.ClsTableLayoutPanelCompras _ComprasTlpFinalizacion;
+        private Componentes.ClsTableLayoutPanelCompras _ComprasTlpImportes;
+        private Componentes.ClsTableLayoutPanelCompras _ComprasTlpTotales;
+        private Componentes.UsrTextBoxCompras ComprasUsrImpuesto;
+        private Componentes.UsrLabelCompras ComprasUsrEtiquetaSubtotal;
+        private Componentes.UsrTextBoxCompras ComprasUsrSubtotal;
+        private Componentes.UsrTextBoxCompras ComprasUsrDescuento;
+        private Componentes.UsrTextBoxCompras ComprasUsrGastosAdicionales;
+        private Componentes.UsrTextBoxCompras ComprasUsrTotal;
+        private Componentes.UsrLabelCompras ComprasUsrEtiquetaDescuento;
+        private Componentes.UsrLabelCompras ComprasUsrEtiquetaGastosAdicionales;
+        private Componentes.UsrLabelCompras ComprasUsrEtiquetaImpuesto;
+        private Componentes.UsrLabelCompras ComprasUsrEtiquetaTotal;
+        private Componentes.UsrLabelCompras ComprasUsrEtiquetaComentario;
+        private Componentes.ClsTableLayoutPanelCompras _ComprasTlpAcciones;
+        private Componentes.ClsButtonCompras _ComprasBtnDescartar;
+        private Componentes.ClsButtonCompras _ComprasBtnGuardar;
+        private Componentes.ClsGroupBoxCompras _ComprasGbxDetalles;
+        private Componentes.ClsTableLayoutPanelCompras _ComprasTlpDetalles;
+        private Componentes.ClsPanelCompras _ComprasPnlArticulos;
+        private Componentes.ClsButtonCompras _ComprasBtnArticulos;
+        private Componentes.ClsButtonCompras _ComprasBtnLogistica;
+        private Componentes.ClsButtonCompras _ComprasBtnFinanzas;
+        private Componentes.ClsButtonCompras _ComprasBtnAnexos;
+        private Componentes.UsrTextBoxCompras ComprasUsrComentario;
+        private Componentes.ClsButtonCompras _ComprasBtnPorcentaje;
+        private Componentes.UsrDataGridViewCompras ComprasUsrArticulos;
     }
 }

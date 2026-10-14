@@ -1,10 +1,10 @@
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
 
 namespace CapaVista_Compras.Componentes
 {
     public class ClsPanelCompras : Panel
     {
-        
+
         public ClsPanelCompras()
         {
             BackColor = ClsTemaCompras.FondoGeneral;
@@ -12,6 +12,6 @@ namespace CapaVista_Compras.Componentes
             DoubleBuffered = true;
             ResizeRedraw = true;
         }
-        
+
     }
 }

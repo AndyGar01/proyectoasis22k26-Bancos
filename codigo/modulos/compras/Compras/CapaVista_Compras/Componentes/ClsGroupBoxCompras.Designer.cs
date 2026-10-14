@@ -1,4 +1,4 @@
-namespace CapaVista_Compras.Componentes
+﻿namespace CapaVista_Compras.Componentes
 {
     partial class ClsGroupBoxCompras
     {

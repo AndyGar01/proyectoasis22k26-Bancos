@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="ComprasBtnEjecutarCierre.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="_ComprasBtnEjecutarCierre.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAABGdBTUEAALGPC/xhBQAAX/5JREFUeF7t
         vQd0VEmWLUpVd7/p999/8/6a7p6Znu4/PdOmqrscVXg5hBMSEiCHDIXwRt6kUmnkhSS8EN4IJ7wrPAgr
@@ -533,7 +533,7 @@
         m0C1ia5dfvz8+Pnx8+Pnx8+Pnx8/P36a/Px/+Iw/OE1rmq4AAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="ComprasBtnValidar.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="_ComprasBtnValidar.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAABGdBTUEAALGPC/xhBQAAWe1JREFUeF7t
         vQd4FUeWNow9Mzv7zXi/3Qne+Wd2PU44YZsMCoicBEIJUAYEyjnnTE4mg8k5K5BFNlEig8lCQkSRc7YQ
@@ -922,7 +922,7 @@
         CuTvn/E/CfNQ0uAXGOslAX7++/nv57+f/37++/mvHn//P39nw5AtUyTSAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="ComprasBtnAyuda.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="_ComprasBtnAyuda.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1
         MAAA6mAAADqYAAAXcJy6UTwAAAAHdElNRQfqCgMXAxQLkBdAAAB46klEQVR4Xu29B5hUVbY/eu5VwQh2
@@ -1444,7 +1444,7 @@
         Afxv/vkfAvjf/PM/BPD/oU/PwfqfAfvf7NNz8P+/TAD/Bw3jyuLXWZE8AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="ComprasBtnSalir.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="_ComprasBtnSalir.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAABGdBTUEAALGPC/xhBQAAXAVJREFUeF7t
         vQV4Vcf2Nk7t3vZKe3vb3t7b25YWdymugSgupUFKi8dz4m4HDwQJWtw9wTW4SyktFgju7hA0tv7Pu2Zm

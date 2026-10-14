@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.ComponentModel;
 using System.Windows.Forms;
 
@@ -8,7 +8,7 @@ namespace CapaVista_Compras.Componentes
     [DefaultEvent("CellClick")]
     public partial class UsrDataGridViewCompras : UserControl
     {
-        
+
         private int _FilaHover = -1;
         private bool _ResaltarFilasAlPasar;
         private Cursor _CursorHabitual;
@@ -25,9 +25,9 @@ namespace CapaVista_Compras.Componentes
         {
             int Anterior = _FilaHover;
             _FilaHover = Fila;
-            ComprasDgvMain.Cursor = Fila >= 0 ? Cursors.Hand : _CursorHabitual;
-            if (Anterior >= 0 && Anterior < ComprasDgvMain.Rows.Count) ComprasDgvMain.InvalidateRow(Anterior);
-            if (Fila >= 0 && Fila < ComprasDgvMain.Rows.Count) ComprasDgvMain.InvalidateRow(Fila);
+            _ComprasDgvMain.Cursor = Fila >= 0 ? Cursors.Hand : _CursorHabitual;
+            if (Anterior >= 0 && Anterior < _ComprasDgvMain.Rows.Count) _ComprasDgvMain.InvalidateRow(Anterior);
+            if (Fila >= 0 && Fila < _ComprasDgvMain.Rows.Count) _ComprasDgvMain.InvalidateRow(Fila);
         }
 
         private const int _AlturaMinimaFila = 28;
@@ -36,20 +36,20 @@ namespace CapaVista_Compras.Componentes
         public UsrDataGridViewCompras()
         {
             InitializeComponent();
-            Enter += (Sender, Evento) => ComprasDgvMain.Focus();
-            ComprasDgvMain.KeyDown += (Sender, Evento) => OnKeyDown(Evento);
-            ComprasDgvMain.KeyPress += (Sender, Evento) => OnKeyPress(Evento);
-            ComprasDgvMain.KeyUp += (Sender, Evento) => OnKeyUp(Evento);
-            _CursorHabitual = ComprasDgvMain.Cursor;
-            ComprasDgvMain.MouseMove += (Sender, Evento) =>
+            Enter += (Sender, Evento) => _ComprasDgvMain.Focus();
+            _ComprasDgvMain.KeyDown += (Sender, Evento) => OnKeyDown(Evento);
+            _ComprasDgvMain.KeyPress += (Sender, Evento) => OnKeyPress(Evento);
+            _ComprasDgvMain.KeyUp += (Sender, Evento) => OnKeyUp(Evento);
+            _CursorHabitual = _ComprasDgvMain.Cursor;
+            _ComprasDgvMain.MouseMove += (Sender, Evento) =>
             {
-                DataGridView.HitTestInfo Zona = ComprasDgvMain.HitTest(Evento.X, Evento.Y);
-                int Fila = ResaltarFilasAlPasar && Zona.Type == DataGridViewHitTestType.Cell && Zona.RowIndex >= 0 && !ComprasDgvMain.Rows[Zona.RowIndex].IsNewRow ? Zona.RowIndex : -1;
+                DataGridView.HitTestInfo Zona = _ComprasDgvMain.HitTest(Evento.X, Evento.Y);
+                int Fila = ResaltarFilasAlPasar && Zona.Type == DataGridViewHitTestType.Cell && Zona.RowIndex >= 0 && !_ComprasDgvMain.Rows[Zona.RowIndex].IsNewRow ? Zona.RowIndex : -1;
                 if (_FilaHover != Fila) ComprasProcHover(Fila);
             };
-            ComprasDgvMain.MouseLeave += (Sender, Evento) => ComprasProcHover(-1);
-            ComprasDgvMain.DataBindingComplete += (Sender, Evento) => ComprasProcHover(-1);
-            ComprasDgvMain.CellPainting += (Sender, Evento) =>
+            _ComprasDgvMain.MouseLeave += (Sender, Evento) => ComprasProcHover(-1);
+            _ComprasDgvMain.DataBindingComplete += (Sender, Evento) => ComprasProcHover(-1);
+            _ComprasDgvMain.CellPainting += (Sender, Evento) =>
             {
                 if (ResaltarFilasAlPasar && Evento.RowIndex == _FilaHover && Evento.RowIndex >= 0 && Evento.ColumnIndex >= 0)
                 {
@@ -70,11 +70,11 @@ namespace CapaVista_Compras.Componentes
                 }
             };
 
-            ComprasDgvMain.Resize += ComprasMetActualizarAlturaFilas;
-            ComprasDgvMain.RowsAdded += ComprasMetFilasAgregadas;
-            ComprasDgvMain.RowsRemoved += ComprasMetFilasEliminadas;
-            ComprasDgvMain.DataBindingComplete += ComprasMetEnlaceCompletado;
-            ComprasDgvMain.HandleCreated += ComprasMetTablaCreada;
+            _ComprasDgvMain.Resize += ComprasMetActualizarAlturaFilas;
+            _ComprasDgvMain.RowsAdded += ComprasMetFilasAgregadas;
+            _ComprasDgvMain.RowsRemoved += ComprasMetFilasEliminadas;
+            _ComprasDgvMain.DataBindingComplete += ComprasMetEnlaceCompletado;
+            _ComprasDgvMain.HandleCreated += ComprasMetTablaCreada;
 
             ComprasMetActivarDobleBuffer();
         }
@@ -94,7 +94,7 @@ namespace CapaVista_Compras.Componentes
 
             if (PropiedadDobleBuffer != null)
             {
-                PropiedadDobleBuffer.SetValue(ComprasDgvMain, true, null);
+                PropiedadDobleBuffer.SetValue(_ComprasDgvMain, true, null);
             }
         }
 
@@ -102,7 +102,7 @@ namespace CapaVista_Compras.Componentes
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public DataGridView Tabla
         {
-            get { return ComprasDgvMain; }
+            get { return _ComprasDgvMain; }
         }
 
         [Category("Datos")]
@@ -110,106 +110,106 @@ namespace CapaVista_Compras.Componentes
         [DefaultValue(null)]
         public object DataSource
         {
-            get { return ComprasDgvMain.DataSource; }
-            set { ComprasDgvMain.DataSource = value; }
+            get { return _ComprasDgvMain.DataSource; }
+            set { _ComprasDgvMain.DataSource = value; }
         }
 
         [Category("Datos")]
         [DefaultValue("")]
         public string DataMember
         {
-            get { return ComprasDgvMain.DataMember; }
-            set { ComprasDgvMain.DataMember = value; }
+            get { return _ComprasDgvMain.DataMember; }
+            set { _ComprasDgvMain.DataMember = value; }
         }
 
         [Category("Datos")]
         [DefaultValue(true)]
         public bool AutoGenerateColumns
         {
-            get { return ComprasDgvMain.AutoGenerateColumns; }
-            set { ComprasDgvMain.AutoGenerateColumns = value; }
+            get { return _ComprasDgvMain.AutoGenerateColumns; }
+            set { _ComprasDgvMain.AutoGenerateColumns = value; }
         }
 
         [Category("Comportamiento")]
         [DefaultValue(true)]
         public bool ReadOnly
         {
-            get { return ComprasDgvMain.ReadOnly; }
-            set { ComprasDgvMain.ReadOnly = value; }
+            get { return _ComprasDgvMain.ReadOnly; }
+            set { _ComprasDgvMain.ReadOnly = value; }
         }
 
         [Category("Comportamiento")]
         [DefaultValue(false)]
         public bool AllowUserToAddRows
         {
-            get { return ComprasDgvMain.AllowUserToAddRows; }
-            set { ComprasDgvMain.AllowUserToAddRows = value; }
+            get { return _ComprasDgvMain.AllowUserToAddRows; }
+            set { _ComprasDgvMain.AllowUserToAddRows = value; }
         }
 
         [Category("Comportamiento")]
         [DefaultValue(false)]
         public bool AllowUserToDeleteRows
         {
-            get { return ComprasDgvMain.AllowUserToDeleteRows; }
-            set { ComprasDgvMain.AllowUserToDeleteRows = value; }
+            get { return _ComprasDgvMain.AllowUserToDeleteRows; }
+            set { _ComprasDgvMain.AllowUserToDeleteRows = value; }
         }
 
         [Category("Comportamiento")]
         [DefaultValue(false)]
         public bool AllowUserToResizeRows
         {
-            get { return ComprasDgvMain.AllowUserToResizeRows; }
-            set { ComprasDgvMain.AllowUserToResizeRows = value; }
+            get { return _ComprasDgvMain.AllowUserToResizeRows; }
+            set { _ComprasDgvMain.AllowUserToResizeRows = value; }
         }
 
         [Category("Comportamiento")]
         [DefaultValue(false)]
         public bool MultiSelect
         {
-            get { return ComprasDgvMain.MultiSelect; }
-            set { ComprasDgvMain.MultiSelect = value; }
+            get { return _ComprasDgvMain.MultiSelect; }
+            set { _ComprasDgvMain.MultiSelect = value; }
         }
 
         [Category("Comportamiento")]
         [DefaultValue(DataGridViewSelectionMode.FullRowSelect)]
         public DataGridViewSelectionMode SelectionMode
         {
-            get { return ComprasDgvMain.SelectionMode; }
-            set { ComprasDgvMain.SelectionMode = value; }
+            get { return _ComprasDgvMain.SelectionMode; }
+            set { _ComprasDgvMain.SelectionMode = value; }
         }
 
         [Category("Comportamiento")]
         [DefaultValue(DataGridViewEditMode.EditProgrammatically)]
         public DataGridViewEditMode EditMode
         {
-            get { return ComprasDgvMain.EditMode; }
-            set { ComprasDgvMain.EditMode = value; }
+            get { return _ComprasDgvMain.EditMode; }
+            set { _ComprasDgvMain.EditMode = value; }
         }
 
         [Category("Apariencia")]
         [DefaultValue(DataGridViewAutoSizeColumnsMode.Fill)]
         public DataGridViewAutoSizeColumnsMode AutoSizeColumnsMode
         {
-            get { return ComprasDgvMain.AutoSizeColumnsMode; }
-            set { ComprasDgvMain.AutoSizeColumnsMode = value; }
+            get { return _ComprasDgvMain.AutoSizeColumnsMode; }
+            set { _ComprasDgvMain.AutoSizeColumnsMode = value; }
         }
 
         [Category("Apariencia")]
         [DefaultValue(false)]
         public bool RowHeadersVisible
         {
-            get { return ComprasDgvMain.RowHeadersVisible; }
-            set { ComprasDgvMain.RowHeadersVisible = value; }
+            get { return _ComprasDgvMain.RowHeadersVisible; }
+            set { _ComprasDgvMain.RowHeadersVisible = value; }
         }
 
         [Category("Apariencia")]
         [DefaultValue(true)]
         public bool ColumnHeadersVisible
         {
-            get { return ComprasDgvMain.ColumnHeadersVisible; }
+            get { return _ComprasDgvMain.ColumnHeadersVisible; }
             set
             {
-                ComprasDgvMain.ColumnHeadersVisible = value;
+                _ComprasDgvMain.ColumnHeadersVisible = value;
                 ComprasMetAjustarAlturaFilas();
             }
         }
@@ -218,172 +218,172 @@ namespace CapaVista_Compras.Componentes
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
         public DataGridViewColumnCollection Columns
         {
-            get { return ComprasDgvMain.Columns; }
+            get { return _ComprasDgvMain.Columns; }
         }
 
         [Browsable(false)]
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public DataGridViewRowCollection Rows
         {
-            get { return ComprasDgvMain.Rows; }
+            get { return _ComprasDgvMain.Rows; }
         }
 
         [Browsable(false)]
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public DataGridViewSelectedRowCollection SelectedRows
         {
-            get { return ComprasDgvMain.SelectedRows; }
+            get { return _ComprasDgvMain.SelectedRows; }
         }
 
         [Browsable(false)]
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public DataGridViewSelectedCellCollection SelectedCells
         {
-            get { return ComprasDgvMain.SelectedCells; }
+            get { return _ComprasDgvMain.SelectedCells; }
         }
 
         [Browsable(false)]
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public DataGridViewRow CurrentRow
         {
-            get { return ComprasDgvMain.CurrentRow; }
+            get { return _ComprasDgvMain.CurrentRow; }
         }
 
         [Browsable(false)]
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public DataGridViewCell CurrentCell
         {
-            get { return ComprasDgvMain.CurrentCell; }
-            set { ComprasDgvMain.CurrentCell = value; }
+            get { return _ComprasDgvMain.CurrentCell; }
+            set { _ComprasDgvMain.CurrentCell = value; }
         }
 
         [Browsable(false)]
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public int RowCount
         {
-            get { return ComprasDgvMain.RowCount; }
-            set { ComprasDgvMain.RowCount = value; }
+            get { return _ComprasDgvMain.RowCount; }
+            set { _ComprasDgvMain.RowCount = value; }
         }
 
         [Browsable(false)]
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public int ColumnCount
         {
-            get { return ComprasDgvMain.ColumnCount; }
-            set { ComprasDgvMain.ColumnCount = value; }
+            get { return _ComprasDgvMain.ColumnCount; }
+            set { _ComprasDgvMain.ColumnCount = value; }
         }
 
         public DataGridViewCell this[int IndiceColumna, int IndiceFila]
         {
-            get { return ComprasDgvMain[IndiceColumna, IndiceFila]; }
-            set { ComprasDgvMain[IndiceColumna, IndiceFila] = value; }
+            get { return _ComprasDgvMain[IndiceColumna, IndiceFila]; }
+            set { _ComprasDgvMain[IndiceColumna, IndiceFila] = value; }
         }
 
         public DataGridViewCell this[string NombreColumna, int IndiceFila]
         {
-            get { return ComprasDgvMain[NombreColumna, IndiceFila]; }
-            set { ComprasDgvMain[NombreColumna, IndiceFila] = value; }
+            get { return _ComprasDgvMain[NombreColumna, IndiceFila]; }
+            set { _ComprasDgvMain[NombreColumna, IndiceFila] = value; }
         }
 
         [Category("Acción")]
         public event DataGridViewCellEventHandler CellClick
         {
-            add { ComprasDgvMain.CellClick += value; }
-            remove { ComprasDgvMain.CellClick -= value; }
+            add { _ComprasDgvMain.CellClick += value; }
+            remove { _ComprasDgvMain.CellClick -= value; }
         }
 
         [Category("Acción")]
         public event DataGridViewCellEventHandler CellDoubleClick
         {
-            add { ComprasDgvMain.CellDoubleClick += value; }
-            remove { ComprasDgvMain.CellDoubleClick -= value; }
+            add { _ComprasDgvMain.CellDoubleClick += value; }
+            remove { _ComprasDgvMain.CellDoubleClick -= value; }
         }
 
         [Category("Acción")]
         public event DataGridViewCellEventHandler CellContentClick
         {
-            add { ComprasDgvMain.CellContentClick += value; }
-            remove { ComprasDgvMain.CellContentClick -= value; }
+            add { _ComprasDgvMain.CellContentClick += value; }
+            remove { _ComprasDgvMain.CellContentClick -= value; }
         }
 
         [Category("Acción")]
         public event EventHandler SelectionChanged
         {
-            add { ComprasDgvMain.SelectionChanged += value; }
-            remove { ComprasDgvMain.SelectionChanged -= value; }
+            add { _ComprasDgvMain.SelectionChanged += value; }
+            remove { _ComprasDgvMain.SelectionChanged -= value; }
         }
 
         [Category("Datos")]
         public event DataGridViewBindingCompleteEventHandler DataBindingComplete
         {
-            add { ComprasDgvMain.DataBindingComplete += value; }
-            remove { ComprasDgvMain.DataBindingComplete -= value; }
+            add { _ComprasDgvMain.DataBindingComplete += value; }
+            remove { _ComprasDgvMain.DataBindingComplete -= value; }
         }
 
         [Category("Datos")]
         public event DataGridViewRowsAddedEventHandler RowsAdded
         {
-            add { ComprasDgvMain.RowsAdded += value; }
-            remove { ComprasDgvMain.RowsAdded -= value; }
+            add { _ComprasDgvMain.RowsAdded += value; }
+            remove { _ComprasDgvMain.RowsAdded -= value; }
         }
 
         [Category("Datos")]
         public event DataGridViewRowsRemovedEventHandler RowsRemoved
         {
-            add { ComprasDgvMain.RowsRemoved += value; }
-            remove { ComprasDgvMain.RowsRemoved -= value; }
+            add { _ComprasDgvMain.RowsRemoved += value; }
+            remove { _ComprasDgvMain.RowsRemoved -= value; }
         }
 
         [Category("Datos")]
         public event DataGridViewCellEventHandler CellValueChanged
         {
-            add { ComprasDgvMain.CellValueChanged += value; }
-            remove { ComprasDgvMain.CellValueChanged -= value; }
+            add { _ComprasDgvMain.CellValueChanged += value; }
+            remove { _ComprasDgvMain.CellValueChanged -= value; }
         }
 
         [Category("Datos")]
         public event DataGridViewCellValidatingEventHandler CellValidating
         {
-            add { ComprasDgvMain.CellValidating += value; }
-            remove { ComprasDgvMain.CellValidating -= value; }
+            add { _ComprasDgvMain.CellValidating += value; }
+            remove { _ComprasDgvMain.CellValidating -= value; }
         }
 
         [Category("Datos")]
         public event DataGridViewDataErrorEventHandler DataError
         {
-            add { ComprasDgvMain.DataError += value; }
-            remove { ComprasDgvMain.DataError -= value; }
+            add { _ComprasDgvMain.DataError += value; }
+            remove { _ComprasDgvMain.DataError -= value; }
         }
 
         protected override void OnCausesValidationChanged(EventArgs Evento)
         {
             base.OnCausesValidationChanged(Evento);
-            if (ComprasDgvMain != null) ComprasDgvMain.CausesValidation = CausesValidation;
+            if (_ComprasDgvMain != null) _ComprasDgvMain.CausesValidation = CausesValidation;
         }
 
         public void ClearSelection()
         {
-            ComprasDgvMain.ClearSelection();
+            _ComprasDgvMain.ClearSelection();
         }
 
         public bool BeginEdit(bool SeleccionarTodo)
         {
-            return ComprasDgvMain.BeginEdit(SeleccionarTodo);
+            return _ComprasDgvMain.BeginEdit(SeleccionarTodo);
         }
 
         public bool EndEdit()
         {
-            return ComprasDgvMain.EndEdit();
+            return _ComprasDgvMain.EndEdit();
         }
 
         public bool CancelEdit()
         {
-            return ComprasDgvMain.CancelEdit();
+            return _ComprasDgvMain.CancelEdit();
         }
 
         public void ComprasMetEnfocarTabla()
         {
-            ComprasDgvMain.Focus();
+            _ComprasDgvMain.Focus();
         }
 
         private void ComprasMetActualizarAlturaFilas(object Remitente, EventArgs Evento)
@@ -410,14 +410,14 @@ namespace CapaVista_Compras.Componentes
 
         private void ComprasMetAjustarAlturaFilas()
         {
-            if (ComprasDgvMain.AutoSizeRowsMode != DataGridViewAutoSizeRowsMode.None)
+            if (_ComprasDgvMain.AutoSizeRowsMode != DataGridViewAutoSizeRowsMode.None)
             {
                 return;
             }
 
             int CantidadFilas = 0;
 
-            foreach (DataGridViewRow Fila in ComprasDgvMain.Rows)
+            foreach (DataGridViewRow Fila in _ComprasDgvMain.Rows)
             {
                 if (Fila.Visible)
                 {
@@ -430,13 +430,13 @@ namespace CapaVista_Compras.Componentes
                 return;
             }
 
-            int AlturaEncabezado = ComprasDgvMain.ColumnHeadersVisible
-                ? ComprasDgvMain.ColumnHeadersHeight
+            int AlturaEncabezado = _ComprasDgvMain.ColumnHeadersVisible
+                ? _ComprasDgvMain.ColumnHeadersHeight
                 : 0;
 
-            int EspacioDisponible = ComprasDgvMain.ClientSize.Height - AlturaEncabezado;
+            int EspacioDisponible = _ComprasDgvMain.ClientSize.Height - AlturaEncabezado;
 
-            foreach (Control ControlInterno in ComprasDgvMain.Controls)
+            foreach (Control ControlInterno in _ComprasDgvMain.Controls)
             {
                 if (ControlInterno is HScrollBar && ControlInterno.Visible)
                 {
@@ -455,7 +455,7 @@ namespace CapaVista_Compras.Componentes
                 ? EspacioDisponible % CantidadFilas
                 : 0;
 
-            foreach (DataGridViewRow Fila in ComprasDgvMain.Rows)
+            foreach (DataGridViewRow Fila in _ComprasDgvMain.Rows)
             {
                 if (!Fila.Visible)
                 {
@@ -474,7 +474,7 @@ namespace CapaVista_Compras.Componentes
                     Sobrante--;
                 }
             }
-            
+
         }
     }
 }

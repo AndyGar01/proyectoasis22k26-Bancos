@@ -1,4 +1,4 @@
-using CapaVista_Compras.Componentes;
+﻿using CapaVista_Compras.Componentes;
 using CapaVista_Navegador;
 using System;
 using System.Collections.Generic;
@@ -17,11 +17,11 @@ namespace CapaVista_Compras
         public UsrMantenimientoMetodoPago()
         {
             InitializeComponent();
-            navegador1.NavegadorMetConfigurar("tlbMetodopago", 4, 5);
+            ComprasUsrMantenimiento.NavegadorMetConfigurar("tlbMetodopago", 4, 5);
         }
 
-        
-        private void UsrMantenimientoMetodoPago_Load(object sender, EventArgs e)
+
+        private void ComprasMetUsrMantenimientoMetodoPago_Load(object Remitente, EventArgs Evento)
         {
 
         }

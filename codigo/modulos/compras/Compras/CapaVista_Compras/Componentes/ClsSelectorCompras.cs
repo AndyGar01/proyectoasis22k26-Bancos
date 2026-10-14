@@ -1,13 +1,13 @@
-using System.Drawing;
+﻿using System.Drawing;
 using System.Windows.Forms;
 
 namespace CapaVista_Compras.Componentes
 {
 
-    public partial class ClsComboBoxCompras : ComboBox
+    public partial class ClsSelectorCompras : ComboBox
     {
-        
-        public ClsComboBoxCompras()
+
+        public ClsSelectorCompras()
         {
             Font = new Font("Segoe UI",10F,FontStyle.Regular,GraphicsUnit.Point);
             ForeColor = ClsTemaCompras.PrincipalNavegador;
@@ -22,6 +22,6 @@ namespace CapaVista_Compras.Componentes
         protected override Size DefaultSize =>
             new Size(200, 27);
     }
-    
+
 
 }

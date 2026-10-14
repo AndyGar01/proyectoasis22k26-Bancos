@@ -7,7 +7,7 @@ namespace CapaVista_Compras
 {
     public partial class UsrEstadoDeCuenta : UsrBaseCompras
     {
-        private readonly object[,] movimientos =
+        private readonly object[,] _Movimientos =
         {
             // Fecha, Tipo de movimiento, Documento, Descripción, Debe, Haber, Saldo, Estado
 
@@ -77,7 +77,7 @@ namespace CapaVista_Compras
             }
         };
 
-        private readonly DataTable dtMovimientos = new DataTable();
+        private readonly DataTable _TablaMovimientos = new DataTable();
 
         public UsrEstadoDeCuenta()
         {
@@ -85,41 +85,41 @@ namespace CapaVista_Compras
 
             this.BackColor = ClsTemaCompras.FondoGeneral;
 
-            CboProveedores.DropDownStyle = ComboBoxStyle.DropDown;
-            CboProveedores.Text = "Buscar Proveedor...";
-            InicializarTablaMovimientos();
-            CargarMovimientos();
+            _ComprasCboProveedores.DropDownStyle = ComboBoxStyle.DropDown;
+            _ComprasCboProveedores.Text = "Buscar Proveedor...";
+            ComprasProcInicializarTablaMovimientos();
+            ComprasProcCargarMovimientos();
         }
-        private void InicializarTablaMovimientos()
+        private void ComprasProcInicializarTablaMovimientos()
         {
-            dtMovimientos.Columns.Add("Fecha", typeof(DateTime));
-            dtMovimientos.Columns.Add("Tipo de movimiento", typeof(string));
-            dtMovimientos.Columns.Add("Documento", typeof(string));
-            dtMovimientos.Columns.Add("Descripción", typeof(string));
-            dtMovimientos.Columns.Add("Debe", typeof(decimal));
-            dtMovimientos.Columns.Add("Haber", typeof(decimal));
-            dtMovimientos.Columns.Add("Saldo", typeof(decimal));
-            dtMovimientos.Columns.Add("Estado", typeof(string));
+            _TablaMovimientos.Columns.Add("ComprasColFecha", typeof(DateTime));
+            _TablaMovimientos.Columns.Add("Tipo de movimiento", typeof(string));
+            _TablaMovimientos.Columns.Add("ComprasColDocumento", typeof(string));
+            _TablaMovimientos.Columns.Add("Descripción", typeof(string));
+            _TablaMovimientos.Columns.Add("ComprasColDebe", typeof(decimal));
+            _TablaMovimientos.Columns.Add("ComprasColHaber", typeof(decimal));
+            _TablaMovimientos.Columns.Add("ComprasColSaldo", typeof(decimal));
+            _TablaMovimientos.Columns.Add("ComprasColEstado", typeof(string));
         }
 
-        private void CargarMovimientos()
+        private void ComprasProcCargarMovimientos()
         {
-            for (int i = 0; i < movimientos.GetLength(0); i++)
+            for (int Indice = 0; Indice < _Movimientos.GetLength(0); Indice++)
             {
-                dtMovimientos.Rows.Add(
-                    movimientos[i, 0],
-                    movimientos[i, 1],
-                    movimientos[i, 2],
-                    movimientos[i, 3],
-                    movimientos[i, 4],
-                    movimientos[i, 5],
-                    movimientos[i, 6],
-                    movimientos[i, 7]
+                _TablaMovimientos.Rows.Add(
+                    _Movimientos[Indice, 0],
+                    _Movimientos[Indice, 1],
+                    _Movimientos[Indice, 2],
+                    _Movimientos[Indice, 3],
+                    _Movimientos[Indice, 4],
+                    _Movimientos[Indice, 5],
+                    _Movimientos[Indice, 6],
+                    _Movimientos[Indice, 7]
                 );
             }
 
-            DgvMovimientos.AutoGenerateColumns = true;
-            DgvMovimientos.DataSource = dtMovimientos;
+            ComprasUsrMovimientos.AutoGenerateColumns = true;
+            ComprasUsrMovimientos.DataSource = _TablaMovimientos;
         }
     }
 }

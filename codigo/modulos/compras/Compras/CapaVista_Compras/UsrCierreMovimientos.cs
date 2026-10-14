@@ -1,103 +1,69 @@
-using System;
+﻿using System;
 using System.Windows.Forms;
 using CapaControlador_Compras;
 
 namespace CapaVista_Compras
 {
-    // Inicio de código de "José Pablo Cano Cóbar" - carné: "0901-23-1727" - Fecha: "11/10/26"
-    // Formulario 3.8 Cierre de Movimientos (prototipo).
-    // El formulario solo captura y muestra datos; toda validación y cálculo vive en ClsCierreMovimientos.
-    
+
     public partial class UsrCierreMovimientos : Componentes.UsrBaseCompras
     {
-        private readonly ClsCierreMovimientos _Controlador = new ClsCierreMovimientos();
+        private readonly CapaControlador_Compras.ClsCierreMovimientos _Controlador = new CapaControlador_Compras.ClsCierreMovimientos();
 
         public UsrCierreMovimientos()
         {
             InitializeComponent();
             ComprasProcConfigurarTablas();
             Load += ComprasMetCargar;
-            ComprasBtnValidar.Click += ComprasMetValidar;
-            ComprasBtnEjecutarCierre.Click += ComprasMetEjecutarCierre;
-            ComprasBtnImprimir.Click += ComprasMetImprimir;
-            ComprasBtnAyuda.Click += ComprasMetAyuda;
-            ComprasBtnSalir.Click += (Remitente, Evento) => Hide();
+            _ComprasBtnValidar.Click += ComprasMetValidar;
+            _ComprasBtnEjecutarCierre.Click += ComprasMetEjecutarCierre;
+            _ComprasBtnImprimir.Click += ComprasMetImprimir;
+            _ComprasBtnAyuda.Click += ComprasMetAyuda;
+            _ComprasBtnSalir.Click += ComprasMetSalir;
         }
 
         private void ComprasProcConfigurarTablas()
         {
-            ComprasDgvValidaciones.AutoGenerateColumns = false;
-            ComprasProcAgregarColumna(ComprasDgvValidaciones, "cmp_estado", "Estado", 25, false);
-            ComprasProcAgregarColumna(ComprasDgvValidaciones, "cmp_validacion", "Validación", 45, false);
-            ComprasProcAgregarColumna(ComprasDgvValidaciones, "cmp_origen", "Origen", 30, false);
+            ComprasProcAgregarColumna(ComprasUsrValidaciones, "cmp_estado", "Estado", 25, false);
+            ComprasProcAgregarColumna(ComprasUsrValidaciones, "cmp_validacion", "Validación", 45, false);
+            ComprasProcAgregarColumna(ComprasUsrValidaciones, "cmp_origen", "Origen", 30, false);
 
-            ComprasDgvSaldos.AutoGenerateColumns = false;
-            ComprasProcAgregarColumna(ComprasDgvSaldos, "cmp_proveedor", "Proveedor", 32, false);
-            ComprasProcAgregarColumna(ComprasDgvSaldos, "cmp_saldo_inicial", "Saldo inicial", 17, true);
-            ComprasProcAgregarColumna(ComprasDgvSaldos, "cmp_total_cargos", "Cargos", 17, true);
-            ComprasProcAgregarColumna(ComprasDgvSaldos, "cmp_total_abonos", "Abonos", 17, true);
-            ComprasProcAgregarColumna(ComprasDgvSaldos, "cmp_saldo_final", "Saldo final", 17, true);
-        }
-
-        private void ComprasProcAgregarColumna(Componentes.UsrDataGridViewCompras Tabla, string Campo,
-            string Encabezado, int Peso, bool EsMonto)
-        {
-            DataGridViewTextBoxColumn Columna = new DataGridViewTextBoxColumn
-            {
-                Name = "ComprasCol" + Campo,
-                DataPropertyName = Campo,
-                HeaderText = Encabezado,
-                FillWeight = Peso
-            };
-
-            if (EsMonto)
-            {
-                Columna.DefaultCellStyle.Format = "N2";
-                Columna.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
-            }
-
-            Tabla.Columns.Add(Columna);
+            ComprasProcAgregarColumna(ComprasUsrSaldos, "cmp_proveedor", "Proveedor", 32, false);
+            ComprasProcAgregarColumna(ComprasUsrSaldos, "cmp_saldo_inicial", "Saldo inicial", 17, true);
+            ComprasProcAgregarColumna(ComprasUsrSaldos, "cmp_total_cargos", "Cargos", 17, true);
+            ComprasProcAgregarColumna(ComprasUsrSaldos, "cmp_total_abonos", "Abonos", 17, true);
+            ComprasProcAgregarColumna(ComprasUsrSaldos, "cmp_saldo_final", "Saldo final", 17, true);
         }
 
         private void ComprasMetCargar(object Remitente, EventArgs Evento)
         {
-            ComprasCboPeriodo.DisplayMember = "cmp_descripcion";
-            ComprasCboPeriodo.ValueMember = "cmp_id_periodo";
-            ComprasCboPeriodo.DataSource = _Controlador.ComprasFuncObtenerPeriodosCerrables();
+            ComprasUsrPeriodo.DisplayMember = "cmp_descripcion";
+            ComprasUsrPeriodo.ValueMember = "cmp_id_periodo";
+            ComprasUsrPeriodo.DataSource = _Controlador.ComprasFuncObtenerPeriodosCerrables();
 
-            ComprasBtnEjecutarCierre.Enabled = false;
-            ComprasBtnImprimir.Enabled = false;
+            _ComprasBtnEjecutarCierre.Enabled = false;
+            _ComprasBtnImprimir.Enabled = false;
         }
 
         private void ComprasMetValidar(object Remitente, EventArgs Evento)
         {
-            if (ComprasCboPeriodo.SelectedValue == null)
+            if (ComprasUsrPeriodo.SelectedValue == null)
             {
                 MessageBox.Show("Seleccione el período a cerrar.", "Cierre de Movimientos",
                     MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            int IdPeriodo = Convert.ToInt32(ComprasCboPeriodo.SelectedValue);
+            int IdPeriodo = Convert.ToInt32(ComprasUsrPeriodo.SelectedValue);
             ClsResumenCierre Resumen = _Controlador.ComprasFuncPrepararCierre(IdPeriodo);
 
-            ComprasDgvValidaciones.DataSource = Resumen.Validaciones;
-            ComprasDgvSaldos.DataSource = Resumen.SaldosProveedor;
-            ComprasTxtTotalCargos.Text = Resumen.TotalCargos.ToString("N2");
-            ComprasTxtTotalAbonos.Text = Resumen.TotalAbonos.ToString("N2");
-            ComprasTxtSaldoFinal.Text = Resumen.SaldoFinal.ToString("N2");
+            ComprasUsrValidaciones.DataSource = Resumen.Validaciones;
+            ComprasUsrSaldos.DataSource = Resumen.SaldosProveedor;
+            ComprasProcMostrarMonto(ComprasUsrTotalCargos, Resumen.TotalCargos);
+            ComprasProcMostrarMonto(ComprasUsrTotalAbonos, Resumen.TotalAbonos);
+            ComprasProcMostrarMonto(ComprasUsrSaldoFinal, Resumen.SaldoFinal);
 
-            ComprasBtnEjecutarCierre.Enabled = Resumen.PuedeCerrar;
-            ComprasBtnImprimir.Enabled = true;
-
-            ComprasTxtTotalAbonos.Entrada.SelectAll();
-            ComprasTxtTotalAbonos.Entrada.SelectionAlignment = HorizontalAlignment.Right;
-
-            ComprasTxtTotalCargos.Entrada.SelectAll();
-            ComprasTxtTotalCargos.Entrada.SelectionAlignment = HorizontalAlignment.Right;
-
-            ComprasTxtSaldoFinal.Entrada.SelectAll();
-            ComprasTxtSaldoFinal.Entrada.SelectionAlignment = HorizontalAlignment.Right;
+            _ComprasBtnEjecutarCierre.Enabled = Resumen.PuedeCerrar;
+            _ComprasBtnImprimir.Enabled = true;
         }
 
         private void ComprasMetEjecutarCierre(object Remitente, EventArgs Evento)
@@ -108,11 +74,11 @@ namespace CapaVista_Compras
 
             if (Respuesta != DialogResult.Yes) return;
 
-            int IdPeriodo = Convert.ToInt32(ComprasCboPeriodo.SelectedValue);
+            int IdPeriodo = Convert.ToInt32(ComprasUsrPeriodo.SelectedValue);
             string Mensaje = _Controlador.ComprasFuncEjecutarCierre(IdPeriodo);
             MessageBox.Show(Mensaje, "Cierre de Movimientos", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-            ComprasBtnEjecutarCierre.Enabled = false;
+            _ComprasBtnEjecutarCierre.Enabled = false;
         }
 
         private void ComprasMetImprimir(object Remitente, EventArgs Evento)
@@ -126,16 +92,5 @@ namespace CapaVista_Compras
             MessageBox.Show("La ayuda del módulo se integrará en la siguiente fase.",
                 "Ayuda", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
-
-        private void UsrCierreMovimientos_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ComprasGbxSaldos_Enter(object sender, EventArgs e)
-        {
-
-        }
-    }
-    // Fin del código de "José Pablo Cano Cóbar" - Carné: "0901-23-1727" - Fecha: "11/10/26"
+}
 }

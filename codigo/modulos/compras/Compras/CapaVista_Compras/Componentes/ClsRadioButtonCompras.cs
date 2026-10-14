@@ -1,11 +1,11 @@
-using System.Drawing;
+﻿using System.Drawing;
 using System.Windows.Forms;
 
 namespace CapaVista_Compras.Componentes
 {
     internal class ClsRadioButtonCompras : RadioButton
     {
-        
+
 
         public ClsRadioButtonCompras()
         {
@@ -18,6 +18,6 @@ namespace CapaVista_Compras.Componentes
             UseVisualStyleBackColor = true;
             Margin = new Padding(3);
         }
-        
+
     }
 }

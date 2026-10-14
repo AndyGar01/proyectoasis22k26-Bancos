@@ -1,4 +1,4 @@
-using System.Drawing;
+﻿using System.Drawing;
 
 namespace CapaVista_Compras
 {
@@ -10,10 +10,10 @@ namespace CapaVista_Compras
         public static readonly Color FondoGeneral = Color.FromArgb(246, 247, 250);
         public static readonly Color FondoBotones = Color.FromArgb(213, 220, 239);
 
-        public static Color BotonHover => Mezclar(FondoBotones, AcentoNavegador, 20);
-        public static Color BotonPresionado => Mezclar(FondoBotones, AcentoNavegador, 35);
+        public static Color BotonHover => ComprasFuncMezclar(FondoBotones, AcentoNavegador, 20);
+        public static Color BotonPresionado => ComprasFuncMezclar(FondoBotones, AcentoNavegador, 35);
 
-        private static Color Mezclar(Color Fondo, Color Acento, int Porcentaje)
+        private static Color ComprasFuncMezclar(Color Fondo, Color Acento, int Porcentaje)
         {
             return Color.FromArgb(
                 (Fondo.R * (100 - Porcentaje) + Acento.R * Porcentaje) / 100,

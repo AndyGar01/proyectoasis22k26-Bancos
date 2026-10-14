@@ -10,7 +10,7 @@ namespace CapaVista_Compras
 
     public partial class UsrPagosProveedores : UsrBaseCompras
     {
-        private readonly object[,] pagos =
+        private readonly object[,] _Pagos =
         {
             // No. pago, Proveedor, Factura, Fecha, Monto, Estado
             { "PG-0041", "Distribuidora Maya",    "F-1032", new DateTime(2026, 10, 8),  12500.00m, "Pagado" },
@@ -19,7 +19,7 @@ namespace CapaVista_Compras
             { "PG-0038", "Servicios Tecnicos GT", "F-0455", new DateTime(2026, 10, 2),   1750.00m, "Anulado" }
         };
 
-        private readonly DataTable dtPagos = new DataTable();
+        private readonly DataTable _TablaPagos = new DataTable();
 
         public UsrPagosProveedores()
         {
@@ -27,137 +27,137 @@ namespace CapaVista_Compras
 
             this.BackColor = ClsTemaCompras.FondoGeneral;
 
-            CargarCombos();
-            InicializarTablaPagos();
-            CargarPagos();
-            ConfigurarGrid();
+            ComprasProcCargarCombos();
+            ComprasProcInicializarTablaPagos();
+            ComprasProcCargarPagos();
+            ComprasProcConfigurarGrid();
         }
 
-        private void CargarCombos()
+        private void ComprasProcCargarCombos()
         {
 
-            CboProveedor.Items.AddRange(new object[] { "Todos", "Distribuidora Maya", "Papelera del Sur", "Insumos Industriales", "Servicios Tecnicos GT" });
-            CboProveedor.SelectedIndex = 0;
+            ComprasUsrCboProveedor.Items.AddRange(new object[] { "Todos", "Distribuidora Maya", "Papelera del Sur", "Insumos Industriales", "Servicios Tecnicos GT" });
+            ComprasUsrCboProveedor.SelectedIndex = 0;
 
-            CboEstado.Items.AddRange(new object[] { "Todos", "Pagado", "Programado", "Rechazado", "Anulado" });
-            CboEstado.SelectedIndex = 0;
+            ComprasUsrCboEstado.Items.AddRange(new object[] { "Todos", "Pagado", "Programado", "Rechazado", "Anulado" });
+            ComprasUsrCboEstado.SelectedIndex = 0;
 
-            TxtDesde.Text = "01/10/2026";
-            TxtHasta.Text = "31/10/2026";
+            ComprasUsrTxtDesde.Text = "01/10/2026";
+            ComprasUsrTxtHasta.Text = "31/10/2026";
 
-          
-            CboProveedorPago.Items.AddRange(new object[] { "Distribuidora Mava", "Distribuidora Maya", "Papelera del Sur" });
-            CboProveedorPago.SelectedIndex = 0;
 
-            CboFactura.Items.Add("F-1045 · Q 5,600.00");
-            CboFactura.SelectedIndex = 0;
+            ComprasUsrCboProveedorPago.Items.AddRange(new object[] { "Distribuidora Mava", "Distribuidora Maya", "Papelera del Sur" });
+            ComprasUsrCboProveedorPago.SelectedIndex = 0;
 
-            TxtFechaPago.Text = "10/10/2026";
-            TxtMonto.Text = "5600.00";
+            ComprasUsrCboFactura.Items.Add("F-1045 · Q 5,600.00");
+            ComprasUsrCboFactura.SelectedIndex = 0;
 
-            CboMetodo.Items.AddRange(new object[] { "Transferencia", "Cheque", "Efectivo" });
-            CboMetodo.SelectedIndex = 0;
+            ComprasUsrTxtFechaPago.Text = "10/10/2026";
+            ComprasUsrTxtMonto.Text = "5600.00";
+
+            ComprasUsrCboMetodo.Items.AddRange(new object[] { "Transferencia", "Cheque", "Efectivo" });
+            ComprasUsrCboMetodo.SelectedIndex = 0;
         }
 
-        private void InicializarTablaPagos()
+        private void ComprasProcInicializarTablaPagos()
         {
-            dtPagos.Columns.Add("No. pago", typeof(string));
-            dtPagos.Columns.Add("Proveedor", typeof(string));
-            dtPagos.Columns.Add("Factura", typeof(string));
-            dtPagos.Columns.Add("Fecha", typeof(DateTime));
-            dtPagos.Columns.Add("Monto", typeof(decimal));
-            dtPagos.Columns.Add("Estado", typeof(string));
+            _TablaPagos.Columns.Add("No. pago", typeof(string));
+            _TablaPagos.Columns.Add("Proveedor", typeof(string));
+            _TablaPagos.Columns.Add("Factura", typeof(string));
+            _TablaPagos.Columns.Add("Fecha", typeof(DateTime));
+            _TablaPagos.Columns.Add("Monto", typeof(decimal));
+            _TablaPagos.Columns.Add("Estado", typeof(string));
         }
 
-        private void CargarPagos()
+        private void ComprasProcCargarPagos()
         {
-            for (int i = 0; i < pagos.GetLength(0); i++)
+            for (int Indice = 0; Indice < _Pagos.GetLength(0); Indice++)
             {
-                dtPagos.Rows.Add(
-                    pagos[i, 0], pagos[i, 1], pagos[i, 2],
-                    pagos[i, 3], pagos[i, 4], pagos[i, 5]
+                _TablaPagos.Rows.Add(
+                    _Pagos[Indice, 0], _Pagos[Indice, 1], _Pagos[Indice, 2],
+                    _Pagos[Indice, 3], _Pagos[Indice, 4], _Pagos[Indice, 5]
                 );
             }
 
-            DgvPagos.AutoGenerateColumns = true;
-            DgvPagos.DataSource = dtPagos;
+            ComprasUsrPagos.AutoGenerateColumns = true;
+            ComprasUsrPagos.DataSource = _TablaPagos;
         }
 
-        private void ConfigurarGrid()
+        private void ComprasProcConfigurarGrid()
         {
-            DataGridView t = DgvPagos.Tabla;
+            DataGridView Tabla = ComprasUsrPagos.Tabla;
 
-            t.Columns["Fecha"].DefaultCellStyle.Format = "dd/MM/yyyy";
-            t.Columns["Monto"].DefaultCellStyle.Format = "'Q' #,##0.00";
+            Tabla.Columns["Fecha"].DefaultCellStyle.Format = "dd/MM/yyyy";
+            Tabla.Columns["Monto"].DefaultCellStyle.Format = "'Q' #,##0.00";
 
-            AgregarColumnaAccion("Ver", "👁");
-            AgregarColumnaAccion("Editar", "✎");
-            AgregarColumnaAccion("Eliminar", "🗑");
+            ComprasProcAgregarColumnaAccion("Ver", "👁");
+            ComprasProcAgregarColumnaAccion("Editar", "✎");
+            ComprasProcAgregarColumnaAccion("Eliminar", "🗑");
 
-            
-            t.CellFormatting += DgvPagos_CellFormatting;
-            t.CellPainting += DgvPagos_CellPainting;
+
+            Tabla.CellFormatting += ComprasMetDgvPagosCellFormatting;
+            Tabla.CellPainting += ComprasMetDgvPagosCellPainting;
         }
 
-        private void AgregarColumnaAccion(string nombre, string texto)
+        private void ComprasProcAgregarColumnaAccion(string Nombre, string Texto)
         {
-            var col = new DataGridViewButtonColumn
+            var Columna = new DataGridViewButtonColumn
             {
-                Name = nombre,
+                Name = Nombre,
                 HeaderText = "",
-                Text = texto,
+                Text = Texto,
                 UseColumnTextForButtonValue = true,
                 FlatStyle = FlatStyle.Flat,
                 FillWeight = 25,
                 MinimumWidth = 44
             };
-            col.DefaultCellStyle.BackColor = ClsTemaCompras.PrincipalNavegador;
-            col.DefaultCellStyle.ForeColor = Color.White;
-            col.DefaultCellStyle.SelectionBackColor = ClsTemaCompras.AcentoNavegador;
-            col.DefaultCellStyle.SelectionForeColor = Color.White;
-            col.DefaultCellStyle.Font = new Font("Segoe UI Emoji", 9F);
-            col.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            DgvPagos.Columns.Add(col);
+            Columna.DefaultCellStyle.BackColor = ClsTemaCompras.PrincipalNavegador;
+            Columna.DefaultCellStyle.ForeColor = Color.White;
+            Columna.DefaultCellStyle.SelectionBackColor = ClsTemaCompras.AcentoNavegador;
+            Columna.DefaultCellStyle.SelectionForeColor = Color.White;
+            Columna.DefaultCellStyle.Font = new Font("Segoe UI Emoji", 9F);
+            Columna.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            ComprasUsrPagos.Columns.Add(Columna);
         }
 
         // Color del texto según el estado
-        private void DgvPagos_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        private void ComprasMetDgvPagosCellFormatting(object Remitente, DataGridViewCellFormattingEventArgs Evento)
         {
-            if (e.RowIndex < 0 || e.ColumnIndex < 0 || e.Value == null) return;
-            if (DgvPagos.Columns[e.ColumnIndex].Name != "Estado") return;
+            if (Evento.RowIndex < 0 || Evento.ColumnIndex < 0 || Evento.Value == null) return;
+            if (ComprasUsrPagos.Columns[Evento.ColumnIndex].Name != "Estado") return;
 
-            switch (e.Value.ToString())
+            switch (Evento.Value.ToString())
             {
-                case "Pagado": e.CellStyle.ForeColor = Color.LimeGreen; break;
-                case "Programado": e.CellStyle.ForeColor = Color.Orange; break;
-                case "Rechazado": e.CellStyle.ForeColor = Color.IndianRed; break;
-                default: e.CellStyle.ForeColor = Color.Gray; break;
+                case "Pagado": Evento.CellStyle.ForeColor = Color.LimeGreen; break;
+                case "Programado": Evento.CellStyle.ForeColor = Color.Orange; break;
+                case "Rechazado": Evento.CellStyle.ForeColor = Color.IndianRed; break;
+                default: Evento.CellStyle.ForeColor = Color.Gray; break;
             }
         }
 
-        // visualización filas anuladas para las columnas de accion 
-        private void DgvPagos_CellPainting(object sender, DataGridViewCellPaintingEventArgs e)
+        // visualización filas anuladas para las columnas de accion
+        private void ComprasMetDgvPagosCellPainting(object Remitente, DataGridViewCellPaintingEventArgs Evento)
         {
-            if (e.RowIndex < 0 || e.ColumnIndex < 0) return;
+            if (Evento.RowIndex < 0 || Evento.ColumnIndex < 0) return;
 
-            string col = DgvPagos.Columns[e.ColumnIndex].Name;
-            if (col != "Editar" && col != "Eliminar") return;
+            string Columna = ComprasUsrPagos.Columns[Evento.ColumnIndex].Name;
+            if (Columna != "Editar" && Columna != "Eliminar") return;
 
-            string estado = Convert.ToString(DgvPagos.Rows[e.RowIndex].Cells["Estado"].Value);
-            if (estado != "Anulado") return;
+            string Estado = Convert.ToString(ComprasUsrPagos.Rows[Evento.RowIndex].Cells["Estado"].Value);
+            if (Estado != "Anulado") return;
 
-            DataGridView t = DgvPagos.Tabla;
-            bool seleccionada = (e.State & DataGridViewElementStates.Selected) != 0;
-            Color fondo = seleccionada ? t.DefaultCellStyle.SelectionBackColor : t.DefaultCellStyle.BackColor;
+            DataGridView Tabla = ComprasUsrPagos.Tabla;
+            bool Seleccionada = (Evento.State & DataGridViewElementStates.Selected) != 0;
+            Color Fondo = Seleccionada ? Tabla.DefaultCellStyle.SelectionBackColor : Tabla.DefaultCellStyle.BackColor;
 
-            using (var pincel = new SolidBrush(fondo))
-                e.Graphics.FillRectangle(pincel, e.CellBounds);
+            using (var Pincel = new SolidBrush(Fondo))
+                Evento.Graphics.FillRectangle(Pincel, Evento.CellBounds);
 
-            e.Paint(e.ClipBounds, DataGridViewPaintParts.Border);
-            e.Handled = true;
+            Evento.Paint(Evento.ClipBounds, DataGridViewPaintParts.Border);
+            Evento.Handled = true;
         }
 
-        private void DgvPagos_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void ComprasMetDgvPagosCellClick(object Remitente, DataGridViewCellEventArgs Evento)
         {
 
         }

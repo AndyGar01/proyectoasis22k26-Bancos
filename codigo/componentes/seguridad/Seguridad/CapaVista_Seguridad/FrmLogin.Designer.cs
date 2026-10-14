@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLogin));
             this.SeguridadPnlInterfazLogin = new System.Windows.Forms.Panel();
+            this.SeguridadChkMostrarContra = new System.Windows.Forms.CheckBox();
             this.SeguridadPbMascota = new System.Windows.Forms.PictureBox();
             this.SeguridadLnkOlvidarContrasena = new System.Windows.Forms.LinkLabel();
             this.SeguridadBtnLogin = new System.Windows.Forms.Button();
@@ -42,7 +43,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.SeguridadPbLogin = new System.Windows.Forms.PictureBox();
             this.SeguridadPbLogo = new System.Windows.Forms.PictureBox();
-            this.SeguridadChkMostrarContra = new System.Windows.Forms.CheckBox();
+            this.ComprasBtnLogin = new CapaVista_Consultas.Componentes.ClsButtonConsultas();
             this.SeguridadPnlInterfazLogin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SeguridadPbMascota)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SeguridadPbLogin)).BeginInit();
@@ -51,6 +52,7 @@
             // 
             // SeguridadPnlInterfazLogin
             // 
+            this.SeguridadPnlInterfazLogin.Controls.Add(this.ComprasBtnLogin);
             this.SeguridadPnlInterfazLogin.Controls.Add(this.SeguridadChkMostrarContra);
             this.SeguridadPnlInterfazLogin.Controls.Add(this.SeguridadPbMascota);
             this.SeguridadPnlInterfazLogin.Controls.Add(this.SeguridadLnkOlvidarContrasena);
@@ -68,6 +70,20 @@
             this.SeguridadPnlInterfazLogin.Size = new System.Drawing.Size(351, 455);
             this.SeguridadPnlInterfazLogin.TabIndex = 5;
             this.SeguridadPnlInterfazLogin.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // SeguridadChkMostrarContra
+            // 
+            this.SeguridadChkMostrarContra.AutoSize = true;
+            this.SeguridadChkMostrarContra.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SeguridadChkMostrarContra.ForeColor = System.Drawing.Color.DarkCyan;
+            this.SeguridadChkMostrarContra.Location = new System.Drawing.Point(250, 325);
+            this.SeguridadChkMostrarContra.Name = "SeguridadChkMostrarContra";
+            this.SeguridadChkMostrarContra.Size = new System.Drawing.Size(52, 24);
+            this.SeguridadChkMostrarContra.TabIndex = 16;
+            this.SeguridadChkMostrarContra.Text = "👁 ";
+            this.SeguridadChkMostrarContra.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SeguridadChkMostrarContra.UseVisualStyleBackColor = true;
+            this.SeguridadChkMostrarContra.CheckedChanged += new System.EventHandler(this.SeguridadChkMostrarContra_CheckedChanged);
             // 
             // SeguridadPbMascota
             // 
@@ -203,19 +219,24 @@
             this.SeguridadPbLogo.TabIndex = 7;
             this.SeguridadPbLogo.TabStop = false;
             // 
-            // SeguridadChkMostrarContra
+            // ComprasBtnLogin
             // 
-            this.SeguridadChkMostrarContra.AutoSize = true;
-            this.SeguridadChkMostrarContra.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SeguridadChkMostrarContra.ForeColor = System.Drawing.Color.DarkCyan;
-            this.SeguridadChkMostrarContra.Location = new System.Drawing.Point(250, 325);
-            this.SeguridadChkMostrarContra.Name = "SeguridadChkMostrarContra";
-            this.SeguridadChkMostrarContra.Size = new System.Drawing.Size(52, 24);
-            this.SeguridadChkMostrarContra.TabIndex = 16;
-            this.SeguridadChkMostrarContra.Text = "👁 ";
-            this.SeguridadChkMostrarContra.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.SeguridadChkMostrarContra.UseVisualStyleBackColor = true;
-            this.SeguridadChkMostrarContra.CheckedChanged += new System.EventHandler(this.SeguridadChkMostrarContra_CheckedChanged);
+            this.ComprasBtnLogin.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ComprasBtnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(231)))), ((int)(((byte)(218)))));
+            this.ComprasBtnLogin.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ComprasBtnLogin.BackgroundImage")));
+            this.ComprasBtnLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ComprasBtnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ComprasBtnLogin.FlatAppearance.BorderSize = 0;
+            this.ComprasBtnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ComprasBtnLogin.Location = new System.Drawing.Point(16, 342);
+            this.ComprasBtnLogin.Margin = new System.Windows.Forms.Padding(0);
+            this.ComprasBtnLogin.MaximumSize = new System.Drawing.Size(80, 80);
+            this.ComprasBtnLogin.MinimumSize = new System.Drawing.Size(80, 80);
+            this.ComprasBtnLogin.Name = "ComprasBtnLogin";
+            this.ComprasBtnLogin.Size = new System.Drawing.Size(80, 80);
+            this.ComprasBtnLogin.TabIndex = 8;
+            this.ComprasBtnLogin.UseVisualStyleBackColor = false;
+            this.ComprasBtnLogin.Click += new System.EventHandler(this.ComprasBtnLogin_Click);
             // 
             // FrmLogin
             // 
@@ -258,5 +279,6 @@
         private System.Windows.Forms.PictureBox SeguridadPbMascota;
         private System.Windows.Forms.PictureBox SeguridadPbLogo;
         private System.Windows.Forms.CheckBox SeguridadChkMostrarContra;
+        private CapaVista_Consultas.Componentes.ClsButtonConsultas ComprasBtnLogin;
     }
 }

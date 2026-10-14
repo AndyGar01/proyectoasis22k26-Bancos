@@ -84,9 +84,9 @@
             this.SeguridadPnlKPI1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SeguridadPbButti)).BeginInit();
             this.SuspendLayout();
-            // 
+            //
             // SeguridadPnlFondo
-            // 
+            //
             this.SeguridadPnlFondo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(238)))), ((int)(((byte)(225)))));
             this.SeguridadPnlFondo.Controls.Add(this.SeguridadLblUsuarioRol);
             this.SeguridadPnlFondo.Controls.Add(this.SeguridadBtnBurger);
@@ -99,9 +99,9 @@
             this.SeguridadPnlFondo.Name = "SeguridadPnlFondo";
             this.SeguridadPnlFondo.Size = new System.Drawing.Size(2053, 1265);
             this.SeguridadPnlFondo.TabIndex = 0;
-            // 
+            //
             // SeguridadLblUsuarioRol
-            // 
+            //
             this.SeguridadLblUsuarioRol.AutoSize = true;
             this.SeguridadLblUsuarioRol.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SeguridadLblUsuarioRol.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(109)))), ((int)(((byte)(119)))));
@@ -110,9 +110,9 @@
             this.SeguridadLblUsuarioRol.Size = new System.Drawing.Size(162, 23);
             this.SeguridadLblUsuarioRol.TabIndex = 13;
             this.SeguridadLblUsuarioRol.Text = "Rol:                ";
-            // 
+            //
             // SeguridadBtnBurger
-            // 
+            //
             this.SeguridadBtnBurger.BackColor = System.Drawing.Color.Transparent;
             this.SeguridadBtnBurger.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.SeguridadBtnBurger.Location = new System.Drawing.Point(428, 0);
@@ -121,9 +121,9 @@
             this.SeguridadBtnBurger.Size = new System.Drawing.Size(60, 62);
             this.SeguridadBtnBurger.TabIndex = 5;
             this.SeguridadBtnBurger.UseVisualStyleBackColor = false;
-            // 
+            //
             // SeguridadLblUsuario
-            // 
+            //
             this.SeguridadLblUsuario.AutoSize = true;
             this.SeguridadLblUsuario.BackColor = System.Drawing.Color.Transparent;
             this.SeguridadLblUsuario.Font = new System.Drawing.Font("Lucida Fax", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -134,9 +134,9 @@
             this.SeguridadLblUsuario.Size = new System.Drawing.Size(269, 25);
             this.SeguridadLblUsuario.TabIndex = 4;
             this.SeguridadLblUsuario.Text = "Usuario:                       ";
-            // 
+            //
             // panel1
-            // 
+            //
             this.panel1.BackColor = System.Drawing.SystemColors.Window;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Controls.Add(this.button1);
@@ -155,9 +155,9 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(360, 917);
             this.panel1.TabIndex = 0;
-            // 
+            //
             // button1
-            // 
+            //
             this.button1.BackColor = System.Drawing.Color.Transparent;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -167,9 +167,9 @@
             this.button1.Size = new System.Drawing.Size(352, 52);
             this.button1.TabIndex = 9;
             this.button1.UseVisualStyleBackColor = false;
-            // 
+            //
             // button2
-            // 
+            //
             this.button2.BackColor = System.Drawing.Color.Transparent;
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -179,9 +179,9 @@
             this.button2.Size = new System.Drawing.Size(352, 52);
             this.button2.TabIndex = 8;
             this.button2.UseVisualStyleBackColor = false;
-            // 
+            //
             // button3
-            // 
+            //
             this.button3.BackColor = System.Drawing.Color.Transparent;
             this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -191,9 +191,9 @@
             this.button3.Size = new System.Drawing.Size(352, 52);
             this.button3.TabIndex = 7;
             this.button3.UseVisualStyleBackColor = false;
-            // 
+            //
             // button4
-            // 
+            //
             this.button4.BackColor = System.Drawing.Color.Transparent;
             this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -203,9 +203,9 @@
             this.button4.Size = new System.Drawing.Size(352, 52);
             this.button4.TabIndex = 6;
             this.button4.UseVisualStyleBackColor = false;
-            // 
+            //
             // button5
-            // 
+            //
             this.button5.BackColor = System.Drawing.Color.Transparent;
             this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -215,9 +215,9 @@
             this.button5.Size = new System.Drawing.Size(352, 52);
             this.button5.TabIndex = 5;
             this.button5.UseVisualStyleBackColor = false;
-            // 
+            //
             // button6
-            // 
+            //
             this.button6.BackColor = System.Drawing.Color.Transparent;
             this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -227,9 +227,9 @@
             this.button6.Size = new System.Drawing.Size(352, 52);
             this.button6.TabIndex = 4;
             this.button6.UseVisualStyleBackColor = false;
-            // 
+            //
             // button7
-            // 
+            //
             this.button7.BackColor = System.Drawing.Color.Transparent;
             this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -239,9 +239,9 @@
             this.button7.Size = new System.Drawing.Size(352, 52);
             this.button7.TabIndex = 3;
             this.button7.UseVisualStyleBackColor = false;
-            // 
+            //
             // button8
-            // 
+            //
             this.button8.BackColor = System.Drawing.Color.Transparent;
             this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button8.FlatAppearance.BorderSize = 0;
@@ -253,9 +253,9 @@
             this.button8.Size = new System.Drawing.Size(352, 52);
             this.button8.TabIndex = 2;
             this.button8.UseVisualStyleBackColor = false;
-            // 
+            //
             // button9
-            // 
+            //
             this.button9.BackColor = System.Drawing.Color.Transparent;
             this.button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -265,9 +265,9 @@
             this.button9.Size = new System.Drawing.Size(352, 52);
             this.button9.TabIndex = 1;
             this.button9.UseVisualStyleBackColor = false;
-            // 
+            //
             // pictureBox1
-            // 
+            //
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(93, 11);
@@ -276,9 +276,9 @@
             this.pictureBox1.Size = new System.Drawing.Size(177, 156);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
+            //
             // button10
-            // 
+            //
             this.button10.BackColor = System.Drawing.Color.Transparent;
             this.button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -288,9 +288,9 @@
             this.button10.Size = new System.Drawing.Size(352, 62);
             this.button10.TabIndex = 10;
             this.button10.UseVisualStyleBackColor = false;
-            // 
+            //
             // SeguridadPnlNavegador
-            // 
+            //
             this.SeguridadPnlNavegador.BackColor = System.Drawing.SystemColors.Window;
             this.SeguridadPnlNavegador.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.SeguridadPnlNavegador.Controls.Add(this.SeguridadBtnBitacora);
@@ -309,9 +309,9 @@
             this.SeguridadPnlNavegador.Name = "SeguridadPnlNavegador";
             this.SeguridadPnlNavegador.Size = new System.Drawing.Size(360, 917);
             this.SeguridadPnlNavegador.TabIndex = 0;
-            // 
+            //
             // SeguridadBtnBitacora
-            // 
+            //
             this.SeguridadBtnBitacora.BackColor = System.Drawing.Color.Transparent;
             this.SeguridadBtnBitacora.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.SeguridadBtnBitacora.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -321,9 +321,9 @@
             this.SeguridadBtnBitacora.Size = new System.Drawing.Size(352, 52);
             this.SeguridadBtnBitacora.TabIndex = 9;
             this.SeguridadBtnBitacora.UseVisualStyleBackColor = false;
-            // 
+            //
             // SeguridadBtnAplicaUsuario
-            // 
+            //
             this.SeguridadBtnAplicaUsuario.BackColor = System.Drawing.Color.Transparent;
             this.SeguridadBtnAplicaUsuario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.SeguridadBtnAplicaUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -333,9 +333,9 @@
             this.SeguridadBtnAplicaUsuario.Size = new System.Drawing.Size(352, 52);
             this.SeguridadBtnAplicaUsuario.TabIndex = 8;
             this.SeguridadBtnAplicaUsuario.UseVisualStyleBackColor = false;
-            // 
+            //
             // SeguridadBtnAplicaPerfiles
-            // 
+            //
             this.SeguridadBtnAplicaPerfiles.BackColor = System.Drawing.Color.Transparent;
             this.SeguridadBtnAplicaPerfiles.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.SeguridadBtnAplicaPerfiles.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -345,9 +345,9 @@
             this.SeguridadBtnAplicaPerfiles.Size = new System.Drawing.Size(352, 52);
             this.SeguridadBtnAplicaPerfiles.TabIndex = 7;
             this.SeguridadBtnAplicaPerfiles.UseVisualStyleBackColor = false;
-            // 
+            //
             // SeguridadBtnAsignaPerfiles
-            // 
+            //
             this.SeguridadBtnAsignaPerfiles.BackColor = System.Drawing.Color.Transparent;
             this.SeguridadBtnAsignaPerfiles.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.SeguridadBtnAsignaPerfiles.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -357,9 +357,9 @@
             this.SeguridadBtnAsignaPerfiles.Size = new System.Drawing.Size(352, 52);
             this.SeguridadBtnAsignaPerfiles.TabIndex = 6;
             this.SeguridadBtnAsignaPerfiles.UseVisualStyleBackColor = false;
-            // 
+            //
             // SeguridadBtnPerfiles
-            // 
+            //
             this.SeguridadBtnPerfiles.BackColor = System.Drawing.Color.Transparent;
             this.SeguridadBtnPerfiles.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.SeguridadBtnPerfiles.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -369,9 +369,9 @@
             this.SeguridadBtnPerfiles.Size = new System.Drawing.Size(352, 52);
             this.SeguridadBtnPerfiles.TabIndex = 5;
             this.SeguridadBtnPerfiles.UseVisualStyleBackColor = false;
-            // 
+            //
             // SeguridadBtnAplicaciones
-            // 
+            //
             this.SeguridadBtnAplicaciones.BackColor = System.Drawing.Color.Transparent;
             this.SeguridadBtnAplicaciones.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.SeguridadBtnAplicaciones.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -381,9 +381,9 @@
             this.SeguridadBtnAplicaciones.Size = new System.Drawing.Size(352, 52);
             this.SeguridadBtnAplicaciones.TabIndex = 4;
             this.SeguridadBtnAplicaciones.UseVisualStyleBackColor = false;
-            // 
+            //
             // SeguridadBtnModulos
-            // 
+            //
             this.SeguridadBtnModulos.BackColor = System.Drawing.Color.Transparent;
             this.SeguridadBtnModulos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.SeguridadBtnModulos.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -393,9 +393,9 @@
             this.SeguridadBtnModulos.Size = new System.Drawing.Size(352, 52);
             this.SeguridadBtnModulos.TabIndex = 3;
             this.SeguridadBtnModulos.UseVisualStyleBackColor = false;
-            // 
+            //
             // SeguridadBtnUsuarios
-            // 
+            //
             this.SeguridadBtnUsuarios.BackColor = System.Drawing.Color.Transparent;
             this.SeguridadBtnUsuarios.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.SeguridadBtnUsuarios.FlatAppearance.BorderSize = 0;
@@ -407,9 +407,9 @@
             this.SeguridadBtnUsuarios.Size = new System.Drawing.Size(352, 52);
             this.SeguridadBtnUsuarios.TabIndex = 2;
             this.SeguridadBtnUsuarios.UseVisualStyleBackColor = false;
-            // 
+            //
             // SeguridadBtnEmpleados
-            // 
+            //
             this.SeguridadBtnEmpleados.BackColor = System.Drawing.Color.Transparent;
             this.SeguridadBtnEmpleados.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.SeguridadBtnEmpleados.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -419,9 +419,9 @@
             this.SeguridadBtnEmpleados.Size = new System.Drawing.Size(352, 52);
             this.SeguridadBtnEmpleados.TabIndex = 1;
             this.SeguridadBtnEmpleados.UseVisualStyleBackColor = false;
-            // 
+            //
             // SeguridadPbLogo
-            // 
+            //
             this.SeguridadPbLogo.BackColor = System.Drawing.Color.Transparent;
             this.SeguridadPbLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.SeguridadPbLogo.Location = new System.Drawing.Point(93, 11);
@@ -430,9 +430,9 @@
             this.SeguridadPbLogo.Size = new System.Drawing.Size(177, 156);
             this.SeguridadPbLogo.TabIndex = 0;
             this.SeguridadPbLogo.TabStop = false;
-            // 
+            //
             // SeguridadBtnCerrarSesion
-            // 
+            //
             this.SeguridadBtnCerrarSesion.BackColor = System.Drawing.Color.Transparent;
             this.SeguridadBtnCerrarSesion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.SeguridadBtnCerrarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -442,9 +442,9 @@
             this.SeguridadBtnCerrarSesion.Size = new System.Drawing.Size(352, 62);
             this.SeguridadBtnCerrarSesion.TabIndex = 10;
             this.SeguridadBtnCerrarSesion.UseVisualStyleBackColor = false;
-            // 
+            //
             // SeguridadPnlDashboard
-            // 
+            //
             this.SeguridadPnlDashboard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(238)))), ((int)(((byte)(225)))));
             this.SeguridadPnlDashboard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.SeguridadPnlDashboard.Controls.Add(this.SeguridadBtnAyudas);
@@ -463,9 +463,9 @@
             this.SeguridadPnlDashboard.Name = "SeguridadPnlDashboard";
             this.SeguridadPnlDashboard.Size = new System.Drawing.Size(1611, 875);
             this.SeguridadPnlDashboard.TabIndex = 1;
-            // 
+            //
             // SeguridadBtnAyudas
-            // 
+            //
             this.SeguridadBtnAyudas.BackColor = System.Drawing.Color.Transparent;
             this.SeguridadBtnAyudas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.SeguridadBtnAyudas.Location = new System.Drawing.Point(69, 321);
@@ -474,9 +474,9 @@
             this.SeguridadBtnAyudas.Size = new System.Drawing.Size(112, 97);
             this.SeguridadBtnAyudas.TabIndex = 12;
             this.SeguridadBtnAyudas.UseVisualStyleBackColor = false;
-            // 
+            //
             // SeguridadPnlKPI6
-            // 
+            //
             this.SeguridadPnlKPI6.BackColor = System.Drawing.Color.Transparent;
             this.SeguridadPnlKPI6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.SeguridadPnlKPI6.Controls.Add(this.SeguridadLblKPIResp6);
@@ -486,9 +486,9 @@
             this.SeguridadPnlKPI6.Name = "SeguridadPnlKPI6";
             this.SeguridadPnlKPI6.Size = new System.Drawing.Size(229, 233);
             this.SeguridadPnlKPI6.TabIndex = 11;
-            // 
+            //
             // SeguridadLblKPIResp6
-            // 
+            //
             this.SeguridadLblKPIResp6.AutoSize = true;
             this.SeguridadLblKPIResp6.BackColor = System.Drawing.Color.Transparent;
             this.SeguridadLblKPIResp6.Font = new System.Drawing.Font("Lucida Fax", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -499,9 +499,9 @@
             this.SeguridadLblKPIResp6.Size = new System.Drawing.Size(54, 54);
             this.SeguridadLblKPIResp6.TabIndex = 14;
             this.SeguridadLblKPIResp6.Text = "0";
-            // 
+            //
             // SeguridadLblKPI6
-            // 
+            //
             this.SeguridadLblKPI6.AutoSize = true;
             this.SeguridadLblKPI6.BackColor = System.Drawing.Color.Transparent;
             this.SeguridadLblKPI6.Font = new System.Drawing.Font("Lucida Fax", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -512,9 +512,9 @@
             this.SeguridadLblKPI6.Size = new System.Drawing.Size(166, 50);
             this.SeguridadLblKPI6.TabIndex = 13;
             this.SeguridadLblKPI6.Text = "Asignaciones\r\nActivas";
-            // 
+            //
             // SeguridadPnlKPI5
-            // 
+            //
             this.SeguridadPnlKPI5.BackColor = System.Drawing.Color.Transparent;
             this.SeguridadPnlKPI5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.SeguridadPnlKPI5.Controls.Add(this.SeguridadLblKPIResp5);
@@ -524,9 +524,9 @@
             this.SeguridadPnlKPI5.Name = "SeguridadPnlKPI5";
             this.SeguridadPnlKPI5.Size = new System.Drawing.Size(229, 233);
             this.SeguridadPnlKPI5.TabIndex = 10;
-            // 
+            //
             // SeguridadLblKPIResp5
-            // 
+            //
             this.SeguridadLblKPIResp5.AutoSize = true;
             this.SeguridadLblKPIResp5.BackColor = System.Drawing.Color.Transparent;
             this.SeguridadLblKPIResp5.Font = new System.Drawing.Font("Lucida Fax", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -537,9 +537,9 @@
             this.SeguridadLblKPIResp5.Size = new System.Drawing.Size(54, 54);
             this.SeguridadLblKPIResp5.TabIndex = 16;
             this.SeguridadLblKPIResp5.Text = "0";
-            // 
+            //
             // SeguridadLblKPI5
-            // 
+            //
             this.SeguridadLblKPI5.AutoSize = true;
             this.SeguridadLblKPI5.BackColor = System.Drawing.Color.Transparent;
             this.SeguridadLblKPI5.Font = new System.Drawing.Font("Lucida Fax", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -550,9 +550,9 @@
             this.SeguridadLblKPI5.Size = new System.Drawing.Size(156, 50);
             this.SeguridadLblKPI5.TabIndex = 13;
             this.SeguridadLblKPI5.Text = "Registros en\r\nBitácora";
-            // 
+            //
             // SeguridadPnlKPI4
-            // 
+            //
             this.SeguridadPnlKPI4.BackColor = System.Drawing.Color.Transparent;
             this.SeguridadPnlKPI4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.SeguridadPnlKPI4.Controls.Add(this.SeguridadLblKPIResp4);
@@ -562,9 +562,9 @@
             this.SeguridadPnlKPI4.Name = "SeguridadPnlKPI4";
             this.SeguridadPnlKPI4.Size = new System.Drawing.Size(229, 233);
             this.SeguridadPnlKPI4.TabIndex = 5;
-            // 
+            //
             // SeguridadLblKPIResp4
-            // 
+            //
             this.SeguridadLblKPIResp4.AutoSize = true;
             this.SeguridadLblKPIResp4.BackColor = System.Drawing.Color.Transparent;
             this.SeguridadLblKPIResp4.Font = new System.Drawing.Font("Lucida Fax", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -575,9 +575,9 @@
             this.SeguridadLblKPIResp4.Size = new System.Drawing.Size(54, 54);
             this.SeguridadLblKPIResp4.TabIndex = 15;
             this.SeguridadLblKPIResp4.Text = "0";
-            // 
+            //
             // SeguridadLblKPI4
-            // 
+            //
             this.SeguridadLblKPI4.AutoSize = true;
             this.SeguridadLblKPI4.BackColor = System.Drawing.Color.Transparent;
             this.SeguridadLblKPI4.Font = new System.Drawing.Font("Lucida Fax", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -588,9 +588,9 @@
             this.SeguridadLblKPI4.Size = new System.Drawing.Size(150, 50);
             this.SeguridadLblKPI4.TabIndex = 13;
             this.SeguridadLblKPI4.Text = "Módulos\r\nDisponibles";
-            // 
+            //
             // SeguridadPnlKPI3
-            // 
+            //
             this.SeguridadPnlKPI3.BackColor = System.Drawing.Color.Transparent;
             this.SeguridadPnlKPI3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.SeguridadPnlKPI3.Controls.Add(this.SeguridadLblKPIResp3);
@@ -600,9 +600,9 @@
             this.SeguridadPnlKPI3.Name = "SeguridadPnlKPI3";
             this.SeguridadPnlKPI3.Size = new System.Drawing.Size(229, 233);
             this.SeguridadPnlKPI3.TabIndex = 5;
-            // 
+            //
             // SeguridadLblKPIResp3
-            // 
+            //
             this.SeguridadLblKPIResp3.AutoSize = true;
             this.SeguridadLblKPIResp3.BackColor = System.Drawing.Color.Transparent;
             this.SeguridadLblKPIResp3.Font = new System.Drawing.Font("Lucida Fax", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -613,9 +613,9 @@
             this.SeguridadLblKPIResp3.Size = new System.Drawing.Size(54, 54);
             this.SeguridadLblKPIResp3.TabIndex = 14;
             this.SeguridadLblKPIResp3.Text = "0";
-            // 
+            //
             // SeguridadLblKPI3
-            // 
+            //
             this.SeguridadLblKPI3.AutoSize = true;
             this.SeguridadLblKPI3.BackColor = System.Drawing.Color.Transparent;
             this.SeguridadLblKPI3.Font = new System.Drawing.Font("Lucida Fax", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -626,9 +626,9 @@
             this.SeguridadLblKPI3.Size = new System.Drawing.Size(169, 50);
             this.SeguridadLblKPI3.TabIndex = 13;
             this.SeguridadLblKPI3.Text = "Perfiles\r\nConfigurados";
-            // 
+            //
             // SeguridadPnlKPI2
-            // 
+            //
             this.SeguridadPnlKPI2.BackColor = System.Drawing.Color.Transparent;
             this.SeguridadPnlKPI2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.SeguridadPnlKPI2.Controls.Add(this.SeguridadLblKPIResp2);
@@ -638,9 +638,9 @@
             this.SeguridadPnlKPI2.Name = "SeguridadPnlKPI2";
             this.SeguridadPnlKPI2.Size = new System.Drawing.Size(229, 233);
             this.SeguridadPnlKPI2.TabIndex = 5;
-            // 
+            //
             // SeguridadLblKPIResp2
-            // 
+            //
             this.SeguridadLblKPIResp2.AutoSize = true;
             this.SeguridadLblKPIResp2.BackColor = System.Drawing.Color.Transparent;
             this.SeguridadLblKPIResp2.Font = new System.Drawing.Font("Lucida Fax", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -651,9 +651,9 @@
             this.SeguridadLblKPIResp2.Size = new System.Drawing.Size(54, 54);
             this.SeguridadLblKPIResp2.TabIndex = 14;
             this.SeguridadLblKPIResp2.Text = "0";
-            // 
+            //
             // SeguridadLblKPI2
-            // 
+            //
             this.SeguridadLblKPI2.AutoSize = true;
             this.SeguridadLblKPI2.BackColor = System.Drawing.Color.Transparent;
             this.SeguridadLblKPI2.Font = new System.Drawing.Font("Lucida Fax", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -664,9 +664,9 @@
             this.SeguridadLblKPI2.Size = new System.Drawing.Size(164, 50);
             this.SeguridadLblKPI2.TabIndex = 13;
             this.SeguridadLblKPI2.Text = "Aplicaciones\r\nen el Sistema";
-            // 
+            //
             // SeguridadPnlKPI1
-            // 
+            //
             this.SeguridadPnlKPI1.BackColor = System.Drawing.Color.Transparent;
             this.SeguridadPnlKPI1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.SeguridadPnlKPI1.Controls.Add(this.SeguridadLblKPIResp1);
@@ -676,9 +676,9 @@
             this.SeguridadPnlKPI1.Name = "SeguridadPnlKPI1";
             this.SeguridadPnlKPI1.Size = new System.Drawing.Size(229, 233);
             this.SeguridadPnlKPI1.TabIndex = 4;
-            // 
+            //
             // SeguridadLblKPIResp1
-            // 
+            //
             this.SeguridadLblKPIResp1.AutoSize = true;
             this.SeguridadLblKPIResp1.BackColor = System.Drawing.Color.Transparent;
             this.SeguridadLblKPIResp1.Font = new System.Drawing.Font("Lucida Fax", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -689,9 +689,9 @@
             this.SeguridadLblKPIResp1.Size = new System.Drawing.Size(54, 54);
             this.SeguridadLblKPIResp1.TabIndex = 13;
             this.SeguridadLblKPIResp1.Text = "0";
-            // 
+            //
             // SeguridadLblKPI1
-            // 
+            //
             this.SeguridadLblKPI1.AutoSize = true;
             this.SeguridadLblKPI1.BackColor = System.Drawing.Color.Transparent;
             this.SeguridadLblKPI1.Font = new System.Drawing.Font("Lucida Fax", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -702,9 +702,9 @@
             this.SeguridadLblKPI1.Size = new System.Drawing.Size(144, 50);
             this.SeguridadLblKPI1.TabIndex = 12;
             this.SeguridadLblKPI1.Text = "Usuarios\r\nregistrados";
-            // 
+            //
             // SeguridadLblResumen
-            // 
+            //
             this.SeguridadLblResumen.AutoSize = true;
             this.SeguridadLblResumen.BackColor = System.Drawing.Color.Transparent;
             this.SeguridadLblResumen.Font = new System.Drawing.Font("Lucida Fax", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -715,9 +715,9 @@
             this.SeguridadLblResumen.Size = new System.Drawing.Size(395, 40);
             this.SeguridadLblResumen.TabIndex = 3;
             this.SeguridadLblResumen.Text = "Resumen del Sistema";
-            // 
+            //
             // SeguridadLblParrafo
-            // 
+            //
             this.SeguridadLblParrafo.AutoSize = true;
             this.SeguridadLblParrafo.BackColor = System.Drawing.Color.Transparent;
             this.SeguridadLblParrafo.Font = new System.Drawing.Font("Lucida Fax", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -729,9 +729,9 @@
             this.SeguridadLblParrafo.TabIndex = 2;
             this.SeguridadLblParrafo.Text = "Gestiona y Controla el acceso de los usuarios, \r\nperfiles y aplicaciones del sist" +
     "ema de forma \r\nsegura y eficiente.";
-            // 
+            //
             // SeguridadLblBienvenido
-            // 
+            //
             this.SeguridadLblBienvenido.AutoSize = true;
             this.SeguridadLblBienvenido.BackColor = System.Drawing.Color.Transparent;
             this.SeguridadLblBienvenido.Font = new System.Drawing.Font("Lucida Fax", 45F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -742,10 +742,11 @@
             this.SeguridadLblBienvenido.Size = new System.Drawing.Size(524, 85);
             this.SeguridadLblBienvenido.TabIndex = 1;
             this.SeguridadLblBienvenido.Text = "¡Bienvenido!";
-            // 
+            //
             // SeguridadPbButti
-            // 
+            //
             this.SeguridadPbButti.BackColor = System.Drawing.Color.Transparent;
+            this.SeguridadPbButti.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("SeguridadPbButti.BackgroundImage")));
             this.SeguridadPbButti.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.SeguridadPbButti.Location = new System.Drawing.Point(699, 16);
             this.SeguridadPbButti.Margin = new System.Windows.Forms.Padding(4);
@@ -753,9 +754,9 @@
             this.SeguridadPbButti.Size = new System.Drawing.Size(417, 511);
             this.SeguridadPbButti.TabIndex = 0;
             this.SeguridadPbButti.TabStop = false;
-            // 
+            //
             // FrmMDISeguridad
-            // 
+            //
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1371, 992);

@@ -1,4 +1,4 @@
-namespace CapaVista_Compras.Componentes
+﻿namespace CapaVista_Compras.Componentes
 {
     partial class ClsButtonCompras
     {
@@ -6,6 +6,7 @@ namespace CapaVista_Compras.Componentes
 
         protected override void Dispose(bool LiberarRecursos)
         {
+            if (LiberarRecursos) _FuenteModo?.Dispose();
             if (LiberarRecursos && (_Componentes != null))
             {
                 _Componentes.Dispose();

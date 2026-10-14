@@ -93,6 +93,26 @@ namespace CapaVista_Logistica.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap banner_radio {
+            get {
+                object obj = ResourceManager.GetObject("banner_radio", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BannerRedimensionado {
+            get {
+                object obj = ResourceManager.GetObject("BannerRedimensionado", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap FondoNavegado2 {
             get {
                 object obj = ResourceManager.GetObject("FondoNavegado2", resourceCulture);

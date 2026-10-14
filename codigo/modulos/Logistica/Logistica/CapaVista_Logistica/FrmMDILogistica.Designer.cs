@@ -1,6 +1,6 @@
 ﻿namespace CapaVista_Logistica
 {
-    partial class LogisticaPnlPrincipal
+    partial class FrmMDILogistica
     {
         /// <summary>
         /// Required designer variable.
@@ -65,13 +65,14 @@
             // 
             // LogisticaPnlBanner
             // 
-            this.LogisticaPnlBanner.BackColor = System.Drawing.Color.Transparent;
-            this.LogisticaPnlBanner.BackgroundImage = global::CapaVista_Logistica.Properties.Resources.banner;
+            this.LogisticaPnlBanner.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(246)))), ((int)(((byte)(242)))));
+            this.LogisticaPnlBanner.BackgroundImage = global::CapaVista_Logistica.Properties.Resources.BannerRedimensionado;
             this.LogisticaPnlBanner.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.LogisticaPnlBanner.Controls.Add(this.LogisticaLblDescripcion);
             this.LogisticaPnlBanner.Controls.Add(this.LogisticaLblLogistica);
             this.LogisticaPnlBanner.Controls.Add(this.LogisticaLblBienvenida);
             this.LogisticaPnlBanner.Controls.Add(this.LogisticaPbDonButti);
+            this.LogisticaPnlBanner.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(246)))), ((int)(((byte)(242)))));
             this.LogisticaPnlBanner.Location = new System.Drawing.Point(279, 11);
             this.LogisticaPnlBanner.Name = "LogisticaPnlBanner";
             this.LogisticaPnlBanner.Size = new System.Drawing.Size(734, 272);
@@ -80,6 +81,7 @@
             // LogisticaLblDescripcion
             // 
             this.LogisticaLblDescripcion.AutoSize = true;
+            this.LogisticaLblDescripcion.BackColor = System.Drawing.Color.Transparent;
             this.LogisticaLblDescripcion.Font = new System.Drawing.Font("Lucida Fax", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LogisticaLblDescripcion.ForeColor = System.Drawing.Color.DimGray;
             this.LogisticaLblDescripcion.Location = new System.Drawing.Point(20, 162);
@@ -92,6 +94,7 @@
             // LogisticaLblLogistica
             // 
             this.LogisticaLblLogistica.AutoSize = true;
+            this.LogisticaLblLogistica.BackColor = System.Drawing.Color.Transparent;
             this.LogisticaLblLogistica.Font = new System.Drawing.Font("Lucida Fax", 45F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LogisticaLblLogistica.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(138)))), ((int)(((byte)(132)))));
             this.LogisticaLblLogistica.Location = new System.Drawing.Point(12, 79);
@@ -103,6 +106,7 @@
             // LogisticaLblBienvenida
             // 
             this.LogisticaLblBienvenida.AutoSize = true;
+            this.LogisticaLblBienvenida.BackColor = System.Drawing.Color.Transparent;
             this.LogisticaLblBienvenida.Font = new System.Drawing.Font("Lucida Fax", 45F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LogisticaLblBienvenida.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(44)))), ((int)(((byte)(18)))));
             this.LogisticaLblBienvenida.Location = new System.Drawing.Point(12, 18);
@@ -113,6 +117,7 @@
             // 
             // LogisticaPbDonButti
             // 
+            this.LogisticaPbDonButti.BackColor = System.Drawing.Color.Transparent;
             this.LogisticaPbDonButti.Image = global::CapaVista_Logistica.Properties.Resources._7;
             this.LogisticaPbDonButti.Location = new System.Drawing.Point(530, 24);
             this.LogisticaPbDonButti.Name = "LogisticaPbDonButti";
@@ -264,14 +269,16 @@
             this.SeguridadBtnCerrarSesion.TabIndex = 10;
             this.SeguridadBtnCerrarSesion.UseVisualStyleBackColor = false;
             // 
-            // LogisticaPnlPrincipal
+            // FrmMDILogistica
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1028, 749);
             this.Controls.Add(this.LogisticaPnlMDI);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximumSize = new System.Drawing.Size(1554, 1061);
-            this.Name = "LogisticaPnlPrincipal";
+            this.MinimumSize = new System.Drawing.Size(1044, 718);
+            this.Name = "FrmMDILogistica";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmMDILogistica";
             this.LogisticaPnlMDI.ResumeLayout(false);

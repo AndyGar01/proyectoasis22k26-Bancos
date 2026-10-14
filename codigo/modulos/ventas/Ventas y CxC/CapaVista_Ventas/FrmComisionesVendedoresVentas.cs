@@ -1,7 +1,7 @@
 /*
- * INICIO DEL CÓDIGO — Jose Torres
- * Carné: 0901-23-1091 | Fecha: 10/10/2026
- * Área: Ventas y cuentas por cobrar
+ * INICIO DEL CÓDIGO — Ventas y cuentas por cobrar
+ * Roger Yankhel de Jesús Herrera Alcántara | Carné: 0901-23-2429
+ * Fecha de actualización: 10/10/2026
  * Propósito: Formulario de diseño para el prototipo no funcional de comisiones.
  */
 using System.Windows.Forms;
@@ -31,4 +31,4 @@ namespace CapaVista_Ventas
     }
 }
 
-// FIN DEL CÓDIGO — Jose Torres | Carné: 0901-23-1091 | Fecha: 10/10/2026
+// FIN DEL CÓDIGO — Equipo asignado al formulario | Fecha: 14/10/2026

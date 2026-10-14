@@ -8,38 +8,38 @@
           <xs:element name="metadata">
             <xs:complexType>
               <xs:sequence>
-                <xs:element name="value" type="xsd:string" minOccurs="0" />
+                <xs:element name="value" type="xs:string" minOccurs="0" />
               </xs:sequence>
-              <xs:attribute name="name" use="required" type="xsd:string" />
-              <xs:attribute name="type" type="xsd:string" />
-              <xs:attribute name="mimetype" type="xsd:string" />
+              <xs:attribute name="name" use="required" type="xs:string" />
+              <xs:attribute name="type" type="xs:string" />
+              <xs:attribute name="mimetype" type="xs:string" />
               <xs:attribute ref="xml:space" />
             </xs:complexType>
           </xs:element>
           <xs:element name="assembly">
             <xs:complexType>
-              <xs:attribute name="alias" type="xsd:string" />
-              <xs:attribute name="name" type="xsd:string" />
+              <xs:attribute name="alias" type="xs:string" />
+              <xs:attribute name="name" type="xs:string" />
             </xs:complexType>
           </xs:element>
           <xs:element name="data">
             <xs:complexType>
               <xs:sequence>
-                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1" />
-                <xs:element name="comment" type="xsd:string" minOccurs="0" ns1:Ordinal="2" />
+                <xs:element name="value" type="xs:string" minOccurs="0" ns1:Ordinal="1" />
+                <xs:element name="comment" type="xs:string" minOccurs="0" ns1:Ordinal="2" />
               </xs:sequence>
-              <xs:attribute name="name" type="xsd:string" use="required" ns1:Ordinal="1" />
-              <xs:attribute name="type" type="xsd:string" ns1:Ordinal="3" />
-              <xs:attribute name="mimetype" type="xsd:string" ns1:Ordinal="4" />
+              <xs:attribute name="name" type="xs:string" use="required" ns1:Ordinal="1" />
+              <xs:attribute name="type" type="xs:string" ns1:Ordinal="3" />
+              <xs:attribute name="mimetype" type="xs:string" ns1:Ordinal="4" />
               <xs:attribute ref="xml:space" />
             </xs:complexType>
           </xs:element>
           <xs:element name="resheader">
             <xs:complexType>
               <xs:sequence>
-                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1" />
+                <xs:element name="value" type="xs:string" minOccurs="0" ns1:Ordinal="1" />
               </xs:sequence>
-              <xs:attribute name="name" type="xsd:string" use="required" />
+              <xs:attribute name="name" type="xs:string" use="required" />
             </xs:complexType>
           </xs:element>
         </xs:choice>
@@ -151,4 +151,32 @@
   <data name="IconoAyudaVentas" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\..\..\..\recursos\modulos\ventas\iconoAyudaVentas.png;System.Drawing.Bitmap, System.Drawing</value>
   </data>
+<data name="BotonOriginalIngresarVentas" type="System.Resources.ResXFileRef, System.Windows.Forms"><value>..\..\..\..\..\..\recursos\modulos\ventas\botones\referencias\IngresarVentas.png;System.Drawing.Bitmap, System.Drawing</value></data>
+
+  <data name="BotonOriginalConsultarVentas" type="System.Resources.ResXFileRef, System.Windows.Forms"><value>..\..\..\..\..\..\recursos\modulos\ventas\botones\referencias\ConsultarVentas.png;System.Drawing.Bitmap, System.Drawing</value></data>
+
+  <data name="BotonOriginalModificarVentas" type="System.Resources.ResXFileRef, System.Windows.Forms"><value>..\..\..\..\..\..\recursos\modulos\ventas\botones\referencias\ModificarVentas.png;System.Drawing.Bitmap, System.Drawing</value></data>
+
+  <data name="BotonOriginalEliminarVentas" type="System.Resources.ResXFileRef, System.Windows.Forms"><value>..\..\..\..\..\..\recursos\modulos\ventas\botones\referencias\EliminarVentas.png;System.Drawing.Bitmap, System.Drawing</value></data>
+
+  <data name="BotonOriginalGuardarVentas" type="System.Resources.ResXFileRef, System.Windows.Forms"><value>..\..\..\..\..\..\recursos\modulos\ventas\botones\referencias\GuardarVentas.png;System.Drawing.Bitmap, System.Drawing</value></data>
+
+  <data name="BotonOriginalCancelarVentas" type="System.Resources.ResXFileRef, System.Windows.Forms"><value>..\..\..\..\..\..\recursos\modulos\ventas\botones\referencias\CancelarVentas.png;System.Drawing.Bitmap, System.Drawing</value></data>
+
+  <data name="BotonOriginalRefrescarVentas" type="System.Resources.ResXFileRef, System.Windows.Forms"><value>..\..\..\..\..\..\recursos\modulos\ventas\botones\referencias\RefrescarVentas.png;System.Drawing.Bitmap, System.Drawing</value></data>
+
+  <data name="BotonOriginalImprimirVentas" type="System.Resources.ResXFileRef, System.Windows.Forms"><value>..\..\..\..\..\..\recursos\modulos\ventas\botones\referencias\ImprimirVentas.png;System.Drawing.Bitmap, System.Drawing</value></data>
+
+  <data name="BotonOriginalAyudaVentas" type="System.Resources.ResXFileRef, System.Windows.Forms"><value>..\..\..\..\..\..\recursos\modulos\ventas\botones\referencias\AyudaVentas.png;System.Drawing.Bitmap, System.Drawing</value></data>
+
+  <data name="BotonOriginalInicioVentas" type="System.Resources.ResXFileRef, System.Windows.Forms"><value>..\..\..\..\..\..\recursos\modulos\ventas\botones\referencias\InicioVentas.png;System.Drawing.Bitmap, System.Drawing</value></data>
+
+  <data name="BotonOriginalAnteriorVentas" type="System.Resources.ResXFileRef, System.Windows.Forms"><value>..\..\..\..\..\..\recursos\modulos\ventas\botones\referencias\AnteriorVentas.png;System.Drawing.Bitmap, System.Drawing</value></data>
+
+  <data name="BotonOriginalSiguienteVentas" type="System.Resources.ResXFileRef, System.Windows.Forms"><value>..\..\..\..\..\..\recursos\modulos\ventas\botones\referencias\SiguienteVentas.png;System.Drawing.Bitmap, System.Drawing</value></data>
+
+  <data name="BotonOriginalFinVentas" type="System.Resources.ResXFileRef, System.Windows.Forms"><value>..\..\..\..\..\..\recursos\modulos\ventas\botones\referencias\FinVentas.png;System.Drawing.Bitmap, System.Drawing</value></data>
+
+  <data name="BotonOriginalSalirVentas" type="System.Resources.ResXFileRef, System.Windows.Forms"><value>..\..\..\..\..\..\recursos\modulos\ventas\botones\referencias\SalirVentas.png;System.Drawing.Bitmap, System.Drawing</value></data>
+
 </root>

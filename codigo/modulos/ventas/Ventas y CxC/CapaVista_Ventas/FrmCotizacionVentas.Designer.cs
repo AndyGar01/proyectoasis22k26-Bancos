@@ -1,10 +1,13 @@
-﻿/*
- * INICIO DEL CÓDIGO — Jose Torres
- * Carné: 0901-23-1091 | Fecha: 12/10/2026
- * Área: Ventas y cuentas por cobrar
+/*
+ * INICIO DEL CÓDIGO — Ventas y cuentas por cobrar
+ * Asignación: Matthew, Jose, Natali
+ * Matthew Andreé Juárez Xoy | Carné: 0901-23-4250
+ * Jose Javier Torres Martínez | Carné: 0901-23-1091
+ * Natali Sofía Montenegro Portillo | Carné: 0901-23-10017
+ * Encargado: Matthew Andreé Juárez Xoy
+ * Fecha de actualización: 14/10/2026
  * Propósito: Prototipo visual estandarizado de cotizaciones, sin lógica de negocio.
  */
-
 namespace CapaVista_Ventas
 {
     partial class FrmCotizacionVentas
@@ -18,6 +21,8 @@ namespace CapaVista_Ventas
         #region Windows Form Designer generated code
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            this.VentasTtpAccionesOriginales = new System.Windows.Forms.ToolTip(this.components);
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -86,9 +91,9 @@ namespace CapaVista_Ventas
             ((System.ComponentModel.ISupportInitialize)(this.VentasDgvCotProductos)).BeginInit();
             this.VentasPnlCotTotales.SuspendLayout();
             this.SuspendLayout();
-            // 
+            //
             // VentasPnlCotEncabezado
-            // 
+            //
             this.VentasPnlCotEncabezado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
             this.VentasPnlCotEncabezado.Controls.Add(this.VentasPbCotMarca);
             this.VentasPnlCotEncabezado.Controls.Add(this.VentasLblCotTitulo);
@@ -97,9 +102,9 @@ namespace CapaVista_Ventas
             this.VentasPnlCotEncabezado.Name = "VentasPnlCotEncabezado";
             this.VentasPnlCotEncabezado.Size = new System.Drawing.Size(1100, 78);
             this.VentasPnlCotEncabezado.TabIndex = 0;
-            // 
+            //
             // VentasPbCotMarca
-            // 
+            //
             this.VentasPbCotMarca.Image = global::CapaVista_Ventas.Properties.Resources.IconoVentasImagen;
             this.VentasPbCotMarca.Location = new System.Drawing.Point(20, 13);
             this.VentasPbCotMarca.Name = "VentasPbCotMarca";
@@ -107,9 +112,9 @@ namespace CapaVista_Ventas
             this.VentasPbCotMarca.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.VentasPbCotMarca.TabIndex = 1;
             this.VentasPbCotMarca.TabStop = false;
-            // 
+            //
             // VentasLblCotTitulo
-            // 
+            //
             this.VentasLblCotTitulo.BackColor = System.Drawing.Color.Transparent;
             this.VentasLblCotTitulo.Font = new System.Drawing.Font("Lucida Fax", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.VentasLblCotTitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
@@ -118,9 +123,9 @@ namespace CapaVista_Ventas
             this.VentasLblCotTitulo.Size = new System.Drawing.Size(560, 34);
             this.VentasLblCotTitulo.TabIndex = 2;
             this.VentasLblCotTitulo.Text = "Cotizaciones";
-            // 
+            //
             // VentasLblCotSubtitulo
-            // 
+            //
             this.VentasLblCotSubtitulo.BackColor = System.Drawing.Color.Transparent;
             this.VentasLblCotSubtitulo.Font = new System.Drawing.Font("Tahoma", 10F);
             this.VentasLblCotSubtitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(212)))), ((int)(((byte)(234)))));
@@ -129,9 +134,9 @@ namespace CapaVista_Ventas
             this.VentasLblCotSubtitulo.Size = new System.Drawing.Size(570, 23);
             this.VentasLblCotSubtitulo.TabIndex = 3;
             this.VentasLblCotSubtitulo.Text = "Propuesta comercial · Ventas y cuentas por cobrar";
-            // 
+            //
             // VentasPnlCotDocumento
-            // 
+            //
             this.VentasPnlCotDocumento.BackColor = System.Drawing.Color.White;
             this.VentasPnlCotDocumento.Controls.Add(this.VentasLblCotNumero);
             this.VentasPnlCotDocumento.Controls.Add(this.VentasLblCotFecha);
@@ -147,9 +152,9 @@ namespace CapaVista_Ventas
             this.VentasPnlCotDocumento.Name = "VentasPnlCotDocumento";
             this.VentasPnlCotDocumento.Size = new System.Drawing.Size(1060, 88);
             this.VentasPnlCotDocumento.TabIndex = 5;
-            // 
+            //
             // VentasLblCotNumero
-            // 
+            //
             this.VentasLblCotNumero.BackColor = System.Drawing.Color.Transparent;
             this.VentasLblCotNumero.Font = new System.Drawing.Font("Tahoma", 10F);
             this.VentasLblCotNumero.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
@@ -158,9 +163,9 @@ namespace CapaVista_Ventas
             this.VentasLblCotNumero.Size = new System.Drawing.Size(180, 21);
             this.VentasLblCotNumero.TabIndex = 6;
             this.VentasLblCotNumero.Text = "No. de cotización";
-            // 
+            //
             // VentasLblCotFecha
-            // 
+            //
             this.VentasLblCotFecha.BackColor = System.Drawing.Color.Transparent;
             this.VentasLblCotFecha.Font = new System.Drawing.Font("Tahoma", 10F);
             this.VentasLblCotFecha.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
@@ -169,9 +174,9 @@ namespace CapaVista_Ventas
             this.VentasLblCotFecha.Size = new System.Drawing.Size(146, 21);
             this.VentasLblCotFecha.TabIndex = 7;
             this.VentasLblCotFecha.Text = "Fecha de emisión";
-            // 
+            //
             // VentasLblCotVigencia
-            // 
+            //
             this.VentasLblCotVigencia.BackColor = System.Drawing.Color.Transparent;
             this.VentasLblCotVigencia.Font = new System.Drawing.Font("Tahoma", 10F);
             this.VentasLblCotVigencia.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
@@ -180,9 +185,9 @@ namespace CapaVista_Ventas
             this.VentasLblCotVigencia.Size = new System.Drawing.Size(148, 21);
             this.VentasLblCotVigencia.TabIndex = 8;
             this.VentasLblCotVigencia.Text = "Vigente hasta";
-            // 
+            //
             // VentasLblCotVendedor
-            // 
+            //
             this.VentasLblCotVendedor.BackColor = System.Drawing.Color.Transparent;
             this.VentasLblCotVendedor.Font = new System.Drawing.Font("Tahoma", 10F);
             this.VentasLblCotVendedor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
@@ -191,9 +196,9 @@ namespace CapaVista_Ventas
             this.VentasLblCotVendedor.Size = new System.Drawing.Size(276, 21);
             this.VentasLblCotVendedor.TabIndex = 9;
             this.VentasLblCotVendedor.Text = "Vendedor";
-            // 
+            //
             // VentasLblCotEstado
-            // 
+            //
             this.VentasLblCotEstado.BackColor = System.Drawing.Color.Transparent;
             this.VentasLblCotEstado.Font = new System.Drawing.Font("Tahoma", 10F);
             this.VentasLblCotEstado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
@@ -202,9 +207,9 @@ namespace CapaVista_Ventas
             this.VentasLblCotEstado.Size = new System.Drawing.Size(186, 21);
             this.VentasLblCotEstado.TabIndex = 10;
             this.VentasLblCotEstado.Text = "Estado";
-            // 
+            //
             // VentasTxtCotNumero
-            // 
+            //
             this.VentasTxtCotNumero.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
             this.VentasTxtCotNumero.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.VentasTxtCotNumero.Location = new System.Drawing.Point(14, 37);
@@ -213,9 +218,9 @@ namespace CapaVista_Ventas
             this.VentasTxtCotNumero.Size = new System.Drawing.Size(180, 32);
             this.VentasTxtCotNumero.TabIndex = 11;
             this.VentasTxtCotNumero.Text = "Por asignar";
-            // 
+            //
             // VentasDtpCotFecha
-            // 
+            //
             this.VentasDtpCotFecha.CustomFormat = "dd/MM/yyyy";
             this.VentasDtpCotFecha.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.VentasDtpCotFecha.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
@@ -224,9 +229,9 @@ namespace CapaVista_Ventas
             this.VentasDtpCotFecha.Size = new System.Drawing.Size(146, 32);
             this.VentasDtpCotFecha.TabIndex = 12;
             this.VentasDtpCotFecha.Value = new System.DateTime(2026, 10, 12, 0, 0, 0, 0);
-            // 
+            //
             // VentasDtpCotVigencia
-            // 
+            //
             this.VentasDtpCotVigencia.CustomFormat = "dd/MM/yyyy";
             this.VentasDtpCotVigencia.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.VentasDtpCotVigencia.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
@@ -235,9 +240,9 @@ namespace CapaVista_Ventas
             this.VentasDtpCotVigencia.Size = new System.Drawing.Size(148, 32);
             this.VentasDtpCotVigencia.TabIndex = 13;
             this.VentasDtpCotVigencia.Value = new System.DateTime(2026, 10, 12, 0, 0, 0, 0);
-            // 
+            //
             // VentasCboCotVendedor
-            // 
+            //
             this.VentasCboCotVendedor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.VentasCboCotVendedor.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.VentasCboCotVendedor.Items.AddRange(new object[] {
@@ -246,9 +251,9 @@ namespace CapaVista_Ventas
             this.VentasCboCotVendedor.Name = "VentasCboCotVendedor";
             this.VentasCboCotVendedor.Size = new System.Drawing.Size(276, 33);
             this.VentasCboCotVendedor.TabIndex = 14;
-            // 
+            //
             // VentasCboCotEstado
-            // 
+            //
             this.VentasCboCotEstado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.VentasCboCotEstado.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.VentasCboCotEstado.Items.AddRange(new object[] {
@@ -260,9 +265,9 @@ namespace CapaVista_Ventas
             this.VentasCboCotEstado.Name = "VentasCboCotEstado";
             this.VentasCboCotEstado.Size = new System.Drawing.Size(186, 33);
             this.VentasCboCotEstado.TabIndex = 15;
-            // 
+            //
             // VentasPnlCotCliente
-            // 
+            //
             this.VentasPnlCotCliente.BackColor = System.Drawing.Color.White;
             this.VentasPnlCotCliente.Controls.Add(this.VentasLblCotCliente);
             this.VentasPnlCotCliente.Controls.Add(this.VentasLblCotNit);
@@ -279,9 +284,9 @@ namespace CapaVista_Ventas
             this.VentasPnlCotCliente.Name = "VentasPnlCotCliente";
             this.VentasPnlCotCliente.Size = new System.Drawing.Size(1060, 111);
             this.VentasPnlCotCliente.TabIndex = 16;
-            // 
+            //
             // VentasLblCotCliente
-            // 
+            //
             this.VentasLblCotCliente.BackColor = System.Drawing.Color.Transparent;
             this.VentasLblCotCliente.Font = new System.Drawing.Font("Tahoma", 10F);
             this.VentasLblCotCliente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
@@ -290,9 +295,9 @@ namespace CapaVista_Ventas
             this.VentasLblCotCliente.Size = new System.Drawing.Size(364, 20);
             this.VentasLblCotCliente.TabIndex = 17;
             this.VentasLblCotCliente.Text = "Cliente";
-            // 
+            //
             // VentasLblCotNit
-            // 
+            //
             this.VentasLblCotNit.BackColor = System.Drawing.Color.Transparent;
             this.VentasLblCotNit.Font = new System.Drawing.Font("Tahoma", 10F);
             this.VentasLblCotNit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
@@ -301,9 +306,9 @@ namespace CapaVista_Ventas
             this.VentasLblCotNit.Size = new System.Drawing.Size(174, 20);
             this.VentasLblCotNit.TabIndex = 18;
             this.VentasLblCotNit.Text = "NIT";
-            // 
+            //
             // VentasLblCotContacto
-            // 
+            //
             this.VentasLblCotContacto.BackColor = System.Drawing.Color.Transparent;
             this.VentasLblCotContacto.Font = new System.Drawing.Font("Tahoma", 10F);
             this.VentasLblCotContacto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
@@ -312,9 +317,9 @@ namespace CapaVista_Ventas
             this.VentasLblCotContacto.Size = new System.Drawing.Size(258, 20);
             this.VentasLblCotContacto.TabIndex = 19;
             this.VentasLblCotContacto.Text = "Contacto";
-            // 
+            //
             // VentasLblCotMoneda
-            // 
+            //
             this.VentasLblCotMoneda.BackColor = System.Drawing.Color.Transparent;
             this.VentasLblCotMoneda.Font = new System.Drawing.Font("Tahoma", 10F);
             this.VentasLblCotMoneda.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
@@ -323,9 +328,9 @@ namespace CapaVista_Ventas
             this.VentasLblCotMoneda.Size = new System.Drawing.Size(166, 20);
             this.VentasLblCotMoneda.TabIndex = 20;
             this.VentasLblCotMoneda.Text = "Moneda";
-            // 
+            //
             // VentasLblCotClienteObligatorio
-            // 
+            //
             this.VentasLblCotClienteObligatorio.BackColor = System.Drawing.Color.Transparent;
             this.VentasLblCotClienteObligatorio.Font = new System.Drawing.Font("Tahoma", 10F);
             this.VentasLblCotClienteObligatorio.ForeColor = System.Drawing.Color.Firebrick;
@@ -334,9 +339,9 @@ namespace CapaVista_Ventas
             this.VentasLblCotClienteObligatorio.Size = new System.Drawing.Size(15, 20);
             this.VentasLblCotClienteObligatorio.TabIndex = 21;
             this.VentasLblCotClienteObligatorio.Text = "*";
-            // 
+            //
             // VentasCboCotCliente
-            // 
+            //
             this.VentasCboCotCliente.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.VentasCboCotCliente.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.VentasCboCotCliente.Items.AddRange(new object[] {
@@ -345,27 +350,27 @@ namespace CapaVista_Ventas
             this.VentasCboCotCliente.Name = "VentasCboCotCliente";
             this.VentasCboCotCliente.Size = new System.Drawing.Size(364, 33);
             this.VentasCboCotCliente.TabIndex = 22;
-            // 
+            //
             // VentasTxtCotNit
-            // 
+            //
             this.VentasTxtCotNit.BackColor = System.Drawing.Color.White;
             this.VentasTxtCotNit.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.VentasTxtCotNit.Location = new System.Drawing.Point(400, 37);
             this.VentasTxtCotNit.Name = "VentasTxtCotNit";
             this.VentasTxtCotNit.Size = new System.Drawing.Size(174, 32);
             this.VentasTxtCotNit.TabIndex = 23;
-            // 
+            //
             // VentasTxtCotContacto
-            // 
+            //
             this.VentasTxtCotContacto.BackColor = System.Drawing.Color.White;
             this.VentasTxtCotContacto.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.VentasTxtCotContacto.Location = new System.Drawing.Point(596, 37);
             this.VentasTxtCotContacto.Name = "VentasTxtCotContacto";
             this.VentasTxtCotContacto.Size = new System.Drawing.Size(258, 32);
             this.VentasTxtCotContacto.TabIndex = 24;
-            // 
+            //
             // VentasCboCotMoneda
-            // 
+            //
             this.VentasCboCotMoneda.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.VentasCboCotMoneda.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.VentasCboCotMoneda.Items.AddRange(new object[] {
@@ -374,9 +379,9 @@ namespace CapaVista_Ventas
             this.VentasCboCotMoneda.Name = "VentasCboCotMoneda";
             this.VentasCboCotMoneda.Size = new System.Drawing.Size(166, 33);
             this.VentasCboCotMoneda.TabIndex = 25;
-            // 
+            //
             // VentasLblCotDireccion
-            // 
+            //
             this.VentasLblCotDireccion.BackColor = System.Drawing.Color.Transparent;
             this.VentasLblCotDireccion.Font = new System.Drawing.Font("Tahoma", 10F);
             this.VentasLblCotDireccion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
@@ -385,18 +390,18 @@ namespace CapaVista_Ventas
             this.VentasLblCotDireccion.Size = new System.Drawing.Size(85, 20);
             this.VentasLblCotDireccion.TabIndex = 26;
             this.VentasLblCotDireccion.Text = "Dirección";
-            // 
+            //
             // VentasTxtCotDireccion
-            // 
+            //
             this.VentasTxtCotDireccion.BackColor = System.Drawing.Color.White;
             this.VentasTxtCotDireccion.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.VentasTxtCotDireccion.Location = new System.Drawing.Point(101, 73);
             this.VentasTxtCotDireccion.Name = "VentasTxtCotDireccion";
             this.VentasTxtCotDireccion.Size = new System.Drawing.Size(941, 32);
             this.VentasTxtCotDireccion.TabIndex = 27;
-            // 
+            //
             // VentasPnlCotProducto
-            // 
+            //
             this.VentasPnlCotProducto.BackColor = System.Drawing.Color.White;
             this.VentasPnlCotProducto.Controls.Add(this.VentasLblCotProducto);
             this.VentasPnlCotProducto.Controls.Add(this.VentasLblCotCantidad);
@@ -412,9 +417,9 @@ namespace CapaVista_Ventas
             this.VentasPnlCotProducto.Name = "VentasPnlCotProducto";
             this.VentasPnlCotProducto.Size = new System.Drawing.Size(1060, 85);
             this.VentasPnlCotProducto.TabIndex = 28;
-            // 
+            //
             // VentasLblCotProducto
-            // 
+            //
             this.VentasLblCotProducto.BackColor = System.Drawing.Color.Transparent;
             this.VentasLblCotProducto.Font = new System.Drawing.Font("Tahoma", 10F);
             this.VentasLblCotProducto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
@@ -423,9 +428,9 @@ namespace CapaVista_Ventas
             this.VentasLblCotProducto.Size = new System.Drawing.Size(366, 21);
             this.VentasLblCotProducto.TabIndex = 29;
             this.VentasLblCotProducto.Text = "Producto";
-            // 
+            //
             // VentasLblCotCantidad
-            // 
+            //
             this.VentasLblCotCantidad.BackColor = System.Drawing.Color.Transparent;
             this.VentasLblCotCantidad.Font = new System.Drawing.Font("Tahoma", 10F);
             this.VentasLblCotCantidad.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
@@ -434,9 +439,9 @@ namespace CapaVista_Ventas
             this.VentasLblCotCantidad.Size = new System.Drawing.Size(88, 21);
             this.VentasLblCotCantidad.TabIndex = 30;
             this.VentasLblCotCantidad.Text = "Cantidad";
-            // 
+            //
             // VentasLblCotPrecio
-            // 
+            //
             this.VentasLblCotPrecio.BackColor = System.Drawing.Color.Transparent;
             this.VentasLblCotPrecio.Font = new System.Drawing.Font("Tahoma", 10F);
             this.VentasLblCotPrecio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
@@ -445,9 +450,9 @@ namespace CapaVista_Ventas
             this.VentasLblCotPrecio.Size = new System.Drawing.Size(134, 21);
             this.VentasLblCotPrecio.TabIndex = 31;
             this.VentasLblCotPrecio.Text = "Precio unitario (Q)";
-            // 
+            //
             // VentasLblCotDescuento
-            // 
+            //
             this.VentasLblCotDescuento.BackColor = System.Drawing.Color.Transparent;
             this.VentasLblCotDescuento.Font = new System.Drawing.Font("Tahoma", 10F);
             this.VentasLblCotDescuento.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
@@ -456,9 +461,9 @@ namespace CapaVista_Ventas
             this.VentasLblCotDescuento.Size = new System.Drawing.Size(184, 21);
             this.VentasLblCotDescuento.TabIndex = 32;
             this.VentasLblCotDescuento.Text = "Descuento por línea (Q)";
-            // 
+            //
             // VentasLblCotProductoObligatorio
-            // 
+            //
             this.VentasLblCotProductoObligatorio.BackColor = System.Drawing.Color.Transparent;
             this.VentasLblCotProductoObligatorio.Font = new System.Drawing.Font("Tahoma", 10F);
             this.VentasLblCotProductoObligatorio.ForeColor = System.Drawing.Color.Firebrick;
@@ -467,9 +472,9 @@ namespace CapaVista_Ventas
             this.VentasLblCotProductoObligatorio.Size = new System.Drawing.Size(14, 20);
             this.VentasLblCotProductoObligatorio.TabIndex = 33;
             this.VentasLblCotProductoObligatorio.Text = "*";
-            // 
+            //
             // VentasCboCotProducto
-            // 
+            //
             this.VentasCboCotProducto.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.VentasCboCotProducto.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.VentasCboCotProducto.Items.AddRange(new object[] {
@@ -478,9 +483,9 @@ namespace CapaVista_Ventas
             this.VentasCboCotProducto.Name = "VentasCboCotProducto";
             this.VentasCboCotProducto.Size = new System.Drawing.Size(366, 33);
             this.VentasCboCotProducto.TabIndex = 34;
-            // 
+            //
             // VentasNudCotCantidad
-            // 
+            //
             this.VentasNudCotCantidad.DecimalPlaces = 2;
             this.VentasNudCotCantidad.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.VentasNudCotCantidad.Location = new System.Drawing.Point(400, 38);
@@ -503,9 +508,9 @@ namespace CapaVista_Ventas
             0,
             0,
             0});
-            // 
+            //
             // VentasTxtCotPrecio
-            // 
+            //
             this.VentasTxtCotPrecio.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.VentasTxtCotPrecio.Location = new System.Drawing.Point(510, 38);
             this.VentasTxtCotPrecio.Name = "VentasTxtCotPrecio";
@@ -513,9 +518,9 @@ namespace CapaVista_Ventas
             this.VentasTxtCotPrecio.TabIndex = 36;
             this.VentasTxtCotPrecio.Text = "Q 0.00";
             this.VentasTxtCotPrecio.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
+            //
             // VentasTxtCotDescuento
-            // 
+            //
             this.VentasTxtCotDescuento.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.VentasTxtCotDescuento.Location = new System.Drawing.Point(666, 38);
             this.VentasTxtCotDescuento.Name = "VentasTxtCotDescuento";
@@ -523,25 +528,38 @@ namespace CapaVista_Ventas
             this.VentasTxtCotDescuento.TabIndex = 37;
             this.VentasTxtCotDescuento.Text = "Q 0.00";
             this.VentasTxtCotDescuento.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
+            //
             // VentasBtnCotAgregar
-            // 
-            this.VentasBtnCotAgregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
-            this.VentasBtnCotAgregar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(162)))), ((int)(((byte)(74)))));
-            this.VentasBtnCotAgregar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
-            this.VentasBtnCotAgregar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(63)))), ((int)(((byte)(147)))));
-            this.VentasBtnCotAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.VentasBtnCotAgregar.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.VentasBtnCotAgregar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
-            this.VentasBtnCotAgregar.Location = new System.Drawing.Point(876, 35);
+            //
+
+            this.VentasBtnCotAgregar.Location = new System.Drawing.Point(876, 5);
             this.VentasBtnCotAgregar.Name = "VentasBtnCotAgregar";
-            this.VentasBtnCotAgregar.Size = new System.Drawing.Size(166, 34);
-            this.VentasBtnCotAgregar.TabIndex = 38;
-            this.VentasBtnCotAgregar.Text = "Agregar producto";
+            this.VentasBtnCotAgregar.AccessibleDescription = "Agregar producto";
+            this.VentasBtnCotAgregar.AccessibleName = "Agregar producto";
+            // Imagen original completa: solo el color vino fue cambiado a morado.
+            this.VentasBtnCotAgregar.Text = string.Empty;
+            this.VentasBtnCotAgregar.BackColor = System.Drawing.Color.FromArgb(123, 63, 147);
+            this.VentasBtnCotAgregar.ForeColor = System.Drawing.Color.FromArgb(248, 245, 249);
+            this.VentasBtnCotAgregar.BackgroundImage = global::CapaVista_Ventas.Properties.Resources.BotonOriginalIngresarVentas;
+            this.VentasBtnCotAgregar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.VentasBtnCotAgregar.Image = null;
+            this.VentasBtnCotAgregar.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.VentasBtnCotAgregar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.VentasBtnCotAgregar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.VentasBtnCotAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.VentasBtnCotAgregar.FlatAppearance.BorderSize = 0;
+            this.VentasBtnCotAgregar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(59, 29, 74);
+            this.VentasBtnCotAgregar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(59, 29, 74);
+            this.VentasBtnCotAgregar.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.VentasBtnCotAgregar.Padding = new System.Windows.Forms.Padding(0);
             this.VentasBtnCotAgregar.UseVisualStyleBackColor = false;
-            // 
+            this.VentasBtnCotAgregar.UseCompatibleTextRendering = false;
+            this.VentasBtnCotAgregar.Size = new System.Drawing.Size(64, 64);
+            this.VentasBtnCotAgregar.TabIndex = 38;
+
+            //
             // VentasDgvCotProductos
-            // 
+            //
             this.VentasDgvCotProductos.AllowUserToAddRows = false;
             this.VentasDgvCotProductos.AllowUserToDeleteRows = false;
             this.VentasDgvCotProductos.AllowUserToResizeRows = false;
@@ -575,11 +593,11 @@ namespace CapaVista_Ventas
             this.VentasDgvCotProductos.RowHeadersWidth = 51;
             this.VentasDgvCotProductos.RowTemplate.Height = 27;
             this.VentasDgvCotProductos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.VentasDgvCotProductos.Size = new System.Drawing.Size(1060, 130);
+            this.VentasDgvCotProductos.Size = new System.Drawing.Size(1060, 93);
             this.VentasDgvCotProductos.TabIndex = 39;
-            // 
+            //
             // VentasLblCotRegistros
-            // 
+            //
             this.VentasLblCotRegistros.BackColor = System.Drawing.Color.Transparent;
             this.VentasLblCotRegistros.Font = new System.Drawing.Font("Tahoma", 10F);
             this.VentasLblCotRegistros.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
@@ -588,126 +606,222 @@ namespace CapaVista_Ventas
             this.VentasLblCotRegistros.Size = new System.Drawing.Size(240, 23);
             this.VentasLblCotRegistros.TabIndex = 40;
             this.VentasLblCotRegistros.Text = "0 productos · Página 1 de 1";
-            // 
+            //
             // VentasBtnCotAnterior
-            // 
-            this.VentasBtnCotAnterior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
+            //
+
             this.VentasBtnCotAnterior.Enabled = false;
-            this.VentasBtnCotAnterior.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(63)))), ((int)(((byte)(147)))));
-            this.VentasBtnCotAnterior.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(212)))), ((int)(((byte)(234)))));
-            this.VentasBtnCotAnterior.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
-            this.VentasBtnCotAnterior.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.VentasBtnCotAnterior.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.VentasBtnCotAnterior.ForeColor = System.Drawing.Color.Gray;
-            this.VentasBtnCotAnterior.Location = new System.Drawing.Point(274, 553);
+
+            this.VentasBtnCotAnterior.Location = new System.Drawing.Point(274, 514);
             this.VentasBtnCotAnterior.Name = "VentasBtnCotAnterior";
-            this.VentasBtnCotAnterior.Size = new System.Drawing.Size(90, 33);
-            this.VentasBtnCotAnterior.TabIndex = 41;
-            this.VentasBtnCotAnterior.Text = "Anterior";
+            this.VentasBtnCotAnterior.AccessibleDescription = "Anterior";
+            this.VentasBtnCotAnterior.AccessibleName = "Anterior";
+            // Imagen original completa: solo el color vino fue cambiado a morado.
+            this.VentasBtnCotAnterior.Text = string.Empty;
+            this.VentasBtnCotAnterior.BackColor = System.Drawing.Color.FromArgb(123, 63, 147);
+            this.VentasBtnCotAnterior.ForeColor = System.Drawing.Color.FromArgb(105, 105, 105);
+            this.VentasBtnCotAnterior.BackgroundImage = global::CapaVista_Ventas.Properties.Resources.BotonOriginalAnteriorVentas;
+            this.VentasBtnCotAnterior.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.VentasBtnCotAnterior.Image = null;
+            this.VentasBtnCotAnterior.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.VentasBtnCotAnterior.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.VentasBtnCotAnterior.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.VentasBtnCotAnterior.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.VentasBtnCotAnterior.FlatAppearance.BorderSize = 0;
+            this.VentasBtnCotAnterior.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(59, 29, 74);
+            this.VentasBtnCotAnterior.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(59, 29, 74);
+            this.VentasBtnCotAnterior.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.VentasBtnCotAnterior.Padding = new System.Windows.Forms.Padding(0);
             this.VentasBtnCotAnterior.UseVisualStyleBackColor = false;
-            // 
+            this.VentasBtnCotAnterior.UseCompatibleTextRendering = false;
+            this.VentasBtnCotAnterior.Size = new System.Drawing.Size(61, 64);
+            this.VentasBtnCotAnterior.TabIndex = 41;
+
+            //
             // VentasBtnCotSiguiente
-            // 
-            this.VentasBtnCotSiguiente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
+            //
+
             this.VentasBtnCotSiguiente.Enabled = false;
-            this.VentasBtnCotSiguiente.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(63)))), ((int)(((byte)(147)))));
-            this.VentasBtnCotSiguiente.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(212)))), ((int)(((byte)(234)))));
-            this.VentasBtnCotSiguiente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
-            this.VentasBtnCotSiguiente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.VentasBtnCotSiguiente.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.VentasBtnCotSiguiente.ForeColor = System.Drawing.Color.Gray;
-            this.VentasBtnCotSiguiente.Location = new System.Drawing.Point(374, 553);
+
+            this.VentasBtnCotSiguiente.Location = new System.Drawing.Point(386, 514);
             this.VentasBtnCotSiguiente.Name = "VentasBtnCotSiguiente";
-            this.VentasBtnCotSiguiente.Size = new System.Drawing.Size(90, 33);
-            this.VentasBtnCotSiguiente.TabIndex = 42;
-            this.VentasBtnCotSiguiente.Text = "Siguiente";
+            this.VentasBtnCotSiguiente.AccessibleDescription = "Siguiente";
+            this.VentasBtnCotSiguiente.AccessibleName = "Siguiente";
+            // Imagen original completa: solo el color vino fue cambiado a morado.
+            this.VentasBtnCotSiguiente.Text = string.Empty;
+            this.VentasBtnCotSiguiente.BackColor = System.Drawing.Color.FromArgb(123, 63, 147);
+            this.VentasBtnCotSiguiente.ForeColor = System.Drawing.Color.FromArgb(105, 105, 105);
+            this.VentasBtnCotSiguiente.BackgroundImage = global::CapaVista_Ventas.Properties.Resources.BotonOriginalSiguienteVentas;
+            this.VentasBtnCotSiguiente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.VentasBtnCotSiguiente.Image = null;
+            this.VentasBtnCotSiguiente.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.VentasBtnCotSiguiente.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.VentasBtnCotSiguiente.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.VentasBtnCotSiguiente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.VentasBtnCotSiguiente.FlatAppearance.BorderSize = 0;
+            this.VentasBtnCotSiguiente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(59, 29, 74);
+            this.VentasBtnCotSiguiente.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(59, 29, 74);
+            this.VentasBtnCotSiguiente.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.VentasBtnCotSiguiente.Padding = new System.Windows.Forms.Padding(0);
             this.VentasBtnCotSiguiente.UseVisualStyleBackColor = false;
-            // 
+            this.VentasBtnCotSiguiente.UseCompatibleTextRendering = false;
+            this.VentasBtnCotSiguiente.Size = new System.Drawing.Size(64, 64);
+            this.VentasBtnCotSiguiente.TabIndex = 42;
+
+            //
             // VentasBtnCotEliminar
-            // 
-            this.VentasBtnCotEliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
+            //
+
             this.VentasBtnCotEliminar.Enabled = false;
-            this.VentasBtnCotEliminar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(63)))), ((int)(((byte)(147)))));
-            this.VentasBtnCotEliminar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(212)))), ((int)(((byte)(234)))));
-            this.VentasBtnCotEliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
-            this.VentasBtnCotEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.VentasBtnCotEliminar.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.VentasBtnCotEliminar.ForeColor = System.Drawing.Color.Gray;
-            this.VentasBtnCotEliminar.Location = new System.Drawing.Point(484, 553);
+
+            this.VentasBtnCotEliminar.Location = new System.Drawing.Point(498, 514);
             this.VentasBtnCotEliminar.Name = "VentasBtnCotEliminar";
-            this.VentasBtnCotEliminar.Size = new System.Drawing.Size(175, 33);
-            this.VentasBtnCotEliminar.TabIndex = 43;
-            this.VentasBtnCotEliminar.Text = "Eliminar producto";
+            this.VentasBtnCotEliminar.AccessibleDescription = "Eliminar producto";
+            this.VentasBtnCotEliminar.AccessibleName = "Eliminar producto";
+            // Imagen original completa: solo el color vino fue cambiado a morado.
+            this.VentasBtnCotEliminar.Text = string.Empty;
+            this.VentasBtnCotEliminar.BackColor = System.Drawing.Color.FromArgb(123, 63, 147);
+            this.VentasBtnCotEliminar.ForeColor = System.Drawing.Color.FromArgb(105, 105, 105);
+            this.VentasBtnCotEliminar.BackgroundImage = global::CapaVista_Ventas.Properties.Resources.BotonOriginalEliminarVentas;
+            this.VentasBtnCotEliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.VentasBtnCotEliminar.Image = null;
+            this.VentasBtnCotEliminar.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.VentasBtnCotEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.VentasBtnCotEliminar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.VentasBtnCotEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.VentasBtnCotEliminar.FlatAppearance.BorderSize = 0;
+            this.VentasBtnCotEliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(59, 29, 74);
+            this.VentasBtnCotEliminar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(59, 29, 74);
+            this.VentasBtnCotEliminar.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.VentasBtnCotEliminar.Padding = new System.Windows.Forms.Padding(0);
             this.VentasBtnCotEliminar.UseVisualStyleBackColor = false;
-            // 
+            this.VentasBtnCotEliminar.UseCompatibleTextRendering = false;
+            this.VentasBtnCotEliminar.Size = new System.Drawing.Size(55, 64);
+            this.VentasBtnCotEliminar.TabIndex = 43;
+
+            //
             // VentasBtnCotGuardar
-            // 
-            this.VentasBtnCotGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
-            this.VentasBtnCotGuardar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(162)))), ((int)(((byte)(74)))));
-            this.VentasBtnCotGuardar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
-            this.VentasBtnCotGuardar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(63)))), ((int)(((byte)(147)))));
-            this.VentasBtnCotGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.VentasBtnCotGuardar.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.VentasBtnCotGuardar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
-            this.VentasBtnCotGuardar.Location = new System.Drawing.Point(20, 613);
+            //
+
+            this.VentasBtnCotGuardar.Location = new System.Drawing.Point(20, 584);
             this.VentasBtnCotGuardar.Name = "VentasBtnCotGuardar";
-            this.VentasBtnCotGuardar.Size = new System.Drawing.Size(178, 34);
-            this.VentasBtnCotGuardar.TabIndex = 45;
-            this.VentasBtnCotGuardar.Text = "Guardar cotización";
+            this.VentasBtnCotGuardar.AccessibleDescription = "Guardar cotización";
+            this.VentasBtnCotGuardar.AccessibleName = "Guardar cotización";
+            // Imagen original completa: solo el color vino fue cambiado a morado.
+            this.VentasBtnCotGuardar.Text = string.Empty;
+            this.VentasBtnCotGuardar.BackColor = System.Drawing.Color.FromArgb(123, 63, 147);
+            this.VentasBtnCotGuardar.ForeColor = System.Drawing.Color.FromArgb(248, 245, 249);
+            this.VentasBtnCotGuardar.BackgroundImage = global::CapaVista_Ventas.Properties.Resources.BotonOriginalGuardarVentas;
+            this.VentasBtnCotGuardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.VentasBtnCotGuardar.Image = null;
+            this.VentasBtnCotGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.VentasBtnCotGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.VentasBtnCotGuardar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.VentasBtnCotGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.VentasBtnCotGuardar.FlatAppearance.BorderSize = 0;
+            this.VentasBtnCotGuardar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(59, 29, 74);
+            this.VentasBtnCotGuardar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(59, 29, 74);
+            this.VentasBtnCotGuardar.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.VentasBtnCotGuardar.Padding = new System.Windows.Forms.Padding(0);
             this.VentasBtnCotGuardar.UseVisualStyleBackColor = false;
-            // 
+            this.VentasBtnCotGuardar.UseCompatibleTextRendering = false;
+            this.VentasBtnCotGuardar.Size = new System.Drawing.Size(63, 64);
+            this.VentasBtnCotGuardar.TabIndex = 45;
+
+            //
             // VentasBtnCotLimpiar
-            // 
-            this.VentasBtnCotLimpiar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(212)))), ((int)(((byte)(234)))));
-            this.VentasBtnCotLimpiar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(63)))), ((int)(((byte)(147)))));
-            this.VentasBtnCotLimpiar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(212)))), ((int)(((byte)(234)))));
-            this.VentasBtnCotLimpiar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
-            this.VentasBtnCotLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.VentasBtnCotLimpiar.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.VentasBtnCotLimpiar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
-            this.VentasBtnCotLimpiar.Location = new System.Drawing.Point(210, 613);
+            //
+
+            this.VentasBtnCotLimpiar.Location = new System.Drawing.Point(104, 584);
             this.VentasBtnCotLimpiar.Name = "VentasBtnCotLimpiar";
-            this.VentasBtnCotLimpiar.Size = new System.Drawing.Size(142, 34);
-            this.VentasBtnCotLimpiar.TabIndex = 46;
-            this.VentasBtnCotLimpiar.Text = "Limpiar";
+            this.VentasBtnCotLimpiar.AccessibleDescription = "Limpiar";
+            this.VentasBtnCotLimpiar.AccessibleName = "Limpiar";
+            // Imagen original completa: solo el color vino fue cambiado a morado.
+            this.VentasBtnCotLimpiar.Text = string.Empty;
+            this.VentasBtnCotLimpiar.BackColor = System.Drawing.Color.FromArgb(123, 63, 147);
+            this.VentasBtnCotLimpiar.ForeColor = System.Drawing.Color.FromArgb(248, 245, 249);
+            this.VentasBtnCotLimpiar.BackgroundImage = global::CapaVista_Ventas.Properties.Resources.BotonOriginalRefrescarVentas;
+            this.VentasBtnCotLimpiar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.VentasBtnCotLimpiar.Image = null;
+            this.VentasBtnCotLimpiar.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.VentasBtnCotLimpiar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.VentasBtnCotLimpiar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.VentasBtnCotLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.VentasBtnCotLimpiar.FlatAppearance.BorderSize = 0;
+            this.VentasBtnCotLimpiar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(59, 29, 74);
+            this.VentasBtnCotLimpiar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(59, 29, 74);
+            this.VentasBtnCotLimpiar.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.VentasBtnCotLimpiar.Padding = new System.Windows.Forms.Padding(0);
             this.VentasBtnCotLimpiar.UseVisualStyleBackColor = false;
-            // 
+            this.VentasBtnCotLimpiar.UseCompatibleTextRendering = false;
+            this.VentasBtnCotLimpiar.Size = new System.Drawing.Size(64, 64);
+            this.VentasBtnCotLimpiar.TabIndex = 46;
+
+            //
             // VentasBtnCotPedido
-            // 
-            this.VentasBtnCotPedido.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
+            //
+
             this.VentasBtnCotPedido.Enabled = false;
-            this.VentasBtnCotPedido.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(63)))), ((int)(((byte)(147)))));
-            this.VentasBtnCotPedido.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(212)))), ((int)(((byte)(234)))));
-            this.VentasBtnCotPedido.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
-            this.VentasBtnCotPedido.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.VentasBtnCotPedido.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.VentasBtnCotPedido.ForeColor = System.Drawing.Color.Gray;
-            this.VentasBtnCotPedido.Location = new System.Drawing.Point(364, 613);
+
+            this.VentasBtnCotPedido.Location = new System.Drawing.Point(188, 584);
             this.VentasBtnCotPedido.Name = "VentasBtnCotPedido";
-            this.VentasBtnCotPedido.Size = new System.Drawing.Size(232, 34);
-            this.VentasBtnCotPedido.TabIndex = 47;
-            this.VentasBtnCotPedido.Text = "Convertir a pedido";
+            this.VentasBtnCotPedido.AccessibleDescription = "Convertir a pedido";
+            this.VentasBtnCotPedido.AccessibleName = "Convertir a pedido";
+            // Imagen original completa: solo el color vino fue cambiado a morado.
+            this.VentasBtnCotPedido.Text = string.Empty;
+            this.VentasBtnCotPedido.BackColor = System.Drawing.Color.FromArgb(123, 63, 147);
+            this.VentasBtnCotPedido.ForeColor = System.Drawing.Color.FromArgb(105, 105, 105);
+            this.VentasBtnCotPedido.BackgroundImage = global::CapaVista_Ventas.Properties.Resources.BotonOriginalIngresarVentas;
+            this.VentasBtnCotPedido.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.VentasBtnCotPedido.Image = null;
+            this.VentasBtnCotPedido.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.VentasBtnCotPedido.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.VentasBtnCotPedido.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.VentasBtnCotPedido.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.VentasBtnCotPedido.FlatAppearance.BorderSize = 0;
+            this.VentasBtnCotPedido.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(59, 29, 74);
+            this.VentasBtnCotPedido.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(59, 29, 74);
+            this.VentasBtnCotPedido.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.VentasBtnCotPedido.Padding = new System.Windows.Forms.Padding(0);
             this.VentasBtnCotPedido.UseVisualStyleBackColor = false;
-            // 
+            this.VentasBtnCotPedido.UseCompatibleTextRendering = false;
+            this.VentasBtnCotPedido.Size = new System.Drawing.Size(64, 64);
+            this.VentasBtnCotPedido.TabIndex = 47;
+
+            //
             // VentasBtnCotCerrar
-            // 
-            this.VentasBtnCotCerrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(212)))), ((int)(((byte)(234)))));
+            //
+
             this.VentasBtnCotCerrar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.VentasBtnCotCerrar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(63)))), ((int)(((byte)(147)))));
-            this.VentasBtnCotCerrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(212)))), ((int)(((byte)(234)))));
-            this.VentasBtnCotCerrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
-            this.VentasBtnCotCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.VentasBtnCotCerrar.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.VentasBtnCotCerrar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
-            this.VentasBtnCotCerrar.Location = new System.Drawing.Point(608, 613);
+
+            this.VentasBtnCotCerrar.Location = new System.Drawing.Point(272, 584);
             this.VentasBtnCotCerrar.Name = "VentasBtnCotCerrar";
-            this.VentasBtnCotCerrar.Size = new System.Drawing.Size(166, 34);
-            this.VentasBtnCotCerrar.TabIndex = 48;
-            this.VentasBtnCotCerrar.Text = "Cerrar";
+            this.VentasBtnCotCerrar.AccessibleDescription = "Cerrar";
+            this.VentasBtnCotCerrar.AccessibleName = "Cerrar";
+            // Imagen original completa: solo el color vino fue cambiado a morado.
+            this.VentasBtnCotCerrar.Text = string.Empty;
+            this.VentasBtnCotCerrar.BackColor = System.Drawing.Color.FromArgb(123, 63, 147);
+            this.VentasBtnCotCerrar.ForeColor = System.Drawing.Color.FromArgb(248, 245, 249);
+            this.VentasBtnCotCerrar.BackgroundImage = global::CapaVista_Ventas.Properties.Resources.BotonOriginalSalirVentas;
+            this.VentasBtnCotCerrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.VentasBtnCotCerrar.Image = null;
+            this.VentasBtnCotCerrar.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.VentasBtnCotCerrar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.VentasBtnCotCerrar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.VentasBtnCotCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.VentasBtnCotCerrar.FlatAppearance.BorderSize = 0;
+            this.VentasBtnCotCerrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(59, 29, 74);
+            this.VentasBtnCotCerrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(59, 29, 74);
+            this.VentasBtnCotCerrar.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.VentasBtnCotCerrar.Padding = new System.Windows.Forms.Padding(0);
             this.VentasBtnCotCerrar.UseVisualStyleBackColor = false;
-            // 
+            this.VentasBtnCotCerrar.UseCompatibleTextRendering = false;
+            this.VentasBtnCotCerrar.Size = new System.Drawing.Size(64, 64);
+            this.VentasBtnCotCerrar.TabIndex = 48;
+
+            //
             // VentasPnlCotTotales
-            // 
+            //
             this.VentasPnlCotTotales.BackColor = System.Drawing.Color.White;
             this.VentasPnlCotTotales.Controls.Add(this.VentasLblCotTituloSubtotal);
             this.VentasPnlCotTotales.Controls.Add(this.VentasLblCotSubtotal);
@@ -721,9 +835,9 @@ namespace CapaVista_Ventas
             this.VentasPnlCotTotales.Name = "VentasPnlCotTotales";
             this.VentasPnlCotTotales.Size = new System.Drawing.Size(292, 92);
             this.VentasPnlCotTotales.TabIndex = 49;
-            // 
+            //
             // VentasLblCotTituloSubtotal
-            // 
+            //
             this.VentasLblCotTituloSubtotal.BackColor = System.Drawing.Color.Transparent;
             this.VentasLblCotTituloSubtotal.Font = new System.Drawing.Font("Tahoma", 10F);
             this.VentasLblCotTituloSubtotal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
@@ -732,9 +846,9 @@ namespace CapaVista_Ventas
             this.VentasLblCotTituloSubtotal.Size = new System.Drawing.Size(126, 21);
             this.VentasLblCotTituloSubtotal.TabIndex = 50;
             this.VentasLblCotTituloSubtotal.Text = "Subtotal";
-            // 
+            //
             // VentasLblCotSubtotal
-            // 
+            //
             this.VentasLblCotSubtotal.BackColor = System.Drawing.Color.Transparent;
             this.VentasLblCotSubtotal.Font = new System.Drawing.Font("Tahoma", 10F);
             this.VentasLblCotSubtotal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
@@ -744,9 +858,9 @@ namespace CapaVista_Ventas
             this.VentasLblCotSubtotal.TabIndex = 51;
             this.VentasLblCotSubtotal.Text = "Q 0.00";
             this.VentasLblCotSubtotal.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
+            //
             // VentasLblCotTituloDescuentos
-            // 
+            //
             this.VentasLblCotTituloDescuentos.BackColor = System.Drawing.Color.Transparent;
             this.VentasLblCotTituloDescuentos.Font = new System.Drawing.Font("Tahoma", 10F);
             this.VentasLblCotTituloDescuentos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
@@ -755,9 +869,9 @@ namespace CapaVista_Ventas
             this.VentasLblCotTituloDescuentos.Size = new System.Drawing.Size(126, 21);
             this.VentasLblCotTituloDescuentos.TabIndex = 52;
             this.VentasLblCotTituloDescuentos.Text = "Descuento";
-            // 
+            //
             // VentasLblCotDescuentos
-            // 
+            //
             this.VentasLblCotDescuentos.BackColor = System.Drawing.Color.Transparent;
             this.VentasLblCotDescuentos.Font = new System.Drawing.Font("Tahoma", 10F);
             this.VentasLblCotDescuentos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
@@ -767,9 +881,9 @@ namespace CapaVista_Ventas
             this.VentasLblCotDescuentos.TabIndex = 53;
             this.VentasLblCotDescuentos.Text = "Q 0.00";
             this.VentasLblCotDescuentos.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
+            //
             // VentasLblCotTituloIva
-            // 
+            //
             this.VentasLblCotTituloIva.BackColor = System.Drawing.Color.Transparent;
             this.VentasLblCotTituloIva.Font = new System.Drawing.Font("Tahoma", 10F);
             this.VentasLblCotTituloIva.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
@@ -778,9 +892,9 @@ namespace CapaVista_Ventas
             this.VentasLblCotTituloIva.Size = new System.Drawing.Size(126, 21);
             this.VentasLblCotTituloIva.TabIndex = 54;
             this.VentasLblCotTituloIva.Text = "IVA";
-            // 
+            //
             // VentasLblCotIva
-            // 
+            //
             this.VentasLblCotIva.BackColor = System.Drawing.Color.Transparent;
             this.VentasLblCotIva.Font = new System.Drawing.Font("Tahoma", 10F);
             this.VentasLblCotIva.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
@@ -790,9 +904,9 @@ namespace CapaVista_Ventas
             this.VentasLblCotIva.TabIndex = 55;
             this.VentasLblCotIva.Text = "Q 0.00";
             this.VentasLblCotIva.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
+            //
             // VentasLblCotTituloTotal
-            // 
+            //
             this.VentasLblCotTituloTotal.BackColor = System.Drawing.Color.Transparent;
             this.VentasLblCotTituloTotal.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
             this.VentasLblCotTituloTotal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
@@ -801,9 +915,9 @@ namespace CapaVista_Ventas
             this.VentasLblCotTituloTotal.Size = new System.Drawing.Size(126, 21);
             this.VentasLblCotTituloTotal.TabIndex = 56;
             this.VentasLblCotTituloTotal.Text = "Total";
-            // 
+            //
             // VentasLblCotTotal
-            // 
+            //
             this.VentasLblCotTotal.BackColor = System.Drawing.Color.Transparent;
             this.VentasLblCotTotal.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold);
             this.VentasLblCotTotal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
@@ -813,9 +927,9 @@ namespace CapaVista_Ventas
             this.VentasLblCotTotal.TabIndex = 57;
             this.VentasLblCotTotal.Text = "Q 0.00";
             this.VentasLblCotTotal.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
+            //
             // FrmCotizacionVentas
-            // 
+            //
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
             this.CancelButton = this.VentasBtnCotCerrar;
@@ -854,6 +968,14 @@ namespace CapaVista_Ventas
             ((System.ComponentModel.ISupportInitialize)(this.VentasNudCotCantidad)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.VentasDgvCotProductos)).EndInit();
             this.VentasPnlCotTotales.ResumeLayout(false);
+            this.VentasTtpAccionesOriginales.SetToolTip(this.VentasBtnCotAgregar, "Agregar producto");
+            this.VentasTtpAccionesOriginales.SetToolTip(this.VentasBtnCotAnterior, "Anterior");
+            this.VentasTtpAccionesOriginales.SetToolTip(this.VentasBtnCotSiguiente, "Siguiente");
+            this.VentasTtpAccionesOriginales.SetToolTip(this.VentasBtnCotEliminar, "Eliminar producto");
+            this.VentasTtpAccionesOriginales.SetToolTip(this.VentasBtnCotGuardar, "Guardar cotización");
+            this.VentasTtpAccionesOriginales.SetToolTip(this.VentasBtnCotLimpiar, "Limpiar");
+            this.VentasTtpAccionesOriginales.SetToolTip(this.VentasBtnCotPedido, "Convertir a pedido");
+            this.VentasTtpAccionesOriginales.SetToolTip(this.VentasBtnCotCerrar, "Cerrar");
             this.ResumeLayout(false);
 
         }
@@ -920,7 +1042,8 @@ namespace CapaVista_Ventas
         private System.Windows.Forms.DataGridViewTextBoxColumn VentasColCotPrecio;
         private System.Windows.Forms.DataGridViewTextBoxColumn VentasColCotDescuento;
         private System.Windows.Forms.DataGridViewTextBoxColumn VentasColCotImporte;
+        private System.Windows.Forms.ToolTip VentasTtpAccionesOriginales;
     }
 }
 
-// FIN DEL CÓDIGO — Jose Torres | Carné: 0901-23-1091 | Fecha: 12/10/2026
+// FIN DEL CÓDIGO — Equipo asignado al formulario | Fecha: 14/10/2026

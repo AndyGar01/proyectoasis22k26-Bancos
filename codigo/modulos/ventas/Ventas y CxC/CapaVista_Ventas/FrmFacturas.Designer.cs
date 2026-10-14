@@ -1,7 +1,11 @@
-﻿/*
- * INICIO DEL CÓDIGO — Jose Torres
- * Carné: 0901-23-1091 | Fecha: 13/10/2026
- * Área: Ventas y cuentas por cobrar
+/*
+ * INICIO DEL CÓDIGO — Ventas y cuentas por cobrar
+ * Asignación: Matthew, Jose, Natali
+ * Matthew Andreé Juárez Xoy | Carné: 0901-23-4250
+ * Jose Javier Torres Martínez | Carné: 0901-23-1091
+ * Natali Sofía Montenegro Portillo | Carné: 0901-23-10017
+ * Encargado: Matthew Andreé Juárez Xoy
+ * Fecha de actualización: 14/10/2026
  * Propósito: Conservar los controles del prototipo visual de Facturas.
  */
 namespace CapaVista_Ventas
@@ -24,6 +28,8 @@ namespace CapaVista_Ventas
 
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            this.VentasTtpAccionesOriginales = new System.Windows.Forms.ToolTip(this.components);
             this.VentasLblTitulo = new System.Windows.Forms.Label();
             this.VentasLblEstablecimiento = new System.Windows.Forms.Label();
             this.VentasTxtEstablecimiento = new System.Windows.Forms.TextBox();
@@ -247,7 +253,7 @@ namespace CapaVista_Ventas
             //
             this.VentasDgvItems.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
             this.VentasDgvItems.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.VentasDgvItems.Location = new System.Drawing.Point(127, 600);
+            this.VentasDgvItems.Location = new System.Drawing.Point(127, 590);
             this.VentasDgvItems.Name = "VentasDgvItems";
             this.VentasDgvItems.RowHeadersWidth = 62;
             this.VentasDgvItems.RowTemplate.Height = 28;
@@ -378,33 +384,61 @@ namespace CapaVista_Ventas
             //
             // VentasBtnEmitirFactura
             //
-            this.VentasBtnEmitirFactura.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
-            this.VentasBtnEmitirFactura.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.VentasBtnEmitirFactura.ForeColor = System.Drawing.Color.White;
-            this.VentasBtnEmitirFactura.Image = global::CapaVista_Ventas.Properties.Resources.IconoCotizacionesPedidosFacturasVentas;
-            this.VentasBtnEmitirFactura.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.VentasBtnEmitirFactura.Location = new System.Drawing.Point(500, 648);
+
+            this.VentasBtnEmitirFactura.Location = new System.Drawing.Point(500, 634);
             this.VentasBtnEmitirFactura.Name = "VentasBtnEmitirFactura";
-            this.VentasBtnEmitirFactura.Size = new System.Drawing.Size(257, 44);
-            this.VentasBtnEmitirFactura.TabIndex = 30;
-            this.VentasBtnEmitirFactura.Text = "Emitir factura";
-            this.VentasBtnEmitirFactura.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.VentasBtnEmitirFactura.AccessibleDescription = "Emitir factura";
+            this.VentasBtnEmitirFactura.AccessibleName = "Emitir factura";
+            // Imagen original completa: solo el color vino fue cambiado a morado.
+            this.VentasBtnEmitirFactura.Text = string.Empty;
+            this.VentasBtnEmitirFactura.BackColor = System.Drawing.Color.FromArgb(123, 63, 147);
+            this.VentasBtnEmitirFactura.ForeColor = System.Drawing.Color.FromArgb(248, 245, 249);
+            this.VentasBtnEmitirFactura.BackgroundImage = global::CapaVista_Ventas.Properties.Resources.BotonOriginalImprimirVentas;
+            this.VentasBtnEmitirFactura.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.VentasBtnEmitirFactura.Image = null;
+            this.VentasBtnEmitirFactura.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.VentasBtnEmitirFactura.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.VentasBtnEmitirFactura.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.VentasBtnEmitirFactura.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.VentasBtnEmitirFactura.FlatAppearance.BorderSize = 0;
+            this.VentasBtnEmitirFactura.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(59, 29, 74);
+            this.VentasBtnEmitirFactura.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(59, 29, 74);
+            this.VentasBtnEmitirFactura.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.VentasBtnEmitirFactura.Padding = new System.Windows.Forms.Padding(0);
             this.VentasBtnEmitirFactura.UseVisualStyleBackColor = false;
+            this.VentasBtnEmitirFactura.UseCompatibleTextRendering = false;
+            this.VentasBtnEmitirFactura.Size = new System.Drawing.Size(64, 64);
+            this.VentasBtnEmitirFactura.TabIndex = 30;
+
             //
             // VentasBtnAgregarItem
             //
-            this.VentasBtnAgregarItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
-            this.VentasBtnAgregarItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.VentasBtnAgregarItem.ForeColor = System.Drawing.Color.White;
-            this.VentasBtnAgregarItem.Image = global::CapaVista_Ventas.Properties.Resources.IconoRecepcionPagosVentas;
-            this.VentasBtnAgregarItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.VentasBtnAgregarItem.Location = new System.Drawing.Point(999, 600);
+
+            this.VentasBtnAgregarItem.Location = new System.Drawing.Point(999, 590);
             this.VentasBtnAgregarItem.Name = "VentasBtnAgregarItem";
-            this.VentasBtnAgregarItem.Size = new System.Drawing.Size(178, 38);
-            this.VentasBtnAgregarItem.TabIndex = 31;
-            this.VentasBtnAgregarItem.Text = "Agregar ítem";
-            this.VentasBtnAgregarItem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.VentasBtnAgregarItem.AccessibleDescription = "Agregar ítem";
+            this.VentasBtnAgregarItem.AccessibleName = "Agregar ítem";
+            // Imagen original completa: solo el color vino fue cambiado a morado.
+            this.VentasBtnAgregarItem.Text = string.Empty;
+            this.VentasBtnAgregarItem.BackColor = System.Drawing.Color.FromArgb(123, 63, 147);
+            this.VentasBtnAgregarItem.ForeColor = System.Drawing.Color.FromArgb(248, 245, 249);
+            this.VentasBtnAgregarItem.BackgroundImage = global::CapaVista_Ventas.Properties.Resources.BotonOriginalIngresarVentas;
+            this.VentasBtnAgregarItem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.VentasBtnAgregarItem.Image = null;
+            this.VentasBtnAgregarItem.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.VentasBtnAgregarItem.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.VentasBtnAgregarItem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.VentasBtnAgregarItem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.VentasBtnAgregarItem.FlatAppearance.BorderSize = 0;
+            this.VentasBtnAgregarItem.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(59, 29, 74);
+            this.VentasBtnAgregarItem.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(59, 29, 74);
+            this.VentasBtnAgregarItem.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.VentasBtnAgregarItem.Padding = new System.Windows.Forms.Padding(0);
             this.VentasBtnAgregarItem.UseVisualStyleBackColor = false;
+            this.VentasBtnAgregarItem.UseCompatibleTextRendering = false;
+            this.VentasBtnAgregarItem.Size = new System.Drawing.Size(64, 64);
+            this.VentasBtnAgregarItem.TabIndex = 31;
+
             //
             // FrmFacturas
             //
@@ -453,6 +487,8 @@ namespace CapaVista_Ventas
             this.VentasGrpIdentificacion.ResumeLayout(false);
             this.VentasGrpIdentificacion.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.VentasDgvItems)).EndInit();
+            this.VentasTtpAccionesOriginales.SetToolTip(this.VentasBtnEmitirFactura, "Emitir factura");
+            this.VentasTtpAccionesOriginales.SetToolTip(this.VentasBtnAgregarItem, "Agregar ítem");
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -493,7 +529,8 @@ namespace CapaVista_Ventas
         private System.Windows.Forms.TextBox VentasTxtTotal;
         private System.Windows.Forms.Button VentasBtnEmitirFactura;
         private System.Windows.Forms.Button VentasBtnAgregarItem;
+        private System.Windows.Forms.ToolTip VentasTtpAccionesOriginales;
     }
 }
 
-// FIN DEL CÓDIGO — Jose Torres | Carné: 0901-23-1091 | Fecha: 13/10/2026
+// FIN DEL CÓDIGO — Equipo asignado al formulario | Fecha: 14/10/2026

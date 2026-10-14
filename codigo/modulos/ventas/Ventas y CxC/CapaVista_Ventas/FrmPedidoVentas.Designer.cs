@@ -1,4 +1,14 @@
-﻿namespace CapaVista_Ventas
+/*
+ * INICIO DEL CÓDIGO — Ventas y cuentas por cobrar
+ * Asignación: Matthew, Jose, Natali
+ * Matthew Andreé Juárez Xoy | Carné: 0901-23-4250
+ * Jose Javier Torres Martínez | Carné: 0901-23-1091
+ * Natali Sofía Montenegro Portillo | Carné: 0901-23-10017
+ * Encargado: Matthew Andreé Juárez Xoy
+ * Fecha de actualización: 14/10/2026
+ * Propósito: Formulario de Ventas y cuentas por cobrar.
+ */
+namespace CapaVista_Ventas
 {
     public partial class FrmPedidoVentas : System.Windows.Forms.Form
     {
@@ -17,6 +27,8 @@
 
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            this.VentasTtpAccionesOriginales = new System.Windows.Forms.ToolTip(this.components);
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPedidoVentas));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -73,9 +85,9 @@
             this.VentasPnlDetalleHead.SuspendLayout();
             this.VentasPnlDatosPedido.SuspendLayout();
             this.SuspendLayout();
-            // 
+            //
             // VentasPnlEncabezado
-            // 
+            //
             this.VentasPnlEncabezado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
             this.VentasPnlEncabezado.Controls.Add(this.VentasLblCodigo);
             this.VentasPnlEncabezado.Controls.Add(this.VentasLblSubtitulo);
@@ -86,9 +98,9 @@
             this.VentasPnlEncabezado.Padding = new System.Windows.Forms.Padding(28, 18, 28, 18);
             this.VentasPnlEncabezado.Size = new System.Drawing.Size(1120, 80);
             this.VentasPnlEncabezado.TabIndex = 0;
-            // 
+            //
             // VentasLblCodigo
-            // 
+            //
             this.VentasLblCodigo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.VentasLblCodigo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(162)))), ((int)(((byte)(74)))));
             this.VentasLblCodigo.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
@@ -99,9 +111,9 @@
             this.VentasLblCodigo.TabIndex = 2;
             this.VentasLblCodigo.Text = "7000  ·  PEDIDOS";
             this.VentasLblCodigo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
+            //
             // VentasLblSubtitulo
-            // 
+            //
             this.VentasLblSubtitulo.AutoSize = true;
             this.VentasLblSubtitulo.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.VentasLblSubtitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(212)))), ((int)(((byte)(234)))));
@@ -110,9 +122,9 @@
             this.VentasLblSubtitulo.Size = new System.Drawing.Size(404, 20);
             this.VentasLblSubtitulo.TabIndex = 1;
             this.VentasLblSubtitulo.Text = "VENTAS Y CUENTAS POR COBRAR  /  GESTIÓN DE PEDIDOS";
-            // 
+            //
             // VentasLblTitulo
-            // 
+            //
             this.VentasLblTitulo.AutoSize = true;
             this.VentasLblTitulo.Font = new System.Drawing.Font("Lucida Sans", 19F, System.Drawing.FontStyle.Bold);
             this.VentasLblTitulo.ForeColor = System.Drawing.Color.White;
@@ -121,9 +133,9 @@
             this.VentasLblTitulo.Size = new System.Drawing.Size(145, 37);
             this.VentasLblTitulo.TabIndex = 0;
             this.VentasLblTitulo.Text = "Pedidos";
-            // 
+            //
             // VentasPnlContenido
-            // 
+            //
             this.VentasPnlContenido.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
             this.VentasPnlContenido.Controls.Add(this.VentasBtnGuardar);
             this.VentasPnlContenido.Controls.Add(this.VentasBtnCancelar);
@@ -137,51 +149,73 @@
             this.VentasPnlContenido.Padding = new System.Windows.Forms.Padding(26, 20, 26, 18);
             this.VentasPnlContenido.Size = new System.Drawing.Size(1120, 580);
             this.VentasPnlContenido.TabIndex = 1;
-            // 
+            //
             // VentasBtnGuardar
-            // 
+            //
             this.VentasBtnGuardar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.VentasBtnGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
-            this.VentasBtnGuardar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("VentasBtnGuardar.BackgroundImage")));
-            this.VentasBtnGuardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+
             this.VentasBtnGuardar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.VentasBtnGuardar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(201, 162, 74);
-            this.VentasBtnGuardar.FlatAppearance.BorderSize = 2;
-            this.VentasBtnGuardar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(201, 162, 74);
-            this.VentasBtnGuardar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(123, 63, 147);
-            this.VentasBtnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.VentasBtnGuardar.Font = new System.Drawing.Font("Tahoma", 9.5F, System.Drawing.FontStyle.Bold);
-            this.VentasBtnGuardar.ForeColor = System.Drawing.Color.White;
-            this.VentasBtnGuardar.Location = new System.Drawing.Point(620, 488);
+
+            this.VentasBtnGuardar.Location = new System.Drawing.Point(620, 494);
             this.VentasBtnGuardar.Name = "VentasBtnGuardar";
-            this.VentasBtnGuardar.Size = new System.Drawing.Size(76, 70);
-            this.VentasBtnGuardar.TabIndex = 0;
+            this.VentasBtnGuardar.AccessibleDescription = "Guardar";
+            // Imagen original completa: solo el color vino fue cambiado a morado.
+            this.VentasBtnGuardar.Text = string.Empty;
+            this.VentasBtnGuardar.BackColor = System.Drawing.Color.FromArgb(123, 63, 147);
+            this.VentasBtnGuardar.ForeColor = System.Drawing.Color.FromArgb(248, 245, 249);
+            this.VentasBtnGuardar.BackgroundImage = global::CapaVista_Ventas.Properties.Resources.BotonOriginalGuardarVentas;
+            this.VentasBtnGuardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.VentasBtnGuardar.Image = null;
+            this.VentasBtnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.VentasBtnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.VentasBtnGuardar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.VentasBtnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.VentasBtnGuardar.FlatAppearance.BorderSize = 0;
+            this.VentasBtnGuardar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(59, 29, 74);
+            this.VentasBtnGuardar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(59, 29, 74);
+            this.VentasBtnGuardar.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.VentasBtnGuardar.Padding = new System.Windows.Forms.Padding(0);
             this.VentasBtnGuardar.UseVisualStyleBackColor = false;
-            this.VentasBtnGuardar.AccessibleName = "Guardar pedido (prototipo visual)";
-            // 
+            this.VentasBtnGuardar.UseCompatibleTextRendering = false;
+            this.VentasBtnGuardar.Size = new System.Drawing.Size(63, 64);
+            this.VentasBtnGuardar.TabIndex = 0;
+
+            this.VentasBtnGuardar.AccessibleName = "Guardar";
+            //
             // VentasBtnCancelar
-            // 
+            //
             this.VentasBtnCancelar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.VentasBtnCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(212)))), ((int)(((byte)(234)))));
-            this.VentasBtnCancelar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("VentasBtnCancelar.BackgroundImage")));
-            this.VentasBtnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+
             this.VentasBtnCancelar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.VentasBtnCancelar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(201, 162, 74);
-            this.VentasBtnCancelar.FlatAppearance.BorderSize = 2;
-            this.VentasBtnCancelar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(201, 162, 74);
-            this.VentasBtnCancelar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(228, 212, 234);
-            this.VentasBtnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.VentasBtnCancelar.Font = new System.Drawing.Font("Tahoma", 9.5F, System.Drawing.FontStyle.Bold);
-            this.VentasBtnCancelar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
-            this.VentasBtnCancelar.Location = new System.Drawing.Point(716, 488);
+
+            this.VentasBtnCancelar.Location = new System.Drawing.Point(716, 494);
             this.VentasBtnCancelar.Name = "VentasBtnCancelar";
-            this.VentasBtnCancelar.Size = new System.Drawing.Size(76, 70);
-            this.VentasBtnCancelar.TabIndex = 1;
+            this.VentasBtnCancelar.AccessibleDescription = "Cancelar";
+            // Imagen original completa: solo el color vino fue cambiado a morado.
+            this.VentasBtnCancelar.Text = string.Empty;
+            this.VentasBtnCancelar.BackColor = System.Drawing.Color.FromArgb(123, 63, 147);
+            this.VentasBtnCancelar.ForeColor = System.Drawing.Color.FromArgb(248, 245, 249);
+            this.VentasBtnCancelar.BackgroundImage = global::CapaVista_Ventas.Properties.Resources.BotonOriginalCancelarVentas;
+            this.VentasBtnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.VentasBtnCancelar.Image = null;
+            this.VentasBtnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.VentasBtnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.VentasBtnCancelar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.VentasBtnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.VentasBtnCancelar.FlatAppearance.BorderSize = 0;
+            this.VentasBtnCancelar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(59, 29, 74);
+            this.VentasBtnCancelar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(59, 29, 74);
+            this.VentasBtnCancelar.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.VentasBtnCancelar.Padding = new System.Windows.Forms.Padding(0);
             this.VentasBtnCancelar.UseVisualStyleBackColor = false;
-            this.VentasBtnCancelar.AccessibleName = "Cancelar pedido (prototipo visual)";
-            // 
+            this.VentasBtnCancelar.UseCompatibleTextRendering = false;
+            this.VentasBtnCancelar.Size = new System.Drawing.Size(64, 64);
+            this.VentasBtnCancelar.TabIndex = 1;
+
+            this.VentasBtnCancelar.AccessibleName = "Cancelar";
+            //
             // VentasPnlResumen
-            // 
+            //
             this.VentasPnlResumen.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.VentasPnlResumen.BackColor = System.Drawing.Color.White;
             this.VentasPnlResumen.Controls.Add(this.VentasLblTotal);
@@ -193,9 +227,9 @@
             this.VentasPnlResumen.Padding = new System.Windows.Forms.Padding(16, 10, 16, 10);
             this.VentasPnlResumen.Size = new System.Drawing.Size(334, 108);
             this.VentasPnlResumen.TabIndex = 5;
-            // 
+            //
             // VentasLblTotal
-            // 
+            //
             this.VentasLblTotal.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
             this.VentasLblTotal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
             this.VentasLblTotal.Location = new System.Drawing.Point(16, 62);
@@ -204,9 +238,9 @@
             this.VentasLblTotal.TabIndex = 3;
             this.VentasLblTotal.Text = "TOTAL DEL PEDIDO     Q 0.00";
             this.VentasLblTotal.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
+            //
             // VentasLblImpuesto
-            // 
+            //
             this.VentasLblImpuesto.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.VentasLblImpuesto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(93)))), ((int)(((byte)(103)))));
             this.VentasLblImpuesto.Location = new System.Drawing.Point(16, 43);
@@ -215,9 +249,9 @@
             this.VentasLblImpuesto.TabIndex = 2;
             this.VentasLblImpuesto.Text = "Impuestos                         Q 0.00";
             this.VentasLblImpuesto.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
+            //
             // VentasLblSubtotal
-            // 
+            //
             this.VentasLblSubtotal.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.VentasLblSubtotal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(93)))), ((int)(((byte)(103)))));
             this.VentasLblSubtotal.Location = new System.Drawing.Point(16, 25);
@@ -226,9 +260,9 @@
             this.VentasLblSubtotal.TabIndex = 1;
             this.VentasLblSubtotal.Text = "Subtotal                          Q 0.00";
             this.VentasLblSubtotal.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
+            //
             // VentasLblResumenTitulo
-            // 
+            //
             this.VentasLblResumenTitulo.AutoSize = true;
             this.VentasLblResumenTitulo.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.VentasLblResumenTitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(63)))), ((int)(((byte)(147)))));
@@ -237,16 +271,16 @@
             this.VentasLblResumenTitulo.Size = new System.Drawing.Size(154, 18);
             this.VentasLblResumenTitulo.TabIndex = 0;
             this.VentasLblResumenTitulo.Text = "RESUMEN DE PAGO";
-            // 
+            //
             // VentasDgvDetalle
-            // 
+            //
             this.VentasDgvDetalle.AllowUserToAddRows = true;
             this.VentasDgvDetalle.AllowUserToDeleteRows = true;
             this.VentasDgvDetalle.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
             this.VentasDgvDetalle.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.VentasDgvDetalle.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.VentasDgvDetalle.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.VentasDgvDetalle.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.VentasDgvDetalle.BackgroundColor = System.Drawing.Color.White;
@@ -279,7 +313,7 @@
             this.VentasDgvDetalle.DefaultCellStyle = dataGridViewCellStyle3;
             this.VentasDgvDetalle.EnableHeadersVisualStyles = false;
             this.VentasDgvDetalle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(229)))), ((int)(((byte)(238)))));
-            this.VentasDgvDetalle.Location = new System.Drawing.Point(29, 330);
+            this.VentasDgvDetalle.Location = new System.Drawing.Point(29, 334);
             this.VentasDgvDetalle.MultiSelect = false;
             this.VentasDgvDetalle.Name = "VentasDgvDetalle";
             this.VentasDgvDetalle.ReadOnly = false;
@@ -287,60 +321,60 @@
             this.VentasDgvDetalle.RowHeadersWidth = 51;
             this.VentasDgvDetalle.RowTemplate.Height = 38;
             this.VentasDgvDetalle.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.VentasDgvDetalle.Size = new System.Drawing.Size(1065, 130);
+            this.VentasDgvDetalle.Size = new System.Drawing.Size(1065, 126);
             this.VentasDgvDetalle.TabIndex = 2;
-            // 
+            //
             // VentasDgvcCodigo
-            // 
+            //
             this.VentasDgvcCodigo.FillWeight = 75F;
             this.VentasDgvcCodigo.HeaderText = "CÓDIGO";
             this.VentasDgvcCodigo.MinimumWidth = 6;
             this.VentasDgvcCodigo.Name = "VentasDgvcCodigo";
             this.VentasDgvcCodigo.ReadOnly = false;
-            // 
+            //
             // VentasDgvcProducto
-            // 
+            //
             this.VentasDgvcProducto.FillWeight = 210F;
             this.VentasDgvcProducto.HeaderText = "PRODUCTO";
             this.VentasDgvcProducto.MinimumWidth = 6;
             this.VentasDgvcProducto.Name = "VentasDgvcProducto";
             this.VentasDgvcProducto.ReadOnly = false;
-            // 
+            //
             // VentasDgvcCantidad
-            // 
+            //
             this.VentasDgvcCantidad.FillWeight = 75F;
             this.VentasDgvcCantidad.HeaderText = "CANTIDAD";
             this.VentasDgvcCantidad.MinimumWidth = 6;
             this.VentasDgvcCantidad.Name = "VentasDgvcCantidad";
             this.VentasDgvcCantidad.ReadOnly = false;
-            // 
+            //
             // VentasDgvcPrecio
-            // 
+            //
             this.VentasDgvcPrecio.FillWeight = 90F;
             this.VentasDgvcPrecio.HeaderText = "PRECIO UNITARIO";
             this.VentasDgvcPrecio.MinimumWidth = 6;
             this.VentasDgvcPrecio.Name = "VentasDgvcPrecio";
             this.VentasDgvcPrecio.ReadOnly = false;
-            // 
+            //
             // VentasDgvcDescuento
-            // 
+            //
             this.VentasDgvcDescuento.FillWeight = 75F;
             this.VentasDgvcDescuento.HeaderText = "DESCUENTO";
             this.VentasDgvcDescuento.MinimumWidth = 6;
             this.VentasDgvcDescuento.Name = "VentasDgvcDescuento";
             this.VentasDgvcDescuento.ReadOnly = false;
-            // 
+            //
             // VentasDgvcTotal
-            // 
+            //
             this.VentasDgvcTotal.FillWeight = 90F;
             this.VentasDgvcTotal.HeaderText = "TOTAL";
             this.VentasDgvcTotal.MinimumWidth = 6;
             this.VentasDgvcTotal.Name = "VentasDgvcTotal";
             this.VentasDgvcTotal.ReadOnly = false;
-            // 
+            //
             // VentasPnlDetalleHead
-            // 
-            this.VentasPnlDetalleHead.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            //
+            this.VentasPnlDetalleHead.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.VentasPnlDetalleHead.BackColor = System.Drawing.Color.White;
             this.VentasPnlDetalleHead.Controls.Add(this.VentasLblDetalleAyuda);
@@ -350,60 +384,86 @@
             this.VentasPnlDetalleHead.Location = new System.Drawing.Point(29, 266);
             this.VentasPnlDetalleHead.Name = "VentasPnlDetalleHead";
             this.VentasPnlDetalleHead.Padding = new System.Windows.Forms.Padding(14, 10, 14, 8);
-            this.VentasPnlDetalleHead.Size = new System.Drawing.Size(1065, 64);
+            this.VentasPnlDetalleHead.Size = new System.Drawing.Size(1065, 68);
             this.VentasPnlDetalleHead.TabIndex = 1;
-            // 
+            //
             // VentasLblDetalleAyuda
-            // 
+            //
             this.VentasLblDetalleAyuda.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.VentasLblDetalleAyuda.Font = new System.Drawing.Font("Segoe UI", 8.5F);
             this.VentasLblDetalleAyuda.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(119)))), ((int)(((byte)(132)))));
             this.VentasLblDetalleAyuda.Location = new System.Drawing.Point(252, 19);
             this.VentasLblDetalleAyuda.Name = "VentasLblDetalleAyuda";
-            this.VentasLblDetalleAyuda.Size = new System.Drawing.Size(648, 26);
+            this.VentasLblDetalleAyuda.Size = new System.Drawing.Size(610, 26);
             this.VentasLblDetalleAyuda.TabIndex = 1;
             this.VentasLblDetalleAyuda.Text = "Cotización: referencia seleccionada arriba  ·  Independiente: productos capturado" +
     "s en el detalle";
             this.VentasLblDetalleAyuda.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
+            //
             // VentasBtnEliminarProducto
-            // 
-            this.VentasBtnEliminarProducto.AccessibleName = "Eliminar producto";
-            this.VentasBtnEliminarProducto.BackColor = System.Drawing.Color.White;
-            this.VentasBtnEliminarProducto.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("VentasBtnEliminarProducto.BackgroundImage")));
-            this.VentasBtnEliminarProducto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            //
+            this.VentasBtnEliminarProducto.AccessibleName = "Eliminar";
+
             this.VentasBtnEliminarProducto.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.VentasBtnEliminarProducto.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(201, 162, 74);
-            this.VentasBtnEliminarProducto.FlatAppearance.BorderSize = 1;
-            this.VentasBtnEliminarProducto.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(201, 162, 74);
-            this.VentasBtnEliminarProducto.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(228, 212, 234);
-            this.VentasBtnEliminarProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.VentasBtnEliminarProducto.Location = new System.Drawing.Point(998, 3);
+
+            this.VentasBtnEliminarProducto.Location = new System.Drawing.Point(974, 2);
             this.VentasBtnEliminarProducto.Name = "VentasBtnEliminarProducto";
-            this.VentasBtnEliminarProducto.Size = new System.Drawing.Size(58, 58);
-            this.VentasBtnEliminarProducto.TabIndex = 3;
+            this.VentasBtnEliminarProducto.AccessibleDescription = "Eliminar";
+            // Imagen original completa: solo el color vino fue cambiado a morado.
+            this.VentasBtnEliminarProducto.Text = string.Empty;
+            this.VentasBtnEliminarProducto.BackColor = System.Drawing.Color.FromArgb(123, 63, 147);
+            this.VentasBtnEliminarProducto.ForeColor = System.Drawing.Color.FromArgb(248, 245, 249);
+            this.VentasBtnEliminarProducto.BackgroundImage = global::CapaVista_Ventas.Properties.Resources.BotonOriginalEliminarVentas;
+            this.VentasBtnEliminarProducto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.VentasBtnEliminarProducto.Image = null;
+            this.VentasBtnEliminarProducto.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.VentasBtnEliminarProducto.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.VentasBtnEliminarProducto.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.VentasBtnEliminarProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.VentasBtnEliminarProducto.FlatAppearance.BorderSize = 0;
+            this.VentasBtnEliminarProducto.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(59, 29, 74);
+            this.VentasBtnEliminarProducto.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(59, 29, 74);
+            this.VentasBtnEliminarProducto.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.VentasBtnEliminarProducto.Padding = new System.Windows.Forms.Padding(0);
             this.VentasBtnEliminarProducto.UseVisualStyleBackColor = false;
-            // 
+            this.VentasBtnEliminarProducto.UseCompatibleTextRendering = false;
+            this.VentasBtnEliminarProducto.Size = new System.Drawing.Size(55, 64);
+            this.VentasBtnEliminarProducto.TabIndex = 3;
+
+            //
             // VentasBtnNuevoProducto
-            // 
-            this.VentasBtnNuevoProducto.AccessibleName = "Agregar producto";
-            this.VentasBtnNuevoProducto.BackColor = System.Drawing.Color.White;
-            this.VentasBtnNuevoProducto.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("VentasBtnNuevoProducto.BackgroundImage")));
-            this.VentasBtnNuevoProducto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            //
+            this.VentasBtnNuevoProducto.AccessibleName = "Ingresar";
+
             this.VentasBtnNuevoProducto.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.VentasBtnNuevoProducto.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(201, 162, 74);
-            this.VentasBtnNuevoProducto.FlatAppearance.BorderSize = 1;
-            this.VentasBtnNuevoProducto.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(201, 162, 74);
-            this.VentasBtnNuevoProducto.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(228, 212, 234);
-            this.VentasBtnNuevoProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.VentasBtnNuevoProducto.Location = new System.Drawing.Point(932, 3);
+
+            this.VentasBtnNuevoProducto.Location = new System.Drawing.Point(884, 2);
             this.VentasBtnNuevoProducto.Name = "VentasBtnNuevoProducto";
-            this.VentasBtnNuevoProducto.Size = new System.Drawing.Size(58, 58);
-            this.VentasBtnNuevoProducto.TabIndex = 2;
+            this.VentasBtnNuevoProducto.AccessibleDescription = "Ingresar";
+            // Imagen original completa: solo el color vino fue cambiado a morado.
+            this.VentasBtnNuevoProducto.Text = string.Empty;
+            this.VentasBtnNuevoProducto.BackColor = System.Drawing.Color.FromArgb(123, 63, 147);
+            this.VentasBtnNuevoProducto.ForeColor = System.Drawing.Color.FromArgb(248, 245, 249);
+            this.VentasBtnNuevoProducto.BackgroundImage = global::CapaVista_Ventas.Properties.Resources.BotonOriginalIngresarVentas;
+            this.VentasBtnNuevoProducto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.VentasBtnNuevoProducto.Image = null;
+            this.VentasBtnNuevoProducto.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.VentasBtnNuevoProducto.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.VentasBtnNuevoProducto.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.VentasBtnNuevoProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.VentasBtnNuevoProducto.FlatAppearance.BorderSize = 0;
+            this.VentasBtnNuevoProducto.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(59, 29, 74);
+            this.VentasBtnNuevoProducto.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(59, 29, 74);
+            this.VentasBtnNuevoProducto.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.VentasBtnNuevoProducto.Padding = new System.Windows.Forms.Padding(0);
             this.VentasBtnNuevoProducto.UseVisualStyleBackColor = false;
-            // 
+            this.VentasBtnNuevoProducto.UseCompatibleTextRendering = false;
+            this.VentasBtnNuevoProducto.Size = new System.Drawing.Size(64, 64);
+            this.VentasBtnNuevoProducto.TabIndex = 2;
+
+            //
             // VentasLblDetalleTitulo
-            // 
+            //
             this.VentasLblDetalleTitulo.AutoSize = true;
             this.VentasLblDetalleTitulo.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
             this.VentasLblDetalleTitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
@@ -412,10 +472,10 @@
             this.VentasLblDetalleTitulo.Size = new System.Drawing.Size(188, 21);
             this.VentasLblDetalleTitulo.TabIndex = 0;
             this.VentasLblDetalleTitulo.Text = "Detalle de productos";
-            // 
+            //
             // VentasPnlDatosPedido
-            // 
-            this.VentasPnlDatosPedido.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            //
+            this.VentasPnlDatosPedido.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.VentasPnlDatosPedido.BackColor = System.Drawing.Color.White;
             this.VentasPnlDatosPedido.Controls.Add(this.VentasCboCotizacionOrigen);
@@ -443,9 +503,9 @@
             this.VentasPnlDatosPedido.Padding = new System.Windows.Forms.Padding(16, 12, 16, 14);
             this.VentasPnlDatosPedido.Size = new System.Drawing.Size(1065, 242);
             this.VentasPnlDatosPedido.TabIndex = 0;
-            // 
+            //
             // VentasCboCotizacionOrigen
-            // 
+            //
             this.VentasCboCotizacionOrigen.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.VentasCboCotizacionOrigen.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.VentasCboCotizacionOrigen.FormattingEnabled = true;
@@ -457,9 +517,9 @@
             this.VentasCboCotizacionOrigen.Name = "VentasCboCotizacionOrigen";
             this.VentasCboCotizacionOrigen.Size = new System.Drawing.Size(280, 28);
             this.VentasCboCotizacionOrigen.TabIndex = 23;
-            // 
+            //
             // VentasLblCotizacionOrigen
-            // 
+            //
             this.VentasLblCotizacionOrigen.AutoSize = true;
             this.VentasLblCotizacionOrigen.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.VentasLblCotizacionOrigen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
@@ -468,9 +528,9 @@
             this.VentasLblCotizacionOrigen.Size = new System.Drawing.Size(190, 18);
             this.VentasLblCotizacionOrigen.TabIndex = 22;
             this.VentasLblCotizacionOrigen.Text = "Cotización de referencia";
-            // 
+            //
             // VentasTxtReferenciaIndependiente
-            // 
+            //
             this.VentasTxtReferenciaIndependiente.BackColor = System.Drawing.Color.White;
             this.VentasTxtReferenciaIndependiente.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.VentasTxtReferenciaIndependiente.Font = new System.Drawing.Font("Segoe UI", 9F);
@@ -479,9 +539,9 @@
             this.VentasTxtReferenciaIndependiente.Size = new System.Drawing.Size(272, 27);
             this.VentasTxtReferenciaIndependiente.TabIndex = 25;
             this.VentasTxtReferenciaIndependiente.Text = "Ingresar referencia propia";
-            // 
+            //
             // VentasLblReferenciaIndependiente
-            // 
+            //
             this.VentasLblReferenciaIndependiente.AutoSize = true;
             this.VentasLblReferenciaIndependiente.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.VentasLblReferenciaIndependiente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
@@ -490,9 +550,9 @@
             this.VentasLblReferenciaIndependiente.Size = new System.Drawing.Size(200, 18);
             this.VentasLblReferenciaIndependiente.TabIndex = 24;
             this.VentasLblReferenciaIndependiente.Text = "Referencia independiente";
-            // 
+            //
             // VentasChkPedidoIndependiente
-            // 
+            //
             this.VentasChkPedidoIndependiente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
             this.VentasChkPedidoIndependiente.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.VentasChkPedidoIndependiente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
@@ -502,9 +562,9 @@
             this.VentasChkPedidoIndependiente.TabIndex = 21;
             this.VentasChkPedidoIndependiente.Text = "Independiente";
             this.VentasChkPedidoIndependiente.UseVisualStyleBackColor = false;
-            // 
+            //
             // VentasChkPedidoPorCotizacion
-            // 
+            //
             this.VentasChkPedidoPorCotizacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(212)))), ((int)(((byte)(234)))));
             this.VentasChkPedidoPorCotizacion.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.VentasChkPedidoPorCotizacion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
@@ -514,9 +574,9 @@
             this.VentasChkPedidoPorCotizacion.TabIndex = 20;
             this.VentasChkPedidoPorCotizacion.Text = "Por cotización";
             this.VentasChkPedidoPorCotizacion.UseVisualStyleBackColor = false;
-            // 
+            //
             // VentasLblOrigenPedido
-            // 
+            //
             this.VentasLblOrigenPedido.AutoSize = true;
             this.VentasLblOrigenPedido.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.VentasLblOrigenPedido.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
@@ -525,9 +585,9 @@
             this.VentasLblOrigenPedido.Size = new System.Drawing.Size(140, 18);
             this.VentasLblOrigenPedido.TabIndex = 19;
             this.VentasLblOrigenPedido.Text = "Origen del pedido";
-            // 
+            //
             // VentasCboVendedor
-            // 
+            //
             this.VentasCboVendedor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.VentasCboVendedor.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.VentasCboVendedor.FormattingEnabled = true;
@@ -537,9 +597,9 @@
             this.VentasCboVendedor.Name = "VentasCboVendedor";
             this.VentasCboVendedor.Size = new System.Drawing.Size(490, 31);
             this.VentasCboVendedor.TabIndex = 11;
-            // 
+            //
             // VentasLblVendedor
-            // 
+            //
             this.VentasLblVendedor.AutoSize = true;
             this.VentasLblVendedor.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.VentasLblVendedor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
@@ -548,18 +608,18 @@
             this.VentasLblVendedor.Size = new System.Drawing.Size(79, 18);
             this.VentasLblVendedor.TabIndex = 10;
             this.VentasLblVendedor.Text = "Vendedor";
-            // 
+            //
             // VentasDtpEntrega
-            // 
+            //
             this.VentasDtpEntrega.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.VentasDtpEntrega.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.VentasDtpEntrega.Location = new System.Drawing.Point(280, 194);
             this.VentasDtpEntrega.Name = "VentasDtpEntrega";
             this.VentasDtpEntrega.Size = new System.Drawing.Size(238, 30);
             this.VentasDtpEntrega.TabIndex = 9;
-            // 
+            //
             // VentasLblEntrega
-            // 
+            //
             this.VentasLblEntrega.AutoSize = true;
             this.VentasLblEntrega.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.VentasLblEntrega.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
@@ -568,9 +628,9 @@
             this.VentasLblEntrega.Size = new System.Drawing.Size(136, 18);
             this.VentasLblEntrega.TabIndex = 8;
             this.VentasLblEntrega.Text = "Fecha de entrega";
-            // 
+            //
             // VentasCboEstado
-            // 
+            //
             this.VentasCboEstado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.VentasCboEstado.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.VentasCboEstado.FormattingEnabled = true;
@@ -582,9 +642,9 @@
             this.VentasCboEstado.Name = "VentasCboEstado";
             this.VentasCboEstado.Size = new System.Drawing.Size(228, 31);
             this.VentasCboEstado.TabIndex = 7;
-            // 
+            //
             // VentasLblEstado
-            // 
+            //
             this.VentasLblEstado.AutoSize = true;
             this.VentasLblEstado.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.VentasLblEstado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
@@ -593,18 +653,18 @@
             this.VentasLblEstado.Size = new System.Drawing.Size(58, 18);
             this.VentasLblEstado.TabIndex = 6;
             this.VentasLblEstado.Text = "Estado";
-            // 
+            //
             // VentasDtpPedido
-            // 
+            //
             this.VentasDtpPedido.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.VentasDtpPedido.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.VentasDtpPedido.Location = new System.Drawing.Point(815, 132);
             this.VentasDtpPedido.Name = "VentasDtpPedido";
             this.VentasDtpPedido.Size = new System.Drawing.Size(221, 30);
             this.VentasDtpPedido.TabIndex = 5;
-            // 
+            //
             // VentasLblFechaPedido
-            // 
+            //
             this.VentasLblFechaPedido.AutoSize = true;
             this.VentasLblFechaPedido.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.VentasLblFechaPedido.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
@@ -613,9 +673,9 @@
             this.VentasLblFechaPedido.Size = new System.Drawing.Size(128, 18);
             this.VentasLblFechaPedido.TabIndex = 4;
             this.VentasLblFechaPedido.Text = "Fecha de pedido";
-            // 
+            //
             // VentasCboCliente
-            // 
+            //
             this.VentasCboCliente.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.VentasCboCliente.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.VentasCboCliente.FormattingEnabled = true;
@@ -625,9 +685,9 @@
             this.VentasCboCliente.Name = "VentasCboCliente";
             this.VentasCboCliente.Size = new System.Drawing.Size(503, 31);
             this.VentasCboCliente.TabIndex = 3;
-            // 
+            //
             // VentasLblCliente
-            // 
+            //
             this.VentasLblCliente.AutoSize = true;
             this.VentasLblCliente.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.VentasLblCliente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
@@ -636,9 +696,9 @@
             this.VentasLblCliente.Size = new System.Drawing.Size(61, 18);
             this.VentasLblCliente.TabIndex = 2;
             this.VentasLblCliente.Text = "Cliente";
-            // 
+            //
             // VentasTxtNumeroPedido
-            // 
+            //
             this.VentasTxtNumeroPedido.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
             this.VentasTxtNumeroPedido.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.VentasTxtNumeroPedido.Font = new System.Drawing.Font("Segoe UI", 10F);
@@ -649,9 +709,9 @@
             this.VentasTxtNumeroPedido.Size = new System.Drawing.Size(228, 30);
             this.VentasTxtNumeroPedido.TabIndex = 1;
             this.VentasTxtNumeroPedido.Text = "Se asignará al guardar";
-            // 
+            //
             // VentasLblNumeroPedido
-            // 
+            //
             this.VentasLblNumeroPedido.AutoSize = true;
             this.VentasLblNumeroPedido.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.VentasLblNumeroPedido.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
@@ -660,9 +720,9 @@
             this.VentasLblNumeroPedido.Size = new System.Drawing.Size(143, 18);
             this.VentasLblNumeroPedido.TabIndex = 0;
             this.VentasLblNumeroPedido.Text = "Número de pedido";
-            // 
+            //
             // VentasLblDatosTitulo
-            // 
+            //
             this.VentasLblDatosTitulo.AutoSize = true;
             this.VentasLblDatosTitulo.Font = new System.Drawing.Font("Tahoma", 11F, System.Drawing.FontStyle.Bold);
             this.VentasLblDatosTitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
@@ -671,9 +731,9 @@
             this.VentasLblDatosTitulo.Size = new System.Drawing.Size(171, 23);
             this.VentasLblDatosTitulo.TabIndex = 12;
             this.VentasLblDatosTitulo.Text = "Datos del pedido";
-            // 
+            //
             // FrmPedidoVentas
-            // 
+            //
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
@@ -698,6 +758,10 @@
             this.VentasPnlDetalleHead.PerformLayout();
             this.VentasPnlDatosPedido.ResumeLayout(false);
             this.VentasPnlDatosPedido.PerformLayout();
+            this.VentasTtpAccionesOriginales.SetToolTip(this.VentasBtnGuardar, "Guardar");
+            this.VentasTtpAccionesOriginales.SetToolTip(this.VentasBtnCancelar, "Cancelar");
+            this.VentasTtpAccionesOriginales.SetToolTip(this.VentasBtnEliminarProducto, "Eliminar");
+            this.VentasTtpAccionesOriginales.SetToolTip(this.VentasBtnNuevoProducto, "Ingresar");
             this.ResumeLayout(false);
 
         }
@@ -750,6 +814,7 @@
         private System.Windows.Forms.Label VentasLblReferenciaIndependiente;
         private System.Windows.Forms.TextBox VentasTxtReferenciaIndependiente;
 
+        private System.Windows.Forms.ToolTip VentasTtpAccionesOriginales;
     }
 }
 

@@ -1,6 +1,6 @@
-﻿/*
+/*
  * INICIO DEL CÓDIGO — Jose Torres
- * Carné: 0901-23-1091 | Fecha: 10/10/2026
+ * Carné: 0901-23-1091 | Fecha: 14/10/2026
  * Área: Ventas y cuentas por cobrar
  * Propósito: Definir el login con controles de la caja de herramientas y la paleta de Ventas.
  */
@@ -21,6 +21,7 @@ namespace CapaVista_Ventas
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            this.VentasTtpAccionesOriginales = new System.Windows.Forms.ToolTip(this.components);
             this.VentasPnlAcceso = new System.Windows.Forms.Panel();
             this.VentasPbMascotaLogin = new System.Windows.Forms.PictureBox();
             this.VentasPbLogoLogin = new System.Windows.Forms.PictureBox();
@@ -90,6 +91,26 @@ namespace CapaVista_Ventas
             this.VentasChkMostrarContrasena.Font = new System.Drawing.Font("Tahoma", 9F);
             // VentasBtnLogin — Acción de autenticación.
             this.VentasBtnLogin.Name = "VentasBtnLogin";
+            this.VentasBtnLogin.AccessibleDescription = "Ingresar";
+            this.VentasBtnLogin.AccessibleName = "Ingresar";
+            // Imagen original completa: solo el color vino fue cambiado a morado.
+            this.VentasBtnLogin.Text = string.Empty;
+            this.VentasBtnLogin.BackColor = System.Drawing.Color.FromArgb(123, 63, 147);
+            this.VentasBtnLogin.ForeColor = System.Drawing.Color.FromArgb(248, 245, 249);
+            this.VentasBtnLogin.BackgroundImage = global::CapaVista_Ventas.Properties.Resources.BotonOriginalIngresarVentas;
+            this.VentasBtnLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.VentasBtnLogin.Image = null;
+            this.VentasBtnLogin.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.VentasBtnLogin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.VentasBtnLogin.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.VentasBtnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.VentasBtnLogin.FlatAppearance.BorderSize = 0;
+            this.VentasBtnLogin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(59, 29, 74);
+            this.VentasBtnLogin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(59, 29, 74);
+            this.VentasBtnLogin.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.VentasBtnLogin.Padding = new System.Windows.Forms.Padding(0);
+            this.VentasBtnLogin.UseVisualStyleBackColor = false;
+            this.VentasBtnLogin.UseCompatibleTextRendering = false;
             this.VentasBtnLogin.TabIndex = 11;
             // VentasLnkRecuperarContrasena — Acceso a ayuda de recuperación.
             this.VentasLnkRecuperarContrasena.Name = "VentasLnkRecuperarContrasena";
@@ -173,20 +194,12 @@ namespace CapaVista_Ventas
             this.VentasChkMostrarContrasena.Text = "Mostrar";
             this.VentasChkMostrarContrasena.TabIndex = 2;
             this.VentasChkMostrarContrasena.CheckedChanged += new System.EventHandler(this.VentasChkMostrarContrasena_CheckedChanged);
-            this.VentasBtnLogin.Location = new System.Drawing.Point(117, 366);
-            this.VentasBtnLogin.Size = new System.Drawing.Size(120, 36);
-            this.VentasBtnLogin.Text = "LOGIN";
-            this.VentasBtnLogin.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.VentasBtnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.VentasBtnLogin.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(201, 162, 74);
-            this.VentasBtnLogin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(123, 63, 147);
-            this.VentasBtnLogin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(59, 29, 74);
-            this.VentasBtnLogin.BackColor = System.Drawing.Color.FromArgb(59, 29, 74);
-            this.VentasBtnLogin.ForeColor = System.Drawing.Color.FromArgb(248, 245, 249);
-            this.VentasBtnLogin.UseVisualStyleBackColor = false;
+            this.VentasBtnLogin.Location = new System.Drawing.Point(143, 350);
+            this.VentasBtnLogin.Size = new System.Drawing.Size(64, 64);
+
             this.VentasBtnLogin.TabIndex = 3;
             this.VentasBtnLogin.Click += new System.EventHandler(this.VentasBtnLogin_Click);
-            this.VentasLnkRecuperarContrasena.Location = new System.Drawing.Point(43, 414);
+            this.VentasLnkRecuperarContrasena.Location = new System.Drawing.Point(43, 422);
             this.VentasLnkRecuperarContrasena.Size = new System.Drawing.Size(275, 25);
             this.VentasLnkRecuperarContrasena.Text = "¿Olvidaste tu contraseña?";
             this.VentasLnkRecuperarContrasena.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -227,6 +240,7 @@ namespace CapaVista_Ventas
             this.VentasPnlContrasena.ResumeLayout(false);
             this.VentasPnlContrasena.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.VentasErrCampos)).EndInit();
+            this.VentasTtpAccionesOriginales.SetToolTip(this.VentasBtnLogin, "Ingresar");
             this.ResumeLayout(false);
         }
         #endregion
@@ -246,7 +260,8 @@ namespace CapaVista_Ventas
         private System.Windows.Forms.LinkLabel VentasLnkRecuperarContrasena;
         private System.Windows.Forms.Label VentasLblEstado;
         private System.Windows.Forms.ErrorProvider VentasErrCampos;
+        private System.Windows.Forms.ToolTip VentasTtpAccionesOriginales;
     }
 }
 
-// FIN DEL CÓDIGO — Jose Torres | Carné: 0901-23-1091 | Fecha: 10/10/2026
+// FIN DEL CÓDIGO — Jose Torres | Carné: 0901-23-1091 | Fecha: 14/10/2026

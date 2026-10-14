@@ -1,11 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+/*
+ * INICIO DEL CÓDIGO — Ventas y cuentas por cobrar
+ * Asignación: Matthew, Diego
+ * Matthew Andreé Juárez Xoy | Carné: 0901-23-4250
+ * Diego Alejandro Cheng Peña | Carné: 0901-22-8091
+ * Encargado: Diego Alejandro Cheng Peña
+ * Fecha de actualización: 14/10/2026
+ * Propósito: Prototipo visual estandarizado de listado de precios.
+ */
 using System.Windows.Forms;
 
 namespace CapaVista_Ventas
@@ -16,30 +17,7 @@ namespace CapaVista_Ventas
         {
             InitializeComponent();
         }
-
-        private void FrmListadoPrecios_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void VentasLblCotNumero_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void VentasDgvLstCliente_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
-        }
     }
 }
+
+// FIN DEL CÓDIGO — Equipo asignado al formulario | Fecha: 14/10/2026

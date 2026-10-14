@@ -1,6 +1,6 @@
 ﻿/*
  * INICIO DEL CÓDIGO — Jose Torres
- * Carné: 0901-23-1091 | Fecha: 12/10/2026
+ * Carné: 0901-23-1091 | Fecha: 10/10/2026
  * Área: Ventas y cuentas por cobrar
  * Propósito: Presentar el dashboard, sus indicadores y la navegación del módulo de Ventas.
  */
@@ -101,24 +101,12 @@ namespace CapaVista_Ventas
             // Aquí se puede agregar la acción específica del botón Inicio.
         }
 
-        // Listado de precios se desarrollará como página web en Blazor, no como formulario.
-        // Equipo: Matthew y Diego. Encargado: Diego.
+        // Abre el listado de precios de escritorio sobre el MDI.
         private void VentasBtnListadoPrecios_Click(object sender, EventArgs e)
         {
-            // adicion de la URL de la página web de Blazor que se abrirá en el navegador.
-            string urlBlazor = "http://localhost:5000/ventas-listado-precios";
-
-            try
+            using (FrmListadoPrecios Formulario = new FrmListadoPrecios())
             {
-                System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo
-                {
-                    FileName = urlBlazor,
-                    UseShellExecute = true
-                });
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(this, "No se pudo abrir el navegador: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Formulario.ShowDialog(this);
             }
         }
 
@@ -229,4 +217,4 @@ namespace CapaVista_Ventas
     }
 }
 
-// FIN DEL CÓDIGO — Jose Torres | Carné: 0901-23-1091 | Fecha: 12/10/2026
+// FIN DEL CÓDIGO — Jose Torres | Carné: 0901-23-1091 | Fecha: 10/10/2026

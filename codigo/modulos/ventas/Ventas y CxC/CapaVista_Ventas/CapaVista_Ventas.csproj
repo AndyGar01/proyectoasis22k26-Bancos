@@ -293,4 +293,24 @@
       <DependentUpon>FrmCotizacionVentas.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\..\recursos\modulos\ventas\botones\referencias\IngresarVentas.png"><Link>Recursos\Botones\Referencias\IngresarVentas.png</Link></None>
+    <None Include="..\..\..\..\..\recursos\modulos\ventas\botones\referencias\ConsultarVentas.png"><Link>Recursos\Botones\Referencias\ConsultarVentas.png</Link></None>
+    <None Include="..\..\..\..\..\recursos\modulos\ventas\botones\referencias\ModificarVentas.png"><Link>Recursos\Botones\Referencias\ModificarVentas.png</Link></None>
+    <None Include="..\..\..\..\..\recursos\modulos\ventas\botones\referencias\EliminarVentas.png"><Link>Recursos\Botones\Referencias\EliminarVentas.png</Link></None>
+    <None Include="..\..\..\..\..\recursos\modulos\ventas\botones\referencias\GuardarVentas.png"><Link>Recursos\Botones\Referencias\GuardarVentas.png</Link></None>
+    <None Include="..\..\..\..\..\recursos\modulos\ventas\botones\referencias\CancelarVentas.png"><Link>Recursos\Botones\Referencias\CancelarVentas.png</Link></None>
+    <None Include="..\..\..\..\..\recursos\modulos\ventas\botones\referencias\RefrescarVentas.png"><Link>Recursos\Botones\Referencias\RefrescarVentas.png</Link></None>
+    <None Include="..\..\..\..\..\recursos\modulos\ventas\botones\referencias\ImprimirVentas.png"><Link>Recursos\Botones\Referencias\ImprimirVentas.png</Link></None>
+    <None Include="..\..\..\..\..\recursos\modulos\ventas\botones\referencias\AyudaVentas.png"><Link>Recursos\Botones\Referencias\AyudaVentas.png</Link></None>
+    <None Include="..\..\..\..\..\recursos\modulos\ventas\botones\referencias\InicioVentas.png"><Link>Recursos\Botones\Referencias\InicioVentas.png</Link></None>
+    <None Include="..\..\..\..\..\recursos\modulos\ventas\botones\referencias\AnteriorVentas.png"><Link>Recursos\Botones\Referencias\AnteriorVentas.png</Link></None>
+    <None Include="..\..\..\..\..\recursos\modulos\ventas\botones\referencias\SiguienteVentas.png"><Link>Recursos\Botones\Referencias\SiguienteVentas.png</Link></None>
+    <None Include="..\..\..\..\..\recursos\modulos\ventas\botones\referencias\FinVentas.png"><Link>Recursos\Botones\Referencias\FinVentas.png</Link></None>
+    <None Include="..\..\..\..\..\recursos\modulos\ventas\botones\referencias\SalirVentas.png"><Link>Recursos\Botones\Referencias\SalirVentas.png</Link></None>
+  </ItemGroup>
 </Project>

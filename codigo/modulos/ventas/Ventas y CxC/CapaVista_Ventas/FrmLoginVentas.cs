@@ -1,6 +1,6 @@
-﻿/*
+/*
  * INICIO DEL CÓDIGO — Jose Torres
- * Carné: 0901-23-1091 | Fecha: 10/10/2026
+ * Carné: 0901-23-1091 | Fecha: 14/10/2026
  * Área: Ventas y cuentas por cobrar
  * Propósito: Validar los campos del login y gestionar el ciclo de acceso, splash, MDI y cierre de sesión.
  */
@@ -95,7 +95,8 @@ namespace CapaVista_Ventas
             VentasChkMostrarContrasena.Enabled = !Validando;
             VentasLnkRecuperarContrasena.Enabled = !Validando;
             VentasBtnLogin.Enabled = !Validando;
-            VentasBtnLogin.Text = Validando ? "VALIDANDO…" : "LOGIN";
+            VentasBtnLogin.Text = string.Empty;
+            VentasBtnLogin.BackgroundImage = Properties.Resources.BotonOriginalIngresarVentas;
             UseWaitCursor = Validando;
             // La bandera se libera al final para impedir reentradas durante los cambios de controles.
             if (!Validando) _Validando = false;
@@ -120,4 +121,4 @@ namespace CapaVista_Ventas
     }
 }
 
-// FIN DEL CÓDIGO — Jose Torres | Carné: 0901-23-1091 | Fecha: 10/10/2026
+// FIN DEL CÓDIGO — Jose Torres | Carné: 0901-23-1091 | Fecha: 14/10/2026

@@ -1,6 +1,6 @@
-﻿/*
+/*
  * INICIO DEL CÓDIGO — Jose Torres
- * Carné: 0901-23-1091 | Fecha: 10/10/2026
+ * Carné: 0901-23-1091 | Fecha: 14/10/2026
  * Área: Ventas y cuentas por cobrar
  * Propósito: Exponer los recursos visuales del diseñador mediante Properties.Resources; archivo regenerable.
  */
@@ -87,7 +87,35 @@ namespace CapaVista_Ventas.Properties
         { get { return ((global::System.Drawing.Bitmap)(ResourceManager.GetObject("FondoLoginVentas", resourceCulture))); } }
         internal static global::System.Drawing.Bitmap IconoAyudaVentas
         { get { return ((global::System.Drawing.Bitmap)(ResourceManager.GetObject("IconoAyudaVentas", resourceCulture))); } }
+        internal static global::System.Drawing.Bitmap BotonOriginalIngresarVentas
+        { get { return ((global::System.Drawing.Bitmap)(ResourceManager.GetObject("BotonOriginalIngresarVentas", resourceCulture))); } }
+        internal static global::System.Drawing.Bitmap BotonOriginalConsultarVentas
+        { get { return ((global::System.Drawing.Bitmap)(ResourceManager.GetObject("BotonOriginalConsultarVentas", resourceCulture))); } }
+        internal static global::System.Drawing.Bitmap BotonOriginalModificarVentas
+        { get { return ((global::System.Drawing.Bitmap)(ResourceManager.GetObject("BotonOriginalModificarVentas", resourceCulture))); } }
+        internal static global::System.Drawing.Bitmap BotonOriginalEliminarVentas
+        { get { return ((global::System.Drawing.Bitmap)(ResourceManager.GetObject("BotonOriginalEliminarVentas", resourceCulture))); } }
+        internal static global::System.Drawing.Bitmap BotonOriginalGuardarVentas
+        { get { return ((global::System.Drawing.Bitmap)(ResourceManager.GetObject("BotonOriginalGuardarVentas", resourceCulture))); } }
+        internal static global::System.Drawing.Bitmap BotonOriginalCancelarVentas
+        { get { return ((global::System.Drawing.Bitmap)(ResourceManager.GetObject("BotonOriginalCancelarVentas", resourceCulture))); } }
+        internal static global::System.Drawing.Bitmap BotonOriginalRefrescarVentas
+        { get { return ((global::System.Drawing.Bitmap)(ResourceManager.GetObject("BotonOriginalRefrescarVentas", resourceCulture))); } }
+        internal static global::System.Drawing.Bitmap BotonOriginalImprimirVentas
+        { get { return ((global::System.Drawing.Bitmap)(ResourceManager.GetObject("BotonOriginalImprimirVentas", resourceCulture))); } }
+        internal static global::System.Drawing.Bitmap BotonOriginalAyudaVentas
+        { get { return ((global::System.Drawing.Bitmap)(ResourceManager.GetObject("BotonOriginalAyudaVentas", resourceCulture))); } }
+        internal static global::System.Drawing.Bitmap BotonOriginalInicioVentas
+        { get { return ((global::System.Drawing.Bitmap)(ResourceManager.GetObject("BotonOriginalInicioVentas", resourceCulture))); } }
+        internal static global::System.Drawing.Bitmap BotonOriginalAnteriorVentas
+        { get { return ((global::System.Drawing.Bitmap)(ResourceManager.GetObject("BotonOriginalAnteriorVentas", resourceCulture))); } }
+        internal static global::System.Drawing.Bitmap BotonOriginalSiguienteVentas
+        { get { return ((global::System.Drawing.Bitmap)(ResourceManager.GetObject("BotonOriginalSiguienteVentas", resourceCulture))); } }
+        internal static global::System.Drawing.Bitmap BotonOriginalFinVentas
+        { get { return ((global::System.Drawing.Bitmap)(ResourceManager.GetObject("BotonOriginalFinVentas", resourceCulture))); } }
+        internal static global::System.Drawing.Bitmap BotonOriginalSalirVentas
+        { get { return ((global::System.Drawing.Bitmap)(ResourceManager.GetObject("BotonOriginalSalirVentas", resourceCulture))); } }
     }
 }
 
-// FIN DEL CÓDIGO — Jose Torres | Carné: 0901-23-1091 | Fecha: 10/10/2026
+// FIN DEL CÓDIGO — Jose Torres | Carné: 0901-23-1091 | Fecha: 14/10/2026

@@ -1,4 +1,4 @@
-namespace CapaVista_Ventas
+﻿namespace CapaVista_Ventas
 {
     public partial class FrmPedidoVentas : System.Windows.Forms.Form
     {
@@ -84,7 +84,7 @@ namespace CapaVista_Ventas
             this.VentasPnlEncabezado.Location = new System.Drawing.Point(0, 0);
             this.VentasPnlEncabezado.Name = "VentasPnlEncabezado";
             this.VentasPnlEncabezado.Padding = new System.Windows.Forms.Padding(28, 18, 28, 18);
-            this.VentasPnlEncabezado.Size = new System.Drawing.Size(1120, 104);
+            this.VentasPnlEncabezado.Size = new System.Drawing.Size(1120, 80);
             this.VentasPnlEncabezado.TabIndex = 0;
             // 
             // VentasLblCodigo
@@ -93,7 +93,7 @@ namespace CapaVista_Ventas
             this.VentasLblCodigo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(162)))), ((int)(((byte)(74)))));
             this.VentasLblCodigo.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.VentasLblCodigo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
-            this.VentasLblCodigo.Location = new System.Drawing.Point(916, 33);
+            this.VentasLblCodigo.Location = new System.Drawing.Point(916, 24);
             this.VentasLblCodigo.Name = "VentasLblCodigo";
             this.VentasLblCodigo.Size = new System.Drawing.Size(174, 30);
             this.VentasLblCodigo.TabIndex = 2;
@@ -105,7 +105,7 @@ namespace CapaVista_Ventas
             this.VentasLblSubtitulo.AutoSize = true;
             this.VentasLblSubtitulo.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.VentasLblSubtitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(212)))), ((int)(((byte)(234)))));
-            this.VentasLblSubtitulo.Location = new System.Drawing.Point(31, 63);
+            this.VentasLblSubtitulo.Location = new System.Drawing.Point(31, 52);
             this.VentasLblSubtitulo.Name = "VentasLblSubtitulo";
             this.VentasLblSubtitulo.Size = new System.Drawing.Size(404, 20);
             this.VentasLblSubtitulo.TabIndex = 1;
@@ -116,7 +116,7 @@ namespace CapaVista_Ventas
             this.VentasLblTitulo.AutoSize = true;
             this.VentasLblTitulo.Font = new System.Drawing.Font("Lucida Sans", 19F, System.Drawing.FontStyle.Bold);
             this.VentasLblTitulo.ForeColor = System.Drawing.Color.White;
-            this.VentasLblTitulo.Location = new System.Drawing.Point(27, 22);
+            this.VentasLblTitulo.Location = new System.Drawing.Point(27, 12);
             this.VentasLblTitulo.Name = "VentasLblTitulo";
             this.VentasLblTitulo.Size = new System.Drawing.Size(145, 37);
             this.VentasLblTitulo.TabIndex = 0;
@@ -132,10 +132,10 @@ namespace CapaVista_Ventas
             this.VentasPnlContenido.Controls.Add(this.VentasPnlDetalleHead);
             this.VentasPnlContenido.Controls.Add(this.VentasPnlDatosPedido);
             this.VentasPnlContenido.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.VentasPnlContenido.Location = new System.Drawing.Point(0, 104);
+            this.VentasPnlContenido.Location = new System.Drawing.Point(0, 80);
             this.VentasPnlContenido.Name = "VentasPnlContenido";
             this.VentasPnlContenido.Padding = new System.Windows.Forms.Padding(26, 20, 26, 18);
-            this.VentasPnlContenido.Size = new System.Drawing.Size(1120, 746);
+            this.VentasPnlContenido.Size = new System.Drawing.Size(1120, 580);
             this.VentasPnlContenido.TabIndex = 1;
             // 
             // VentasBtnGuardar
@@ -152,7 +152,7 @@ namespace CapaVista_Ventas
             this.VentasBtnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.VentasBtnGuardar.Font = new System.Drawing.Font("Tahoma", 9.5F, System.Drawing.FontStyle.Bold);
             this.VentasBtnGuardar.ForeColor = System.Drawing.Color.White;
-            this.VentasBtnGuardar.Location = new System.Drawing.Point(620, 638);
+            this.VentasBtnGuardar.Location = new System.Drawing.Point(620, 488);
             this.VentasBtnGuardar.Name = "VentasBtnGuardar";
             this.VentasBtnGuardar.Size = new System.Drawing.Size(76, 70);
             this.VentasBtnGuardar.TabIndex = 0;
@@ -173,7 +173,7 @@ namespace CapaVista_Ventas
             this.VentasBtnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.VentasBtnCancelar.Font = new System.Drawing.Font("Tahoma", 9.5F, System.Drawing.FontStyle.Bold);
             this.VentasBtnCancelar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
-            this.VentasBtnCancelar.Location = new System.Drawing.Point(716, 638);
+            this.VentasBtnCancelar.Location = new System.Drawing.Point(716, 488);
             this.VentasBtnCancelar.Name = "VentasBtnCancelar";
             this.VentasBtnCancelar.Size = new System.Drawing.Size(76, 70);
             this.VentasBtnCancelar.TabIndex = 1;
@@ -188,7 +188,7 @@ namespace CapaVista_Ventas
             this.VentasPnlResumen.Controls.Add(this.VentasLblImpuesto);
             this.VentasPnlResumen.Controls.Add(this.VentasLblSubtotal);
             this.VentasPnlResumen.Controls.Add(this.VentasLblResumenTitulo);
-            this.VentasPnlResumen.Location = new System.Drawing.Point(262, 622);
+            this.VentasPnlResumen.Location = new System.Drawing.Point(262, 472);
             this.VentasPnlResumen.Name = "VentasPnlResumen";
             this.VentasPnlResumen.Padding = new System.Windows.Forms.Padding(16, 10, 16, 10);
             this.VentasPnlResumen.Size = new System.Drawing.Size(334, 108);
@@ -279,7 +279,7 @@ namespace CapaVista_Ventas
             this.VentasDgvDetalle.DefaultCellStyle = dataGridViewCellStyle3;
             this.VentasDgvDetalle.EnableHeadersVisualStyles = false;
             this.VentasDgvDetalle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(229)))), ((int)(((byte)(238)))));
-            this.VentasDgvDetalle.Location = new System.Drawing.Point(29, 403);
+            this.VentasDgvDetalle.Location = new System.Drawing.Point(29, 330);
             this.VentasDgvDetalle.MultiSelect = false;
             this.VentasDgvDetalle.Name = "VentasDgvDetalle";
             this.VentasDgvDetalle.ReadOnly = false;
@@ -287,7 +287,7 @@ namespace CapaVista_Ventas
             this.VentasDgvDetalle.RowHeadersWidth = 51;
             this.VentasDgvDetalle.RowTemplate.Height = 38;
             this.VentasDgvDetalle.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.VentasDgvDetalle.Size = new System.Drawing.Size(1065, 206);
+            this.VentasDgvDetalle.Size = new System.Drawing.Size(1065, 130);
             this.VentasDgvDetalle.TabIndex = 2;
             // 
             // VentasDgvcCodigo
@@ -347,7 +347,7 @@ namespace CapaVista_Ventas
             this.VentasPnlDetalleHead.Controls.Add(this.VentasBtnEliminarProducto);
             this.VentasPnlDetalleHead.Controls.Add(this.VentasBtnNuevoProducto);
             this.VentasPnlDetalleHead.Controls.Add(this.VentasLblDetalleTitulo);
-            this.VentasPnlDetalleHead.Location = new System.Drawing.Point(29, 339);
+            this.VentasPnlDetalleHead.Location = new System.Drawing.Point(29, 266);
             this.VentasPnlDetalleHead.Name = "VentasPnlDetalleHead";
             this.VentasPnlDetalleHead.Padding = new System.Windows.Forms.Padding(14, 10, 14, 8);
             this.VentasPnlDetalleHead.Size = new System.Drawing.Size(1065, 64);
@@ -438,10 +438,10 @@ namespace CapaVista_Ventas
             this.VentasPnlDatosPedido.Controls.Add(this.VentasTxtNumeroPedido);
             this.VentasPnlDatosPedido.Controls.Add(this.VentasLblNumeroPedido);
             this.VentasPnlDatosPedido.Controls.Add(this.VentasLblDatosTitulo);
-            this.VentasPnlDatosPedido.Location = new System.Drawing.Point(29, 20);
+            this.VentasPnlDatosPedido.Location = new System.Drawing.Point(29, 14);
             this.VentasPnlDatosPedido.Name = "VentasPnlDatosPedido";
             this.VentasPnlDatosPedido.Padding = new System.Windows.Forms.Padding(16, 12, 16, 14);
-            this.VentasPnlDatosPedido.Size = new System.Drawing.Size(1065, 300);
+            this.VentasPnlDatosPedido.Size = new System.Drawing.Size(1065, 242);
             this.VentasPnlDatosPedido.TabIndex = 0;
             // 
             // VentasCboCotizacionOrigen
@@ -453,7 +453,7 @@ namespace CapaVista_Ventas
             "Seleccionar cotización",
             "COT-2026-014 · Cliente A",
             "COT-2026-018 · Cliente B"});
-            this.VentasCboCotizacionOrigen.Location = new System.Drawing.Point(243, 83);
+            this.VentasCboCotizacionOrigen.Location = new System.Drawing.Point(243, 62);
             this.VentasCboCotizacionOrigen.Name = "VentasCboCotizacionOrigen";
             this.VentasCboCotizacionOrigen.Size = new System.Drawing.Size(280, 28);
             this.VentasCboCotizacionOrigen.TabIndex = 23;
@@ -463,7 +463,7 @@ namespace CapaVista_Ventas
             this.VentasLblCotizacionOrigen.AutoSize = true;
             this.VentasLblCotizacionOrigen.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.VentasLblCotizacionOrigen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
-            this.VentasLblCotizacionOrigen.Location = new System.Drawing.Point(47, 86);
+            this.VentasLblCotizacionOrigen.Location = new System.Drawing.Point(47, 65);
             this.VentasLblCotizacionOrigen.Name = "VentasLblCotizacionOrigen";
             this.VentasLblCotizacionOrigen.Size = new System.Drawing.Size(190, 18);
             this.VentasLblCotizacionOrigen.TabIndex = 22;
@@ -474,7 +474,7 @@ namespace CapaVista_Ventas
             this.VentasTxtReferenciaIndependiente.BackColor = System.Drawing.Color.White;
             this.VentasTxtReferenciaIndependiente.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.VentasTxtReferenciaIndependiente.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.VentasTxtReferenciaIndependiente.Location = new System.Drawing.Point(751, 83);
+            this.VentasTxtReferenciaIndependiente.Location = new System.Drawing.Point(751, 62);
             this.VentasTxtReferenciaIndependiente.Name = "VentasTxtReferenciaIndependiente";
             this.VentasTxtReferenciaIndependiente.Size = new System.Drawing.Size(272, 27);
             this.VentasTxtReferenciaIndependiente.TabIndex = 25;
@@ -485,7 +485,7 @@ namespace CapaVista_Ventas
             this.VentasLblReferenciaIndependiente.AutoSize = true;
             this.VentasLblReferenciaIndependiente.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.VentasLblReferenciaIndependiente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
-            this.VentasLblReferenciaIndependiente.Location = new System.Drawing.Point(542, 87);
+            this.VentasLblReferenciaIndependiente.Location = new System.Drawing.Point(542, 66);
             this.VentasLblReferenciaIndependiente.Name = "VentasLblReferenciaIndependiente";
             this.VentasLblReferenciaIndependiente.Size = new System.Drawing.Size(200, 18);
             this.VentasLblReferenciaIndependiente.TabIndex = 24;
@@ -533,7 +533,7 @@ namespace CapaVista_Ventas
             this.VentasCboVendedor.FormattingEnabled = true;
             this.VentasCboVendedor.Items.AddRange(new object[] {
             "Seleccionar vendedor"});
-            this.VentasCboVendedor.Location = new System.Drawing.Point(546, 238);
+            this.VentasCboVendedor.Location = new System.Drawing.Point(546, 194);
             this.VentasCboVendedor.Name = "VentasCboVendedor";
             this.VentasCboVendedor.Size = new System.Drawing.Size(490, 31);
             this.VentasCboVendedor.TabIndex = 11;
@@ -543,7 +543,7 @@ namespace CapaVista_Ventas
             this.VentasLblVendedor.AutoSize = true;
             this.VentasLblVendedor.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.VentasLblVendedor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
-            this.VentasLblVendedor.Location = new System.Drawing.Point(543, 215);
+            this.VentasLblVendedor.Location = new System.Drawing.Point(543, 172);
             this.VentasLblVendedor.Name = "VentasLblVendedor";
             this.VentasLblVendedor.Size = new System.Drawing.Size(79, 18);
             this.VentasLblVendedor.TabIndex = 10;
@@ -553,7 +553,7 @@ namespace CapaVista_Ventas
             // 
             this.VentasDtpEntrega.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.VentasDtpEntrega.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.VentasDtpEntrega.Location = new System.Drawing.Point(280, 238);
+            this.VentasDtpEntrega.Location = new System.Drawing.Point(280, 194);
             this.VentasDtpEntrega.Name = "VentasDtpEntrega";
             this.VentasDtpEntrega.Size = new System.Drawing.Size(238, 30);
             this.VentasDtpEntrega.TabIndex = 9;
@@ -563,7 +563,7 @@ namespace CapaVista_Ventas
             this.VentasLblEntrega.AutoSize = true;
             this.VentasLblEntrega.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.VentasLblEntrega.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
-            this.VentasLblEntrega.Location = new System.Drawing.Point(277, 215);
+            this.VentasLblEntrega.Location = new System.Drawing.Point(277, 172);
             this.VentasLblEntrega.Name = "VentasLblEntrega";
             this.VentasLblEntrega.Size = new System.Drawing.Size(136, 18);
             this.VentasLblEntrega.TabIndex = 8;
@@ -578,7 +578,7 @@ namespace CapaVista_Ventas
             "Pendiente",
             "Confirmado",
             "En preparación"});
-            this.VentasCboEstado.Location = new System.Drawing.Point(26, 238);
+            this.VentasCboEstado.Location = new System.Drawing.Point(26, 194);
             this.VentasCboEstado.Name = "VentasCboEstado";
             this.VentasCboEstado.Size = new System.Drawing.Size(228, 31);
             this.VentasCboEstado.TabIndex = 7;
@@ -588,7 +588,7 @@ namespace CapaVista_Ventas
             this.VentasLblEstado.AutoSize = true;
             this.VentasLblEstado.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.VentasLblEstado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
-            this.VentasLblEstado.Location = new System.Drawing.Point(23, 215);
+            this.VentasLblEstado.Location = new System.Drawing.Point(23, 172);
             this.VentasLblEstado.Name = "VentasLblEstado";
             this.VentasLblEstado.Size = new System.Drawing.Size(58, 18);
             this.VentasLblEstado.TabIndex = 6;
@@ -598,7 +598,7 @@ namespace CapaVista_Ventas
             // 
             this.VentasDtpPedido.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.VentasDtpPedido.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.VentasDtpPedido.Location = new System.Drawing.Point(815, 154);
+            this.VentasDtpPedido.Location = new System.Drawing.Point(815, 132);
             this.VentasDtpPedido.Name = "VentasDtpPedido";
             this.VentasDtpPedido.Size = new System.Drawing.Size(221, 30);
             this.VentasDtpPedido.TabIndex = 5;
@@ -608,7 +608,7 @@ namespace CapaVista_Ventas
             this.VentasLblFechaPedido.AutoSize = true;
             this.VentasLblFechaPedido.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.VentasLblFechaPedido.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
-            this.VentasLblFechaPedido.Location = new System.Drawing.Point(812, 131);
+            this.VentasLblFechaPedido.Location = new System.Drawing.Point(812, 110);
             this.VentasLblFechaPedido.Name = "VentasLblFechaPedido";
             this.VentasLblFechaPedido.Size = new System.Drawing.Size(128, 18);
             this.VentasLblFechaPedido.TabIndex = 4;
@@ -621,7 +621,7 @@ namespace CapaVista_Ventas
             this.VentasCboCliente.FormattingEnabled = true;
             this.VentasCboCliente.Items.AddRange(new object[] {
             "Seleccionar cliente"});
-            this.VentasCboCliente.Location = new System.Drawing.Point(281, 154);
+            this.VentasCboCliente.Location = new System.Drawing.Point(281, 132);
             this.VentasCboCliente.Name = "VentasCboCliente";
             this.VentasCboCliente.Size = new System.Drawing.Size(503, 31);
             this.VentasCboCliente.TabIndex = 3;
@@ -631,7 +631,7 @@ namespace CapaVista_Ventas
             this.VentasLblCliente.AutoSize = true;
             this.VentasLblCliente.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.VentasLblCliente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
-            this.VentasLblCliente.Location = new System.Drawing.Point(277, 131);
+            this.VentasLblCliente.Location = new System.Drawing.Point(277, 110);
             this.VentasLblCliente.Name = "VentasLblCliente";
             this.VentasLblCliente.Size = new System.Drawing.Size(61, 18);
             this.VentasLblCliente.TabIndex = 2;
@@ -643,7 +643,7 @@ namespace CapaVista_Ventas
             this.VentasTxtNumeroPedido.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.VentasTxtNumeroPedido.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.VentasTxtNumeroPedido.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(96)))), ((int)(((byte)(111)))));
-            this.VentasTxtNumeroPedido.Location = new System.Drawing.Point(26, 154);
+            this.VentasTxtNumeroPedido.Location = new System.Drawing.Point(26, 132);
             this.VentasTxtNumeroPedido.Name = "VentasTxtNumeroPedido";
             this.VentasTxtNumeroPedido.ReadOnly = false;
             this.VentasTxtNumeroPedido.Size = new System.Drawing.Size(228, 30);
@@ -655,7 +655,7 @@ namespace CapaVista_Ventas
             this.VentasLblNumeroPedido.AutoSize = true;
             this.VentasLblNumeroPedido.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.VentasLblNumeroPedido.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
-            this.VentasLblNumeroPedido.Location = new System.Drawing.Point(23, 131);
+            this.VentasLblNumeroPedido.Location = new System.Drawing.Point(23, 110);
             this.VentasLblNumeroPedido.Name = "VentasLblNumeroPedido";
             this.VentasLblNumeroPedido.Size = new System.Drawing.Size(143, 18);
             this.VentasLblNumeroPedido.TabIndex = 0;
@@ -677,14 +677,14 @@ namespace CapaVista_Ventas
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
-            this.ClientSize = new System.Drawing.Size(1120, 850);
+            this.ClientSize = new System.Drawing.Size(1120, 660);
             this.Controls.Add(this.VentasPnlContenido);
             this.Controls.Add(this.VentasPnlEncabezado);
             this.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(1136, 889);
+            this.MinimumSize = new System.Drawing.Size(1136, 699);
             this.Name = "FrmPedidoVentas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "7000 – Pedidos";

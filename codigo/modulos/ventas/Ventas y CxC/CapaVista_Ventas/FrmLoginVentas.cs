@@ -61,7 +61,7 @@ namespace CapaVista_Ventas
                     return;
                 }
 
-                // Después de validar: login -> splash -> MDI. Al cerrar el MDI se vuelve al login como en Seguridad.
+                // Después de autenticar: login -> splash -> MDI -> login.
                 Hide();
                 try
                 {

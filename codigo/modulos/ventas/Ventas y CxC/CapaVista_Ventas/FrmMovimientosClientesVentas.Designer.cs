@@ -62,12 +62,11 @@ namespace CapaVista_Ventas
             this.VentasLblSaldo = new System.Windows.Forms.Label();
             this.VentasTbcMovimientos = new System.Windows.Forms.TabControl();
             this.VentasTbpCuenta = new System.Windows.Forms.TabPage();
-            this.VentasDgvMovimientos = new System.Windows.Forms.DataGridView();
             this.VentasPnlPaginacion = new System.Windows.Forms.Panel();
             this.VentasLblPaginacion = new System.Windows.Forms.Label();
-            this.VentasBtnDetalle = new System.Windows.Forms.Button();
             this.VentasBtnAnterior = new System.Windows.Forms.Button();
             this.VentasBtnSiguiente = new System.Windows.Forms.Button();
+            this.VentasDgvMovimientos = new System.Windows.Forms.DataGridView();
             this.VentasTbpDetalle = new System.Windows.Forms.TabPage();
             this.VentasLblDocumentoDetalle = new System.Windows.Forms.Label();
             this.VentasLblClienteDetalle = new System.Windows.Forms.Label();
@@ -97,8 +96,8 @@ namespace CapaVista_Ventas
             this.VentasPnlResumenSaldo.SuspendLayout();
             this.VentasTbcMovimientos.SuspendLayout();
             this.VentasTbpCuenta.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.VentasDgvMovimientos)).BeginInit();
             this.VentasPnlPaginacion.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.VentasDgvMovimientos)).BeginInit();
             this.VentasTbpDetalle.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.VentasErrValidacion)).BeginInit();
             this.SuspendLayout();
@@ -566,50 +565,10 @@ namespace CapaVista_Ventas
             this.VentasTbpCuenta.TabIndex = 40;
             this.VentasTbpCuenta.Text = "Estado de cuenta";
             // 
-            // VentasDgvMovimientos
-            // 
-            this.VentasDgvMovimientos.AllowUserToAddRows = false;
-            this.VentasDgvMovimientos.AllowUserToDeleteRows = false;
-            this.VentasDgvMovimientos.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
-            this.VentasDgvMovimientos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.VentasDgvMovimientos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.VentasDgvMovimientos.BackgroundColor = System.Drawing.Color.White;
-            this.VentasDgvMovimientos.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
-            this.VentasDgvMovimientos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.VentasDgvMovimientos.ColumnHeadersHeight = 32;
-            this.VentasDgvMovimientos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(212)))), ((int)(((byte)(234)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.VentasDgvMovimientos.DefaultCellStyle = dataGridViewCellStyle3;
-            this.VentasDgvMovimientos.EnableHeadersVisualStyles = false;
-            this.VentasDgvMovimientos.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(212)))), ((int)(((byte)(234)))));
-            this.VentasDgvMovimientos.Location = new System.Drawing.Point(8, 8);
-            this.VentasDgvMovimientos.MultiSelect = false;
-            this.VentasDgvMovimientos.Name = "VentasDgvMovimientos";
-            this.VentasDgvMovimientos.ReadOnly = true;
-            this.VentasDgvMovimientos.RowHeadersVisible = false;
-            this.VentasDgvMovimientos.RowHeadersWidth = 51;
-            this.VentasDgvMovimientos.RowTemplate.Height = 27;
-            this.VentasDgvMovimientos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.VentasDgvMovimientos.Size = new System.Drawing.Size(1036, 180);
-            this.VentasDgvMovimientos.TabIndex = 42;
-            // 
             // VentasPnlPaginacion
             // 
             this.VentasPnlPaginacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
             this.VentasPnlPaginacion.Controls.Add(this.VentasLblPaginacion);
-            this.VentasPnlPaginacion.Controls.Add(this.VentasBtnDetalle);
             this.VentasPnlPaginacion.Controls.Add(this.VentasBtnAnterior);
             this.VentasPnlPaginacion.Controls.Add(this.VentasBtnSiguiente);
             this.VentasPnlPaginacion.Location = new System.Drawing.Point(8, 188);
@@ -627,24 +586,6 @@ namespace CapaVista_Ventas
             this.VentasLblPaginacion.Size = new System.Drawing.Size(548, 22);
             this.VentasLblPaginacion.TabIndex = 44;
             this.VentasLblPaginacion.Text = "0 registros · Página 1 de 1";
-            // 
-            // VentasBtnDetalle
-            // 
-            this.VentasBtnDetalle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
-            this.VentasBtnDetalle.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.VentasBtnDetalle.Enabled = false;
-            this.VentasBtnDetalle.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(63)))), ((int)(((byte)(147)))));
-            this.VentasBtnDetalle.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(212)))), ((int)(((byte)(234)))));
-            this.VentasBtnDetalle.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
-            this.VentasBtnDetalle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.VentasBtnDetalle.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.VentasBtnDetalle.ForeColor = System.Drawing.Color.Gray;
-            this.VentasBtnDetalle.Location = new System.Drawing.Point(570, 7);
-            this.VentasBtnDetalle.Name = "VentasBtnDetalle";
-            this.VentasBtnDetalle.Size = new System.Drawing.Size(138, 29);
-            this.VentasBtnDetalle.TabIndex = 45;
-            this.VentasBtnDetalle.Text = "Ver detalle";
-            this.VentasBtnDetalle.UseVisualStyleBackColor = false;
             // 
             // VentasBtnAnterior
             // 
@@ -681,6 +622,45 @@ namespace CapaVista_Ventas
             this.VentasBtnSiguiente.TabIndex = 47;
             this.VentasBtnSiguiente.Text = "Siguiente";
             this.VentasBtnSiguiente.UseVisualStyleBackColor = false;
+            // 
+            // VentasDgvMovimientos
+            // 
+            this.VentasDgvMovimientos.AllowUserToAddRows = false;
+            this.VentasDgvMovimientos.AllowUserToDeleteRows = false;
+            this.VentasDgvMovimientos.AllowUserToResizeRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
+            this.VentasDgvMovimientos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.VentasDgvMovimientos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.VentasDgvMovimientos.BackgroundColor = System.Drawing.Color.White;
+            this.VentasDgvMovimientos.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
+            this.VentasDgvMovimientos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.VentasDgvMovimientos.ColumnHeadersHeight = 32;
+            this.VentasDgvMovimientos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(212)))), ((int)(((byte)(234)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.VentasDgvMovimientos.DefaultCellStyle = dataGridViewCellStyle3;
+            this.VentasDgvMovimientos.EnableHeadersVisualStyles = false;
+            this.VentasDgvMovimientos.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(212)))), ((int)(((byte)(234)))));
+            this.VentasDgvMovimientos.Location = new System.Drawing.Point(8, 8);
+            this.VentasDgvMovimientos.MultiSelect = false;
+            this.VentasDgvMovimientos.Name = "VentasDgvMovimientos";
+            this.VentasDgvMovimientos.ReadOnly = true;
+            this.VentasDgvMovimientos.RowHeadersVisible = false;
+            this.VentasDgvMovimientos.RowHeadersWidth = 51;
+            this.VentasDgvMovimientos.RowTemplate.Height = 27;
+            this.VentasDgvMovimientos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.VentasDgvMovimientos.Size = new System.Drawing.Size(1036, 180);
+            this.VentasDgvMovimientos.TabIndex = 42;
             // 
             // VentasTbpDetalle
             // 
@@ -923,8 +903,8 @@ namespace CapaVista_Ventas
             this.VentasPnlResumenSaldo.ResumeLayout(false);
             this.VentasTbcMovimientos.ResumeLayout(false);
             this.VentasTbpCuenta.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.VentasDgvMovimientos)).EndInit();
             this.VentasPnlPaginacion.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.VentasDgvMovimientos)).EndInit();
             this.VentasTbpDetalle.ResumeLayout(false);
             this.VentasTbpDetalle.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.VentasErrValidacion)).EndInit();
@@ -976,7 +956,6 @@ namespace CapaVista_Ventas
         private System.Windows.Forms.DataGridView VentasDgvMovimientos;
         private System.Windows.Forms.Panel VentasPnlPaginacion;
         private System.Windows.Forms.Label VentasLblPaginacion;
-        private System.Windows.Forms.Button VentasBtnDetalle;
         private System.Windows.Forms.Button VentasBtnAnterior;
         private System.Windows.Forms.Button VentasBtnSiguiente;
         private System.Windows.Forms.Label VentasLblDocumentoDetalle;

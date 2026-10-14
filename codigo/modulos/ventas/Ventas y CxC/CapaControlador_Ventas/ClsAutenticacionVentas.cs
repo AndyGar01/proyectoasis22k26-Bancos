@@ -1,8 +1,8 @@
 ﻿/*
  * INICIO DEL CÓDIGO — Jose Torres
- * Carné: 0901-23-1091 | Fecha: 10/10/2026
+ * Carné: 0901-23-1091 | Fecha: 13/10/2026
  * Área: Ventas y cuentas por cobrar
- * Propósito: Conectar el login de Ventas con el controlador de autenticación existente de Seguridad.
+ * Propósito: Autenticar Ventas mediante la DLL local del controlador de Seguridad.
  */
 using CapaControlador_Seguridad;
 using CapaControlador_Seguridad.Objetos_de_valor;
@@ -14,8 +14,8 @@ namespace CapaControlador_Ventas
         public string NombreUsuario { get; protected set; }
         public string RolUsuario { get; protected set; }
 
-        // Reutiliza la validación de usuario, contraseña BCrypt, estado y roles de Seguridad.
-        // La Vista no consulta SQL ni guarda contraseñas; utiliza el DSN ya configurado en el Modelo.
+        // Delega usuario, contraseña y roles al controlador existente, referenciado como DLL.
+        // La Vista utiliza este controlador y no consulta directamente la base de datos.
         public virtual bool VentasMetIniciarSesion(string Usuario, string Contrasena)
         {
             VentasMetCerrarSesion();
@@ -30,13 +30,12 @@ namespace CapaControlador_Ventas
             }
             catch
             {
-                // Si falla la consulta o la bitácora, descarta cualquier sesión parcial.
                 VentasMetCerrarSesion();
                 throw;
             }
         }
 
-        // Limpia los datos compartidos cuando termina el MDI o se cierra la aplicación.
+        // Cierra la sesión compartida y limpia los datos de Ventas al terminar el MDI.
         public virtual void VentasMetCerrarSesion()
         {
             ClsSesionSeguridad.SeguridadMetCerrarSesion();
@@ -46,4 +45,4 @@ namespace CapaControlador_Ventas
     }
 }
 
-// FIN DEL CÓDIGO — Jose Torres | Carné: 0901-23-1091 | Fecha: 10/10/2026
+// FIN DEL CÓDIGO — Jose Torres | Carné: 0901-23-1091 | Fecha: 13/10/2026

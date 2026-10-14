@@ -1,6 +1,6 @@
 ﻿/*
  * INICIO DEL CÓDIGO — Jose Torres
- * Carné: 0901-23-1091 | Fecha: 12/10/2026
+ * Carné: 0901-23-1091 | Fecha: 13/10/2026
  * Área: Ventas y cuentas por cobrar
  * Propósito: Conservar los controles del prototipo visual de Facturas.
  */
@@ -67,7 +67,7 @@ namespace CapaVista_Ventas
             this.VentasLblTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
             this.VentasLblTitulo.Font = new System.Drawing.Font("Lucida Fax", 18F, System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.VentasLblTitulo.ForeColor = System.Drawing.Color.White;
-            this.VentasLblTitulo.Location = new System.Drawing.Point(118, 36);
+            this.VentasLblTitulo.Location = new System.Drawing.Point(118, 28);
             this.VentasLblTitulo.Name = "VentasLblTitulo";
             this.VentasLblTitulo.Size = new System.Drawing.Size(937, 65);
             this.VentasLblTitulo.TabIndex = 0;
@@ -77,7 +77,7 @@ namespace CapaVista_Ventas
             //
             this.VentasLblEstablecimiento.AutoSize = true;
             this.VentasLblEstablecimiento.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.VentasLblEstablecimiento.Location = new System.Drawing.Point(122, 143);
+            this.VentasLblEstablecimiento.Location = new System.Drawing.Point(122, 110);
             this.VentasLblEstablecimiento.Name = "VentasLblEstablecimiento";
             this.VentasLblEstablecimiento.Size = new System.Drawing.Size(144, 25);
             this.VentasLblEstablecimiento.TabIndex = 1;
@@ -86,7 +86,7 @@ namespace CapaVista_Ventas
             // VentasTxtEstablecimiento
             //
             this.VentasTxtEstablecimiento.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.VentasTxtEstablecimiento.Location = new System.Drawing.Point(395, 140);
+            this.VentasTxtEstablecimiento.Location = new System.Drawing.Point(395, 106);
             this.VentasTxtEstablecimiento.Name = "VentasTxtEstablecimiento";
             this.VentasTxtEstablecimiento.Size = new System.Drawing.Size(268, 31);
             this.VentasTxtEstablecimiento.TabIndex = 2;
@@ -95,7 +95,7 @@ namespace CapaVista_Ventas
             //
             this.VentasLblFechaEmision.AutoSize = true;
             this.VentasLblFechaEmision.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.VentasLblFechaEmision.Location = new System.Drawing.Point(122, 223);
+            this.VentasLblFechaEmision.Location = new System.Drawing.Point(122, 166);
             this.VentasLblFechaEmision.Name = "VentasLblFechaEmision";
             this.VentasLblFechaEmision.Size = new System.Drawing.Size(155, 25);
             this.VentasLblFechaEmision.TabIndex = 3;
@@ -104,7 +104,7 @@ namespace CapaVista_Ventas
             // VentasDtpFechaEmision
             //
             this.VentasDtpFechaEmision.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.VentasDtpFechaEmision.Location = new System.Drawing.Point(395, 218);
+            this.VentasDtpFechaEmision.Location = new System.Drawing.Point(395, 162);
             this.VentasDtpFechaEmision.Name = "VentasDtpFechaEmision";
             this.VentasDtpFechaEmision.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.VentasDtpFechaEmision.CustomFormat = "dd/MM/yyyy";
@@ -115,7 +115,7 @@ namespace CapaVista_Ventas
             //
             this.VentasLblTipoDte.AutoSize = true;
             this.VentasLblTipoDte.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.VentasLblTipoDte.Location = new System.Drawing.Point(122, 298);
+            this.VentasLblTipoDte.Location = new System.Drawing.Point(122, 222);
             this.VentasLblTipoDte.Name = "VentasLblTipoDte";
             this.VentasLblTipoDte.Size = new System.Drawing.Size(111, 25);
             this.VentasLblTipoDte.TabIndex = 5;
@@ -129,7 +129,7 @@ namespace CapaVista_Ventas
             "Factura",
             "Factura Cambiaria",
             "Factura Especial"});
-            this.VentasCboTipoDte.Location = new System.Drawing.Point(395, 295);
+            this.VentasCboTipoDte.Location = new System.Drawing.Point(395, 218);
             this.VentasCboTipoDte.Name = "VentasCboTipoDte";
             this.VentasCboTipoDte.Size = new System.Drawing.Size(268, 33);
             this.VentasCboTipoDte.TabIndex = 6;
@@ -138,7 +138,7 @@ namespace CapaVista_Ventas
             //
             this.VentasLblMoneda.AutoSize = true;
             this.VentasLblMoneda.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.VentasLblMoneda.Location = new System.Drawing.Point(122, 384);
+            this.VentasLblMoneda.Location = new System.Drawing.Point(122, 278);
             this.VentasLblMoneda.Name = "VentasLblMoneda";
             this.VentasLblMoneda.Size = new System.Drawing.Size(81, 25);
             this.VentasLblMoneda.TabIndex = 7;
@@ -151,7 +151,7 @@ namespace CapaVista_Ventas
             this.VentasCboMoneda.Items.AddRange(new object[] {
             "GTQ-Quetzal",
             "USD-Dólar estadounidense"});
-            this.VentasCboMoneda.Location = new System.Drawing.Point(395, 381);
+            this.VentasCboMoneda.Location = new System.Drawing.Point(395, 274);
             this.VentasCboMoneda.Name = "VentasCboMoneda";
             this.VentasCboMoneda.Size = new System.Drawing.Size(268, 33);
             this.VentasCboMoneda.TabIndex = 8;
@@ -175,7 +175,7 @@ namespace CapaVista_Ventas
             this.VentasGrpIdentificacion.Controls.Add(this.VentasRdbIdExtranjero);
             this.VentasGrpIdentificacion.Controls.Add(this.VentasRdbCui);
             this.VentasGrpIdentificacion.Controls.Add(this.VentasRdbNit);
-            this.VentasGrpIdentificacion.Location = new System.Drawing.Point(709, 435);
+            this.VentasGrpIdentificacion.Location = new System.Drawing.Point(709, 320);
             this.VentasGrpIdentificacion.Name = "VentasGrpIdentificacion";
             this.VentasGrpIdentificacion.Size = new System.Drawing.Size(198, 115);
             this.VentasGrpIdentificacion.TabIndex = 10;
@@ -211,7 +211,7 @@ namespace CapaVista_Ventas
             //
             this.VentasLblNitReceptor.AutoSize = true;
             this.VentasLblNitReceptor.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.VentasLblNitReceptor.Location = new System.Drawing.Point(122, 498);
+            this.VentasLblNitReceptor.Location = new System.Drawing.Point(122, 350);
             this.VentasLblNitReceptor.Name = "VentasLblNitReceptor";
             this.VentasLblNitReceptor.Size = new System.Drawing.Size(201, 25);
             this.VentasLblNitReceptor.TabIndex = 11;
@@ -221,7 +221,7 @@ namespace CapaVista_Ventas
             //
             this.VentasLblDireccionComprador.AutoSize = true;
             this.VentasLblDireccionComprador.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.VentasLblDireccionComprador.Location = new System.Drawing.Point(122, 570);
+            this.VentasLblDireccionComprador.Location = new System.Drawing.Point(122, 406);
             this.VentasLblDireccionComprador.Name = "VentasLblDireccionComprador";
             this.VentasLblDireccionComprador.Size = new System.Drawing.Size(217, 25);
             this.VentasLblDireccionComprador.TabIndex = 12;
@@ -230,7 +230,7 @@ namespace CapaVista_Ventas
             // VentasTxtNitReceptor
             //
             this.VentasTxtNitReceptor.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.VentasTxtNitReceptor.Location = new System.Drawing.Point(395, 495);
+            this.VentasTxtNitReceptor.Location = new System.Drawing.Point(395, 346);
             this.VentasTxtNitReceptor.Name = "VentasTxtNitReceptor";
             this.VentasTxtNitReceptor.Size = new System.Drawing.Size(268, 31);
             this.VentasTxtNitReceptor.TabIndex = 13;
@@ -238,7 +238,7 @@ namespace CapaVista_Ventas
             // VentasTxtDireccionComprador
             //
             this.VentasTxtDireccionComprador.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.VentasTxtDireccionComprador.Location = new System.Drawing.Point(395, 567);
+            this.VentasTxtDireccionComprador.Location = new System.Drawing.Point(395, 402);
             this.VentasTxtDireccionComprador.Name = "VentasTxtDireccionComprador";
             this.VentasTxtDireccionComprador.Size = new System.Drawing.Size(268, 31);
             this.VentasTxtDireccionComprador.TabIndex = 14;
@@ -247,18 +247,18 @@ namespace CapaVista_Ventas
             //
             this.VentasDgvItems.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
             this.VentasDgvItems.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.VentasDgvItems.Location = new System.Drawing.Point(127, 700);
+            this.VentasDgvItems.Location = new System.Drawing.Point(127, 600);
             this.VentasDgvItems.Name = "VentasDgvItems";
             this.VentasDgvItems.RowHeadersWidth = 62;
             this.VentasDgvItems.RowTemplate.Height = 28;
-            this.VentasDgvItems.Size = new System.Drawing.Size(1066, 206);
+            this.VentasDgvItems.Size = new System.Drawing.Size(850, 38);
             this.VentasDgvItems.TabIndex = 15;
             //
             // VentasLblItems
             //
             this.VentasLblItems.AutoSize = true;
             this.VentasLblItems.Font = new System.Drawing.Font("Tahoma", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.VentasLblItems.Location = new System.Drawing.Point(122, 642);
+            this.VentasLblItems.Location = new System.Drawing.Point(122, 460);
             this.VentasLblItems.Name = "VentasLblItems";
             this.VentasLblItems.Size = new System.Drawing.Size(90, 38);
             this.VentasLblItems.TabIndex = 16;
@@ -268,7 +268,7 @@ namespace CapaVista_Ventas
             //
             this.VentasLblBienServicio.AutoSize = true;
             this.VentasLblBienServicio.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.VentasLblBienServicio.Location = new System.Drawing.Point(165, 716);
+            this.VentasLblBienServicio.Location = new System.Drawing.Point(165, 526);
             this.VentasLblBienServicio.Name = "VentasLblBienServicio";
             this.VentasLblBienServicio.Size = new System.Drawing.Size(40, 25);
             this.VentasLblBienServicio.TabIndex = 17;
@@ -278,7 +278,7 @@ namespace CapaVista_Ventas
             //
             this.VentasLblCantidad.AutoSize = true;
             this.VentasLblCantidad.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.VentasLblCantidad.Location = new System.Drawing.Point(278, 716);
+            this.VentasLblCantidad.Location = new System.Drawing.Point(278, 526);
             this.VentasLblCantidad.Name = "VentasLblCantidad";
             this.VentasLblCantidad.Size = new System.Drawing.Size(86, 25);
             this.VentasLblCantidad.TabIndex = 18;
@@ -288,7 +288,7 @@ namespace CapaVista_Ventas
             //
             this.VentasLblDescripcion.AutoSize = true;
             this.VentasLblDescripcion.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.VentasLblDescripcion.Location = new System.Drawing.Point(471, 716);
+            this.VentasLblDescripcion.Location = new System.Drawing.Point(471, 526);
             this.VentasLblDescripcion.Name = "VentasLblDescripcion";
             this.VentasLblDescripcion.Size = new System.Drawing.Size(109, 25);
             this.VentasLblDescripcion.TabIndex = 19;
@@ -298,7 +298,7 @@ namespace CapaVista_Ventas
             //
             this.VentasLblPrecioUnitario.AutoSize = true;
             this.VentasLblPrecioUnitario.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.VentasLblPrecioUnitario.Location = new System.Drawing.Point(661, 716);
+            this.VentasLblPrecioUnitario.Location = new System.Drawing.Point(661, 526);
             this.VentasLblPrecioUnitario.Name = "VentasLblPrecioUnitario";
             this.VentasLblPrecioUnitario.Size = new System.Drawing.Size(216, 25);
             this.VentasLblPrecioUnitario.TabIndex = 20;
@@ -308,7 +308,7 @@ namespace CapaVista_Ventas
             //
             this.VentasLblDescuentos.AutoSize = true;
             this.VentasLblDescuentos.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.VentasLblDescuentos.Location = new System.Drawing.Point(915, 716);
+            this.VentasLblDescuentos.Location = new System.Drawing.Point(915, 526);
             this.VentasLblDescuentos.Name = "VentasLblDescuentos";
             this.VentasLblDescuentos.Size = new System.Drawing.Size(109, 25);
             this.VentasLblDescuentos.TabIndex = 21;
@@ -318,7 +318,7 @@ namespace CapaVista_Ventas
             //
             this.VentasLblTotal.AutoSize = true;
             this.VentasLblTotal.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.VentasLblTotal.Location = new System.Drawing.Point(1089, 716);
+            this.VentasLblTotal.Location = new System.Drawing.Point(1089, 526);
             this.VentasLblTotal.Name = "VentasLblTotal";
             this.VentasLblTotal.Size = new System.Drawing.Size(52, 25);
             this.VentasLblTotal.TabIndex = 22;
@@ -331,7 +331,7 @@ namespace CapaVista_Ventas
             this.VentasCboBienServicio.Items.AddRange(new object[] {
             "Bien",
             "Servicio"});
-            this.VentasCboBienServicio.Location = new System.Drawing.Point(137, 763);
+            this.VentasCboBienServicio.Location = new System.Drawing.Point(137, 560);
             this.VentasCboBienServicio.Name = "VentasCboBienServicio";
             this.VentasCboBienServicio.Size = new System.Drawing.Size(96, 33);
             this.VentasCboBienServicio.TabIndex = 23;
@@ -339,7 +339,7 @@ namespace CapaVista_Ventas
             // VentasTxtCantidad
             //
             this.VentasTxtCantidad.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.VentasTxtCantidad.Location = new System.Drawing.Point(264, 763);
+            this.VentasTxtCantidad.Location = new System.Drawing.Point(264, 560);
             this.VentasTxtCantidad.Name = "VentasTxtCantidad";
             this.VentasTxtCantidad.Size = new System.Drawing.Size(112, 31);
             this.VentasTxtCantidad.TabIndex = 24;
@@ -347,7 +347,7 @@ namespace CapaVista_Ventas
             // VentasTxtDescripcion
             //
             this.VentasTxtDescripcion.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.VentasTxtDescripcion.Location = new System.Drawing.Point(406, 763);
+            this.VentasTxtDescripcion.Location = new System.Drawing.Point(406, 560);
             this.VentasTxtDescripcion.Name = "VentasTxtDescripcion";
             this.VentasTxtDescripcion.Size = new System.Drawing.Size(232, 31);
             this.VentasTxtDescripcion.TabIndex = 25;
@@ -355,7 +355,7 @@ namespace CapaVista_Ventas
             // VentasTxtPrecioUnitario
             //
             this.VentasTxtPrecioUnitario.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.VentasTxtPrecioUnitario.Location = new System.Drawing.Point(666, 763);
+            this.VentasTxtPrecioUnitario.Location = new System.Drawing.Point(666, 560);
             this.VentasTxtPrecioUnitario.Name = "VentasTxtPrecioUnitario";
             this.VentasTxtPrecioUnitario.Size = new System.Drawing.Size(211, 31);
             this.VentasTxtPrecioUnitario.TabIndex = 26;
@@ -363,7 +363,7 @@ namespace CapaVista_Ventas
             // VentasTxtDescuentos
             //
             this.VentasTxtDescuentos.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.VentasTxtDescuentos.Location = new System.Drawing.Point(918, 763);
+            this.VentasTxtDescuentos.Location = new System.Drawing.Point(918, 560);
             this.VentasTxtDescuentos.Name = "VentasTxtDescuentos";
             this.VentasTxtDescuentos.Size = new System.Drawing.Size(106, 31);
             this.VentasTxtDescuentos.TabIndex = 27;
@@ -371,7 +371,7 @@ namespace CapaVista_Ventas
             // VentasTxtTotal
             //
             this.VentasTxtTotal.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.VentasTxtTotal.Location = new System.Drawing.Point(1065, 763);
+            this.VentasTxtTotal.Location = new System.Drawing.Point(1065, 560);
             this.VentasTxtTotal.Name = "VentasTxtTotal";
             this.VentasTxtTotal.Size = new System.Drawing.Size(112, 31);
             this.VentasTxtTotal.TabIndex = 28;
@@ -383,9 +383,9 @@ namespace CapaVista_Ventas
             this.VentasBtnEmitirFactura.ForeColor = System.Drawing.Color.White;
             this.VentasBtnEmitirFactura.Image = global::CapaVista_Ventas.Properties.Resources.IconoCotizacionesPedidosFacturasVentas;
             this.VentasBtnEmitirFactura.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.VentasBtnEmitirFactura.Location = new System.Drawing.Point(500, 944);
+            this.VentasBtnEmitirFactura.Location = new System.Drawing.Point(500, 648);
             this.VentasBtnEmitirFactura.Name = "VentasBtnEmitirFactura";
-            this.VentasBtnEmitirFactura.Size = new System.Drawing.Size(257, 64);
+            this.VentasBtnEmitirFactura.Size = new System.Drawing.Size(257, 44);
             this.VentasBtnEmitirFactura.TabIndex = 30;
             this.VentasBtnEmitirFactura.Text = "Emitir factura";
             this.VentasBtnEmitirFactura.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -398,9 +398,9 @@ namespace CapaVista_Ventas
             this.VentasBtnAgregarItem.ForeColor = System.Drawing.Color.White;
             this.VentasBtnAgregarItem.Image = global::CapaVista_Ventas.Properties.Resources.IconoRecepcionPagosVentas;
             this.VentasBtnAgregarItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.VentasBtnAgregarItem.Location = new System.Drawing.Point(999, 825);
+            this.VentasBtnAgregarItem.Location = new System.Drawing.Point(999, 600);
             this.VentasBtnAgregarItem.Name = "VentasBtnAgregarItem";
-            this.VentasBtnAgregarItem.Size = new System.Drawing.Size(178, 54);
+            this.VentasBtnAgregarItem.Size = new System.Drawing.Size(178, 38);
             this.VentasBtnAgregarItem.TabIndex = 31;
             this.VentasBtnAgregarItem.Text = "Agregar ítem";
             this.VentasBtnAgregarItem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -410,7 +410,7 @@ namespace CapaVista_Ventas
             //
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
-            this.ClientSize = new System.Drawing.Size(1221, 1059);
+            this.ClientSize = new System.Drawing.Size(1221, 700);
             this.Controls.Add(this.VentasBtnAgregarItem);
             this.Controls.Add(this.VentasBtnEmitirFactura);
             this.Controls.Add(this.VentasTxtTotal);
@@ -496,4 +496,4 @@ namespace CapaVista_Ventas
     }
 }
 
-// FIN DEL CÓDIGO — Jose Torres | Carné: 0901-23-1091 | Fecha: 12/10/2026
+// FIN DEL CÓDIGO — Jose Torres | Carné: 0901-23-1091 | Fecha: 13/10/2026

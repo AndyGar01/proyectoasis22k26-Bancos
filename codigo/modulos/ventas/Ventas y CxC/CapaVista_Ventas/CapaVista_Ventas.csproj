@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmListadoPrecios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListadoPrecios.Designer.cs">
+      <DependentUpon>FrmListadoPrecios.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmPedidoVentas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,6 +67,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="FrmListadoPrecios.resx">
+      <DependentUpon>FrmListadoPrecios.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmMdiVentas.resx">
       <DependentUpon>FrmMdiVentas.cs</DependentUpon>
     </EmbeddedResource>

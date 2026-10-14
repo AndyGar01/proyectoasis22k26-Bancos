@@ -31,6 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CapaControlador_Logistica">
+      <HintPath>..\CapaControlador_Logistica\bin\Debug\CapaControlador_Logistica.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
@@ -90,6 +93,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\panel_fondo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\banner_radio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BannerRedimensionado.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

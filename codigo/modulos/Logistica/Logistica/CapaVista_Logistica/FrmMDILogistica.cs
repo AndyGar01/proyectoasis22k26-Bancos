@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CapaVista_Logistica
 {
-    public partial class LogisticaPnlPrincipal : Form
+    public partial class FrmMDILogistica : Form
     {
-        public LogisticaPnlPrincipal()
+        public FrmMDILogistica()
         {
             InitializeComponent();
         }

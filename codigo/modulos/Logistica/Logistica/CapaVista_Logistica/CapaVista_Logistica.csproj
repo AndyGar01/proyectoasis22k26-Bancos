@@ -100,5 +100,32 @@
   <ItemGroup>
     <None Include="Resources\BannerRedimensionado.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Catalogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ubicaciones.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Inventario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gestion_de_Transporte.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gestion_de_Traslado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Auditoria.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cierre_de_inventario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enlace_de_integracion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cerrar_sesion.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -2,16 +2,15 @@
     VELVETH SARAI CHAVEZ MEJIA 0901 23 6269
 */
 
+using CapaControlador_Reporteador;
+using CapaModelo_Reporteador.Entidades;
+using CapaVista_Reporteador.Formas;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Windows.Forms;
-using CapaControlador_Reporteador;
-using CapaModelo_Reporteador.Entidades;
-using CapaVista_BtnVerReporte_Reporteador;
-using CapaVista_Reporteador.Formas;
 
 namespace CapaVista_Reporteador
 {
@@ -23,7 +22,7 @@ namespace CapaVista_Reporteador
 
         private int _NumeroReporteEdicion = 0;
 
-        private int _IdAplicacionSeleccionada = 4;
+        private int _IdAplicacionSeleccionada = 0;
 
         private string _RutaReporteAplicacion = string.Empty;
 
@@ -131,6 +130,8 @@ namespace CapaVista_Reporteador
             {
                 ReporteadorMetCargarTabla();
 
+                ReporteadorMetCargarAplicaciones();
+
                 _ModoEdicion = false;
 
                 _NumeroReporteEdicion = 0;
@@ -153,13 +154,30 @@ namespace CapaVista_Reporteador
         {
             try
             {
-                if (_IdAplicacionSeleccionada <= 0)
+                int IdAplicacionReporte;
+
+                if (_ModoEdicion)
                 {
-                    ReporteadorMetMostrarError(
-                        "Debe seleccionar una aplicación antes de guardar el reporte."
+                    IdAplicacionReporte = _IdAplicacionSeleccionada;
+                }
+                else
+                {
+                    if (ReporteadorCboAplicacionReporte.SelectedValue == null)
+                    {
+                        ReporteadorMetMostrarError(
+                            "Debe seleccionar una aplicación antes de guardar el reporte."
+                        );
+
+                        ReporteadorCboAplicacionReporte.Focus();
+
+                        return;
+                    }
+
+                    IdAplicacionReporte = Convert.ToInt32(
+                        ReporteadorCboAplicacionReporte.SelectedValue
                     );
 
-                    return;
+                    _IdAplicacionSeleccionada = IdAplicacionReporte;
                 }
 
                 string NombreReporte = ReporteadorTxtNombreReporte.Text.Trim();
@@ -295,7 +313,7 @@ namespace CapaVista_Reporteador
 
                 _ModeloReporteador.FechaReporte = ReporteadorDtpFechaReporte.Value.Date;
 
-                _ModeloReporteador.IdAplicacion = _IdAplicacionSeleccionada;
+                _ModeloReporteador.IdAplicacion = IdAplicacionReporte;
 
                 _ModeloReporteador.Estado = _ModoEdicion
                     ? ClsEstadoEntidad.Modified
@@ -321,6 +339,8 @@ namespace CapaVista_Reporteador
 
                     ReporteadorMetLimpiarFormulario();
 
+                    ReporteadorMetCargarAplicaciones();
+
                     ReporteadorMetCargarTabla();
 
                     ReporteadorMetPrepararNuevoRegistro();
@@ -342,6 +362,8 @@ namespace CapaVista_Reporteador
 
                     ReporteadorMetLimpiarFormulario();
 
+                    ReporteadorMetCargarAplicaciones();
+
                     ReporteadorMetCargarTabla();
 
                     ReporteadorMetPrepararNuevoRegistro();
@@ -354,38 +376,6 @@ namespace CapaVista_Reporteador
             catch (Exception)
             {
                 ReporteadorMetMostrarError("Ocurrió un error al guardar el reporte.");
-            }
-        }
-
-        // ================================================================
-        // VER REPORTE
-        // ================================================================
-        private void ReporteadorMetVerReporte(object Sender, EventArgs ArgumentosEvento)
-        {
-            try
-            {
-                if (ReporteadorDgvReportes.CurrentRow == null)
-                {
-                    ReporteadorMetMostrarError("Debe seleccionar un reporte para verlo.");
-                    return;
-                }
-
-                object NumeroReporte = ReporteadorDgvReportes
-                    .CurrentRow
-                    .Cells["NumeroReporte"]
-                    .Value;
-
-                if (NumeroReporte == null || NumeroReporte == DBNull.Value)
-                {
-                    ReporteadorMetMostrarError("No se pudo obtener el número del reporte.");
-                    return;
-                }
-
-                ReporteadorBtnVerReporte.ReporteadorMetMostrarReporte(Convert.ToInt32(NumeroReporte), _FuentesDeDatosReporteador);
-            }
-            catch (Exception Excepcion)
-            {
-                ReporteadorMetMostrarError("No se pudo abrir el reporte.\n\n" + Excepcion.Message);
             }
         }
 
@@ -410,6 +400,15 @@ namespace CapaVista_Reporteador
             {
                 ReporteadorMetMostrarError("No se pudo cargar la lista de reportes.");
             }
+        }
+
+        private void ReporteadorMetCargarAplicaciones()
+        {
+            ReporteadorCboAplicacionReporte.DataSource =
+                _ModeloReporteador.ReporteadorMetObtenerAplicaciones().ToList();
+            ReporteadorCboAplicacionReporte.DisplayMember = "NombreAplicacionMostrar";
+            ReporteadorCboAplicacionReporte.ValueMember = "IdAplicacion";
+            ReporteadorCboAplicacionReporte.SelectedIndex = -1;
         }
 
         // ================================================================
@@ -475,6 +474,8 @@ namespace CapaVista_Reporteador
         private void ReporteadorMetLimpiarFormulario()
         {
             ReporteadorTxtNombreReporte.Clear();
+
+            ReporteadorCboAplicacionReporte.SelectedIndex = -1;
 
             ReporteadorTxtRutaReporte.Clear();
 
@@ -645,13 +646,33 @@ namespace CapaVista_Reporteador
             MessageBox.Show(Mensaje, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
+        // ================================================================
+        // CARGAR AYUDA DEL REPORTEADOR
+        // ================================================================
         private void ReporteadorMetMostrarAyuda(object Sender, EventArgs E)
         {
-            Help.ShowHelp(
-                this,
-                "C:/Reporteador/proyectoasis22k26-Reporteador/ayuda/componentes/reporteador/AyudaReporteador.chm",
-                "Ayuda_General_Reporteador.html"
-            );
+            DirectoryInfo DirectorioActual = new DirectoryInfo(AppDomain.CurrentDomain.BaseDirectory);
+
+            while (DirectorioActual != null)
+            {
+                string RutaAyuda = Path.Combine(
+                    DirectorioActual.FullName,
+                    "ayuda",
+                    "componentes",
+                    "reporteador",
+                    "AyudaReporteador.chm"
+                );
+
+                if (File.Exists(RutaAyuda))
+                {
+                    Help.ShowHelp(this, RutaAyuda, "Ayuda_General_Reporteador.html");
+                    return;
+                }
+
+                DirectorioActual = DirectorioActual.Parent;
+            }
+
+            ReporteadorMetMostrarError("No se encontró el archivo de ayuda del Reporteador.");
         }
 
         // ================================================================
@@ -669,29 +690,3 @@ namespace CapaVista_Reporteador
         }
     }
 }
-
-// Codigo a utilizar para cargar reportes desde otra aplicación:
-
-/* NOTA: PARA GUARDAR UN REPORTE SE DEBE AGREGAR UN ID DE APLICACIÓN, PARA PODER CARGAR LOS REPORTES DE ESA APLICACIÓN
- *
- * NOTA:
- * Este metodo es el que tiene la funcionalidad del navegador
- * debe colocarse en el forumalirio donde este el boton de imprimir para hacer la
- * referencia con la capa vista de este CapaVista_Reporteador,
- * y asi poder cargar los reportes de la aplicacion que se desee.
- 
-  private void btnImprimir_Click(object sender, EventArgs e)
-        {
-            int idAplicacion = 1;
-
-            Dictionary<string, object> fuentes = new Dictionary<string, object>();
-
-            fuentes.Add("ReporteTipoSanciones", tipo_sancion.GetAll());
-
-            FrmReportes FormularioReportes = new FrmReportes();
-
-            FormularioReportes.ReporteadorMetCargarReportes(idAplicacion, fuentes);
-
-            FormularioReportes.ShowDialog(this);
-        }
- */

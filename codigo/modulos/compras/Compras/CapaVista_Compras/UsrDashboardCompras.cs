@@ -1,13 +1,4 @@
 ﻿using CapaVista_Compras.Componentes;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace CapaVista_Compras
 {
@@ -16,6 +7,22 @@ namespace CapaVista_Compras
         public UsrDashboardCompras()
         {
             InitializeComponent();
+            ComprasTlpPresentacion.SizeChanged += (sender, e) => ComprasMetAjustarPresentacion();
+            ComprasMetAjustarPresentacion();
+        }
+
+        private void ComprasMetAjustarPresentacion()
+        {
+            // Reserva las dos líneas del subtítulo cuando disminuye la altura.
+            bool Compacto = ComprasTlpPresentacion.Height < 320;
+            var Fila = ComprasTlpPresentacion.RowStyles[1];
+            var Tipo = Compacto ? System.Windows.Forms.SizeType.Absolute : System.Windows.Forms.SizeType.Percent;
+            float Altura = Compacto ? 64F : 22F;
+            if (Fila.SizeType == Tipo && Fila.Height == Altura) return;
+            ComprasTlpPresentacion.SuspendLayout();
+            Fila.SizeType = Tipo;
+            Fila.Height = Altura;
+            ComprasTlpPresentacion.ResumeLayout(true);
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using CapaVista_Compras;
+using CapaVista_Ventas;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,6 +19,7 @@ namespace Ejecucion_Compras
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new FrmSplash());
+            //Application.Run(new FrmMdiVentas());
         }
     }
 }

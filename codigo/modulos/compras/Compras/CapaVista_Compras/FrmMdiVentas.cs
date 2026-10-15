@@ -36,8 +36,10 @@ namespace CapaVista_Ventas
         // Presenta el empleado y sus roles obtenidos después de autenticarlo en Seguridad.
         public void VentasMetActualizarSesion(string NombreUsuario, string RolUsuario)
         {
-            VentasLblUsuario.Text = "Usuario: " + (string.IsNullOrWhiteSpace(NombreUsuario) ? "Sin sesión" : NombreUsuario);
-            VentasLblRol.Text = "Rol: " + (string.IsNullOrWhiteSpace(RolUsuario) ? "Sin asignar" : RolUsuario);
+            ComprasLblUsuarioRol.Texto = "Usuario: "
+                + (string.IsNullOrWhiteSpace(NombreUsuario) ? "Sin sesión" : NombreUsuario)
+                + " Rol: " + (string.IsNullOrWhiteSpace(RolUsuario) ? "Sin asignar" : RolUsuario);
+            VentasLblRol.Text = string.Empty;
         }
 
         // Actualiza directamente los seis labels del diseñador con datos proporcionados por el controlador.

@@ -24,6 +24,7 @@ namespace CapaVista_Ventas
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMdiVentas));
             this.VentasTtpAccionesOriginales = new System.Windows.Forms.ToolTip(this.components);
             this.VentasBtnAyuda = new System.Windows.Forms.Button();
             this.VentasLblBienvenido = new System.Windows.Forms.Label();
@@ -69,7 +70,6 @@ namespace CapaVista_Ventas
             this.VentasTlpContenido = new System.Windows.Forms.TableLayoutPanel();
             this.VentasTlpEncabezado = new System.Windows.Forms.TableLayoutPanel();
             this.VentasBtnBurger = new System.Windows.Forms.Button();
-            this.VentasLblUsuario = new System.Windows.Forms.Label();
             this.VentasLblRol = new System.Windows.Forms.Label();
             this.VentasPnlDashboard = new System.Windows.Forms.Panel();
             this.VentasTlpDashboard = new System.Windows.Forms.TableLayoutPanel();
@@ -93,6 +93,7 @@ namespace CapaVista_Ventas
             this.VentasPnlInformacion = new System.Windows.Forms.Panel();
             this.VentasTlpInformacion = new System.Windows.Forms.TableLayoutPanel();
             this.VentasTtpMenu = new System.Windows.Forms.ToolTip(this.components);
+            this.ComprasLblUsuarioRol = new CapaVista_Compras.Componentes.UsrLabelCompras();
             ((System.ComponentModel.ISupportInitialize)(this.VentasPbKpi1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.VentasPbKpi2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.VentasPbKpi3)).BeginInit();
@@ -923,8 +924,8 @@ namespace CapaVista_Ventas
             this.VentasTlpEncabezado.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 62F));
             this.VentasTlpEncabezado.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 38F));
             this.VentasTlpEncabezado.Controls.Add(this.VentasBtnBurger, 0, 0);
-            this.VentasTlpEncabezado.Controls.Add(this.VentasLblUsuario, 1, 0);
             this.VentasTlpEncabezado.Controls.Add(this.VentasLblRol, 2, 0);
+            this.VentasTlpEncabezado.Controls.Add(this.ComprasLblUsuarioRol, 1, 0);
             this.VentasTlpEncabezado.Dock = System.Windows.Forms.DockStyle.Fill;
             this.VentasTlpEncabezado.Location = new System.Drawing.Point(3, 3);
             this.VentasTlpEncabezado.Name = "VentasTlpEncabezado";
@@ -937,6 +938,8 @@ namespace CapaVista_Ventas
             // 
             this.VentasBtnBurger.AccessibleName = "Contraer menú";
             this.VentasBtnBurger.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
+            this.VentasBtnBurger.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("VentasBtnBurger.BackgroundImage")));
+            this.VentasBtnBurger.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.VentasBtnBurger.Cursor = System.Windows.Forms.Cursors.Hand;
             this.VentasBtnBurger.Dock = System.Windows.Forms.DockStyle.Fill;
             this.VentasBtnBurger.FlatAppearance.BorderSize = 0;
@@ -950,19 +953,6 @@ namespace CapaVista_Ventas
             this.VentasBtnBurger.UseCompatibleTextRendering = true;
             this.VentasBtnBurger.UseVisualStyleBackColor = false;
             this.VentasBtnBurger.Click += new System.EventHandler(this.VentasBtnBurger_Click);
-            // 
-            // VentasLblUsuario
-            // 
-            this.VentasLblUsuario.AutoEllipsis = true;
-            this.VentasLblUsuario.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.VentasLblUsuario.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.VentasLblUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
-            this.VentasLblUsuario.Location = new System.Drawing.Point(61, 0);
-            this.VentasLblUsuario.Name = "VentasLblUsuario";
-            this.VentasLblUsuario.Size = new System.Drawing.Size(723, 40);
-            this.VentasLblUsuario.TabIndex = 1;
-            this.VentasLblUsuario.Text = "Usuario: Sin sesión";
-            this.VentasLblUsuario.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // VentasLblRol
             // 
@@ -1302,6 +1292,25 @@ namespace CapaVista_Ventas
             this.VentasTlpInformacion.Size = new System.Drawing.Size(1158, 48);
             this.VentasTlpInformacion.TabIndex = 0;
             // 
+            // ComprasLblUsuarioRol
+            // 
+            this.ComprasLblUsuarioRol.AlineacionTexto = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ComprasLblUsuarioRol.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
+            this.ComprasLblUsuarioRol.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ComprasLblUsuarioRol.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.ComprasLblUsuarioRol.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this.ComprasLblUsuarioRol.Location = new System.Drawing.Point(62, 4);
+            this.ComprasLblUsuarioRol.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ComprasLblUsuarioRol.MaximumSize = new System.Drawing.Size(1375, 0);
+            this.ComprasLblUsuarioRol.Name = "ComprasLblUsuarioRol";
+            this.ComprasLblUsuarioRol.Size = new System.Drawing.Size(721, 32);
+            this.ComprasLblUsuarioRol.TabIndex = 3;
+            this.ComprasLblUsuarioRol.TabStop = false;
+            this.ComprasLblUsuarioRol.TamanoTipografia = 12F;
+            this.ComprasLblUsuarioRol.Text = "usrLabelCompras1";
+            this.ComprasLblUsuarioRol.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ComprasLblUsuarioRol.Texto = "usrLabelCompras1";
+            // 
             // FrmMdiVentas
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -1396,7 +1405,6 @@ namespace CapaVista_Ventas
         private System.Windows.Forms.TableLayoutPanel VentasTlpContenido;
         private System.Windows.Forms.TableLayoutPanel VentasTlpEncabezado;
         private System.Windows.Forms.Button VentasBtnBurger;
-        private System.Windows.Forms.Label VentasLblUsuario;
         private System.Windows.Forms.Label VentasLblRol;
         private System.Windows.Forms.Panel VentasPnlDashboard;
         private System.Windows.Forms.TableLayoutPanel VentasTlpDashboard;
@@ -1422,6 +1430,7 @@ namespace CapaVista_Ventas
         private System.Windows.Forms.TableLayoutPanel VentasTlpInformacion;
         private System.Windows.Forms.ToolTip VentasTtpMenu;
         private System.Windows.Forms.ToolTip VentasTtpAccionesOriginales;
+        private CapaVista_Compras.Componentes.UsrLabelCompras ComprasLblUsuarioRol;
     }
 }
 

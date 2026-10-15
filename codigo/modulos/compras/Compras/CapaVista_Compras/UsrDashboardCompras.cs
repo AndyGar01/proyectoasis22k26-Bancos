@@ -13,7 +13,6 @@ namespace CapaVista_Compras
 
         private void ComprasMetAjustarPresentacion()
         {
-            // Reserva las dos líneas del subtítulo cuando disminuye la altura.
             bool Compacto = ComprasTlpPresentacion.Height < 320;
             var Fila = ComprasTlpPresentacion.RowStyles[1];
             var Tipo = Compacto ? System.Windows.Forms.SizeType.Absolute : System.Windows.Forms.SizeType.Percent;

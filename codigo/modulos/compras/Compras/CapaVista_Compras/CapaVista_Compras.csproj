@@ -59,6 +59,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Componentes\UsrMDITabCompras.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Componentes\UsrMDITabCompras.Designer.cs">
+      <DependentUpon>UsrMDITabCompras.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmMdiVentas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -221,6 +227,9 @@
     <Compile Include="Componentes\UsrComboBoxCompras.Designer.cs">
       <DependentUpon>UsrComboBoxCompras.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Componentes\UsrMDITabCompras.resx">
+      <DependentUpon>UsrMDITabCompras.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmMdiVentas.resx">
       <DependentUpon>FrmMdiVentas.cs</DependentUpon>
     </EmbeddedResource>

@@ -76,9 +76,6 @@
   <data name="FondoDashboardVentas" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\..\..\..\recursos\modulos\ventas\fondoDashboardVentas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="FondoSplashVentas" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\..\..\..\recursos\modulos\ventas\fondoSplashVentas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="FondoNavegadorVentas" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\..\..\..\recursos\modulos\ventas\fondoNavegadorVentas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -141,12 +138,6 @@
   </data>
   <data name="IconoCerrarSesionVentas" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\..\..\..\recursos\modulos\ventas\iconoCerrarSesionVentas.png;System.Drawing.Bitmap, System.Drawing</value>
-  </data>
-  <data name="MascotaLoginVentas" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\..\..\..\recursos\modulos\ventas\mascotaLoginVentas.png;System.Drawing.Bitmap, System.Drawing</value>
-  </data>
-  <data name="FondoLoginVentas" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\..\..\..\recursos\modulos\ventas\fondoLoginVentas.png;System.Drawing.Bitmap, System.Drawing</value>
   </data>
   <data name="IconoAyudaVentas" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\..\..\..\recursos\modulos\ventas\iconoAyudaVentas.png;System.Drawing.Bitmap, System.Drawing</value>

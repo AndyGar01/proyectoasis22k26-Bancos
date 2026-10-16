@@ -1,6 +1,6 @@
-﻿/*
+/*
  * INICIO DEL CÓDIGO — Jose Torres
- * Carné: 0901-23-1091 | Fecha: 10/10/2026
+ * Carné: 0901-23-1091 | Fecha: 15/10/2026
  * Área: Ventas y cuentas por cobrar
  * Propósito: Presentar el dashboard, sus indicadores y la navegación del módulo de Ventas.
  */
@@ -18,9 +18,6 @@ namespace CapaVista_Ventas
         [DllImport("user32.dll", CharSet = CharSet.Auto)]
         private static extern IntPtr SendMessage(IntPtr Ventana, int Mensaje, IntPtr Valor, IntPtr Datos);
 
-        // Notifica al login cuando el usuario solicita cerrar su sesión.
-        public event EventHandler CierreSesionSolicitado;
-
         public FrmMdiVentas()
         {
             InitializeComponent();
@@ -33,7 +30,7 @@ namespace CapaVista_Ventas
         public FrmMdiVentas(string NombreUsuario, string RolUsuario) : this()
         { VentasMetActualizarSesion(NombreUsuario, RolUsuario); }
 
-        // Presenta el empleado y sus roles obtenidos después de autenticarlo en Seguridad.
+        // Presenta el usuario y el rol cuando otro módulo proporciona esa información.
         public void VentasMetActualizarSesion(string NombreUsuario, string RolUsuario)
         {
             VentasLblUsuario.Text = "Usuario: " + (string.IsNullOrWhiteSpace(NombreUsuario) ? "Sin sesión" : NombreUsuario);
@@ -197,13 +194,12 @@ namespace CapaVista_Ventas
             }
         }
 
-        // Confirma la salida y devuelve el control al login mediante el cierre del MDI.
-        private void VentasBtnCerrarSesion_Click(object sender, EventArgs e)
+        // Confirma la salida del módulo y cierra su ventana principal.
+        private void VentasBtnSalir_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show(this, "¿Desea cerrar la sesión de Ventas?", "Cerrar sesión",
+            if (MessageBox.Show(this, "¿Desea salir del módulo de Ventas?", "Salir de Ventas",
                 MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
-                CierreSesionSolicitado?.Invoke(this, EventArgs.Empty);
                 Close();
             }
         }
@@ -211,10 +207,10 @@ namespace CapaVista_Ventas
         private void VentasBtnAyuda_Click(object sender, EventArgs e)
         {
             MessageBox.Show(this, "Seleccione una opción del menú lateral. El botón de menú contrae o expande la navegación.\n\n" +
-                "Los indicadores se mostrarán cuando el controlador proporcione información. Para salir utilice Cerrar sesión.",
+                "Los indicadores se mostrarán cuando el controlador proporcione información. Para salir utilice Salir.",
                 "Ayuda de Ventas", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }
 
-// FIN DEL CÓDIGO — Jose Torres | Carné: 0901-23-1091 | Fecha: 10/10/2026
+// FIN DEL CÓDIGO — Jose Torres | Carné: 0901-23-1091 | Fecha: 15/10/2026

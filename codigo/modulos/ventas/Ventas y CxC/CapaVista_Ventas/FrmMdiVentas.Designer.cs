@@ -1,6 +1,6 @@
 /*
  * INICIO DEL CÓDIGO — Jose Torres
- * Carné: 0901-23-1091 | Fecha: 14/10/2026
+ * Carné: 0901-23-1091 | Fecha: 15/10/2026
  * Área: Ventas y cuentas por cobrar
  * Propósito: Declarar controles estándar editables, su distribución, iconos y propiedades visuales del MDI.
  */
@@ -64,7 +64,7 @@ namespace CapaVista_Ventas
             this.VentasBtnComisionesVendedores = new System.Windows.Forms.Button();
             this.VentasBtnMantenimientos = new System.Windows.Forms.Button();
             this.VentasBtnCierreMovimientos = new System.Windows.Forms.Button();
-            this.VentasBtnCerrarSesion = new System.Windows.Forms.Button();
+            this.VentasBtnSalir = new System.Windows.Forms.Button();
             this.VentasTlpContenido = new System.Windows.Forms.TableLayoutPanel();
             this.VentasTlpEncabezado = new System.Windows.Forms.TableLayoutPanel();
             this.VentasBtnBurger = new System.Windows.Forms.Button();
@@ -476,7 +476,7 @@ namespace CapaVista_Ventas
             this.VentasTlpMenu.Controls.Add(this.VentasBtnComisionesVendedores, 0, 9);
             this.VentasTlpMenu.Controls.Add(this.VentasBtnMantenimientos, 0, 10);
             this.VentasTlpMenu.Controls.Add(this.VentasBtnCierreMovimientos, 0, 11);
-            this.VentasTlpMenu.Controls.Add(this.VentasBtnCerrarSesion, 0, 12);
+            this.VentasTlpMenu.Controls.Add(this.VentasBtnSalir, 0, 12);
             this.VentasTlpMenu.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left;
             this.VentasTlpMenu.Location = new System.Drawing.Point(6, 8);
             this.VentasTlpMenu.Name = "VentasTlpMenu";
@@ -873,38 +873,38 @@ namespace CapaVista_Ventas
             this.VentasBtnCierreMovimientos.MouseEnter += new System.EventHandler(this.VentasBtnOpcion_MouseEnter);
             this.VentasBtnCierreMovimientos.MouseLeave += new System.EventHandler(this.VentasBtnOpcion_MouseLeave);
             //
-            // VentasBtnCerrarSesion
+            // VentasBtnSalir
             //
-            this.VentasBtnCerrarSesion.AccessibleName = "Cerrar sesión";
-            this.VentasBtnCerrarSesion.BackColor = System.Drawing.Color.Transparent;
-            this.VentasBtnCerrarSesion.BackgroundImage = global::CapaVista_Ventas.Properties.Resources.BotonMenuNormalVentas;
-            this.VentasBtnCerrarSesion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.VentasBtnCerrarSesion.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.VentasBtnCerrarSesion.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.VentasBtnCerrarSesion.FlatAppearance.BorderSize = 0;
-            this.VentasBtnCerrarSesion.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.VentasBtnCerrarSesion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.VentasBtnCerrarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.VentasBtnCerrarSesion.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.VentasBtnCerrarSesion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
-            this.VentasBtnCerrarSesion.Location = new System.Drawing.Point(0, 899);
-            this.VentasBtnCerrarSesion.Margin = new System.Windows.Forms.Padding(0, 2, 0, 2);
-            this.VentasBtnCerrarSesion.Name = "VentasBtnCerrarSesion";
-            this.VentasBtnCerrarSesion.Image = global::CapaVista_Ventas.Properties.Resources.IconoCerrarSesionVentas;
-            this.VentasBtnCerrarSesion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.VentasBtnCerrarSesion.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.VentasBtnCerrarSesion.Padding = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.VentasBtnCerrarSesion.Size = new System.Drawing.Size(258, 81);
-            this.VentasBtnCerrarSesion.TabIndex = 11;
-            this.VentasBtnCerrarSesion.Tag = "CerrarSesion";
-            this.VentasBtnCerrarSesion.Text = "Cerrar sesión";
-            this.VentasBtnCerrarSesion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.VentasTtpMenu.SetToolTip(this.VentasBtnCerrarSesion, "Cerrar sesión");
-            this.VentasBtnCerrarSesion.UseCompatibleTextRendering = true;
-            this.VentasBtnCerrarSesion.UseVisualStyleBackColor = false;
-            this.VentasBtnCerrarSesion.Click += new System.EventHandler(this.VentasBtnCerrarSesion_Click);
-            this.VentasBtnCerrarSesion.MouseEnter += new System.EventHandler(this.VentasBtnOpcion_MouseEnter);
-            this.VentasBtnCerrarSesion.MouseLeave += new System.EventHandler(this.VentasBtnOpcion_MouseLeave);
+            this.VentasBtnSalir.AccessibleName = "Salir";
+            this.VentasBtnSalir.BackColor = System.Drawing.Color.Transparent;
+            this.VentasBtnSalir.BackgroundImage = global::CapaVista_Ventas.Properties.Resources.BotonMenuNormalVentas;
+            this.VentasBtnSalir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.VentasBtnSalir.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.VentasBtnSalir.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.VentasBtnSalir.FlatAppearance.BorderSize = 0;
+            this.VentasBtnSalir.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.VentasBtnSalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.VentasBtnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.VentasBtnSalir.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.VentasBtnSalir.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
+            this.VentasBtnSalir.Location = new System.Drawing.Point(0, 899);
+            this.VentasBtnSalir.Margin = new System.Windows.Forms.Padding(0, 2, 0, 2);
+            this.VentasBtnSalir.Name = "VentasBtnSalir";
+            this.VentasBtnSalir.Image = global::CapaVista_Ventas.Properties.Resources.IconoCerrarSesionVentas;
+            this.VentasBtnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.VentasBtnSalir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.VentasBtnSalir.Padding = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.VentasBtnSalir.Size = new System.Drawing.Size(258, 81);
+            this.VentasBtnSalir.TabIndex = 11;
+            this.VentasBtnSalir.Tag = "Salir";
+            this.VentasBtnSalir.Text = "Salir";
+            this.VentasBtnSalir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.VentasTtpMenu.SetToolTip(this.VentasBtnSalir, "Salir");
+            this.VentasBtnSalir.UseCompatibleTextRendering = true;
+            this.VentasBtnSalir.UseVisualStyleBackColor = false;
+            this.VentasBtnSalir.Click += new System.EventHandler(this.VentasBtnSalir_Click);
+            this.VentasBtnSalir.MouseEnter += new System.EventHandler(this.VentasBtnOpcion_MouseEnter);
+            this.VentasBtnSalir.MouseLeave += new System.EventHandler(this.VentasBtnOpcion_MouseLeave);
             //
             // VentasTlpContenido
             //
@@ -1443,7 +1443,7 @@ namespace CapaVista_Ventas
         private System.Windows.Forms.Button VentasBtnComisionesVendedores;
         private System.Windows.Forms.Button VentasBtnMantenimientos;
         private System.Windows.Forms.Button VentasBtnCierreMovimientos;
-        private System.Windows.Forms.Button VentasBtnCerrarSesion;
+        private System.Windows.Forms.Button VentasBtnSalir;
         private System.Windows.Forms.TableLayoutPanel VentasTlpContenido;
         private System.Windows.Forms.TableLayoutPanel VentasTlpEncabezado;
         private System.Windows.Forms.Button VentasBtnBurger;
@@ -1476,4 +1476,4 @@ namespace CapaVista_Ventas
     }
 }
 
-// FIN DEL CÓDIGO — Jose Torres | Carné: 0901-23-1091 | Fecha: 14/10/2026
+// FIN DEL CÓDIGO — Jose Torres | Carné: 0901-23-1091 | Fecha: 15/10/2026

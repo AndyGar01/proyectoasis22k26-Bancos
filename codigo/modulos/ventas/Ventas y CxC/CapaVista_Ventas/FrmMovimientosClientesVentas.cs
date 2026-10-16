@@ -13,6 +13,7 @@ namespace CapaVista_Ventas
         public FrmMovimientosClientesVentas()
         {
             InitializeComponent();
+          
         }
     }
 }

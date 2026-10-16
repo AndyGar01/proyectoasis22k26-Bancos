@@ -31,9 +31,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CapaVista_Navegador">
-      <HintPath>..\..\..\..\componentes\navegador\Navegador\CapaVista_Navegador\bin\Debug\CapaVista_Navegador.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
@@ -76,21 +73,11 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <Compile Include="FrmSplashVentas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmSplashVentas.Designer.cs">
-      <DependentUpon>FrmSplashVentas.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="FrmPedidoVentas.resx">
       <DependentUpon>FrmPedidoVentas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmSplashVentas.resx">
-      <DependentUpon>FrmSplashVentas.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ClsOpcionVentasEventArgs.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -118,9 +105,6 @@
     </None>
     <None Include="..\..\..\..\..\recursos\modulos\ventas\fondoDashboardVentas.png">
       <Link>Recursos\fondoDashboardVentas.png</Link>
-    </None>
-    <None Include="..\..\..\..\..\recursos\modulos\ventas\fondoSplashVentas.png">
-      <Link>Recursos\fondoSplashVentas.png</Link>
     </None>
     <None Include="..\..\..\..\..\recursos\modulos\ventas\fondoNavegadorVentas.png">
       <Link>Recursos\fondoNavegadorVentas.png</Link>
@@ -163,15 +147,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FrmLoginVentas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmLoginVentas.Designer.cs">
-      <DependentUpon>FrmLoginVentas.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="FrmLoginVentas.resx">
-      <DependentUpon>FrmLoginVentas.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="..\..\..\..\..\recursos\modulos\ventas\iconoInicioVentas.png">
       <Link>Recursos\iconoInicioVentas.png</Link>
     </None>
@@ -202,12 +177,6 @@
     <None Include="..\..\..\..\..\recursos\modulos\ventas\iconoCerrarSesionVentas.png">
       <Link>Recursos\iconoCerrarSesionVentas.png</Link>
     </None>
-    <None Include="..\..\..\..\..\recursos\modulos\ventas\mascotaLoginVentas.png">
-      <Link>Recursos\mascotaLoginVentas.png</Link>
-    </None>
-    <None Include="..\..\..\..\..\recursos\modulos\ventas\fondoLoginVentas.png">
-      <Link>Recursos\fondoLoginVentas.png</Link>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\..\..\..\recursos\modulos\ventas\iconoAyudaVentas.png">
@@ -217,15 +186,12 @@
   <ItemGroup>
     <Compile Include="FrmMovimientosClientesVentas.cs">
       <SubType>Form</SubType>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="FrmMovimientosClientesVentas.Designer.cs">
       <DependentUpon>FrmMovimientosClientesVentas.cs</DependentUpon>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <EmbeddedResource Include="FrmMovimientosClientesVentas.resx">
       <DependentUpon>FrmMovimientosClientesVentas.cs</DependentUpon>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
     <Compile Include="FrmRecepcionPagosVentas.cs">
       <SubType>Form</SubType>
@@ -298,19 +264,47 @@
   <ItemGroup>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\..\..\..\..\recursos\modulos\ventas\botones\referencias\IngresarVentas.png"><Link>Recursos\Botones\Referencias\IngresarVentas.png</Link></None>
-    <None Include="..\..\..\..\..\recursos\modulos\ventas\botones\referencias\ConsultarVentas.png"><Link>Recursos\Botones\Referencias\ConsultarVentas.png</Link></None>
-    <None Include="..\..\..\..\..\recursos\modulos\ventas\botones\referencias\ModificarVentas.png"><Link>Recursos\Botones\Referencias\ModificarVentas.png</Link></None>
-    <None Include="..\..\..\..\..\recursos\modulos\ventas\botones\referencias\EliminarVentas.png"><Link>Recursos\Botones\Referencias\EliminarVentas.png</Link></None>
-    <None Include="..\..\..\..\..\recursos\modulos\ventas\botones\referencias\GuardarVentas.png"><Link>Recursos\Botones\Referencias\GuardarVentas.png</Link></None>
-    <None Include="..\..\..\..\..\recursos\modulos\ventas\botones\referencias\CancelarVentas.png"><Link>Recursos\Botones\Referencias\CancelarVentas.png</Link></None>
-    <None Include="..\..\..\..\..\recursos\modulos\ventas\botones\referencias\RefrescarVentas.png"><Link>Recursos\Botones\Referencias\RefrescarVentas.png</Link></None>
-    <None Include="..\..\..\..\..\recursos\modulos\ventas\botones\referencias\ImprimirVentas.png"><Link>Recursos\Botones\Referencias\ImprimirVentas.png</Link></None>
-    <None Include="..\..\..\..\..\recursos\modulos\ventas\botones\referencias\AyudaVentas.png"><Link>Recursos\Botones\Referencias\AyudaVentas.png</Link></None>
-    <None Include="..\..\..\..\..\recursos\modulos\ventas\botones\referencias\InicioVentas.png"><Link>Recursos\Botones\Referencias\InicioVentas.png</Link></None>
-    <None Include="..\..\..\..\..\recursos\modulos\ventas\botones\referencias\AnteriorVentas.png"><Link>Recursos\Botones\Referencias\AnteriorVentas.png</Link></None>
-    <None Include="..\..\..\..\..\recursos\modulos\ventas\botones\referencias\SiguienteVentas.png"><Link>Recursos\Botones\Referencias\SiguienteVentas.png</Link></None>
-    <None Include="..\..\..\..\..\recursos\modulos\ventas\botones\referencias\FinVentas.png"><Link>Recursos\Botones\Referencias\FinVentas.png</Link></None>
-    <None Include="..\..\..\..\..\recursos\modulos\ventas\botones\referencias\SalirVentas.png"><Link>Recursos\Botones\Referencias\SalirVentas.png</Link></None>
+    <None Include="..\..\..\..\..\recursos\modulos\ventas\botones\referencias\IngresarVentas.png">
+      <Link>Recursos\Botones\Referencias\IngresarVentas.png</Link>
+    </None>
+    <None Include="..\..\..\..\..\recursos\modulos\ventas\botones\referencias\ConsultarVentas.png">
+      <Link>Recursos\Botones\Referencias\ConsultarVentas.png</Link>
+    </None>
+    <None Include="..\..\..\..\..\recursos\modulos\ventas\botones\referencias\ModificarVentas.png">
+      <Link>Recursos\Botones\Referencias\ModificarVentas.png</Link>
+    </None>
+    <None Include="..\..\..\..\..\recursos\modulos\ventas\botones\referencias\EliminarVentas.png">
+      <Link>Recursos\Botones\Referencias\EliminarVentas.png</Link>
+    </None>
+    <None Include="..\..\..\..\..\recursos\modulos\ventas\botones\referencias\GuardarVentas.png">
+      <Link>Recursos\Botones\Referencias\GuardarVentas.png</Link>
+    </None>
+    <None Include="..\..\..\..\..\recursos\modulos\ventas\botones\referencias\CancelarVentas.png">
+      <Link>Recursos\Botones\Referencias\CancelarVentas.png</Link>
+    </None>
+    <None Include="..\..\..\..\..\recursos\modulos\ventas\botones\referencias\RefrescarVentas.png">
+      <Link>Recursos\Botones\Referencias\RefrescarVentas.png</Link>
+    </None>
+    <None Include="..\..\..\..\..\recursos\modulos\ventas\botones\referencias\ImprimirVentas.png">
+      <Link>Recursos\Botones\Referencias\ImprimirVentas.png</Link>
+    </None>
+    <None Include="..\..\..\..\..\recursos\modulos\ventas\botones\referencias\AyudaVentas.png">
+      <Link>Recursos\Botones\Referencias\AyudaVentas.png</Link>
+    </None>
+    <None Include="..\..\..\..\..\recursos\modulos\ventas\botones\referencias\InicioVentas.png">
+      <Link>Recursos\Botones\Referencias\InicioVentas.png</Link>
+    </None>
+    <None Include="..\..\..\..\..\recursos\modulos\ventas\botones\referencias\AnteriorVentas.png">
+      <Link>Recursos\Botones\Referencias\AnteriorVentas.png</Link>
+    </None>
+    <None Include="..\..\..\..\..\recursos\modulos\ventas\botones\referencias\SiguienteVentas.png">
+      <Link>Recursos\Botones\Referencias\SiguienteVentas.png</Link>
+    </None>
+    <None Include="..\..\..\..\..\recursos\modulos\ventas\botones\referencias\FinVentas.png">
+      <Link>Recursos\Botones\Referencias\FinVentas.png</Link>
+    </None>
+    <None Include="..\..\..\..\..\recursos\modulos\ventas\botones\referencias\SalirVentas.png">
+      <Link>Recursos\Botones\Referencias\SalirVentas.png</Link>
+    </None>
   </ItemGroup>
 </Project>

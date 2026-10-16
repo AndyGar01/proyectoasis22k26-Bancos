@@ -1,6 +1,6 @@
 /*
  * INICIO DEL CÓDIGO — Jose Torres
- * Carné: 0901-23-1091 | Fecha: 14/10/2026
+ * Carné: 0901-23-1091 | Fecha: 15/10/2026
  * Área: Ventas y cuentas por cobrar
  * Propósito: Exponer los recursos visuales del diseñador mediante Properties.Resources; archivo regenerable.
  */
@@ -37,8 +37,6 @@ namespace CapaVista_Ventas.Properties
         { get { return ((global::System.Drawing.Bitmap)(ResourceManager.GetObject("IconoMenuVentas", resourceCulture))); } }
         internal static global::System.Drawing.Bitmap FondoDashboardVentas
         { get { return ((global::System.Drawing.Bitmap)(ResourceManager.GetObject("FondoDashboardVentas", resourceCulture))); } }
-        internal static global::System.Drawing.Bitmap FondoSplashVentas
-        { get { return ((global::System.Drawing.Bitmap)(ResourceManager.GetObject("FondoSplashVentas", resourceCulture))); } }
         internal static global::System.Drawing.Bitmap FondoNavegadorVentas
         { get { return ((global::System.Drawing.Bitmap)(ResourceManager.GetObject("FondoNavegadorVentas", resourceCulture))); } }
         internal static global::System.Drawing.Bitmap FondoTarjetaVentas
@@ -81,10 +79,6 @@ namespace CapaVista_Ventas.Properties
         { get { return ((global::System.Drawing.Bitmap)(ResourceManager.GetObject("IconoCierreMovimientosVentas", resourceCulture))); } }
         internal static global::System.Drawing.Bitmap IconoCerrarSesionVentas
         { get { return ((global::System.Drawing.Bitmap)(ResourceManager.GetObject("IconoCerrarSesionVentas", resourceCulture))); } }
-        internal static global::System.Drawing.Bitmap MascotaLoginVentas
-        { get { return ((global::System.Drawing.Bitmap)(ResourceManager.GetObject("MascotaLoginVentas", resourceCulture))); } }
-        internal static global::System.Drawing.Bitmap FondoLoginVentas
-        { get { return ((global::System.Drawing.Bitmap)(ResourceManager.GetObject("FondoLoginVentas", resourceCulture))); } }
         internal static global::System.Drawing.Bitmap IconoAyudaVentas
         { get { return ((global::System.Drawing.Bitmap)(ResourceManager.GetObject("IconoAyudaVentas", resourceCulture))); } }
         internal static global::System.Drawing.Bitmap BotonOriginalIngresarVentas
@@ -118,4 +112,4 @@ namespace CapaVista_Ventas.Properties
     }
 }
 
-// FIN DEL CÓDIGO — Jose Torres | Carné: 0901-23-1091 | Fecha: 14/10/2026
+// FIN DEL CÓDIGO — Jose Torres | Carné: 0901-23-1091 | Fecha: 15/10/2026

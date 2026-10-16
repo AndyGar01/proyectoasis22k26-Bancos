@@ -15,6 +15,7 @@ using CapaVista_DisponibilidadDiaria.Formularios;
 using CapaVista_TipoCambio.Formularios;
 using CapaVista_ConciliacionBancaria.Formularios;
 using CapaVista_GeneracionPagos.Formularios;
+using CapaVista_CierreBancario.Formularios;
 
 
 namespace CapaVista_Bancos.Formularios
@@ -91,6 +92,12 @@ namespace CapaVista_Bancos.Formularios
         {
             FrmGeneracionPagos GeneracionPagos = new FrmGeneracionPagos();
             GeneracionPagos.ShowDialog();
+        }
+
+        private void BancosBtnCierreBan_Click(object sender, EventArgs e)
+        {
+            FrmCierreBancario CierreBancario = new FrmCierreBancario();
+            CierreBancario.ShowDialog();
         }
     }
 }

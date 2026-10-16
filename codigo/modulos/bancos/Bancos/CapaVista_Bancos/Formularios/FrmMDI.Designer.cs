@@ -109,7 +109,7 @@
             this.BancosLblUsuarioRol.Location = new System.Drawing.Point(832, 17);
             this.BancosLblUsuarioRol.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.BancosLblUsuarioRol.Name = "BancosLblUsuarioRol";
-            this.BancosLblUsuarioRol.Size = new System.Drawing.Size(140, 20);
+            this.BancosLblUsuarioRol.Size = new System.Drawing.Size(169, 25);
             this.BancosLblUsuarioRol.TabIndex = 12;
             this.BancosLblUsuarioRol.Text = "Rol:                ";
             // 
@@ -122,7 +122,7 @@
             this.BancosLblUsuario.Location = new System.Drawing.Point(513, 17);
             this.BancosLblUsuario.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.BancosLblUsuario.Name = "BancosLblUsuario";
-            this.BancosLblUsuario.Size = new System.Drawing.Size(223, 20);
+            this.BancosLblUsuario.Size = new System.Drawing.Size(269, 25);
             this.BancosLblUsuario.TabIndex = 11;
             this.BancosLblUsuario.Text = "Usuario:                       ";
             // 
@@ -171,7 +171,7 @@
             this.BancosLblResumen.Location = new System.Drawing.Point(92, 453);
             this.BancosLblResumen.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.BancosLblResumen.Name = "BancosLblResumen";
-            this.BancosLblResumen.Size = new System.Drawing.Size(395, 40);
+            this.BancosLblResumen.Size = new System.Drawing.Size(494, 48);
             this.BancosLblResumen.TabIndex = 10;
             this.BancosLblResumen.Text = "Resumen del Sistema";
             // 
@@ -184,7 +184,7 @@
             this.BancosLblParrafo.Location = new System.Drawing.Point(92, 255);
             this.BancosLblParrafo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.BancosLblParrafo.Name = "BancosLblParrafo";
-            this.BancosLblParrafo.Size = new System.Drawing.Size(433, 40);
+            this.BancosLblParrafo.Size = new System.Drawing.Size(553, 50);
             this.BancosLblParrafo.TabIndex = 9;
             this.BancosLblParrafo.Text = "Gestión integral de los movimientos bancarios\r\ny el flujo monetario de la empresa" +
     ".";
@@ -198,7 +198,7 @@
             this.BancosLblModulo.Location = new System.Drawing.Point(92, 190);
             this.BancosLblModulo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.BancosLblModulo.Name = "BancosLblModulo";
-            this.BancosLblModulo.Size = new System.Drawing.Size(340, 40);
+            this.BancosLblModulo.Size = new System.Drawing.Size(424, 48);
             this.BancosLblModulo.TabIndex = 8;
             this.BancosLblModulo.Text = "Módulo de Bancos";
             // 
@@ -211,7 +211,7 @@
             this.BancosLblBienvenido.Location = new System.Drawing.Point(92, 95);
             this.BancosLblBienvenido.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.BancosLblBienvenido.Name = "BancosLblBienvenido";
-            this.BancosLblBienvenido.Size = new System.Drawing.Size(418, 68);
+            this.BancosLblBienvenido.Size = new System.Drawing.Size(524, 85);
             this.BancosLblBienvenido.TabIndex = 7;
             this.BancosLblBienvenido.Text = "¡Bienvenido!";
             // 
@@ -237,7 +237,7 @@
             this.BancosLblContexto.Location = new System.Drawing.Point(45, 11);
             this.BancosLblContexto.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.BancosLblContexto.Name = "BancosLblContexto";
-            this.BancosLblContexto.Size = new System.Drawing.Size(602, 60);
+            this.BancosLblContexto.Size = new System.Drawing.Size(769, 75);
             this.BancosLblContexto.TabIndex = 11;
             this.BancosLblContexto.Text = "Módulo encargado de permitir y generar movimientos bancarios;\r\ncomparando y asegu" +
     "randose de verificar los resultados por cada\r\nmes, disponiendo de accesibilidad " +
@@ -252,7 +252,7 @@
             this.BancosLblNota.Location = new System.Drawing.Point(1039, 7);
             this.BancosLblNota.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.BancosLblNota.Name = "BancosLblNota";
-            this.BancosLblNota.Size = new System.Drawing.Size(187, 20);
+            this.BancosLblNota.Size = new System.Drawing.Size(240, 25);
             this.BancosLblNota.TabIndex = 11;
             this.BancosLblNota.Text = "Nota de Integración";
             // 
@@ -278,7 +278,7 @@
             this.SeguridadLblKPILbl3.Location = new System.Drawing.Point(41, 146);
             this.SeguridadLblKPILbl3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.SeguridadLblKPILbl3.Name = "SeguridadLblKPILbl3";
-            this.SeguridadLblKPILbl3.Size = new System.Drawing.Size(105, 40);
+            this.SeguridadLblKPILbl3.Size = new System.Drawing.Size(135, 50);
             this.SeguridadLblKPILbl3.TabIndex = 14;
             this.SeguridadLblKPILbl3.Text = "    Pagos\r\nGenerados";
             // 
@@ -291,7 +291,7 @@
             this.BancosLblKPIResp3.Location = new System.Drawing.Point(89, 107);
             this.BancosLblKPIResp3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.BancosLblKPIResp3.Name = "BancosLblKPIResp3";
-            this.BancosLblKPIResp3.Size = new System.Drawing.Size(32, 32);
+            this.BancosLblKPIResp3.Size = new System.Drawing.Size(40, 40);
             this.BancosLblKPIResp3.TabIndex = 14;
             this.BancosLblKPIResp3.Text = "0";
             // 
@@ -317,7 +317,7 @@
             this.SeguridadLblKPILbl4.Location = new System.Drawing.Point(57, 148);
             this.SeguridadLblKPILbl4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.SeguridadLblKPILbl4.Name = "SeguridadLblKPILbl4";
-            this.SeguridadLblKPILbl4.Size = new System.Drawing.Size(82, 40);
+            this.SeguridadLblKPILbl4.Size = new System.Drawing.Size(105, 50);
             this.SeguridadLblKPILbl4.TabIndex = 13;
             this.SeguridadLblKPILbl4.Text = "Cuentas\r\n Activas";
             // 
@@ -330,7 +330,7 @@
             this.BancosLblKPIResp4.Location = new System.Drawing.Point(92, 108);
             this.BancosLblKPIResp4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.BancosLblKPIResp4.Name = "BancosLblKPIResp4";
-            this.BancosLblKPIResp4.Size = new System.Drawing.Size(32, 32);
+            this.BancosLblKPIResp4.Size = new System.Drawing.Size(40, 40);
             this.BancosLblKPIResp4.TabIndex = 15;
             this.BancosLblKPIResp4.Text = "0";
             // 
@@ -356,7 +356,7 @@
             this.label1.Location = new System.Drawing.Point(75, 148);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 40);
+            this.label1.Size = new System.Drawing.Size(74, 50);
             this.label1.TabIndex = 13;
             this.label1.Text = "Saldo\r\nTotal";
             // 
@@ -369,7 +369,7 @@
             this.BancosLblKPIResp6.Location = new System.Drawing.Point(92, 108);
             this.BancosLblKPIResp6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.BancosLblKPIResp6.Name = "BancosLblKPIResp6";
-            this.BancosLblKPIResp6.Size = new System.Drawing.Size(32, 32);
+            this.BancosLblKPIResp6.Size = new System.Drawing.Size(40, 40);
             this.BancosLblKPIResp6.TabIndex = 12;
             this.BancosLblKPIResp6.Text = "0";
             // 
@@ -395,7 +395,7 @@
             this.label2.Location = new System.Drawing.Point(35, 148);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(121, 40);
+            this.label2.Size = new System.Drawing.Size(156, 50);
             this.label2.TabIndex = 16;
             this.label2.Text = "Proveedores\r\n    Activos";
             // 
@@ -408,7 +408,7 @@
             this.BancosLblKPIResp5.Location = new System.Drawing.Point(92, 108);
             this.BancosLblKPIResp5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.BancosLblKPIResp5.Name = "BancosLblKPIResp5";
-            this.BancosLblKPIResp5.Size = new System.Drawing.Size(32, 32);
+            this.BancosLblKPIResp5.Size = new System.Drawing.Size(40, 40);
             this.BancosLblKPIResp5.TabIndex = 12;
             this.BancosLblKPIResp5.Text = "0";
             // 
@@ -434,7 +434,7 @@
             this.SeguridadLblKPILbl2.Location = new System.Drawing.Point(8, 151);
             this.SeguridadLblKPILbl2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.SeguridadLblKPILbl2.Name = "SeguridadLblKPILbl2";
-            this.SeguridadLblKPILbl2.Size = new System.Drawing.Size(154, 32);
+            this.SeguridadLblKPILbl2.Size = new System.Drawing.Size(189, 40);
             this.SeguridadLblKPILbl2.TabIndex = 13;
             this.SeguridadLblKPILbl2.Text = "Ordenes de Compra\r\n      Autorizadas";
             // 
@@ -447,7 +447,7 @@
             this.BancosLblKPIResp2.Location = new System.Drawing.Point(91, 107);
             this.BancosLblKPIResp2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.BancosLblKPIResp2.Name = "BancosLblKPIResp2";
-            this.BancosLblKPIResp2.Size = new System.Drawing.Size(32, 32);
+            this.BancosLblKPIResp2.Size = new System.Drawing.Size(40, 40);
             this.BancosLblKPIResp2.TabIndex = 13;
             this.BancosLblKPIResp2.Text = "0";
             // 
@@ -473,7 +473,7 @@
             this.SeguridadLblKPILbl1.Location = new System.Drawing.Point(28, 146);
             this.SeguridadLblKPILbl1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.SeguridadLblKPILbl1.Name = "SeguridadLblKPILbl1";
-            this.SeguridadLblKPILbl1.Size = new System.Drawing.Size(126, 40);
+            this.SeguridadLblKPILbl1.Size = new System.Drawing.Size(161, 50);
             this.SeguridadLblKPILbl1.TabIndex = 12;
             this.SeguridadLblKPILbl1.Text = "Movimientos\r\n   Bancarios";
             // 
@@ -486,7 +486,7 @@
             this.BancosLblKPIResp1.Location = new System.Drawing.Point(91, 107);
             this.BancosLblKPIResp1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.BancosLblKPIResp1.Name = "BancosLblKPIResp1";
-            this.BancosLblKPIResp1.Size = new System.Drawing.Size(32, 32);
+            this.BancosLblKPIResp1.Size = new System.Drawing.Size(40, 40);
             this.BancosLblKPIResp1.TabIndex = 11;
             this.BancosLblKPIResp1.Text = "0";
             // 
@@ -573,6 +573,7 @@
             this.BancosBtnCierreBan.Size = new System.Drawing.Size(352, 52);
             this.BancosBtnCierreBan.TabIndex = 9;
             this.BancosBtnCierreBan.UseVisualStyleBackColor = false;
+            this.BancosBtnCierreBan.Click += new System.EventHandler(this.BancosBtnCierreBan_Click);
             // 
             // BancosBtnAutoCompra
             // 

@@ -16,5 +16,7 @@ namespace CapaVista_Inventario_Logistica
         {
             InitializeComponent();
         }
+
+        
     }
 }

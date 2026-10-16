@@ -69,6 +69,7 @@
             this.SeguridadLblParrafo = new System.Windows.Forms.Label();
             this.SeguridadLblBienvenido = new System.Windows.Forms.Label();
             this.SeguridadPbButti = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SeguridadPnlFondo.SuspendLayout();
             this.SeguridadPnlNavegador.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SeguridadPbLogo)).BeginInit();
@@ -300,6 +301,7 @@
             this.SeguridadPnlDashboard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(238)))), ((int)(((byte)(225)))));
             this.SeguridadPnlDashboard.BackgroundImage = global::CapaVista_Seguridad.Properties.Resources.dashboardSeguridad;
             this.SeguridadPnlDashboard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.SeguridadPnlDashboard.Controls.Add(this.button1);
             this.SeguridadPnlDashboard.Controls.Add(this.SeguridadBtnAyudas);
             this.SeguridadPnlDashboard.Controls.Add(this.SeguridadPnlKPI6);
             this.SeguridadPnlDashboard.Controls.Add(this.SeguridadPnlKPI5);
@@ -592,6 +594,7 @@
             this.SeguridadPbButti.TabIndex = 0;
             this.SeguridadPbButti.TabStop = false;
             // 
+           
             // FrmMDISeguridad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -666,5 +669,6 @@
         private System.Windows.Forms.Label SeguridadLblUsuarioRol;
         private System.Windows.Forms.Label SeguridadLblUsuario;
         private System.Windows.Forms.Button SeguridadBtnCerrarSesion;
+        private System.Windows.Forms.Button button1;
     }
 }

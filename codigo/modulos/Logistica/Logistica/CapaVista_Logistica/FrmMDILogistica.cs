@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CapaVista_Inventario_Logistica;
+using CapaVista_Inventario_Logistica.Formas;
+
 
 namespace CapaVista_Logistica
 {
@@ -17,6 +20,17 @@ namespace CapaVista_Logistica
             InitializeComponent();
         }
 
-        
+        private void LogisticaBtnUbicaciones_Click(object sender, EventArgs e)
+        {
+            CapaVista_Inventario_Logistica.FrmEstructurayUbicaciones frmEstructurayUbicaciones = new CapaVista_Inventario_Logistica.FrmEstructurayUbicaciones();
+            frmEstructurayUbicaciones.ShowDialog();
+        }
+
+        private void LogisticaBtnCatalogo_Click(object sender, EventArgs e)
+        {
+            CapaVista_Inventario_Logistica.Formas.FrmMantenimientoSucursales frmMantenimientoSucursales = new CapaVista_Inventario_Logistica.Formas.FrmMantenimientoSucursales();
+            frmMantenimientoSucursales.ShowDialog();
+
+        }
     }
 }

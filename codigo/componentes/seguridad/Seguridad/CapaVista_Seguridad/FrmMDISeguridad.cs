@@ -305,6 +305,8 @@ namespace CapaVista_Seguridad
         {
             Help.ShowHelp(this, "C:/SeguridadAyudas/SeguridadAyudas.chm", "MDI_Seguridad.html");
         }
+
+        
     }
 }
 

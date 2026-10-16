@@ -56,11 +56,44 @@
       <DependentUpon>FrmGeneracionPagos.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Formularios\FrmGeneracionPagos.resx">
       <DependentUpon>FrmGeneracionPagos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_salirB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_rechazarB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_autorizarB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_ayudaB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_reporteB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_limpiarB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_consultarB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mascota11.jpeg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

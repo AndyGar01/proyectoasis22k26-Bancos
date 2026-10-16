@@ -28,29 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmGeneracionPagos));
             this.BancosLblTituloObligaciones = new System.Windows.Forms.Label();
             this.BancosLblOrigen = new System.Windows.Forms.Label();
             this.BancosCboOrigen = new System.Windows.Forms.ComboBox();
             this.BancosLblMoneda = new System.Windows.Forms.Label();
             this.BancosCboMoneda = new System.Windows.Forms.ComboBox();
             this.BancosTxtBuscar = new System.Windows.Forms.TextBox();
-            this.BancosBtnBuscar = new System.Windows.Forms.Button();
             this.BancosDgvObligaciones = new System.Windows.Forms.DataGridView();
             this.BancosDgvObligacionesColOrigen = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BancosDgvObligacionesColDocumento = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -59,8 +59,6 @@
             this.BancosDgvObligacionesColMoneda = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BancosDgvObligacionesColMonto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BancosLblRegistros = new System.Windows.Forms.Label();
-            this.BancosBtnAnterior = new System.Windows.Forms.Button();
-            this.BancosBtnSiguiente = new System.Windows.Forms.Button();
             this.BancosLblTituloOrdenes = new System.Windows.Forms.Label();
             this.BancosDgvOrdenes = new System.Windows.Forms.DataGridView();
             this.BancosDgvOrdenesColNumeroOrden = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -103,7 +101,6 @@
             this.BancosRdoPrepTransferencia = new System.Windows.Forms.RadioButton();
             this.BancosLblPrepConcepto = new System.Windows.Forms.Label();
             this.BancosTxtPrepConcepto = new System.Windows.Forms.TextBox();
-            this.BancosBtnPrepLimpiar = new System.Windows.Forms.Button();
             this.BancosBtnPrepPreparar = new System.Windows.Forms.Button();
             this.BancosTbpAutorizar = new System.Windows.Forms.TabPage();
             this.BancosLblAutNumeroOrden = new System.Windows.Forms.Label();
@@ -128,8 +125,6 @@
             this.BancosLblAutCodigo = new System.Windows.Forms.Label();
             this.BancosLblAutCodigoReq = new System.Windows.Forms.Label();
             this.BancosTxtAutCodigo = new System.Windows.Forms.TextBox();
-            this.BancosBtnAutRechazar = new System.Windows.Forms.Button();
-            this.BancosBtnAutAutorizar = new System.Windows.Forms.Button();
             this.BancosTbpEmitir = new System.Windows.Forms.TabPage();
             this.BancosLblEmiNumeroOrden = new System.Windows.Forms.Label();
             this.BancosTxtEmiNumeroOrden = new System.Windows.Forms.TextBox();
@@ -177,9 +172,14 @@
             this.BancosLblRegTotalHaber = new System.Windows.Forms.Label();
             this.BancosTxtRegTotalHaber = new System.Windows.Forms.TextBox();
             this.BancosBtnRegMovimiento = new System.Windows.Forms.Button();
+            this.BancosBtnSalirSalirG = new System.Windows.Forms.Button();
+            this.BancosBtnBuscar = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.BancosBtnPrepLimpiar = new System.Windows.Forms.Button();
+            this.BancosBtnAutRechazar = new System.Windows.Forms.Button();
+            this.BancosBtnAutAutorizar = new System.Windows.Forms.Button();
             this.BancosBtnAyuda = new System.Windows.Forms.Button();
             this.BancosBtnReporte = new System.Windows.Forms.Button();
-            this.BancosBtnSalir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.BancosDgvObligaciones)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BancosDgvOrdenes)).BeginInit();
             this.BancosTbcProceso.SuspendLayout();
@@ -196,26 +196,27 @@
             this.BancosFlpEmiCodigo.SuspendLayout();
             this.BancosTbpRegistrar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BancosDgvRegPoliza)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // BancosLblTituloObligaciones
             // 
             this.BancosLblTituloObligaciones.AutoSize = true;
             this.BancosLblTituloObligaciones.BackColor = System.Drawing.Color.Transparent;
-            this.BancosLblTituloObligaciones.Font = new System.Drawing.Font("Lucida Bright", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BancosLblTituloObligaciones.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
-            this.BancosLblTituloObligaciones.Location = new System.Drawing.Point(30, 12);
+            this.BancosLblTituloObligaciones.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BancosLblTituloObligaciones.ForeColor = System.Drawing.Color.White;
+            this.BancosLblTituloObligaciones.Location = new System.Drawing.Point(12, 12);
             this.BancosLblTituloObligaciones.Name = "BancosLblTituloObligaciones";
-            this.BancosLblTituloObligaciones.Size = new System.Drawing.Size(263, 24);
+            this.BancosLblTituloObligaciones.Size = new System.Drawing.Size(280, 25);
             this.BancosLblTituloObligaciones.TabIndex = 0;
-            this.BancosLblTituloObligaciones.Text = "Obligaciones por pagar";
+            this.BancosLblTituloObligaciones.Text = "OBLIGACION POR PAGAR";
             // 
             // BancosLblOrigen
             // 
             this.BancosLblOrigen.AutoSize = true;
             this.BancosLblOrigen.BackColor = System.Drawing.Color.Transparent;
             this.BancosLblOrigen.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.BancosLblOrigen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(78)))), ((int)(((byte)(68)))));
+            this.BancosLblOrigen.ForeColor = System.Drawing.Color.White;
             this.BancosLblOrigen.Location = new System.Drawing.Point(30, 54);
             this.BancosLblOrigen.Name = "BancosLblOrigen";
             this.BancosLblOrigen.Size = new System.Drawing.Size(43, 14);
@@ -244,7 +245,7 @@
             this.BancosLblMoneda.AutoSize = true;
             this.BancosLblMoneda.BackColor = System.Drawing.Color.Transparent;
             this.BancosLblMoneda.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.BancosLblMoneda.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(78)))), ((int)(((byte)(68)))));
+            this.BancosLblMoneda.ForeColor = System.Drawing.Color.White;
             this.BancosLblMoneda.Location = new System.Drawing.Point(270, 54);
             this.BancosLblMoneda.Name = "BancosLblMoneda";
             this.BancosLblMoneda.Size = new System.Drawing.Size(50, 14);
@@ -278,24 +279,6 @@
             this.BancosTxtBuscar.Size = new System.Drawing.Size(300, 26);
             this.BancosTxtBuscar.TabIndex = 5;
             this.BancosTxtBuscar.Text = "Documento o beneficiario";
-            this.BancosTxtBuscar.Enter += new System.EventHandler(this.BancosTxtBuscar_Enter);
-            this.BancosTxtBuscar.Leave += new System.EventHandler(this.BancosTxtBuscar_Leave);
-            // 
-            // BancosBtnBuscar
-            // 
-            this.BancosBtnBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
-            this.BancosBtnBuscar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BancosBtnBuscar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
-            this.BancosBtnBuscar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(138)))), ((int)(((byte)(85)))));
-            this.BancosBtnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BancosBtnBuscar.Font = new System.Drawing.Font("Segoe UI", 9.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BancosBtnBuscar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.BancosBtnBuscar.Location = new System.Drawing.Point(338, 113);
-            this.BancosBtnBuscar.Name = "BancosBtnBuscar";
-            this.BancosBtnBuscar.Size = new System.Drawing.Size(94, 29);
-            this.BancosBtnBuscar.TabIndex = 6;
-            this.BancosBtnBuscar.Text = "Buscar";
-            this.BancosBtnBuscar.UseVisualStyleBackColor = false;
             // 
             // BancosDgvObligaciones
             // 
@@ -303,25 +286,25 @@
             this.BancosDgvObligaciones.AllowUserToDeleteRows = false;
             this.BancosDgvObligaciones.AllowUserToResizeColumns = false;
             this.BancosDgvObligaciones.AllowUserToResizeRows = false;
-            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(248)))), ((int)(((byte)(242)))));
-            dataGridViewCellStyle17.Font = new System.Drawing.Font("Segoe UI", 8.25F);
-            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(231)))), ((int)(((byte)(211)))));
-            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
-            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.BancosDgvObligaciones.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(248)))), ((int)(((byte)(242)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(231)))), ((int)(((byte)(211)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.BancosDgvObligaciones.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.BancosDgvObligaciones.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.BancosDgvObligaciones.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.BancosDgvObligaciones.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.BancosDgvObligaciones.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
-            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.BancosDgvObligaciones.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.BancosDgvObligaciones.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.BancosDgvObligaciones.ColumnHeadersHeight = 28;
             this.BancosDgvObligaciones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.BancosDgvObligaciones.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -331,14 +314,14 @@
             this.BancosDgvObligacionesColVencimiento,
             this.BancosDgvObligacionesColMoneda,
             this.BancosDgvObligacionesColMonto});
-            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle20.Font = new System.Drawing.Font("Segoe UI", 8.25F);
-            dataGridViewCellStyle20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(231)))), ((int)(((byte)(211)))));
-            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
-            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.BancosDgvObligaciones.DefaultCellStyle = dataGridViewCellStyle20;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(231)))), ((int)(((byte)(211)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.BancosDgvObligaciones.DefaultCellStyle = dataGridViewCellStyle4;
             this.BancosDgvObligaciones.EnableHeadersVisualStyles = false;
             this.BancosDgvObligaciones.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(232)))), ((int)(((byte)(223)))));
             this.BancosDgvObligaciones.Location = new System.Drawing.Point(30, 152);
@@ -388,8 +371,8 @@
             // 
             // BancosDgvObligacionesColMonto
             // 
-            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.BancosDgvObligacionesColMonto.DefaultCellStyle = dataGridViewCellStyle19;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.BancosDgvObligacionesColMonto.DefaultCellStyle = dataGridViewCellStyle3;
             this.BancosDgvObligacionesColMonto.HeaderText = "Monto";
             this.BancosDgvObligacionesColMonto.Name = "BancosDgvObligacionesColMonto";
             this.BancosDgvObligacionesColMonto.ReadOnly = true;
@@ -399,58 +382,25 @@
             // 
             this.BancosLblRegistros.AutoSize = true;
             this.BancosLblRegistros.BackColor = System.Drawing.Color.Transparent;
-            this.BancosLblRegistros.Font = new System.Drawing.Font("Segoe UI", 8.25F);
-            this.BancosLblRegistros.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(78)))), ((int)(((byte)(68)))));
+            this.BancosLblRegistros.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BancosLblRegistros.ForeColor = System.Drawing.Color.White;
             this.BancosLblRegistros.Location = new System.Drawing.Point(30, 336);
             this.BancosLblRegistros.Name = "BancosLblRegistros";
-            this.BancosLblRegistros.Size = new System.Drawing.Size(146, 13);
+            this.BancosLblRegistros.Size = new System.Drawing.Size(136, 13);
             this.BancosLblRegistros.TabIndex = 8;
             this.BancosLblRegistros.Text = "Mostrando 1 de 3 registros";
-            // 
-            // BancosBtnAnterior
-            // 
-            this.BancosBtnAnterior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(234)))), ((int)(((byte)(232)))));
-            this.BancosBtnAnterior.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BancosBtnAnterior.Enabled = false;
-            this.BancosBtnAnterior.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(210)))), ((int)(((byte)(205)))));
-            this.BancosBtnAnterior.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(234)))), ((int)(((byte)(232)))));
-            this.BancosBtnAnterior.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BancosBtnAnterior.Font = new System.Drawing.Font("Segoe UI", 9.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BancosBtnAnterior.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(155)))), ((int)(((byte)(150)))));
-            this.BancosBtnAnterior.Location = new System.Drawing.Point(262, 330);
-            this.BancosBtnAnterior.Name = "BancosBtnAnterior";
-            this.BancosBtnAnterior.Size = new System.Drawing.Size(80, 28);
-            this.BancosBtnAnterior.TabIndex = 9;
-            this.BancosBtnAnterior.Text = "‹ Anterior";
-            this.BancosBtnAnterior.UseVisualStyleBackColor = false;
-            // 
-            // BancosBtnSiguiente
-            // 
-            this.BancosBtnSiguiente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(231)))), ((int)(((byte)(211)))));
-            this.BancosBtnSiguiente.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BancosBtnSiguiente.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(138)))), ((int)(((byte)(85)))));
-            this.BancosBtnSiguiente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(222)))), ((int)(((byte)(197)))));
-            this.BancosBtnSiguiente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BancosBtnSiguiente.Font = new System.Drawing.Font("Segoe UI", 9.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BancosBtnSiguiente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
-            this.BancosBtnSiguiente.Location = new System.Drawing.Point(348, 330);
-            this.BancosBtnSiguiente.Name = "BancosBtnSiguiente";
-            this.BancosBtnSiguiente.Size = new System.Drawing.Size(84, 28);
-            this.BancosBtnSiguiente.TabIndex = 10;
-            this.BancosBtnSiguiente.Text = "Siguiente ›";
-            this.BancosBtnSiguiente.UseVisualStyleBackColor = false;
             // 
             // BancosLblTituloOrdenes
             // 
             this.BancosLblTituloOrdenes.AutoSize = true;
             this.BancosLblTituloOrdenes.BackColor = System.Drawing.Color.Transparent;
             this.BancosLblTituloOrdenes.Font = new System.Drawing.Font("Lucida Bright", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BancosLblTituloOrdenes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
+            this.BancosLblTituloOrdenes.ForeColor = System.Drawing.Color.White;
             this.BancosLblTituloOrdenes.Location = new System.Drawing.Point(30, 366);
             this.BancosLblTituloOrdenes.Name = "BancosLblTituloOrdenes";
-            this.BancosLblTituloOrdenes.Size = new System.Drawing.Size(193, 24);
+            this.BancosLblTituloOrdenes.Size = new System.Drawing.Size(219, 24);
             this.BancosLblTituloOrdenes.TabIndex = 11;
-            this.BancosLblTituloOrdenes.Text = "Órdenes de pago";
+            this.BancosLblTituloOrdenes.Text = "ORDENES DE PAGO";
             // 
             // BancosDgvOrdenes
             // 
@@ -458,24 +408,24 @@
             this.BancosDgvOrdenes.AllowUserToDeleteRows = false;
             this.BancosDgvOrdenes.AllowUserToResizeColumns = false;
             this.BancosDgvOrdenes.AllowUserToResizeRows = false;
-            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(248)))), ((int)(((byte)(242)))));
-            dataGridViewCellStyle21.Font = new System.Drawing.Font("Segoe UI", 8.25F);
-            dataGridViewCellStyle21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(231)))), ((int)(((byte)(211)))));
-            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
-            dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.BancosDgvOrdenes.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle21;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(248)))), ((int)(((byte)(242)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(231)))), ((int)(((byte)(211)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.BancosDgvOrdenes.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
             this.BancosDgvOrdenes.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.BancosDgvOrdenes.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.BancosDgvOrdenes.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
-            dataGridViewCellStyle22.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle22.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
-            dataGridViewCellStyle22.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.BancosDgvOrdenes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle22;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.BancosDgvOrdenes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.BancosDgvOrdenes.ColumnHeadersHeight = 28;
             this.BancosDgvOrdenes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.BancosDgvOrdenes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -484,14 +434,14 @@
             this.BancosDgvOrdenesColMoneda,
             this.BancosDgvOrdenesColMonto,
             this.BancosDgvOrdenesColEstado});
-            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle24.Font = new System.Drawing.Font("Segoe UI", 8.25F);
-            dataGridViewCellStyle24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(231)))), ((int)(((byte)(211)))));
-            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
-            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.BancosDgvOrdenes.DefaultCellStyle = dataGridViewCellStyle24;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(231)))), ((int)(((byte)(211)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.BancosDgvOrdenes.DefaultCellStyle = dataGridViewCellStyle8;
             this.BancosDgvOrdenes.EnableHeadersVisualStyles = false;
             this.BancosDgvOrdenes.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(232)))), ((int)(((byte)(223)))));
             this.BancosDgvOrdenes.Location = new System.Drawing.Point(30, 404);
@@ -527,8 +477,8 @@
             // 
             // BancosDgvOrdenesColMonto
             // 
-            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.BancosDgvOrdenesColMonto.DefaultCellStyle = dataGridViewCellStyle23;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.BancosDgvOrdenesColMonto.DefaultCellStyle = dataGridViewCellStyle7;
             this.BancosDgvOrdenesColMonto.HeaderText = "Monto";
             this.BancosDgvOrdenesColMonto.Name = "BancosDgvOrdenesColMonto";
             this.BancosDgvOrdenesColMonto.ReadOnly = true;
@@ -556,11 +506,11 @@
             this.BancosTbcProceso.Size = new System.Drawing.Size(718, 512);
             this.BancosTbcProceso.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.BancosTbcProceso.TabIndex = 13;
-            this.BancosTbcProceso.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.BancosTbcProceso_DrawItem);
             // 
             // BancosTbpPreparar
             // 
             this.BancosTbpPreparar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.BancosTbpPreparar.Controls.Add(this.pictureBox1);
             this.BancosTbpPreparar.Controls.Add(this.BancosLblPrepNumeroOrden);
             this.BancosTbpPreparar.Controls.Add(this.BancosTxtPrepNumeroOrden);
             this.BancosTbpPreparar.Controls.Add(this.BancosLblPrepObligacion);
@@ -1024,22 +974,6 @@
             this.BancosTxtPrepConcepto.TabIndex = 24;
             this.BancosTxtPrepConcepto.Text = "Pago GU-0377 – Guatex, S.A. (transporte)";
             // 
-            // BancosBtnPrepLimpiar
-            // 
-            this.BancosBtnPrepLimpiar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(231)))), ((int)(((byte)(211)))));
-            this.BancosBtnPrepLimpiar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BancosBtnPrepLimpiar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(138)))), ((int)(((byte)(85)))));
-            this.BancosBtnPrepLimpiar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(222)))), ((int)(((byte)(197)))));
-            this.BancosBtnPrepLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BancosBtnPrepLimpiar.Font = new System.Drawing.Font("Segoe UI", 9.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BancosBtnPrepLimpiar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
-            this.BancosBtnPrepLimpiar.Location = new System.Drawing.Point(424, 414);
-            this.BancosBtnPrepLimpiar.Name = "BancosBtnPrepLimpiar";
-            this.BancosBtnPrepLimpiar.Size = new System.Drawing.Size(120, 38);
-            this.BancosBtnPrepLimpiar.TabIndex = 25;
-            this.BancosBtnPrepLimpiar.Text = "Limpiar";
-            this.BancosBtnPrepLimpiar.UseVisualStyleBackColor = false;
-            // 
             // BancosBtnPrepPreparar
             // 
             this.BancosBtnPrepPreparar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
@@ -1049,7 +983,7 @@
             this.BancosBtnPrepPreparar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BancosBtnPrepPreparar.Font = new System.Drawing.Font("Segoe UI", 9.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BancosBtnPrepPreparar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.BancosBtnPrepPreparar.Location = new System.Drawing.Point(556, 414);
+            this.BancosBtnPrepPreparar.Location = new System.Drawing.Point(82, 414);
             this.BancosBtnPrepPreparar.Name = "BancosBtnPrepPreparar";
             this.BancosBtnPrepPreparar.Size = new System.Drawing.Size(138, 38);
             this.BancosBtnPrepPreparar.TabIndex = 26;
@@ -1206,24 +1140,24 @@
             this.BancosDgvAutAprobaciones.AllowUserToDeleteRows = false;
             this.BancosDgvAutAprobaciones.AllowUserToResizeColumns = false;
             this.BancosDgvAutAprobaciones.AllowUserToResizeRows = false;
-            dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(248)))), ((int)(((byte)(242)))));
-            dataGridViewCellStyle30.Font = new System.Drawing.Font("Segoe UI", 9F);
-            dataGridViewCellStyle30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            dataGridViewCellStyle30.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(231)))), ((int)(((byte)(211)))));
-            dataGridViewCellStyle30.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
-            dataGridViewCellStyle30.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.BancosDgvAutAprobaciones.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle30;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(248)))), ((int)(((byte)(242)))));
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 9F);
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(231)))), ((int)(((byte)(211)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.BancosDgvAutAprobaciones.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
             this.BancosDgvAutAprobaciones.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.BancosDgvAutAprobaciones.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.BancosDgvAutAprobaciones.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle31.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle31.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
-            dataGridViewCellStyle31.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle31.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle31.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
-            dataGridViewCellStyle31.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.BancosDgvAutAprobaciones.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle31;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.BancosDgvAutAprobaciones.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
             this.BancosDgvAutAprobaciones.ColumnHeadersHeight = 28;
             this.BancosDgvAutAprobaciones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.BancosDgvAutAprobaciones.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -1231,14 +1165,14 @@
             this.BancosDgvAutAprobacionesColDecision,
             this.BancosDgvAutAprobacionesColFechaHora,
             this.BancosDgvAutAprobacionesColEvidencia});
-            dataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle32.Font = new System.Drawing.Font("Segoe UI", 9F);
-            dataGridViewCellStyle32.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            dataGridViewCellStyle32.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(231)))), ((int)(((byte)(211)))));
-            dataGridViewCellStyle32.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
-            dataGridViewCellStyle32.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.BancosDgvAutAprobaciones.DefaultCellStyle = dataGridViewCellStyle32;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI", 9F);
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(231)))), ((int)(((byte)(211)))));
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.BancosDgvAutAprobaciones.DefaultCellStyle = dataGridViewCellStyle11;
             this.BancosDgvAutAprobaciones.EnableHeadersVisualStyles = false;
             this.BancosDgvAutAprobaciones.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(232)))), ((int)(((byte)(223)))));
             this.BancosDgvAutAprobaciones.Location = new System.Drawing.Point(16, 108);
@@ -1383,38 +1317,6 @@
             this.BancosTxtAutCodigo.PasswordChar = '●';
             this.BancosTxtAutCodigo.Size = new System.Drawing.Size(190, 26);
             this.BancosTxtAutCodigo.TabIndex = 13;
-            // 
-            // BancosBtnAutRechazar
-            // 
-            this.BancosBtnAutRechazar.BackColor = System.Drawing.Color.Black;
-            this.BancosBtnAutRechazar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BancosBtnAutRechazar.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.BancosBtnAutRechazar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(210)))), ((int)(((byte)(205)))));
-            this.BancosBtnAutRechazar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BancosBtnAutRechazar.Font = new System.Drawing.Font("Segoe UI", 9.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BancosBtnAutRechazar.ForeColor = System.Drawing.Color.White;
-            this.BancosBtnAutRechazar.Location = new System.Drawing.Point(424, 414);
-            this.BancosBtnAutRechazar.Name = "BancosBtnAutRechazar";
-            this.BancosBtnAutRechazar.Size = new System.Drawing.Size(120, 38);
-            this.BancosBtnAutRechazar.TabIndex = 14;
-            this.BancosBtnAutRechazar.Text = "Rechazar";
-            this.BancosBtnAutRechazar.UseVisualStyleBackColor = false;
-            // 
-            // BancosBtnAutAutorizar
-            // 
-            this.BancosBtnAutAutorizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
-            this.BancosBtnAutAutorizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BancosBtnAutAutorizar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
-            this.BancosBtnAutAutorizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(138)))), ((int)(((byte)(85)))));
-            this.BancosBtnAutAutorizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BancosBtnAutAutorizar.Font = new System.Drawing.Font("Segoe UI", 9.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BancosBtnAutAutorizar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.BancosBtnAutAutorizar.Location = new System.Drawing.Point(556, 414);
-            this.BancosBtnAutAutorizar.Name = "BancosBtnAutAutorizar";
-            this.BancosBtnAutAutorizar.Size = new System.Drawing.Size(138, 38);
-            this.BancosBtnAutAutorizar.TabIndex = 15;
-            this.BancosBtnAutAutorizar.Text = "Autorizar";
-            this.BancosBtnAutAutorizar.UseVisualStyleBackColor = false;
             // 
             // BancosTbpEmitir
             // 
@@ -1693,13 +1595,13 @@
             // 
             // BancosBtnEmiTransferencia
             // 
-            this.BancosBtnEmiTransferencia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(231)))), ((int)(((byte)(211)))));
+            this.BancosBtnEmiTransferencia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
             this.BancosBtnEmiTransferencia.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BancosBtnEmiTransferencia.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(138)))), ((int)(((byte)(85)))));
             this.BancosBtnEmiTransferencia.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(222)))), ((int)(((byte)(197)))));
             this.BancosBtnEmiTransferencia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BancosBtnEmiTransferencia.Font = new System.Drawing.Font("Segoe UI", 9.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BancosBtnEmiTransferencia.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
+            this.BancosBtnEmiTransferencia.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BancosBtnEmiTransferencia.ForeColor = System.Drawing.Color.White;
             this.BancosBtnEmiTransferencia.Location = new System.Drawing.Point(372, 414);
             this.BancosBtnEmiTransferencia.Name = "BancosBtnEmiTransferencia";
             this.BancosBtnEmiTransferencia.Size = new System.Drawing.Size(170, 38);
@@ -1714,7 +1616,7 @@
             this.BancosBtnEmiCheque.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
             this.BancosBtnEmiCheque.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(138)))), ((int)(((byte)(85)))));
             this.BancosBtnEmiCheque.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BancosBtnEmiCheque.Font = new System.Drawing.Font("Segoe UI", 9.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BancosBtnEmiCheque.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BancosBtnEmiCheque.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.BancosBtnEmiCheque.Location = new System.Drawing.Point(554, 414);
             this.BancosBtnEmiCheque.Name = "BancosBtnEmiCheque";
@@ -1916,24 +1818,24 @@
             this.BancosDgvRegPoliza.AllowUserToDeleteRows = false;
             this.BancosDgvRegPoliza.AllowUserToResizeColumns = false;
             this.BancosDgvRegPoliza.AllowUserToResizeRows = false;
-            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(248)))), ((int)(((byte)(242)))));
-            dataGridViewCellStyle25.Font = new System.Drawing.Font("Segoe UI", 9F);
-            dataGridViewCellStyle25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            dataGridViewCellStyle25.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(231)))), ((int)(((byte)(211)))));
-            dataGridViewCellStyle25.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
-            dataGridViewCellStyle25.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.BancosDgvRegPoliza.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle25;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(248)))), ((int)(((byte)(242)))));
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI", 9F);
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(231)))), ((int)(((byte)(211)))));
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.BancosDgvRegPoliza.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle12;
             this.BancosDgvRegPoliza.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.BancosDgvRegPoliza.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.BancosDgvRegPoliza.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
-            dataGridViewCellStyle26.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle26.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
-            dataGridViewCellStyle26.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.BancosDgvRegPoliza.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle26;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.BancosDgvRegPoliza.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
             this.BancosDgvRegPoliza.ColumnHeadersHeight = 28;
             this.BancosDgvRegPoliza.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.BancosDgvRegPoliza.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -1941,14 +1843,14 @@
             this.BancosDgvRegPolizaColNombre,
             this.BancosDgvRegPolizaColDebe,
             this.BancosDgvRegPolizaColHaber});
-            dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle29.Font = new System.Drawing.Font("Segoe UI", 9F);
-            dataGridViewCellStyle29.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            dataGridViewCellStyle29.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(231)))), ((int)(((byte)(211)))));
-            dataGridViewCellStyle29.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
-            dataGridViewCellStyle29.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.BancosDgvRegPoliza.DefaultCellStyle = dataGridViewCellStyle29;
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Segoe UI", 9F);
+            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(231)))), ((int)(((byte)(211)))));
+            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.BancosDgvRegPoliza.DefaultCellStyle = dataGridViewCellStyle16;
             this.BancosDgvRegPoliza.EnableHeadersVisualStyles = false;
             this.BancosDgvRegPoliza.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(232)))), ((int)(((byte)(223)))));
             this.BancosDgvRegPoliza.Location = new System.Drawing.Point(16, 108);
@@ -1977,8 +1879,8 @@
             // 
             // BancosDgvRegPolizaColDebe
             // 
-            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.BancosDgvRegPolizaColDebe.DefaultCellStyle = dataGridViewCellStyle27;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.BancosDgvRegPolizaColDebe.DefaultCellStyle = dataGridViewCellStyle14;
             this.BancosDgvRegPolizaColDebe.HeaderText = "Debe";
             this.BancosDgvRegPolizaColDebe.Name = "BancosDgvRegPolizaColDebe";
             this.BancosDgvRegPolizaColDebe.ReadOnly = true;
@@ -1986,8 +1888,8 @@
             // 
             // BancosDgvRegPolizaColHaber
             // 
-            dataGridViewCellStyle28.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.BancosDgvRegPolizaColHaber.DefaultCellStyle = dataGridViewCellStyle28;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.BancosDgvRegPolizaColHaber.DefaultCellStyle = dataGridViewCellStyle15;
             this.BancosDgvRegPolizaColHaber.HeaderText = "Haber";
             this.BancosDgvRegPolizaColHaber.Name = "BancosDgvRegPolizaColHaber";
             this.BancosDgvRegPolizaColHaber.ReadOnly = true;
@@ -2090,63 +1992,142 @@
             this.BancosBtnRegMovimiento.Text = "Registrar movimiento";
             this.BancosBtnRegMovimiento.UseVisualStyleBackColor = false;
             // 
+            // BancosBtnSalirSalirG
+            // 
+            this.BancosBtnSalirSalirG.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
+            this.BancosBtnSalirSalirG.BackgroundImage = global::CapaVista_GeneracionPagos.Properties.Resources.btn_salirB;
+            this.BancosBtnSalirSalirG.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BancosBtnSalirSalirG.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BancosBtnSalirSalirG.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
+            this.BancosBtnSalirSalirG.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(138)))), ((int)(((byte)(85)))));
+            this.BancosBtnSalirSalirG.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BancosBtnSalirSalirG.Font = new System.Drawing.Font("Segoe UI", 9.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BancosBtnSalirSalirG.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.BancosBtnSalirSalirG.Location = new System.Drawing.Point(1110, 530);
+            this.BancosBtnSalirSalirG.Name = "BancosBtnSalirSalirG";
+            this.BancosBtnSalirSalirG.Size = new System.Drawing.Size(60, 60);
+            this.BancosBtnSalirSalirG.TabIndex = 16;
+            this.BancosBtnSalirSalirG.UseVisualStyleBackColor = false;
+            // 
+            // BancosBtnBuscar
+            // 
+            this.BancosBtnBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
+            this.BancosBtnBuscar.BackgroundImage = global::CapaVista_GeneracionPagos.Properties.Resources.btn_consultarB;
+            this.BancosBtnBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BancosBtnBuscar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BancosBtnBuscar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
+            this.BancosBtnBuscar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(138)))), ((int)(((byte)(85)))));
+            this.BancosBtnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BancosBtnBuscar.Font = new System.Drawing.Font("Segoe UI", 9.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BancosBtnBuscar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.BancosBtnBuscar.Location = new System.Drawing.Point(345, 107);
+            this.BancosBtnBuscar.Name = "BancosBtnBuscar";
+            this.BancosBtnBuscar.Size = new System.Drawing.Size(40, 40);
+            this.BancosBtnBuscar.TabIndex = 6;
+            this.BancosBtnBuscar.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::CapaVista_GeneracionPagos.Properties.Resources.mascota11;
+            this.pictureBox1.Location = new System.Drawing.Point(599, 346);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(105, 120);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 17;
+            this.pictureBox1.TabStop = false;
+            // 
+            // BancosBtnPrepLimpiar
+            // 
+            this.BancosBtnPrepLimpiar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(231)))), ((int)(((byte)(211)))));
+            this.BancosBtnPrepLimpiar.BackgroundImage = global::CapaVista_GeneracionPagos.Properties.Resources.btn_limpiarB;
+            this.BancosBtnPrepLimpiar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BancosBtnPrepLimpiar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BancosBtnPrepLimpiar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(138)))), ((int)(((byte)(85)))));
+            this.BancosBtnPrepLimpiar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(222)))), ((int)(((byte)(197)))));
+            this.BancosBtnPrepLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BancosBtnPrepLimpiar.Font = new System.Drawing.Font("Segoe UI", 9.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BancosBtnPrepLimpiar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
+            this.BancosBtnPrepLimpiar.Location = new System.Drawing.Point(16, 392);
+            this.BancosBtnPrepLimpiar.Name = "BancosBtnPrepLimpiar";
+            this.BancosBtnPrepLimpiar.Size = new System.Drawing.Size(60, 60);
+            this.BancosBtnPrepLimpiar.TabIndex = 25;
+            this.BancosBtnPrepLimpiar.UseVisualStyleBackColor = false;
+            // 
+            // BancosBtnAutRechazar
+            // 
+            this.BancosBtnAutRechazar.BackColor = System.Drawing.Color.Black;
+            this.BancosBtnAutRechazar.BackgroundImage = global::CapaVista_GeneracionPagos.Properties.Resources.btn_rechazarB;
+            this.BancosBtnAutRechazar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BancosBtnAutRechazar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BancosBtnAutRechazar.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.BancosBtnAutRechazar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(210)))), ((int)(((byte)(205)))));
+            this.BancosBtnAutRechazar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BancosBtnAutRechazar.Font = new System.Drawing.Font("Segoe UI", 9.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BancosBtnAutRechazar.ForeColor = System.Drawing.Color.White;
+            this.BancosBtnAutRechazar.Location = new System.Drawing.Point(22, 384);
+            this.BancosBtnAutRechazar.Name = "BancosBtnAutRechazar";
+            this.BancosBtnAutRechazar.Size = new System.Drawing.Size(80, 80);
+            this.BancosBtnAutRechazar.TabIndex = 14;
+            this.BancosBtnAutRechazar.UseVisualStyleBackColor = false;
+            // 
+            // BancosBtnAutAutorizar
+            // 
+            this.BancosBtnAutAutorizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
+            this.BancosBtnAutAutorizar.BackgroundImage = global::CapaVista_GeneracionPagos.Properties.Resources.btn_autorizarB;
+            this.BancosBtnAutAutorizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BancosBtnAutAutorizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BancosBtnAutAutorizar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
+            this.BancosBtnAutAutorizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(138)))), ((int)(((byte)(85)))));
+            this.BancosBtnAutAutorizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BancosBtnAutAutorizar.Font = new System.Drawing.Font("Segoe UI", 9.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BancosBtnAutAutorizar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.BancosBtnAutAutorizar.Location = new System.Drawing.Point(111, 384);
+            this.BancosBtnAutAutorizar.Name = "BancosBtnAutAutorizar";
+            this.BancosBtnAutAutorizar.Size = new System.Drawing.Size(80, 80);
+            this.BancosBtnAutAutorizar.TabIndex = 15;
+            this.BancosBtnAutAutorizar.UseVisualStyleBackColor = false;
+            // 
             // BancosBtnAyuda
             // 
             this.BancosBtnAyuda.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
+            this.BancosBtnAyuda.BackgroundImage = global::CapaVista_GeneracionPagos.Properties.Resources.btn_ayudaB;
+            this.BancosBtnAyuda.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BancosBtnAyuda.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BancosBtnAyuda.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
             this.BancosBtnAyuda.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(138)))), ((int)(((byte)(85)))));
             this.BancosBtnAyuda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BancosBtnAyuda.Font = new System.Drawing.Font("Segoe UI", 9.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BancosBtnAyuda.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.BancosBtnAyuda.Location = new System.Drawing.Point(30, 548);
+            this.BancosBtnAyuda.Location = new System.Drawing.Point(30, 530);
             this.BancosBtnAyuda.Name = "BancosBtnAyuda";
-            this.BancosBtnAyuda.Size = new System.Drawing.Size(96, 34);
+            this.BancosBtnAyuda.Size = new System.Drawing.Size(60, 60);
             this.BancosBtnAyuda.TabIndex = 14;
-            this.BancosBtnAyuda.Text = "Ayuda";
             this.BancosBtnAyuda.UseVisualStyleBackColor = false;
             // 
             // BancosBtnReporte
             // 
             this.BancosBtnReporte.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
+            this.BancosBtnReporte.BackgroundImage = global::CapaVista_GeneracionPagos.Properties.Resources.btn_reporteB;
+            this.BancosBtnReporte.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BancosBtnReporte.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BancosBtnReporte.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
             this.BancosBtnReporte.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(138)))), ((int)(((byte)(85)))));
             this.BancosBtnReporte.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BancosBtnReporte.Font = new System.Drawing.Font("Segoe UI", 9.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BancosBtnReporte.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.BancosBtnReporte.Location = new System.Drawing.Point(138, 548);
+            this.BancosBtnReporte.Location = new System.Drawing.Point(107, 530);
             this.BancosBtnReporte.Name = "BancosBtnReporte";
-            this.BancosBtnReporte.Size = new System.Drawing.Size(104, 34);
+            this.BancosBtnReporte.Size = new System.Drawing.Size(60, 60);
             this.BancosBtnReporte.TabIndex = 15;
-            this.BancosBtnReporte.Text = "Reporte";
             this.BancosBtnReporte.UseVisualStyleBackColor = false;
-            // 
-            // BancosBtnSalir
-            // 
-            this.BancosBtnSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
-            this.BancosBtnSalir.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BancosBtnSalir.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.BancosBtnSalir.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
-            this.BancosBtnSalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(138)))), ((int)(((byte)(85)))));
-            this.BancosBtnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BancosBtnSalir.Font = new System.Drawing.Font("Segoe UI", 9.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BancosBtnSalir.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.BancosBtnSalir.Location = new System.Drawing.Point(1074, 548);
-            this.BancosBtnSalir.Name = "BancosBtnSalir";
-            this.BancosBtnSalir.Size = new System.Drawing.Size(96, 34);
-            this.BancosBtnSalir.TabIndex = 16;
-            this.BancosBtnSalir.Text = "Salir";
-            this.BancosBtnSalir.UseVisualStyleBackColor = false;
-            this.BancosBtnSalir.Click += new System.EventHandler(this.BancosBtnSalir_Click);
             // 
             // FrmGeneracionPagos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(248)))), ((int)(((byte)(243)))));
-            this.CancelButton = this.BancosBtnSalir;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
             this.ClientSize = new System.Drawing.Size(1200, 600);
+            this.Controls.Add(this.BancosBtnSalirSalirG);
             this.Controls.Add(this.BancosLblTituloObligaciones);
             this.Controls.Add(this.BancosLblOrigen);
             this.Controls.Add(this.BancosCboOrigen);
@@ -2156,20 +2137,17 @@
             this.Controls.Add(this.BancosBtnBuscar);
             this.Controls.Add(this.BancosDgvObligaciones);
             this.Controls.Add(this.BancosLblRegistros);
-            this.Controls.Add(this.BancosBtnAnterior);
-            this.Controls.Add(this.BancosBtnSiguiente);
             this.Controls.Add(this.BancosLblTituloOrdenes);
             this.Controls.Add(this.BancosDgvOrdenes);
             this.Controls.Add(this.BancosTbcProceso);
             this.Controls.Add(this.BancosBtnAyuda);
             this.Controls.Add(this.BancosBtnReporte);
-            this.Controls.Add(this.BancosBtnSalir);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "FrmGeneracionPagos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "8004 – Generación de Pagos";
-            this.Load += new System.EventHandler(this.FrmGeneracionPagos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.BancosDgvObligaciones)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BancosDgvOrdenes)).EndInit();
             this.BancosTbcProceso.ResumeLayout(false);
@@ -2197,6 +2175,7 @@
             this.BancosTbpRegistrar.ResumeLayout(false);
             this.BancosTbpRegistrar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BancosDgvRegPoliza)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2219,8 +2198,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn BancosDgvObligacionesColMoneda;
         private System.Windows.Forms.DataGridViewTextBoxColumn BancosDgvObligacionesColMonto;
         private System.Windows.Forms.Label BancosLblRegistros;
-        private System.Windows.Forms.Button BancosBtnAnterior;
-        private System.Windows.Forms.Button BancosBtnSiguiente;
         private System.Windows.Forms.Label BancosLblTituloOrdenes;
         private System.Windows.Forms.DataGridView BancosDgvOrdenes;
         private System.Windows.Forms.DataGridViewTextBoxColumn BancosDgvOrdenesColNumeroOrden;
@@ -2339,6 +2316,7 @@
         private System.Windows.Forms.Button BancosBtnRegMovimiento;
         private System.Windows.Forms.Button BancosBtnAyuda;
         private System.Windows.Forms.Button BancosBtnReporte;
-        private System.Windows.Forms.Button BancosBtnSalir;
+        private System.Windows.Forms.Button BancosBtnSalirSalirG;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

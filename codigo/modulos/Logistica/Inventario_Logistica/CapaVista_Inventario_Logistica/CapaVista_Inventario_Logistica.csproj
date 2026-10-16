@@ -31,6 +31,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CapaControlador_Inventario_Logistica">
+      <HintPath>..\CapaControlador_Inventario_Logistica\bin\Debug\CapaControlador_Inventario_Logistica.dll</HintPath>
+    </Reference>
+    <Reference Include="CapaVista_Navegador">
+      <HintPath>..\..\..\..\componentes\navegador\Navegador\CapaVista_Navegador\bin\Debug\CapaVista_Navegador.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
@@ -43,6 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Formas\FrmMantenimientoSucursales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\FrmMantenimientoSucursales.Designer.cs">
+      <DependentUpon>FrmMantenimientoSucursales.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmEstructurayUbicaciones.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -50,11 +62,47 @@
       <DependentUpon>FrmEstructurayUbicaciones.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Formas\FrmMantenimientoSucursales.resx">
+      <DependentUpon>FrmMantenimientoSucursales.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmEstructurayUbicaciones.resx">
       <DependentUpon>FrmEstructurayUbicaciones.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_guardar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_ingresar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_modificar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_ayuda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_eliminar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_consultar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_estructuraN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_estructuraN_sintexto.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

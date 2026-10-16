@@ -35,6 +35,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\CapaControlador_Seguridad\bin\Debug\CapaControlador_Seguridad.dll</HintPath>
     </Reference>
+    <Reference Include="CapaVista_Logistica">
+      <HintPath>..\..\..\..\modulos\Logistica\Logistica\CapaVista_Logistica\bin\Debug\CapaVista_Logistica.dll</HintPath>
+    </Reference>
     <Reference Include="CapaVista_Navegador">
       <HintPath>..\..\..\navegador\Navegador\CapaVista_Navegador\bin\Debug\CapaVista_Navegador.dll</HintPath>
     </Reference>

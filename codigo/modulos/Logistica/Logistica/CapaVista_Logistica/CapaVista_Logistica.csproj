@@ -34,6 +34,9 @@
     <Reference Include="CapaControlador_Logistica">
       <HintPath>..\CapaControlador_Logistica\bin\Debug\CapaControlador_Logistica.dll</HintPath>
     </Reference>
+    <Reference Include="CapaVista_Inventario_Logistica">
+      <HintPath>..\..\Inventario_Logistica\CapaVista_Inventario_Logistica\bin\Debug\CapaVista_Inventario_Logistica.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
@@ -126,6 +129,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Cerrar_sesion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_menuN.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

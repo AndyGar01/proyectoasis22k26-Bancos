@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMDILogistica));
             this.LogisticaPnlMDI = new System.Windows.Forms.Panel();
             this.LogisticaPnlBanner = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.LogisticaLblDescripcion = new System.Windows.Forms.Label();
             this.LogisticaLblLogistica = new System.Windows.Forms.Label();
             this.LogisticaLblBienvenida = new System.Windows.Forms.Label();
@@ -78,6 +79,17 @@
             this.LogisticaPnlBanner.Size = new System.Drawing.Size(734, 272);
             this.LogisticaPnlBanner.TabIndex = 2;
             // 
+            // button1
+            // 
+            this.button1.BackgroundImage = global::CapaVista_Logistica.Properties.Resources.btn_menuN;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(210, 0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(60, 66);
+            this.button1.TabIndex = 10;
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // LogisticaLblDescripcion
             // 
             this.LogisticaLblDescripcion.AutoSize = true;
@@ -109,7 +121,7 @@
             this.LogisticaLblBienvenida.BackColor = System.Drawing.Color.Transparent;
             this.LogisticaLblBienvenida.Font = new System.Drawing.Font("Lucida Fax", 45F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LogisticaLblBienvenida.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(44)))), ((int)(((byte)(18)))));
-            this.LogisticaLblBienvenida.Location = new System.Drawing.Point(12, 18);
+            this.LogisticaLblBienvenida.Location = new System.Drawing.Point(79, 11);
             this.LogisticaLblBienvenida.Name = "LogisticaLblBienvenida";
             this.LogisticaLblBienvenida.Size = new System.Drawing.Size(436, 68);
             this.LogisticaLblBienvenida.TabIndex = 1;
@@ -130,6 +142,7 @@
             this.LogisticaPnlNavegador.BackColor = System.Drawing.Color.Transparent;
             this.LogisticaPnlNavegador.BackgroundImage = global::CapaVista_Logistica.Properties.Resources.FondoNavegado2;
             this.LogisticaPnlNavegador.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.LogisticaPnlNavegador.Controls.Add(this.button1);
             this.LogisticaPnlNavegador.Controls.Add(this.LogisticaBtnCerrarSesion);
             this.LogisticaPnlNavegador.Controls.Add(this.LogisticaBtnEnlace);
             this.LogisticaPnlNavegador.Controls.Add(this.LogisticaBtnCierredeInventario);
@@ -249,6 +262,7 @@
             this.LogisticaBtnCatalogo.Size = new System.Drawing.Size(264, 42);
             this.LogisticaBtnCatalogo.TabIndex = 2;
             this.LogisticaBtnCatalogo.UseVisualStyleBackColor = false;
+            this.LogisticaBtnCatalogo.Click += new System.EventHandler(this.LogisticaBtnCatalogo_Click);
             // 
             // LogisticaBtnUbicaciones
             // 
@@ -262,6 +276,7 @@
             this.LogisticaBtnUbicaciones.Size = new System.Drawing.Size(264, 42);
             this.LogisticaBtnUbicaciones.TabIndex = 1;
             this.LogisticaBtnUbicaciones.UseVisualStyleBackColor = false;
+            this.LogisticaBtnUbicaciones.Click += new System.EventHandler(this.LogisticaBtnUbicaciones_Click);
             // 
             // LogisticaPbLogo
             // 
@@ -316,5 +331,6 @@
         private System.Windows.Forms.Label LogisticaLblDescripcion;
         private System.Windows.Forms.Label LogisticaLblLogistica;
         private System.Windows.Forms.Label LogisticaLblBienvenida;
+        private System.Windows.Forms.Button button1;
     }
 }

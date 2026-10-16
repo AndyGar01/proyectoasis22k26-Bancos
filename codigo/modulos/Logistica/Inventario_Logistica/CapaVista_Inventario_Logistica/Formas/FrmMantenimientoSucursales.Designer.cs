@@ -50,7 +50,7 @@
             // 
             // LogisticaNavSucursales
             // 
-            this.LogisticaNavSucursales.Location = new System.Drawing.Point(2, 105);
+            this.LogisticaNavSucursales.Location = new System.Drawing.Point(2, 110);
             this.LogisticaNavSucursales.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.LogisticaNavSucursales.Name = "LogisticaNavSucursales";
             this.LogisticaNavSucursales.Size = new System.Drawing.Size(1078, 90);

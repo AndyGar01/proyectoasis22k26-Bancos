@@ -18,7 +18,7 @@ $ErrorActionPreference = 'Stop'
 $base = [IO.Path]::GetFullPath($env:CC_BASE)
 $steps = New-Object 'System.Collections.Generic.List[object]'
 $projects = @{}
-$run = $null
+$temporaryTargets = New-Object 'System.Collections.Generic.List[string]'
 $result = 1
 $current = $null
 
@@ -106,9 +106,6 @@ function MsbuildEscape([string]$text) {
 }
 
 try {
-    $run = Join-Path $base ('logs\' + (Get-Date -Format 'yyyyMMdd_HHmmss_fff') + '_' + [guid]::NewGuid().ToString('N').Substring(0,8))
-    [void][IO.Directory]::CreateDirectory($run)
-    Start-Transcript -LiteralPath (Join-Path $run 'ejecucion.log') | Out-Null
     $configuration = $env:CC_CONFIG
     if (!$configuration) { $configuration='Debug' }
     if ($env:CC_MORE -or $configuration -notin @('Debug','Release')) {
@@ -249,15 +246,14 @@ try {
 
     for ($index=0; $index -lt $steps.Count; $index++) {
         $step=$steps[$index]; $current=$step
-        $prefix = '{0:D2}_{1}' -f ($index+1),[IO.Path]::GetFileNameWithoutExtension($step.Path)
-        $log = Join-Path $run ($prefix+'.log')
         Write-Host "[$($index+1)/$($steps.Count)] $($step.Name) - $configuration | $($step.Platform)"
-        $arguments = @($step.Path,'/t:Build','/nologo','/verbosity:minimal',"/p:Configuration=$configuration", "/p:Platform=$($step.Platform)",'/warnAsError:MSB3245',"/flp:LogFile=$log;Verbosity=normal;Encoding=UTF-8")
+        $arguments = @($step.Path,'/t:Build','/nologo','/verbosity:minimal',"/p:Configuration=$configuration", "/p:Platform=$($step.Platform)",'/warnAsError:MSB3245')
         if ([IO.Path]::GetExtension($step.Path) -eq '.sln') {
             # Orden interno por DLL/ProjectReference, sin alterar los .sln originales.
             # Un target previo compila el grafo una vez y vacia la lista del Build normal.
             # DirectorySolutionTargetsPath es un punto de extension de MSBuild.
-            $targets = Join-Path $run ($prefix+'.targets')
+            $targets = Join-Path ([IO.Path]::GetTempPath()) ('Compras_' + [guid]::NewGuid().ToString('N') + '.targets')
+            $temporaryTargets.Add($targets)
             $body = '<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003"><Target Name="CompilarComprasEnOrden" BeforeTargets="Build">'
             foreach ($project in $step.Ordered) {
                 $properties = "Configuration=$($project.Configuration);Platform=$($project.Platform);BuildProjectReferences=false"
@@ -278,7 +274,7 @@ try {
         & $msbuild @arguments
         $code = $LASTEXITCODE
         $step.Code=$code
-        if ($code -ne 0) { $step.State='Fallida'; throw "Fallo $($step.Name), codigo $code. Registro: $log" }
+        if ($code -ne 0) { $step.State='Fallida'; throw "Fallo $($step.Name), codigo $code." }
         foreach ($project in $step.Projects) {
             if (!(Test-Path -LiteralPath $project.Output -PathType Leaf)) { throw "MSBuild termino sin la salida esperada: $($project.Output)" }
         }
@@ -296,11 +292,9 @@ try {
         ('No ejecutadas: {0}' -f @($steps | Where-Object State -eq 'No ejecutada').Count)
     )
     $summary += @($steps | ForEach-Object { '{0}: {1}' -f $_.State,$_.Name })
-    $summary += "Registros: $run"
     $summary | ForEach-Object { Write-Host $_ }
-    if ($run) {
-        [IO.File]::WriteAllLines((Join-Path $run 'resumen.txt'),[string[]]$summary,[Text.UTF8Encoding]::new($true))
-        try { Stop-Transcript | Out-Null } catch { }
+    foreach ($targets in $temporaryTargets) {
+        try { [IO.File]::Delete($targets) } catch { Write-Warning "No se pudo eliminar el archivo temporal: $targets" }
     }
 }
 exit $result

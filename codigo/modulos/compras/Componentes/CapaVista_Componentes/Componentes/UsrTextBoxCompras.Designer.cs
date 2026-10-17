@@ -18,51 +18,51 @@ namespace CapaVista_Componentes.Componentes
 
         private void InitializeComponent()
         {
-            this._ComprasTlpMain = new CapaVista_Componentes.Componentes.ClsTableLayoutPanelCompras();
-            this._ComprasPnlBorde = new System.Windows.Forms.Panel();
+            this.ComprasTlpMain = new CapaVista_Componentes.Componentes.ClsTableLayoutPanelCompras();
+            this.ComprasPnlBorde = new System.Windows.Forms.Panel();
             this.ComprasTxtTexto = new System.Windows.Forms.RichTextBox();
             this.ComprasUsrError = new CapaVista_Componentes.Componentes.UsrLabelCompras();
-            this._ComprasTlpMain.SuspendLayout();
-            this._ComprasPnlBorde.SuspendLayout();
+            this.ComprasTlpMain.SuspendLayout();
+            this.ComprasPnlBorde.SuspendLayout();
             this.SuspendLayout();
             //
             // ComprasTlpMain
             //
-            this._ComprasTlpMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
-            this._ComprasTlpMain.ColumnCount = 1;
-            this._ComprasTlpMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this._ComprasTlpMain.Controls.Add(this._ComprasPnlBorde, 0, 0);
-            this._ComprasTlpMain.Controls.Add(this.ComprasUsrError, 0, 1);
-            this._ComprasTlpMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this._ComprasTlpMain.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
-            this._ComprasTlpMain.Location = new System.Drawing.Point(0, 0);
-            this._ComprasTlpMain.Margin = new System.Windows.Forms.Padding(0);
-            this._ComprasTlpMain.Name = "ComprasTlpMain";
-            this._ComprasTlpMain.Padding = new System.Windows.Forms.Padding(3);
-            this._ComprasTlpMain.RowCount = 2;
-            this._ComprasTlpMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this._ComprasTlpMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this._ComprasTlpMain.Size = new System.Drawing.Size(174, 66);
-            this._ComprasTlpMain.TabIndex = 0;
+            this.ComprasTlpMain.BackColor = CapaVista_Componentes.Componentes.ClsTemaCompras.FondoGeneral;
+            this.ComprasTlpMain.ColumnCount = 1;
+            this.ComprasTlpMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.ComprasTlpMain.Controls.Add(this.ComprasPnlBorde, 0, 0);
+            this.ComprasTlpMain.Controls.Add(this.ComprasUsrError, 0, 1);
+            this.ComprasTlpMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ComprasTlpMain.ForeColor = CapaVista_Componentes.Componentes.ClsTemaCompras.PrincipalNavegador;
+            this.ComprasTlpMain.Location = new System.Drawing.Point(0, 0);
+            this.ComprasTlpMain.Margin = new System.Windows.Forms.Padding(0);
+            this.ComprasTlpMain.Name = "ComprasTlpMain";
+            this.ComprasTlpMain.Padding = new System.Windows.Forms.Padding(3);
+            this.ComprasTlpMain.RowCount = 2;
+            this.ComprasTlpMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.ComprasTlpMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.ComprasTlpMain.Size = new System.Drawing.Size(174, 66);
+            this.ComprasTlpMain.TabIndex = 0;
             //
             // ComprasPnlBorde
             //
-            this._ComprasPnlBorde.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
-            this._ComprasPnlBorde.Controls.Add(this.ComprasTxtTexto);
-            this._ComprasPnlBorde.Dock = System.Windows.Forms.DockStyle.Fill;
-            this._ComprasPnlBorde.Location = new System.Drawing.Point(3, 3);
-            this._ComprasPnlBorde.Margin = new System.Windows.Forms.Padding(0);
-            this._ComprasPnlBorde.Name = "ComprasPnlBorde";
-            this._ComprasPnlBorde.Padding = new System.Windows.Forms.Padding(1);
-            this._ComprasPnlBorde.Size = new System.Drawing.Size(168, 30);
-            this._ComprasPnlBorde.TabIndex = 2;
+            this.ComprasPnlBorde.BackColor = CapaVista_Componentes.Componentes.ClsTemaCompras.PrincipalNavegador;
+            this.ComprasPnlBorde.Controls.Add(this.ComprasTxtTexto);
+            this.ComprasPnlBorde.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ComprasPnlBorde.Location = new System.Drawing.Point(3, 3);
+            this.ComprasPnlBorde.Margin = new System.Windows.Forms.Padding(0);
+            this.ComprasPnlBorde.Name = "ComprasPnlBorde";
+            this.ComprasPnlBorde.Padding = new System.Windows.Forms.Padding(1);
+            this.ComprasPnlBorde.Size = new System.Drawing.Size(168, 30);
+            this.ComprasPnlBorde.TabIndex = 2;
             //
             // ComprasTxtTexto
             //
-            this.ComprasTxtTexto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
+            this.ComprasTxtTexto.BackColor = CapaVista_Componentes.Componentes.ClsTemaCompras.FondoGeneral;
             this.ComprasTxtTexto.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.ComprasTxtTexto.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ComprasTxtTexto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this.ComprasTxtTexto.ForeColor = CapaVista_Componentes.Componentes.ClsTemaCompras.PrincipalNavegador;
             this.ComprasTxtTexto.Location = new System.Drawing.Point(1, 1);
             this.ComprasTxtTexto.Margin = new System.Windows.Forms.Padding(0);
             this.ComprasTxtTexto.Multiline = false;
@@ -74,7 +74,7 @@ namespace CapaVista_Componentes.Componentes
             // ComprasUsrError
             //
             this.ComprasUsrError.AlineacionTexto = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ComprasUsrError.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
+            this.ComprasUsrError.BackColor = CapaVista_Componentes.Componentes.ClsTemaCompras.FondoGeneral;
             this.ComprasUsrError.ColorTexto = System.Drawing.Color.Red;
             this.ComprasUsrError.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ComprasUsrError.Font = new System.Drawing.Font("Tahoma", 9F);
@@ -95,23 +95,23 @@ namespace CapaVista_Componentes.Componentes
             //
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
-            this.Controls.Add(this._ComprasTlpMain);
+            this.BackColor = CapaVista_Componentes.Componentes.ClsTemaCompras.FondoGeneral;
+            this.Controls.Add(this.ComprasTlpMain);
             this.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this.ForeColor = CapaVista_Componentes.Componentes.ClsTemaCompras.PrincipalNavegador;
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "UsrTextBoxCompras";
             this.Size = new System.Drawing.Size(174, 66);
-            this._ComprasTlpMain.ResumeLayout(false);
-            this._ComprasPnlBorde.ResumeLayout(false);
+            this.ComprasTlpMain.ResumeLayout(false);
+            this.ComprasPnlBorde.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private CapaVista_Componentes.Componentes.ClsTableLayoutPanelCompras _ComprasTlpMain;
-        private System.Windows.Forms.Panel _ComprasPnlBorde;
+        private CapaVista_Componentes.Componentes.ClsTableLayoutPanelCompras ComprasTlpMain;
+        private System.Windows.Forms.Panel ComprasPnlBorde;
         private UsrLabelCompras ComprasUsrError;
         private System.Windows.Forms.RichTextBox ComprasTxtTexto;
     }

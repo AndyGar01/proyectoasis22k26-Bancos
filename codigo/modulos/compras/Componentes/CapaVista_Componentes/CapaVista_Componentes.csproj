@@ -150,6 +150,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Componentes\ClsPresentacionCompras.cs" />
+    <Compile Include="Componentes\UsrDataGridViewCompras.Paginacion.cs">
+      <DependentUpon>UsrDataGridViewCompras.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Componentes\RecursosCompras.resx">
+      <LogicalName>CapaVista_Componentes.Componentes.RecursosCompras.resources</LogicalName>
+    </EmbeddedResource>
     <Compile Include="Componentes\ClsPanelVerticalCompras.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

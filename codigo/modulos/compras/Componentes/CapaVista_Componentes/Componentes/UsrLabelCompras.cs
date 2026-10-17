@@ -23,9 +23,9 @@ namespace CapaVista_Componentes.Componentes
 
         internal void ComprasProcConservarRojo()
         {
-            ((ClsEtiquetaCompras)_ComprasLblTexto).ComprasConservarRojo = true;
+            ((ClsEtiquetaCompras)ComprasLblTexto).ComprasConservarRojo = true;
             ColorTexto = Color.Red;
-            _ComprasLblTexto.Invalidate();
+            ComprasLblTexto.Invalidate();
         }
 
         public UsrLabelCompras()
@@ -33,12 +33,12 @@ namespace CapaVista_Componentes.Componentes
             InitializeComponent();
             DoubleBuffered = true;
             ComprasProcAplicarTipografia(13F);
-            _ComprasLblTexto.Font = Font;
+            ComprasLblTexto.Font = Font;
             TabStop = false;
-            _ComprasLblTexto.TextChanged += (Sender, Evento) => OnTextChanged(Evento);
-            _ComprasLblTexto.Click += (Sender, Evento) => OnClick(Evento);
-            _ComprasLblTexto.DoubleClick += (Sender, Evento) => OnDoubleClick(Evento);
-            _ComprasLblAsterisco.Click += (Sender, Evento) => OnClick(Evento);
+            ComprasLblTexto.TextChanged += (Sender, Evento) => OnTextChanged(Evento);
+            ComprasLblTexto.Click += (Sender, Evento) => OnClick(Evento);
+            ComprasLblTexto.DoubleClick += (Sender, Evento) => OnDoubleClick(Evento);
+            ComprasLblAsterisco.Click += (Sender, Evento) => OnClick(Evento);
         }
 
         [Category("Compras")]
@@ -100,11 +100,11 @@ namespace CapaVista_Componentes.Componentes
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
         public override string Text
         {
-            get => _ComprasLblTexto == null ? base.Text : _ComprasLblTexto.Text;
+            get => ComprasLblTexto == null ? base.Text : ComprasLblTexto.Text;
             set
             {
-                if (_ComprasLblTexto == null) base.Text = value;
-                else _ComprasLblTexto.Text = value ?? string.Empty;
+                if (ComprasLblTexto == null) base.Text = value;
+                else ComprasLblTexto.Text = value ?? string.Empty;
             }
         }
 
@@ -118,22 +118,22 @@ namespace CapaVista_Componentes.Componentes
         protected override void OnFontChanged(EventArgs Evento)
         {
             base.OnFontChanged(Evento);
-            if (_ComprasLblTexto != null) _ComprasLblTexto.Font = Font;
-            if (_ComprasLblAsterisco != null) _ComprasLblAsterisco.Font = Font;
-            if (_ComprasTlpMain != null) _ComprasTlpMain.Font = Font;
-            if (_ComprasLblTexto != null) Height = Math.Max(Height, Font.Height + Padding.Vertical);
+            if (ComprasLblTexto != null) ComprasLblTexto.Font = Font;
+            if (ComprasLblAsterisco != null) ComprasLblAsterisco.Font = Font;
+            if (ComprasTlpMain != null) ComprasTlpMain.Font = Font;
+            if (ComprasLblTexto != null) Height = Math.Max(Height, Font.Height + Padding.Vertical);
         }
 
         protected override void OnForeColorChanged(EventArgs Evento)
         {
             base.OnForeColorChanged(Evento);
-            if (_ComprasLblTexto != null) _ComprasLblTexto.ForeColor = ForeColor;
+            if (ComprasLblTexto != null) ComprasLblTexto.ForeColor = ForeColor;
         }
 
         protected override void OnBackColorChanged(EventArgs Evento)
         {
             base.OnBackColorChanged(Evento);
-            if (_ComprasTlpMain != null) _ComprasTlpMain.BackColor = BackColor;
+            if (ComprasTlpMain != null) ComprasTlpMain.BackColor = BackColor;
         }
 
         [Category("Compras")]
@@ -178,42 +178,42 @@ namespace CapaVista_Componentes.Componentes
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
         public ContentAlignment AlineacionTexto
         {
-            get { return _ComprasLblTexto.TextAlign; }
-            set { _ComprasLblTexto.TextAlign = value; }
+            get { return ComprasLblTexto.TextAlign; }
+            set { ComprasLblTexto.TextAlign = value; }
         }
 
 
         public void ComprasMetMostrarAsterisco(bool Mostrar)
         {
-            if (_MostrarAsterisco == Mostrar && _ComprasTlpMain.ColumnCount == (Mostrar ? 2 : 1)) return;
-            using (new ClsActualizacionDisenoCompras(_ComprasTlpMain))
+            if (_MostrarAsterisco == Mostrar && ComprasTlpMain.ColumnCount == (Mostrar ? 2 : 1)) return;
+            using (new ClsActualizacionDisenoCompras(ComprasTlpMain))
             {
                 if (Mostrar)
                 {
-                    if (_ComprasTlpMain.ColumnCount == 1)
+                    if (ComprasTlpMain.ColumnCount == 1)
                     {
-                        _ComprasTlpMain.ColumnCount = 2;
-                        _ComprasTlpMain.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
+                        ComprasTlpMain.ColumnCount = 2;
+                        ComprasTlpMain.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
                     }
 
-                    if (!_ComprasTlpMain.Controls.Contains(_ComprasLblAsterisco))
+                    if (!ComprasTlpMain.Controls.Contains(ComprasLblAsterisco))
                     {
-                        _ComprasTlpMain.Controls.Add(_ComprasLblAsterisco, 1, 0);
+                        ComprasTlpMain.Controls.Add(ComprasLblAsterisco, 1, 0);
                     }
 
-                    if (!_ComprasLblAsterisco.Visible) _ComprasLblAsterisco.Visible = true;
+                    if (!ComprasLblAsterisco.Visible) ComprasLblAsterisco.Visible = true;
                 }
                 else
                 {
-                    if (_ComprasLblAsterisco.Visible) _ComprasLblAsterisco.Visible = false;
-                    _ComprasTlpMain.Controls.Remove(_ComprasLblAsterisco);
+                    if (ComprasLblAsterisco.Visible) ComprasLblAsterisco.Visible = false;
+                    ComprasTlpMain.Controls.Remove(ComprasLblAsterisco);
 
-                    while (_ComprasTlpMain.ColumnStyles.Count > 1)
+                    while (ComprasTlpMain.ColumnStyles.Count > 1)
                     {
-                        _ComprasTlpMain.ColumnStyles.RemoveAt(1);
+                        ComprasTlpMain.ColumnStyles.RemoveAt(1);
                     }
 
-                    _ComprasTlpMain.ColumnCount = 1;
+                    ComprasTlpMain.ColumnCount = 1;
                 }
 
                 _MostrarAsterisco = Mostrar;

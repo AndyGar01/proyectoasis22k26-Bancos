@@ -9,7 +9,7 @@ namespace CapaVista_Compras
 {
     public partial class FrmMDICompras : Form
     {
-        private TransicionNavegador _TransicionNavegador;
+        private ClsTransicionNavegador _ClsTransicionNavegador;
         private Form _FormularioSubproceso;
         private CapaVista_Componentes.Componentes.ClsTableLayoutPanelCompras _OpcionSubproceso;
         private bool _ContenidoOculto;
@@ -25,7 +25,7 @@ namespace CapaVista_Compras
         {
             InitializeComponent();
             DoubleBuffered = true;
-            foreach (Control ControlActual in _ComprasTlpNavegador.Controls)
+            foreach (Control ControlActual in ComprasTlpNavegador.Controls)
             {
                 CapaVista_Componentes.Componentes.ClsTableLayoutPanelCompras Panel = ControlActual as CapaVista_Componentes.Componentes.ClsTableLayoutPanelCompras;
                 if (Panel != null) ComprasMetConfigurarEstadosTab(Panel, Panel);
@@ -33,6 +33,14 @@ namespace CapaVista_Compras
             ComprasTlpPresentacion.SizeChanged += (Origen, Argumentos) => ComprasMetAjustarPresentacion();
             ComprasMetAjustarPresentacion();
             ComprasMetActualizarInfoUsuario();
+            TableLayoutPanel[] PanelesIndicadores = { ComprasTlpKpi1, ComprasTlpKpi2, ComprasTlpKpi3, ComprasTlpKpi4, ComprasTlpKpi5, ComprasTlpKpi6 };
+            foreach (TableLayoutPanel Panel in PanelesIndicadores)
+            {
+                Panel.RowStyles[0].Height = 56F;
+                Panel.RowStyles[1].Height = 28F;
+                foreach (Control Elemento in Panel.Controls)
+                    if (Panel.GetRow(Elemento) == 2) Elemento.Margin = new Padding(2);
+            }
         }
 
         protected override bool ProcessCmdKey(ref Message Mensaje, Keys Teclas)
@@ -80,8 +88,8 @@ namespace CapaVista_Compras
             base.OnLoad(Evento);
             if (DesignMode || LicenseManager.UsageMode == LicenseUsageMode.Designtime) return;
             ComprasMetAjustarDashboard();
-            _ComprasTlpPrincipal.PerformLayout();
-            _ComprasPnlMain.PerformLayout();
+            ComprasTlpPrincipal.PerformLayout();
+            ComprasPnlMain.PerformLayout();
             ComprasMetActualizarInfoUsuario();
         }
 
@@ -106,7 +114,10 @@ namespace CapaVista_Compras
                 ? ClsSesionSeguridad.NombreUsuario : "Sin sesión";
             string Rol = ClsSesionSeguridad.HaySesionActiva
                 ? ClsSesionSeguridad.SeguridadMetRolesComoTexto() : string.Empty;
-            ComprasLblUsuarioRol.Texto = "Usuario: " + Usuario + "   Rol: " + Rol;
+            ComprasLblUsuario.Texto = "Usuario: " + Usuario;
+            ComprasLblRol.Texto = "Rol: " + Rol;
+            ComprasLblUsuario.Width = TextRenderer.MeasureText(ComprasLblUsuario.Texto, ComprasLblUsuario.Font).Width + 16;
+            ComprasLblRol.Width = TextRenderer.MeasureText(ComprasLblRol.Texto, ComprasLblRol.Font).Width + 16;
         }
 
         private void ComprasMetAbrirSubproceso<T>(CapaVista_Componentes.Componentes.ClsTableLayoutPanelCompras Opcion) where T : Form, new()
@@ -128,44 +139,30 @@ namespace CapaVista_Compras
             T Formulario = new T();
             try
             {
-                Formulario.StartPosition = FormStartPosition.Manual;
-                Formulario.Load += (Origen, Evento) => ComprasMetCentrarSubproceso(Formulario);
+                Formulario.StartPosition = FormStartPosition.CenterParent;
                 Formulario.ShowInTaskbar = false;
                 Formulario.MaximizeBox = false;
-                Formulario.MinimizeBox = false;
+                Formulario.MinimizeBox = true;
                 Formulario.FormClosed += ComprasMetSubprocesoCerrado;
                 _FormularioSubproceso = Formulario;
                 _OpcionSubproceso = Opcion;
                 ComprasMetActualizarSeleccionSubproceso();
-                // La ventana pertenece a Compras y permanece encima de ella.
-                Formulario.Show(this);
-                Formulario.Activate();
+                Formulario.ShowDialog(this);
             }
-            catch
+            finally
             {
                 Formulario.FormClosed -= ComprasMetSubprocesoCerrado;
                 Formulario.Dispose();
                 _FormularioSubproceso = null;
                 _OpcionSubproceso = null;
                 ComprasMetActualizarSeleccionSubproceso();
-                throw;
             }
-        }
-
-        private void ComprasMetCentrarSubproceso(Form Formulario)
-        {
-            System.Drawing.Rectangle Area = Screen.FromControl(this).WorkingArea;
-            int Izquierda = Left + (Width - Formulario.Width) / 2;
-            int Arriba = Top + (Height - Formulario.Height) / 2;
-            Formulario.Location = new System.Drawing.Point(
-                Math.Max(Area.Left, Math.Min(Izquierda, Area.Right - Formulario.Width)),
-                Math.Max(Area.Top, Math.Min(Arriba, Area.Bottom - Formulario.Height)));
         }
 
         private void ComprasMetActualizarSeleccionSubproceso()
         {
             if (IsDisposed || Disposing) return;
-            foreach (Control ControlActual in _ComprasTlpNavegador.Controls)
+            foreach (Control ControlActual in ComprasTlpNavegador.Controls)
             {
                 var Opcion = ControlActual as CapaVista_Componentes.Componentes.ClsTableLayoutPanelCompras;
                 if (Opcion == null) continue;
@@ -186,42 +183,42 @@ namespace CapaVista_Compras
 
         private void ComprasMetAbrirMovimientosProveedores(object Remitente, EventArgs Evento)
         {
-            ComprasMetAbrirSubproceso<CapaVista_MovimientosProveedores.FrmMovimientosProveedores>(_ComprasTlpMovimientosProveedores);
+            ComprasMetAbrirSubproceso<CapaVista_MovimientosProveedores.FrmMovimientosProveedores>(ComprasTlpMovimientosProveedores);
         }
 
         private void ComprasMetAbrirPolizas(object Remitente, EventArgs Evento)
         {
-            ComprasMetAbrirSubproceso<CapaVista_Polizas.FrmPolizas>(_ComprasTlpPolizas);
+            ComprasMetAbrirSubproceso<CapaVista_Polizas.FrmPolizas>(ComprasTlpPolizas);
         }
 
         private void ComprasMetAbrirOrdenesCompra(object Remitente, EventArgs Evento)
         {
-            ComprasMetAbrirSubproceso<CapaVista_OrdenesCompra.FrmOrdenesCompra>(_ComprasTlpOrdenesCompra);
+            ComprasMetAbrirSubproceso<CapaVista_OrdenesCompra.FrmOrdenesCompra>(ComprasTlpOrdenesCompra);
         }
 
         private void ComprasMetAbrirPagosProveedores(object Remitente, EventArgs Evento)
         {
-            ComprasMetAbrirSubproceso<CapaVista_PagosProveedores.FrmPagosProveedores>(_ComprasTlpPagosProveedores);
+            ComprasMetAbrirSubproceso<CapaVista_PagosProveedores.FrmPagosProveedores>(ComprasTlpPagosProveedores);
         }
 
         private void ComprasMetAbrirAprobacionFinanciera(object Remitente, EventArgs Evento)
         {
-            ComprasMetAbrirSubproceso<CapaVista_AprobacionFinanciera.FrmAprobacionFinanciera>(_ComprasTlpAprobacionFinanciera);
+            ComprasMetAbrirSubproceso<CapaVista_AprobacionFinanciera.FrmAprobacionFinanciera>(ComprasTlpAprobacionFinanciera);
         }
 
         private void ComprasMetAbrirCierreMovimientos(object Remitente, EventArgs Evento)
         {
-            ComprasMetAbrirSubproceso<CapaVista_CierreMovimientos.FrmCierreMovimientos>(_ComprasTlpCierreMovimientos);
+            ComprasMetAbrirSubproceso<CapaVista_CierreMovimientos.FrmCierreMovimientos>(ComprasTlpCierreMovimientos);
         }
 
         private void ComprasMetAbrirProveedores(object Remitente, EventArgs Evento)
         {
-            ComprasMetAbrirSubproceso<FrmMantenimientoProveedor>(_ComprasTlpProveedores);
+            ComprasMetAbrirSubproceso<FrmMantenimientoProveedor>(ComprasTlpProveedores);
         }
 
         private void ComprasMetAbrirMetodosPago(object Remitente, EventArgs Evento)
         {
-            ComprasMetAbrirSubproceso<FrmMantenimientoMetodoPago>(_ComprasTlpMetodosPago);
+            ComprasMetAbrirSubproceso<FrmMantenimientoMetodoPago>(ComprasTlpMetodosPago);
         }
 
         private void ComprasMetOpcionPendienteClick(object Remitente, EventArgs Evento)
@@ -236,24 +233,24 @@ namespace CapaVista_Compras
 
         private async void ComprasBtnBurger_Click(object Remitente, EventArgs Evento)
         {
-            if (_ContenidoOculto || _TransicionNavegador != null) return;
+            if (_ContenidoOculto || _ClsTransicionNavegador != null) return;
             _ContenidoOculto = true;
-            bool EncabezadoVisible = _ComprasTlpEncabezado.Visible;
-            bool ContenidoVisible = _ComprasPnlMain.Visible;
+            bool EncabezadoVisible = ComprasFlpEncabezado.Visible;
+            bool ContenidoVisible = ComprasPnlMain.Visible;
             var Tiempo = System.Diagnostics.Stopwatch.StartNew();
-            _ComprasTlpPrincipal.SuspendLayout();
+            ComprasTlpPrincipal.SuspendLayout();
             try
             {
-                _ComprasTlpEncabezado.Visible = false;
-                _ComprasPnlMain.Visible = false;
+                ComprasFlpEncabezado.Visible = false;
+                ComprasPnlMain.Visible = false;
             }
             finally
             {
-                _ComprasTlpPrincipal.ResumeLayout(true);
+                ComprasTlpPrincipal.ResumeLayout(true);
             }
             try
             {
-                _ComprasTlpPrincipal.Refresh();
+                ComprasTlpPrincipal.Refresh();
                 ComprasMetCambiarNavegador();
                 int Espera = Math.Max(1, 500 - (int)Tiempo.ElapsedMilliseconds);
                 await System.Threading.Tasks.Task.Delay(Espera);
@@ -264,30 +261,30 @@ namespace CapaVista_Compras
                 {
                     using (var Cubierta = new Panel())
                     {
-                        Cubierta.BackColor = _ComprasTlpPrincipal.BackColor;
-                        int Izquierda = _ComprasTlpPrincipal.Left + _ComprasTlpPrincipal.Padding.Left
-                            + (int)_ComprasTlpPrincipal.ColumnStyles[0].Width;
-                        Cubierta.Bounds = new System.Drawing.Rectangle(Izquierda, _ComprasTlpPrincipal.Top,
-                            Math.Max(0, _ComprasTlpPrincipal.Right - Izquierda), _ComprasTlpPrincipal.Height);
+                        Cubierta.BackColor = ComprasTlpPrincipal.BackColor;
+                        int Izquierda = ComprasTlpPrincipal.Left + ComprasTlpPrincipal.Padding.Left
+                            + (int)ComprasTlpPrincipal.ColumnStyles[0].Width;
+                        Cubierta.Bounds = new System.Drawing.Rectangle(Izquierda, ComprasTlpPrincipal.Top,
+                            Math.Max(0, ComprasTlpPrincipal.Right - Izquierda), ComprasTlpPrincipal.Height);
                         Controls.Add(Cubierta);
                         Cubierta.BringToFront();
                         Cubierta.Refresh();
-                        _ComprasTlpPrincipal.SuspendLayout();
+                        ComprasTlpPrincipal.SuspendLayout();
                         try
                         {
-                            _ComprasTlpEncabezado.Visible = EncabezadoVisible;
-                            _ComprasPnlMain.Visible = ContenidoVisible;
+                            ComprasFlpEncabezado.Visible = EncabezadoVisible;
+                            ComprasPnlMain.Visible = ContenidoVisible;
                         }
                         finally
                         {
-                            _ComprasTlpPrincipal.ResumeLayout(true);
+                            ComprasTlpPrincipal.ResumeLayout(true);
                         }
-                        _ComprasPnlMain.PerformLayout();
+                        ComprasPnlMain.PerformLayout();
                         ComprasMetAjustarDashboard();
-                        _ComprasTlpEncabezado.Refresh();
-                        _ComprasPnlMain.Refresh();
+                        ComprasFlpEncabezado.Refresh();
+                        ComprasPnlMain.Refresh();
                         Controls.Remove(Cubierta);
-                        _ComprasTlpPrincipal.Refresh();
+                        ComprasTlpPrincipal.Refresh();
                     }
                 }
                 _ContenidoOculto = false;
@@ -297,54 +294,54 @@ namespace CapaVista_Compras
         private void ComprasMetCambiarNavegador()
         {
             bool Contraer = !_NavegadorContraido;
-            int AnchoAnterior = _ComprasTlpNavegador.Width;
-            int AnchoFinal = Contraer ? 64 + _ComprasTlpNavegador.Padding.Horizontal : 270;
+            int AnchoAnterior = ComprasTlpNavegador.Width;
+            int AnchoFinal = Contraer ? 64 + ComprasTlpNavegador.Padding.Horizontal : 270;
             System.Drawing.Bitmap ImagenMenu = null;
             if (Contraer)
             {
-                ImagenMenu = new System.Drawing.Bitmap(_ComprasTlpNavegador.Width, _ComprasTlpNavegador.Height);
-                _ComprasTlpNavegador.DrawToBitmap(ImagenMenu, _ComprasTlpNavegador.ClientRectangle);
+                ImagenMenu = new System.Drawing.Bitmap(ComprasTlpNavegador.Width, ComprasTlpNavegador.Height);
+                ComprasTlpNavegador.DrawToBitmap(ImagenMenu, ComprasTlpNavegador.ClientRectangle);
             }
             _NavegadorContraido = !_NavegadorContraido;
-            _ComprasTlpPrincipal.SuspendLayout();
-            _ComprasTlpNavegador.SuspendLayout();
+            ComprasTlpPrincipal.SuspendLayout();
+            ComprasTlpNavegador.SuspendLayout();
             try
             {
-                ComprasMetAlternarSegundaColumna(_ComprasTlpNavegador);
-                foreach (Control ControlActual in _ComprasTlpNavegador.Controls)
+                ComprasMetAlternarSegundaColumna(ComprasTlpNavegador);
+                foreach (Control ControlActual in ComprasTlpNavegador.Controls)
                 {
                     TableLayoutPanel Panel = ControlActual as TableLayoutPanel;
                     if (Panel != null) ComprasMetAlternarSegundaColumna(Panel);
                 }
-                _ComprasTlpNavegador.Width = _NavegadorContraido
-                    ? 64 + _ComprasTlpNavegador.Padding.Horizontal : 270;
-                _ComprasTlpPrincipal.ColumnStyles[0].Width = _NavegadorContraido
-                    ? _ComprasTlpNavegador.Width + 16 : 286F;
-                _ComprasBtnAlternarNavegador.AccessibleName = _NavegadorContraido
+                ComprasTlpNavegador.Width = _NavegadorContraido
+                    ? 64 + ComprasTlpNavegador.Padding.Horizontal : 270;
+                ComprasTlpPrincipal.ColumnStyles[0].Width = _NavegadorContraido
+                    ? ComprasTlpNavegador.Width + 16 : 286F;
+                ComprasBtnAlternarNavegador.AccessibleName = _NavegadorContraido
                     ? "Expandir menú" : "Contraer menú";
             }
             finally
             {
-                _ComprasTlpNavegador.ResumeLayout(true);
-                _ComprasTlpPrincipal.ResumeLayout(true);
+                ComprasTlpNavegador.ResumeLayout(true);
+                ComprasTlpPrincipal.ResumeLayout(true);
                 if (ImagenMenu == null)
                 {
-                    ImagenMenu = new System.Drawing.Bitmap(_ComprasTlpNavegador.Width, _ComprasTlpNavegador.Height);
-                    _ComprasTlpNavegador.DrawToBitmap(ImagenMenu, _ComprasTlpNavegador.ClientRectangle);
+                    ImagenMenu = new System.Drawing.Bitmap(ComprasTlpNavegador.Width, ComprasTlpNavegador.Height);
+                    ComprasTlpNavegador.DrawToBitmap(ImagenMenu, ComprasTlpNavegador.ClientRectangle);
                 }
-                var Cubierta = new TransicionNavegador(ImagenMenu, AnchoAnterior, AnchoFinal);
-                _TransicionNavegador = Cubierta;
-                Cubierta.Disposed += (Origen, Argumentos) => _TransicionNavegador = null;
-                Cubierta.Location = PointToClient(_ComprasTlpNavegador.PointToScreen(System.Drawing.Point.Empty));
-                Cubierta.Size = new System.Drawing.Size(Math.Max(AnchoAnterior, AnchoFinal), _ComprasTlpNavegador.Height);
-                Cubierta.BackColor = _ComprasTlpPrincipal.BackColor;
+                var Cubierta = new ClsTransicionNavegador(ImagenMenu, AnchoAnterior, AnchoFinal);
+                _ClsTransicionNavegador = Cubierta;
+                Cubierta.Disposed += (Origen, Argumentos) => _ClsTransicionNavegador = null;
+                Cubierta.Location = PointToClient(ComprasTlpNavegador.PointToScreen(System.Drawing.Point.Empty));
+                Cubierta.Size = new System.Drawing.Size(Math.Max(AnchoAnterior, AnchoFinal), ComprasTlpNavegador.Height);
+                Cubierta.BackColor = ComprasTlpPrincipal.BackColor;
                 Controls.Add(Cubierta);
                 Cubierta.BringToFront();
                 Cubierta.Iniciar();
             }
         }
 
-        private sealed class TransicionNavegador : Control
+        private sealed class ClsTransicionNavegador : Control
         {
             private readonly System.Drawing.Bitmap _Menu;
             private readonly Timer _Reloj = new Timer { Interval = 15 };
@@ -352,7 +349,7 @@ namespace CapaVista_Compras
             private readonly int _Desde, _Hasta;
             private int _AnchoVisible;
 
-            internal TransicionNavegador(System.Drawing.Bitmap Menu, int Desde, int Hasta)
+            internal ClsTransicionNavegador(System.Drawing.Bitmap Menu, int Desde, int Hasta)
             {
                 _Menu = Menu;
                 _Desde = Desde;

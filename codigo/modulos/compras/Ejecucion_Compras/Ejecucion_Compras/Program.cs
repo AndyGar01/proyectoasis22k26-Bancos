@@ -1,8 +1,5 @@
 ﻿using CapaVista_Compras;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Ejecucion_Compras
@@ -18,7 +15,6 @@ namespace Ejecucion_Compras
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new FrmMDICompras());
-            //Application.Run(new FrmMdiVentas());
         }
     }
 }

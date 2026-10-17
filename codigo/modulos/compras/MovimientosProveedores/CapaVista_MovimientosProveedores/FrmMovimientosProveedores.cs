@@ -86,10 +86,12 @@ namespace CapaVista_MovimientosProveedores
 
             this.BackColor = ClsTemaCompras.FondoGeneral;
 
-            _ComprasCboProveedores.DropDownStyle = ComboBoxStyle.DropDown;
-            _ComprasCboProveedores.Text = "Buscar Proveedor...";
+            ComprasCboProveedores.DropDownStyle = ComboBoxStyle.DropDown;
+            ComprasCboProveedores.Text = "Buscar Proveedor...";
             ComprasProcInicializarTablaMovimientos();
             ComprasProcCargarMovimientos();
+            ComprasUsrMovimientos.DataBindingComplete += (Remitente, Evento) => ComprasProcFormatearMovimientos();
+            ComprasProcFormatearMovimientos();
         }
         private void ComprasProcInicializarTablaMovimientos()
         {
@@ -101,6 +103,24 @@ namespace CapaVista_MovimientosProveedores
             _TablaMovimientos.Columns.Add("ComprasColHaber", typeof(decimal));
             _TablaMovimientos.Columns.Add("ComprasColSaldo", typeof(decimal));
             _TablaMovimientos.Columns.Add("ComprasColEstado", typeof(string));
+        }
+
+        private void ComprasProcFormatearMovimientos()
+        {
+            string[] Campos = { "ComprasColFecha", "ComprasColDocumento", "ComprasColDebe", "ComprasColHaber", "ComprasColSaldo", "ComprasColEstado" };
+            string[] Titulos = { "Fecha", "Documento", "Debe", "Haber", "Saldo", "Estado" };
+            for (int Indice = 0; Indice < Campos.Length; Indice++)
+                if (ComprasUsrMovimientos.Columns.Contains(Campos[Indice]))
+                    ComprasUsrMovimientos.Columns[Campos[Indice]].HeaderText = Titulos[Indice];
+            if (!ComprasUsrMovimientos.Columns.Contains("ComprasColFecha")) return;
+            ComprasUsrMovimientos.Columns["ComprasColFecha"].DefaultCellStyle.Format = "dd/MM/yyyy";
+            foreach (string Campo in new[] { "ComprasColDebe", "ComprasColHaber", "ComprasColSaldo" })
+            {
+                var Estilo = ComprasUsrMovimientos.Columns[Campo].DefaultCellStyle;
+                Estilo.Format = "N2";
+                Estilo.FormatProvider = System.Globalization.CultureInfo.InvariantCulture;
+                Estilo.Alignment = DataGridViewContentAlignment.MiddleRight;
+            }
         }
 
         private void ComprasProcCargarMovimientos()

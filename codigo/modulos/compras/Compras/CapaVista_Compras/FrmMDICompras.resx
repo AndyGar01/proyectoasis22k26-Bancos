@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="_ComprasTlpNavegador.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ComprasTlpNavegador.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAtUAAAh5CAYAAADFHZOwAAAABGdBTUEAALGPC/xhBQAA/8dJREFUeF68
         /Qm0XdlZ34vKEBKS3IbSaWSDjYmNq6TTSGWXy9LpVWUDxk1sAyb0dpWkc87e+xypyjaQvnIHCdxcwoME
@@ -29904,7 +29904,7 @@
         L43/gviV7l3TbwvdN/ghkeofhd32uvxu+f8FEpPNARGjMM8AAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="_ComprasPbMarca.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ComprasPbMarca.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAaEAAAGhCAYAAADIqAvCAAAABGdBTUEAALGPC/xhBQAA/8dJREFUeF7s
         vQV4VHfXPfoW4gle2uIkQUKIZ2aSibsSvKUUCtTdXd8KNaB4fDJxF1xb3CKj8eDuhBDPzJyz7rN/ZwKU
@@ -33703,7 +33703,7 @@
         ICyxFgAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="_ComprasTlpMovimientosProveedores.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ComprasTlpMovimientosProveedores.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQgAAAAyCAYAAACgYEWAAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         vAAADrwBlbxySQAAKVNJREFUeF6NXVmsXld1tvoEFZgEqTSTYydUECeGUFUV6iAVQdWqlAIZcCbHdnjp
@@ -33885,7 +33885,7 @@
         46G6/e/j35++/c2XphPPnD994ZX5Ay88s3Rt7QHt7/8B9sjC0XOjqiQAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="_ComprasBtnIconoMovimientosProveedores.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ComprasBtnIconoMovimientosProveedores.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADgAAAAqCAYAAADmmJiOAAAABGdBTUEAALGPC/xhBQAADetJREFUaEPt
         WglUlEcSxlwmiigieDGccivCGE1kvQia7HpwX3IzoEbFxAsFRIm66sZ4a9REjebYxKiJiecm6nqskpCY
@@ -33950,7 +33950,7 @@
         kf/J1lZ2sCxXx8H9r9O/AWa+k7LuHNNVAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="_ComprasTlpMovimientosProveedores.ImagenHover" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ComprasTlpMovimientosProveedores.ImagenHover" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQgAAAAyCAYAAACgYEWAAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         vAAADrwBlbxySQAAK1JJREFUeF6NfVusX+WVn1/6UrVN1ec+VRq1GiaGYINmwiXSTCAB20AwJJX61ps0
@@ -34141,7 +34141,7 @@
         kL//D03kVqbcIS0/AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="_ComprasTlpMovimientosProveedores.ImagenNormal" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ComprasTlpMovimientosProveedores.ImagenNormal" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQgAAAAyCAYAAACgYEWAAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         vAAADrwBlbxySQAAKVNJREFUeF6NXVmsXld1tvoEFZgEqTSTYydUECeGUFUV6iAVQdWqlAIZcCbHdnjp
@@ -34323,7 +34323,7 @@
         46G6/e/j35++/c2XphPPnD994ZX5Ay88s3Rt7QHt7/8B9sjC0XOjqiQAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="_ComprasTlpMovimientosProveedores.ImagenSeleccionado" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ComprasTlpMovimientosProveedores.ImagenSeleccionado" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQgAAAAyCAYAAACgYEWAAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         vAAADrwBlbxySQAAIU1JREFUeF6tXU2MXMdxZmDEp/wffAsC5BLkkDgJkpMlkbTMnAxYtpFbLgFyTm5J
@@ -34471,7 +34471,7 @@
         q/d/enH7wev/+dY7n+IakP79HwEdxdUcAGA+AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="_ComprasTlpPolizas.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ComprasTlpPolizas.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQgAAAAyCAYAAACgYEWAAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         vAAADrwBlbxySQAAKVNJREFUeF6NXVmsXld1tvoEFZgEqTSTYydUECeGUFUV6iAVQdWqlAIZcCbHdnjp
@@ -34653,7 +34653,7 @@
         46G6/e/j35++/c2XphPPnD994ZX5Ay88s3Rt7QHt7/8B9sjC0XOjqiQAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="_ComprasBtnIconoPolizas.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ComprasBtnIconoPolizas.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADgAAAAqCAYAAADmmJiOAAAABGdBTUEAALGPC/xhBQAADQ9JREFUaEPV
         WglUFEcaJomuazAqhxe3yCEaQRQVjbruruuBBwqOwnANA8YjifrUBI1RiXlJXpJNXGMuzEHWbExCNi9P
@@ -34714,7 +34714,7 @@
         ibL3WNXOPVTYM7bvPlJ5ovJCgyjakTGrASBTp1fHwf2/l/8AW6R6GuGz7FgAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="_ComprasTlpPolizas.ImagenHover" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ComprasTlpPolizas.ImagenHover" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQgAAAAyCAYAAACgYEWAAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         vAAADrwBlbxySQAAK1JJREFUeF6NfVusX+WVn1/6UrVN1ec+VRq1GiaGYINmwiXSTCAB20AwJJX61ps0
@@ -34905,7 +34905,7 @@
         kL//D03kVqbcIS0/AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="_ComprasTlpPolizas.ImagenNormal" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ComprasTlpPolizas.ImagenNormal" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQgAAAAyCAYAAACgYEWAAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         vAAADrwBlbxySQAAKVNJREFUeF6NXVmsXld1tvoEFZgEqTSTYydUECeGUFUV6iAVQdWqlAIZcCbHdnjp
@@ -35087,7 +35087,7 @@
         46G6/e/j35++/c2XphPPnD994ZX5Ay88s3Rt7QHt7/8B9sjC0XOjqiQAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="_ComprasTlpPolizas.ImagenSeleccionado" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ComprasTlpPolizas.ImagenSeleccionado" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQgAAAAyCAYAAACgYEWAAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         vAAADrwBlbxySQAAIU1JREFUeF6tXU2MXMdxZmDEp/wffAsC5BLkkDgJkpMlkbTMnAxYtpFbLgFyTm5J
@@ -35235,7 +35235,7 @@
         q/d/enH7wev/+dY7n+IakP79HwEdxdUcAGA+AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="_ComprasTlpProveedores.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ComprasTlpProveedores.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQgAAAAyCAYAAACgYEWAAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         vAAADrwBlbxySQAAKVNJREFUeF6NXVmsXld1tvoEFZgEqTSTYydUECeGUFUV6iAVQdWqlAIZcCbHdnjp
@@ -35417,7 +35417,7 @@
         46G6/e/j35++/c2XphPPnD994ZX5Ay88s3Rt7QHt7/8B9sjC0XOjqiQAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="_ComprasBtnIconoProveedores.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ComprasBtnIconoProveedores.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADgAAAAqCAYAAADmmJiOAAAABGdBTUEAALGPC/xhBQAADj9JREFUaEPt
         WQlQlEcWNubWIEcUBWRAThEBZwA1p2viRSrekQFBhjnAaLwF3DWVrGa9NYnxIJIYz5gYNO66QLyyag5N
@@ -35483,7 +35483,7 @@
         rSurXLW2rHLVugrC727Yda1839HbtxtsmBgc43nXMCZX68H9r9O/AYG6K1Q36zwFAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="_ComprasTlpProveedores.ImagenHover" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ComprasTlpProveedores.ImagenHover" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQgAAAAyCAYAAACgYEWAAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         vAAADrwBlbxySQAAK1JJREFUeF6NfVusX+WVn1/6UrVN1ec+VRq1GiaGYINmwiXSTCAB20AwJJX61ps0
@@ -35674,7 +35674,7 @@
         kL//D03kVqbcIS0/AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="_ComprasTlpProveedores.ImagenNormal" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ComprasTlpProveedores.ImagenNormal" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQgAAAAyCAYAAACgYEWAAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         vAAADrwBlbxySQAAKVNJREFUeF6NXVmsXld1tvoEFZgEqTSTYydUECeGUFUV6iAVQdWqlAIZcCbHdnjp
@@ -35856,7 +35856,7 @@
         46G6/e/j35++/c2XphPPnD994ZX5Ay88s3Rt7QHt7/8B9sjC0XOjqiQAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="_ComprasTlpProveedores.ImagenSeleccionado" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ComprasTlpProveedores.ImagenSeleccionado" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQgAAAAyCAYAAACgYEWAAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         vAAADrwBlbxySQAAIU1JREFUeF6tXU2MXMdxZmDEp/wffAsC5BLkkDgJkpMlkbTMnAxYtpFbLgFyTm5J
@@ -36004,7 +36004,7 @@
         q/d/enH7wev/+dY7n+IakP79HwEdxdUcAGA+AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="_ComprasTlpMetodosPago.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ComprasTlpMetodosPago.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQgAAAAyCAYAAACgYEWAAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         vAAADrwBlbxySQAAKVNJREFUeF6NXVmsXld1tvoEFZgEqTSTYydUECeGUFUV6iAVQdWqlAIZcCbHdnjp
@@ -36186,7 +36186,7 @@
         46G6/e/j35++/c2XphPPnD994ZX5Ay88s3Rt7QHt7/8B9sjC0XOjqiQAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="_ComprasBtnIconoMetodosPago.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ComprasBtnIconoMetodosPago.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADgAAAAqCAYAAADmmJiOAAAABGdBTUEAALGPC/xhBQAADWVJREFUaEPt
         WXl4VNUVp7XuWVgTyE4mG0nIzCRgFbDKImqBRCghk2SyzSQBAU0MaililUWNaGULSvETrbaCgSoCgY+9
@@ -36249,7 +36249,7 @@
         /AvAsI/0l30z/wAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="_ComprasTlpMetodosPago.ImagenHover" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ComprasTlpMetodosPago.ImagenHover" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQgAAAAyCAYAAACgYEWAAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         vAAADrwBlbxySQAAK1JJREFUeF6NfVusX+WVn1/6UrVN1ec+VRq1GiaGYINmwiXSTCAB20AwJJX61ps0
@@ -36440,7 +36440,7 @@
         kL//D03kVqbcIS0/AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="_ComprasTlpMetodosPago.ImagenNormal" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ComprasTlpMetodosPago.ImagenNormal" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQgAAAAyCAYAAACgYEWAAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         vAAADrwBlbxySQAAKVNJREFUeF6NXVmsXld1tvoEFZgEqTSTYydUECeGUFUV6iAVQdWqlAIZcCbHdnjp
@@ -36622,7 +36622,7 @@
         46G6/e/j35++/c2XphPPnD994ZX5Ay88s3Rt7QHt7/8B9sjC0XOjqiQAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="_ComprasTlpMetodosPago.ImagenSeleccionado" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ComprasTlpMetodosPago.ImagenSeleccionado" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQgAAAAyCAYAAACgYEWAAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         vAAADrwBlbxySQAAIU1JREFUeF6tXU2MXMdxZmDEp/wffAsC5BLkkDgJkpMlkbTMnAxYtpFbLgFyTm5J
@@ -36770,7 +36770,7 @@
         q/d/enH7wev/+dY7n+IakP79HwEdxdUcAGA+AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="_ComprasTlpOrdenesCompra.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ComprasTlpOrdenesCompra.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQgAAAAyCAYAAACgYEWAAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         vAAADrwBlbxySQAAKVNJREFUeF6NXVmsXld1tvoEFZgEqTSTYydUECeGUFUV6iAVQdWqlAIZcCbHdnjp
@@ -36952,7 +36952,7 @@
         46G6/e/j35++/c2XphPPnD994ZX5Ay88s3Rt7QHt7/8B9sjC0XOjqiQAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="_ComprasBtnIconoOrdenesCompra.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ComprasBtnIconoOrdenesCompra.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADgAAAAqCAYAAADmmJiOAAAABGdBTUEAALGPC/xhBQAADLdJREFUaEPt
         WnlwFFUa91jZLdkcJBAw5CQnIcfMgFwey2GtCrpVWJBMLnJMEgRcJIkRdRXQctfVRas4NRAoRVkV0ZXT
@@ -37012,7 +37012,7 @@
         55/P/6/QfwBYKLbyHUGT7gAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="_ComprasTlpOrdenesCompra.ImagenHover" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ComprasTlpOrdenesCompra.ImagenHover" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQgAAAAyCAYAAACgYEWAAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         vAAADrwBlbxySQAAK1JJREFUeF6NfVusX+WVn1/6UrVN1ec+VRq1GiaGYINmwiXSTCAB20AwJJX61ps0
@@ -37203,7 +37203,7 @@
         kL//D03kVqbcIS0/AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="_ComprasTlpOrdenesCompra.ImagenNormal" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ComprasTlpOrdenesCompra.ImagenNormal" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQgAAAAyCAYAAACgYEWAAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         vAAADrwBlbxySQAAKVNJREFUeF6NXVmsXld1tvoEFZgEqTSTYydUECeGUFUV6iAVQdWqlAIZcCbHdnjp
@@ -37385,7 +37385,7 @@
         46G6/e/j35++/c2XphPPnD994ZX5Ay88s3Rt7QHt7/8B9sjC0XOjqiQAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="_ComprasTlpOrdenesCompra.ImagenSeleccionado" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ComprasTlpOrdenesCompra.ImagenSeleccionado" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQgAAAAyCAYAAACgYEWAAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         vAAADrwBlbxySQAAIU1JREFUeF6tXU2MXMdxZmDEp/wffAsC5BLkkDgJkpMlkbTMnAxYtpFbLgFyTm5J
@@ -37533,7 +37533,7 @@
         q/d/enH7wev/+dY7n+IakP79HwEdxdUcAGA+AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="_ComprasTlpPagosProveedores.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ComprasTlpPagosProveedores.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQgAAAAyCAYAAACgYEWAAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         vAAADrwBlbxySQAAKVNJREFUeF6NXVmsXld1tvoEFZgEqTSTYydUECeGUFUV6iAVQdWqlAIZcCbHdnjp
@@ -37715,7 +37715,7 @@
         46G6/e/j35++/c2XphPPnD994ZX5Ay88s3Rt7QHt7/8B9sjC0XOjqiQAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="_ComprasBtnIconoPagosProveedores.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ComprasBtnIconoPagosProveedores.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADgAAAAqCAYAAADmmJiOAAAABGdBTUEAALGPC/xhBQAADepJREFUaEO9
         Wgl0VOUVptZWCgQCIQkEskz2newkCALKEvYDIfsyyWRlU3awNAiIC/WIG4IbAoqtoKCVoqBIpEVUQBBw
@@ -37780,7 +37780,7 @@
         Ov8rntXY2B6gludmwf0HtkdPGLFSlowAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="_ComprasTlpPagosProveedores.ImagenHover" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ComprasTlpPagosProveedores.ImagenHover" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQgAAAAyCAYAAACgYEWAAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         vAAADrwBlbxySQAAK1JJREFUeF6NfVusX+WVn1/6UrVN1ec+VRq1GiaGYINmwiXSTCAB20AwJJX61ps0
@@ -37971,7 +37971,7 @@
         kL//D03kVqbcIS0/AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="_ComprasTlpPagosProveedores.ImagenNormal" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ComprasTlpPagosProveedores.ImagenNormal" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQgAAAAyCAYAAACgYEWAAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         vAAADrwBlbxySQAAKVNJREFUeF6NXVmsXld1tvoEFZgEqTSTYydUECeGUFUV6iAVQdWqlAIZcCbHdnjp
@@ -38153,7 +38153,7 @@
         46G6/e/j35++/c2XphPPnD994ZX5Ay88s3Rt7QHt7/8B9sjC0XOjqiQAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="_ComprasTlpPagosProveedores.ImagenSeleccionado" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ComprasTlpPagosProveedores.ImagenSeleccionado" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQgAAAAyCAYAAACgYEWAAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         vAAADrwBlbxySQAAIU1JREFUeF6tXU2MXMdxZmDEp/wffAsC5BLkkDgJkpMlkbTMnAxYtpFbLgFyTm5J
@@ -38301,7 +38301,7 @@
         q/d/enH7wev/+dY7n+IakP79HwEdxdUcAGA+AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="_ComprasTlpAprobacionFinanciera.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ComprasTlpAprobacionFinanciera.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQgAAAAyCAYAAACgYEWAAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         vAAADrwBlbxySQAAKVNJREFUeF6NXVmsXld1tvoEFZgEqTSTYydUECeGUFUV6iAVQdWqlAIZcCbHdnjp
@@ -38483,7 +38483,7 @@
         46G6/e/j35++/c2XphPPnD994ZX5Ay88s3Rt7QHt7/8B9sjC0XOjqiQAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="_ComprasBtnIconoAprobacionFinanciera.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ComprasBtnIconoAprobacionFinanciera.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADgAAAAqCAYAAADmmJiOAAAABGdBTUEAALGPC/xhBQAADchJREFUaEO1
         WglwlEUWDmohch+SSQJJJndCDnIHELlULg9uyEEyk8kkgMshSOlyLAgiIFrlweq6eKACyiJQogZcEcJd
@@ -38548,7 +38548,7 @@
         gg==
 </value>
   </data>
-  <data name="_ComprasTlpAprobacionFinanciera.ImagenHover" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ComprasTlpAprobacionFinanciera.ImagenHover" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQgAAAAyCAYAAACgYEWAAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         vAAADrwBlbxySQAAK1JJREFUeF6NfVusX+WVn1/6UrVN1ec+VRq1GiaGYINmwiXSTCAB20AwJJX61ps0
@@ -38739,7 +38739,7 @@
         kL//D03kVqbcIS0/AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="_ComprasTlpAprobacionFinanciera.ImagenNormal" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ComprasTlpAprobacionFinanciera.ImagenNormal" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQgAAAAyCAYAAACgYEWAAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         vAAADrwBlbxySQAAKVNJREFUeF6NXVmsXld1tvoEFZgEqTSTYydUECeGUFUV6iAVQdWqlAIZcCbHdnjp
@@ -38921,7 +38921,7 @@
         46G6/e/j35++/c2XphPPnD994ZX5Ay88s3Rt7QHt7/8B9sjC0XOjqiQAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="_ComprasTlpAprobacionFinanciera.ImagenSeleccionado" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ComprasTlpAprobacionFinanciera.ImagenSeleccionado" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQgAAAAyCAYAAACgYEWAAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         vAAADrwBlbxySQAAIU1JREFUeF6tXU2MXMdxZmDEp/wffAsC5BLkkDgJkpMlkbTMnAxYtpFbLgFyTm5J
@@ -39069,7 +39069,7 @@
         q/d/enH7wev/+dY7n+IakP79HwEdxdUcAGA+AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="_ComprasTlpCierreMovimientos.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ComprasTlpCierreMovimientos.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQgAAAAyCAYAAACgYEWAAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         vAAADrwBlbxySQAAKVNJREFUeF6NXVmsXld1tvoEFZgEqTSTYydUECeGUFUV6iAVQdWqlAIZcCbHdnjp
@@ -39251,7 +39251,7 @@
         46G6/e/j35++/c2XphPPnD994ZX5Ay88s3Rt7QHt7/8B9sjC0XOjqiQAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="_ComprasBtnIconoCierreMovimientos.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ComprasBtnIconoCierreMovimientos.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADgAAAAqCAYAAADmmJiOAAAABGdBTUEAALGPC/xhBQAADipJREFUaEO9
         WglwVdUZVjtVwICEJQuQfSEvCQlZkAABC4iWakGI2Zf3spAQUEEQRcRCFRX3GaVqZ1xGaAtYp6KjUkSJ
@@ -39317,7 +39317,7 @@
         n0p1P2Oj9eY0NLSGSF7+X3D/BVpnnuFtuD6MAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="_ComprasTlpCierreMovimientos.ImagenHover" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ComprasTlpCierreMovimientos.ImagenHover" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQgAAAAyCAYAAACgYEWAAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         vAAADrwBlbxySQAAK1JJREFUeF6NfVusX+WVn1/6UrVN1ec+VRq1GiaGYINmwiXSTCAB20AwJJX61ps0
@@ -39508,7 +39508,7 @@
         kL//D03kVqbcIS0/AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="_ComprasTlpCierreMovimientos.ImagenNormal" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ComprasTlpCierreMovimientos.ImagenNormal" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQgAAAAyCAYAAACgYEWAAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         vAAADrwBlbxySQAAKVNJREFUeF6NXVmsXld1tvoEFZgEqTSTYydUECeGUFUV6iAVQdWqlAIZcCbHdnjp
@@ -39690,7 +39690,7 @@
         46G6/e/j35++/c2XphPPnD994ZX5Ay88s3Rt7QHt7/8B9sjC0XOjqiQAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="_ComprasTlpCierreMovimientos.ImagenSeleccionado" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ComprasTlpCierreMovimientos.ImagenSeleccionado" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQgAAAAyCAYAAACgYEWAAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         vAAADrwBlbxySQAAIU1JREFUeF6tXU2MXMdxZmDEp/wffAsC5BLkkDgJkpMlkbTMnAxYtpFbLgFyTm5J
@@ -39838,7 +39838,7 @@
         q/d/enH7wev/+dY7n+IakP79HwEdxdUcAGA+AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="_ComprasTlpBitacora.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ComprasTlpBitacora.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQgAAAAyCAYAAACgYEWAAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         vAAADrwBlbxySQAAKVNJREFUeF6NXVmsXld1tvoEFZgEqTSTYydUECeGUFUV6iAVQdWqlAIZcCbHdnjp
@@ -40020,7 +40020,7 @@
         46G6/e/j35++/c2XphPPnD994ZX5Ay88s3Rt7QHt7/8B9sjC0XOjqiQAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="_ComprasBtnIconoBitacora.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ComprasBtnIconoBitacora.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADgAAAAqCAYAAADmmJiOAAAABGdBTUEAALGPC/xhBQAADVNJREFUaEO1
         Wgd0VFUajnp2lxIQQ0tCegFSSEiDJIjuyh5WKSILIYlJJj0hARUJVXoExdW1YNlVCUEBAZGzR8G2rNhW
@@ -40083,7 +40083,7 @@
         rkJggg==
 </value>
   </data>
-  <data name="_ComprasTlpBitacora.ImagenHover" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ComprasTlpBitacora.ImagenHover" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQgAAAAyCAYAAACgYEWAAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         vAAADrwBlbxySQAAK1JJREFUeF6NfVusX+WVn1/6UrVN1ec+VRq1GiaGYINmwiXSTCAB20AwJJX61ps0
@@ -40274,7 +40274,7 @@
         kL//D03kVqbcIS0/AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="_ComprasTlpBitacora.ImagenNormal" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ComprasTlpBitacora.ImagenNormal" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQgAAAAyCAYAAACgYEWAAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         vAAADrwBlbxySQAAKVNJREFUeF6NXVmsXld1tvoEFZgEqTSTYydUECeGUFUV6iAVQdWqlAIZcCbHdnjp
@@ -40456,7 +40456,7 @@
         46G6/e/j35++/c2XphPPnD994ZX5Ay88s3Rt7QHt7/8B9sjC0XOjqiQAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="_ComprasTlpBitacora.ImagenSeleccionado" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ComprasTlpBitacora.ImagenSeleccionado" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQgAAAAyCAYAAACgYEWAAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         vAAADrwBlbxySQAAIU1JREFUeF6tXU2MXMdxZmDEp/wffAsC5BLkkDgJkpMlkbTMnAxYtpFbLgFyTm5J
@@ -40604,7 +40604,7 @@
         q/d/enH7wev/+dY7n+IakP79HwEdxdUcAGA+AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="_ComprasTlpSalir.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ComprasTlpSalir.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQgAAAAyCAYAAACgYEWAAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         vAAADrwBlbxySQAAKVNJREFUeF6NXVmsXld1tvoEFZgEqTSTYydUECeGUFUV6iAVQdWqlAIZcCbHdnjp
@@ -40786,7 +40786,7 @@
         46G6/e/j35++/c2XphPPnD994ZX5Ay88s3Rt7QHt7/8B9sjC0XOjqiQAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="_ComprasBtnIconoSalir.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ComprasBtnIconoSalir.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADgAAAAqCAYAAADmmJiOAAAABGdBTUEAALGPC/xhBQAADQBJREFUaEO9
         WgtwVdUV1VZbJxB+gfwgJCEv5P8HEhAVBVtRqAgm5Pe+SUgANeJ3oAx+KIiDokXboYKIU8HKqG2to63S
@@ -40847,7 +40847,7 @@
         QNVFrg+VZd+lXq+XzFFba5e67v4LhcV49jTuvPgAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="_ComprasTlpSalir.ImagenHover" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ComprasTlpSalir.ImagenHover" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQgAAAAyCAYAAACgYEWAAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         vAAADrwBlbxySQAAK1JJREFUeF6NfVusX+WVn1/6UrVN1ec+VRq1GiaGYINmwiXSTCAB20AwJJX61ps0
@@ -41038,7 +41038,7 @@
         kL//D03kVqbcIS0/AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="_ComprasTlpSalir.ImagenNormal" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ComprasTlpSalir.ImagenNormal" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQgAAAAyCAYAAACgYEWAAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         vAAADrwBlbxySQAAKVNJREFUeF6NXVmsXld1tvoEFZgEqTSTYydUECeGUFUV6iAVQdWqlAIZcCbHdnjp
@@ -41220,7 +41220,7 @@
         46G6/e/j35++/c2XphPPnD994ZX5Ay88s3Rt7QHt7/8B9sjC0XOjqiQAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="_ComprasTlpSalir.ImagenSeleccionado" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ComprasTlpSalir.ImagenSeleccionado" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQgAAAAyCAYAAACgYEWAAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         vAAADrwBlbxySQAAIU1JREFUeF6tXU2MXMdxZmDEp/wffAsC5BLkkDgJkpMlkbTMnAxYtpFbLgFyTm5J
@@ -41368,7 +41368,7 @@
         q/d/enH7wev/+dY7n+IakP79HwEdxdUcAGA+AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="_ComprasBtnAlternarNavegador.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ComprasBtnAlternarNavegador.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAABTcAAASaCAYAAACIQVgnAAAABGdBTUEAALGPC/xhBQAA/8dJREFUeF7s
         /feTZNl14HkmBAGyCSogw0UUlrDtrgoXUeD8QBuz/mW3dmemmxgSTaJJFEmIEhnhIjKrADSbPTtra7NT

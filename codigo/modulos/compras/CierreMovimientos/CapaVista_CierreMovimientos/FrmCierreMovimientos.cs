@@ -15,11 +15,11 @@ namespace CapaVista_CierreMovimientos
             CapaVista_Componentes.Componentes.ClsPresentacionCompras.ComprasMetFijarTamanoFormulario(this);
             ComprasProcConfigurarTablas();
             Load += ComprasMetCargar;
-            _ComprasBtnValidar.Click += ComprasMetValidar;
-            _ComprasBtnEjecutarCierre.Click += ComprasMetEjecutarCierre;
-            _ComprasBtnImprimir.Click += ComprasMetImprimir;
-            _ComprasBtnAyuda.Click += ComprasMetAyuda;
-            _ComprasBtnSalir.Click += ComprasMetSalir;
+            ComprasBtnValidar.Click += ComprasMetValidar;
+            ComprasBtnEjecutarCierre.Click += ComprasMetEjecutarCierre;
+            ComprasBtnImprimir.Click += ComprasMetImprimir;
+            ComprasBtnAyuda.Click += ComprasMetAyuda;
+            ComprasBtnSalir.Click += ComprasMetSalir;
         }
 
         private void ComprasProcConfigurarTablas()
@@ -41,8 +41,8 @@ namespace CapaVista_CierreMovimientos
             ComprasUsrPeriodo.ValueMember = "cmp_id_periodo";
             ComprasUsrPeriodo.DataSource = _Controlador.ComprasFuncObtenerPeriodosCerrables();
 
-            _ComprasBtnEjecutarCierre.Enabled = false;
-            _ComprasBtnImprimir.Enabled = false;
+            ComprasBtnEjecutarCierre.Enabled = false;
+            ComprasBtnImprimir.Enabled = false;
         }
 
         private void ComprasMetValidar(object Remitente, EventArgs Evento)
@@ -63,15 +63,15 @@ namespace CapaVista_CierreMovimientos
             CapaVista_Componentes.Componentes.ClsPresentacionCompras.ComprasProcMostrarMonto(ComprasUsrTotalAbonos, Resumen.TotalAbonos);
             CapaVista_Componentes.Componentes.ClsPresentacionCompras.ComprasProcMostrarMonto(ComprasUsrSaldoFinal, Resumen.SaldoFinal);
 
-            _ComprasBtnEjecutarCierre.Enabled = Resumen.PuedeCerrar;
-            _ComprasBtnImprimir.Enabled = true;
+            ComprasBtnEjecutarCierre.Enabled = Resumen.PuedeCerrar;
+            ComprasBtnImprimir.Enabled = true;
         }
 
         private void ComprasMetEjecutarCierre(object Remitente, EventArgs Evento)
         {
             DialogResult Respuesta = MessageBox.Show(
                 "El cierre es definitivo: los movimientos del período quedarán bloqueados.\n¿Desea continuar?",
-                "Confirmar cierre", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                "Confirmar cierre", MessageBoxButtons.YesNo, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2);
 
             if (Respuesta != DialogResult.Yes) return;
 
@@ -79,7 +79,7 @@ namespace CapaVista_CierreMovimientos
             string Mensaje = _Controlador.ComprasFuncEjecutarCierre(IdPeriodo);
             MessageBox.Show(Mensaje, "Cierre de Movimientos", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-            _ComprasBtnEjecutarCierre.Enabled = false;
+            ComprasBtnEjecutarCierre.Enabled = false;
         }
 
         private void ComprasMetImprimir(object Remitente, EventArgs Evento)

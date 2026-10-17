@@ -2,39 +2,39 @@
 {
     partial class UsrMDITabCompras
     {
-        private System.ComponentModel.IContainer components = null;
+        private System.ComponentModel.IContainer _Componentes = null;
         protected override void Dispose(bool disposing)
         {
-            if (disposing && components != null) components.Dispose();
+            if (disposing && _Componentes != null) _Componentes.Dispose();
             base.Dispose(disposing);
         }
         private void InitializeComponent()
         {
-            this.clsTableLayoutPanelCompras1 = new CapaVista_Componentes.Componentes.ClsTableLayoutPanelCompras();
+            this.ComprasTlpOpcion = new CapaVista_Componentes.Componentes.ClsTableLayoutPanelCompras();
             this.SuspendLayout();
             // 
-            // clsTableLayoutPanelCompras1
+            // ComprasTlpOpcion
             // 
-            this.clsTableLayoutPanelCompras1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
-            this.clsTableLayoutPanelCompras1.ColumnCount = 2;
-            this.clsTableLayoutPanelCompras1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 84F));
-            this.clsTableLayoutPanelCompras1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.clsTableLayoutPanelCompras1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.clsTableLayoutPanelCompras1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
-            this.clsTableLayoutPanelCompras1.Location = new System.Drawing.Point(0, 0);
-            this.clsTableLayoutPanelCompras1.Margin = new System.Windows.Forms.Padding(0);
-            this.clsTableLayoutPanelCompras1.Name = "clsTableLayoutPanelCompras1";
-            this.clsTableLayoutPanelCompras1.RowCount = 1;
-            this.clsTableLayoutPanelCompras1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.clsTableLayoutPanelCompras1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.clsTableLayoutPanelCompras1.Size = new System.Drawing.Size(252, 82);
-            this.clsTableLayoutPanelCompras1.TabIndex = 0;
+            this.ComprasTlpOpcion.BackColor = CapaVista_Componentes.Componentes.ClsTemaCompras.FondoGeneral;
+            this.ComprasTlpOpcion.ColumnCount = 2;
+            this.ComprasTlpOpcion.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 84F));
+            this.ComprasTlpOpcion.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.ComprasTlpOpcion.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ComprasTlpOpcion.ForeColor = CapaVista_Componentes.Componentes.ClsTemaCompras.PrincipalNavegador;
+            this.ComprasTlpOpcion.Location = new System.Drawing.Point(0, 0);
+            this.ComprasTlpOpcion.Margin = new System.Windows.Forms.Padding(0);
+            this.ComprasTlpOpcion.Name = "ComprasTlpOpcion";
+            this.ComprasTlpOpcion.RowCount = 1;
+            this.ComprasTlpOpcion.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.ComprasTlpOpcion.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.ComprasTlpOpcion.Size = new System.Drawing.Size(252, 82);
+            this.ComprasTlpOpcion.TabIndex = 0;
             // 
             // UsrMDITabCompras
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Controls.Add(this.clsTableLayoutPanelCompras1);
+            this.Controls.Add(this.ComprasTlpOpcion);
             this.DoubleBuffered = true;
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "UsrMDITabCompras";
@@ -43,6 +43,6 @@
 
         }
 
-        private ClsTableLayoutPanelCompras clsTableLayoutPanelCompras1;
+        private ClsTableLayoutPanelCompras ComprasTlpOpcion;
     }
 }

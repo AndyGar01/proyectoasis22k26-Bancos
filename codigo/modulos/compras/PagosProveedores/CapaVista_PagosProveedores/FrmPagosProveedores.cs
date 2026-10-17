@@ -97,28 +97,84 @@ namespace CapaVista_PagosProveedores
 
 
             Tabla.CellFormatting += ComprasMetDgvPagosCellFormatting;
-            Tabla.CellPainting += ComprasMetDgvPagosCellPainting;
+            Tabla.Layout += (Remitente, Evento) => ComprasProcActualizarBotones();
+            Tabla.Scroll += (Remitente, Evento) => ComprasProcActualizarBotones();
+            Tabla.ColumnWidthChanged += (Remitente, Evento) => ComprasProcActualizarBotones();
+            Tabla.ColumnDisplayIndexChanged += (Remitente, Evento) => ComprasProcActualizarBotones();
+            Tabla.RowHeightChanged += (Remitente, Evento) => ComprasProcActualizarBotones();
+            Tabla.DataBindingComplete += (Remitente, Evento) => ComprasProcActualizarBotones();
+            Tabla.SelectionChanged += (Remitente, Evento) => ComprasProcActualizarBotones();
+            Tabla.CellValueChanged += (Remitente, Evento) => ComprasProcActualizarBotones();
+            Disposed += (Remitente, Evento) =>
+            {
+                foreach (Bitmap Imagen in _Imagenes) Imagen?.Dispose();
+            };
+            ComprasProcActualizarBotones();
         }
+
+        private readonly string[] _NombresImagenes = { "Ver_Tabla", "Modificar_Tabla", "Eliminar_Tabla" };
+        private readonly string[] _Acciones = { "Ver", "Editar", "Eliminar" };
+        private readonly Bitmap[] _Imagenes = new Bitmap[3];
+        private readonly System.Collections.Generic.List<ClsButtonCompras> _Botones = new System.Collections.Generic.List<ClsButtonCompras>();
+        private bool _Actualizando;
 
         private void ComprasProcAgregarColumnaAccion(string Nombre, string Texto)
         {
-            var Columna = new DataGridViewButtonColumn
+            int Indice = Array.IndexOf(_Acciones, Nombre);
+            var Recursos = new System.ComponentModel.ComponentResourceManager(typeof(FrmPagosProveedores));
+            var Imagen = (Bitmap)Recursos.GetObject(_NombresImagenes[Indice]);
+            if (Imagen != null) _Imagenes[Indice] = new Bitmap(Imagen);
+            ComprasUsrPagos.Columns.Add(new DataGridViewTextBoxColumn
             {
-                Name = Nombre,
-                HeaderText = "",
-                Text = Texto,
-                UseColumnTextForButtonValue = true,
-                FlatStyle = FlatStyle.Flat,
-                FillWeight = 25,
-                MinimumWidth = 44
-            };
-            Columna.DefaultCellStyle.BackColor = ClsTemaCompras.PrincipalNavegador;
-            Columna.DefaultCellStyle.ForeColor = Color.White;
-            Columna.DefaultCellStyle.SelectionBackColor = ClsTemaCompras.AcentoNavegador;
-            Columna.DefaultCellStyle.SelectionForeColor = Color.White;
-            Columna.DefaultCellStyle.Font = new Font("Segoe UI Emoji", 9F);
-            Columna.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            ComprasUsrPagos.Columns.Add(Columna);
+                Name = Nombre, HeaderText = "", ReadOnly = true,
+                SortMode = DataGridViewColumnSortMode.NotSortable, FillWeight = 25, MinimumWidth = 70
+            });
+        }
+
+        private void ComprasProcActualizarBotones()
+        {
+            if (_Actualizando) return;
+            _Actualizando = true;
+            try
+            {
+                DataGridView Tabla = ComprasUsrPagos.Tabla;
+                int Cantidad = 0;
+                foreach (DataGridViewRow Fila in Tabla.Rows)
+                {
+                    if (Fila.IsNewRow || !Fila.Displayed) continue;
+                    for (int Indice = 0; Indice < _Acciones.Length; Indice++)
+                    {
+                        var Columna = Tabla.Columns[_Acciones[Indice]];
+                        if (Columna == null || !Columna.Visible) continue;
+                        Rectangle Area = Tabla.GetCellDisplayRectangle(Columna.Index, Fila.Index, false);
+                        Rectangle Visible = Tabla.GetCellDisplayRectangle(Columna.Index, Fila.Index, true);
+                        if (Area.Width < 5 || Area.Height < 5 || Area.Size != Visible.Size) continue;
+                        if (Cantidad == _Botones.Count)
+                        {
+                            var Nuevo = new ClsButtonCompras { TipoBoton = ComprasTipoBoton.Tabla };
+                            Nuevo.Click += (Remitente, Evento) =>
+                            {
+                                var Celda = (DataGridViewCell)((ClsButtonCompras)Remitente).Tag;
+                                Tabla.CurrentCell = Celda;
+                                ComprasMetDgvPagosCellClick(Tabla, new DataGridViewCellEventArgs(Celda.ColumnIndex, Celda.RowIndex));
+                            };
+                            _Botones.Add(Nuevo);
+                            Tabla.Controls.Add(Nuevo);
+                        }
+                        var Boton = _Botones[Cantidad++];
+                        Boton.Tag = Fila.Cells[Columna.Index];
+                        Boton.AccessibleName = _Acciones[Indice];
+                        Boton.BackgroundImage = _Imagenes[Indice];
+                        Boton.Text = Boton.BackgroundImage == null ? _Acciones[Indice] : "";
+                        int Lado = Math.Min(Area.Width, Area.Height) - 4;
+                        Boton.Bounds = new Rectangle(Area.X + (Area.Width - Lado) / 2, Area.Y + (Area.Height - Lado) / 2, Lado, Lado);
+                        Boton.EsActivo = Fila.Selected;
+                        Boton.Visible = Indice == 0 || Convert.ToString(Fila.Cells["Estado"].Value) != "Anulado";
+                    }
+                }
+                for (int Indice = Cantidad; Indice < _Botones.Count; Indice++) _Botones[Indice].Visible = false;
+            }
+            finally { _Actualizando = false; }
         }
 
         // Color del texto según el estado
@@ -134,28 +190,6 @@ namespace CapaVista_PagosProveedores
                 case "Rechazado": Evento.CellStyle.ForeColor = Color.IndianRed; break;
                 default: Evento.CellStyle.ForeColor = Color.Gray; break;
             }
-        }
-
-        // visualización filas anuladas para las columnas de accion
-        private void ComprasMetDgvPagosCellPainting(object Remitente, DataGridViewCellPaintingEventArgs Evento)
-        {
-            if (Evento.RowIndex < 0 || Evento.ColumnIndex < 0) return;
-
-            string Columna = ComprasUsrPagos.Columns[Evento.ColumnIndex].Name;
-            if (Columna != "Editar" && Columna != "Eliminar") return;
-
-            string Estado = Convert.ToString(ComprasUsrPagos.Rows[Evento.RowIndex].Cells["Estado"].Value);
-            if (Estado != "Anulado") return;
-
-            DataGridView Tabla = ComprasUsrPagos.Tabla;
-            bool Seleccionada = (Evento.State & DataGridViewElementStates.Selected) != 0;
-            Color Fondo = Seleccionada ? Tabla.DefaultCellStyle.SelectionBackColor : Tabla.DefaultCellStyle.BackColor;
-
-            using (var Pincel = new SolidBrush(Fondo))
-                Evento.Graphics.FillRectangle(Pincel, Evento.CellBounds);
-
-            Evento.Paint(Evento.ClipBounds, DataGridViewPaintParts.Border);
-            Evento.Handled = true;
         }
 
         private void ComprasMetDgvPagosCellClick(object Remitente, DataGridViewCellEventArgs Evento)

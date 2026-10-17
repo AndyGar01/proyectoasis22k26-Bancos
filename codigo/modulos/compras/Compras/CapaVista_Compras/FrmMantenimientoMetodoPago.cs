@@ -1,13 +1,6 @@
 ﻿using CapaVista_Componentes.Componentes;
 using CapaVista_Navegador;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CapaVista_Compras
@@ -18,13 +11,10 @@ namespace CapaVista_Compras
         {
             InitializeComponent();
             ClsPresentacionCompras.ComprasMetFijarTamanoFormulario(this);
-            ComprasUsrMantenimiento.NavegadorMetConfigurar("tlbMetodopago", 4, 5);
+            ClsMantenimientoCompras.ComprasProcConfigurar(this, ComprasUsrMantenimiento, "tlbMetodopago",
+                CapaControlador_Compras.ClsAplicacionesCompras.MantenimientoMetodoPago);
         }
 
 
-        private void ComprasMetFrmMantenimientoMetodoPago_Load(object Remitente, EventArgs Evento)
-        {
-
-        }
     }
 }

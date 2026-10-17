@@ -50,8 +50,8 @@ namespace CapaVista_Componentes.Componentes
 
         private void ComprasProcActualizarEspacioError()
         {
-            if (ComprasUsrError == null || _ComprasTlpMain == null) return;
-            using (new ClsActualizacionDisenoCompras(_ComprasTlpMain))
+            if (ComprasUsrError == null || ComprasTlpMain == null) return;
+            using (new ClsActualizacionDisenoCompras(ComprasTlpMain))
             {
                 int Altura = Math.Max(_AlturaEtiquetaError, _AlturaErrorAmpliada);
                 int AlturaFila = _MostrarEtiquetaError ? Altura + ComprasUsrError.Margin.Vertical : 0;
@@ -60,7 +60,7 @@ namespace CapaVista_Componentes.Componentes
                 ComprasUsrError.MinimumSize = Size.Empty;
                 ComprasUsrError.MaximumSize = new Size(0, Altura);
                 ComprasUsrError.Visible = _MostrarEtiquetaError;
-                ClsActualizacionDisenoCompras.ComprasProcAltura(_ComprasTlpMain.RowStyles[1], AlturaFila);
+                ClsActualizacionDisenoCompras.ComprasProcAltura(ComprasTlpMain.RowStyles[1], AlturaFila);
                 if (Diferencia != 0) Height = Math.Max(1, Height + Diferencia);
             }
         }
@@ -164,12 +164,12 @@ namespace CapaVista_Componentes.Componentes
         {
             base.OnBackColorChanged(Evento);
             if (ComprasTxtTexto != null) ComprasTxtTexto.BackColor = BackColor;
-            if (_ComprasTlpMain != null) _ComprasTlpMain.BackColor = BackColor;
+            if (ComprasTlpMain != null) ComprasTlpMain.BackColor = BackColor;
         }
 
         private void ComprasProcActualizarBorde()
         {
-            _ComprasPnlBorde.BackColor = _ErrorVisible ? Color.Red :
+            ComprasPnlBorde.BackColor = _ErrorVisible ? Color.Red :
                 ComprasTxtTexto.Focused ? ClsTemaCompras.AcentoNavegador : ClsTemaCompras.PrincipalNavegador;
         }
 
@@ -211,13 +211,13 @@ namespace CapaVista_Componentes.Componentes
                 return;
             }
 
-            using (new ClsActualizacionDisenoCompras(_ComprasTlpMain))
+            using (new ClsActualizacionDisenoCompras(ComprasTlpMain))
             {
                 if (ComprasUsrError.Texto != Mensaje) ComprasUsrError.Texto = Mensaje;
                 if (ComprasUsrError.ColorTexto != Color.Red) ComprasUsrError.ColorTexto = Color.Red;
                 _ErrorVisible = true;
                 ComprasProcActualizarEspacioError();
-                if (_ComprasPnlBorde.BackColor != Color.Red) _ComprasPnlBorde.BackColor = Color.Red;
+                if (ComprasPnlBorde.BackColor != Color.Red) ComprasPnlBorde.BackColor = Color.Red;
             }
         }
 
@@ -225,20 +225,20 @@ namespace CapaVista_Componentes.Componentes
         {
             int Ancho = System.Math.Max(1, Width - 12);
             int Altura = System.Math.Max(22, TextRenderer.MeasureText(Mensaje, ComprasUsrError.Font, new Size(Ancho, int.MaxValue), TextFormatFlags.WordBreak).Height);
-            int AlturaEntrada = Math.Max(25, _ComprasPnlBorde.Height) + _ComprasTlpMain.Padding.Vertical;
+            int AlturaEntrada = Math.Max(25, ComprasPnlBorde.Height) + ComprasTlpMain.Padding.Vertical;
             return AlturaEntrada + (_MostrarEtiquetaError ? Math.Max(_AlturaEtiquetaError, Altura) + ComprasUsrError.Margin.Vertical : 0);
         }
 
         internal void ComprasProcAmpliarError(int AlturaFila)
         {
-            _AlturaErrorAmpliada = Math.Max(0, AlturaFila - Math.Max(25, _ComprasPnlBorde.Height)
-                - _ComprasTlpMain.Padding.Vertical - ComprasUsrError.Margin.Vertical);
+            _AlturaErrorAmpliada = Math.Max(0, AlturaFila - Math.Max(25, ComprasPnlBorde.Height)
+                - ComprasTlpMain.Padding.Vertical - ComprasUsrError.Margin.Vertical);
             ComprasProcActualizarEspacioError();
         }
 
         public void ComprasMetLimpiarError()
         {
-            using (new ClsActualizacionDisenoCompras(_ComprasTlpMain))
+            using (new ClsActualizacionDisenoCompras(ComprasTlpMain))
             {
                 if (ComprasUsrError.Texto != string.Empty) ComprasUsrError.Texto = string.Empty;
                 _ErrorVisible = false;

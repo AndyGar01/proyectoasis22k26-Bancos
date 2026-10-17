@@ -6,8 +6,8 @@
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer _Componentes = null;
-        private CapaVista_Componentes.Componentes.ClsPanelVerticalCompras _ComprasPnlDesplazamiento;
-        private System.Windows.Forms.Panel _ComprasPnlContenido;
+        private CapaVista_Componentes.Componentes.ClsPanelVerticalCompras ComprasPnlDesplazamiento;
+        private System.Windows.Forms.Panel ComprasPnlContenido;
 
         /// <summary>
         /// Clean up any resources being used.
@@ -31,90 +31,88 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAprobarOrden));
-            this._ComprasPnlDesplazamiento = new CapaVista_Componentes.Componentes.ClsPanelVerticalCompras();
-            this._ComprasPnlContenido = new System.Windows.Forms.Panel();
-            this._ComprasBtnNoAprobar = new CapaVista_Componentes.Componentes.ClsButtonCompras();
-            this._ComprasBtnSiAprobar = new CapaVista_Componentes.Componentes.ClsButtonCompras();
+            this.ComprasPnlDesplazamiento = new CapaVista_Componentes.Componentes.ClsPanelVerticalCompras();
+            this.ComprasPnlContenido = new System.Windows.Forms.Panel();
+            this.ComprasBtnNoAprobar = new CapaVista_Componentes.Componentes.ClsButtonCompras();
+            this.ComprasBtnSiAprobar = new CapaVista_Componentes.Componentes.ClsButtonCompras();
             this.ComprasUsrComentario = new CapaVista_Componentes.Componentes.UsrTextBoxCompras();
             this.ComprasUsrEtiquetaComentario = new CapaVista_Componentes.Componentes.UsrLabelCompras();
-            this._ComprasPnlDesplazamiento.SuspendLayout();
-            this._ComprasPnlContenido.SuspendLayout();
+            this.ComprasPnlDesplazamiento.SuspendLayout();
+            this.ComprasPnlContenido.SuspendLayout();
             this.SuspendLayout();
             // 
-            // _ComprasPnlDesplazamiento
+            // ComprasPnlDesplazamiento
             // 
-            this._ComprasPnlDesplazamiento.AutoScroll = true;
-            this._ComprasPnlDesplazamiento.Controls.Add(this._ComprasPnlContenido);
-            this._ComprasPnlDesplazamiento.Dock = System.Windows.Forms.DockStyle.Fill;
-            this._ComprasPnlDesplazamiento.Location = new System.Drawing.Point(0, 0);
-            this._ComprasPnlDesplazamiento.Margin = new System.Windows.Forms.Padding(0);
-            this._ComprasPnlDesplazamiento.Name = "_ComprasPnlDesplazamiento";
-            this._ComprasPnlDesplazamiento.Size = new System.Drawing.Size(1300, 700);
-            this._ComprasPnlDesplazamiento.TabIndex = 0;
+            this.ComprasPnlDesplazamiento.AutoScroll = true;
+            this.ComprasPnlDesplazamiento.Controls.Add(this.ComprasPnlContenido);
+            this.ComprasPnlDesplazamiento.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ComprasPnlDesplazamiento.Location = new System.Drawing.Point(0, 0);
+            this.ComprasPnlDesplazamiento.Margin = new System.Windows.Forms.Padding(0);
+            this.ComprasPnlDesplazamiento.Name = "ComprasPnlDesplazamiento";
+            this.ComprasPnlDesplazamiento.Size = new System.Drawing.Size(1300, 700);
+            this.ComprasPnlDesplazamiento.TabIndex = 0;
             // 
-            // _ComprasPnlContenido
+            // ComprasPnlContenido
             // 
-            this._ComprasPnlContenido.Controls.Add(this._ComprasBtnNoAprobar);
-            this._ComprasPnlContenido.Controls.Add(this._ComprasBtnSiAprobar);
-            this._ComprasPnlContenido.Controls.Add(this.ComprasUsrComentario);
-            this._ComprasPnlContenido.Dock = System.Windows.Forms.DockStyle.Top;
-            this._ComprasPnlContenido.Location = new System.Drawing.Point(0, 0);
-            this._ComprasPnlContenido.Margin = new System.Windows.Forms.Padding(0);
-            this._ComprasPnlContenido.Name = "_ComprasPnlContenido";
-            this._ComprasPnlContenido.Size = new System.Drawing.Size(1279, 723);
-            this._ComprasPnlContenido.TabIndex = 0;
+            this.ComprasPnlContenido.Controls.Add(this.ComprasBtnNoAprobar);
+            this.ComprasPnlContenido.Controls.Add(this.ComprasBtnSiAprobar);
+            this.ComprasPnlContenido.Controls.Add(this.ComprasUsrComentario);
+            this.ComprasPnlContenido.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ComprasPnlContenido.Location = new System.Drawing.Point(0, 0);
+            this.ComprasPnlContenido.Margin = new System.Windows.Forms.Padding(0);
+            this.ComprasPnlContenido.Name = "ComprasPnlContenido";
+            this.ComprasPnlContenido.Size = new System.Drawing.Size(1279, 723);
+            this.ComprasPnlContenido.TabIndex = 0;
             // 
-            // _ComprasBtnNoAprobar
+            // ComprasBtnNoAprobar
             // 
-            this._ComprasBtnNoAprobar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this._ComprasBtnNoAprobar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(220)))), ((int)(((byte)(239)))));
-            this._ComprasBtnNoAprobar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("_ComprasBtnNoAprobar.BackgroundImage")));
-            this._ComprasBtnNoAprobar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this._ComprasBtnNoAprobar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this._ComprasBtnNoAprobar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
-            this._ComprasBtnNoAprobar.FlatAppearance.BorderSize = 0;
-            this._ComprasBtnNoAprobar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(173)))), ((int)(((byte)(213)))));
-            this._ComprasBtnNoAprobar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(193)))), ((int)(((byte)(224)))));
-            this._ComprasBtnNoAprobar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this._ComprasBtnNoAprobar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this._ComprasBtnNoAprobar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
-            this._ComprasBtnNoAprobar.Location = new System.Drawing.Point(619, 544);
-            this._ComprasBtnNoAprobar.Margin = new System.Windows.Forms.Padding(0);
-            this._ComprasBtnNoAprobar.MaximumSize = new System.Drawing.Size(80, 80);
-            this._ComprasBtnNoAprobar.MinimumSize = new System.Drawing.Size(80, 80);
-            this._ComprasBtnNoAprobar.Name = "_ComprasBtnNoAprobar";
-            this._ComprasBtnNoAprobar.Size = new System.Drawing.Size(80, 80);
-            this._ComprasBtnNoAprobar.TabIndex = 10;
-            this._ComprasBtnNoAprobar.UseVisualStyleBackColor = false;
+            this.ComprasBtnNoAprobar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ComprasBtnNoAprobar.BackColor = CapaVista_Componentes.Componentes.ClsTemaCompras.FondoBotones;
+            this.ComprasBtnNoAprobar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ComprasBtnNoAprobar.BackgroundImage")));
+            this.ComprasBtnNoAprobar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ComprasBtnNoAprobar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ComprasBtnNoAprobar.FlatAppearance.BorderColor = CapaVista_Componentes.Componentes.ClsTemaCompras.PrincipalNavegador;
+            this.ComprasBtnNoAprobar.FlatAppearance.BorderSize = 0;
+            this.ComprasBtnNoAprobar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(173)))), ((int)(((byte)(213)))));
+            this.ComprasBtnNoAprobar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(193)))), ((int)(((byte)(224)))));
+            this.ComprasBtnNoAprobar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ComprasBtnNoAprobar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ComprasBtnNoAprobar.ForeColor = CapaVista_Componentes.Componentes.ClsTemaCompras.PrincipalNavegador;
+            this.ComprasBtnNoAprobar.Location = new System.Drawing.Point(619, 544);
+            this.ComprasBtnNoAprobar.Margin = new System.Windows.Forms.Padding(0);
+            this.ComprasBtnNoAprobar.MaximumSize = new System.Drawing.Size(80, 80);
+            this.ComprasBtnNoAprobar.MinimumSize = new System.Drawing.Size(80, 80);
+            this.ComprasBtnNoAprobar.Name = "ComprasBtnNoAprobar";
+            this.ComprasBtnNoAprobar.Size = new System.Drawing.Size(80, 80);
+            this.ComprasBtnNoAprobar.TabIndex = 10;
+            this.ComprasBtnNoAprobar.UseVisualStyleBackColor = false;
             // 
-            // _ComprasBtnSiAprobar
+            // ComprasBtnSiAprobar
             // 
-            this._ComprasBtnSiAprobar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this._ComprasBtnSiAprobar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(220)))), ((int)(((byte)(239)))));
-            this._ComprasBtnSiAprobar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this._ComprasBtnSiAprobar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this._ComprasBtnSiAprobar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
-            this._ComprasBtnSiAprobar.FlatAppearance.BorderSize = 0;
-            this._ComprasBtnSiAprobar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(173)))), ((int)(((byte)(213)))));
-            this._ComprasBtnSiAprobar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(193)))), ((int)(((byte)(224)))));
-            this._ComprasBtnSiAprobar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this._ComprasBtnSiAprobar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this._ComprasBtnSiAprobar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
-            this._ComprasBtnSiAprobar.Location = new System.Drawing.Point(410, 560);
-            this._ComprasBtnSiAprobar.Margin = new System.Windows.Forms.Padding(0);
-            this._ComprasBtnSiAprobar.MaximumSize = new System.Drawing.Size(107, 98);
-            this._ComprasBtnSiAprobar.MinimumSize = new System.Drawing.Size(107, 25);
-            this._ComprasBtnSiAprobar.Name = "_ComprasBtnSiAprobar";
-            this._ComprasBtnSiAprobar.Size = new System.Drawing.Size(107, 49);
-            this._ComprasBtnSiAprobar.TabIndex = 9;
-            this._ComprasBtnSiAprobar.Text = "Aprobar";
-            this._ComprasBtnSiAprobar.UseVisualStyleBackColor = false;
+            this.ComprasBtnSiAprobar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ComprasBtnSiAprobar.BackColor = CapaVista_Componentes.Componentes.ClsTemaCompras.FondoBotones;
+            this.ComprasBtnSiAprobar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ComprasBtnSiAprobar.BackgroundImage")));
+            this.ComprasBtnSiAprobar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ComprasBtnSiAprobar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ComprasBtnSiAprobar.FlatAppearance.BorderColor = CapaVista_Componentes.Componentes.ClsTemaCompras.PrincipalNavegador;
+            this.ComprasBtnSiAprobar.FlatAppearance.BorderSize = 0;
+            this.ComprasBtnSiAprobar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(173)))), ((int)(((byte)(213)))));
+            this.ComprasBtnSiAprobar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(193)))), ((int)(((byte)(224)))));
+            this.ComprasBtnSiAprobar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ComprasBtnSiAprobar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ComprasBtnSiAprobar.ForeColor = CapaVista_Componentes.Componentes.ClsTemaCompras.PrincipalNavegador;
+            this.ComprasBtnSiAprobar.Location = new System.Drawing.Point(412, 544);
+            this.ComprasBtnSiAprobar.Margin = new System.Windows.Forms.Padding(0);
+            this.ComprasBtnSiAprobar.Name = "ComprasBtnSiAprobar";
+            this.ComprasBtnSiAprobar.Size = new System.Drawing.Size(80, 80);
+            this.ComprasBtnSiAprobar.TabIndex = 9;
+            this.ComprasBtnSiAprobar.UseVisualStyleBackColor = false;
             // 
             // ComprasUsrComentario
             // 
-            this.ComprasUsrComentario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
+            this.ComprasUsrComentario.BackColor = CapaVista_Componentes.Componentes.ClsTemaCompras.FondoGeneral;
             this.ComprasUsrComentario.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.ComprasUsrComentario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this.ComprasUsrComentario.ForeColor = CapaVista_Componentes.Componentes.ClsTemaCompras.PrincipalNavegador;
             this.ComprasUsrComentario.Location = new System.Drawing.Point(31, 21);
             this.ComprasUsrComentario.Margin = new System.Windows.Forms.Padding(0);
             this.ComprasUsrComentario.MaxLength = 2147483647;
@@ -127,9 +125,9 @@
             // 
             // ComprasUsrEtiquetaComentario
             // 
-            this.ComprasUsrEtiquetaComentario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
+            this.ComprasUsrEtiquetaComentario.BackColor = CapaVista_Componentes.Componentes.ClsTemaCompras.FondoGeneral;
             this.ComprasUsrEtiquetaComentario.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.ComprasUsrEtiquetaComentario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this.ComprasUsrEtiquetaComentario.ForeColor = CapaVista_Componentes.Componentes.ClsTemaCompras.PrincipalNavegador;
             this.ComprasUsrEtiquetaComentario.Location = new System.Drawing.Point(13, 14);
             this.ComprasUsrEtiquetaComentario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ComprasUsrEtiquetaComentario.MaximumSize = new System.Drawing.Size(1167, 21);
@@ -145,22 +143,22 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1300, 700);
-            this.Controls.Add(this._ComprasPnlDesplazamiento);
+            this.Controls.Add(this.ComprasPnlDesplazamiento);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "FrmAprobarOrden";
-            this.Text = "6007 – Aprobar orden";
-            this._ComprasPnlDesplazamiento.ResumeLayout(false);
-            this._ComprasPnlContenido.ResumeLayout(false);
+            this.Text = "6007 – AprobarOrden";
+            this.ComprasPnlDesplazamiento.ResumeLayout(false);
+            this.ComprasPnlContenido.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private CapaVista_Componentes.Componentes.ClsButtonCompras _ComprasBtnNoAprobar;
-        private CapaVista_Componentes.Componentes.ClsButtonCompras _ComprasBtnSiAprobar;
+        private CapaVista_Componentes.Componentes.ClsButtonCompras ComprasBtnNoAprobar;
+        private CapaVista_Componentes.Componentes.ClsButtonCompras ComprasBtnSiAprobar;
         private CapaVista_Componentes.Componentes.UsrTextBoxCompras ComprasUsrComentario;
         private CapaVista_Componentes.Componentes.UsrLabelCompras ComprasUsrEtiquetaComentario;
     }

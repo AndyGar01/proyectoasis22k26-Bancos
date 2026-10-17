@@ -49,11 +49,10 @@ namespace CapaVista_OrdenesCompra
         private void ComprasProcAgregarArticuloEjemplo(int IdArticulo, string Nombre, string Unidad,
             decimal Cantidad, decimal PrecioUnitario, decimal Descuento, decimal PorcentajeImpuesto)
         {
-            decimal Subtotal = Math.Round(Cantidad * PrecioUnitario, 2);
-            decimal Impuesto = Math.Round((Subtotal - Descuento) * PorcentajeImpuesto, 2);
-            decimal Total = Subtotal - Descuento + Impuesto;
+            var Totales = CapaControlador_OrdenesCompra.ClsCalculoOrdenCompra.ComprasFuncCalcularArticulo(
+                Cantidad, PrecioUnitario, Descuento, PorcentajeImpuesto);
             ComprasUsrArticulos.Rows.Add(IdArticulo, Nombre, Unidad, Cantidad, PrecioUnitario,
-                Subtotal, Descuento, PorcentajeImpuesto, Impuesto, Total);
+                Totales.Subtotal, Descuento, PorcentajeImpuesto, Totales.Impuesto, Totales.Total);
         }
     }
 }

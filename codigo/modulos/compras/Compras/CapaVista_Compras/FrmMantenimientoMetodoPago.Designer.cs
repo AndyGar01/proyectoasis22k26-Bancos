@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.ComprasUsrMantenimiento = new CapaVista_Navegador.Navegador();
-            this._ComprasPnlDesplazamiento = new CapaVista_Componentes.Componentes.ClsPanelVerticalCompras();
-            this._ComprasPnlContenido = new System.Windows.Forms.Panel();
+            this.ComprasPnlDesplazamiento = new CapaVista_Componentes.Componentes.ClsPanelVerticalCompras();
+            this.ComprasPnlContenido = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             //
             // navegador1
@@ -46,30 +46,29 @@
             //
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this._ComprasPnlContenido.Controls.Add(this.ComprasUsrMantenimiento);
-            this._ComprasPnlContenido.Size = new System.Drawing.Size(1300, CapaVista_Componentes.Componentes.ClsPresentacionCompras.AlturaContenido);
-            this._ComprasPnlContenido.Name = "_ComprasPnlContenido";
-            this._ComprasPnlDesplazamiento.Controls.Add(this._ComprasPnlContenido);
-            this._ComprasPnlDesplazamiento.Dock = System.Windows.Forms.DockStyle.Fill;
-            this._ComprasPnlDesplazamiento.Name = "_ComprasPnlDesplazamiento";
-            this.Controls.Add(this._ComprasPnlDesplazamiento);
+            this.ComprasPnlContenido.Controls.Add(this.ComprasUsrMantenimiento);
+            this.ComprasPnlContenido.Size = new System.Drawing.Size(1300, CapaVista_Componentes.Componentes.ClsPresentacionCompras.AlturaContenido);
+            this.ComprasPnlContenido.Name = "ComprasPnlContenido";
+            this.ComprasPnlDesplazamiento.Controls.Add(this.ComprasPnlContenido);
+            this.ComprasPnlDesplazamiento.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ComprasPnlDesplazamiento.Name = "ComprasPnlDesplazamiento";
+            this.Controls.Add(this.ComprasPnlDesplazamiento);
             this.ClientSize = CapaVista_Componentes.Componentes.ClsPresentacionCompras.TamanoFormulario;
             this.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.BackColor = CapaVista_Componentes.Componentes.ClsTemaCompras.FondoGeneral;
             this.ForeColor = CapaVista_Componentes.Componentes.ClsTemaCompras.PrincipalNavegador;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
-            this.Text = "6011 – Métodos de pago";
+            this.Text = "6011 – MantenimientoMetodoPago";
             this.Name = "FrmMantenimientoMetodoPago";
-            this.Load += new System.EventHandler(this.ComprasMetFrmMantenimientoMetodoPago_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private CapaVista_Componentes.Componentes.ClsPanelVerticalCompras _ComprasPnlDesplazamiento;
-        private System.Windows.Forms.Panel _ComprasPnlContenido;
+        private CapaVista_Componentes.Componentes.ClsPanelVerticalCompras ComprasPnlDesplazamiento;
+        private System.Windows.Forms.Panel ComprasPnlContenido;
         private CapaVista_Navegador.Navegador ComprasUsrMantenimiento;
     }
 }

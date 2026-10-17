@@ -10,12 +10,12 @@ using System.Windows.Forms;
 
 namespace CapaVista_Seguridad
 {
-    public partial class FrmNavegador : Form
+    public partial class FrmEmpleadosNavegador : Form
     {
-        public FrmNavegador()
+        public FrmEmpleadosNavegador()
         {
             InitializeComponent();
-            navegador1.NavegadorMetConfigurar("tblempleado", 4, 5);
+            navegador1.NavegadorMetConfigurar("tblempleado", 4, 4);
         }
     }
 }

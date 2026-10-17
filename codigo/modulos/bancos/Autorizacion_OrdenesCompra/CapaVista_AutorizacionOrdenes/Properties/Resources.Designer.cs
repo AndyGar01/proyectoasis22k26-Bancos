@@ -103,6 +103,26 @@ namespace CapaVista_AutorizacionOrdenes.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap btn_eliminarB {
+            get {
+                object obj = ResourceManager.GetObject("btn_eliminarB", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap btn_ingresarB {
+            get {
+                object obj = ResourceManager.GetObject("btn_ingresarB", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap btn_limpiarB {
             get {
                 object obj = ResourceManager.GetObject("btn_limpiarB", resourceCulture);

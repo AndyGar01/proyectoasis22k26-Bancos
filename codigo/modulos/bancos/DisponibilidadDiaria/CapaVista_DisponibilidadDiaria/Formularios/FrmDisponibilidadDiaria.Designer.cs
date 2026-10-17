@@ -28,12 +28,13 @@ namespace CapaVista_DisponibilidadDiaria.Formularios
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dgvHeaderStyle = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dgvCellStyle = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dgvHeaderCompStyle = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dgvCellCompStyle = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dgvHeaderResStyle = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dgvCellResStyle = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmDisponibilidadDiaria));
             this.BancosPnlFondo = new System.Windows.Forms.Panel();
             this.BancosPnlStatus = new System.Windows.Forms.Panel();
             this.BancosLblStatusCuentas = new System.Windows.Forms.Label();
@@ -159,7 +160,7 @@ namespace CapaVista_DisponibilidadDiaria.Formularios
             this.BancosLblStatusCuentas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(80)))), ((int)(((byte)(70)))));
             this.BancosLblStatusCuentas.Location = new System.Drawing.Point(16, 6);
             this.BancosLblStatusCuentas.Name = "BancosLblStatusCuentas";
-            this.BancosLblStatusCuentas.Size = new System.Drawing.Size(130, 15);
+            this.BancosLblStatusCuentas.Size = new System.Drawing.Size(133, 15);
             this.BancosLblStatusCuentas.TabIndex = 0;
             this.BancosLblStatusCuentas.Text = "2 cuentas seleccionadas";
             // 
@@ -170,7 +171,7 @@ namespace CapaVista_DisponibilidadDiaria.Formularios
             this.BancosLblStatusMoneda.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(80)))), ((int)(((byte)(70)))));
             this.BancosLblStatusMoneda.Location = new System.Drawing.Point(220, 6);
             this.BancosLblStatusMoneda.Name = "BancosLblStatusMoneda";
-            this.BancosLblStatusMoneda.Size = new System.Drawing.Size(126, 15);
+            this.BancosLblStatusMoneda.Size = new System.Drawing.Size(111, 15);
             this.BancosLblStatusMoneda.TabIndex = 1;
             this.BancosLblStatusMoneda.Text = "•   Importes en GTQ";
             // 
@@ -182,7 +183,7 @@ namespace CapaVista_DisponibilidadDiaria.Formularios
             this.BancosLblStatusDemo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(100)))), ((int)(((byte)(20)))));
             this.BancosLblStatusDemo.Location = new System.Drawing.Point(1005, 6);
             this.BancosLblStatusDemo.Name = "BancosLblStatusDemo";
-            this.BancosLblStatusDemo.Size = new System.Drawing.Size(135, 15);
+            this.BancosLblStatusDemo.Size = new System.Drawing.Size(118, 15);
             this.BancosLblStatusDemo.TabIndex = 2;
             this.BancosLblStatusDemo.Text = "Modo demostración";
             // 
@@ -205,22 +206,23 @@ namespace CapaVista_DisponibilidadDiaria.Formularios
             this.BancosDgvResumenCuenta.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.BancosDgvResumenCuenta.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.BancosDgvResumenCuenta.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dgvHeaderResStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dgvHeaderResStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(232)))), ((int)(((byte)(222)))));
-            dgvHeaderResStyle.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            dgvHeaderResStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
-            dgvHeaderResStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(232)))), ((int)(((byte)(222)))));
-            dgvHeaderResStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
-            this.BancosDgvResumenCuenta.ColumnHeadersDefaultCellStyle = dgvHeaderResStyle;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(232)))), ((int)(((byte)(222)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(232)))), ((int)(((byte)(222)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
+            this.BancosDgvResumenCuenta.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.BancosDgvResumenCuenta.ColumnHeadersHeight = 28;
             this.BancosDgvResumenCuenta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dgvCellResStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dgvCellResStyle.BackColor = System.Drawing.Color.White;
-            dgvCellResStyle.Font = new System.Drawing.Font("Segoe UI", 9F);
-            dgvCellResStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            dgvCellResStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(240)))), ((int)(((byte)(225)))));
-            dgvCellResStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
-            this.BancosDgvResumenCuenta.DefaultCellStyle = dgvCellResStyle;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(240)))), ((int)(((byte)(225)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.BancosDgvResumenCuenta.DefaultCellStyle = dataGridViewCellStyle2;
             this.BancosDgvResumenCuenta.EnableHeadersVisualStyles = false;
             this.BancosDgvResumenCuenta.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(235)))), ((int)(((byte)(230)))));
             this.BancosDgvResumenCuenta.Location = new System.Drawing.Point(12, 42);
@@ -239,7 +241,7 @@ namespace CapaVista_DisponibilidadDiaria.Formularios
             this.BancosLblResumenCuentaTitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
             this.BancosLblResumenCuentaTitulo.Location = new System.Drawing.Point(12, 12);
             this.BancosLblResumenCuentaTitulo.Name = "BancosLblResumenCuentaTitulo";
-            this.BancosLblResumenCuentaTitulo.Size = new System.Drawing.Size(130, 17);
+            this.BancosLblResumenCuentaTitulo.Size = new System.Drawing.Size(143, 17);
             this.BancosLblResumenCuentaTitulo.TabIndex = 0;
             this.BancosLblResumenCuentaTitulo.Text = "Resumen de la cuenta";
             // 
@@ -262,22 +264,23 @@ namespace CapaVista_DisponibilidadDiaria.Formularios
             this.BancosDgvCompromisos.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.BancosDgvCompromisos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.BancosDgvCompromisos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dgvHeaderCompStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dgvHeaderCompStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(232)))), ((int)(((byte)(222)))));
-            dgvHeaderCompStyle.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            dgvHeaderCompStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
-            dgvHeaderCompStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(232)))), ((int)(((byte)(222)))));
-            dgvHeaderCompStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
-            this.BancosDgvCompromisos.ColumnHeadersDefaultCellStyle = dgvHeaderCompStyle;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(232)))), ((int)(((byte)(222)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(232)))), ((int)(((byte)(222)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
+            this.BancosDgvCompromisos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.BancosDgvCompromisos.ColumnHeadersHeight = 28;
             this.BancosDgvCompromisos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dgvCellCompStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dgvCellCompStyle.BackColor = System.Drawing.Color.White;
-            dgvCellCompStyle.Font = new System.Drawing.Font("Segoe UI", 9F);
-            dgvCellCompStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            dgvCellCompStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(231)))), ((int)(((byte)(211)))));
-            dgvCellCompStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
-            this.BancosDgvCompromisos.DefaultCellStyle = dgvCellCompStyle;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 9F);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(231)))), ((int)(((byte)(211)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.BancosDgvCompromisos.DefaultCellStyle = dataGridViewCellStyle4;
             this.BancosDgvCompromisos.EnableHeadersVisualStyles = false;
             this.BancosDgvCompromisos.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(235)))), ((int)(((byte)(230)))));
             this.BancosDgvCompromisos.Location = new System.Drawing.Point(12, 42);
@@ -296,7 +299,7 @@ namespace CapaVista_DisponibilidadDiaria.Formularios
             this.BancosLblCompromisosTitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
             this.BancosLblCompromisosTitulo.Location = new System.Drawing.Point(12, 12);
             this.BancosLblCompromisosTitulo.Name = "BancosLblCompromisosTitulo";
-            this.BancosLblCompromisosTitulo.Size = new System.Drawing.Size(264, 17);
+            this.BancosLblCompromisosTitulo.Size = new System.Drawing.Size(254, 17);
             this.BancosLblCompromisosTitulo.TabIndex = 0;
             this.BancosLblCompromisosTitulo.Text = "Compromisos de la cuenta seleccionada";
             // 
@@ -305,25 +308,25 @@ namespace CapaVista_DisponibilidadDiaria.Formularios
             this.BancosDgvDisponibilidad.AllowUserToAddRows = false;
             this.BancosDgvDisponibilidad.AllowUserToDeleteRows = false;
             this.BancosDgvDisponibilidad.BackgroundColor = System.Drawing.Color.White;
-            this.BancosDgvDisponibilidad.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.BancosDgvDisponibilidad.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.BancosDgvDisponibilidad.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dgvHeaderStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dgvHeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(232)))), ((int)(((byte)(222)))));
-            dgvHeaderStyle.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            dgvHeaderStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
-            dgvHeaderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(232)))), ((int)(((byte)(222)))));
-            dgvHeaderStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
-            this.BancosDgvDisponibilidad.ColumnHeadersDefaultCellStyle = dgvHeaderStyle;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(232)))), ((int)(((byte)(222)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(232)))), ((int)(((byte)(222)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
+            this.BancosDgvDisponibilidad.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.BancosDgvDisponibilidad.ColumnHeadersHeight = 30;
             this.BancosDgvDisponibilidad.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dgvCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dgvCellStyle.BackColor = System.Drawing.Color.White;
-            dgvCellStyle.Font = new System.Drawing.Font("Segoe UI", 9F);
-            dgvCellStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            dgvCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(231)))), ((int)(((byte)(211)))));
-            dgvCellStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
-            this.BancosDgvDisponibilidad.DefaultCellStyle = dgvCellStyle;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 9F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(231)))), ((int)(((byte)(211)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.BancosDgvDisponibilidad.DefaultCellStyle = dataGridViewCellStyle6;
             this.BancosDgvDisponibilidad.EnableHeadersVisualStyles = false;
             this.BancosDgvDisponibilidad.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(230)))), ((int)(((byte)(225)))));
             this.BancosDgvDisponibilidad.Location = new System.Drawing.Point(20, 362);
@@ -344,7 +347,7 @@ namespace CapaVista_DisponibilidadDiaria.Formularios
             this.BancosLblSeccionTabla.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
             this.BancosLblSeccionTabla.Location = new System.Drawing.Point(20, 338);
             this.BancosLblSeccionTabla.Name = "BancosLblSeccionTabla";
-            this.BancosLblSeccionTabla.Size = new System.Drawing.Size(134, 19);
+            this.BancosLblSeccionTabla.Size = new System.Drawing.Size(132, 19);
             this.BancosLblSeccionTabla.TabIndex = 11;
             this.BancosLblSeccionTabla.Text = "Detalle por cuenta";
             // 
@@ -380,7 +383,7 @@ namespace CapaVista_DisponibilidadDiaria.Formularios
             this.BancosLblTituloKpiDisp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(231)))), ((int)(((byte)(211)))));
             this.BancosLblTituloKpiDisp.Location = new System.Drawing.Point(8, 8);
             this.BancosLblTituloKpiDisp.Name = "BancosLblTituloKpiDisp";
-            this.BancosLblTituloKpiDisp.Size = new System.Drawing.Size(73, 13);
+            this.BancosLblTituloKpiDisp.Size = new System.Drawing.Size(70, 13);
             this.BancosLblTituloKpiDisp.TabIndex = 0;
             this.BancosLblTituloKpiDisp.Text = "DISPONIBLE";
             // 
@@ -402,7 +405,7 @@ namespace CapaVista_DisponibilidadDiaria.Formularios
             this.BancosLblMonedaKpiDisp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(210)))), ((int)(((byte)(180)))));
             this.BancosLblMonedaKpiDisp.Location = new System.Drawing.Point(8, 55);
             this.BancosLblMonedaKpiDisp.Name = "BancosLblMonedaKpiDisp";
-            this.BancosLblMonedaKpiDisp.Size = new System.Drawing.Size(89, 12);
+            this.BancosLblMonedaKpiDisp.Size = new System.Drawing.Size(94, 12);
             this.BancosLblMonedaKpiDisp.TabIndex = 2;
             this.BancosLblMonedaKpiDisp.Text = "Saldo final operativo";
             // 
@@ -438,7 +441,7 @@ namespace CapaVista_DisponibilidadDiaria.Formularios
             this.BancosLblTituloKpiRest.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(110)))), ((int)(((byte)(100)))));
             this.BancosLblTituloKpiRest.Location = new System.Drawing.Point(8, 8);
             this.BancosLblTituloKpiRest.Name = "BancosLblTituloKpiRest";
-            this.BancosLblTituloKpiRest.Size = new System.Drawing.Size(68, 13);
+            this.BancosLblTituloKpiRest.Size = new System.Drawing.Size(67, 13);
             this.BancosLblTituloKpiRest.TabIndex = 0;
             this.BancosLblTituloKpiRest.Text = "Restringido";
             // 
@@ -460,7 +463,7 @@ namespace CapaVista_DisponibilidadDiaria.Formularios
             this.BancosLblMonedaKpiRest.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
             this.BancosLblMonedaKpiRest.Location = new System.Drawing.Point(8, 55);
             this.BancosLblMonedaKpiRest.Name = "BancosLblMonedaKpiRest";
-            this.BancosLblMonedaKpiRest.Size = new System.Drawing.Size(83, 12);
+            this.BancosLblMonedaKpiRest.Size = new System.Drawing.Size(90, 12);
             this.BancosLblMonedaKpiRest.TabIndex = 2;
             this.BancosLblMonedaKpiRest.Text = "Garantías y reservas";
             // 
@@ -496,7 +499,7 @@ namespace CapaVista_DisponibilidadDiaria.Formularios
             this.BancosLblTituloKpiComp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(110)))), ((int)(((byte)(100)))));
             this.BancosLblTituloKpiComp.Location = new System.Drawing.Point(8, 8);
             this.BancosLblTituloKpiComp.Name = "BancosLblTituloKpiComp";
-            this.BancosLblTituloKpiComp.Size = new System.Drawing.Size(83, 13);
+            this.BancosLblTituloKpiComp.Size = new System.Drawing.Size(86, 13);
             this.BancosLblTituloKpiComp.TabIndex = 0;
             this.BancosLblTituloKpiComp.Text = "Comprometido";
             // 
@@ -518,7 +521,7 @@ namespace CapaVista_DisponibilidadDiaria.Formularios
             this.BancosLblMonedaKpiComp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
             this.BancosLblMonedaKpiComp.Location = new System.Drawing.Point(8, 55);
             this.BancosLblMonedaKpiComp.Name = "BancosLblMonedaKpiComp";
-            this.BancosLblMonedaKpiComp.Size = new System.Drawing.Size(89, 12);
+            this.BancosLblMonedaKpiComp.Size = new System.Drawing.Size(94, 12);
             this.BancosLblMonedaKpiComp.TabIndex = 2;
             this.BancosLblMonedaKpiComp.Text = "Pagos programados";
             // 
@@ -554,7 +557,7 @@ namespace CapaVista_DisponibilidadDiaria.Formularios
             this.BancosLblTituloKpiEgresos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(110)))), ((int)(((byte)(100)))));
             this.BancosLblTituloKpiEgresos.Location = new System.Drawing.Point(8, 8);
             this.BancosLblTituloKpiEgresos.Name = "BancosLblTituloKpiEgresos";
-            this.BancosLblTituloKpiEgresos.Size = new System.Drawing.Size(46, 13);
+            this.BancosLblTituloKpiEgresos.Size = new System.Drawing.Size(47, 13);
             this.BancosLblTituloKpiEgresos.TabIndex = 0;
             this.BancosLblTituloKpiEgresos.Text = "Egresos";
             // 
@@ -576,7 +579,7 @@ namespace CapaVista_DisponibilidadDiaria.Formularios
             this.BancosLblMonedaKpiEgresos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
             this.BancosLblMonedaKpiEgresos.Location = new System.Drawing.Point(8, 55);
             this.BancosLblMonedaKpiEgresos.Name = "BancosLblMonedaKpiEgresos";
-            this.BancosLblMonedaKpiEgresos.Size = new System.Drawing.Size(81, 12);
+            this.BancosLblMonedaKpiEgresos.Size = new System.Drawing.Size(79, 12);
             this.BancosLblMonedaKpiEgresos.TabIndex = 2;
             this.BancosLblMonedaKpiEgresos.Text = "Salidas realizadas";
             // 
@@ -670,7 +673,7 @@ namespace CapaVista_DisponibilidadDiaria.Formularios
             this.BancosLblTituloKpiSaldo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(110)))), ((int)(((byte)(100)))));
             this.BancosLblTituloKpiSaldo.Location = new System.Drawing.Point(8, 8);
             this.BancosLblTituloKpiSaldo.Name = "BancosLblTituloKpiSaldo";
-            this.BancosLblTituloKpiSaldo.Size = new System.Drawing.Size(68, 13);
+            this.BancosLblTituloKpiSaldo.Size = new System.Drawing.Size(69, 13);
             this.BancosLblTituloKpiSaldo.TabIndex = 0;
             this.BancosLblTituloKpiSaldo.Text = "Saldo inicial";
             // 
@@ -692,14 +695,14 @@ namespace CapaVista_DisponibilidadDiaria.Formularios
             this.BancosLblMonedaKpiSaldo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
             this.BancosLblMonedaKpiSaldo.Location = new System.Drawing.Point(8, 55);
             this.BancosLblMonedaKpiSaldo.Name = "BancosLblMonedaKpiSaldo";
-            this.BancosLblMonedaKpiSaldo.Size = new System.Drawing.Size(89, 12);
+            this.BancosLblMonedaKpiSaldo.Size = new System.Drawing.Size(74, 12);
             this.BancosLblMonedaKpiSaldo.TabIndex = 2;
             this.BancosLblMonedaKpiSaldo.Text = "Apertura del día";
             // 
             // BancosLblMonedaResumen
             // 
             this.BancosLblMonedaResumen.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.BancosLblMonedaResumen.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular);
+            this.BancosLblMonedaResumen.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.BancosLblMonedaResumen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(100)))), ((int)(((byte)(90)))));
             this.BancosLblMonedaResumen.Location = new System.Drawing.Point(940, 222);
             this.BancosLblMonedaResumen.Name = "BancosLblMonedaResumen";
@@ -715,7 +718,7 @@ namespace CapaVista_DisponibilidadDiaria.Formularios
             this.BancosLblSeccionResumen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
             this.BancosLblSeccionResumen.Location = new System.Drawing.Point(20, 222);
             this.BancosLblSeccionResumen.Name = "BancosLblSeccionResumen";
-            this.BancosLblSeccionResumen.Size = new System.Drawing.Size(185, 19);
+            this.BancosLblSeccionResumen.Size = new System.Drawing.Size(190, 19);
             this.BancosLblSeccionResumen.TabIndex = 3;
             this.BancosLblSeccionResumen.Text = "Resumen de disponibilidad";
             // 
@@ -747,7 +750,7 @@ namespace CapaVista_DisponibilidadDiaria.Formularios
             this.BancosLblSubtituloFiltros.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(110)))), ((int)(((byte)(100)))));
             this.BancosLblSubtituloFiltros.Location = new System.Drawing.Point(16, 30);
             this.BancosLblSubtituloFiltros.Name = "BancosLblSubtituloFiltros";
-            this.BancosLblSubtituloFiltros.Size = new System.Drawing.Size(325, 15);
+            this.BancosLblSubtituloFiltros.Size = new System.Drawing.Size(330, 15);
             this.BancosLblSubtituloFiltros.TabIndex = 1;
             this.BancosLblSubtituloFiltros.Text = "Consulta saldos consolidados, ingresos y fondos bloqueados.";
             // 
@@ -800,7 +803,7 @@ namespace CapaVista_DisponibilidadDiaria.Formularios
             this.BancosLblMoneda.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(60)))), ((int)(((byte)(50)))));
             this.BancosLblMoneda.Location = new System.Drawing.Point(680, 50);
             this.BancosLblMoneda.Name = "BancosLblMoneda";
-            this.BancosLblMoneda.Size = new System.Drawing.Size(56, 13);
+            this.BancosLblMoneda.Size = new System.Drawing.Size(57, 13);
             this.BancosLblMoneda.TabIndex = 8;
             this.BancosLblMoneda.Text = "MONEDA";
             // 
@@ -864,7 +867,7 @@ namespace CapaVista_DisponibilidadDiaria.Formularios
             this.BancosLblFechaCorte.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(60)))), ((int)(((byte)(50)))));
             this.BancosLblFechaCorte.Location = new System.Drawing.Point(16, 50);
             this.BancosLblFechaCorte.Name = "BancosLblFechaCorte";
-            this.BancosLblFechaCorte.Size = new System.Drawing.Size(100, 13);
+            this.BancosLblFechaCorte.Size = new System.Drawing.Size(96, 13);
             this.BancosLblFechaCorte.TabIndex = 2;
             this.BancosLblFechaCorte.Text = "FECHA DE CORTE";
             // 
@@ -875,7 +878,7 @@ namespace CapaVista_DisponibilidadDiaria.Formularios
             this.BancosLblTituloFiltros.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
             this.BancosLblTituloFiltros.Location = new System.Drawing.Point(14, 8);
             this.BancosLblTituloFiltros.Name = "BancosLblTituloFiltros";
-            this.BancosLblTituloFiltros.Size = new System.Drawing.Size(155, 20);
+            this.BancosLblTituloFiltros.Size = new System.Drawing.Size(152, 20);
             this.BancosLblTituloFiltros.TabIndex = 0;
             this.BancosLblTituloFiltros.Text = "Disponibilidad diaria";
             // 
@@ -921,7 +924,7 @@ namespace CapaVista_DisponibilidadDiaria.Formularios
             this.BancosLblSubtitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(100)))), ((int)(((byte)(95)))));
             this.BancosLblSubtitulo.Location = new System.Drawing.Point(22, 54);
             this.BancosLblSubtitulo.Name = "BancosLblSubtitulo";
-            this.BancosLblSubtitulo.Size = new System.Drawing.Size(325, 17);
+            this.BancosLblSubtitulo.Size = new System.Drawing.Size(318, 17);
             this.BancosLblSubtitulo.TabIndex = 1;
             this.BancosLblSubtitulo.Text = "ERP Tesorería y Bancos — Embutidos de Calidad S.A.";
             // 
@@ -932,7 +935,7 @@ namespace CapaVista_DisponibilidadDiaria.Formularios
             this.BancosLblTitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
             this.BancosLblTitulo.Location = new System.Drawing.Point(20, 16);
             this.BancosLblTitulo.Name = "BancosLblTitulo";
-            this.BancosLblTitulo.Size = new System.Drawing.Size(342, 32);
+            this.BancosLblTitulo.Size = new System.Drawing.Size(338, 32);
             this.BancosLblTitulo.TabIndex = 0;
             this.BancosLblTitulo.Text = "8002 – Disponibilidad Diaria";
             // 
@@ -943,10 +946,11 @@ namespace CapaVista_DisponibilidadDiaria.Formularios
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(248)))), ((int)(((byte)(243)))));
             this.ClientSize = new System.Drawing.Size(1160, 740);
             this.Controls.Add(this.BancosPnlFondo);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "FrmDisponibilidadDiaria";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "8002 – Disponibilidad Diaria";
+            this.Text = "8004 – Disponibilidad Diaria";
             this.BancosPnlFondo.ResumeLayout(false);
             this.BancosPnlFondo.PerformLayout();
             this.BancosPnlStatus.ResumeLayout(false);

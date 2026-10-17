@@ -105,6 +105,9 @@
             this.BancosBtnPrepLimpiar = new System.Windows.Forms.Button();
             this.BancosBtnPrepPreparar = new System.Windows.Forms.Button();
             this.BancosTbpAutorizar = new System.Windows.Forms.TabPage();
+            this.BancosLblAutAutorizadorReq = new System.Windows.Forms.Label();
+            this.BancosLblAutAutorizador = new System.Windows.Forms.Label();
+            this.BancosBtnMascotaUno = new System.Windows.Forms.PictureBox();
             this.BancosLblAutNumeroOrden = new System.Windows.Forms.Label();
             this.BancosTxtAutNumeroOrden = new System.Windows.Forms.TextBox();
             this.BancosLblAutBeneficiario = new System.Windows.Forms.Label();
@@ -115,9 +118,10 @@
             this.BancosTxtAutAprobaciones = new System.Windows.Forms.TextBox();
             this.BancosLblAutTitulo = new System.Windows.Forms.Label();
             this.BancosDgvAutAprobaciones = new System.Windows.Forms.DataGridView();
+            this.BancosDgvAutAprobacionesColAutorizador = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BancosDgvAutAprobacionesColDecision = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BancosDgvAutAprobacionesColFechaHora = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BancosFlpAutAutorizador = new System.Windows.Forms.FlowLayoutPanel();
-            this.BancosLblAutAutorizador = new System.Windows.Forms.Label();
-            this.BancosLblAutAutorizadorReq = new System.Windows.Forms.Label();
             this.BancosCboAutAutorizador = new System.Windows.Forms.ComboBox();
             this.BancosFlpAutCodigo = new System.Windows.Forms.FlowLayoutPanel();
             this.BancosBtnAutRechazar = new System.Windows.Forms.Button();
@@ -169,10 +173,6 @@
             this.BancosBtnBuscar = new System.Windows.Forms.Button();
             this.BancosBtnAyuda = new System.Windows.Forms.Button();
             this.BancosBtnReporte = new System.Windows.Forms.Button();
-            this.BancosDgvAutAprobacionesColAutorizador = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BancosDgvAutAprobacionesColDecision = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BancosDgvAutAprobacionesColFechaHora = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BancosBtnMascotaUno = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.BancosDgvObligaciones)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BancosDgvOrdenes)).BeginInit();
             this.BancosTbcProceso.SuspendLayout();
@@ -183,11 +183,11 @@
             this.BancosFlpPrepFecha.SuspendLayout();
             this.BancosFlpPrepMedio.SuspendLayout();
             this.BancosTbpAutorizar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BancosBtnMascotaUno)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BancosDgvAutAprobaciones)).BeginInit();
             this.BancosTbpEmitir.SuspendLayout();
             this.BancosTbpRegistrar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BancosDgvRegPoliza)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BancosBtnMascotaUno)).BeginInit();
             this.SuspendLayout();
             // 
             // BancosLblTituloObligaciones
@@ -1036,6 +1036,40 @@
             this.BancosTbpAutorizar.TabIndex = 1;
             this.BancosTbpAutorizar.Text = "Autorizar";
             // 
+            // BancosLblAutAutorizadorReq
+            // 
+            this.BancosLblAutAutorizadorReq.AutoSize = true;
+            this.BancosLblAutAutorizadorReq.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BancosLblAutAutorizadorReq.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(57)))), ((int)(((byte)(43)))));
+            this.BancosLblAutAutorizadorReq.Location = new System.Drawing.Point(87, 294);
+            this.BancosLblAutAutorizadorReq.Margin = new System.Windows.Forms.Padding(2, 0, 0, 0);
+            this.BancosLblAutAutorizadorReq.Name = "BancosLblAutAutorizadorReq";
+            this.BancosLblAutAutorizadorReq.Size = new System.Drawing.Size(15, 14);
+            this.BancosLblAutAutorizadorReq.TabIndex = 1;
+            this.BancosLblAutAutorizadorReq.Text = "*";
+            // 
+            // BancosLblAutAutorizador
+            // 
+            this.BancosLblAutAutorizador.AutoSize = true;
+            this.BancosLblAutAutorizador.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.BancosLblAutAutorizador.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(78)))), ((int)(((byte)(68)))));
+            this.BancosLblAutAutorizador.Location = new System.Drawing.Point(16, 294);
+            this.BancosLblAutAutorizador.Margin = new System.Windows.Forms.Padding(0);
+            this.BancosLblAutAutorizador.Name = "BancosLblAutAutorizador";
+            this.BancosLblAutAutorizador.Size = new System.Drawing.Size(69, 14);
+            this.BancosLblAutAutorizador.TabIndex = 0;
+            this.BancosLblAutAutorizador.Text = "Autorizador";
+            // 
+            // BancosBtnMascotaUno
+            // 
+            this.BancosBtnMascotaUno.Image = global::CapaVista_GeneracionPagos.Properties.Resources.mascota11;
+            this.BancosBtnMascotaUno.Location = new System.Drawing.Point(565, 316);
+            this.BancosBtnMascotaUno.Name = "BancosBtnMascotaUno";
+            this.BancosBtnMascotaUno.Size = new System.Drawing.Size(129, 148);
+            this.BancosBtnMascotaUno.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.BancosBtnMascotaUno.TabIndex = 16;
+            this.BancosBtnMascotaUno.TabStop = false;
+            // 
             // BancosLblAutNumeroOrden
             // 
             this.BancosLblAutNumeroOrden.AutoSize = true;
@@ -1204,6 +1238,27 @@
             this.BancosDgvAutAprobaciones.Size = new System.Drawing.Size(459, 150);
             this.BancosDgvAutAprobaciones.TabIndex = 9;
             // 
+            // BancosDgvAutAprobacionesColAutorizador
+            // 
+            this.BancosDgvAutAprobacionesColAutorizador.HeaderText = "Autorizador";
+            this.BancosDgvAutAprobacionesColAutorizador.Name = "BancosDgvAutAprobacionesColAutorizador";
+            this.BancosDgvAutAprobacionesColAutorizador.ReadOnly = true;
+            this.BancosDgvAutAprobacionesColAutorizador.Width = 190;
+            // 
+            // BancosDgvAutAprobacionesColDecision
+            // 
+            this.BancosDgvAutAprobacionesColDecision.HeaderText = "Decisión";
+            this.BancosDgvAutAprobacionesColDecision.Name = "BancosDgvAutAprobacionesColDecision";
+            this.BancosDgvAutAprobacionesColDecision.ReadOnly = true;
+            this.BancosDgvAutAprobacionesColDecision.Width = 110;
+            // 
+            // BancosDgvAutAprobacionesColFechaHora
+            // 
+            this.BancosDgvAutAprobacionesColFechaHora.HeaderText = "Fecha y hora";
+            this.BancosDgvAutAprobacionesColFechaHora.Name = "BancosDgvAutAprobacionesColFechaHora";
+            this.BancosDgvAutAprobacionesColFechaHora.ReadOnly = true;
+            this.BancosDgvAutAprobacionesColFechaHora.Width = 160;
+            // 
             // BancosFlpAutAutorizador
             // 
             this.BancosFlpAutAutorizador.AutoSize = true;
@@ -1215,30 +1270,6 @@
             this.BancosFlpAutAutorizador.Size = new System.Drawing.Size(0, 0);
             this.BancosFlpAutAutorizador.TabIndex = 10;
             this.BancosFlpAutAutorizador.WrapContents = false;
-            // 
-            // BancosLblAutAutorizador
-            // 
-            this.BancosLblAutAutorizador.AutoSize = true;
-            this.BancosLblAutAutorizador.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.BancosLblAutAutorizador.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(78)))), ((int)(((byte)(68)))));
-            this.BancosLblAutAutorizador.Location = new System.Drawing.Point(16, 294);
-            this.BancosLblAutAutorizador.Margin = new System.Windows.Forms.Padding(0);
-            this.BancosLblAutAutorizador.Name = "BancosLblAutAutorizador";
-            this.BancosLblAutAutorizador.Size = new System.Drawing.Size(69, 14);
-            this.BancosLblAutAutorizador.TabIndex = 0;
-            this.BancosLblAutAutorizador.Text = "Autorizador";
-            // 
-            // BancosLblAutAutorizadorReq
-            // 
-            this.BancosLblAutAutorizadorReq.AutoSize = true;
-            this.BancosLblAutAutorizadorReq.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BancosLblAutAutorizadorReq.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(57)))), ((int)(((byte)(43)))));
-            this.BancosLblAutAutorizadorReq.Location = new System.Drawing.Point(87, 294);
-            this.BancosLblAutAutorizadorReq.Margin = new System.Windows.Forms.Padding(2, 0, 0, 0);
-            this.BancosLblAutAutorizadorReq.Name = "BancosLblAutAutorizadorReq";
-            this.BancosLblAutAutorizadorReq.Size = new System.Drawing.Size(15, 14);
-            this.BancosLblAutAutorizadorReq.TabIndex = 1;
-            this.BancosLblAutAutorizadorReq.Text = "*";
             // 
             // BancosCboAutAutorizador
             // 
@@ -1991,37 +2022,6 @@
             this.BancosBtnReporte.TabIndex = 15;
             this.BancosBtnReporte.UseVisualStyleBackColor = false;
             // 
-            // BancosDgvAutAprobacionesColAutorizador
-            // 
-            this.BancosDgvAutAprobacionesColAutorizador.HeaderText = "Autorizador";
-            this.BancosDgvAutAprobacionesColAutorizador.Name = "BancosDgvAutAprobacionesColAutorizador";
-            this.BancosDgvAutAprobacionesColAutorizador.ReadOnly = true;
-            this.BancosDgvAutAprobacionesColAutorizador.Width = 190;
-            // 
-            // BancosDgvAutAprobacionesColDecision
-            // 
-            this.BancosDgvAutAprobacionesColDecision.HeaderText = "Decisión";
-            this.BancosDgvAutAprobacionesColDecision.Name = "BancosDgvAutAprobacionesColDecision";
-            this.BancosDgvAutAprobacionesColDecision.ReadOnly = true;
-            this.BancosDgvAutAprobacionesColDecision.Width = 110;
-            // 
-            // BancosDgvAutAprobacionesColFechaHora
-            // 
-            this.BancosDgvAutAprobacionesColFechaHora.HeaderText = "Fecha y hora";
-            this.BancosDgvAutAprobacionesColFechaHora.Name = "BancosDgvAutAprobacionesColFechaHora";
-            this.BancosDgvAutAprobacionesColFechaHora.ReadOnly = true;
-            this.BancosDgvAutAprobacionesColFechaHora.Width = 160;
-            // 
-            // BancosBtnMascotaUno
-            // 
-            this.BancosBtnMascotaUno.Image = global::CapaVista_GeneracionPagos.Properties.Resources.mascota11;
-            this.BancosBtnMascotaUno.Location = new System.Drawing.Point(565, 316);
-            this.BancosBtnMascotaUno.Name = "BancosBtnMascotaUno";
-            this.BancosBtnMascotaUno.Size = new System.Drawing.Size(129, 148);
-            this.BancosBtnMascotaUno.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.BancosBtnMascotaUno.TabIndex = 16;
-            this.BancosBtnMascotaUno.TabStop = false;
-            // 
             // FrmGeneracionPagos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2048,7 +2048,7 @@
             this.MaximizeBox = false;
             this.Name = "FrmGeneracionPagos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "8004 – Generación de Pagos";
+            this.Text = "8007 – Generación de Pagos";
             ((System.ComponentModel.ISupportInitialize)(this.BancosDgvObligaciones)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BancosDgvOrdenes)).EndInit();
             this.BancosTbcProceso.ResumeLayout(false);
@@ -2065,13 +2065,13 @@
             this.BancosFlpPrepMedio.PerformLayout();
             this.BancosTbpAutorizar.ResumeLayout(false);
             this.BancosTbpAutorizar.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BancosBtnMascotaUno)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BancosDgvAutAprobaciones)).EndInit();
             this.BancosTbpEmitir.ResumeLayout(false);
             this.BancosTbpEmitir.PerformLayout();
             this.BancosTbpRegistrar.ResumeLayout(false);
             this.BancosTbpRegistrar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BancosDgvRegPoliza)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BancosBtnMascotaUno)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

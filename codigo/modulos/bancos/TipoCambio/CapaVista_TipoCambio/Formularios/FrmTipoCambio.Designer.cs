@@ -28,10 +28,11 @@ namespace CapaVista_TipoCambio.Formularios
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dgvHeaderActuales = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dgvCellActuales = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dgvHeaderHist = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dgvCellHist = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmTipoCambio));
             this.BancosPnlFondo = new System.Windows.Forms.Panel();
             this.BancosTabControl = new System.Windows.Forms.TabControl();
             this.BancosTabTasasActuales = new System.Windows.Forms.TabPage();
@@ -205,7 +206,8 @@ namespace CapaVista_TipoCambio.Formularios
             this.BancosLblEstadoActualesDesc.Size = new System.Drawing.Size(456, 72);
             this.BancosLblEstadoActualesDesc.TabIndex = 2;
             this.BancosLblEstadoActualesDesc.Text = "Las tasas mostradas corresponden a datos de referencia para el prototipo visual. " +
-    "El servicio oficial de Banguat se sincronizará cuando se habilite el conector SOAP / WSDL.";
+    "El servicio oficial de Banguat se sincronizará cuando se habilite el conector SO" +
+    "AP / WSDL.";
             // 
             // BancosLblEstadoActualesPunto
             // 
@@ -214,7 +216,7 @@ namespace CapaVista_TipoCambio.Formularios
             this.BancosLblEstadoActualesPunto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.BancosLblEstadoActualesPunto.Location = new System.Drawing.Point(16, 45);
             this.BancosLblEstadoActualesPunto.Name = "BancosLblEstadoActualesPunto";
-            this.BancosLblEstadoActualesPunto.Size = new System.Drawing.Size(155, 15);
+            this.BancosLblEstadoActualesPunto.Size = new System.Drawing.Size(141, 15);
             this.BancosLblEstadoActualesPunto.TabIndex = 1;
             this.BancosLblEstadoActualesPunto.Text = "●   Sin conexión externa";
             // 
@@ -225,7 +227,7 @@ namespace CapaVista_TipoCambio.Formularios
             this.BancosLblEstadoActualesTitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
             this.BancosLblEstadoActualesTitulo.Location = new System.Drawing.Point(16, 14);
             this.BancosLblEstadoActualesTitulo.Name = "BancosLblEstadoActualesTitulo";
-            this.BancosLblEstadoActualesTitulo.Size = new System.Drawing.Size(161, 19);
+            this.BancosLblEstadoActualesTitulo.Size = new System.Drawing.Size(165, 19);
             this.BancosLblEstadoActualesTitulo.TabIndex = 0;
             this.BancosLblEstadoActualesTitulo.Text = "Estado de actualización";
             // 
@@ -254,7 +256,7 @@ namespace CapaVista_TipoCambio.Formularios
             this.BancosLblDetalleFuenteVal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.BancosLblDetalleFuenteVal.Location = new System.Drawing.Point(120, 126);
             this.BancosLblDetalleFuenteVal.Name = "BancosLblDetalleFuenteVal";
-            this.BancosLblDetalleFuenteVal.Size = new System.Drawing.Size(84, 15);
+            this.BancosLblDetalleFuenteVal.Size = new System.Drawing.Size(85, 15);
             this.BancosLblDetalleFuenteVal.TabIndex = 8;
             this.BancosLblDetalleFuenteVal.Text = "Demostración";
             // 
@@ -287,7 +289,7 @@ namespace CapaVista_TipoCambio.Formularios
             this.BancosLblDetalleTasaTit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(110)))), ((int)(((byte)(105)))));
             this.BancosLblDetalleTasaTit.Location = new System.Drawing.Point(16, 99);
             this.BancosLblDetalleTasaTit.Name = "BancosLblDetalleTasaTit";
-            this.BancosLblDetalleTasaTit.Size = new System.Drawing.Size(32, 15);
+            this.BancosLblDetalleTasaTit.Size = new System.Drawing.Size(33, 15);
             this.BancosLblDetalleTasaTit.TabIndex = 5;
             this.BancosLblDetalleTasaTit.Text = "Tasa:";
             // 
@@ -320,7 +322,7 @@ namespace CapaVista_TipoCambio.Formularios
             this.BancosLblDetalleParVal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.BancosLblDetalleParVal.Location = new System.Drawing.Point(120, 45);
             this.BancosLblDetalleParVal.Name = "BancosLblDetalleParVal";
-            this.BancosLblDetalleParVal.Size = new System.Drawing.Size(72, 15);
+            this.BancosLblDetalleParVal.Size = new System.Drawing.Size(73, 15);
             this.BancosLblDetalleParVal.TabIndex = 2;
             this.BancosLblDetalleParVal.Text = "USD → GTQ";
             // 
@@ -342,7 +344,7 @@ namespace CapaVista_TipoCambio.Formularios
             this.BancosLblDetalleTasaTitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
             this.BancosLblDetalleTasaTitulo.Location = new System.Drawing.Point(16, 14);
             this.BancosLblDetalleTasaTitulo.Name = "BancosLblDetalleTasaTitulo";
-            this.BancosLblDetalleTasaTitulo.Size = new System.Drawing.Size(107, 19);
+            this.BancosLblDetalleTasaTitulo.Size = new System.Drawing.Size(108, 19);
             this.BancosLblDetalleTasaTitulo.TabIndex = 0;
             this.BancosLblDetalleTasaTitulo.Text = "Detalle de tasa";
             // 
@@ -351,25 +353,25 @@ namespace CapaVista_TipoCambio.Formularios
             this.BancosDgvTasasActuales.AllowUserToAddRows = false;
             this.BancosDgvTasasActuales.AllowUserToDeleteRows = false;
             this.BancosDgvTasasActuales.BackgroundColor = System.Drawing.Color.White;
-            this.BancosDgvTasasActuales.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.BancosDgvTasasActuales.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.BancosDgvTasasActuales.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dgvHeaderActuales.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dgvHeaderActuales.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(232)))), ((int)(((byte)(222)))));
-            dgvHeaderActuales.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            dgvHeaderActuales.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
-            dgvHeaderActuales.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(232)))), ((int)(((byte)(222)))));
-            dgvHeaderActuales.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
-            this.BancosDgvTasasActuales.ColumnHeadersDefaultCellStyle = dgvHeaderActuales;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(232)))), ((int)(((byte)(222)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(232)))), ((int)(((byte)(222)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
+            this.BancosDgvTasasActuales.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.BancosDgvTasasActuales.ColumnHeadersHeight = 30;
             this.BancosDgvTasasActuales.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dgvCellActuales.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dgvCellActuales.BackColor = System.Drawing.Color.White;
-            dgvCellActuales.Font = new System.Drawing.Font("Segoe UI", 9F);
-            dgvCellActuales.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            dgvCellActuales.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(231)))), ((int)(((byte)(211)))));
-            dgvCellActuales.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
-            this.BancosDgvTasasActuales.DefaultCellStyle = dgvCellActuales;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(231)))), ((int)(((byte)(211)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.BancosDgvTasasActuales.DefaultCellStyle = dataGridViewCellStyle2;
             this.BancosDgvTasasActuales.EnableHeadersVisualStyles = false;
             this.BancosDgvTasasActuales.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(230)))), ((int)(((byte)(225)))));
             this.BancosDgvTasasActuales.Location = new System.Drawing.Point(14, 114);
@@ -401,7 +403,7 @@ namespace CapaVista_TipoCambio.Formularios
             this.BancosLblBanguatBadge.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(110)))), ((int)(((byte)(20)))));
             this.BancosLblBanguatBadge.Location = new System.Drawing.Point(12, 10);
             this.BancosLblBanguatBadge.Name = "BancosLblBanguatBadge";
-            this.BancosLblBanguatBadge.Size = new System.Drawing.Size(130, 13);
+            this.BancosLblBanguatBadge.Size = new System.Drawing.Size(132, 13);
             this.BancosLblBanguatBadge.TabIndex = 0;
             this.BancosLblBanguatBadge.Text = "!  Integración pendiente";
             // 
@@ -440,7 +442,7 @@ namespace CapaVista_TipoCambio.Formularios
             this.BancosLblEurUsdFuente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(130)))), ((int)(((byte)(125)))));
             this.BancosLblEurUsdFuente.Location = new System.Drawing.Point(12, 60);
             this.BancosLblEurUsdFuente.Name = "BancosLblEurUsdFuente";
-            this.BancosLblEurUsdFuente.Size = new System.Drawing.Size(107, 12);
+            this.BancosLblEurUsdFuente.Size = new System.Drawing.Size(101, 12);
             this.BancosLblEurUsdFuente.TabIndex = 2;
             this.BancosLblEurUsdFuente.Text = "Fuente: Demostración";
             // 
@@ -462,7 +464,7 @@ namespace CapaVista_TipoCambio.Formularios
             this.BancosLblEurUsdTitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(110)))), ((int)(((byte)(100)))));
             this.BancosLblEurUsdTitulo.Location = new System.Drawing.Point(10, 10);
             this.BancosLblEurUsdTitulo.Name = "BancosLblEurUsdTitulo";
-            this.BancosLblEurUsdTitulo.Size = new System.Drawing.Size(73, 15);
+            this.BancosLblEurUsdTitulo.Size = new System.Drawing.Size(71, 15);
             this.BancosLblEurUsdTitulo.TabIndex = 0;
             this.BancosLblEurUsdTitulo.Text = "EUR → USD";
             // 
@@ -485,7 +487,7 @@ namespace CapaVista_TipoCambio.Formularios
             this.BancosLblEurGtqFuente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(130)))), ((int)(((byte)(125)))));
             this.BancosLblEurGtqFuente.Location = new System.Drawing.Point(12, 60);
             this.BancosLblEurGtqFuente.Name = "BancosLblEurGtqFuente";
-            this.BancosLblEurGtqFuente.Size = new System.Drawing.Size(107, 12);
+            this.BancosLblEurGtqFuente.Size = new System.Drawing.Size(101, 12);
             this.BancosLblEurGtqFuente.TabIndex = 2;
             this.BancosLblEurGtqFuente.Text = "Fuente: Demostración";
             // 
@@ -507,7 +509,7 @@ namespace CapaVista_TipoCambio.Formularios
             this.BancosLblEurGtqTitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(110)))), ((int)(((byte)(100)))));
             this.BancosLblEurGtqTitulo.Location = new System.Drawing.Point(10, 10);
             this.BancosLblEurGtqTitulo.Name = "BancosLblEurGtqTitulo";
-            this.BancosLblEurGtqTitulo.Size = new System.Drawing.Size(73, 15);
+            this.BancosLblEurGtqTitulo.Size = new System.Drawing.Size(71, 15);
             this.BancosLblEurGtqTitulo.TabIndex = 0;
             this.BancosLblEurGtqTitulo.Text = "EUR → GTQ";
             // 
@@ -530,7 +532,7 @@ namespace CapaVista_TipoCambio.Formularios
             this.BancosLblUsdGtqFuente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(130)))), ((int)(((byte)(125)))));
             this.BancosLblUsdGtqFuente.Location = new System.Drawing.Point(12, 60);
             this.BancosLblUsdGtqFuente.Name = "BancosLblUsdGtqFuente";
-            this.BancosLblUsdGtqFuente.Size = new System.Drawing.Size(107, 12);
+            this.BancosLblUsdGtqFuente.Size = new System.Drawing.Size(101, 12);
             this.BancosLblUsdGtqFuente.TabIndex = 2;
             this.BancosLblUsdGtqFuente.Text = "Fuente: Demostración";
             // 
@@ -552,7 +554,7 @@ namespace CapaVista_TipoCambio.Formularios
             this.BancosLblUsdGtqTitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(110)))), ((int)(((byte)(100)))));
             this.BancosLblUsdGtqTitulo.Location = new System.Drawing.Point(10, 10);
             this.BancosLblUsdGtqTitulo.Name = "BancosLblUsdGtqTitulo";
-            this.BancosLblUsdGtqTitulo.Size = new System.Drawing.Size(74, 15);
+            this.BancosLblUsdGtqTitulo.Size = new System.Drawing.Size(73, 15);
             this.BancosLblUsdGtqTitulo.TabIndex = 0;
             this.BancosLblUsdGtqTitulo.Text = "USD → GTQ";
             // 
@@ -577,25 +579,25 @@ namespace CapaVista_TipoCambio.Formularios
             this.BancosDgvHistorico.AllowUserToAddRows = false;
             this.BancosDgvHistorico.AllowUserToDeleteRows = false;
             this.BancosDgvHistorico.BackgroundColor = System.Drawing.Color.White;
-            this.BancosDgvHistorico.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.BancosDgvHistorico.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.BancosDgvHistorico.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dgvHeaderHist.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dgvHeaderHist.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(232)))), ((int)(((byte)(222)))));
-            dgvHeaderHist.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            dgvHeaderHist.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
-            dgvHeaderHist.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(232)))), ((int)(((byte)(222)))));
-            dgvHeaderHist.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
-            this.BancosDgvHistorico.ColumnHeadersDefaultCellStyle = dgvHeaderHist;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(232)))), ((int)(((byte)(222)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(232)))), ((int)(((byte)(222)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
+            this.BancosDgvHistorico.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.BancosDgvHistorico.ColumnHeadersHeight = 30;
             this.BancosDgvHistorico.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dgvCellHist.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dgvCellHist.BackColor = System.Drawing.Color.White;
-            dgvCellHist.Font = new System.Drawing.Font("Segoe UI", 9F);
-            dgvCellHist.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            dgvCellHist.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(231)))), ((int)(((byte)(211)))));
-            dgvCellHist.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
-            this.BancosDgvHistorico.DefaultCellStyle = dgvCellHist;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 9F);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(231)))), ((int)(((byte)(211)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.BancosDgvHistorico.DefaultCellStyle = dataGridViewCellStyle4;
             this.BancosDgvHistorico.EnableHeadersVisualStyles = false;
             this.BancosDgvHistorico.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(230)))), ((int)(((byte)(225)))));
             this.BancosDgvHistorico.Location = new System.Drawing.Point(14, 180);
@@ -627,7 +629,7 @@ namespace CapaVista_TipoCambio.Formularios
             this.BancosLblVariacionSub.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(130)))), ((int)(((byte)(125)))));
             this.BancosLblVariacionSub.Location = new System.Drawing.Point(12, 54);
             this.BancosLblVariacionSub.Name = "BancosLblVariacionSub";
-            this.BancosLblVariacionSub.Size = new System.Drawing.Size(76, 12);
+            this.BancosLblVariacionSub.Size = new System.Drawing.Size(84, 12);
             this.BancosLblVariacionSub.TabIndex = 2;
             this.BancosLblVariacionSub.Text = "En el rango actual";
             // 
@@ -672,7 +674,7 @@ namespace CapaVista_TipoCambio.Formularios
             this.BancosLblMaximaSub.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(130)))), ((int)(((byte)(125)))));
             this.BancosLblMaximaSub.Location = new System.Drawing.Point(12, 54);
             this.BancosLblMaximaSub.Name = "BancosLblMaximaSub";
-            this.BancosLblMaximaSub.Size = new System.Drawing.Size(65, 12);
+            this.BancosLblMaximaSub.Size = new System.Drawing.Size(70, 12);
             this.BancosLblMaximaSub.TabIndex = 2;
             this.BancosLblMaximaSub.Text = "Pico registrado";
             // 
@@ -717,7 +719,7 @@ namespace CapaVista_TipoCambio.Formularios
             this.BancosLblMinimaSub.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(130)))), ((int)(((byte)(125)))));
             this.BancosLblMinimaSub.Location = new System.Drawing.Point(12, 54);
             this.BancosLblMinimaSub.Name = "BancosLblMinimaSub";
-            this.BancosLblMinimaSub.Size = new System.Drawing.Size(73, 12);
+            this.BancosLblMinimaSub.Size = new System.Drawing.Size(78, 12);
             this.BancosLblMinimaSub.TabIndex = 2;
             this.BancosLblMinimaSub.Text = "Mínimo del ciclo";
             // 
@@ -739,7 +741,7 @@ namespace CapaVista_TipoCambio.Formularios
             this.BancosLblMinimaTitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(110)))), ((int)(((byte)(100)))));
             this.BancosLblMinimaTitulo.Location = new System.Drawing.Point(10, 8);
             this.BancosLblMinimaTitulo.Name = "BancosLblMinimaTitulo";
-            this.BancosLblMinimaTitulo.Size = new System.Drawing.Size(49, 15);
+            this.BancosLblMinimaTitulo.Size = new System.Drawing.Size(48, 15);
             this.BancosLblMinimaTitulo.TabIndex = 0;
             this.BancosLblMinimaTitulo.Text = "Mínima";
             // 
@@ -849,7 +851,7 @@ namespace CapaVista_TipoCambio.Formularios
             this.BancosLblDesde.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(60)))), ((int)(((byte)(50)))));
             this.BancosLblDesde.Location = new System.Drawing.Point(16, 8);
             this.BancosLblDesde.Name = "BancosLblDesde";
-            this.BancosLblDesde.Size = new System.Drawing.Size(42, 13);
+            this.BancosLblDesde.Size = new System.Drawing.Size(41, 13);
             this.BancosLblDesde.TabIndex = 0;
             this.BancosLblDesde.Text = "DESDE";
             // 
@@ -899,7 +901,7 @@ namespace CapaVista_TipoCambio.Formularios
             this.BancosLblConvFecha.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(100)))), ((int)(((byte)(95)))));
             this.BancosLblConvFecha.Location = new System.Drawing.Point(24, 308);
             this.BancosLblConvFecha.Name = "BancosLblConvFecha";
-            this.BancosLblConvFecha.Size = new System.Drawing.Size(107, 15);
+            this.BancosLblConvFecha.Size = new System.Drawing.Size(102, 15);
             this.BancosLblConvFecha.TabIndex = 4;
             this.BancosLblConvFecha.Text = "Fecha: 13/10/2026";
             // 
@@ -910,7 +912,7 @@ namespace CapaVista_TipoCambio.Formularios
             this.BancosLblConvFuente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(100)))), ((int)(((byte)(95)))));
             this.BancosLblConvFuente.Location = new System.Drawing.Point(24, 280);
             this.BancosLblConvFuente.Name = "BancosLblConvFuente";
-            this.BancosLblConvFuente.Size = new System.Drawing.Size(126, 15);
+            this.BancosLblConvFuente.Size = new System.Drawing.Size(123, 15);
             this.BancosLblConvFuente.TabIndex = 3;
             this.BancosLblConvFuente.Text = "Fuente: Demostración";
             // 
@@ -921,7 +923,7 @@ namespace CapaVista_TipoCambio.Formularios
             this.BancosLblConvTasaDetalle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.BancosLblConvTasaDetalle.Location = new System.Drawing.Point(24, 252);
             this.BancosLblConvTasaDetalle.Name = "BancosLblConvTasaDetalle";
-            this.BancosLblConvTasaDetalle.Size = new System.Drawing.Size(186, 15);
+            this.BancosLblConvTasaDetalle.Size = new System.Drawing.Size(198, 15);
             this.BancosLblConvTasaDetalle.TabIndex = 2;
             this.BancosLblConvTasaDetalle.Text = "Tasa aplicada: 1 USD = 7.7532 GTQ";
             // 
@@ -944,7 +946,7 @@ namespace CapaVista_TipoCambio.Formularios
             this.BancosLblConvCalculoDetalle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(100)))), ((int)(((byte)(90)))));
             this.BancosLblConvCalculoDetalle.Location = new System.Drawing.Point(20, 115);
             this.BancosLblConvCalculoDetalle.Name = "BancosLblConvCalculoDetalle";
-            this.BancosLblConvCalculoDetalle.Size = new System.Drawing.Size(147, 17);
+            this.BancosLblConvCalculoDetalle.Size = new System.Drawing.Size(140, 17);
             this.BancosLblConvCalculoDetalle.TabIndex = 2;
             this.BancosLblConvCalculoDetalle.Text = "1,000.00 USD × 7.7532";
             // 
@@ -965,7 +967,7 @@ namespace CapaVista_TipoCambio.Formularios
             this.BancosLblConvDisplayTitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
             this.BancosLblConvDisplayTitulo.Location = new System.Drawing.Point(20, 20);
             this.BancosLblConvDisplayTitulo.Name = "BancosLblConvDisplayTitulo";
-            this.BancosLblConvDisplayTitulo.Size = new System.Drawing.Size(124, 15);
+            this.BancosLblConvDisplayTitulo.Size = new System.Drawing.Size(138, 15);
             this.BancosLblConvDisplayTitulo.TabIndex = 0;
             this.BancosLblConvDisplayTitulo.Text = "IMPORTE CONVERTIDO";
             // 
@@ -976,7 +978,7 @@ namespace CapaVista_TipoCambio.Formularios
             this.BancosLblResultadoConvTitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
             this.BancosLblResultadoConvTitulo.Location = new System.Drawing.Point(20, 18);
             this.BancosLblResultadoConvTitulo.Name = "BancosLblResultadoConvTitulo";
-            this.BancosLblResultadoConvTitulo.Size = new System.Drawing.Size(193, 20);
+            this.BancosLblResultadoConvTitulo.Size = new System.Drawing.Size(196, 20);
             this.BancosLblResultadoConvTitulo.TabIndex = 0;
             this.BancosLblResultadoConvTitulo.Text = "Resultado de la conversión";
             // 
@@ -1016,7 +1018,7 @@ namespace CapaVista_TipoCambio.Formularios
             this.BancosLblFechaConv.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(60)))), ((int)(((byte)(50)))));
             this.BancosLblFechaConv.Location = new System.Drawing.Point(24, 288);
             this.BancosLblFechaConv.Name = "BancosLblFechaConv";
-            this.BancosLblFechaConv.Size = new System.Drawing.Size(41, 13);
+            this.BancosLblFechaConv.Size = new System.Drawing.Size(42, 13);
             this.BancosLblFechaConv.TabIndex = 9;
             this.BancosLblFechaConv.Text = "FECHA";
             // 
@@ -1055,7 +1057,7 @@ namespace CapaVista_TipoCambio.Formularios
             this.BancosLblMonedaDestinoConv.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(60)))), ((int)(((byte)(50)))));
             this.BancosLblMonedaDestinoConv.Location = new System.Drawing.Point(24, 220);
             this.BancosLblMonedaDestinoConv.Name = "BancosLblMonedaDestinoConv";
-            this.BancosLblMonedaDestinoConv.Size = new System.Drawing.Size(107, 13);
+            this.BancosLblMonedaDestinoConv.Size = new System.Drawing.Size(106, 13);
             this.BancosLblMonedaDestinoConv.TabIndex = 6;
             this.BancosLblMonedaDestinoConv.Text = "MONEDA DESTINO";
             // 
@@ -1077,7 +1079,7 @@ namespace CapaVista_TipoCambio.Formularios
             this.BancosLblMonedaOrigenConv.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(60)))), ((int)(((byte)(50)))));
             this.BancosLblMonedaOrigenConv.Location = new System.Drawing.Point(24, 148);
             this.BancosLblMonedaOrigenConv.Name = "BancosLblMonedaOrigenConv";
-            this.BancosLblMonedaOrigenConv.Size = new System.Drawing.Size(100, 13);
+            this.BancosLblMonedaOrigenConv.Size = new System.Drawing.Size(101, 13);
             this.BancosLblMonedaOrigenConv.TabIndex = 4;
             this.BancosLblMonedaOrigenConv.Text = "MONEDA ORIGEN";
             // 
@@ -1086,13 +1088,21 @@ namespace CapaVista_TipoCambio.Formularios
             this.BancosNumImporte.DecimalPlaces = 2;
             this.BancosNumImporte.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.BancosNumImporte.Location = new System.Drawing.Point(24, 98);
-            this.BancosNumImporte.Maximum = new decimal(new int[] { 999999999, 0, 0, 0 });
+            this.BancosNumImporte.Maximum = new decimal(new int[] {
+            999999999,
+            0,
+            0,
+            0});
             this.BancosNumImporte.Name = "BancosNumImporte";
             this.BancosNumImporte.Size = new System.Drawing.Size(410, 25);
             this.BancosNumImporte.TabIndex = 3;
             this.BancosNumImporte.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.BancosNumImporte.ThousandsSeparator = true;
-            this.BancosNumImporte.Value = new decimal(new int[] { 1000, 0, 0, 0 });
+            this.BancosNumImporte.Value = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
             this.BancosNumImporte.ValueChanged += new System.EventHandler(this.BancosNumImporte_ValueChanged);
             // 
             // BancosLblImporte
@@ -1102,7 +1112,7 @@ namespace CapaVista_TipoCambio.Formularios
             this.BancosLblImporte.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(60)))), ((int)(((byte)(50)))));
             this.BancosLblImporte.Location = new System.Drawing.Point(24, 78);
             this.BancosLblImporte.Name = "BancosLblImporte";
-            this.BancosLblImporte.Size = new System.Drawing.Size(56, 13);
+            this.BancosLblImporte.Size = new System.Drawing.Size(55, 13);
             this.BancosLblImporte.TabIndex = 2;
             this.BancosLblImporte.Text = "IMPORTE";
             // 
@@ -1113,7 +1123,7 @@ namespace CapaVista_TipoCambio.Formularios
             this.BancosLblFormularioConvSub.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(110)))), ((int)(((byte)(100)))));
             this.BancosLblFormularioConvSub.Location = new System.Drawing.Point(20, 42);
             this.BancosLblFormularioConvSub.Name = "BancosLblFormularioConvSub";
-            this.BancosLblFormularioConvSub.Size = new System.Drawing.Size(271, 15);
+            this.BancosLblFormularioConvSub.Size = new System.Drawing.Size(269, 15);
             this.BancosLblFormularioConvSub.TabIndex = 1;
             this.BancosLblFormularioConvSub.Text = "Cálculo referencial según tasas vigentes cargadas.";
             // 
@@ -1124,7 +1134,7 @@ namespace CapaVista_TipoCambio.Formularios
             this.BancosLblFormularioConvTitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
             this.BancosLblFormularioConvTitulo.Location = new System.Drawing.Point(20, 18);
             this.BancosLblFormularioConvTitulo.Name = "BancosLblFormularioConvTitulo";
-            this.BancosLblFormularioConvTitulo.Size = new System.Drawing.Size(170, 20);
+            this.BancosLblFormularioConvTitulo.Size = new System.Drawing.Size(169, 20);
             this.BancosLblFormularioConvTitulo.TabIndex = 0;
             this.BancosLblFormularioConvTitulo.Text = "Conversión de moneda";
             // 
@@ -1170,7 +1180,7 @@ namespace CapaVista_TipoCambio.Formularios
             this.BancosLblSubtitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(100)))), ((int)(((byte)(95)))));
             this.BancosLblSubtitulo.Location = new System.Drawing.Point(22, 54);
             this.BancosLblSubtitulo.Name = "BancosLblSubtitulo";
-            this.BancosLblSubtitulo.Size = new System.Drawing.Size(325, 17);
+            this.BancosLblSubtitulo.Size = new System.Drawing.Size(318, 17);
             this.BancosLblSubtitulo.TabIndex = 1;
             this.BancosLblSubtitulo.Text = "ERP Tesorería y Bancos — Embutidos de Calidad S.A.";
             // 
@@ -1181,7 +1191,7 @@ namespace CapaVista_TipoCambio.Formularios
             this.BancosLblTitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
             this.BancosLblTitulo.Location = new System.Drawing.Point(20, 16);
             this.BancosLblTitulo.Name = "BancosLblTitulo";
-            this.BancosLblTitulo.Size = new System.Drawing.Size(296, 32);
+            this.BancosLblTitulo.Size = new System.Drawing.Size(276, 32);
             this.BancosLblTitulo.TabIndex = 0;
             this.BancosLblTitulo.Text = "8003 – Tipo de Cambio";
             // 
@@ -1192,10 +1202,11 @@ namespace CapaVista_TipoCambio.Formularios
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(248)))), ((int)(((byte)(243)))));
             this.ClientSize = new System.Drawing.Size(1060, 720);
             this.Controls.Add(this.BancosPnlFondo);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "FrmTipoCambio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "8003 – Tipo de Cambio";
+            this.Text = "8005 – Tipo de Cambio";
             this.BancosPnlFondo.ResumeLayout(false);
             this.BancosTabControl.ResumeLayout(false);
             this.BancosTabTasasActuales.ResumeLayout(false);

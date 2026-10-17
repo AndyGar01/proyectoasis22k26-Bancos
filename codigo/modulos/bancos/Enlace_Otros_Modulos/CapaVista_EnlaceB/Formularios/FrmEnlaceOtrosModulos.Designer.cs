@@ -28,11 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmEnlaceOtrosModulos));
             this.BancLblTitulo = new System.Windows.Forms.Label();
             this.BancPnlFiltros = new System.Windows.Forms.Panel();
+            this.BancCbxPeriodo = new System.Windows.Forms.ComboBox();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.BancLblTipoPeriodo = new System.Windows.Forms.Label();
+            this.BancBtnConsultarMovimientos = new System.Windows.Forms.Button();
             this.BancLblFechaFinal = new System.Windows.Forms.Label();
             this.BancLblFechaInicial = new System.Windows.Forms.Label();
             this.BancLblTituloPanel = new System.Windows.Forms.Label();
+            this.BancPbxFondoEnlace = new System.Windows.Forms.PictureBox();
             this.BancLblMovimientos = new System.Windows.Forms.Label();
             this.BancDgvMovimientos = new System.Windows.Forms.DataGridView();
             this.Estatus = new System.Windows.Forms.DataGridViewCheckBoxColumn();
@@ -50,10 +57,6 @@
             this.BancLblTotalDebe = new System.Windows.Forms.Label();
             this.BancLblTotalHaber = new System.Windows.Forms.Label();
             this.BancLblDiferencia = new System.Windows.Forms.Label();
-            this.BancLblTipoPeriodo = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.BancCbxPeriodo = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.BancPbxMascota = new System.Windows.Forms.PictureBox();
@@ -69,10 +72,9 @@
             this.BancPbxFondoPartida = new System.Windows.Forms.PictureBox();
             this.BancBtnGenerarPartida = new System.Windows.Forms.Button();
             this.BancPbxFondoMovimientos = new System.Windows.Forms.PictureBox();
-            this.BancBtnConsultarMovimientos = new System.Windows.Forms.Button();
-            this.BancPbxFondoEnlace = new System.Windows.Forms.PictureBox();
             this.BancPbxFondo = new System.Windows.Forms.PictureBox();
             this.BancPnlFiltros.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BancPbxFondoEnlace)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BancDgvMovimientos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BancDgvPartidaContable)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BancPbxMascota)).BeginInit();
@@ -84,7 +86,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.BancPbxDebe)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BancPbxFondoPartida)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BancPbxFondoMovimientos)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BancPbxFondoEnlace)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BancPbxFondo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -117,6 +118,57 @@
             this.BancPnlFiltros.Name = "BancPnlFiltros";
             this.BancPnlFiltros.Size = new System.Drawing.Size(830, 87);
             this.BancPnlFiltros.TabIndex = 2;
+            // 
+            // BancCbxPeriodo
+            // 
+            this.BancCbxPeriodo.FormattingEnabled = true;
+            this.BancCbxPeriodo.Items.AddRange(new object[] {
+            "Mensual",
+            "Anual"});
+            this.BancCbxPeriodo.Location = new System.Drawing.Point(22, 54);
+            this.BancCbxPeriodo.Name = "BancCbxPeriodo";
+            this.BancCbxPeriodo.Size = new System.Drawing.Size(176, 21);
+            this.BancCbxPeriodo.TabIndex = 12;
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Location = new System.Drawing.Point(521, 56);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(217, 20);
+            this.dateTimePicker2.TabIndex = 11;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(251, 56);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(232, 20);
+            this.dateTimePicker1.TabIndex = 10;
+            // 
+            // BancLblTipoPeriodo
+            // 
+            this.BancLblTipoPeriodo.AutoSize = true;
+            this.BancLblTipoPeriodo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(248)))), ((int)(((byte)(243)))));
+            this.BancLblTipoPeriodo.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BancLblTipoPeriodo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
+            this.BancLblTipoPeriodo.Location = new System.Drawing.Point(19, 35);
+            this.BancLblTipoPeriodo.Name = "BancLblTipoPeriodo";
+            this.BancLblTipoPeriodo.Size = new System.Drawing.Size(123, 18);
+            this.BancLblTipoPeriodo.TabIndex = 9;
+            this.BancLblTipoPeriodo.Text = "Tipo de periodo";
+            // 
+            // BancBtnConsultarMovimientos
+            // 
+            this.BancBtnConsultarMovimientos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(138)))), ((int)(((byte)(85)))));
+            this.BancBtnConsultarMovimientos.BackgroundImage = global::CapaVista_EnlaceB.Properties.Resources.btn_consultarV;
+            this.BancBtnConsultarMovimientos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BancBtnConsultarMovimientos.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BancBtnConsultarMovimientos.ForeColor = System.Drawing.Color.White;
+            this.BancBtnConsultarMovimientos.Location = new System.Drawing.Point(749, 13);
+            this.BancBtnConsultarMovimientos.Margin = new System.Windows.Forms.Padding(2);
+            this.BancBtnConsultarMovimientos.Name = "BancBtnConsultarMovimientos";
+            this.BancBtnConsultarMovimientos.Size = new System.Drawing.Size(67, 62);
+            this.BancBtnConsultarMovimientos.TabIndex = 8;
+            this.BancBtnConsultarMovimientos.UseVisualStyleBackColor = false;
             // 
             // BancLblFechaFinal
             // 
@@ -156,6 +208,16 @@
             this.BancLblTituloPanel.Size = new System.Drawing.Size(472, 31);
             this.BancLblTituloPanel.TabIndex = 3;
             this.BancLblTituloPanel.Text = "Traslado de partida a Contabilidad";
+            // 
+            // BancPbxFondoEnlace
+            // 
+            this.BancPbxFondoEnlace.Image = global::CapaVista_EnlaceB.Properties.Resources.FondoEnlaceotrosModulo;
+            this.BancPbxFondoEnlace.Location = new System.Drawing.Point(0, 0);
+            this.BancPbxFondoEnlace.Margin = new System.Windows.Forms.Padding(2);
+            this.BancPbxFondoEnlace.Name = "BancPbxFondoEnlace";
+            this.BancPbxFondoEnlace.Size = new System.Drawing.Size(830, 87);
+            this.BancPbxFondoEnlace.TabIndex = 0;
+            this.BancPbxFondoEnlace.TabStop = false;
             // 
             // BancLblMovimientos
             // 
@@ -305,43 +367,6 @@
             this.BancLblDiferencia.Size = new System.Drawing.Size(67, 14);
             this.BancLblDiferencia.TabIndex = 26;
             this.BancLblDiferencia.Text = "Diferencia";
-            // 
-            // BancLblTipoPeriodo
-            // 
-            this.BancLblTipoPeriodo.AutoSize = true;
-            this.BancLblTipoPeriodo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(248)))), ((int)(((byte)(243)))));
-            this.BancLblTipoPeriodo.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BancLblTipoPeriodo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
-            this.BancLblTipoPeriodo.Location = new System.Drawing.Point(19, 35);
-            this.BancLblTipoPeriodo.Name = "BancLblTipoPeriodo";
-            this.BancLblTipoPeriodo.Size = new System.Drawing.Size(123, 18);
-            this.BancLblTipoPeriodo.TabIndex = 9;
-            this.BancLblTipoPeriodo.Text = "Tipo de periodo";
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(251, 56);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(232, 20);
-            this.dateTimePicker1.TabIndex = 10;
-            // 
-            // dateTimePicker2
-            // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(521, 56);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(217, 20);
-            this.dateTimePicker2.TabIndex = 11;
-            // 
-            // BancCbxPeriodo
-            // 
-            this.BancCbxPeriodo.FormattingEnabled = true;
-            this.BancCbxPeriodo.Items.AddRange(new object[] {
-            "Mensual",
-            "Anual"});
-            this.BancCbxPeriodo.Location = new System.Drawing.Point(22, 54);
-            this.BancCbxPeriodo.Name = "BancCbxPeriodo";
-            this.BancCbxPeriodo.Size = new System.Drawing.Size(176, 21);
-            this.BancCbxPeriodo.TabIndex = 12;
             // 
             // label1
             // 
@@ -516,30 +541,6 @@
             this.BancPbxFondoMovimientos.TabIndex = 9;
             this.BancPbxFondoMovimientos.TabStop = false;
             // 
-            // BancBtnConsultarMovimientos
-            // 
-            this.BancBtnConsultarMovimientos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(138)))), ((int)(((byte)(85)))));
-            this.BancBtnConsultarMovimientos.BackgroundImage = global::CapaVista_EnlaceB.Properties.Resources.btn_consultarV;
-            this.BancBtnConsultarMovimientos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BancBtnConsultarMovimientos.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BancBtnConsultarMovimientos.ForeColor = System.Drawing.Color.White;
-            this.BancBtnConsultarMovimientos.Location = new System.Drawing.Point(749, 13);
-            this.BancBtnConsultarMovimientos.Margin = new System.Windows.Forms.Padding(2);
-            this.BancBtnConsultarMovimientos.Name = "BancBtnConsultarMovimientos";
-            this.BancBtnConsultarMovimientos.Size = new System.Drawing.Size(67, 62);
-            this.BancBtnConsultarMovimientos.TabIndex = 8;
-            this.BancBtnConsultarMovimientos.UseVisualStyleBackColor = false;
-            // 
-            // BancPbxFondoEnlace
-            // 
-            this.BancPbxFondoEnlace.Image = global::CapaVista_EnlaceB.Properties.Resources.FondoEnlaceotrosModulo;
-            this.BancPbxFondoEnlace.Location = new System.Drawing.Point(0, 0);
-            this.BancPbxFondoEnlace.Margin = new System.Windows.Forms.Padding(2);
-            this.BancPbxFondoEnlace.Name = "BancPbxFondoEnlace";
-            this.BancPbxFondoEnlace.Size = new System.Drawing.Size(830, 87);
-            this.BancPbxFondoEnlace.TabIndex = 0;
-            this.BancPbxFondoEnlace.TabStop = false;
-            // 
             // BancPbxFondo
             // 
             this.BancPbxFondo.Image = global::CapaVista_EnlaceB.Properties.Resources.FondoEnlaceotrosModulo;
@@ -582,13 +583,14 @@
             this.Controls.Add(this.BancLblTitulo);
             this.Controls.Add(this.BancPbxFondo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "FrmEnlaceOtrosModulos";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "8001 – EnlaceOtrosModulos";
+            this.Text = "8003 – Enlace con Otros Modulos";
             this.BancPnlFiltros.ResumeLayout(false);
             this.BancPnlFiltros.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BancPbxFondoEnlace)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BancDgvMovimientos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BancDgvPartidaContable)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BancPbxMascota)).EndInit();
@@ -600,7 +602,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.BancPbxDebe)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BancPbxFondoPartida)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BancPbxFondoMovimientos)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BancPbxFondoEnlace)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BancPbxFondo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

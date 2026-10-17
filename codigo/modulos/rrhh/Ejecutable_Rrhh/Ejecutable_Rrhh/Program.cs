@@ -21,14 +21,9 @@ namespace Ejecutable_Rrhh
 {
     internal static class Program
     {
-        // sin esto Windows estira la ventana cuando la pantalla tiene escala
-        // y las imagenes se ven borrosas
         [System.Runtime.InteropServices.DllImport("user32.dll")]
         private static extern bool SetProcessDPIAware();
 
-        /// <summary>
-        /// Punto de entrada principal para la aplicación.
-        /// </summary>
         [STAThread]
         static void Main()
         {

@@ -12,7 +12,7 @@ using System.Threading.Tasks;
  * Fecha : 12/10/2026
  * ==================================================================
  * Propósito :
- *  Capa Controlador de la ventana 9802 - PermisosVacaciones.
+ *  Capa Controlador de la ventana 9301 - PermisosVacaciones.
  *  Aquí irán las reglas (cálculo de días, derecho a vacaciones,
  *  validaciones) entre la Vista y el Modelo. Prototipo NO
  *  funcional: sin código todavía.

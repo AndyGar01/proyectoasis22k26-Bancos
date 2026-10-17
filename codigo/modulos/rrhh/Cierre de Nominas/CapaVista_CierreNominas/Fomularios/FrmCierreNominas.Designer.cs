@@ -556,10 +556,12 @@
             this.Controls.Add(this.RrhhPnlInicio);
             this.Controls.Add(this.RrhhPnlCierreNominas);
             this.Controls.Add(this.RrhhPnlResumen);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "FrmCierreNominas";
-            this.Text = "9601 - Cierre de Nominas";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "9602 - Cierre de Nóminas";
             ((System.ComponentModel.ISupportInitialize)(this.RrhhDgvVistaCierreNomina)).EndInit();
             this.RrhhPnlInicio.ResumeLayout(false);
             this.RrhhPnlInicio.PerformLayout();

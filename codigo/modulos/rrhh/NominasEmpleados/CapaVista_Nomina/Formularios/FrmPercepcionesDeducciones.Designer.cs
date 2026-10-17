@@ -729,9 +729,11 @@
             this.Controls.Add(this.PerDedBtnModificar);
             this.Controls.Add(this.PerDedBtnGuardar);
             this.Controls.Add(this.PerPnlPercepcionDeducciones);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "FrmPercepcionesDeducciones";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "9601 - Percepciones y Deducciones";
             this.Load += new System.EventHandler(this.FrmNominas_Load);
             this.PerPnlDatosInfoConcep.ResumeLayout(false);

@@ -79,10 +79,9 @@
     <None Include="Resources\mascota.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CapaControlador_Asistencia\CapaControlador_Asistencia.csproj">
-      <Project>{fbe38e88-94dc-4889-a0db-dc1e662b38ed}</Project>
-      <Name>CapaControlador_Asistencia</Name>
-    </ProjectReference>
+    <Reference Include="CapaControlador_Asistencia">
+      <HintPath>..\CapaControlador_Asistencia\bin\Debug\CapaControlador_Asistencia.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

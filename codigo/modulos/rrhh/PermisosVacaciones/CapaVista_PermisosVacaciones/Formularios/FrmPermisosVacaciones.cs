@@ -16,7 +16,7 @@ using System.Windows.Forms;
  * Fecha : 12/10/2026
  * ==================================================================
  * Propósito :
- *  Prototipo NO funcional de la ventana 9802 - PermisosVacaciones.
+ *  Prototipo NO funcional de la ventana 9301 - PermisosVacaciones.
  *  Una sola ventana con dos secciones (Permisos y Vacaciones) que se
  *  eligen con botones tipo pestaña. Solo contiene el diseño de la
  *  pantalla (sin datos de ejemplo, eventos, validaciones ni acceso a
@@ -32,11 +32,6 @@ namespace CapaVista_PermisosVacaciones.Formularios
         public FrmPermisosVacaciones()
         {
             InitializeComponent();
-        }
-
-        private void RrhhDtpPermisoFechaInicio_ValueChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void RrhhBtnPestañaVacaciones_Click(object sender, EventArgs e)

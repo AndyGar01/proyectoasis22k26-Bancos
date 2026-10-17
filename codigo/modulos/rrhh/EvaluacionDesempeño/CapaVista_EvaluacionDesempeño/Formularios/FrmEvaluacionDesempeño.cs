@@ -16,7 +16,7 @@ using System.Windows.Forms;
  * Fecha : 12/10/2026
  * ==================================================================
  * Propósito :
- *  Prototipo NO funcional de la ventana 9801 - EvaluacionDesempeño.
+ *  Prototipo NO funcional de la ventana 9501 - EvaluacionDesempeño.
  *  Solo contiene el diseño de la pantalla (sin datos de ejemplo,
  *  eventos, validaciones ni acceso a datos). La lógica se conectará
  *  después a CapaControlador_EvaluacionDesempeño.
@@ -30,21 +30,6 @@ namespace CapaVista_EvaluacionDesempeño.Formularios
         public FrmEvaluacionDesempeño()
         {
             InitializeComponent();
-        }
-
-        private void FrmEvaluacionDesempeño_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void RrhhLblTituloCierreNominas_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void RrhhPbMascota_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

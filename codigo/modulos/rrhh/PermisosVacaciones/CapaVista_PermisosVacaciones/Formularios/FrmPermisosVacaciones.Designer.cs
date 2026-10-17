@@ -6,7 +6,7 @@
  * Fecha : 12/10/2026
  * ==================================================================
  * Propósito :
- *  Diseño (Designer) de la ventana 9802 - PermisosVacaciones.
+ *  Diseño (Designer) de la ventana 9301 - PermisosVacaciones.
  *  Prototipo NO funcional: solo controles visuales, sin datos de
  *  ejemplo, eventos, validaciones ni acceso a datos.
  * ===================================================================
@@ -595,7 +595,6 @@ namespace CapaVista_PermisosVacaciones.Formularios
             this.RrhhDtpPermisoFechaInicio.Name = "RrhhDtpPermisoFechaInicio";
             this.RrhhDtpPermisoFechaInicio.Size = new System.Drawing.Size(284, 24);
             this.RrhhDtpPermisoFechaInicio.TabIndex = 2;
-            this.RrhhDtpPermisoFechaInicio.ValueChanged += new System.EventHandler(this.RrhhDtpPermisoFechaInicio_ValueChanged);
             // 
             // RrhhLblPermisoFechaFin
             // 
@@ -2430,7 +2429,7 @@ namespace CapaVista_PermisosVacaciones.Formularios
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "FrmPermisosVacaciones";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "9301 - Permisos y Vacaciones";
             this.RrhhTabPermisosVacaciones.ResumeLayout(false);
             this.RrhhTabPagPermisos.ResumeLayout(false);

@@ -38,10 +38,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CapaModelo_Asistencia\CapaModelo_Asistencia.csproj">
-      <Project>{84f86291-4ac3-4383-833e-efa583258c44}</Project>
-      <Name>CapaModelo_Asistencia</Name>
-    </ProjectReference>
+    <Reference Include="CapaModelo_Asistencia">
+      <HintPath>..\CapaModelo_Asistencia\bin\Debug\CapaModelo_Asistencia.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

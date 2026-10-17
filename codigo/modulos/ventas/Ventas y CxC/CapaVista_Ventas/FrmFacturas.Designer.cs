@@ -39,10 +39,10 @@ namespace CapaVista_Ventas
             this.VentasCboTipoDte = new System.Windows.Forms.ComboBox();
             this.VentasLblMoneda = new System.Windows.Forms.Label();
             this.VentasCboMoneda = new System.Windows.Forms.ComboBox();
-            this.VentasRdbNit = new System.Windows.Forms.RadioButton();
-            this.VentasGrpIdentificacion = new System.Windows.Forms.GroupBox();
-            this.VentasRdbIdExtranjero = new System.Windows.Forms.RadioButton();
-            this.VentasRdbCui = new System.Windows.Forms.RadioButton();
+            this.VentasRdoNit = new System.Windows.Forms.RadioButton();
+            this.VentasGbxIdentificacion = new System.Windows.Forms.GroupBox();
+            this.VentasRdoIdExtranjero = new System.Windows.Forms.RadioButton();
+            this.VentasRdoCui = new System.Windows.Forms.RadioButton();
             this.VentasLblNitReceptor = new System.Windows.Forms.Label();
             this.VentasLblDireccionComprador = new System.Windows.Forms.Label();
             this.VentasTxtNitReceptor = new System.Windows.Forms.TextBox();
@@ -63,7 +63,7 @@ namespace CapaVista_Ventas
             this.VentasTxtTotal = new System.Windows.Forms.TextBox();
             this.VentasBtnEmitirFactura = new System.Windows.Forms.Button();
             this.VentasBtnAgregarItem = new System.Windows.Forms.Button();
-            this.VentasGrpIdentificacion.SuspendLayout();
+            this.VentasGbxIdentificacion.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.VentasDgvItems)).BeginInit();
             this.SuspendLayout();
             //
@@ -162,56 +162,56 @@ namespace CapaVista_Ventas
             this.VentasCboMoneda.Size = new System.Drawing.Size(268, 33);
             this.VentasCboMoneda.TabIndex = 8;
             //
-            // VentasRdbNit
+            // VentasRdoNit
             //
-            this.VentasRdbNit.AutoSize = true;
-            this.VentasRdbNit.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.VentasRdbNit.ForeColor = System.Drawing.Color.White;
-            this.VentasRdbNit.Location = new System.Drawing.Point(25, 30);
-            this.VentasRdbNit.Name = "VentasRdbNit";
-            this.VentasRdbNit.Size = new System.Drawing.Size(66, 29);
-            this.VentasRdbNit.TabIndex = 9;
-            this.VentasRdbNit.TabStop = true;
-            this.VentasRdbNit.Text = "NIT";
-            this.VentasRdbNit.UseVisualStyleBackColor = true;
+            this.VentasRdoNit.AutoSize = true;
+            this.VentasRdoNit.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.VentasRdoNit.ForeColor = System.Drawing.Color.White;
+            this.VentasRdoNit.Location = new System.Drawing.Point(25, 30);
+            this.VentasRdoNit.Name = "VentasRdoNit";
+            this.VentasRdoNit.Size = new System.Drawing.Size(66, 29);
+            this.VentasRdoNit.TabIndex = 9;
+            this.VentasRdoNit.TabStop = true;
+            this.VentasRdoNit.Text = "NIT";
+            this.VentasRdoNit.UseVisualStyleBackColor = true;
             //
-            // VentasGrpIdentificacion
+            // VentasGbxIdentificacion
             //
-            this.VentasGrpIdentificacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
-            this.VentasGrpIdentificacion.Controls.Add(this.VentasRdbIdExtranjero);
-            this.VentasGrpIdentificacion.Controls.Add(this.VentasRdbCui);
-            this.VentasGrpIdentificacion.Controls.Add(this.VentasRdbNit);
-            this.VentasGrpIdentificacion.Location = new System.Drawing.Point(709, 320);
-            this.VentasGrpIdentificacion.Name = "VentasGrpIdentificacion";
-            this.VentasGrpIdentificacion.Size = new System.Drawing.Size(198, 115);
-            this.VentasGrpIdentificacion.TabIndex = 10;
-            this.VentasGrpIdentificacion.TabStop = false;
+            this.VentasGbxIdentificacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
+            this.VentasGbxIdentificacion.Controls.Add(this.VentasRdoIdExtranjero);
+            this.VentasGbxIdentificacion.Controls.Add(this.VentasRdoCui);
+            this.VentasGbxIdentificacion.Controls.Add(this.VentasRdoNit);
+            this.VentasGbxIdentificacion.Location = new System.Drawing.Point(709, 320);
+            this.VentasGbxIdentificacion.Name = "VentasGbxIdentificacion";
+            this.VentasGbxIdentificacion.Size = new System.Drawing.Size(198, 115);
+            this.VentasGbxIdentificacion.TabIndex = 10;
+            this.VentasGbxIdentificacion.TabStop = false;
             //
-            // VentasRdbIdExtranjero
+            // VentasRdoIdExtranjero
             //
-            this.VentasRdbIdExtranjero.AutoSize = true;
-            this.VentasRdbIdExtranjero.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.VentasRdbIdExtranjero.ForeColor = System.Drawing.Color.White;
-            this.VentasRdbIdExtranjero.Location = new System.Drawing.Point(16, 65);
-            this.VentasRdbIdExtranjero.Name = "VentasRdbIdExtranjero";
-            this.VentasRdbIdExtranjero.Size = new System.Drawing.Size(168, 29);
-            this.VentasRdbIdExtranjero.TabIndex = 11;
-            this.VentasRdbIdExtranjero.TabStop = true;
-            this.VentasRdbIdExtranjero.Text = "ID EXTRANJERO";
-            this.VentasRdbIdExtranjero.UseVisualStyleBackColor = true;
+            this.VentasRdoIdExtranjero.AutoSize = true;
+            this.VentasRdoIdExtranjero.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.VentasRdoIdExtranjero.ForeColor = System.Drawing.Color.White;
+            this.VentasRdoIdExtranjero.Location = new System.Drawing.Point(16, 65);
+            this.VentasRdoIdExtranjero.Name = "VentasRdoIdExtranjero";
+            this.VentasRdoIdExtranjero.Size = new System.Drawing.Size(168, 29);
+            this.VentasRdoIdExtranjero.TabIndex = 11;
+            this.VentasRdoIdExtranjero.TabStop = true;
+            this.VentasRdoIdExtranjero.Text = "ID EXTRANJERO";
+            this.VentasRdoIdExtranjero.UseVisualStyleBackColor = true;
             //
-            // VentasRdbCui
+            // VentasRdoCui
             //
-            this.VentasRdbCui.AutoSize = true;
-            this.VentasRdbCui.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.VentasRdbCui.ForeColor = System.Drawing.Color.White;
-            this.VentasRdbCui.Location = new System.Drawing.Point(116, 30);
-            this.VentasRdbCui.Name = "VentasRdbCui";
-            this.VentasRdbCui.Size = new System.Drawing.Size(66, 29);
-            this.VentasRdbCui.TabIndex = 10;
-            this.VentasRdbCui.TabStop = true;
-            this.VentasRdbCui.Text = "CUI";
-            this.VentasRdbCui.UseVisualStyleBackColor = true;
+            this.VentasRdoCui.AutoSize = true;
+            this.VentasRdoCui.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.VentasRdoCui.ForeColor = System.Drawing.Color.White;
+            this.VentasRdoCui.Location = new System.Drawing.Point(116, 30);
+            this.VentasRdoCui.Name = "VentasRdoCui";
+            this.VentasRdoCui.Size = new System.Drawing.Size(66, 29);
+            this.VentasRdoCui.TabIndex = 10;
+            this.VentasRdoCui.TabStop = true;
+            this.VentasRdoCui.Text = "CUI";
+            this.VentasRdoCui.UseVisualStyleBackColor = true;
             //
             // VentasLblNitReceptor
             //
@@ -465,7 +465,7 @@ namespace CapaVista_Ventas
             this.Controls.Add(this.VentasTxtNitReceptor);
             this.Controls.Add(this.VentasLblDireccionComprador);
             this.Controls.Add(this.VentasLblNitReceptor);
-            this.Controls.Add(this.VentasGrpIdentificacion);
+            this.Controls.Add(this.VentasGbxIdentificacion);
             this.Controls.Add(this.VentasCboMoneda);
             this.Controls.Add(this.VentasLblMoneda);
             this.Controls.Add(this.VentasCboTipoDte);
@@ -484,8 +484,8 @@ namespace CapaVista_Ventas
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "7007 – Facturas";
-            this.VentasGrpIdentificacion.ResumeLayout(false);
-            this.VentasGrpIdentificacion.PerformLayout();
+            this.VentasGbxIdentificacion.ResumeLayout(false);
+            this.VentasGbxIdentificacion.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.VentasDgvItems)).EndInit();
             this.VentasTtpAccionesOriginales.SetToolTip(this.VentasBtnEmitirFactura, "Emitir factura");
             this.VentasTtpAccionesOriginales.SetToolTip(this.VentasBtnAgregarItem, "Agregar ítem");
@@ -505,10 +505,10 @@ namespace CapaVista_Ventas
         private System.Windows.Forms.ComboBox VentasCboTipoDte;
         private System.Windows.Forms.Label VentasLblMoneda;
         private System.Windows.Forms.ComboBox VentasCboMoneda;
-        private System.Windows.Forms.RadioButton VentasRdbNit;
-        private System.Windows.Forms.GroupBox VentasGrpIdentificacion;
-        private System.Windows.Forms.RadioButton VentasRdbIdExtranjero;
-        private System.Windows.Forms.RadioButton VentasRdbCui;
+        private System.Windows.Forms.RadioButton VentasRdoNit;
+        private System.Windows.Forms.GroupBox VentasGbxIdentificacion;
+        private System.Windows.Forms.RadioButton VentasRdoIdExtranjero;
+        private System.Windows.Forms.RadioButton VentasRdoCui;
         private System.Windows.Forms.Label VentasLblNitReceptor;
         private System.Windows.Forms.Label VentasLblDireccionComprador;
         private System.Windows.Forms.TextBox VentasTxtNitReceptor;

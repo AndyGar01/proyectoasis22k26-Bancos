@@ -24,7 +24,10 @@ namespace CapaVista_Ventas
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMdiVentas));
+            this.VentasImlMantenimientos = new System.Windows.Forms.ImageList(this.components);
             this.VentasTtpAccionesOriginales = new System.Windows.Forms.ToolTip(this.components);
+            this.VentasBtnAyuda = new System.Windows.Forms.Button();
             this.VentasLblBienvenido = new System.Windows.Forms.Label();
             this.VentasLblModulo = new System.Windows.Forms.Label();
             this.VentasLblParrafo = new System.Windows.Forms.Label();
@@ -74,7 +77,6 @@ namespace CapaVista_Ventas
             this.VentasTlpDashboard = new System.Windows.Forms.TableLayoutPanel();
             this.VentasTlpHero = new System.Windows.Forms.TableLayoutPanel();
             this.VentasTlpPresentacion = new System.Windows.Forms.TableLayoutPanel();
-            this.VentasBtnAyuda = new System.Windows.Forms.Button();
             this.VentasPbMascota = new System.Windows.Forms.PictureBox();
             this.VentasPbIcono = new System.Windows.Forms.PictureBox();
             this.VentasTlpKpis = new System.Windows.Forms.TableLayoutPanel();
@@ -127,62 +129,91 @@ namespace CapaVista_Ventas
             this.VentasPnlInformacion.SuspendLayout();
             this.VentasTlpInformacion.SuspendLayout();
             this.SuspendLayout();
-            //
+            // 
+            // VentasImlMantenimientos
+            // 
+            this.VentasImlMantenimientos.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("VentasImlMantenimientos.ImageStream")));
+            this.VentasImlMantenimientos.TransparentColor = System.Drawing.Color.Transparent;
+            this.VentasImlMantenimientos.Images.SetKeyName(0, "Mantenimientos");
+            // 
+            // VentasBtnAyuda
+            // 
+            this.VentasBtnAyuda.AccessibleDescription = "Ayuda";
+            this.VentasBtnAyuda.AccessibleName = "Ayuda";
+            this.VentasBtnAyuda.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(63)))), ((int)(((byte)(147)))));
+            this.VentasBtnAyuda.BackgroundImage = global::CapaVista_Ventas.Properties.Resources.BotonOriginalAyudaVentas;
+            this.VentasBtnAyuda.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.VentasBtnAyuda.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.VentasBtnAyuda.FlatAppearance.BorderSize = 0;
+            this.VentasBtnAyuda.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
+            this.VentasBtnAyuda.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
+            this.VentasBtnAyuda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.VentasBtnAyuda.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.VentasBtnAyuda.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
+            this.VentasBtnAyuda.Location = new System.Drawing.Point(3, 556);
+            this.VentasBtnAyuda.Name = "VentasBtnAyuda";
+            this.VentasBtnAyuda.Size = new System.Drawing.Size(64, 64);
+            this.VentasBtnAyuda.TabIndex = 3;
+            this.VentasBtnAyuda.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.VentasTtpAccionesOriginales.SetToolTip(this.VentasBtnAyuda, "Ayuda");
+            this.VentasBtnAyuda.UseVisualStyleBackColor = false;
+            this.VentasBtnAyuda.Click += new System.EventHandler(this.VentasBtnAyuda_Click);
+            // 
             // VentasLblBienvenido
-            //
+            // 
             this.VentasLblBienvenido.BackColor = System.Drawing.Color.Transparent;
             this.VentasLblBienvenido.Dock = System.Windows.Forms.DockStyle.Fill;
             this.VentasLblBienvenido.Font = new System.Drawing.Font("Lucida Fax", 40F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.VentasLblBienvenido.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
             this.VentasLblBienvenido.Location = new System.Drawing.Point(3, 0);
             this.VentasLblBienvenido.Name = "VentasLblBienvenido";
-            this.VentasLblBienvenido.Size = new System.Drawing.Size(675, 213);
+            this.VentasLblBienvenido.Size = new System.Drawing.Size(675, 236);
             this.VentasLblBienvenido.TabIndex = 0;
             this.VentasLblBienvenido.Text = "¡Bienvenido!";
             this.VentasLblBienvenido.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            //
+            // 
             // VentasLblModulo
-            //
+            // 
             this.VentasLblModulo.BackColor = System.Drawing.Color.Transparent;
             this.VentasLblModulo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.VentasLblModulo.Font = new System.Drawing.Font("Lucida Fax", 19F, System.Drawing.FontStyle.Bold);
             this.VentasLblModulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
-            this.VentasLblModulo.Location = new System.Drawing.Point(3, 213);
+            this.VentasLblModulo.Location = new System.Drawing.Point(3, 236);
             this.VentasLblModulo.Name = "VentasLblModulo";
-            this.VentasLblModulo.Size = new System.Drawing.Size(675, 134);
+            this.VentasLblModulo.Size = new System.Drawing.Size(675, 148);
             this.VentasLblModulo.TabIndex = 1;
             this.VentasLblModulo.Text = "Ventas y cuentas\npor cobrar";
             this.VentasLblModulo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            //
+            // 
             // VentasLblParrafo
-            //
+            // 
             this.VentasLblParrafo.BackColor = System.Drawing.Color.Transparent;
             this.VentasLblParrafo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.VentasLblParrafo.Font = new System.Drawing.Font("Tahoma", 11.5F);
             this.VentasLblParrafo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
-            this.VentasLblParrafo.Location = new System.Drawing.Point(3, 347);
+            this.VentasLblParrafo.Location = new System.Drawing.Point(3, 384);
             this.VentasLblParrafo.Name = "VentasLblParrafo";
-            this.VentasLblParrafo.Size = new System.Drawing.Size(675, 152);
+            this.VentasLblParrafo.Size = new System.Drawing.Size(675, 169);
             this.VentasLblParrafo.TabIndex = 2;
             this.VentasLblParrafo.Text = "Gestiona precios, clientes y documentos de venta.\nControla pagos y cuentas por co" +
     "brar en un solo lugar.";
             this.VentasLblParrafo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            //
+            // 
             // VentasLblResumen
-            //
+            // 
             this.VentasLblResumen.BackColor = System.Drawing.Color.Transparent;
             this.VentasLblResumen.Dock = System.Windows.Forms.DockStyle.Fill;
             this.VentasLblResumen.Font = new System.Drawing.Font("Lucida Fax", 19F, System.Drawing.FontStyle.Bold);
             this.VentasLblResumen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
-            this.VentasLblResumen.Location = new System.Drawing.Point(3, 623);
+            this.VentasLblResumen.Location = new System.Drawing.Point(3, 639);
             this.VentasLblResumen.Name = "VentasLblResumen";
             this.VentasLblResumen.Size = new System.Drawing.Size(1186, 45);
             this.VentasLblResumen.TabIndex = 1;
             this.VentasLblResumen.Text = "Resumen del sistema";
             this.VentasLblResumen.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            //
+            // 
             // VentasLblValorKpi1
-            //
+            // 
             this.VentasLblValorKpi1.BackColor = System.Drawing.Color.Transparent;
             this.VentasLblValorKpi1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.VentasLblValorKpi1.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
@@ -193,9 +224,9 @@ namespace CapaVista_Ventas
             this.VentasLblValorKpi1.TabIndex = 1;
             this.VentasLblValorKpi1.Text = "—";
             this.VentasLblValorKpi1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            //
+            // 
             // VentasLblKpi1
-            //
+            // 
             this.VentasLblKpi1.BackColor = System.Drawing.Color.Transparent;
             this.VentasLblKpi1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.VentasLblKpi1.Font = new System.Drawing.Font("Tahoma", 10.5F);
@@ -206,9 +237,9 @@ namespace CapaVista_Ventas
             this.VentasLblKpi1.TabIndex = 2;
             this.VentasLblKpi1.Text = "Ventas del día";
             this.VentasLblKpi1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            //
+            // 
             // VentasLblValorKpi2
-            //
+            // 
             this.VentasLblValorKpi2.BackColor = System.Drawing.Color.Transparent;
             this.VentasLblValorKpi2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.VentasLblValorKpi2.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
@@ -219,9 +250,9 @@ namespace CapaVista_Ventas
             this.VentasLblValorKpi2.TabIndex = 1;
             this.VentasLblValorKpi2.Text = "—";
             this.VentasLblValorKpi2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            //
+            // 
             // VentasLblKpi2
-            //
+            // 
             this.VentasLblKpi2.BackColor = System.Drawing.Color.Transparent;
             this.VentasLblKpi2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.VentasLblKpi2.Font = new System.Drawing.Font("Tahoma", 10.5F);
@@ -232,9 +263,9 @@ namespace CapaVista_Ventas
             this.VentasLblKpi2.TabIndex = 2;
             this.VentasLblKpi2.Text = "Saldo por cobrar";
             this.VentasLblKpi2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            //
+            // 
             // VentasLblValorKpi3
-            //
+            // 
             this.VentasLblValorKpi3.BackColor = System.Drawing.Color.Transparent;
             this.VentasLblValorKpi3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.VentasLblValorKpi3.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
@@ -245,9 +276,9 @@ namespace CapaVista_Ventas
             this.VentasLblValorKpi3.TabIndex = 1;
             this.VentasLblValorKpi3.Text = "—";
             this.VentasLblValorKpi3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            //
+            // 
             // VentasLblKpi3
-            //
+            // 
             this.VentasLblKpi3.BackColor = System.Drawing.Color.Transparent;
             this.VentasLblKpi3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.VentasLblKpi3.Font = new System.Drawing.Font("Tahoma", 10.5F);
@@ -258,9 +289,9 @@ namespace CapaVista_Ventas
             this.VentasLblKpi3.TabIndex = 2;
             this.VentasLblKpi3.Text = "Clientes activos";
             this.VentasLblKpi3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            //
+            // 
             // VentasLblValorKpi4
-            //
+            // 
             this.VentasLblValorKpi4.BackColor = System.Drawing.Color.Transparent;
             this.VentasLblValorKpi4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.VentasLblValorKpi4.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
@@ -271,9 +302,9 @@ namespace CapaVista_Ventas
             this.VentasLblValorKpi4.TabIndex = 1;
             this.VentasLblValorKpi4.Text = "—";
             this.VentasLblValorKpi4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            //
+            // 
             // VentasLblKpi4
-            //
+            // 
             this.VentasLblKpi4.BackColor = System.Drawing.Color.Transparent;
             this.VentasLblKpi4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.VentasLblKpi4.Font = new System.Drawing.Font("Tahoma", 10.5F);
@@ -284,9 +315,9 @@ namespace CapaVista_Ventas
             this.VentasLblKpi4.TabIndex = 2;
             this.VentasLblKpi4.Text = "Facturas pendientes";
             this.VentasLblKpi4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            //
+            // 
             // VentasLblValorKpi5
-            //
+            // 
             this.VentasLblValorKpi5.BackColor = System.Drawing.Color.Transparent;
             this.VentasLblValorKpi5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.VentasLblValorKpi5.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
@@ -297,9 +328,9 @@ namespace CapaVista_Ventas
             this.VentasLblValorKpi5.TabIndex = 1;
             this.VentasLblValorKpi5.Text = "—";
             this.VentasLblValorKpi5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            //
+            // 
             // VentasLblKpi5
-            //
+            // 
             this.VentasLblKpi5.BackColor = System.Drawing.Color.Transparent;
             this.VentasLblKpi5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.VentasLblKpi5.Font = new System.Drawing.Font("Tahoma", 10.5F);
@@ -310,9 +341,9 @@ namespace CapaVista_Ventas
             this.VentasLblKpi5.TabIndex = 2;
             this.VentasLblKpi5.Text = "Pagos del día";
             this.VentasLblKpi5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            //
+            // 
             // VentasLblValorKpi6
-            //
+            // 
             this.VentasLblValorKpi6.BackColor = System.Drawing.Color.Transparent;
             this.VentasLblValorKpi6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.VentasLblValorKpi6.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
@@ -323,9 +354,9 @@ namespace CapaVista_Ventas
             this.VentasLblValorKpi6.TabIndex = 1;
             this.VentasLblValorKpi6.Text = "—";
             this.VentasLblValorKpi6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            //
+            // 
             // VentasLblKpi6
-            //
+            // 
             this.VentasLblKpi6.BackColor = System.Drawing.Color.Transparent;
             this.VentasLblKpi6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.VentasLblKpi6.Font = new System.Drawing.Font("Tahoma", 10.5F);
@@ -336,35 +367,35 @@ namespace CapaVista_Ventas
             this.VentasLblKpi6.TabIndex = 2;
             this.VentasLblKpi6.Text = "Pedidos pendientes";
             this.VentasLblKpi6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            //
+            // 
             // VentasLblInformacion
-            //
+            // 
             this.VentasLblInformacion.BackColor = System.Drawing.Color.Transparent;
             this.VentasLblInformacion.Dock = System.Windows.Forms.DockStyle.Fill;
             this.VentasLblInformacion.Font = new System.Drawing.Font("Tahoma", 11F);
             this.VentasLblInformacion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
             this.VentasLblInformacion.Location = new System.Drawing.Point(3, 0);
             this.VentasLblInformacion.Name = "VentasLblInformacion";
-            this.VentasLblInformacion.Size = new System.Drawing.Size(688, 64);
+            this.VentasLblInformacion.Size = new System.Drawing.Size(688, 48);
             this.VentasLblInformacion.TabIndex = 0;
             this.VentasLblInformacion.Text = "Información del módulo\nPrecios, ventas, pagos y seguimiento de clientes.";
             this.VentasLblInformacion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            //
+            // 
             // VentasLblIntegracion
-            //
+            // 
             this.VentasLblIntegracion.BackColor = System.Drawing.Color.Transparent;
             this.VentasLblIntegracion.Dock = System.Windows.Forms.DockStyle.Fill;
             this.VentasLblIntegracion.Font = new System.Drawing.Font("Tahoma", 10F);
             this.VentasLblIntegracion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
             this.VentasLblIntegracion.Location = new System.Drawing.Point(697, 0);
             this.VentasLblIntegracion.Name = "VentasLblIntegracion";
-            this.VentasLblIntegracion.Size = new System.Drawing.Size(458, 64);
+            this.VentasLblIntegracion.Size = new System.Drawing.Size(458, 48);
             this.VentasLblIntegracion.TabIndex = 1;
             this.VentasLblIntegracion.Text = "Integración\nIndicadores pendientes de datos del controlador.";
             this.VentasLblIntegracion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            //
+            // 
             // VentasPbKpi1
-            //
+            // 
             this.VentasPbKpi1.BackColor = System.Drawing.Color.Transparent;
             this.VentasPbKpi1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.VentasPbKpi1.Image = global::CapaVista_Ventas.Properties.Resources.IndicadorVentas;
@@ -374,9 +405,9 @@ namespace CapaVista_Ventas
             this.VentasPbKpi1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.VentasPbKpi1.TabIndex = 0;
             this.VentasPbKpi1.TabStop = false;
-            //
+            // 
             // VentasPbKpi2
-            //
+            // 
             this.VentasPbKpi2.BackColor = System.Drawing.Color.Transparent;
             this.VentasPbKpi2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.VentasPbKpi2.Image = global::CapaVista_Ventas.Properties.Resources.IndicadorVentas;
@@ -386,9 +417,9 @@ namespace CapaVista_Ventas
             this.VentasPbKpi2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.VentasPbKpi2.TabIndex = 0;
             this.VentasPbKpi2.TabStop = false;
-            //
+            // 
             // VentasPbKpi3
-            //
+            // 
             this.VentasPbKpi3.BackColor = System.Drawing.Color.Transparent;
             this.VentasPbKpi3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.VentasPbKpi3.Image = global::CapaVista_Ventas.Properties.Resources.IndicadorVentas;
@@ -398,9 +429,9 @@ namespace CapaVista_Ventas
             this.VentasPbKpi3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.VentasPbKpi3.TabIndex = 0;
             this.VentasPbKpi3.TabStop = false;
-            //
+            // 
             // VentasPbKpi4
-            //
+            // 
             this.VentasPbKpi4.BackColor = System.Drawing.Color.Transparent;
             this.VentasPbKpi4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.VentasPbKpi4.Image = global::CapaVista_Ventas.Properties.Resources.IndicadorVentas;
@@ -410,9 +441,9 @@ namespace CapaVista_Ventas
             this.VentasPbKpi4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.VentasPbKpi4.TabIndex = 0;
             this.VentasPbKpi4.TabStop = false;
-            //
+            // 
             // VentasPbKpi5
-            //
+            // 
             this.VentasPbKpi5.BackColor = System.Drawing.Color.Transparent;
             this.VentasPbKpi5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.VentasPbKpi5.Image = global::CapaVista_Ventas.Properties.Resources.IndicadorVentas;
@@ -422,9 +453,9 @@ namespace CapaVista_Ventas
             this.VentasPbKpi5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.VentasPbKpi5.TabIndex = 0;
             this.VentasPbKpi5.TabStop = false;
-            //
+            // 
             // VentasPbKpi6
-            //
+            // 
             this.VentasPbKpi6.BackColor = System.Drawing.Color.Transparent;
             this.VentasPbKpi6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.VentasPbKpi6.Image = global::CapaVista_Ventas.Properties.Resources.IndicadorVentas;
@@ -434,9 +465,9 @@ namespace CapaVista_Ventas
             this.VentasPbKpi6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.VentasPbKpi6.TabIndex = 0;
             this.VentasPbKpi6.TabStop = false;
-            //
+            // 
             // VentasPnlPrincipal
-            //
+            // 
             this.VentasPnlPrincipal.Controls.Add(this.VentasPnlNavegador);
             this.VentasPnlPrincipal.Controls.Add(this.VentasTlpContenido);
             this.VentasPnlPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -444,23 +475,26 @@ namespace CapaVista_Ventas
             this.VentasPnlPrincipal.Name = "VentasPnlPrincipal";
             this.VentasPnlPrincipal.Size = new System.Drawing.Size(1554, 1055);
             this.VentasPnlPrincipal.TabIndex = 0;
-            //
+            // 
             // VentasPnlNavegador
-            //
+            // 
+            this.VentasPnlNavegador.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.VentasPnlNavegador.BackColor = System.Drawing.Color.Transparent;
             this.VentasPnlNavegador.BackgroundImage = global::CapaVista_Ventas.Properties.Resources.FondoNavegadorVentas;
             this.VentasPnlNavegador.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.VentasPnlNavegador.Controls.Add(this.VentasTlpMenu);
-            this.VentasPnlNavegador.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left;
             this.VentasPnlNavegador.Location = new System.Drawing.Point(14, 14);
             this.VentasPnlNavegador.Margin = new System.Windows.Forms.Padding(0);
             this.VentasPnlNavegador.Name = "VentasPnlNavegador";
             this.VentasPnlNavegador.Padding = new System.Windows.Forms.Padding(6, 8, 6, 37);
             this.VentasPnlNavegador.Size = new System.Drawing.Size(270, 1027);
             this.VentasPnlNavegador.TabIndex = 0;
-            //
+            // 
             // VentasTlpMenu
-            //
+            // 
+            this.VentasTlpMenu.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.VentasTlpMenu.BackColor = System.Drawing.Color.Transparent;
             this.VentasTlpMenu.ColumnCount = 1;
             this.VentasTlpMenu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 258F));
@@ -477,7 +511,6 @@ namespace CapaVista_Ventas
             this.VentasTlpMenu.Controls.Add(this.VentasBtnMantenimientos, 0, 10);
             this.VentasTlpMenu.Controls.Add(this.VentasBtnCierreMovimientos, 0, 11);
             this.VentasTlpMenu.Controls.Add(this.VentasBtnSalir, 0, 12);
-            this.VentasTlpMenu.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left;
             this.VentasTlpMenu.Location = new System.Drawing.Point(6, 8);
             this.VentasTlpMenu.Name = "VentasTlpMenu";
             this.VentasTlpMenu.RowCount = 13;
@@ -491,27 +524,27 @@ namespace CapaVista_Ventas
             this.VentasTlpMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.333333F));
             this.VentasTlpMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.333333F));
             this.VentasTlpMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.333333F));
-            this.VentasTlpMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.333333F));
+            this.VentasTlpMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 54F));
             this.VentasTlpMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.333333F));
             this.VentasTlpMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.333333F));
             this.VentasTlpMenu.Size = new System.Drawing.Size(258, 982);
             this.VentasTlpMenu.TabIndex = 0;
-            //
+            // 
             // VentasPbLogo
-            //
+            // 
             this.VentasPbLogo.BackColor = System.Drawing.Color.Transparent;
             this.VentasPbLogo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.VentasPbLogo.Image = global::CapaVista_Ventas.Properties.Resources.LogoEmpresa;
-            this.VentasPbLogo.Location = new System.Drawing.Point(44, 0);
+            this.VentasPbLogo.Location = new System.Drawing.Point(64, 0);
             this.VentasPbLogo.Margin = new System.Windows.Forms.Padding(64, 0, 64, 10);
             this.VentasPbLogo.Name = "VentasPbLogo";
-            this.VentasPbLogo.Size = new System.Drawing.Size(170, 117);
+            this.VentasPbLogo.Size = new System.Drawing.Size(130, 90);
             this.VentasPbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.VentasPbLogo.TabIndex = 0;
             this.VentasPbLogo.TabStop = false;
-            //
+            // 
             // VentasBtnInicio
-            //
+            // 
             this.VentasBtnInicio.AccessibleName = "Inicio";
             this.VentasBtnInicio.BackColor = System.Drawing.Color.Transparent;
             this.VentasBtnInicio.BackgroundImage = global::CapaVista_Ventas.Properties.Resources.BotonMenuActivoVentas;
@@ -524,27 +557,27 @@ namespace CapaVista_Ventas
             this.VentasBtnInicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.VentasBtnInicio.Font = new System.Drawing.Font("Segoe UI", 10.5F);
             this.VentasBtnInicio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
-            this.VentasBtnInicio.Location = new System.Drawing.Point(0, 129);
-            this.VentasBtnInicio.Margin = new System.Windows.Forms.Padding(0, 2, 0, 2);
-            this.VentasBtnInicio.Name = "VentasBtnInicio";
             this.VentasBtnInicio.Image = global::CapaVista_Ventas.Properties.Resources.IconoInicioVentas;
             this.VentasBtnInicio.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.VentasBtnInicio.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.VentasBtnInicio.Location = new System.Drawing.Point(0, 102);
+            this.VentasBtnInicio.Margin = new System.Windows.Forms.Padding(0, 2, 0, 2);
+            this.VentasBtnInicio.Name = "VentasBtnInicio";
             this.VentasBtnInicio.Padding = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.VentasBtnInicio.Size = new System.Drawing.Size(258, 73);
+            this.VentasBtnInicio.Size = new System.Drawing.Size(258, 71);
             this.VentasBtnInicio.TabIndex = 0;
             this.VentasBtnInicio.Tag = "Inicio";
             this.VentasBtnInicio.Text = "Inicio";
             this.VentasBtnInicio.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.VentasBtnInicio.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.VentasTtpMenu.SetToolTip(this.VentasBtnInicio, "Inicio");
             this.VentasBtnInicio.UseCompatibleTextRendering = true;
             this.VentasBtnInicio.UseVisualStyleBackColor = false;
             this.VentasBtnInicio.Click += new System.EventHandler(this.VentasBtnInicio_Click);
             this.VentasBtnInicio.MouseEnter += new System.EventHandler(this.VentasBtnOpcion_MouseEnter);
             this.VentasBtnInicio.MouseLeave += new System.EventHandler(this.VentasBtnOpcion_MouseLeave);
-            //
+            // 
             // VentasBtnListadoPrecios
-            //
+            // 
             this.VentasBtnListadoPrecios.AccessibleName = "Listado de precios";
             this.VentasBtnListadoPrecios.BackColor = System.Drawing.Color.Transparent;
             this.VentasBtnListadoPrecios.BackgroundImage = global::CapaVista_Ventas.Properties.Resources.BotonMenuNormalVentas;
@@ -557,27 +590,27 @@ namespace CapaVista_Ventas
             this.VentasBtnListadoPrecios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.VentasBtnListadoPrecios.Font = new System.Drawing.Font("Segoe UI", 10.5F);
             this.VentasBtnListadoPrecios.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
-            this.VentasBtnListadoPrecios.Location = new System.Drawing.Point(0, 206);
-            this.VentasBtnListadoPrecios.Margin = new System.Windows.Forms.Padding(0, 2, 0, 2);
-            this.VentasBtnListadoPrecios.Name = "VentasBtnListadoPrecios";
             this.VentasBtnListadoPrecios.Image = global::CapaVista_Ventas.Properties.Resources.IconoListadoPreciosVentas;
             this.VentasBtnListadoPrecios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.VentasBtnListadoPrecios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.VentasBtnListadoPrecios.Location = new System.Drawing.Point(0, 177);
+            this.VentasBtnListadoPrecios.Margin = new System.Windows.Forms.Padding(0, 2, 0, 2);
+            this.VentasBtnListadoPrecios.Name = "VentasBtnListadoPrecios";
             this.VentasBtnListadoPrecios.Padding = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.VentasBtnListadoPrecios.Size = new System.Drawing.Size(258, 73);
+            this.VentasBtnListadoPrecios.Size = new System.Drawing.Size(258, 71);
             this.VentasBtnListadoPrecios.TabIndex = 1;
             this.VentasBtnListadoPrecios.Tag = "ListadoPrecios";
             this.VentasBtnListadoPrecios.Text = "Listado de precios";
             this.VentasBtnListadoPrecios.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.VentasBtnListadoPrecios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.VentasTtpMenu.SetToolTip(this.VentasBtnListadoPrecios, "Listado de precios");
             this.VentasBtnListadoPrecios.UseCompatibleTextRendering = true;
             this.VentasBtnListadoPrecios.UseVisualStyleBackColor = false;
             this.VentasBtnListadoPrecios.Click += new System.EventHandler(this.VentasBtnListadoPrecios_Click);
             this.VentasBtnListadoPrecios.MouseEnter += new System.EventHandler(this.VentasBtnOpcion_MouseEnter);
             this.VentasBtnListadoPrecios.MouseLeave += new System.EventHandler(this.VentasBtnOpcion_MouseLeave);
-            //
+            // 
             // VentasBtnMovimientosClientes
-            //
+            // 
             this.VentasBtnMovimientosClientes.AccessibleName = "Movimientos de clientes";
             this.VentasBtnMovimientosClientes.BackColor = System.Drawing.Color.Transparent;
             this.VentasBtnMovimientosClientes.BackgroundImage = global::CapaVista_Ventas.Properties.Resources.BotonMenuNormalVentas;
@@ -590,27 +623,27 @@ namespace CapaVista_Ventas
             this.VentasBtnMovimientosClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.VentasBtnMovimientosClientes.Font = new System.Drawing.Font("Segoe UI", 10.5F);
             this.VentasBtnMovimientosClientes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
-            this.VentasBtnMovimientosClientes.Location = new System.Drawing.Point(0, 283);
-            this.VentasBtnMovimientosClientes.Margin = new System.Windows.Forms.Padding(0, 2, 0, 2);
-            this.VentasBtnMovimientosClientes.Name = "VentasBtnMovimientosClientes";
             this.VentasBtnMovimientosClientes.Image = global::CapaVista_Ventas.Properties.Resources.IconoMovimientosClientesVentas;
             this.VentasBtnMovimientosClientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.VentasBtnMovimientosClientes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.VentasBtnMovimientosClientes.Location = new System.Drawing.Point(0, 252);
+            this.VentasBtnMovimientosClientes.Margin = new System.Windows.Forms.Padding(0, 2, 0, 2);
+            this.VentasBtnMovimientosClientes.Name = "VentasBtnMovimientosClientes";
             this.VentasBtnMovimientosClientes.Padding = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.VentasBtnMovimientosClientes.Size = new System.Drawing.Size(258, 73);
+            this.VentasBtnMovimientosClientes.Size = new System.Drawing.Size(258, 71);
             this.VentasBtnMovimientosClientes.TabIndex = 2;
             this.VentasBtnMovimientosClientes.Tag = "MovimientosClientes";
             this.VentasBtnMovimientosClientes.Text = "Movimientos de clientes";
             this.VentasBtnMovimientosClientes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.VentasBtnMovimientosClientes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.VentasTtpMenu.SetToolTip(this.VentasBtnMovimientosClientes, "Movimientos de clientes");
             this.VentasBtnMovimientosClientes.UseCompatibleTextRendering = true;
             this.VentasBtnMovimientosClientes.UseVisualStyleBackColor = false;
             this.VentasBtnMovimientosClientes.Click += new System.EventHandler(this.VentasBtnMovimientosClientes_Click);
             this.VentasBtnMovimientosClientes.MouseEnter += new System.EventHandler(this.VentasBtnOpcion_MouseEnter);
             this.VentasBtnMovimientosClientes.MouseLeave += new System.EventHandler(this.VentasBtnOpcion_MouseLeave);
-            //
+            // 
             // VentasBtnRecepcionPagos
-            //
+            // 
             this.VentasBtnRecepcionPagos.AccessibleName = "Recepción de pagos";
             this.VentasBtnRecepcionPagos.BackColor = System.Drawing.Color.Transparent;
             this.VentasBtnRecepcionPagos.BackgroundImage = global::CapaVista_Ventas.Properties.Resources.BotonMenuNormalVentas;
@@ -623,27 +656,27 @@ namespace CapaVista_Ventas
             this.VentasBtnRecepcionPagos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.VentasBtnRecepcionPagos.Font = new System.Drawing.Font("Segoe UI", 10.5F);
             this.VentasBtnRecepcionPagos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
-            this.VentasBtnRecepcionPagos.Location = new System.Drawing.Point(0, 437);
-            this.VentasBtnRecepcionPagos.Margin = new System.Windows.Forms.Padding(0, 2, 0, 2);
-            this.VentasBtnRecepcionPagos.Name = "VentasBtnRecepcionPagos";
             this.VentasBtnRecepcionPagos.Image = global::CapaVista_Ventas.Properties.Resources.IconoRecepcionPagosVentas;
             this.VentasBtnRecepcionPagos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.VentasBtnRecepcionPagos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.VentasBtnRecepcionPagos.Location = new System.Drawing.Point(0, 327);
+            this.VentasBtnRecepcionPagos.Margin = new System.Windows.Forms.Padding(0, 2, 0, 2);
+            this.VentasBtnRecepcionPagos.Name = "VentasBtnRecepcionPagos";
             this.VentasBtnRecepcionPagos.Padding = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.VentasBtnRecepcionPagos.Size = new System.Drawing.Size(258, 73);
+            this.VentasBtnRecepcionPagos.Size = new System.Drawing.Size(258, 71);
             this.VentasBtnRecepcionPagos.TabIndex = 3;
             this.VentasBtnRecepcionPagos.Tag = "RecepcionPagos";
             this.VentasBtnRecepcionPagos.Text = "Recepción de pagos";
             this.VentasBtnRecepcionPagos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.VentasBtnRecepcionPagos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.VentasTtpMenu.SetToolTip(this.VentasBtnRecepcionPagos, "Recepción de pagos");
             this.VentasBtnRecepcionPagos.UseCompatibleTextRendering = true;
             this.VentasBtnRecepcionPagos.UseVisualStyleBackColor = false;
             this.VentasBtnRecepcionPagos.Click += new System.EventHandler(this.VentasBtnRecepcionPagos_Click);
             this.VentasBtnRecepcionPagos.MouseEnter += new System.EventHandler(this.VentasBtnOpcion_MouseEnter);
             this.VentasBtnRecepcionPagos.MouseLeave += new System.EventHandler(this.VentasBtnOpcion_MouseLeave);
-            //
+            // 
             // VentasBtnReportes
-            //
+            // 
             this.VentasBtnReportes.AccessibleName = "Reportes";
             this.VentasBtnReportes.BackColor = System.Drawing.Color.Transparent;
             this.VentasBtnReportes.BackgroundImage = global::CapaVista_Ventas.Properties.Resources.BotonMenuNormalVentas;
@@ -656,27 +689,27 @@ namespace CapaVista_Ventas
             this.VentasBtnReportes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.VentasBtnReportes.Font = new System.Drawing.Font("Segoe UI", 10.5F);
             this.VentasBtnReportes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
-            this.VentasBtnReportes.Location = new System.Drawing.Point(0, 514);
-            this.VentasBtnReportes.Margin = new System.Windows.Forms.Padding(0, 2, 0, 2);
-            this.VentasBtnReportes.Name = "VentasBtnReportes";
             this.VentasBtnReportes.Image = global::CapaVista_Ventas.Properties.Resources.IconoReportesVentas;
             this.VentasBtnReportes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.VentasBtnReportes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.VentasBtnReportes.Location = new System.Drawing.Point(0, 402);
+            this.VentasBtnReportes.Margin = new System.Windows.Forms.Padding(0, 2, 0, 2);
+            this.VentasBtnReportes.Name = "VentasBtnReportes";
             this.VentasBtnReportes.Padding = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.VentasBtnReportes.Size = new System.Drawing.Size(258, 73);
+            this.VentasBtnReportes.Size = new System.Drawing.Size(258, 71);
             this.VentasBtnReportes.TabIndex = 4;
             this.VentasBtnReportes.Tag = "Reportes";
             this.VentasBtnReportes.Text = "Reportes";
             this.VentasBtnReportes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.VentasBtnReportes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.VentasTtpMenu.SetToolTip(this.VentasBtnReportes, "Reportes");
             this.VentasBtnReportes.UseCompatibleTextRendering = true;
             this.VentasBtnReportes.UseVisualStyleBackColor = false;
             this.VentasBtnReportes.Click += new System.EventHandler(this.VentasBtnReportes_Click);
             this.VentasBtnReportes.MouseEnter += new System.EventHandler(this.VentasBtnOpcion_MouseEnter);
             this.VentasBtnReportes.MouseLeave += new System.EventHandler(this.VentasBtnOpcion_MouseLeave);
-            //
+            // 
             // VentasBtnCotizaciones
-            //
+            // 
             this.VentasBtnCotizaciones.AccessibleName = "Cotizaciones";
             this.VentasBtnCotizaciones.BackColor = System.Drawing.Color.Transparent;
             this.VentasBtnCotizaciones.BackgroundImage = global::CapaVista_Ventas.Properties.Resources.BotonMenuNormalVentas;
@@ -689,27 +722,27 @@ namespace CapaVista_Ventas
             this.VentasBtnCotizaciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.VentasBtnCotizaciones.Font = new System.Drawing.Font("Segoe UI", 10.5F);
             this.VentasBtnCotizaciones.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
-            this.VentasBtnCotizaciones.Location = new System.Drawing.Point(0, 591);
-            this.VentasBtnCotizaciones.Margin = new System.Windows.Forms.Padding(0, 2, 0, 2);
-            this.VentasBtnCotizaciones.Name = "VentasBtnCotizaciones";
             this.VentasBtnCotizaciones.Image = global::CapaVista_Ventas.Properties.Resources.IconoMovimientosClientesVentas;
             this.VentasBtnCotizaciones.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.VentasBtnCotizaciones.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.VentasBtnCotizaciones.Location = new System.Drawing.Point(0, 477);
+            this.VentasBtnCotizaciones.Margin = new System.Windows.Forms.Padding(0, 2, 0, 2);
+            this.VentasBtnCotizaciones.Name = "VentasBtnCotizaciones";
             this.VentasBtnCotizaciones.Padding = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.VentasBtnCotizaciones.Size = new System.Drawing.Size(258, 73);
+            this.VentasBtnCotizaciones.Size = new System.Drawing.Size(258, 71);
             this.VentasBtnCotizaciones.TabIndex = 5;
             this.VentasBtnCotizaciones.Tag = "Cotizaciones";
             this.VentasBtnCotizaciones.Text = "Cotizaciones";
             this.VentasBtnCotizaciones.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.VentasBtnCotizaciones.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.VentasTtpMenu.SetToolTip(this.VentasBtnCotizaciones, "Cotizaciones");
             this.VentasBtnCotizaciones.UseCompatibleTextRendering = true;
             this.VentasBtnCotizaciones.UseVisualStyleBackColor = false;
             this.VentasBtnCotizaciones.Click += new System.EventHandler(this.VentasBtnCotizaciones_Click);
             this.VentasBtnCotizaciones.MouseEnter += new System.EventHandler(this.VentasBtnOpcion_MouseEnter);
             this.VentasBtnCotizaciones.MouseLeave += new System.EventHandler(this.VentasBtnOpcion_MouseLeave);
-            //
+            // 
             // VentasBtnPedidos
-            //
+            // 
             this.VentasBtnPedidos.AccessibleName = "Pedidos";
             this.VentasBtnPedidos.BackColor = System.Drawing.Color.Transparent;
             this.VentasBtnPedidos.BackgroundImage = global::CapaVista_Ventas.Properties.Resources.BotonMenuNormalVentas;
@@ -722,27 +755,27 @@ namespace CapaVista_Ventas
             this.VentasBtnPedidos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.VentasBtnPedidos.Font = new System.Drawing.Font("Segoe UI", 10.5F);
             this.VentasBtnPedidos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
-            this.VentasBtnPedidos.Location = new System.Drawing.Point(0, 591);
-            this.VentasBtnPedidos.Margin = new System.Windows.Forms.Padding(0, 2, 0, 2);
-            this.VentasBtnPedidos.Name = "VentasBtnPedidos";
             this.VentasBtnPedidos.Image = global::CapaVista_Ventas.Properties.Resources.IconoRecepcionPagosVentas;
             this.VentasBtnPedidos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.VentasBtnPedidos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.VentasBtnPedidos.Location = new System.Drawing.Point(0, 552);
+            this.VentasBtnPedidos.Margin = new System.Windows.Forms.Padding(0, 2, 0, 2);
+            this.VentasBtnPedidos.Name = "VentasBtnPedidos";
             this.VentasBtnPedidos.Padding = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.VentasBtnPedidos.Size = new System.Drawing.Size(258, 73);
+            this.VentasBtnPedidos.Size = new System.Drawing.Size(258, 71);
             this.VentasBtnPedidos.TabIndex = 6;
             this.VentasBtnPedidos.Tag = "Pedidos";
             this.VentasBtnPedidos.Text = "Pedidos";
             this.VentasBtnPedidos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.VentasBtnPedidos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.VentasTtpMenu.SetToolTip(this.VentasBtnPedidos, "Pedidos");
             this.VentasBtnPedidos.UseCompatibleTextRendering = true;
             this.VentasBtnPedidos.UseVisualStyleBackColor = false;
             this.VentasBtnPedidos.Click += new System.EventHandler(this.VentasBtnPedidos_Click);
             this.VentasBtnPedidos.MouseEnter += new System.EventHandler(this.VentasBtnOpcion_MouseEnter);
             this.VentasBtnPedidos.MouseLeave += new System.EventHandler(this.VentasBtnOpcion_MouseLeave);
-            //
+            // 
             // VentasBtnFacturas
-            //
+            // 
             this.VentasBtnFacturas.AccessibleName = "Facturas";
             this.VentasBtnFacturas.BackColor = System.Drawing.Color.Transparent;
             this.VentasBtnFacturas.BackgroundImage = global::CapaVista_Ventas.Properties.Resources.BotonMenuNormalVentas;
@@ -755,27 +788,27 @@ namespace CapaVista_Ventas
             this.VentasBtnFacturas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.VentasBtnFacturas.Font = new System.Drawing.Font("Segoe UI", 10.5F);
             this.VentasBtnFacturas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
-            this.VentasBtnFacturas.Location = new System.Drawing.Point(0, 591);
-            this.VentasBtnFacturas.Margin = new System.Windows.Forms.Padding(0, 2, 0, 2);
-            this.VentasBtnFacturas.Name = "VentasBtnFacturas";
             this.VentasBtnFacturas.Image = global::CapaVista_Ventas.Properties.Resources.IconoCotizacionesPedidosFacturasVentas;
             this.VentasBtnFacturas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.VentasBtnFacturas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.VentasBtnFacturas.Location = new System.Drawing.Point(0, 627);
+            this.VentasBtnFacturas.Margin = new System.Windows.Forms.Padding(0, 2, 0, 2);
+            this.VentasBtnFacturas.Name = "VentasBtnFacturas";
             this.VentasBtnFacturas.Padding = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.VentasBtnFacturas.Size = new System.Drawing.Size(258, 73);
+            this.VentasBtnFacturas.Size = new System.Drawing.Size(258, 71);
             this.VentasBtnFacturas.TabIndex = 7;
             this.VentasBtnFacturas.Tag = "Facturas";
             this.VentasBtnFacturas.Text = "Facturas";
             this.VentasBtnFacturas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.VentasBtnFacturas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.VentasTtpMenu.SetToolTip(this.VentasBtnFacturas, "Facturas");
             this.VentasBtnFacturas.UseCompatibleTextRendering = true;
             this.VentasBtnFacturas.UseVisualStyleBackColor = false;
             this.VentasBtnFacturas.Click += new System.EventHandler(this.VentasBtnFacturas_Click);
             this.VentasBtnFacturas.MouseEnter += new System.EventHandler(this.VentasBtnOpcion_MouseEnter);
             this.VentasBtnFacturas.MouseLeave += new System.EventHandler(this.VentasBtnOpcion_MouseLeave);
-            //
+            // 
             // VentasBtnComisionesVendedores
-            //
+            // 
             this.VentasBtnComisionesVendedores.AccessibleName = "Comisiones de vendedores";
             this.VentasBtnComisionesVendedores.BackColor = System.Drawing.Color.Transparent;
             this.VentasBtnComisionesVendedores.BackgroundImage = global::CapaVista_Ventas.Properties.Resources.BotonMenuNormalVentas;
@@ -788,27 +821,27 @@ namespace CapaVista_Ventas
             this.VentasBtnComisionesVendedores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.VentasBtnComisionesVendedores.Font = new System.Drawing.Font("Segoe UI", 10.5F);
             this.VentasBtnComisionesVendedores.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
-            this.VentasBtnComisionesVendedores.Location = new System.Drawing.Point(0, 668);
-            this.VentasBtnComisionesVendedores.Margin = new System.Windows.Forms.Padding(0, 2, 0, 2);
-            this.VentasBtnComisionesVendedores.Name = "VentasBtnComisionesVendedores";
             this.VentasBtnComisionesVendedores.Image = global::CapaVista_Ventas.Properties.Resources.IconoComisionesVendedoresVentas;
             this.VentasBtnComisionesVendedores.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.VentasBtnComisionesVendedores.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.VentasBtnComisionesVendedores.Location = new System.Drawing.Point(0, 702);
+            this.VentasBtnComisionesVendedores.Margin = new System.Windows.Forms.Padding(0, 2, 0, 2);
+            this.VentasBtnComisionesVendedores.Name = "VentasBtnComisionesVendedores";
             this.VentasBtnComisionesVendedores.Padding = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.VentasBtnComisionesVendedores.Size = new System.Drawing.Size(258, 73);
+            this.VentasBtnComisionesVendedores.Size = new System.Drawing.Size(258, 71);
             this.VentasBtnComisionesVendedores.TabIndex = 8;
             this.VentasBtnComisionesVendedores.Tag = "ComisionesVendedores";
             this.VentasBtnComisionesVendedores.Text = "Comisiones de vendedores";
             this.VentasBtnComisionesVendedores.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.VentasBtnComisionesVendedores.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.VentasTtpMenu.SetToolTip(this.VentasBtnComisionesVendedores, "Comisiones de vendedores");
             this.VentasBtnComisionesVendedores.UseCompatibleTextRendering = true;
             this.VentasBtnComisionesVendedores.UseVisualStyleBackColor = false;
             this.VentasBtnComisionesVendedores.Click += new System.EventHandler(this.VentasBtnComisionesVendedores_Click);
             this.VentasBtnComisionesVendedores.MouseEnter += new System.EventHandler(this.VentasBtnOpcion_MouseEnter);
             this.VentasBtnComisionesVendedores.MouseLeave += new System.EventHandler(this.VentasBtnOpcion_MouseLeave);
-            //
+            // 
             // VentasBtnMantenimientos
-            //
+            // 
             this.VentasBtnMantenimientos.AccessibleName = "Mantenimientos";
             this.VentasBtnMantenimientos.BackColor = System.Drawing.Color.Transparent;
             this.VentasBtnMantenimientos.BackgroundImage = global::CapaVista_Ventas.Properties.Resources.BotonMenuNormalVentas;
@@ -821,27 +854,28 @@ namespace CapaVista_Ventas
             this.VentasBtnMantenimientos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.VentasBtnMantenimientos.Font = new System.Drawing.Font("Segoe UI", 10.5F);
             this.VentasBtnMantenimientos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
-            this.VentasBtnMantenimientos.Location = new System.Drawing.Point(0, 745);
+            this.VentasBtnMantenimientos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.VentasBtnMantenimientos.ImageKey = "Mantenimientos";
+            this.VentasBtnMantenimientos.ImageList = this.VentasImlMantenimientos;
+            this.VentasBtnMantenimientos.Location = new System.Drawing.Point(0, 777);
             this.VentasBtnMantenimientos.Margin = new System.Windows.Forms.Padding(0, 2, 0, 2);
             this.VentasBtnMantenimientos.Name = "VentasBtnMantenimientos";
-            this.VentasBtnMantenimientos.Image = global::CapaVista_Ventas.Properties.Resources.IconoMantenimientosVentas;
-            this.VentasBtnMantenimientos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.VentasBtnMantenimientos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.VentasBtnMantenimientos.Padding = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.VentasBtnMantenimientos.Size = new System.Drawing.Size(258, 73);
+            this.VentasBtnMantenimientos.Size = new System.Drawing.Size(258, 50);
             this.VentasBtnMantenimientos.TabIndex = 9;
             this.VentasBtnMantenimientos.Tag = "Mantenimientos";
-            this.VentasBtnMantenimientos.Text = "Mantenimientos";
+            this.VentasBtnMantenimientos.Text = "   Mantenimientos";
             this.VentasBtnMantenimientos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.VentasBtnMantenimientos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.VentasTtpMenu.SetToolTip(this.VentasBtnMantenimientos, "Mantenimientos");
             this.VentasBtnMantenimientos.UseCompatibleTextRendering = true;
             this.VentasBtnMantenimientos.UseVisualStyleBackColor = false;
             this.VentasBtnMantenimientos.Click += new System.EventHandler(this.VentasBtnMantenimientos_Click);
             this.VentasBtnMantenimientos.MouseEnter += new System.EventHandler(this.VentasBtnOpcion_MouseEnter);
             this.VentasBtnMantenimientos.MouseLeave += new System.EventHandler(this.VentasBtnOpcion_MouseLeave);
-            //
+            // 
             // VentasBtnCierreMovimientos
-            //
+            // 
             this.VentasBtnCierreMovimientos.AccessibleName = "Cierre de movimientos";
             this.VentasBtnCierreMovimientos.BackColor = System.Drawing.Color.Transparent;
             this.VentasBtnCierreMovimientos.BackgroundImage = global::CapaVista_Ventas.Properties.Resources.BotonMenuNormalVentas;
@@ -854,27 +888,27 @@ namespace CapaVista_Ventas
             this.VentasBtnCierreMovimientos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.VentasBtnCierreMovimientos.Font = new System.Drawing.Font("Segoe UI", 10.5F);
             this.VentasBtnCierreMovimientos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
-            this.VentasBtnCierreMovimientos.Location = new System.Drawing.Point(0, 822);
-            this.VentasBtnCierreMovimientos.Margin = new System.Windows.Forms.Padding(0, 2, 0, 2);
-            this.VentasBtnCierreMovimientos.Name = "VentasBtnCierreMovimientos";
             this.VentasBtnCierreMovimientos.Image = global::CapaVista_Ventas.Properties.Resources.IconoCierreMovimientosVentas;
             this.VentasBtnCierreMovimientos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.VentasBtnCierreMovimientos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.VentasBtnCierreMovimientos.Location = new System.Drawing.Point(0, 831);
+            this.VentasBtnCierreMovimientos.Margin = new System.Windows.Forms.Padding(0, 2, 0, 2);
+            this.VentasBtnCierreMovimientos.Name = "VentasBtnCierreMovimientos";
             this.VentasBtnCierreMovimientos.Padding = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.VentasBtnCierreMovimientos.Size = new System.Drawing.Size(258, 73);
+            this.VentasBtnCierreMovimientos.Size = new System.Drawing.Size(258, 71);
             this.VentasBtnCierreMovimientos.TabIndex = 10;
             this.VentasBtnCierreMovimientos.Tag = "CierreMovimientos";
             this.VentasBtnCierreMovimientos.Text = "Cierre de movimientos";
             this.VentasBtnCierreMovimientos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.VentasBtnCierreMovimientos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.VentasTtpMenu.SetToolTip(this.VentasBtnCierreMovimientos, "Cierre de movimientos");
             this.VentasBtnCierreMovimientos.UseCompatibleTextRendering = true;
             this.VentasBtnCierreMovimientos.UseVisualStyleBackColor = false;
             this.VentasBtnCierreMovimientos.Click += new System.EventHandler(this.VentasBtnCierreMovimientos_Click);
             this.VentasBtnCierreMovimientos.MouseEnter += new System.EventHandler(this.VentasBtnOpcion_MouseEnter);
             this.VentasBtnCierreMovimientos.MouseLeave += new System.EventHandler(this.VentasBtnOpcion_MouseLeave);
-            //
+            // 
             // VentasBtnSalir
-            //
+            // 
             this.VentasBtnSalir.AccessibleName = "Salir";
             this.VentasBtnSalir.BackColor = System.Drawing.Color.Transparent;
             this.VentasBtnSalir.BackgroundImage = global::CapaVista_Ventas.Properties.Resources.BotonMenuNormalVentas;
@@ -887,32 +921,34 @@ namespace CapaVista_Ventas
             this.VentasBtnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.VentasBtnSalir.Font = new System.Drawing.Font("Segoe UI", 10.5F);
             this.VentasBtnSalir.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
-            this.VentasBtnSalir.Location = new System.Drawing.Point(0, 899);
-            this.VentasBtnSalir.Margin = new System.Windows.Forms.Padding(0, 2, 0, 2);
-            this.VentasBtnSalir.Name = "VentasBtnSalir";
             this.VentasBtnSalir.Image = global::CapaVista_Ventas.Properties.Resources.IconoCerrarSesionVentas;
             this.VentasBtnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.VentasBtnSalir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.VentasBtnSalir.Location = new System.Drawing.Point(0, 906);
+            this.VentasBtnSalir.Margin = new System.Windows.Forms.Padding(0, 2, 0, 2);
+            this.VentasBtnSalir.Name = "VentasBtnSalir";
             this.VentasBtnSalir.Padding = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.VentasBtnSalir.Size = new System.Drawing.Size(258, 81);
+            this.VentasBtnSalir.Size = new System.Drawing.Size(258, 74);
             this.VentasBtnSalir.TabIndex = 11;
             this.VentasBtnSalir.Tag = "Salir";
             this.VentasBtnSalir.Text = "Salir";
             this.VentasBtnSalir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.VentasBtnSalir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.VentasTtpMenu.SetToolTip(this.VentasBtnSalir, "Salir");
             this.VentasBtnSalir.UseCompatibleTextRendering = true;
             this.VentasBtnSalir.UseVisualStyleBackColor = false;
             this.VentasBtnSalir.Click += new System.EventHandler(this.VentasBtnSalir_Click);
             this.VentasBtnSalir.MouseEnter += new System.EventHandler(this.VentasBtnOpcion_MouseEnter);
             this.VentasBtnSalir.MouseLeave += new System.EventHandler(this.VentasBtnOpcion_MouseLeave);
-            //
+            // 
             // VentasTlpContenido
-            //
+            // 
+            this.VentasTlpContenido.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.VentasTlpContenido.ColumnCount = 1;
             this.VentasTlpContenido.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.VentasTlpContenido.Controls.Add(this.VentasTlpEncabezado, 0, 0);
             this.VentasTlpContenido.Controls.Add(this.VentasPnlDashboard, 0, 1);
-            this.VentasTlpContenido.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             this.VentasTlpContenido.Location = new System.Drawing.Point(300, 14);
             this.VentasTlpContenido.Margin = new System.Windows.Forms.Padding(0);
             this.VentasTlpContenido.Name = "VentasTlpContenido";
@@ -921,13 +957,13 @@ namespace CapaVista_Ventas
             this.VentasTlpContenido.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.VentasTlpContenido.Size = new System.Drawing.Size(1240, 1027);
             this.VentasTlpContenido.TabIndex = 1;
-            //
+            // 
             // VentasTlpEncabezado
-            //
+            // 
             this.VentasTlpEncabezado.ColumnCount = 3;
             this.VentasTlpEncabezado.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 58F));
-            this.VentasTlpEncabezado.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 62F));
-            this.VentasTlpEncabezado.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 38F));
+            this.VentasTlpEncabezado.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.07823F));
+            this.VentasTlpEncabezado.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 66.92177F));
             this.VentasTlpEncabezado.Controls.Add(this.VentasBtnBurger, 0, 0);
             this.VentasTlpEncabezado.Controls.Add(this.VentasLblUsuario, 1, 0);
             this.VentasTlpEncabezado.Controls.Add(this.VentasLblRol, 2, 0);
@@ -938,9 +974,9 @@ namespace CapaVista_Ventas
             this.VentasTlpEncabezado.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.VentasTlpEncabezado.Size = new System.Drawing.Size(1234, 40);
             this.VentasTlpEncabezado.TabIndex = 0;
-            //
+            // 
             // VentasBtnBurger
-            //
+            // 
             this.VentasBtnBurger.AccessibleName = "Contraer menú";
             this.VentasBtnBurger.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
             this.VentasBtnBurger.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -957,35 +993,35 @@ namespace CapaVista_Ventas
             this.VentasBtnBurger.UseCompatibleTextRendering = true;
             this.VentasBtnBurger.UseVisualStyleBackColor = false;
             this.VentasBtnBurger.Click += new System.EventHandler(this.VentasBtnBurger_Click);
-            //
+            // 
             // VentasLblUsuario
-            //
+            // 
             this.VentasLblUsuario.AutoEllipsis = true;
             this.VentasLblUsuario.Dock = System.Windows.Forms.DockStyle.Fill;
             this.VentasLblUsuario.Font = new System.Drawing.Font("Tahoma", 12F);
             this.VentasLblUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
             this.VentasLblUsuario.Location = new System.Drawing.Point(61, 0);
             this.VentasLblUsuario.Name = "VentasLblUsuario";
-            this.VentasLblUsuario.Size = new System.Drawing.Size(723, 40);
+            this.VentasLblUsuario.Size = new System.Drawing.Size(383, 40);
             this.VentasLblUsuario.TabIndex = 1;
             this.VentasLblUsuario.Text = "Usuario: Sin sesión";
             this.VentasLblUsuario.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            //
+            // 
             // VentasLblRol
-            //
+            // 
             this.VentasLblRol.AutoEllipsis = true;
             this.VentasLblRol.Dock = System.Windows.Forms.DockStyle.Fill;
             this.VentasLblRol.Font = new System.Drawing.Font("Tahoma", 12F);
             this.VentasLblRol.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(29)))), ((int)(((byte)(74)))));
-            this.VentasLblRol.Location = new System.Drawing.Point(790, 0);
+            this.VentasLblRol.Location = new System.Drawing.Point(450, 0);
             this.VentasLblRol.Name = "VentasLblRol";
-            this.VentasLblRol.Size = new System.Drawing.Size(441, 40);
+            this.VentasLblRol.Size = new System.Drawing.Size(781, 40);
             this.VentasLblRol.TabIndex = 2;
             this.VentasLblRol.Text = "Rol: Sin asignar";
             this.VentasLblRol.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            //
+            // 
             // VentasPnlDashboard
-            //
+            // 
             this.VentasPnlDashboard.BackColor = System.Drawing.Color.Transparent;
             this.VentasPnlDashboard.BackgroundImage = global::CapaVista_Ventas.Properties.Resources.FondoDashboardVentas;
             this.VentasPnlDashboard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -997,9 +1033,9 @@ namespace CapaVista_Ventas
             this.VentasPnlDashboard.Padding = new System.Windows.Forms.Padding(24, 18, 24, 26);
             this.VentasPnlDashboard.Size = new System.Drawing.Size(1240, 976);
             this.VentasPnlDashboard.TabIndex = 1;
-            //
+            // 
             // VentasTlpDashboard
-            //
+            // 
             this.VentasTlpDashboard.BackColor = System.Drawing.Color.Transparent;
             this.VentasTlpDashboard.ColumnCount = 1;
             this.VentasTlpDashboard.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -1017,9 +1053,9 @@ namespace CapaVista_Ventas
             this.VentasTlpDashboard.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 72F));
             this.VentasTlpDashboard.Size = new System.Drawing.Size(1192, 932);
             this.VentasTlpDashboard.TabIndex = 0;
-            //
+            // 
             // VentasTlpHero
-            //
+            // 
             this.VentasTlpHero.BackColor = System.Drawing.Color.Transparent;
             this.VentasTlpHero.ColumnCount = 3;
             this.VentasTlpHero.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 58F));
@@ -1033,11 +1069,11 @@ namespace CapaVista_Ventas
             this.VentasTlpHero.Name = "VentasTlpHero";
             this.VentasTlpHero.RowCount = 1;
             this.VentasTlpHero.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.VentasTlpHero.Size = new System.Drawing.Size(1186, 617);
+            this.VentasTlpHero.Size = new System.Drawing.Size(1186, 633);
             this.VentasTlpHero.TabIndex = 0;
-            //
+            // 
             // VentasTlpPresentacion
-            //
+            // 
             this.VentasTlpPresentacion.BackColor = System.Drawing.Color.Transparent;
             this.VentasTlpPresentacion.ColumnCount = 1;
             this.VentasTlpPresentacion.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -1053,56 +1089,24 @@ namespace CapaVista_Ventas
             this.VentasTlpPresentacion.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 22F));
             this.VentasTlpPresentacion.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.VentasTlpPresentacion.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 72F));
-            this.VentasTlpPresentacion.Size = new System.Drawing.Size(681, 611);
+            this.VentasTlpPresentacion.Size = new System.Drawing.Size(681, 627);
             this.VentasTlpPresentacion.TabIndex = 0;
-            //
-            // VentasBtnAyuda
-            //
-
-            this.VentasBtnAyuda.Cursor = System.Windows.Forms.Cursors.Hand;
-
-            this.VentasBtnAyuda.Location = new System.Drawing.Point(3, 481);
-            this.VentasBtnAyuda.Name = "VentasBtnAyuda";
-            this.VentasBtnAyuda.AccessibleDescription = "Ayuda";
-            this.VentasBtnAyuda.AccessibleName = "Ayuda";
-            // Imagen original completa: solo el color vino fue cambiado a morado.
-            this.VentasBtnAyuda.Text = string.Empty;
-            this.VentasBtnAyuda.BackColor = System.Drawing.Color.FromArgb(123, 63, 147);
-            this.VentasBtnAyuda.ForeColor = System.Drawing.Color.FromArgb(248, 245, 249);
-            this.VentasBtnAyuda.BackgroundImage = global::CapaVista_Ventas.Properties.Resources.BotonOriginalAyudaVentas;
-            this.VentasBtnAyuda.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.VentasBtnAyuda.Image = null;
-            this.VentasBtnAyuda.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.VentasBtnAyuda.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.VentasBtnAyuda.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.VentasBtnAyuda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.VentasBtnAyuda.FlatAppearance.BorderSize = 0;
-            this.VentasBtnAyuda.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(59, 29, 74);
-            this.VentasBtnAyuda.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(59, 29, 74);
-            this.VentasBtnAyuda.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.VentasBtnAyuda.Padding = new System.Windows.Forms.Padding(0);
-            this.VentasBtnAyuda.UseVisualStyleBackColor = false;
-            this.VentasBtnAyuda.UseCompatibleTextRendering = false;
-            this.VentasBtnAyuda.Size = new System.Drawing.Size(64, 64);
-            this.VentasBtnAyuda.TabIndex = 3;
-
-            this.VentasBtnAyuda.Click += new System.EventHandler(this.VentasBtnAyuda_Click);
-            //
+            // 
             // VentasPbMascota
-            //
+            // 
             this.VentasPbMascota.BackColor = System.Drawing.Color.Transparent;
             this.VentasPbMascota.Dock = System.Windows.Forms.DockStyle.Fill;
             this.VentasPbMascota.Image = global::CapaVista_Ventas.Properties.Resources.MascotaVentas;
             this.VentasPbMascota.Location = new System.Drawing.Point(687, 4);
             this.VentasPbMascota.Margin = new System.Windows.Forms.Padding(0, 4, 0, 4);
             this.VentasPbMascota.Name = "VentasPbMascota";
-            this.VentasPbMascota.Size = new System.Drawing.Size(379, 609);
+            this.VentasPbMascota.Size = new System.Drawing.Size(379, 625);
             this.VentasPbMascota.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.VentasPbMascota.TabIndex = 1;
             this.VentasPbMascota.TabStop = false;
-            //
+            // 
             // VentasPbIcono
-            //
+            // 
             this.VentasPbIcono.BackColor = System.Drawing.Color.Transparent;
             this.VentasPbIcono.Dock = System.Windows.Forms.DockStyle.Top;
             this.VentasPbIcono.Image = global::CapaVista_Ventas.Properties.Resources.IconoVentasImagen;
@@ -1112,9 +1116,9 @@ namespace CapaVista_Ventas
             this.VentasPbIcono.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.VentasPbIcono.TabIndex = 2;
             this.VentasPbIcono.TabStop = false;
-            //
+            // 
             // VentasTlpKpis
-            //
+            // 
             this.VentasTlpKpis.BackColor = System.Drawing.Color.Transparent;
             this.VentasTlpKpis.ColumnCount = 6;
             this.VentasTlpKpis.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
@@ -1130,15 +1134,15 @@ namespace CapaVista_Ventas
             this.VentasTlpKpis.Controls.Add(this.VentasPnlKpi5, 4, 0);
             this.VentasTlpKpis.Controls.Add(this.VentasPnlKpi6, 5, 0);
             this.VentasTlpKpis.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.VentasTlpKpis.Location = new System.Drawing.Point(3, 671);
+            this.VentasTlpKpis.Location = new System.Drawing.Point(3, 687);
             this.VentasTlpKpis.Name = "VentasTlpKpis";
             this.VentasTlpKpis.RowCount = 1;
             this.VentasTlpKpis.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.VentasTlpKpis.Size = new System.Drawing.Size(1186, 170);
             this.VentasTlpKpis.TabIndex = 2;
-            //
+            // 
             // VentasPnlKpi1
-            //
+            // 
             this.VentasPnlKpi1.BackColor = System.Drawing.Color.Transparent;
             this.VentasPnlKpi1.BackgroundImage = global::CapaVista_Ventas.Properties.Resources.FondoTarjetaVentas;
             this.VentasPnlKpi1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -1150,9 +1154,9 @@ namespace CapaVista_Ventas
             this.VentasPnlKpi1.Padding = new System.Windows.Forms.Padding(6);
             this.VentasPnlKpi1.Size = new System.Drawing.Size(188, 162);
             this.VentasPnlKpi1.TabIndex = 0;
-            //
+            // 
             // VentasTlpKpi1
-            //
+            // 
             this.VentasTlpKpi1.ColumnCount = 1;
             this.VentasTlpKpi1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.VentasTlpKpi1.Controls.Add(this.VentasPbKpi1, 0, 0);
@@ -1167,9 +1171,9 @@ namespace CapaVista_Ventas
             this.VentasTlpKpi1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.VentasTlpKpi1.Size = new System.Drawing.Size(176, 150);
             this.VentasTlpKpi1.TabIndex = 0;
-            //
+            // 
             // VentasPnlKpi2
-            //
+            // 
             this.VentasPnlKpi2.BackColor = System.Drawing.Color.Transparent;
             this.VentasPnlKpi2.BackgroundImage = global::CapaVista_Ventas.Properties.Resources.FondoTarjetaVentas;
             this.VentasPnlKpi2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -1181,9 +1185,9 @@ namespace CapaVista_Ventas
             this.VentasPnlKpi2.Padding = new System.Windows.Forms.Padding(6);
             this.VentasPnlKpi2.Size = new System.Drawing.Size(188, 162);
             this.VentasPnlKpi2.TabIndex = 1;
-            //
+            // 
             // VentasTlpKpi2
-            //
+            // 
             this.VentasTlpKpi2.ColumnCount = 1;
             this.VentasTlpKpi2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.VentasTlpKpi2.Controls.Add(this.VentasPbKpi2, 0, 0);
@@ -1198,9 +1202,9 @@ namespace CapaVista_Ventas
             this.VentasTlpKpi2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.VentasTlpKpi2.Size = new System.Drawing.Size(176, 150);
             this.VentasTlpKpi2.TabIndex = 0;
-            //
+            // 
             // VentasPnlKpi3
-            //
+            // 
             this.VentasPnlKpi3.BackColor = System.Drawing.Color.Transparent;
             this.VentasPnlKpi3.BackgroundImage = global::CapaVista_Ventas.Properties.Resources.FondoTarjetaVentas;
             this.VentasPnlKpi3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -1212,9 +1216,9 @@ namespace CapaVista_Ventas
             this.VentasPnlKpi3.Padding = new System.Windows.Forms.Padding(6);
             this.VentasPnlKpi3.Size = new System.Drawing.Size(188, 162);
             this.VentasPnlKpi3.TabIndex = 2;
-            //
+            // 
             // VentasTlpKpi3
-            //
+            // 
             this.VentasTlpKpi3.ColumnCount = 1;
             this.VentasTlpKpi3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.VentasTlpKpi3.Controls.Add(this.VentasPbKpi3, 0, 0);
@@ -1229,9 +1233,9 @@ namespace CapaVista_Ventas
             this.VentasTlpKpi3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.VentasTlpKpi3.Size = new System.Drawing.Size(176, 150);
             this.VentasTlpKpi3.TabIndex = 0;
-            //
+            // 
             // VentasPnlKpi4
-            //
+            // 
             this.VentasPnlKpi4.BackColor = System.Drawing.Color.Transparent;
             this.VentasPnlKpi4.BackgroundImage = global::CapaVista_Ventas.Properties.Resources.FondoTarjetaVentas;
             this.VentasPnlKpi4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -1243,9 +1247,9 @@ namespace CapaVista_Ventas
             this.VentasPnlKpi4.Padding = new System.Windows.Forms.Padding(6);
             this.VentasPnlKpi4.Size = new System.Drawing.Size(188, 162);
             this.VentasPnlKpi4.TabIndex = 3;
-            //
+            // 
             // VentasTlpKpi4
-            //
+            // 
             this.VentasTlpKpi4.ColumnCount = 1;
             this.VentasTlpKpi4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.VentasTlpKpi4.Controls.Add(this.VentasPbKpi4, 0, 0);
@@ -1260,9 +1264,9 @@ namespace CapaVista_Ventas
             this.VentasTlpKpi4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.VentasTlpKpi4.Size = new System.Drawing.Size(176, 150);
             this.VentasTlpKpi4.TabIndex = 0;
-            //
+            // 
             // VentasPnlKpi5
-            //
+            // 
             this.VentasPnlKpi5.BackColor = System.Drawing.Color.Transparent;
             this.VentasPnlKpi5.BackgroundImage = global::CapaVista_Ventas.Properties.Resources.FondoTarjetaVentas;
             this.VentasPnlKpi5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -1274,9 +1278,9 @@ namespace CapaVista_Ventas
             this.VentasPnlKpi5.Padding = new System.Windows.Forms.Padding(6);
             this.VentasPnlKpi5.Size = new System.Drawing.Size(188, 162);
             this.VentasPnlKpi5.TabIndex = 4;
-            //
+            // 
             // VentasTlpKpi5
-            //
+            // 
             this.VentasTlpKpi5.ColumnCount = 1;
             this.VentasTlpKpi5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.VentasTlpKpi5.Controls.Add(this.VentasPbKpi5, 0, 0);
@@ -1291,9 +1295,9 @@ namespace CapaVista_Ventas
             this.VentasTlpKpi5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.VentasTlpKpi5.Size = new System.Drawing.Size(176, 150);
             this.VentasTlpKpi5.TabIndex = 0;
-            //
+            // 
             // VentasPnlKpi6
-            //
+            // 
             this.VentasPnlKpi6.BackColor = System.Drawing.Color.Transparent;
             this.VentasPnlKpi6.BackgroundImage = global::CapaVista_Ventas.Properties.Resources.FondoTarjetaVentas;
             this.VentasPnlKpi6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -1305,9 +1309,9 @@ namespace CapaVista_Ventas
             this.VentasPnlKpi6.Padding = new System.Windows.Forms.Padding(6);
             this.VentasPnlKpi6.Size = new System.Drawing.Size(192, 162);
             this.VentasPnlKpi6.TabIndex = 5;
-            //
+            // 
             // VentasTlpKpi6
-            //
+            // 
             this.VentasTlpKpi6.ColumnCount = 1;
             this.VentasTlpKpi6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.VentasTlpKpi6.Controls.Add(this.VentasPbKpi6, 0, 0);
@@ -1322,22 +1326,22 @@ namespace CapaVista_Ventas
             this.VentasTlpKpi6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.VentasTlpKpi6.Size = new System.Drawing.Size(180, 150);
             this.VentasTlpKpi6.TabIndex = 0;
-            //
+            // 
             // VentasPnlInformacion
-            //
+            // 
             this.VentasPnlInformacion.BackColor = System.Drawing.Color.Transparent;
             this.VentasPnlInformacion.BackgroundImage = global::CapaVista_Ventas.Properties.Resources.FondoInformacionVentas;
             this.VentasPnlInformacion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.VentasPnlInformacion.Controls.Add(this.VentasTlpInformacion);
             this.VentasPnlInformacion.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.VentasPnlInformacion.Location = new System.Drawing.Point(3, 847);
+            this.VentasPnlInformacion.Location = new System.Drawing.Point(3, 863);
             this.VentasPnlInformacion.Name = "VentasPnlInformacion";
             this.VentasPnlInformacion.Padding = new System.Windows.Forms.Padding(14, 9, 14, 9);
-            this.VentasPnlInformacion.Size = new System.Drawing.Size(1186, 82);
+            this.VentasPnlInformacion.Size = new System.Drawing.Size(1186, 66);
             this.VentasPnlInformacion.TabIndex = 3;
-            //
+            // 
             // VentasTlpInformacion
-            //
+            // 
             this.VentasTlpInformacion.ColumnCount = 2;
             this.VentasTlpInformacion.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
             this.VentasTlpInformacion.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
@@ -1348,11 +1352,11 @@ namespace CapaVista_Ventas
             this.VentasTlpInformacion.Name = "VentasTlpInformacion";
             this.VentasTlpInformacion.RowCount = 1;
             this.VentasTlpInformacion.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.VentasTlpInformacion.Size = new System.Drawing.Size(1158, 64);
+            this.VentasTlpInformacion.Size = new System.Drawing.Size(1158, 48);
             this.VentasTlpInformacion.TabIndex = 0;
-            //
+            // 
             // FrmMdiVentas
-            //
+            // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
             this.ClientSize = new System.Drawing.Size(1554, 1055);
@@ -1397,7 +1401,6 @@ namespace CapaVista_Ventas
             this.VentasTlpKpi6.ResumeLayout(false);
             this.VentasPnlInformacion.ResumeLayout(false);
             this.VentasTlpInformacion.ResumeLayout(false);
-            this.VentasTtpAccionesOriginales.SetToolTip(this.VentasBtnAyuda, "Ayuda");
             this.ResumeLayout(false);
 
         }
@@ -1472,6 +1475,7 @@ namespace CapaVista_Ventas
         private System.Windows.Forms.Panel VentasPnlInformacion;
         private System.Windows.Forms.TableLayoutPanel VentasTlpInformacion;
         private System.Windows.Forms.ToolTip VentasTtpMenu;
+        private System.Windows.Forms.ImageList VentasImlMantenimientos;
         private System.Windows.Forms.ToolTip VentasTtpAccionesOriginales;
     }
 }

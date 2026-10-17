@@ -8,6 +8,7 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>Ejecutable_Ventas</RootNamespace>
     <AssemblyName>Ejecutable_Ventas</AssemblyName>
+    <ApplicationIcon>..\..\..\..\..\recursos\modulos\ventas\iconoVentas.ico</ApplicationIcon>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -73,6 +74,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="..\..\..\..\..\recursos\modulos\ventas\iconoVentas.ico">
+      <Link>Recursos\iconoVentas.ico</Link>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

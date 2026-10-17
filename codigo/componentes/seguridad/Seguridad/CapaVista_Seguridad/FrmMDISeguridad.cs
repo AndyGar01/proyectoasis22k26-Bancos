@@ -248,11 +248,11 @@ namespace CapaVista_Seguridad
                 return;
             }
 
-            FrmMantenimientoEmpleado Empleados = new FrmMantenimientoEmpleado();
-            Empleados.ShowDialog();
+            //FrmMantenimientoEmpleado Empleados = new FrmMantenimientoEmpleado();
+            //Empleados.ShowDialog();
 
-           // FrmNavegador Empleados = new FrmNavegador();
-           // Empleados.ShowDialog();
+              FrmEmpleadosNavegador Empleados = new FrmEmpleadosNavegador();
+              Empleados.ShowDialog();
         }
 
         private void SeguridadBtnAplicaciones_Click(object sender, EventArgs e)

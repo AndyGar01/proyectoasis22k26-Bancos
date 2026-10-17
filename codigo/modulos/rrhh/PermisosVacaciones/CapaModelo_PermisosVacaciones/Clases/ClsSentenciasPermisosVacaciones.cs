@@ -12,7 +12,7 @@ using System.Threading.Tasks;
  * Fecha : 12/10/2026
  * ==================================================================
  * Propósito :
- *  Capa Modelo de la ventana 9802 - PermisosVacaciones.
+ *  Capa Modelo de la ventana 9301 - PermisosVacaciones.
  *  Aquí irán la conexión y las sentencias SQL de permisos y
  *  vacaciones. Prototipo NO funcional: sin código todavía.
  * ===================================================================

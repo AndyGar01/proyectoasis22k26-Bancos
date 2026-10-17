@@ -518,10 +518,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1340, 903);
             this.Controls.Add(this.RrhhPnlPrincipal);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.MinimizeBox = false;
             this.Name = "FrmLiquidacionEmpleados";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "9701 - Liquidacion de Empleados";
             this.RrhhPnlPrincipal.ResumeLayout(false);
             this.RrhhPnlPrincipal.PerformLayout();

@@ -460,9 +460,12 @@
             this.Controls.Add(this.RrhhLblSubTituloCapacitacion);
             this.Controls.Add(this.RrhhPnlEncabezadoCapacitacion);
             this.Controls.Add(this.RrhhPnlSubEncabezadoCapacitacion);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "FrmCapacitacion";
-            this.Text = "9301 - FrmCapacitacion";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "9401 - Capacitaciones";
             this.RrhhPnlInstCapacitacion.ResumeLayout(false);
             this.RrhhPnlInstCapacitacion.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.RrhhPbTipPCapacitacion)).EndInit();

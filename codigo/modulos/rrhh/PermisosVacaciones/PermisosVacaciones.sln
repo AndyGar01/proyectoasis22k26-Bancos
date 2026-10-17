@@ -6,8 +6,14 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaModelo_PermisosVacaciones", "CapaModelo_PermisosVacaciones\CapaModelo_PermisosVacaciones.csproj", "{C18B3CF2-3406-57F8-85C0-61827D911769}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaControlador_PermisosVacaciones", "CapaControlador_PermisosVacaciones\CapaControlador_PermisosVacaciones.csproj", "{D0E3B4C5-433E-5C91-84D0-0E38C4778729}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C18B3CF2-3406-57F8-85C0-61827D911769} = {C18B3CF2-3406-57F8-85C0-61827D911769}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaVista_PermisosVacaciones", "CapaVista_PermisosVacaciones\CapaVista_PermisosVacaciones.csproj", "{A7F639AA-DD60-53CD-81E1-021CA256852F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D0E3B4C5-433E-5C91-84D0-0E38C4778729} = {D0E3B4C5-433E-5C91-84D0-0E38C4778729}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

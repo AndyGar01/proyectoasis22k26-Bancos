@@ -513,10 +513,12 @@
             this.Controls.Add(this.RrhhPnlEncabezado);
             this.Controls.Add(this.RrhhPnlSubEncabezado);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(248)))), ((int)(((byte)(247)))));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "FrmEmpleados";
-            this.Text = "9001 - FrmEmpleados";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "9001 - Empleados";
             this.RrhhPnlAsigP.ResumeLayout(false);
             this.RrhhPnlAsigP.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.RrhhPbAsigP)).EndInit();

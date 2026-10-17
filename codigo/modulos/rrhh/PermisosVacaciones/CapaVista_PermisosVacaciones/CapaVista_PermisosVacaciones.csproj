@@ -8,7 +8,7 @@
     <OutputType>Library</OutputType>
     <RootNamespace>CapaVista_PermisosVacaciones</RootNamespace>
     <AssemblyName>CapaVista_PermisosVacaciones</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
@@ -82,10 +82,9 @@
     <None Include="Resources\mascota.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CapaControlador_PermisosVacaciones\CapaControlador_PermisosVacaciones.csproj">
-      <Project>{D0E3B4C5-433E-5C91-84D0-0E38C4778729}</Project>
-      <Name>CapaControlador_PermisosVacaciones</Name>
-    </ProjectReference>
+    <Reference Include="CapaControlador_PermisosVacaciones">
+      <HintPath>..\CapaControlador_PermisosVacaciones\bin\Debug\CapaControlador_PermisosVacaciones.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\5.png" />

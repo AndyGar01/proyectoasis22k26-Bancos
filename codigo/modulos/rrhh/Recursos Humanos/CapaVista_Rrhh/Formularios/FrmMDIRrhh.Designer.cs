@@ -1,16 +1,21 @@
-﻿namespace CapaVista_Rrhh.Formularios
+﻿/*
+ * ==================================================================
+ * Área : Recursos Humanos
+ * Autor : Byron Alexander
+ * Carné : 0901-23-3747
+ * Fecha : 17/10/2026
+ * ==================================================================
+ * Propósito :
+ *  Diseño del formulario MDI (9000) del módulo de Recursos Humanos.
+ * ===================================================================
+*/
+
+namespace CapaVista_Rrhh.Formularios
 {
     partial class FrmMDIRrhh
     {
-        /// <summary>
-        /// Variable del diseñador necesaria.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Limpiar los recursos que se estén usando.
-        /// </summary>
-        /// <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -22,10 +27,6 @@
 
         #region Código generado por el Diseñador de Windows Forms
 
-        /// <summary>
-        /// Método necesario para admitir el Diseñador. No se puede modificar
-        /// el contenido de este método con el editor de código.
-        /// </summary>
         private void InitializeComponent()
         {
             this.RrhhPnlNavegador = new System.Windows.Forms.Panel();
@@ -102,9 +103,6 @@
             this.RrhhPnlKPI6.SuspendLayout();
             this.RrhhPnlKPIIcono6.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // RrhhPnlNavegador
-            // 
             this.RrhhPnlNavegador.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(248)))), ((int)(((byte)(247)))));
             this.RrhhPnlNavegador.BackgroundImage = global::CapaVista_Rrhh.Properties.Resources.fondo_navegador;
             this.RrhhPnlNavegador.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -125,9 +123,6 @@
             this.RrhhPnlNavegador.TabIndex = 0;
             this.RrhhPnlNavegador.Resize += new System.EventHandler(this.RrhhPnlNavegador_Resize);
             this.RrhhPnlNavegador.Paint += new System.Windows.Forms.PaintEventHandler(this.RrhhPnlNavegador_Paint);
-            // 
-            // RrhhPbLogo
-            // 
             this.RrhhPbLogo.BackColor = System.Drawing.Color.Transparent;
             this.RrhhPbLogo.Image = global::CapaVista_Rrhh.Properties.Resources.logo;
             this.RrhhPbLogo.Location = new System.Drawing.Point(68, 12);
@@ -135,9 +130,6 @@
             this.RrhhPbLogo.Size = new System.Drawing.Size(133, 127);
             this.RrhhPbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.RrhhPbLogo.TabStop = false;
-            // 
-            // RrhhBtnEmpleados
-            // 
             this.RrhhBtnEmpleados.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(31)))), ((int)(((byte)(138)))), ((int)(((byte)(143)))));
             this.RrhhBtnEmpleados.Cursor = System.Windows.Forms.Cursors.Hand;
             this.RrhhBtnEmpleados.FlatAppearance.BorderSize = 0;
@@ -161,9 +153,6 @@
             this.RrhhBtnEmpleados.Click += new System.EventHandler(this.RrhhBtnEmpleados_Click);
             this.RrhhBtnEmpleados.MouseEnter += new System.EventHandler(this.RrhhBtnMenu_MouseEnter);
             this.RrhhBtnEmpleados.MouseLeave += new System.EventHandler(this.RrhhBtnMenu_MouseLeave);
-            // 
-            // RrhhBtnAsistencia
-            // 
             this.RrhhBtnAsistencia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(31)))), ((int)(((byte)(138)))), ((int)(((byte)(143)))));
             this.RrhhBtnAsistencia.Cursor = System.Windows.Forms.Cursors.Hand;
             this.RrhhBtnAsistencia.FlatAppearance.BorderSize = 0;
@@ -187,9 +176,6 @@
             this.RrhhBtnAsistencia.Click += new System.EventHandler(this.RrhhBtnAsistencia_Click);
             this.RrhhBtnAsistencia.MouseEnter += new System.EventHandler(this.RrhhBtnMenu_MouseEnter);
             this.RrhhBtnAsistencia.MouseLeave += new System.EventHandler(this.RrhhBtnMenu_MouseLeave);
-            // 
-            // RrhhBtnPermisosVacaciones
-            // 
             this.RrhhBtnPermisosVacaciones.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(31)))), ((int)(((byte)(138)))), ((int)(((byte)(143)))));
             this.RrhhBtnPermisosVacaciones.Cursor = System.Windows.Forms.Cursors.Hand;
             this.RrhhBtnPermisosVacaciones.FlatAppearance.BorderSize = 0;
@@ -213,9 +199,6 @@
             this.RrhhBtnPermisosVacaciones.Click += new System.EventHandler(this.RrhhBtnPermisosVacaciones_Click);
             this.RrhhBtnPermisosVacaciones.MouseEnter += new System.EventHandler(this.RrhhBtnMenu_MouseEnter);
             this.RrhhBtnPermisosVacaciones.MouseLeave += new System.EventHandler(this.RrhhBtnMenu_MouseLeave);
-            // 
-            // RrhhBtnCapacitaciones
-            // 
             this.RrhhBtnCapacitaciones.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(31)))), ((int)(((byte)(138)))), ((int)(((byte)(143)))));
             this.RrhhBtnCapacitaciones.Cursor = System.Windows.Forms.Cursors.Hand;
             this.RrhhBtnCapacitaciones.FlatAppearance.BorderSize = 0;
@@ -239,9 +222,6 @@
             this.RrhhBtnCapacitaciones.Click += new System.EventHandler(this.RrhhBtnCapacitaciones_Click);
             this.RrhhBtnCapacitaciones.MouseEnter += new System.EventHandler(this.RrhhBtnMenu_MouseEnter);
             this.RrhhBtnCapacitaciones.MouseLeave += new System.EventHandler(this.RrhhBtnMenu_MouseLeave);
-            // 
-            // RrhhBtnEvaluacionDesempeno
-            // 
             this.RrhhBtnEvaluacionDesempeno.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(31)))), ((int)(((byte)(138)))), ((int)(((byte)(143)))));
             this.RrhhBtnEvaluacionDesempeno.Cursor = System.Windows.Forms.Cursors.Hand;
             this.RrhhBtnEvaluacionDesempeno.FlatAppearance.BorderSize = 0;
@@ -265,9 +245,6 @@
             this.RrhhBtnEvaluacionDesempeno.Click += new System.EventHandler(this.RrhhBtnEvaluacionDesempeno_Click);
             this.RrhhBtnEvaluacionDesempeno.MouseEnter += new System.EventHandler(this.RrhhBtnMenu_MouseEnter);
             this.RrhhBtnEvaluacionDesempeno.MouseLeave += new System.EventHandler(this.RrhhBtnMenu_MouseLeave);
-            // 
-            // RrhhBtnNomina
-            // 
             this.RrhhBtnNomina.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(31)))), ((int)(((byte)(138)))), ((int)(((byte)(143)))));
             this.RrhhBtnNomina.Cursor = System.Windows.Forms.Cursors.Hand;
             this.RrhhBtnNomina.FlatAppearance.BorderSize = 0;
@@ -291,9 +268,6 @@
             this.RrhhBtnNomina.Click += new System.EventHandler(this.RrhhBtnNomina_Click);
             this.RrhhBtnNomina.MouseEnter += new System.EventHandler(this.RrhhBtnMenu_MouseEnter);
             this.RrhhBtnNomina.MouseLeave += new System.EventHandler(this.RrhhBtnMenu_MouseLeave);
-            // 
-            // RrhhBtnCierresNomina
-            // 
             this.RrhhBtnCierresNomina.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(31)))), ((int)(((byte)(138)))), ((int)(((byte)(143)))));
             this.RrhhBtnCierresNomina.Cursor = System.Windows.Forms.Cursors.Hand;
             this.RrhhBtnCierresNomina.FlatAppearance.BorderSize = 0;
@@ -317,9 +291,6 @@
             this.RrhhBtnCierresNomina.Click += new System.EventHandler(this.RrhhBtnCierresNomina_Click);
             this.RrhhBtnCierresNomina.MouseEnter += new System.EventHandler(this.RrhhBtnMenu_MouseEnter);
             this.RrhhBtnCierresNomina.MouseLeave += new System.EventHandler(this.RrhhBtnMenu_MouseLeave);
-            // 
-            // RrhhBtnLiquidacion
-            // 
             this.RrhhBtnLiquidacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(31)))), ((int)(((byte)(138)))), ((int)(((byte)(143)))));
             this.RrhhBtnLiquidacion.Cursor = System.Windows.Forms.Cursors.Hand;
             this.RrhhBtnLiquidacion.FlatAppearance.BorderSize = 0;
@@ -343,9 +314,6 @@
             this.RrhhBtnLiquidacion.Click += new System.EventHandler(this.RrhhBtnLiquidacion_Click);
             this.RrhhBtnLiquidacion.MouseEnter += new System.EventHandler(this.RrhhBtnMenu_MouseEnter);
             this.RrhhBtnLiquidacion.MouseLeave += new System.EventHandler(this.RrhhBtnMenu_MouseLeave);
-            // 
-            // RrhhBtnCerrarSesion
-            // 
             this.RrhhBtnCerrarSesion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(31)))), ((int)(((byte)(138)))), ((int)(((byte)(143)))));
             this.RrhhBtnCerrarSesion.Cursor = System.Windows.Forms.Cursors.Hand;
             this.RrhhBtnCerrarSesion.FlatAppearance.BorderSize = 0;
@@ -369,9 +337,6 @@
             this.RrhhBtnCerrarSesion.Click += new System.EventHandler(this.RrhhBtnCerrarSesion_Click);
             this.RrhhBtnCerrarSesion.MouseEnter += new System.EventHandler(this.RrhhBtnMenu_MouseEnter);
             this.RrhhBtnCerrarSesion.MouseLeave += new System.EventHandler(this.RrhhBtnMenu_MouseLeave);
-            // 
-            // RrhhPnlBarraSuperior
-            // 
             this.RrhhPnlBarraSuperior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(248)))), ((int)(((byte)(247)))));
             this.RrhhPnlBarraSuperior.Controls.Add(this.RrhhLblUsuarioRol);
             this.RrhhPnlBarraSuperior.Controls.Add(this.RrhhLblUsuario);
@@ -381,9 +346,6 @@
             this.RrhhPnlBarraSuperior.Name = "RrhhPnlBarraSuperior";
             this.RrhhPnlBarraSuperior.Size = new System.Drawing.Size(1260, 56);
             this.RrhhPnlBarraSuperior.TabIndex = 1;
-            // 
-            // RrhhBtnBurger
-            // 
             this.RrhhBtnBurger.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(76)))), ((int)(((byte)(85)))));
             this.RrhhBtnBurger.Cursor = System.Windows.Forms.Cursors.Hand;
             this.RrhhBtnBurger.FlatAppearance.BorderSize = 0;
@@ -398,9 +360,6 @@
             this.RrhhBtnBurger.Text = "☰";
             this.RrhhBtnBurger.UseVisualStyleBackColor = false;
             this.RrhhBtnBurger.Click += new System.EventHandler(this.RrhhBtnBurger_Click);
-            // 
-            // RrhhLblUsuario
-            // 
             this.RrhhLblUsuario.AutoSize = true;
             this.RrhhLblUsuario.BackColor = System.Drawing.Color.Transparent;
             this.RrhhLblUsuario.Font = new System.Drawing.Font("Lucida Fax", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -409,9 +368,6 @@
             this.RrhhLblUsuario.Name = "RrhhLblUsuario";
             this.RrhhLblUsuario.TabIndex = 1;
             this.RrhhLblUsuario.Text = "Usuario:";
-            // 
-            // RrhhLblUsuarioRol
-            // 
             this.RrhhLblUsuarioRol.AutoSize = true;
             this.RrhhLblUsuarioRol.BackColor = System.Drawing.Color.Transparent;
             this.RrhhLblUsuarioRol.Font = new System.Drawing.Font("Lucida Fax", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -420,9 +376,6 @@
             this.RrhhLblUsuarioRol.Name = "RrhhLblUsuarioRol";
             this.RrhhLblUsuarioRol.TabIndex = 2;
             this.RrhhLblUsuarioRol.Text = "Rol:";
-            // 
-            // RrhhPnlContenedor
-            // 
             this.RrhhPnlContenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(247)))), ((int)(((byte)(242)))));
             this.RrhhPnlContenedor.Controls.Add(this.RrhhPnlDashboard);
             this.RrhhPnlContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -431,9 +384,6 @@
             this.RrhhPnlContenedor.Padding = new System.Windows.Forms.Padding(16, 4, 16, 16);
             this.RrhhPnlContenedor.Size = new System.Drawing.Size(1260, 958);
             this.RrhhPnlContenedor.TabIndex = 2;
-            // 
-            // RrhhPnlDashboard
-            // 
             this.RrhhPnlDashboard.AutoScroll = true;
             this.RrhhPnlDashboard.BackColor = System.Drawing.Color.White;
             this.RrhhPnlDashboard.BackgroundImage = global::CapaVista_Rrhh.Properties.Resources.fondo_dashboard;
@@ -456,9 +406,6 @@
             this.RrhhPnlDashboard.Size = new System.Drawing.Size(1228, 938);
             this.RrhhPnlDashboard.TabIndex = 0;
             this.RrhhPnlDashboard.Resize += new System.EventHandler(this.RrhhPnlDashboard_Resize);
-            // 
-            // RrhhLblBienvenido
-            // 
             this.RrhhLblBienvenido.AutoSize = true;
             this.RrhhLblBienvenido.BackColor = System.Drawing.Color.Transparent;
             this.RrhhLblBienvenido.Font = new System.Drawing.Font("Lucida Fax", 45F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -467,9 +414,6 @@
             this.RrhhLblBienvenido.Name = "RrhhLblBienvenido";
             this.RrhhLblBienvenido.TabIndex = 0;
             this.RrhhLblBienvenido.Text = "¡Bienvenido!";
-            // 
-            // RrhhLblParrafo
-            // 
             this.RrhhLblParrafo.AutoSize = true;
             this.RrhhLblParrafo.BackColor = System.Drawing.Color.Transparent;
             this.RrhhLblParrafo.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -478,9 +422,6 @@
             this.RrhhLblParrafo.Name = "RrhhLblParrafo";
             this.RrhhLblParrafo.TabIndex = 1;
             this.RrhhLblParrafo.Text = "Gestiona el talento de nuestro equipo,\r\ndesde la contratación hasta el desarrollo\r\nde cada colaborador.";
-            // 
-            // RrhhBtnAyuda
-            // 
             this.RrhhBtnAyuda.BackColor = System.Drawing.Color.Transparent;
             this.RrhhBtnAyuda.BackgroundImage = global::CapaVista_Rrhh.Properties.Resources.btn_ayuda;
             this.RrhhBtnAyuda.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -494,9 +435,6 @@
             this.RrhhBtnAyuda.Size = new System.Drawing.Size(84, 79);
             this.RrhhBtnAyuda.TabIndex = 2;
             this.RrhhBtnAyuda.UseVisualStyleBackColor = false;
-            // 
-            // RrhhPbMascota
-            // 
             this.RrhhPbMascota.BackColor = System.Drawing.Color.Transparent;
             this.RrhhPbMascota.Image = global::CapaVista_Rrhh.Properties.Resources.mascota;
             this.RrhhPbMascota.Location = new System.Drawing.Point(760, 10);
@@ -504,9 +442,6 @@
             this.RrhhPbMascota.Size = new System.Drawing.Size(313, 415);
             this.RrhhPbMascota.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.RrhhPbMascota.TabStop = false;
-            // 
-            // RrhhLblResumen
-            // 
             this.RrhhLblResumen.AutoSize = true;
             this.RrhhLblResumen.BackColor = System.Drawing.Color.Transparent;
             this.RrhhLblResumen.Font = new System.Drawing.Font("Lucida Fax", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -515,9 +450,6 @@
             this.RrhhLblResumen.Name = "RrhhLblResumen";
             this.RrhhLblResumen.TabIndex = 3;
             this.RrhhLblResumen.Text = "Resumen de Recursos Humanos";
-            // 
-            // RrhhPnlKPI1
-            // 
             this.RrhhPnlKPI1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.RrhhPnlKPI1.Controls.Add(this.RrhhLblKPI1);
             this.RrhhPnlKPI1.Controls.Add(this.RrhhLblKPIResp1);
@@ -527,9 +459,6 @@
             this.RrhhPnlKPI1.Size = new System.Drawing.Size(172, 189);
             this.RrhhPnlKPI1.TabIndex = 4;
             this.RrhhPnlKPI1.Paint += new System.Windows.Forms.PaintEventHandler(this.RrhhPnlKPI_Paint);
-            // 
-            // RrhhPnlKPIIcono1
-            // 
             this.RrhhPnlKPIIcono1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(76)))), ((int)(((byte)(85)))));
             this.RrhhPnlKPIIcono1.BackgroundImage = global::CapaVista_Rrhh.Properties.Resources.kpi_colaboradores;
             this.RrhhPnlKPIIcono1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
@@ -537,9 +466,6 @@
             this.RrhhPnlKPIIcono1.Name = "RrhhPnlKPIIcono1";
             this.RrhhPnlKPIIcono1.Size = new System.Drawing.Size(70, 70);
             this.RrhhPnlKPIIcono1.TabIndex = 0;
-            // 
-            // RrhhLblKPIResp1
-            // 
             this.RrhhLblKPIResp1.AutoSize = true;
             this.RrhhLblKPIResp1.BackColor = System.Drawing.Color.Transparent;
             this.RrhhLblKPIResp1.Font = new System.Drawing.Font("Lucida Fax", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -548,9 +474,6 @@
             this.RrhhLblKPIResp1.Name = "RrhhLblKPIResp1";
             this.RrhhLblKPIResp1.TabIndex = 1;
             this.RrhhLblKPIResp1.Text = "0";
-            // 
-            // RrhhLblKPI1
-            // 
             this.RrhhLblKPI1.BackColor = System.Drawing.Color.Transparent;
             this.RrhhLblKPI1.Font = new System.Drawing.Font("Lucida Fax", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RrhhLblKPI1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(76)))), ((int)(((byte)(85)))));
@@ -559,9 +482,6 @@
             this.RrhhLblKPI1.Size = new System.Drawing.Size(155, 46);
             this.RrhhLblKPI1.TabIndex = 2;
             this.RrhhLblKPI1.Text = "Total de\r\nColaboradores";
-            // 
-            // RrhhPnlKPI2
-            // 
             this.RrhhPnlKPI2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.RrhhPnlKPI2.Controls.Add(this.RrhhLblKPI2);
             this.RrhhPnlKPI2.Controls.Add(this.RrhhLblKPIResp2);
@@ -571,9 +491,6 @@
             this.RrhhPnlKPI2.Size = new System.Drawing.Size(172, 189);
             this.RrhhPnlKPI2.TabIndex = 5;
             this.RrhhPnlKPI2.Paint += new System.Windows.Forms.PaintEventHandler(this.RrhhPnlKPI_Paint);
-            // 
-            // RrhhPnlKPIIcono2
-            // 
             this.RrhhPnlKPIIcono2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(138)))), ((int)(((byte)(143)))));
             this.RrhhPnlKPIIcono2.BackgroundImage = global::CapaVista_Rrhh.Properties.Resources.kpi_permisos;
             this.RrhhPnlKPIIcono2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
@@ -581,9 +498,6 @@
             this.RrhhPnlKPIIcono2.Name = "RrhhPnlKPIIcono2";
             this.RrhhPnlKPIIcono2.Size = new System.Drawing.Size(70, 70);
             this.RrhhPnlKPIIcono2.TabIndex = 0;
-            // 
-            // RrhhLblKPIResp2
-            // 
             this.RrhhLblKPIResp2.AutoSize = true;
             this.RrhhLblKPIResp2.BackColor = System.Drawing.Color.Transparent;
             this.RrhhLblKPIResp2.Font = new System.Drawing.Font("Lucida Fax", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -592,9 +506,6 @@
             this.RrhhLblKPIResp2.Name = "RrhhLblKPIResp2";
             this.RrhhLblKPIResp2.TabIndex = 1;
             this.RrhhLblKPIResp2.Text = "0";
-            // 
-            // RrhhLblKPI2
-            // 
             this.RrhhLblKPI2.BackColor = System.Drawing.Color.Transparent;
             this.RrhhLblKPI2.Font = new System.Drawing.Font("Lucida Fax", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RrhhLblKPI2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(76)))), ((int)(((byte)(85)))));
@@ -603,9 +514,6 @@
             this.RrhhLblKPI2.Size = new System.Drawing.Size(155, 46);
             this.RrhhLblKPI2.TabIndex = 2;
             this.RrhhLblKPI2.Text = "Solicitudes de\r\nPermiso Pendientes";
-            // 
-            // RrhhPnlKPI3
-            // 
             this.RrhhPnlKPI3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.RrhhPnlKPI3.Controls.Add(this.RrhhLblKPI3);
             this.RrhhPnlKPI3.Controls.Add(this.RrhhLblKPIResp3);
@@ -615,9 +523,6 @@
             this.RrhhPnlKPI3.Size = new System.Drawing.Size(172, 189);
             this.RrhhPnlKPI3.TabIndex = 6;
             this.RrhhPnlKPI3.Paint += new System.Windows.Forms.PaintEventHandler(this.RrhhPnlKPI_Paint);
-            // 
-            // RrhhPnlKPIIcono3
-            // 
             this.RrhhPnlKPIIcono3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(161)))), ((int)(((byte)(59)))));
             this.RrhhPnlKPIIcono3.BackgroundImage = global::CapaVista_Rrhh.Properties.Resources.kpi_capacitaciones;
             this.RrhhPnlKPIIcono3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
@@ -625,9 +530,6 @@
             this.RrhhPnlKPIIcono3.Name = "RrhhPnlKPIIcono3";
             this.RrhhPnlKPIIcono3.Size = new System.Drawing.Size(70, 70);
             this.RrhhPnlKPIIcono3.TabIndex = 0;
-            // 
-            // RrhhLblKPIResp3
-            // 
             this.RrhhLblKPIResp3.AutoSize = true;
             this.RrhhLblKPIResp3.BackColor = System.Drawing.Color.Transparent;
             this.RrhhLblKPIResp3.Font = new System.Drawing.Font("Lucida Fax", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -636,9 +538,6 @@
             this.RrhhLblKPIResp3.Name = "RrhhLblKPIResp3";
             this.RrhhLblKPIResp3.TabIndex = 1;
             this.RrhhLblKPIResp3.Text = "0";
-            // 
-            // RrhhLblKPI3
-            // 
             this.RrhhLblKPI3.BackColor = System.Drawing.Color.Transparent;
             this.RrhhLblKPI3.Font = new System.Drawing.Font("Lucida Fax", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RrhhLblKPI3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(76)))), ((int)(((byte)(85)))));
@@ -647,9 +546,6 @@
             this.RrhhLblKPI3.Size = new System.Drawing.Size(155, 46);
             this.RrhhLblKPI3.TabIndex = 2;
             this.RrhhLblKPI3.Text = "Capacitaciones\r\nPendientes";
-            // 
-            // RrhhPnlKPI4
-            // 
             this.RrhhPnlKPI4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.RrhhPnlKPI4.Controls.Add(this.RrhhLblKPI4);
             this.RrhhPnlKPI4.Controls.Add(this.RrhhLblKPIResp4);
@@ -659,9 +555,6 @@
             this.RrhhPnlKPI4.Size = new System.Drawing.Size(172, 189);
             this.RrhhPnlKPI4.TabIndex = 7;
             this.RrhhPnlKPI4.Paint += new System.Windows.Forms.PaintEventHandler(this.RrhhPnlKPI_Paint);
-            // 
-            // RrhhPnlKPIIcono4
-            // 
             this.RrhhPnlKPIIcono4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(228)))), ((int)(((byte)(225)))));
             this.RrhhPnlKPIIcono4.BackgroundImage = global::CapaVista_Rrhh.Properties.Resources.kpi_evaluaciones;
             this.RrhhPnlKPIIcono4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
@@ -669,9 +562,6 @@
             this.RrhhPnlKPIIcono4.Name = "RrhhPnlKPIIcono4";
             this.RrhhPnlKPIIcono4.Size = new System.Drawing.Size(70, 70);
             this.RrhhPnlKPIIcono4.TabIndex = 0;
-            // 
-            // RrhhLblKPIResp4
-            // 
             this.RrhhLblKPIResp4.AutoSize = true;
             this.RrhhLblKPIResp4.BackColor = System.Drawing.Color.Transparent;
             this.RrhhLblKPIResp4.Font = new System.Drawing.Font("Lucida Fax", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -680,9 +570,6 @@
             this.RrhhLblKPIResp4.Name = "RrhhLblKPIResp4";
             this.RrhhLblKPIResp4.TabIndex = 1;
             this.RrhhLblKPIResp4.Text = "0";
-            // 
-            // RrhhLblKPI4
-            // 
             this.RrhhLblKPI4.BackColor = System.Drawing.Color.Transparent;
             this.RrhhLblKPI4.Font = new System.Drawing.Font("Lucida Fax", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RrhhLblKPI4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(76)))), ((int)(((byte)(85)))));
@@ -691,9 +578,6 @@
             this.RrhhLblKPI4.Size = new System.Drawing.Size(155, 46);
             this.RrhhLblKPI4.TabIndex = 2;
             this.RrhhLblKPI4.Text = "Evaluaciones\r\nPendientes";
-            // 
-            // RrhhPnlKPI5
-            // 
             this.RrhhPnlKPI5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.RrhhPnlKPI5.Controls.Add(this.RrhhLblKPI5);
             this.RrhhPnlKPI5.Controls.Add(this.RrhhLblKPIResp5);
@@ -703,9 +587,6 @@
             this.RrhhPnlKPI5.Size = new System.Drawing.Size(172, 189);
             this.RrhhPnlKPI5.TabIndex = 8;
             this.RrhhPnlKPI5.Paint += new System.Windows.Forms.PaintEventHandler(this.RrhhPnlKPI_Paint);
-            // 
-            // RrhhPnlKPIIcono5
-            // 
             this.RrhhPnlKPIIcono5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(76)))), ((int)(((byte)(85)))));
             this.RrhhPnlKPIIcono5.BackgroundImage = global::CapaVista_Rrhh.Properties.Resources.kpi_nomina;
             this.RrhhPnlKPIIcono5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
@@ -713,9 +594,6 @@
             this.RrhhPnlKPIIcono5.Name = "RrhhPnlKPIIcono5";
             this.RrhhPnlKPIIcono5.Size = new System.Drawing.Size(70, 70);
             this.RrhhPnlKPIIcono5.TabIndex = 0;
-            // 
-            // RrhhLblKPIResp5
-            // 
             this.RrhhLblKPIResp5.AutoSize = true;
             this.RrhhLblKPIResp5.BackColor = System.Drawing.Color.Transparent;
             this.RrhhLblKPIResp5.Font = new System.Drawing.Font("Lucida Fax", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -724,9 +602,6 @@
             this.RrhhLblKPIResp5.Name = "RrhhLblKPIResp5";
             this.RrhhLblKPIResp5.TabIndex = 1;
             this.RrhhLblKPIResp5.Text = "0";
-            // 
-            // RrhhLblKPI5
-            // 
             this.RrhhLblKPI5.BackColor = System.Drawing.Color.Transparent;
             this.RrhhLblKPI5.Font = new System.Drawing.Font("Lucida Fax", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RrhhLblKPI5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(76)))), ((int)(((byte)(85)))));
@@ -735,9 +610,6 @@
             this.RrhhLblKPI5.Size = new System.Drawing.Size(155, 46);
             this.RrhhLblKPI5.TabIndex = 2;
             this.RrhhLblKPI5.Text = "Procesos de Nómina\r\nen Curso";
-            // 
-            // RrhhPnlKPI6
-            // 
             this.RrhhPnlKPI6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.RrhhPnlKPI6.Controls.Add(this.RrhhLblKPI6);
             this.RrhhPnlKPI6.Controls.Add(this.RrhhLblKPIResp6);
@@ -747,9 +619,6 @@
             this.RrhhPnlKPI6.Size = new System.Drawing.Size(172, 189);
             this.RrhhPnlKPI6.TabIndex = 9;
             this.RrhhPnlKPI6.Paint += new System.Windows.Forms.PaintEventHandler(this.RrhhPnlKPI_Paint);
-            // 
-            // RrhhPnlKPIIcono6
-            // 
             this.RrhhPnlKPIIcono6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(161)))), ((int)(((byte)(59)))));
             this.RrhhPnlKPIIcono6.BackgroundImage = global::CapaVista_Rrhh.Properties.Resources.kpi_liquidacion;
             this.RrhhPnlKPIIcono6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
@@ -757,9 +626,6 @@
             this.RrhhPnlKPIIcono6.Name = "RrhhPnlKPIIcono6";
             this.RrhhPnlKPIIcono6.Size = new System.Drawing.Size(70, 70);
             this.RrhhPnlKPIIcono6.TabIndex = 0;
-            // 
-            // RrhhLblKPIResp6
-            // 
             this.RrhhLblKPIResp6.AutoSize = true;
             this.RrhhLblKPIResp6.BackColor = System.Drawing.Color.Transparent;
             this.RrhhLblKPIResp6.Font = new System.Drawing.Font("Lucida Fax", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -768,9 +634,6 @@
             this.RrhhLblKPIResp6.Name = "RrhhLblKPIResp6";
             this.RrhhLblKPIResp6.TabIndex = 1;
             this.RrhhLblKPIResp6.Text = "0";
-            // 
-            // RrhhLblKPI6
-            // 
             this.RrhhLblKPI6.BackColor = System.Drawing.Color.Transparent;
             this.RrhhLblKPI6.Font = new System.Drawing.Font("Lucida Fax", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RrhhLblKPI6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(76)))), ((int)(((byte)(85)))));
@@ -779,9 +642,6 @@
             this.RrhhLblKPI6.Size = new System.Drawing.Size(155, 46);
             this.RrhhLblKPI6.TabIndex = 2;
             this.RrhhLblKPI6.Text = "Empleados en\r\nLiquidación";
-            // 
-            // RrhhPnlInfo
-            // 
             this.RrhhPnlInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.RrhhPnlInfo.Controls.Add(this.RrhhLblNota);
             this.RrhhPnlInfo.Controls.Add(this.RrhhLblNotaTitulo);
@@ -794,9 +654,6 @@
             this.RrhhPnlInfo.Size = new System.Drawing.Size(1122, 100);
             this.RrhhPnlInfo.TabIndex = 10;
             this.RrhhPnlInfo.Paint += new System.Windows.Forms.PaintEventHandler(this.RrhhPnlKPI_Paint);
-            // 
-            // RrhhLblInfoTitulo
-            // 
             this.RrhhLblInfoTitulo.AutoSize = true;
             this.RrhhLblInfoTitulo.BackColor = System.Drawing.Color.Transparent;
             this.RrhhLblInfoTitulo.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -805,9 +662,6 @@
             this.RrhhLblInfoTitulo.Name = "RrhhLblInfoTitulo";
             this.RrhhLblInfoTitulo.TabIndex = 0;
             this.RrhhLblInfoTitulo.Text = "Información relevante del módulo";
-            // 
-            // RrhhLblInfo
-            // 
             this.RrhhLblInfo.BackColor = System.Drawing.Color.Transparent;
             this.RrhhLblInfo.Font = new System.Drawing.Font("Lucida Fax", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RrhhLblInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(76)))), ((int)(((byte)(85)))));
@@ -816,17 +670,11 @@
             this.RrhhLblInfo.Size = new System.Drawing.Size(650, 48);
             this.RrhhLblInfo.TabIndex = 1;
             this.RrhhLblInfo.Text = "Desde aquí se administra al personal de la empresa: empleados, asistencia, permisos y vacaciones, capacitaciones, evaluaciones de desempeño, nómina y liquidaciones.";
-            // 
-            // RrhhPnlSeparador
-            // 
             this.RrhhPnlSeparador.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(228)))), ((int)(((byte)(225)))));
             this.RrhhPnlSeparador.Location = new System.Drawing.Point(700, 16);
             this.RrhhPnlSeparador.Name = "RrhhPnlSeparador";
             this.RrhhPnlSeparador.Size = new System.Drawing.Size(2, 68);
             this.RrhhPnlSeparador.TabIndex = 2;
-            // 
-            // RrhhLblIconoNota
-            // 
             this.RrhhLblIconoNota.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(76)))), ((int)(((byte)(85)))));
             this.RrhhLblIconoNota.Font = new System.Drawing.Font("Lucida Fax", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RrhhLblIconoNota.ForeColor = System.Drawing.Color.White;
@@ -836,9 +684,6 @@
             this.RrhhLblIconoNota.TabIndex = 3;
             this.RrhhLblIconoNota.Text = "i";
             this.RrhhLblIconoNota.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // RrhhLblNotaTitulo
-            // 
             this.RrhhLblNotaTitulo.AutoSize = true;
             this.RrhhLblNotaTitulo.BackColor = System.Drawing.Color.Transparent;
             this.RrhhLblNotaTitulo.Font = new System.Drawing.Font("Lucida Fax", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -846,10 +691,7 @@
             this.RrhhLblNotaTitulo.Location = new System.Drawing.Point(784, 14);
             this.RrhhLblNotaTitulo.Name = "RrhhLblNotaTitulo";
             this.RrhhLblNotaTitulo.TabIndex = 4;
-            this.RrhhLblNotaTitulo.Text = "Nota de integración";
-            // 
-            // RrhhLblNota
-            // 
+            this.RrhhLblNotaTitulo.Text = "Acceso por perfil";
             this.RrhhLblNota.BackColor = System.Drawing.Color.Transparent;
             this.RrhhLblNota.Font = new System.Drawing.Font("Lucida Fax", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RrhhLblNota.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(76)))), ((int)(((byte)(85)))));
@@ -857,10 +699,7 @@
             this.RrhhLblNota.Name = "RrhhLblNota";
             this.RrhhLblNota.Size = new System.Drawing.Size(326, 52);
             this.RrhhLblNota.TabIndex = 5;
-            this.RrhhLblNota.Text = "Al integrarse con Seguridad, el usuario, el rol y los permisos de cada opción se cargarán desde el inicio de sesión.";
-            // 
-            // FrmMDIRrhh
-            // 
+            this.RrhhLblNota.Text = "Las opciones del menú que puedes usar dependen del rol asignado a tu usuario.";
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(248)))), ((int)(((byte)(247)))));
@@ -872,7 +711,7 @@
             this.Controls.Add(this.RrhhPnlNavegador);
             this.Name = "FrmMDIRrhh";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "9000 - MDI Principal de Recursos Humanos";
+            this.Text = "9000 – RecursosHumanos";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.RrhhPbLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.RrhhPbMascota)).EndInit();

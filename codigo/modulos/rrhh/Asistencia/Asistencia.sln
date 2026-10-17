@@ -4,8 +4,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.14.37516.0 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaVista_Asistencia", "CapaVista_Asistencia\CapaVista_Asistencia.csproj", "{CC16E22E-8E90-485E-B4A0-140164B70F54}"
+	ProjectSection(ProjectDependencies) = postProject
+		{FBE38E88-94DC-4889-A0DB-DC1E662B38ED} = {FBE38E88-94DC-4889-A0DB-DC1E662B38ED}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaControlador_Asistencia", "CapaControlador_Asistencia\CapaControlador_Asistencia.csproj", "{FBE38E88-94DC-4889-A0DB-DC1E662B38ED}"
+	ProjectSection(ProjectDependencies) = postProject
+		{84F86291-4AC3-4383-833E-EFA583258C44} = {84F86291-4AC3-4383-833E-EFA583258C44}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaModelo_Asistencia", "CapaModelo_Asistencia\CapaModelo_Asistencia.csproj", "{84F86291-4AC3-4383-833E-EFA583258C44}"
 EndProject

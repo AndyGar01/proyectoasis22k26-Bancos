@@ -37,8 +37,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmEvaluacionDesempeño));
             this.RrhhBtnNuevo = new System.Windows.Forms.Button();
             this.RrhhPnlEncabezado = new System.Windows.Forms.Panel();
-            this.RrhhLblSubTituloCierreNominas = new System.Windows.Forms.Label();
-            this.RrhhLblTituloEvauacionDesempeño = new System.Windows.Forms.Label();
+            this.RrhhLblSubTituloEvaluacion = new System.Windows.Forms.Label();
+            this.RrhhLblTituloEvaluacion = new System.Windows.Forms.Label();
             this.RrhhPbIconoEvaluacion = new System.Windows.Forms.PictureBox();
             this.RrhhPbMascota = new System.Windows.Forms.PictureBox();
             this.RrhhBtnGuardar = new System.Windows.Forms.Button();
@@ -190,8 +190,8 @@
             // 
             this.RrhhPnlEncabezado.BackgroundImage = global::CapaVista_EvaluacionDesempeño.Properties.Resources.Pnl_fondo;
             this.RrhhPnlEncabezado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.RrhhPnlEncabezado.Controls.Add(this.RrhhLblSubTituloCierreNominas);
-            this.RrhhPnlEncabezado.Controls.Add(this.RrhhLblTituloEvauacionDesempeño);
+            this.RrhhPnlEncabezado.Controls.Add(this.RrhhLblSubTituloEvaluacion);
+            this.RrhhPnlEncabezado.Controls.Add(this.RrhhLblTituloEvaluacion);
             this.RrhhPnlEncabezado.Controls.Add(this.RrhhPbIconoEvaluacion);
             this.RrhhPnlEncabezado.Controls.Add(this.RrhhPbMascota);
             this.RrhhPnlEncabezado.Location = new System.Drawing.Point(12, 12);
@@ -200,29 +200,28 @@
             this.RrhhPnlEncabezado.Size = new System.Drawing.Size(1492, 132);
             this.RrhhPnlEncabezado.TabIndex = 0;
             // 
-            // RrhhLblSubTituloCierreNominas
+            // RrhhLblSubTituloEvaluacion
             // 
-            this.RrhhLblSubTituloCierreNominas.AutoSize = true;
-            this.RrhhLblSubTituloCierreNominas.BackColor = System.Drawing.Color.Transparent;
-            this.RrhhLblSubTituloCierreNominas.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RrhhLblSubTituloCierreNominas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(76)))), ((int)(((byte)(85)))));
-            this.RrhhLblSubTituloCierreNominas.Location = new System.Drawing.Point(169, 80);
-            this.RrhhLblSubTituloCierreNominas.Name = "RrhhLblSubTituloCierreNominas";
-            this.RrhhLblSubTituloCierreNominas.Size = new System.Drawing.Size(679, 29);
-            this.RrhhLblSubTituloCierreNominas.TabIndex = 5;
-            this.RrhhLblSubTituloCierreNominas.Text = "Calificaion y Seguimiento del desempeño de los colaboradores.";
+            this.RrhhLblSubTituloEvaluacion.AutoSize = true;
+            this.RrhhLblSubTituloEvaluacion.BackColor = System.Drawing.Color.Transparent;
+            this.RrhhLblSubTituloEvaluacion.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RrhhLblSubTituloEvaluacion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(76)))), ((int)(((byte)(85)))));
+            this.RrhhLblSubTituloEvaluacion.Location = new System.Drawing.Point(169, 80);
+            this.RrhhLblSubTituloEvaluacion.Name = "RrhhLblSubTituloEvaluacion";
+            this.RrhhLblSubTituloEvaluacion.Size = new System.Drawing.Size(679, 29);
+            this.RrhhLblSubTituloEvaluacion.TabIndex = 5;
+            this.RrhhLblSubTituloEvaluacion.Text = "Calificación y seguimiento del desempeño de los colaboradores.";
             // 
-            // RrhhLblTituloEvauacionDesempeño
+            // RrhhLblTituloEvaluacion
             // 
-            this.RrhhLblTituloEvauacionDesempeño.AutoSize = true;
-            this.RrhhLblTituloEvauacionDesempeño.Font = new System.Drawing.Font("Lucida Bright", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RrhhLblTituloEvauacionDesempeño.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(76)))), ((int)(((byte)(85)))));
-            this.RrhhLblTituloEvauacionDesempeño.Location = new System.Drawing.Point(167, 27);
-            this.RrhhLblTituloEvauacionDesempeño.Name = "RrhhLblTituloEvauacionDesempeño";
-            this.RrhhLblTituloEvauacionDesempeño.Size = new System.Drawing.Size(645, 37);
-            this.RrhhLblTituloEvauacionDesempeño.TabIndex = 4;
-            this.RrhhLblTituloEvauacionDesempeño.Text = "Evaluacion Desempeño de Empleados";
-            this.RrhhLblTituloEvauacionDesempeño.Click += new System.EventHandler(this.RrhhLblTituloCierreNominas_Click);
+            this.RrhhLblTituloEvaluacion.AutoSize = true;
+            this.RrhhLblTituloEvaluacion.Font = new System.Drawing.Font("Lucida Bright", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RrhhLblTituloEvaluacion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(76)))), ((int)(((byte)(85)))));
+            this.RrhhLblTituloEvaluacion.Location = new System.Drawing.Point(167, 27);
+            this.RrhhLblTituloEvaluacion.Name = "RrhhLblTituloEvaluacion";
+            this.RrhhLblTituloEvaluacion.Size = new System.Drawing.Size(645, 37);
+            this.RrhhLblTituloEvaluacion.TabIndex = 4;
+            this.RrhhLblTituloEvaluacion.Text = "Evaluación de Desempeño de Empleados";
             // 
             // RrhhPbIconoEvaluacion
             // 
@@ -247,7 +246,6 @@
             this.RrhhPbMascota.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.RrhhPbMascota.TabIndex = 3;
             this.RrhhPbMascota.TabStop = false;
-            this.RrhhPbMascota.Click += new System.EventHandler(this.RrhhPbMascota_Click);
             // 
             // RrhhBtnGuardar
             // 
@@ -1855,7 +1853,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "FrmEvaluacionDesempeño";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "9501 - EvaluacionDesempeño";
             this.RrhhPnlEncabezado.ResumeLayout(false);
             this.RrhhPnlEncabezado.PerformLayout();
@@ -2006,7 +2004,7 @@
         private System.Windows.Forms.Button RrhhBtnPaginaSiguiente;
         private System.Windows.Forms.Button RrhhBtnPaginaUltima;
         private System.Windows.Forms.Button RrhhBtnNuevo;
-        private System.Windows.Forms.Label RrhhLblSubTituloCierreNominas;
-        private System.Windows.Forms.Label RrhhLblTituloEvauacionDesempeño;
+        private System.Windows.Forms.Label RrhhLblSubTituloEvaluacion;
+        private System.Windows.Forms.Label RrhhLblTituloEvaluacion;
     }
 }

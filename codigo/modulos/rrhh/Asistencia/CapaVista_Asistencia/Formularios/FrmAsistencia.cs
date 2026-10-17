@@ -39,23 +39,18 @@ namespace CapaVista_Asistencia.Formularios
         private DataTable _Asistencias;
         private DataView _Vista;
 
-        // registro elegido en la tabla, null cuando se esta ingresando uno nuevo
         private int? _IdSeleccionado;
         private int? _IdEmpleado;
         private bool _LlenandoEmpleado;
         private bool _HayCambios;
 
-        // mientras se llena el detalle por codigo no se cuentan cambios ni se proponen estados
         private bool _CargandoRegistro;
 
-        // minutos de gracia antes de contar como tardanza
         private const int MinutosTolerancia = 5;
 
-        // imagen normal, la mas clara (mouse encima) y la gris (deshabilitado)
         private readonly Dictionary<Button, Image[]> _ImagenesBotones = new Dictionary<Button, Image[]>();
         private readonly HashSet<Button> _BotonesSinPermiso = new HashSet<Button>();
 
-        // campos con error, se pintan con borde rojo en su grupo
         private readonly HashSet<Control> _CamposConError = new HashSet<Control>();
         private Dictionary<Control, Label> _EtiquetasError;
 
@@ -76,7 +71,6 @@ namespace CapaVista_Asistencia.Formularios
             RrhhMetRedondear(RrhhPnlDetalle, 14);
             RrhhMetRedondear(RrhhPnlRegistros, 14);
 
-            // texto gris dentro del buscador (EM_SETCUEBANNER)
             SendMessage(RrhhTxtBuscar.Handle, 0x1501, (IntPtr)1, "Buscar por nombre o código...");
 
             _EtiquetasError = new Dictionary<Control, Label>
@@ -99,9 +93,6 @@ namespace CapaVista_Asistencia.Formularios
             RrhhMetActualizarTotal();
         }
 
-        // ---------------- tablas ----------------
-
-        // tienen las columnas que traera la base de datos, por ahora quedan vacias
         private void RrhhMetCrearTablas()
         {
             _Empleados = new DataTable();
@@ -115,7 +106,6 @@ namespace CapaVista_Asistencia.Formularios
             _Empleados.Columns.Add("horaInicioJornada", typeof(TimeSpan));
             _Empleados.Columns.Add("horaFinJornada", typeof(TimeSpan));
 
-            // los permisos vendran del modulo de Permisos y Vacaciones
             _Permisos = new DataTable();
             _Permisos.Columns.Add("idPermiso", typeof(int));
             _Permisos.Columns.Add("idEmpleado", typeof(int));
@@ -170,7 +160,6 @@ namespace CapaVista_Asistencia.Formularios
             return _IdEmpleado == null ? null : RrhhMetBuscarEmpleado(_IdEmpleado.Value);
         }
 
-        // solo cuentan los permisos aprobados que cubren la fecha
         private DataRow RrhhMetBuscarPermiso(int IdEmpleado, DateTime Fecha)
         {
             string Dia = Fecha.Date.ToString("MM/dd/yyyy");
@@ -193,7 +182,6 @@ namespace CapaVista_Asistencia.Formularios
             return $"{(int)Horas.TotalHours}:{Horas.Minutes:00}";
         }
 
-        // el codigo y el nombre se escriben directo, solo se sugieren los que coinciden
         private void RrhhMetLlenarEmpleados()
         {
             var Nombres = new AutoCompleteStringCollection();
@@ -208,9 +196,6 @@ namespace CapaVista_Asistencia.Formularios
             RrhhTxtCodigo.AutoCompleteCustomSource = Codigos;
         }
 
-        // ---------------- detalle ----------------
-
-        // deja el detalle vacio para ingresar una asistencia nueva
         private void RrhhMetNuevoRegistro()
         {
             _CargandoRegistro = true;
@@ -236,7 +221,6 @@ namespace CapaVista_Asistencia.Formularios
             RrhhMetActualizarBotones();
         }
 
-        // al hacer clic en cualquier parte de una fila se cargan sus datos en el detalle
         private void RrhhDgvAsistencias_SelectionChanged(object sender, EventArgs e)
         {
             if (_CargandoRegistro) return;
@@ -266,7 +250,6 @@ namespace CapaVista_Asistencia.Formularios
             RrhhMetActualizarBotones();
         }
 
-        // las horas pueden venir vacias, en ese caso se quita el check del control
         private static void RrhhMetPonerHora(DateTimePicker Control, object Hora)
         {
             Control.Value = DateTime.Today.Add(Hora == DBNull.Value ? new TimeSpan(8, 0, 0) : (TimeSpan)Hora);
@@ -278,7 +261,6 @@ namespace CapaVista_Asistencia.Formularios
             return Control.Checked ? (object)new TimeSpan(Control.Value.Hour, Control.Value.Minute, 0) : DBNull.Value;
         }
 
-        // al escribir un codigo o un nombre completo que existe se llenan los datos del empleado
         private void RrhhTxtCodigo_TextChanged(object sender, EventArgs e)
         {
             if (_LlenandoEmpleado || _Empleados == null) return;
@@ -308,7 +290,6 @@ namespace CapaVista_Asistencia.Formularios
             RrhhMetCampoCambiado(RrhhTxtEmpleado);
         }
 
-        // llena los datos del empleado; el campo donde se esta escribiendo no se toca
         private void RrhhMetPonerEmpleado(DataRow Empleado, TextBox Origen)
         {
             _LlenandoEmpleado = true;
@@ -335,7 +316,6 @@ namespace CapaVista_Asistencia.Formularios
         private void RrhhDtpHora_ValueChanged(object sender, EventArgs e)
         {
             if (_CargandoRegistro) return;
-            // si cambian las horas se propone el estado, pero se puede cambiar a mano
             if (RrhhCboEstado.Enabled) RrhhCboEstado.SelectedItem = RrhhMetEstadoSugerido();
             RrhhMetCampoCambiado((Control)sender);
             RrhhMetQuitarError(RrhhDtpHoraSalida);
@@ -361,7 +341,6 @@ namespace CapaVista_Asistencia.Formularios
             RrhhMetActualizarBotones();
         }
 
-        // con permiso aprobado el estado queda en Permiso y ya no se puede cambiar
         private void RrhhMetRevisarPermiso()
         {
             DataRow Permiso = RrhhMetPermisoActual();
@@ -405,7 +384,6 @@ namespace CapaVista_Asistencia.Formularios
             RrhhTxtIncidencias.Text = HayEmpleado ? RrhhMetIncidencias(Entrada, Salida) : "";
         }
 
-        // compara las horas marcadas con el horario de la jornada del empleado
         private string RrhhMetIncidencias(object Entrada, object Salida)
         {
             if (RrhhMetPermisoActual() != null) return "Cubierto por permiso";
@@ -439,9 +417,6 @@ namespace CapaVista_Asistencia.Formularios
             }
         }
 
-        // ---------------- validaciones ----------------
-
-        // revisa todo antes de guardar o modificar, cada error se marca en su campo
         private bool RrhhMetValidar()
         {
             RrhhMetLimpiarErrores();
@@ -473,7 +448,6 @@ namespace CapaVista_Asistencia.Formularios
             return _CamposConError.Count == 0;
         }
 
-        // un empleado solo puede tener una asistencia por dia (UNIQUE en la tabla)
         private bool RrhhMetExisteAsistencia(int IdEmpleado, DateTime Fecha)
         {
             string Filtro = $"idEmpleado = {IdEmpleado} AND fechaAsistencia = #{Fecha.Date:MM/dd/yyyy}#";
@@ -504,7 +478,6 @@ namespace CapaVista_Asistencia.Formularios
             foreach (Control Campo in _CamposConError.ToList()) RrhhMetQuitarError(Campo);
         }
 
-        // borde rojo alrededor de los campos con error
         private void RrhhGbx_Paint(object sender, PaintEventArgs e)
         {
             using (Pen Lapiz = new Pen(Color.FromArgb(211, 47, 47), 2))
@@ -519,9 +492,6 @@ namespace CapaVista_Asistencia.Formularios
             }
         }
 
-        // ---------------- botones ----------------
-
-        // Guardar cuando hay datos nuevos, Modificar y Eliminar cuando se elige un registro de la lista
         private void RrhhMetActualizarBotones()
         {
             RrhhMetHabilitarBoton(RrhhBtnGuardar, _HayCambios && _IdSeleccionado == null);
@@ -602,8 +572,6 @@ namespace CapaVista_Asistencia.Formularios
             RrhhMetNuevoRegistro();
         }
 
-        // ---------------- lista ----------------
-
         private void RrhhDgvAsistencias_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
         {
             if (e.RowIndex < 0 || e.Value == null) return;
@@ -658,7 +626,6 @@ namespace CapaVista_Asistencia.Formularios
             RrhhMetActualizarTotal();
         }
 
-        // se quitan los caracteres que usa RowFilter para que no truene la busqueda
         private static string RrhhMetTextoFiltro(string Texto)
         {
             return Texto.Trim().Replace("'", "''").Replace("[", "").Replace("]", "").Replace("*", "").Replace("%", "");
@@ -670,7 +637,6 @@ namespace CapaVista_Asistencia.Formularios
             RrhhLblTotalRegistros.Text = Total == 0 ? "No hay registros" : $"Mostrando 1 - {Total} de {Total} registros";
         }
 
-        // Inicio, Anterior, Siguiente y Fin se mueven por las filas que se ven en la lista
         private void RrhhBtnInicio_Click(object sender, EventArgs e)
         {
             RrhhMetIrAFila(0);
@@ -705,16 +671,12 @@ namespace CapaVista_Asistencia.Formularios
             this.Close();
         }
 
-        // boton gris y sin efecto, se usara cuando Seguridad mande los permisos;
-        // queda apagado aunque despues cambie el estado del formulario
         public void RrhhMetDeshabilitarBoton(Button Boton)
         {
             _BotonesSinPermiso.Add(Boton);
             RrhhMetHabilitarBoton(Boton, false);
         }
 
-        // las imagenes se escalan una vez al tamaño real del boton,
-        // asi no se ven borrosas ni se reescalan cada vez que se pinta
         private void RrhhMetPrepararImagenes()
         {
             foreach (Control Control in RrhhPnlBotones.Controls)
@@ -733,7 +695,6 @@ namespace CapaVista_Asistencia.Formularios
                 Original.Dispose();
             }
 
-            // el fondo del encabezado tambien se escala una sola vez
             Image Fondo = RrhhPnlEncabezado.BackgroundImage;
             RrhhPnlEncabezado.BackgroundImage = RrhhMetEscalarImagen(Fondo, RrhhPnlEncabezado.Width, RrhhPnlEncabezado.Height);
             RrhhPnlEncabezado.BackgroundImageLayout = ImageLayout.None;
@@ -794,7 +755,6 @@ namespace CapaVista_Asistencia.Formularios
 
         private static Bitmap RrhhMetGris(Image Original)
         {
-            // gris claro como pide el estandar para botones deshabilitados
             return RrhhMetAplicarColor(Original, new ColorMatrix(new[]
             {
                 new float[] { 0.2f, 0.2f, 0.2f, 0, 0 },

@@ -10,7 +10,7 @@
  *  Tiene el menú lateral con las opciones del módulo, la barra de
  *  arriba con el usuario y el rol, y el panel de bienvenida con el
  *  resumen de indicadores (KPIs), la información del módulo y la
- *  nota de integración. Es la única ventana del módulo que se puede
+ *  nota de acceso por perfil. Es la única ventana del módulo que se puede
  *  maximizar, por eso el contenido se acomoda al tamaño que tenga.
  * Reglas especificas:
  *  Por ahora es un prototipo no funcional, los KPIs quedan en 0 y
@@ -31,7 +31,6 @@ using CapaVista_CierreNominas.Fomularios;
 using CapaVista_Nomina.Formularios;
 using CapaVista_Empleado.Formularios;
 
-
 namespace CapaVista_Rrhh.Formularios
 {
     public partial class FrmMDIRrhh : Form
@@ -39,12 +38,10 @@ namespace CapaVista_Rrhh.Formularios
         private bool _NavegadorColapsado;
         private int _AnchoNavegador;
 
-        // imagenes de fondo originales y la del menu ya escalada
         private Image _FondoDashboard;
         private Image _FondoNavegador;
         private Bitmap _FondoNavegadorEscalado;
 
-        // medidas del diseño (ya con la escala de la pantalla) para acomodar el dashboard
         private bool _MedidasListas;
         private float _Zoom = 1f;
         private int _Margen, _Separacion, _AnchoKpiBase, _AltoKpiBase, _TopResumen, _OffsetKpi, _OffsetInfo;
@@ -60,13 +57,12 @@ namespace CapaVista_Rrhh.Formularios
             this.Load += FrmMDIRrhh_Load;
         }
 
-        // para que la ventana se pinte completa de una vez y no por partes
         protected override CreateParams CreateParams
         {
             get
             {
                 CreateParams Parametros = base.CreateParams;
-                Parametros.ExStyle |= 0x02000000; // WS_EX_COMPOSITED
+                Parametros.ExStyle |= 0x02000000;
                 return Parametros;
             }
         }
@@ -79,7 +75,6 @@ namespace CapaVista_Rrhh.Formularios
             RrhhMetDarFormaTarjetas();
             RrhhMetAcomodarDashboard();
 
-            // mas pequeño que esto ya no caben las tarjetas, pero nunca mas grande que la pantalla
             float Escala;
             using (Graphics G = CreateGraphics()) Escala = G.DpiX / 96f;
             Rectangle Area = Screen.FromControl(this).WorkingArea;
@@ -87,7 +82,6 @@ namespace CapaVista_Rrhh.Formularios
                                         Math.Min((int)(720 * Escala), Area.Height));
         }
 
-        // se guarda como quedo cada control en el diseño, de ahi se calcula todo al cambiar el tamaño
         private void RrhhMetGuardarMedidas()
         {
             _Margen = RrhhPnlKPI1.Left;
@@ -118,8 +112,6 @@ namespace CapaVista_Rrhh.Formularios
             }
         }
 
-        // con pantallas bajas como 1366 x 768 todo se reduce un poco para que quepa,
-        // en pantallas grandes se queda del tamaño del diseño y solo se estira a lo ancho
         private void RrhhMetAcomodarDashboard()
         {
             if (!_MedidasListas) return;
@@ -130,7 +122,7 @@ namespace CapaVista_Rrhh.Formularios
             int AnchoBase = 2 * _Margen + 5 * _Separacion + 6 * (_AnchoKpiBase * 85 / 100);
 
             float Zoom = Math.Min(1f, Math.Min((float)Alto / AltoBase, (float)Ancho / AnchoBase));
-            Zoom = Math.Max(0.6f, (float)Math.Floor(Zoom * 20) / 20); // de 5 en 5 % para no recalcular a cada rato
+            Zoom = Math.Max(0.6f, (float)Math.Floor(Zoom * 20) / 20);
 
             RrhhPnlDashboard.SuspendLayout();
             RrhhMetAplicarZoom(Zoom);
@@ -161,7 +153,6 @@ namespace CapaVista_Rrhh.Formularios
                 if (Anterior != FuenteOriginal && Anterior != Control.Font) Anterior.Dispose();
             }
 
-            // los circulos se vuelven a recortar con el tamaño nuevo
             foreach (Control Icono in new Control[] { RrhhPnlKPIIcono1, RrhhPnlKPIIcono2, RrhhPnlKPIIcono3,
                                                       RrhhPnlKPIIcono4, RrhhPnlKPIIcono5, RrhhPnlKPIIcono6, RrhhLblIconoNota })
             {
@@ -180,7 +171,6 @@ namespace CapaVista_Rrhh.Formularios
             return (int)Math.Round(Valor * _Zoom);
         }
 
-        // devuelve el alto que ocupa todo el contenido
         private int RrhhMetAcomodarContenido(int Ancho)
         {
             Panel[] Kpis = { RrhhPnlKPI1, RrhhPnlKPI2, RrhhPnlKPI3, RrhhPnlKPI4, RrhhPnlKPI5, RrhhPnlKPI6 };
@@ -188,7 +178,6 @@ namespace CapaVista_Rrhh.Formularios
             int Dy = RrhhPnlDashboard.AutoScrollPosition.Y;
             int Margen = RrhhMetZ(_Margen), Separacion = RrhhMetZ(_Separacion);
 
-            // las 6 tarjetas en una fila, y si ya no caben en dos filas de 3
             int Columnas = 6;
             int AnchoKpi = (Ancho - 2 * Margen - 5 * Separacion) / 6;
             if (AnchoKpi < RrhhMetZ(_AnchoKpiBase) * 4 / 5)
@@ -203,7 +192,6 @@ namespace CapaVista_Rrhh.Formularios
             int AltoInfo = RrhhMetAcomodarInfo(Ancho - 2 * Margen);
             int AltoAbajo = RrhhMetZ(_OffsetKpi) + AltoFilas + RrhhMetZ(_OffsetInfo) + AltoInfo + Margen / 2;
 
-            // si falta alto se sube el resumen, pero sin tapar el boton de ayuda
             int YResumen = Math.Max(RrhhMetZ(_AltoHeroMin),
                 Math.Min(RrhhMetZ(_TopResumen), RrhhPnlDashboard.Height - AltoAbajo));
             int YKpi = YResumen + RrhhMetZ(_OffsetKpi);
@@ -222,7 +210,6 @@ namespace CapaVista_Rrhh.Formularios
             RrhhPnlInfo.SetBounds(Margen, YInfo + Dy, Ancho - 2 * Margen, AltoInfo);
             RrhhMetRedondear(RrhhPnlInfo, 18);
 
-            // la mascota usa el espacio que queda a la derecha del texto
             int Izq = Math.Max(RrhhLblBienvenido.Right, RrhhLblParrafo.Right) + Margen / 2;
             int EspacioAncho = Ancho - Margen - Izq;
             int Piso = YResumen + RrhhMetZ(_MascotaAbajo);
@@ -237,7 +224,6 @@ namespace CapaVista_Rrhh.Formularios
             return YInfo + AltoInfo + Margen / 2;
         }
 
-        // reparte el panel de informacion: el texto del modulo a la izquierda y la nota a la derecha
         private int RrhhMetAcomodarInfo(int AnchoPanel)
         {
             int Pad = RrhhMetZ(_InfoPad);
@@ -271,20 +257,17 @@ namespace CapaVista_Rrhh.Formularios
             Anterior?.Dispose();
         }
 
-        // los fondos, el logo y la mascota se escalan una sola vez al cargar,
-        // si se dejan en Stretch o Zoom se vuelven a escalar cada vez que se pinta
         private void RrhhMetPrepararImagenes()
         {
             _FondoDashboard = RrhhPnlDashboard.BackgroundImage;
             RrhhMetEscalarFondoDashboard();
 
-            // el fondo del menu se pinta en RrhhPnlNavegador_Paint
             _FondoNavegador = RrhhPnlNavegador.BackgroundImage;
             RrhhPnlNavegador.BackgroundImage = null;
 
             RrhhMetAjustarImagen(RrhhPbLogo);
             RrhhMetAjustarImagen(RrhhPbMascota);
-            RrhhPbMascota.SizeMode = PictureBoxSizeMode.Zoom; // se hace mas pequeña si no cabe
+            RrhhPbMascota.SizeMode = PictureBoxSizeMode.Zoom;
         }
 
         private void RrhhMetEscalarFondoDashboard()
@@ -312,8 +295,6 @@ namespace CapaVista_Rrhh.Formularios
             Original.Dispose();
         }
 
-        // los iconos vienen a 128 px y se reducen segun la escala de la pantalla
-        // para que no se vean borrosos, las copias _diseno solo son para el diseñador
         private void RrhhMetCargarIconos()
         {
             var Iconos = new Dictionary<Button, Image>
@@ -341,7 +322,6 @@ namespace CapaVista_Rrhh.Formularios
             }
         }
 
-        // con AltaCalidad en false es mas rapido, se usa para los fondos
         private static Bitmap RrhhMetEscalarImagen(Image Original, int Ancho, int Alto, bool AltaCalidad)
         {
             var Resultado = new Bitmap(Ancho, Alto, PixelFormat.Format32bppPArgb);
@@ -355,7 +335,6 @@ namespace CapaVista_Rrhh.Formularios
             return Resultado;
         }
 
-        // se llama despues del login con los datos de la sesion
         public void RrhhMetActualizarInfoUsuario(string Nombre, string Rol)
         {
             RrhhLblUsuario.Text = $"Usuario: {Nombre}";
@@ -363,8 +342,6 @@ namespace CapaVista_Rrhh.Formularios
             RrhhLblUsuarioRol.Left = RrhhLblUsuario.Right + 30;
         }
 
-        // TieneAcceso recibe el id de la aplicacion y dice si el usuario puede entrar,
-        // los id estan en 0 porque Seguridad todavia no nos da la numeracion
         public void RrhhMetAplicarPermisos(Func<int, bool> TieneAcceso)
         {
             var MapaBotonesMDI = new Dictionary<Button, int>
@@ -386,7 +363,6 @@ namespace CapaVista_Rrhh.Formularios
             }
         }
 
-        // boton gris y sin efecto, como pide el estandar
         public void RrhhMetDeshabilitarBoton(Button Boton)
         {
             Boton.Enabled = false;
@@ -405,7 +381,6 @@ namespace CapaVista_Rrhh.Formularios
 
         private void RrhhMetDarFormaTarjetas()
         {
-            // tarjetas redondeadas y los iconos de los KPIs en circulo
             foreach (Control Tarjeta in RrhhPnlDashboard.Controls)
             {
                 if (!(Tarjeta is Panel) || !Tarjeta.Name.StartsWith("RrhhPnlKPI")) continue;
@@ -453,8 +428,6 @@ namespace CapaVista_Rrhh.Formularios
             RrhhPnlNavegador.Region = new Region(RrhhMetRedondearEsquinas(RrhhPnlNavegador.ClientRectangle, 22));
         }
 
-        // el fondo del menu siempre se pinta al ancho del menu abierto,
-        // asi cuando se colapsa solo se recorta y no se ve aplastado
         private void RrhhPnlNavegador_Paint(object sender, PaintEventArgs e)
         {
             if (_FondoNavegador == null) return;
@@ -495,9 +468,6 @@ namespace CapaVista_Rrhh.Formularios
             return RutaGrafica;
         }
 
-        // colapsa el menu y deja solo los iconos, el texto de cada boton se guarda en el Tag.
-        // uso una bandera en vez de comparar el ancho porque con escala de 125% o 150%
-        // el ancho ya no es 270
         private void RrhhBtnBurger_Click(object sender, EventArgs e)
         {
             bool Colapsar = !_NavegadorColapsado;
@@ -527,7 +497,6 @@ namespace CapaVista_Rrhh.Formularios
             this.ResumeLayout();
         }
 
-        // la ventana de asistencia esta en su propia DLL (CapaVista_Asistencia)
         private void RrhhBtnAsistencia_Click(object sender, EventArgs e)
         {
             using (var Asistencia = new CapaVista_Asistencia.Formularios.FrmAsistencia())
@@ -552,31 +521,26 @@ namespace CapaVista_Rrhh.Formularios
 
         private void RrhhBtnEmpleados_Click(object sender, EventArgs e)
         {
-            FrmEmpleados empleados = new FrmEmpleados();
-            empleados.ShowDialog();
+            FrmEmpleados Empleados = new FrmEmpleados();
+            Empleados.ShowDialog(this);
         }
 
         private void RrhhBtnCierresNomina_Click(object sender, EventArgs e)
         {
             FrmCierreNominas CierreNominas = new FrmCierreNominas();
-            CierreNominas.ShowDialog();
-        }
-
-        private void FrmMDIRrhh_Load_1(object sender, EventArgs e)
-        {
-
+            CierreNominas.ShowDialog(this);
         }
 
         private void RrhhBtnNomina_Click(object sender, EventArgs e)
         {
-            FrmPercepcionesDeducciones CierreNominas = new FrmPercepcionesDeducciones();
-            CierreNominas.ShowDialog();
+            FrmPercepcionesDeducciones Percepciones = new FrmPercepcionesDeducciones();
+            Percepciones.ShowDialog(this);
         }
 
         private void RrhhBtnCapacitaciones_Click(object sender, EventArgs e)
         {
             FrmCapacitacion Capacitacion = new FrmCapacitacion();
-            Capacitacion.ShowDialog();
+            Capacitacion.ShowDialog(this);
         }
 
         private void RrhhBtnPermisosVacaciones_Click(object sender, EventArgs e)

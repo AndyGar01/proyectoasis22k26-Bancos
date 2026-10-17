@@ -35,12 +35,8 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\CapaControlador_Seguridad\bin\Debug\CapaControlador_Seguridad.dll</HintPath>
     </Reference>
-    <ProjectReference Include="..\..\..\..\modulos\compras\Compras\CapaVista_Compras\CapaVista_Compras.csproj">
-      <Project>{18E9C0AB-7946-4222-925F-7859A62839E9}</Project>
-      <Name>CapaVista_Compras</Name>
-    </ProjectReference>
-    <Reference Include="CapaVista_Consultas">
-      <HintPath>..\..\..\..\..\..\..\TERMINUS\Componente — Consultas\proyectoasis22k26-Consultas\codigo\componentes\consultas\Consultas\CapaVista_Consultas\bin\Debug\CapaVista_Consultas.dll</HintPath>
+    <Reference Include="CapaVista_Navegador">
+      <HintPath>..\..\..\navegador\Navegador\CapaVista_Navegador\bin\Debug\CapaVista_Navegador.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
@@ -122,6 +118,12 @@
     </Compile>
     <Compile Include="FrmMantenimientoModulo.Designer.cs">
       <DependentUpon>FrmMantenimientoModulo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNavegador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNavegador.Designer.cs">
+      <DependentUpon>FrmNavegador.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmRecuperacion.cs">
       <SubType>Form</SubType>
@@ -239,6 +241,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMantenimientoModulo.resx">
       <DependentUpon>FrmMantenimientoModulo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNavegador.resx">
+      <DependentUpon>FrmNavegador.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmRecuperacion.resx">
       <DependentUpon>FrmRecuperacion.cs</DependentUpon>

@@ -61,11 +61,6 @@ namespace CapaVista_Seguridad
 
         private void button1_Click(object sender, EventArgs e)
         {
-            SeguridadMetIngresar(false);
-        }
-
-        private void SeguridadMetIngresar(bool abrirCompras)
-        {
             try
             {
                 var modelo = new ClsModeloUsuario();
@@ -80,23 +75,10 @@ namespace CapaVista_Seguridad
                         roles: modelo.Roles
                     );
 
-                    try
-                    {
-                        using (Form frmPrincipal = abrirCompras
-                            ? (Form)new CapaVista_Compras.FrmSplash()
-                            : new FrmSplash())
-                        {
-                            this.Hide();
-                            frmPrincipal.ShowDialog();
-                        }
-                    }
-                    finally
-                    {
-                        ClsSesionSeguridad.SeguridadMetCerrarSesion();
-                        SeguridadTxtContraseña.Clear();
-                        this.Show();
-                        SeguridadTxtContraseña.Focus();
-                    }
+                    this.Hide();
+                    var frmPrincipal = new FrmSplash();
+                    frmPrincipal.ShowDialog();
+                    this.Show();
                 }
                 else
                 {
@@ -125,11 +107,6 @@ namespace CapaVista_Seguridad
         private void SeguridadChkMostrarContra_CheckedChanged(object sender, EventArgs e)
         {
             SeguridadTxtContraseña.PasswordChar = SeguridadChkMostrarContra.Checked ? '\0' : '*';
-        }
-
-        private void ComprasBtnLogin_Click(object sender, EventArgs e)
-        {
-            SeguridadMetIngresar(true);
         }
     }
 }

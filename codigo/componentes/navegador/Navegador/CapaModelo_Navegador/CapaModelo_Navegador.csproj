@@ -39,7 +39,7 @@
     <Reference Include="System.Core" />
     <!-- Conexión a la base de datos: se reutiliza ClsConexion del componente Seguridad (mismo DSN). -->
     <Reference Include="CapaModelo_Seguridad">
-      <HintPath>$(SeguridadBin)\CapaModelo_Seguridad\bin\$(Configuration)\CapaModelo_Seguridad.dll</HintPath>
+      <HintPath>$(SeguridadBin)\CapaModelo_Seguridad\bin\Debug\CapaModelo_Seguridad.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System.Xml.Linq" />

@@ -71,6 +71,34 @@ namespace CapaVista_Seguridad
                 Form principal = null;
                 switch (_Destino)
                 {
+                    case "Seguridad":
+                        principal = new FrmMDISeguridad();
+                        break;
+                    
+                    //case "Logistica":
+                        //var MDILogistica = new FrmMDILogistica();
+                        //MDILogistica.LogisticaMetActualizarInfoUsuario(
+                        //ClsSesionSeguridad.NombreEmpleado,
+                        //ClsSesionSeguridad.SeguridadMetRolesComoTexto());
+                        //principal = MDILogistica;
+                        //break;
+
+                    //case "Compras":
+                        //var MDICompras = new FrmMDICompras();
+                        //MDICompras.ComprasMetActualizarInfoUsuario(
+                        //ClsSesionSeguridad.NombreEmpleado,
+                        //ClsSesionSeguridad.SeguridadMetRolesComoTexto());
+                        //principal = MDICompras;
+                        //break;
+
+                    //case "Ventas":
+                        //var MDIVentas = new FrmMDIVentas();
+                        //MDIVentas.VentasMetActualizarInfoUsuario(
+                        //ClsSesionSeguridad.NombreEmpleado,
+                        //ClsSesionSeguridad.SeguridadMetRolesComoTexto());
+                        //principal = MDIVentas;
+                        //break;
+
                     //case "Bancos":
                         //var MdiBancos = new FrmMDIBancos();
                         //MdiBancos.BancosMetActualizarInfoUsuario(
@@ -78,6 +106,15 @@ namespace CapaVista_Seguridad
                         //ClsSesionSeguridad.SeguridadMetRolesComoTexto());
                         //principal = MdiBancos;
                         //break;
+
+                    //case "Contabilidad":
+                        //var MDIContabilidad = new FrmMDIContabilidad();
+                        //MDIContabilidad.ContabilidadMetActualizarInfoUsuario(
+                        //ClsSesionSeguridad.NombreEmpleado,
+                        //ClsSesionSeguridad.SeguridadMetRolesComoTexto());
+                        //principal = MDIContabilidad;
+                        //break;
+
                     //case "RRHH":
                         //var MdiRrhh = now FrmMDIRrhh();
                         //MdiRrhh.RrhhMetActualizarInfoUsuario(
@@ -85,9 +122,7 @@ namespace CapaVista_Seguridad
                         //ClsSesionSeguridad.SeguridadMetRolesComoTexto());
                         //principal = MdiRrhh;
                         //break;
-                    case "Seguridad":
-                        principal = new FrmMDISeguridad();
-                        break;
+
                     default:
                         principal = new FrmMDISeguridad();
                         break;

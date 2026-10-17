@@ -45,8 +45,7 @@
             this.ComprasUsrEtiquetaTelefonoProveedor = new CapaVista_Componentes.Componentes.UsrLabelCompras();
             this.ComprasUsrEtiquetaCorreoProveedor = new CapaVista_Componentes.Componentes.UsrLabelCompras();
             this.ComprasUsrEtiquetaContactoProveedor = new CapaVista_Componentes.Componentes.UsrLabelCompras();
-            this._ComprasBtnConsultarProveedor = new CapaVista_Componentes.Componentes.ClsConsultasCompras();
-            this._ComprasBtnConsultarResponsable = new CapaVista_Componentes.Componentes.ClsConsultasCompras();
+            this.ComprasBtnProveedor = new CapaVista_Componentes.Componentes.ClsButtonCompras();
             this._ComprasTlpResponsable = new CapaVista_Componentes.Componentes.ClsTableLayoutPanelCompras();
             this.ComprasUsrCorreoResponsable = new CapaVista_Componentes.Componentes.UsrTextBoxCompras();
             this.ComprasUsrPuestoResponsable = new CapaVista_Componentes.Componentes.UsrTextBoxCompras();
@@ -57,6 +56,7 @@
             this.ComprasUsrEtiquetaCodigoResponsable = new CapaVista_Componentes.Componentes.UsrLabelCompras();
             this.ComprasUsrEtiquetaCorreoResponsable = new CapaVista_Componentes.Componentes.UsrLabelCompras();
             this.ComprasUsrEtiquetaPuestoResponsable = new CapaVista_Componentes.Componentes.UsrLabelCompras();
+            this.ComprasBtnResponsable = new CapaVista_Componentes.Componentes.ClsButtonCompras();
             this._ComprasGbxFinalizacion = new CapaVista_Componentes.Componentes.ClsGroupBoxCompras();
             this._ComprasTlpFinalizacion = new CapaVista_Componentes.Componentes.ClsTableLayoutPanelCompras();
             this._ComprasTlpImportes = new CapaVista_Componentes.Componentes.ClsTableLayoutPanelCompras();
@@ -85,14 +85,13 @@
             this._ComprasBtnLogistica = new CapaVista_Componentes.Componentes.ClsButtonCompras();
             this._ComprasBtnFinanzas = new CapaVista_Componentes.Componentes.ClsButtonCompras();
             this._ComprasBtnAnexos = new CapaVista_Componentes.Componentes.ClsButtonCompras();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this._ComprasPnlDesplazamiento.SuspendLayout();
             this._ComprasPnlContenido.SuspendLayout();
             this._ComprasTlpPrincipal.SuspendLayout();
             this._ComprasGbxEncabezado.SuspendLayout();
             this._ComprasTlpEncabezado.SuspendLayout();
             this._ComprasTlpProveedor.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this._ComprasBtnConsultarProveedor)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this._ComprasBtnConsultarResponsable)).BeginInit();
             this._ComprasTlpResponsable.SuspendLayout();
             this._ComprasGbxFinalizacion.SuspendLayout();
             this._ComprasTlpFinalizacion.SuspendLayout();
@@ -195,7 +194,7 @@
             this._ComprasTlpProveedor.Controls.Add(this.ComprasUsrEtiquetaTelefonoProveedor, 0, 2);
             this._ComprasTlpProveedor.Controls.Add(this.ComprasUsrEtiquetaCorreoProveedor, 0, 3);
             this._ComprasTlpProveedor.Controls.Add(this.ComprasUsrEtiquetaContactoProveedor, 0, 4);
-            this._ComprasTlpProveedor.Controls.Add(this._ComprasBtnConsultarProveedor, 2, 1);
+            this._ComprasTlpProveedor.Controls.Add(this.ComprasBtnProveedor, 2, 2);
             this._ComprasTlpProveedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this._ComprasTlpProveedor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
             this._ComprasTlpProveedor.Location = new System.Drawing.Point(0, 0);
@@ -372,55 +371,28 @@
             this.ComprasUsrEtiquetaContactoProveedor.Text = "Contacto";
             this.ComprasUsrEtiquetaContactoProveedor.Texto = "Contacto";
             // 
-            // _ComprasBtnConsultarProveedor
+            // ComprasBtnProveedor
             // 
-            this._ComprasBtnConsultarProveedor.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this._ComprasBtnConsultarProveedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(220)))), ((int)(((byte)(239)))));
-            this._ComprasBtnConsultarProveedor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this._ComprasBtnConsultarProveedor.CampoRetorno = "nombreComercial";
-            this._ComprasBtnConsultarProveedor.ControlFocoAlternativo = this._ComprasBtnConsultarResponsable;
-            this._ComprasBtnConsultarProveedor.Cursor = System.Windows.Forms.Cursors.Hand;
-            this._ComprasBtnConsultarProveedor.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
-            this._ComprasBtnConsultarProveedor.FlatAppearance.BorderSize = 0;
-            this._ComprasBtnConsultarProveedor.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(173)))), ((int)(((byte)(213)))));
-            this._ComprasBtnConsultarProveedor.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(193)))), ((int)(((byte)(224)))));
-            this._ComprasBtnConsultarProveedor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this._ComprasBtnConsultarProveedor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
-            this._ComprasBtnConsultarProveedor.Location = new System.Drawing.Point(538, 70);
-            this._ComprasBtnConsultarProveedor.Margin = new System.Windows.Forms.Padding(0);
-            this._ComprasBtnConsultarProveedor.MaximumSize = new System.Drawing.Size(80, 80);
-            this._ComprasBtnConsultarProveedor.MinimumSize = new System.Drawing.Size(80, 80);
-            this._ComprasBtnConsultarProveedor.Name = "_ComprasBtnConsultarProveedor";
-            this._ComprasTlpProveedor.SetRowSpan(this._ComprasBtnConsultarProveedor, 4);
-            this._ComprasBtnConsultarProveedor.Size = new System.Drawing.Size(80, 80);
-            this._ComprasBtnConsultarProveedor.TabIndex = 6;
-            this._ComprasBtnConsultarProveedor.Tabla = "tblproveedor";
-            this._ComprasBtnConsultarProveedor.Text = "Consultar";
-            this._ComprasBtnConsultarProveedor.UseVisualStyleBackColor = false;
-            // 
-            // _ComprasBtnConsultarResponsable
-            // 
-            this._ComprasBtnConsultarResponsable.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this._ComprasBtnConsultarResponsable.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(220)))), ((int)(((byte)(239)))));
-            this._ComprasBtnConsultarResponsable.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this._ComprasBtnConsultarResponsable.ControlFocoAlternativo = this._ComprasBtnConsultarProveedor;
-            this._ComprasBtnConsultarResponsable.Cursor = System.Windows.Forms.Cursors.Hand;
-            this._ComprasBtnConsultarResponsable.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
-            this._ComprasBtnConsultarResponsable.FlatAppearance.BorderSize = 0;
-            this._ComprasBtnConsultarResponsable.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(173)))), ((int)(((byte)(213)))));
-            this._ComprasBtnConsultarResponsable.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(193)))), ((int)(((byte)(224)))));
-            this._ComprasBtnConsultarResponsable.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this._ComprasBtnConsultarResponsable.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
-            this._ComprasBtnConsultarResponsable.Location = new System.Drawing.Point(539, 70);
-            this._ComprasBtnConsultarResponsable.Margin = new System.Windows.Forms.Padding(0);
-            this._ComprasBtnConsultarResponsable.MaximumSize = new System.Drawing.Size(80, 80);
-            this._ComprasBtnConsultarResponsable.MinimumSize = new System.Drawing.Size(80, 80);
-            this._ComprasBtnConsultarResponsable.Name = "_ComprasBtnConsultarResponsable";
-            this._ComprasTlpResponsable.SetRowSpan(this._ComprasBtnConsultarResponsable, 4);
-            this._ComprasBtnConsultarResponsable.Size = new System.Drawing.Size(80, 80);
-            this._ComprasBtnConsultarResponsable.TabIndex = 6;
-            this._ComprasBtnConsultarResponsable.Text = "Consultar";
-            this._ComprasBtnConsultarResponsable.UseVisualStyleBackColor = false;
+            this.ComprasBtnProveedor.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ComprasBtnProveedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(220)))), ((int)(((byte)(239)))));
+            this.ComprasBtnProveedor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ComprasBtnProveedor.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ComprasBtnProveedor.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this.ComprasBtnProveedor.FlatAppearance.BorderSize = 0;
+            this.ComprasBtnProveedor.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(173)))), ((int)(((byte)(213)))));
+            this.ComprasBtnProveedor.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(193)))), ((int)(((byte)(224)))));
+            this.ComprasBtnProveedor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ComprasBtnProveedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ComprasBtnProveedor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this.ComprasBtnProveedor.Location = new System.Drawing.Point(538, 70);
+            this.ComprasBtnProveedor.Margin = new System.Windows.Forms.Padding(0);
+            this.ComprasBtnProveedor.MaximumSize = new System.Drawing.Size(80, 80);
+            this.ComprasBtnProveedor.MinimumSize = new System.Drawing.Size(80, 80);
+            this.ComprasBtnProveedor.Name = "ComprasBtnProveedor";
+            this.ComprasBtnProveedor.Size = new System.Drawing.Size(80, 80);
+            this.ComprasBtnProveedor.TabIndex = 11;
+            this.ComprasBtnProveedor.Text = "Proveedor";
+            this.ComprasBtnProveedor.UseVisualStyleBackColor = false;
             // 
             // _ComprasTlpResponsable
             // 
@@ -434,11 +406,11 @@
             this._ComprasTlpResponsable.Controls.Add(this.ComprasUsrNombreResponsable, 1, 2);
             this._ComprasTlpResponsable.Controls.Add(this.ComprasUsrResponsable, 0, 0);
             this._ComprasTlpResponsable.Controls.Add(this.ComprasUsrCodigoResponsable, 1, 1);
-            this._ComprasTlpResponsable.Controls.Add(this._ComprasBtnConsultarResponsable, 2, 1);
             this._ComprasTlpResponsable.Controls.Add(this.ComprasUsrEtiquetaNombreResponsable, 0, 1);
             this._ComprasTlpResponsable.Controls.Add(this.ComprasUsrEtiquetaCodigoResponsable, 0, 2);
             this._ComprasTlpResponsable.Controls.Add(this.ComprasUsrEtiquetaCorreoResponsable, 0, 3);
             this._ComprasTlpResponsable.Controls.Add(this.ComprasUsrEtiquetaPuestoResponsable, 0, 4);
+            this._ComprasTlpResponsable.Controls.Add(this.ComprasBtnResponsable, 2, 2);
             this._ComprasTlpResponsable.Dock = System.Windows.Forms.DockStyle.Fill;
             this._ComprasTlpResponsable.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
             this._ComprasTlpResponsable.Location = new System.Drawing.Point(643, 0);
@@ -614,6 +586,29 @@
             this.ComprasUsrEtiquetaPuestoResponsable.TamanoTipografia = 9F;
             this.ComprasUsrEtiquetaPuestoResponsable.Text = "Puesto";
             this.ComprasUsrEtiquetaPuestoResponsable.Texto = "Puesto";
+            // 
+            // ComprasBtnResponsable
+            // 
+            this.ComprasBtnResponsable.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ComprasBtnResponsable.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(220)))), ((int)(((byte)(239)))));
+            this.ComprasBtnResponsable.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ComprasBtnResponsable.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ComprasBtnResponsable.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this.ComprasBtnResponsable.FlatAppearance.BorderSize = 0;
+            this.ComprasBtnResponsable.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(173)))), ((int)(((byte)(213)))));
+            this.ComprasBtnResponsable.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(193)))), ((int)(((byte)(224)))));
+            this.ComprasBtnResponsable.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ComprasBtnResponsable.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ComprasBtnResponsable.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(90)))));
+            this.ComprasBtnResponsable.Location = new System.Drawing.Point(539, 70);
+            this.ComprasBtnResponsable.Margin = new System.Windows.Forms.Padding(0);
+            this.ComprasBtnResponsable.MaximumSize = new System.Drawing.Size(80, 80);
+            this.ComprasBtnResponsable.MinimumSize = new System.Drawing.Size(80, 80);
+            this.ComprasBtnResponsable.Name = "ComprasBtnResponsable";
+            this.ComprasBtnResponsable.Size = new System.Drawing.Size(80, 80);
+            this.ComprasBtnResponsable.TabIndex = 11;
+            this.ComprasBtnResponsable.Text = "Responsable de Compra";
+            this.ComprasBtnResponsable.UseVisualStyleBackColor = false;
             // 
             // _ComprasGbxFinalizacion
             // 
@@ -1181,8 +1176,6 @@
             this._ComprasGbxEncabezado.ResumeLayout(false);
             this._ComprasTlpEncabezado.ResumeLayout(false);
             this._ComprasTlpProveedor.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this._ComprasBtnConsultarProveedor)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this._ComprasBtnConsultarResponsable)).EndInit();
             this._ComprasTlpResponsable.ResumeLayout(false);
             this._ComprasGbxFinalizacion.ResumeLayout(false);
             this._ComprasTlpFinalizacion.ResumeLayout(false);
@@ -1208,7 +1201,6 @@
         private CapaVista_Componentes.Componentes.UsrLabelCompras ComprasUsrEtiquetaPuestoResponsable;
         private CapaVista_Componentes.Componentes.UsrLabelCompras ComprasUsrEtiquetaCorreoResponsable;
         private CapaVista_Componentes.Componentes.UsrLabelCompras ComprasUsrResponsable;
-        private CapaVista_Componentes.Componentes.ClsConsultasCompras _ComprasBtnConsultarResponsable;
         private CapaVista_Componentes.Componentes.ClsTableLayoutPanelCompras _ComprasTlpProveedor;
         private CapaVista_Componentes.Componentes.UsrLabelCompras ComprasUsrProveedor;
         private CapaVista_Componentes.Componentes.UsrTextBoxCompras ComprasUsrNombreProveedor;
@@ -1216,7 +1208,6 @@
         private CapaVista_Componentes.Componentes.UsrLabelCompras ComprasUsrEtiquetaTelefonoProveedor;
         private CapaVista_Componentes.Componentes.UsrLabelCompras ComprasUsrEtiquetaCorreoProveedor;
         private CapaVista_Componentes.Componentes.UsrLabelCompras ComprasUsrEtiquetaContactoProveedor;
-        private CapaVista_Componentes.Componentes.ClsConsultasCompras _ComprasBtnConsultarProveedor;
         private CapaVista_Componentes.Componentes.UsrTextBoxCompras ComprasUsrContactoProveedor;
         private CapaVista_Componentes.Componentes.UsrTextBoxCompras ComprasUsrCorreoProveedor;
         private CapaVista_Componentes.Componentes.UsrTextBoxCompras ComprasUsrTelefonoProveedor;
@@ -1251,5 +1242,8 @@
         private CapaVista_Componentes.Componentes.UsrTextBoxCompras ComprasUsrComentario;
         private CapaVista_Componentes.Componentes.ClsButtonCompras _ComprasBtnPorcentaje;
         private CapaVista_Componentes.Componentes.UsrDataGridViewCompras ComprasUsrArticulos;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private CapaVista_Componentes.Componentes.ClsButtonCompras ComprasBtnProveedor;
+        private CapaVista_Componentes.Componentes.ClsButtonCompras ComprasBtnResponsable;
     }
 }

@@ -34,9 +34,6 @@
     <Reference Include="CapaControlador_Componentes">
       <HintPath>..\CapaControlador_Componentes\bin\$(Configuration)\CapaControlador_Componentes.dll</HintPath>
     </Reference>
-    <Reference Include="CapaVista_Consultas">
-      <HintPath>..\..\..\..\componentes\consultas\Consultas\CapaVista_Consultas\bin\$(Configuration)\CapaVista_Consultas.dll</HintPath>
-    </Reference>
     <Reference Include="System.Drawing" />
     <Reference Include="System.Design" />
     <Reference Include="System.Windows.Forms" />
@@ -58,9 +55,6 @@
     </Compile>
     <Compile Include="Componentes\UsrMDITabCompras.Designer.cs">
       <DependentUpon>UsrMDITabCompras.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Componentes\ClsConsultasCompras.cs">
-      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Componentes\ClsTemaCompras.cs" />
     <Compile Include="Componentes\ClsActualizacionDisenoCompras.cs">

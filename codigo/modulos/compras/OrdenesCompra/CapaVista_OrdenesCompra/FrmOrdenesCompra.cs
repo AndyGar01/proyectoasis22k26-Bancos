@@ -10,7 +10,6 @@ namespace CapaVista_OrdenesCompra
             InitializeComponent();
             CapaVista_Componentes.Componentes.ClsPresentacionCompras.ComprasMetFijarTamanoFormulario(this);
             ComprasProcConfigurarArticulos();
-            _ComprasBtnConsultarProveedor.ConsultasEvtSeleccion += ComprasMetSeleccionarProveedor;
         }
 
         private void ComprasProcConfigurarArticulos()
@@ -55,14 +54,6 @@ namespace CapaVista_OrdenesCompra
             decimal Total = Subtotal - Descuento + Impuesto;
             ComprasUsrArticulos.Rows.Add(IdArticulo, Nombre, Unidad, Cantidad, PrecioUnitario,
                 Subtotal, Descuento, PorcentajeImpuesto, Impuesto, Total);
-        }
-
-        private void ComprasMetSeleccionarProveedor(object Remitente, EventArgs Evento)
-        {
-            ComprasUsrNombreProveedor.Text = _ComprasBtnConsultarProveedor.ConsultasFuncObtenerCampoSeleccionado("nombreComercial");
-            ComprasUsrTelefonoProveedor.Text = _ComprasBtnConsultarProveedor.ConsultasFuncObtenerCampoSeleccionado("telefono");
-            ComprasUsrCorreoProveedor.Text = _ComprasBtnConsultarProveedor.ConsultasFuncObtenerCampoSeleccionado("email");
-            ComprasUsrContactoProveedor.Text = _ComprasBtnConsultarProveedor.ConsultasFuncObtenerCampoSeleccionado("contacto");
         }
     }
 }

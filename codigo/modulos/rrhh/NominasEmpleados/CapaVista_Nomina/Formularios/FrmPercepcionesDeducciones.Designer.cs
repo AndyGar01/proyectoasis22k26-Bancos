@@ -29,43 +29,45 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPercepcionesDeducciones));
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.PerPnlDatosInfoConcep = new System.Windows.Forms.Panel();
             this.PerDedCboPais = new System.Windows.Forms.ComboBox();
             this.PerDedChkEfecto = new System.Windows.Forms.CheckBox();
             this.PerDedCboPeriodo = new System.Windows.Forms.ComboBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.PerLblEfecto = new System.Windows.Forms.Label();
+            this.PerLblPeriodo = new System.Windows.Forms.Label();
+            this.PerLblPais = new System.Windows.Forms.Label();
             this.PerDedTxtNombreConcepto = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.PerLblNombreConcepto = new System.Windows.Forms.Label();
+            this.PerPnlInfoConfiCalculo = new System.Windows.Forms.Panel();
             this.PerDedCboActivo = new System.Windows.Forms.CheckBox();
-            this.label13 = new System.Windows.Forms.Label();
+            this.PerLblActivo = new System.Windows.Forms.Label();
             this.PerDedTxtValor = new System.Windows.Forms.TextBox();
             this.PerDedCboTipoCalculo = new System.Windows.Forms.ComboBox();
-            this.label12 = new System.Windows.Forms.Label();
+            this.PerLblAplicacion = new System.Windows.Forms.Label();
             this.PerDedClbAplicacion = new System.Windows.Forms.CheckedListBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.PerLblValor = new System.Windows.Forms.Label();
+            this.PerLblTipoCalculo = new System.Windows.Forms.Label();
+            this.PerPnlInfoTablaNomina = new System.Windows.Forms.Panel();
+            this.PerLblAsignacionExcepcion = new System.Windows.Forms.Label();
+            this.PerLblAccedeCalculoNomina = new System.Windows.Forms.Label();
             this.RecDedBtnExcepciones = new System.Windows.Forms.Button();
             this.RecDedBtnNomina = new System.Windows.Forms.Button();
             this.PerDedDgvLista = new System.Windows.Forms.DataGridView();
-            this.label15 = new System.Windows.Forms.Label();
+            this.PerLblConsultaGeneral = new System.Windows.Forms.Label();
             this.PerDedTxtBuscar = new System.Windows.Forms.TextBox();
             this.RecDedBtnConsultar = new System.Windows.Forms.Button();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.label14 = new System.Windows.Forms.Label();
+            this.PerPnlConceptoRegistrados = new System.Windows.Forms.Panel();
+            this.PerLblConceptoRegistrado = new System.Windows.Forms.Label();
             this.PerDedPbIconoConsultas = new System.Windows.Forms.PictureBox();
-            this.panel6 = new System.Windows.Forms.Panel();
+            this.PerPnlTablaNominas = new System.Windows.Forms.Panel();
             this.PerDedPbIconoTablas = new System.Windows.Forms.PictureBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
+            this.PerLblTablasNomina = new System.Windows.Forms.Label();
+            this.PerPnlConfiguracionCalculo = new System.Windows.Forms.Panel();
             this.PerDedPbIconoCalculo = new System.Windows.Forms.PictureBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
+            this.PerLblConfiguracionCalculo = new System.Windows.Forms.Label();
+            this.PerPnlConcepto = new System.Windows.Forms.Panel();
             this.PerDedPbIconInforme = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.PerLblInformacionConcepto = new System.Windows.Forms.Label();
             this.PerDedBtnSalir = new System.Windows.Forms.Button();
             this.PerDedBtnRefrescar = new System.Windows.Forms.Button();
             this.PerDedBtnFin = new System.Windows.Forms.Button();
@@ -76,45 +78,43 @@
             this.PerDedBtnEliminar = new System.Windows.Forms.Button();
             this.PerDedBtnModificar = new System.Windows.Forms.Button();
             this.PerDedBtnGuardar = new System.Windows.Forms.Button();
-            this.RrhhPnlNominas = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.PerPnlPercepcionDeducciones = new System.Windows.Forms.Panel();
+            this.PerPbDonButti = new System.Windows.Forms.PictureBox();
+            this.PerLblSubtituloGestion = new System.Windows.Forms.Label();
+            this.PerLblPercepDeducciones = new System.Windows.Forms.Label();
             this.PerDedPbIconoPerDed = new System.Windows.Forms.PictureBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
+            this.PerPnlDatosInfoConcep.SuspendLayout();
+            this.PerPnlInfoConfiCalculo.SuspendLayout();
+            this.PerPnlInfoTablaNomina.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PerDedDgvLista)).BeginInit();
-            this.panel7.SuspendLayout();
+            this.PerPnlConceptoRegistrados.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PerDedPbIconoConsultas)).BeginInit();
-            this.panel6.SuspendLayout();
+            this.PerPnlTablaNominas.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PerDedPbIconoTablas)).BeginInit();
-            this.panel5.SuspendLayout();
+            this.PerPnlConfiguracionCalculo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PerDedPbIconoCalculo)).BeginInit();
-            this.panel4.SuspendLayout();
+            this.PerPnlConcepto.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PerDedPbIconInforme)).BeginInit();
-            this.RrhhPnlNominas.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.PerPnlPercepcionDeducciones.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PerPbDonButti)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PerDedPbIconoPerDed)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel1
+            // PerPnlDatosInfoConcep
             // 
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.PerDedCboPais);
-            this.panel1.Controls.Add(this.PerDedChkEfecto);
-            this.panel1.Controls.Add(this.PerDedCboPeriodo);
-            this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.PerDedTxtNombreConcepto);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Location = new System.Drawing.Point(12, 295);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(500, 283);
-            this.panel1.TabIndex = 11;
+            this.PerPnlDatosInfoConcep.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PerPnlDatosInfoConcep.Controls.Add(this.PerDedCboPais);
+            this.PerPnlDatosInfoConcep.Controls.Add(this.PerDedChkEfecto);
+            this.PerPnlDatosInfoConcep.Controls.Add(this.PerDedCboPeriodo);
+            this.PerPnlDatosInfoConcep.Controls.Add(this.PerLblEfecto);
+            this.PerPnlDatosInfoConcep.Controls.Add(this.PerLblPeriodo);
+            this.PerPnlDatosInfoConcep.Controls.Add(this.PerLblPais);
+            this.PerPnlDatosInfoConcep.Controls.Add(this.PerDedTxtNombreConcepto);
+            this.PerPnlDatosInfoConcep.Controls.Add(this.PerLblNombreConcepto);
+            this.PerPnlDatosInfoConcep.Location = new System.Drawing.Point(12, 295);
+            this.PerPnlDatosInfoConcep.Name = "PerPnlDatosInfoConcep";
+            this.PerPnlDatosInfoConcep.Size = new System.Drawing.Size(500, 283);
+            this.PerPnlDatosInfoConcep.TabIndex = 11;
             // 
             // PerDedCboPais
             // 
@@ -145,38 +145,38 @@
             this.PerDedCboPeriodo.Size = new System.Drawing.Size(284, 31);
             this.PerDedCboPeriodo.TabIndex = 8;
             // 
-            // label7
+            // PerLblEfecto
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Tahoma", 9.5F);
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(138)))), ((int)(((byte)(143)))));
-            this.label7.Location = new System.Drawing.Point(18, 233);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(58, 19);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "Efecto:";
+            this.PerLblEfecto.AutoSize = true;
+            this.PerLblEfecto.Font = new System.Drawing.Font("Tahoma", 9.5F);
+            this.PerLblEfecto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(138)))), ((int)(((byte)(143)))));
+            this.PerLblEfecto.Location = new System.Drawing.Point(18, 233);
+            this.PerLblEfecto.Name = "PerLblEfecto";
+            this.PerLblEfecto.Size = new System.Drawing.Size(58, 19);
+            this.PerLblEfecto.TabIndex = 6;
+            this.PerLblEfecto.Text = "Efecto:";
             // 
-            // label6
+            // PerLblPeriodo
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Tahoma", 9.5F);
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(138)))), ((int)(((byte)(143)))));
-            this.label6.Location = new System.Drawing.Point(18, 189);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(69, 19);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Periodo:";
+            this.PerLblPeriodo.AutoSize = true;
+            this.PerLblPeriodo.Font = new System.Drawing.Font("Tahoma", 9.5F);
+            this.PerLblPeriodo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(138)))), ((int)(((byte)(143)))));
+            this.PerLblPeriodo.Location = new System.Drawing.Point(18, 189);
+            this.PerLblPeriodo.Name = "PerLblPeriodo";
+            this.PerLblPeriodo.Size = new System.Drawing.Size(69, 19);
+            this.PerLblPeriodo.TabIndex = 5;
+            this.PerLblPeriodo.Text = "Periodo:";
             // 
-            // label5
+            // PerLblPais
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Tahoma", 9.5F);
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(138)))), ((int)(((byte)(143)))));
-            this.label5.Location = new System.Drawing.Point(18, 140);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(43, 19);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Pais:";
+            this.PerLblPais.AutoSize = true;
+            this.PerLblPais.Font = new System.Drawing.Font("Tahoma", 9.5F);
+            this.PerLblPais.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(138)))), ((int)(((byte)(143)))));
+            this.PerLblPais.Location = new System.Drawing.Point(18, 140);
+            this.PerLblPais.Name = "PerLblPais";
+            this.PerLblPais.Size = new System.Drawing.Size(43, 19);
+            this.PerLblPais.TabIndex = 4;
+            this.PerLblPais.Text = "Pais:";
             // 
             // PerDedTxtNombreConcepto
             // 
@@ -186,32 +186,32 @@
             this.PerDedTxtNombreConcepto.Size = new System.Drawing.Size(284, 30);
             this.PerDedTxtNombreConcepto.TabIndex = 3;
             // 
-            // label4
+            // PerLblNombreConcepto
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Tahoma", 9.5F);
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(138)))), ((int)(((byte)(143)))));
-            this.label4.Location = new System.Drawing.Point(18, 86);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(166, 19);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Nombre del concepto:";
+            this.PerLblNombreConcepto.AutoSize = true;
+            this.PerLblNombreConcepto.Font = new System.Drawing.Font("Tahoma", 9.5F);
+            this.PerLblNombreConcepto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(138)))), ((int)(((byte)(143)))));
+            this.PerLblNombreConcepto.Location = new System.Drawing.Point(18, 86);
+            this.PerLblNombreConcepto.Name = "PerLblNombreConcepto";
+            this.PerLblNombreConcepto.Size = new System.Drawing.Size(166, 19);
+            this.PerLblNombreConcepto.TabIndex = 2;
+            this.PerLblNombreConcepto.Text = "Nombre del concepto:";
             // 
-            // panel2
+            // PerPnlInfoConfiCalculo
             // 
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.PerDedCboActivo);
-            this.panel2.Controls.Add(this.label13);
-            this.panel2.Controls.Add(this.PerDedTxtValor);
-            this.panel2.Controls.Add(this.PerDedCboTipoCalculo);
-            this.panel2.Controls.Add(this.label12);
-            this.panel2.Controls.Add(this.PerDedClbAplicacion);
-            this.panel2.Controls.Add(this.label11);
-            this.panel2.Controls.Add(this.label10);
-            this.panel2.Location = new System.Drawing.Point(518, 295);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(500, 283);
-            this.panel2.TabIndex = 12;
+            this.PerPnlInfoConfiCalculo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PerPnlInfoConfiCalculo.Controls.Add(this.PerDedCboActivo);
+            this.PerPnlInfoConfiCalculo.Controls.Add(this.PerLblActivo);
+            this.PerPnlInfoConfiCalculo.Controls.Add(this.PerDedTxtValor);
+            this.PerPnlInfoConfiCalculo.Controls.Add(this.PerDedCboTipoCalculo);
+            this.PerPnlInfoConfiCalculo.Controls.Add(this.PerLblAplicacion);
+            this.PerPnlInfoConfiCalculo.Controls.Add(this.PerDedClbAplicacion);
+            this.PerPnlInfoConfiCalculo.Controls.Add(this.PerLblValor);
+            this.PerPnlInfoConfiCalculo.Controls.Add(this.PerLblTipoCalculo);
+            this.PerPnlInfoConfiCalculo.Location = new System.Drawing.Point(518, 295);
+            this.PerPnlInfoConfiCalculo.Name = "PerPnlInfoConfiCalculo";
+            this.PerPnlInfoConfiCalculo.Size = new System.Drawing.Size(500, 283);
+            this.PerPnlInfoConfiCalculo.TabIndex = 12;
             // 
             // PerDedCboActivo
             // 
@@ -224,16 +224,16 @@
             this.PerDedCboActivo.Text = "Sí";
             this.PerDedCboActivo.UseVisualStyleBackColor = true;
             // 
-            // label13
+            // PerLblActivo
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Tahoma", 9.5F);
-            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(138)))), ((int)(((byte)(143)))));
-            this.label13.Location = new System.Drawing.Point(236, 221);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(59, 19);
-            this.label13.TabIndex = 16;
-            this.label13.Text = "Activo:";
+            this.PerLblActivo.AutoSize = true;
+            this.PerLblActivo.Font = new System.Drawing.Font("Tahoma", 9.5F);
+            this.PerLblActivo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(138)))), ((int)(((byte)(143)))));
+            this.PerLblActivo.Location = new System.Drawing.Point(236, 221);
+            this.PerLblActivo.Name = "PerLblActivo";
+            this.PerLblActivo.Size = new System.Drawing.Size(59, 19);
+            this.PerLblActivo.TabIndex = 16;
+            this.PerLblActivo.Text = "Activo:";
             // 
             // PerDedTxtValor
             // 
@@ -252,16 +252,16 @@
             this.PerDedCboTipoCalculo.Size = new System.Drawing.Size(284, 31);
             this.PerDedCboTipoCalculo.TabIndex = 13;
             // 
-            // label12
+            // PerLblAplicacion
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Tahoma", 9.5F);
-            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(138)))), ((int)(((byte)(143)))));
-            this.label12.Location = new System.Drawing.Point(17, 221);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(87, 19);
-            this.label12.TabIndex = 12;
-            this.label12.Text = "Aplicación:";
+            this.PerLblAplicacion.AutoSize = true;
+            this.PerLblAplicacion.Font = new System.Drawing.Font("Tahoma", 9.5F);
+            this.PerLblAplicacion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(138)))), ((int)(((byte)(143)))));
+            this.PerLblAplicacion.Location = new System.Drawing.Point(17, 221);
+            this.PerLblAplicacion.Name = "PerLblAplicacion";
+            this.PerLblAplicacion.Size = new System.Drawing.Size(87, 19);
+            this.PerLblAplicacion.TabIndex = 12;
+            this.PerLblAplicacion.Text = "Aplicación:";
             // 
             // PerDedClbAplicacion
             // 
@@ -277,39 +277,63 @@
             this.PerDedClbAplicacion.TabIndex = 15;
             this.PerDedClbAplicacion.SelectedIndexChanged += new System.EventHandler(this.checkedListBox1_SelectedIndexChanged);
             // 
-            // label11
+            // PerLblValor
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Tahoma", 9.5F);
-            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(138)))), ((int)(((byte)(143)))));
-            this.label11.Location = new System.Drawing.Point(17, 138);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(52, 19);
-            this.label11.TabIndex = 11;
-            this.label11.Text = "Valor:";
+            this.PerLblValor.AutoSize = true;
+            this.PerLblValor.Font = new System.Drawing.Font("Tahoma", 9.5F);
+            this.PerLblValor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(138)))), ((int)(((byte)(143)))));
+            this.PerLblValor.Location = new System.Drawing.Point(17, 138);
+            this.PerLblValor.Name = "PerLblValor";
+            this.PerLblValor.Size = new System.Drawing.Size(52, 19);
+            this.PerLblValor.TabIndex = 11;
+            this.PerLblValor.Text = "Valor:";
             // 
-            // label10
+            // PerLblTipoCalculo
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Tahoma", 9.5F);
-            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(138)))), ((int)(((byte)(143)))));
-            this.label10.Location = new System.Drawing.Point(17, 89);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(122, 19);
-            this.label10.TabIndex = 10;
-            this.label10.Text = "Tipo de calculo:";
+            this.PerLblTipoCalculo.AutoSize = true;
+            this.PerLblTipoCalculo.Font = new System.Drawing.Font("Tahoma", 9.5F);
+            this.PerLblTipoCalculo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(138)))), ((int)(((byte)(143)))));
+            this.PerLblTipoCalculo.Location = new System.Drawing.Point(17, 89);
+            this.PerLblTipoCalculo.Name = "PerLblTipoCalculo";
+            this.PerLblTipoCalculo.Size = new System.Drawing.Size(122, 19);
+            this.PerLblTipoCalculo.TabIndex = 10;
+            this.PerLblTipoCalculo.Text = "Tipo de calculo:";
             // 
-            // panel3
+            // PerPnlInfoTablaNomina
             // 
-            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Controls.Add(this.label17);
-            this.panel3.Controls.Add(this.label16);
-            this.panel3.Controls.Add(this.RecDedBtnExcepciones);
-            this.panel3.Controls.Add(this.RecDedBtnNomina);
-            this.panel3.Location = new System.Drawing.Point(1023, 295);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(500, 283);
-            this.panel3.TabIndex = 13;
+            this.PerPnlInfoTablaNomina.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PerPnlInfoTablaNomina.Controls.Add(this.PerLblAsignacionExcepcion);
+            this.PerPnlInfoTablaNomina.Controls.Add(this.PerLblAccedeCalculoNomina);
+            this.PerPnlInfoTablaNomina.Controls.Add(this.RecDedBtnExcepciones);
+            this.PerPnlInfoTablaNomina.Controls.Add(this.RecDedBtnNomina);
+            this.PerPnlInfoTablaNomina.Location = new System.Drawing.Point(1023, 295);
+            this.PerPnlInfoTablaNomina.Name = "PerPnlInfoTablaNomina";
+            this.PerPnlInfoTablaNomina.Size = new System.Drawing.Size(500, 283);
+            this.PerPnlInfoTablaNomina.TabIndex = 13;
+            // 
+            // PerLblAsignacionExcepcion
+            // 
+            this.PerLblAsignacionExcepcion.AutoSize = true;
+            this.PerLblAsignacionExcepcion.BackColor = System.Drawing.Color.Transparent;
+            this.PerLblAsignacionExcepcion.Font = new System.Drawing.Font("Lucida Fax", 13F, System.Drawing.FontStyle.Bold);
+            this.PerLblAsignacionExcepcion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(76)))), ((int)(((byte)(85)))));
+            this.PerLblAsignacionExcepcion.Location = new System.Drawing.Point(84, 177);
+            this.PerLblAsignacionExcepcion.Name = "PerLblAsignacionExcepcion";
+            this.PerLblAsignacionExcepcion.Size = new System.Drawing.Size(291, 25);
+            this.PerLblAsignacionExcepcion.TabIndex = 19;
+            this.PerLblAsignacionExcepcion.Text = "Asignación Excepciones";
+            // 
+            // PerLblAccedeCalculoNomina
+            // 
+            this.PerLblAccedeCalculoNomina.AutoSize = true;
+            this.PerLblAccedeCalculoNomina.BackColor = System.Drawing.Color.Transparent;
+            this.PerLblAccedeCalculoNomina.Font = new System.Drawing.Font("Lucida Fax", 13F, System.Drawing.FontStyle.Bold);
+            this.PerLblAccedeCalculoNomina.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(76)))), ((int)(((byte)(85)))));
+            this.PerLblAccedeCalculoNomina.Location = new System.Drawing.Point(84, 79);
+            this.PerLblAccedeCalculoNomina.Name = "PerLblAccedeCalculoNomina";
+            this.PerLblAccedeCalculoNomina.Size = new System.Drawing.Size(356, 25);
+            this.PerLblAccedeCalculoNomina.TabIndex = 18;
+            this.PerLblAccedeCalculoNomina.Text = "Accede al calculo de nominas";
             // 
             // RecDedBtnExcepciones
             // 
@@ -345,17 +369,17 @@
             this.PerDedDgvLista.Size = new System.Drawing.Size(1511, 293);
             this.PerDedDgvLista.TabIndex = 15;
             // 
-            // label15
+            // PerLblConsultaGeneral
             // 
-            this.label15.AutoSize = true;
-            this.label15.BackColor = System.Drawing.Color.Transparent;
-            this.label15.Font = new System.Drawing.Font("Lucida Fax", 13F, System.Drawing.FontStyle.Bold);
-            this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(76)))), ((int)(((byte)(85)))));
-            this.label15.Location = new System.Drawing.Point(16, 663);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(225, 25);
-            this.label15.TabIndex = 2;
-            this.label15.Text = "Consulta General: ";
+            this.PerLblConsultaGeneral.AutoSize = true;
+            this.PerLblConsultaGeneral.BackColor = System.Drawing.Color.Transparent;
+            this.PerLblConsultaGeneral.Font = new System.Drawing.Font("Lucida Fax", 13F, System.Drawing.FontStyle.Bold);
+            this.PerLblConsultaGeneral.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(76)))), ((int)(((byte)(85)))));
+            this.PerLblConsultaGeneral.Location = new System.Drawing.Point(16, 663);
+            this.PerLblConsultaGeneral.Name = "PerLblConsultaGeneral";
+            this.PerLblConsultaGeneral.Size = new System.Drawing.Size(225, 25);
+            this.PerLblConsultaGeneral.TabIndex = 2;
+            this.PerLblConsultaGeneral.Text = "Consulta General: ";
             // 
             // PerDedTxtBuscar
             // 
@@ -374,28 +398,28 @@
             this.RecDedBtnConsultar.TabIndex = 17;
             this.RecDedBtnConsultar.UseVisualStyleBackColor = true;
             // 
-            // panel7
+            // PerPnlConceptoRegistrados
             // 
-            this.panel7.BackgroundImage = global::CapaVista_Nomina.Properties.Resources.Pnl_fondo;
-            this.panel7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel7.Controls.Add(this.label14);
-            this.panel7.Controls.Add(this.PerDedPbIconoConsultas);
-            this.panel7.Location = new System.Drawing.Point(12, 595);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(1511, 52);
-            this.panel7.TabIndex = 14;
+            this.PerPnlConceptoRegistrados.BackgroundImage = global::CapaVista_Nomina.Properties.Resources.Pnl_fondo;
+            this.PerPnlConceptoRegistrados.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.PerPnlConceptoRegistrados.Controls.Add(this.PerLblConceptoRegistrado);
+            this.PerPnlConceptoRegistrados.Controls.Add(this.PerDedPbIconoConsultas);
+            this.PerPnlConceptoRegistrados.Location = new System.Drawing.Point(12, 595);
+            this.PerPnlConceptoRegistrados.Name = "PerPnlConceptoRegistrados";
+            this.PerPnlConceptoRegistrados.Size = new System.Drawing.Size(1511, 52);
+            this.PerPnlConceptoRegistrados.TabIndex = 14;
             // 
-            // label14
+            // PerLblConceptoRegistrado
             // 
-            this.label14.AutoSize = true;
-            this.label14.BackColor = System.Drawing.Color.Transparent;
-            this.label14.Font = new System.Drawing.Font("Lucida Fax", 13F, System.Drawing.FontStyle.Bold);
-            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(76)))), ((int)(((byte)(85)))));
-            this.label14.Location = new System.Drawing.Point(55, 12);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(277, 25);
-            this.label14.TabIndex = 2;
-            this.label14.Text = "Conceptos Registrados";
+            this.PerLblConceptoRegistrado.AutoSize = true;
+            this.PerLblConceptoRegistrado.BackColor = System.Drawing.Color.Transparent;
+            this.PerLblConceptoRegistrado.Font = new System.Drawing.Font("Lucida Fax", 13F, System.Drawing.FontStyle.Bold);
+            this.PerLblConceptoRegistrado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(76)))), ((int)(((byte)(85)))));
+            this.PerLblConceptoRegistrado.Location = new System.Drawing.Point(55, 12);
+            this.PerLblConceptoRegistrado.Name = "PerLblConceptoRegistrado";
+            this.PerLblConceptoRegistrado.Size = new System.Drawing.Size(277, 25);
+            this.PerLblConceptoRegistrado.TabIndex = 2;
+            this.PerLblConceptoRegistrado.Text = "Conceptos Registrados";
             // 
             // PerDedPbIconoConsultas
             // 
@@ -406,16 +430,16 @@
             this.PerDedPbIconoConsultas.TabIndex = 15;
             this.PerDedPbIconoConsultas.TabStop = false;
             // 
-            // panel6
+            // PerPnlTablaNominas
             // 
-            this.panel6.BackgroundImage = global::CapaVista_Nomina.Properties.Resources.Pnl_fondo;
-            this.panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel6.Controls.Add(this.PerDedPbIconoTablas);
-            this.panel6.Controls.Add(this.label9);
-            this.panel6.Location = new System.Drawing.Point(1024, 295);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(497, 57);
-            this.panel6.TabIndex = 0;
+            this.PerPnlTablaNominas.BackgroundImage = global::CapaVista_Nomina.Properties.Resources.Pnl_fondo;
+            this.PerPnlTablaNominas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.PerPnlTablaNominas.Controls.Add(this.PerDedPbIconoTablas);
+            this.PerPnlTablaNominas.Controls.Add(this.PerLblTablasNomina);
+            this.PerPnlTablaNominas.Location = new System.Drawing.Point(1024, 295);
+            this.PerPnlTablaNominas.Name = "PerPnlTablaNominas";
+            this.PerPnlTablaNominas.Size = new System.Drawing.Size(497, 57);
+            this.PerPnlTablaNominas.TabIndex = 0;
             // 
             // PerDedPbIconoTablas
             // 
@@ -427,28 +451,28 @@
             this.PerDedPbIconoTablas.TabIndex = 16;
             this.PerDedPbIconoTablas.TabStop = false;
             // 
-            // label9
+            // PerLblTablasNomina
             // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Lucida Fax", 13F, System.Drawing.FontStyle.Bold);
-            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(76)))), ((int)(((byte)(85)))));
-            this.label9.Location = new System.Drawing.Point(55, 17);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(195, 25);
-            this.label9.TabIndex = 17;
-            this.label9.Text = "Tablas nominas";
+            this.PerLblTablasNomina.AutoSize = true;
+            this.PerLblTablasNomina.BackColor = System.Drawing.Color.Transparent;
+            this.PerLblTablasNomina.Font = new System.Drawing.Font("Lucida Fax", 13F, System.Drawing.FontStyle.Bold);
+            this.PerLblTablasNomina.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(76)))), ((int)(((byte)(85)))));
+            this.PerLblTablasNomina.Location = new System.Drawing.Point(55, 17);
+            this.PerLblTablasNomina.Name = "PerLblTablasNomina";
+            this.PerLblTablasNomina.Size = new System.Drawing.Size(195, 25);
+            this.PerLblTablasNomina.TabIndex = 17;
+            this.PerLblTablasNomina.Text = "Tablas nominas";
             // 
-            // panel5
+            // PerPnlConfiguracionCalculo
             // 
-            this.panel5.BackgroundImage = global::CapaVista_Nomina.Properties.Resources.Pnl_fondo;
-            this.panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel5.Controls.Add(this.PerDedPbIconoCalculo);
-            this.panel5.Controls.Add(this.label8);
-            this.panel5.Location = new System.Drawing.Point(518, 295);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(500, 57);
-            this.panel5.TabIndex = 0;
+            this.PerPnlConfiguracionCalculo.BackgroundImage = global::CapaVista_Nomina.Properties.Resources.Pnl_fondo;
+            this.PerPnlConfiguracionCalculo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.PerPnlConfiguracionCalculo.Controls.Add(this.PerDedPbIconoCalculo);
+            this.PerPnlConfiguracionCalculo.Controls.Add(this.PerLblConfiguracionCalculo);
+            this.PerPnlConfiguracionCalculo.Location = new System.Drawing.Point(518, 295);
+            this.PerPnlConfiguracionCalculo.Name = "PerPnlConfiguracionCalculo";
+            this.PerPnlConfiguracionCalculo.Size = new System.Drawing.Size(500, 57);
+            this.PerPnlConfiguracionCalculo.TabIndex = 0;
             // 
             // PerDedPbIconoCalculo
             // 
@@ -461,28 +485,28 @@
             this.PerDedPbIconoCalculo.TabIndex = 16;
             this.PerDedPbIconoCalculo.TabStop = false;
             // 
-            // label8
+            // PerLblConfiguracionCalculo
             // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Lucida Fax", 13F, System.Drawing.FontStyle.Bold);
-            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(76)))), ((int)(((byte)(85)))));
-            this.label8.Location = new System.Drawing.Point(55, 17);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(312, 25);
-            this.label8.TabIndex = 2;
-            this.label8.Text = "Configuración del cálculo";
+            this.PerLblConfiguracionCalculo.AutoSize = true;
+            this.PerLblConfiguracionCalculo.BackColor = System.Drawing.Color.Transparent;
+            this.PerLblConfiguracionCalculo.Font = new System.Drawing.Font("Lucida Fax", 13F, System.Drawing.FontStyle.Bold);
+            this.PerLblConfiguracionCalculo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(76)))), ((int)(((byte)(85)))));
+            this.PerLblConfiguracionCalculo.Location = new System.Drawing.Point(55, 17);
+            this.PerLblConfiguracionCalculo.Name = "PerLblConfiguracionCalculo";
+            this.PerLblConfiguracionCalculo.Size = new System.Drawing.Size(312, 25);
+            this.PerLblConfiguracionCalculo.TabIndex = 2;
+            this.PerLblConfiguracionCalculo.Text = "Configuración del cálculo";
             // 
-            // panel4
+            // PerPnlConcepto
             // 
-            this.panel4.BackgroundImage = global::CapaVista_Nomina.Properties.Resources.Pnl_fondo;
-            this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel4.Controls.Add(this.PerDedPbIconInforme);
-            this.panel4.Controls.Add(this.label3);
-            this.panel4.Location = new System.Drawing.Point(12, 295);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(500, 57);
-            this.panel4.TabIndex = 4;
+            this.PerPnlConcepto.BackgroundImage = global::CapaVista_Nomina.Properties.Resources.Pnl_fondo;
+            this.PerPnlConcepto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.PerPnlConcepto.Controls.Add(this.PerDedPbIconInforme);
+            this.PerPnlConcepto.Controls.Add(this.PerLblInformacionConcepto);
+            this.PerPnlConcepto.Location = new System.Drawing.Point(12, 295);
+            this.PerPnlConcepto.Name = "PerPnlConcepto";
+            this.PerPnlConcepto.Size = new System.Drawing.Size(500, 57);
+            this.PerPnlConcepto.TabIndex = 4;
             // 
             // PerDedPbIconInforme
             // 
@@ -493,17 +517,17 @@
             this.PerDedPbIconInforme.TabIndex = 1;
             this.PerDedPbIconInforme.TabStop = false;
             // 
-            // label3
+            // PerLblInformacionConcepto
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Lucida Fax", 13F, System.Drawing.FontStyle.Bold);
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(76)))), ((int)(((byte)(85)))));
-            this.label3.Location = new System.Drawing.Point(68, 17);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(311, 25);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Información del concepto";
+            this.PerLblInformacionConcepto.AutoSize = true;
+            this.PerLblInformacionConcepto.BackColor = System.Drawing.Color.Transparent;
+            this.PerLblInformacionConcepto.Font = new System.Drawing.Font("Lucida Fax", 13F, System.Drawing.FontStyle.Bold);
+            this.PerLblInformacionConcepto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(76)))), ((int)(((byte)(85)))));
+            this.PerLblInformacionConcepto.Location = new System.Drawing.Point(68, 17);
+            this.PerLblInformacionConcepto.Name = "PerLblInformacionConcepto";
+            this.PerLblInformacionConcepto.Size = new System.Drawing.Size(311, 25);
+            this.PerLblInformacionConcepto.TabIndex = 0;
+            this.PerLblInformacionConcepto.Text = "Información del concepto";
             // 
             // PerDedBtnSalir
             // 
@@ -617,53 +641,53 @@
             this.PerDedBtnGuardar.TabIndex = 1;
             this.PerDedBtnGuardar.UseVisualStyleBackColor = false;
             // 
-            // RrhhPnlNominas
+            // PerPnlPercepcionDeducciones
             // 
-            this.RrhhPnlNominas.BackgroundImage = global::CapaVista_Nomina.Properties.Resources.Pnl_fondo;
-            this.RrhhPnlNominas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.RrhhPnlNominas.Controls.Add(this.pictureBox2);
-            this.RrhhPnlNominas.Controls.Add(this.label2);
-            this.RrhhPnlNominas.Controls.Add(this.label1);
-            this.RrhhPnlNominas.Controls.Add(this.PerDedPbIconoPerDed);
-            this.RrhhPnlNominas.Location = new System.Drawing.Point(21, 25);
-            this.RrhhPnlNominas.Name = "RrhhPnlNominas";
-            this.RrhhPnlNominas.Size = new System.Drawing.Size(1502, 132);
-            this.RrhhPnlNominas.TabIndex = 0;
+            this.PerPnlPercepcionDeducciones.BackgroundImage = global::CapaVista_Nomina.Properties.Resources.Pnl_fondo;
+            this.PerPnlPercepcionDeducciones.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.PerPnlPercepcionDeducciones.Controls.Add(this.PerPbDonButti);
+            this.PerPnlPercepcionDeducciones.Controls.Add(this.PerLblSubtituloGestion);
+            this.PerPnlPercepcionDeducciones.Controls.Add(this.PerLblPercepDeducciones);
+            this.PerPnlPercepcionDeducciones.Controls.Add(this.PerDedPbIconoPerDed);
+            this.PerPnlPercepcionDeducciones.Location = new System.Drawing.Point(21, 25);
+            this.PerPnlPercepcionDeducciones.Name = "PerPnlPercepcionDeducciones";
+            this.PerPnlPercepcionDeducciones.Size = new System.Drawing.Size(1502, 132);
+            this.PerPnlPercepcionDeducciones.TabIndex = 0;
             // 
-            // pictureBox2
+            // PerPbDonButti
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = global::CapaVista_Nomina.Properties.Resources.mascota;
-            this.pictureBox2.Location = new System.Drawing.Point(1279, 7);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(111, 114);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 3;
-            this.pictureBox2.TabStop = false;
+            this.PerPbDonButti.BackColor = System.Drawing.Color.Transparent;
+            this.PerPbDonButti.Image = global::CapaVista_Nomina.Properties.Resources.mascota;
+            this.PerPbDonButti.Location = new System.Drawing.Point(1279, 7);
+            this.PerPbDonButti.Name = "PerPbDonButti";
+            this.PerPbDonButti.Size = new System.Drawing.Size(111, 114);
+            this.PerPbDonButti.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PerPbDonButti.TabIndex = 3;
+            this.PerPbDonButti.TabStop = false;
             // 
-            // label2
+            // PerLblSubtituloGestion
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Lucida Fax", 14F, System.Drawing.FontStyle.Bold);
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(138)))), ((int)(((byte)(143)))));
-            this.label2.Location = new System.Drawing.Point(140, 78);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(1092, 27);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Gestiona y administra la información de percepciones y deducciones  de tu empresa" +
+            this.PerLblSubtituloGestion.AutoSize = true;
+            this.PerLblSubtituloGestion.BackColor = System.Drawing.Color.Transparent;
+            this.PerLblSubtituloGestion.Font = new System.Drawing.Font("Lucida Fax", 14F, System.Drawing.FontStyle.Bold);
+            this.PerLblSubtituloGestion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(138)))), ((int)(((byte)(143)))));
+            this.PerLblSubtituloGestion.Location = new System.Drawing.Point(140, 78);
+            this.PerLblSubtituloGestion.Name = "PerLblSubtituloGestion";
+            this.PerLblSubtituloGestion.Size = new System.Drawing.Size(1092, 27);
+            this.PerLblSubtituloGestion.TabIndex = 2;
+            this.PerLblSubtituloGestion.Text = "Gestiona y administra la información de percepciones y deducciones  de tu empresa" +
     ".";
             // 
-            // label1
+            // PerLblPercepDeducciones
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Lucida Fax", 20F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(76)))), ((int)(((byte)(85)))));
-            this.label1.Location = new System.Drawing.Point(138, 19);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(522, 40);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Percepciones y Deducciones";
+            this.PerLblPercepDeducciones.AutoSize = true;
+            this.PerLblPercepDeducciones.Font = new System.Drawing.Font("Lucida Fax", 20F, System.Drawing.FontStyle.Bold);
+            this.PerLblPercepDeducciones.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(76)))), ((int)(((byte)(85)))));
+            this.PerLblPercepDeducciones.Location = new System.Drawing.Point(138, 19);
+            this.PerLblPercepDeducciones.Name = "PerLblPercepDeducciones";
+            this.PerLblPercepDeducciones.Size = new System.Drawing.Size(522, 40);
+            this.PerLblPercepDeducciones.TabIndex = 1;
+            this.PerLblPercepDeducciones.Text = "Percepciones y Deducciones";
             // 
             // PerDedPbIconoPerDed
             // 
@@ -677,30 +701,6 @@
             this.PerDedPbIconoPerDed.TabIndex = 0;
             this.PerDedPbIconoPerDed.TabStop = false;
             // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.BackColor = System.Drawing.Color.Transparent;
-            this.label16.Font = new System.Drawing.Font("Lucida Fax", 13F, System.Drawing.FontStyle.Bold);
-            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(76)))), ((int)(((byte)(85)))));
-            this.label16.Location = new System.Drawing.Point(84, 79);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(356, 25);
-            this.label16.TabIndex = 18;
-            this.label16.Text = "Accede al calculo de nominas";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.BackColor = System.Drawing.Color.Transparent;
-            this.label17.Font = new System.Drawing.Font("Lucida Fax", 13F, System.Drawing.FontStyle.Bold);
-            this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(76)))), ((int)(((byte)(85)))));
-            this.label17.Location = new System.Drawing.Point(84, 177);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(291, 25);
-            this.label17.TabIndex = 19;
-            this.label17.Text = "Asignación Excepciones";
-            // 
             // FrmPercepcionesDeducciones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -709,15 +709,15 @@
             this.ClientSize = new System.Drawing.Size(1535, 1013);
             this.Controls.Add(this.RecDedBtnConsultar);
             this.Controls.Add(this.PerDedTxtBuscar);
-            this.Controls.Add(this.label15);
+            this.Controls.Add(this.PerLblConsultaGeneral);
             this.Controls.Add(this.PerDedDgvLista);
-            this.Controls.Add(this.panel7);
-            this.Controls.Add(this.panel6);
-            this.Controls.Add(this.panel5);
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.PerPnlConceptoRegistrados);
+            this.Controls.Add(this.PerPnlTablaNominas);
+            this.Controls.Add(this.PerPnlConfiguracionCalculo);
+            this.Controls.Add(this.PerPnlConcepto);
+            this.Controls.Add(this.PerPnlInfoTablaNomina);
+            this.Controls.Add(this.PerPnlInfoConfiCalculo);
+            this.Controls.Add(this.PerPnlDatosInfoConcep);
             this.Controls.Add(this.PerDedBtnSalir);
             this.Controls.Add(this.PerDedBtnRefrescar);
             this.Controls.Add(this.PerDedBtnFin);
@@ -728,34 +728,34 @@
             this.Controls.Add(this.PerDedBtnEliminar);
             this.Controls.Add(this.PerDedBtnModificar);
             this.Controls.Add(this.PerDedBtnGuardar);
-            this.Controls.Add(this.RrhhPnlNominas);
+            this.Controls.Add(this.PerPnlPercepcionDeducciones);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "FrmPercepcionesDeducciones";
             this.Text = "9601 - Percepciones y Deducciones";
             this.Load += new System.EventHandler(this.FrmNominas_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
+            this.PerPnlDatosInfoConcep.ResumeLayout(false);
+            this.PerPnlDatosInfoConcep.PerformLayout();
+            this.PerPnlInfoConfiCalculo.ResumeLayout(false);
+            this.PerPnlInfoConfiCalculo.PerformLayout();
+            this.PerPnlInfoTablaNomina.ResumeLayout(false);
+            this.PerPnlInfoTablaNomina.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PerDedDgvLista)).EndInit();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
+            this.PerPnlConceptoRegistrados.ResumeLayout(false);
+            this.PerPnlConceptoRegistrados.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PerDedPbIconoConsultas)).EndInit();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
+            this.PerPnlTablaNominas.ResumeLayout(false);
+            this.PerPnlTablaNominas.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PerDedPbIconoTablas)).EndInit();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
+            this.PerPnlConfiguracionCalculo.ResumeLayout(false);
+            this.PerPnlConfiguracionCalculo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PerDedPbIconoCalculo)).EndInit();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
+            this.PerPnlConcepto.ResumeLayout(false);
+            this.PerPnlConcepto.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PerDedPbIconInforme)).EndInit();
-            this.RrhhPnlNominas.ResumeLayout(false);
-            this.RrhhPnlNominas.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.PerPnlPercepcionDeducciones.ResumeLayout(false);
+            this.PerPnlPercepcionDeducciones.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PerPbDonButti)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PerDedPbIconoPerDed)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -764,10 +764,10 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel RrhhPnlNominas;
+        private System.Windows.Forms.Panel PerPnlPercepcionDeducciones;
         private System.Windows.Forms.PictureBox PerDedPbIconoPerDed;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label PerLblSubtituloGestion;
+        private System.Windows.Forms.Label PerLblPercepDeducciones;
         private System.Windows.Forms.Button PerDedBtnGuardar;
         private System.Windows.Forms.Button PerDedBtnModificar;
         private System.Windows.Forms.Button PerDedBtnEliminar;
@@ -778,45 +778,45 @@
         private System.Windows.Forms.Button PerDedBtnFin;
         private System.Windows.Forms.Button PerDedBtnRefrescar;
         private System.Windows.Forms.Button PerDedBtnSalir;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel PerPnlDatosInfoConcep;
+        private System.Windows.Forms.Panel PerPnlInfoConfiCalculo;
+        private System.Windows.Forms.Panel PerPnlInfoTablaNomina;
         private System.Windows.Forms.CheckedListBox PerDedClbAplicacion;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label PerLblInformacionConcepto;
         private System.Windows.Forms.PictureBox PerDedPbIconInforme;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label PerLblNombreConcepto;
         private System.Windows.Forms.TextBox PerDedTxtNombreConcepto;
-        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel PerPnlConcepto;
         private System.Windows.Forms.CheckBox PerDedChkEfecto;
         private System.Windows.Forms.ComboBox PerDedCboPeriodo;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Label PerLblEfecto;
+        private System.Windows.Forms.Label PerLblPeriodo;
+        private System.Windows.Forms.Label PerLblPais;
+        private System.Windows.Forms.PictureBox PerPbDonButti;
+        private System.Windows.Forms.Panel PerPnlConfiguracionCalculo;
+        private System.Windows.Forms.Panel PerPnlTablaNominas;
         private System.Windows.Forms.PictureBox PerDedPbIconoCalculo;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label PerLblConfiguracionCalculo;
+        private System.Windows.Forms.Label PerLblTablasNomina;
         private System.Windows.Forms.PictureBox PerDedPbIconoTablas;
         private System.Windows.Forms.ComboBox PerDedCboTipoCalculo;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label PerLblAplicacion;
+        private System.Windows.Forms.Label PerLblValor;
+        private System.Windows.Forms.Label PerLblTipoCalculo;
         private System.Windows.Forms.TextBox PerDedTxtValor;
         private System.Windows.Forms.CheckBox PerDedCboActivo;
-        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label PerLblActivo;
         private System.Windows.Forms.Button RecDedBtnNomina;
         private System.Windows.Forms.Button RecDedBtnExcepciones;
-        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel PerPnlConceptoRegistrados;
         private System.Windows.Forms.PictureBox PerDedPbIconoConsultas;
-        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label PerLblConceptoRegistrado;
         private System.Windows.Forms.DataGridView PerDedDgvLista;
-        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label PerLblConsultaGeneral;
         private System.Windows.Forms.TextBox PerDedTxtBuscar;
         private System.Windows.Forms.Button RecDedBtnConsultar;
         private System.Windows.Forms.ComboBox PerDedCboPais;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label PerLblAsignacionExcepcion;
+        private System.Windows.Forms.Label PerLblAccedeCalculoNomina;
     }
 }

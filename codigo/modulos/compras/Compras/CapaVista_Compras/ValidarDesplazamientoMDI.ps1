@@ -1,1 +1,0 @@
-﻿& "$PSScriptRoot/ValidarDashboardFijoMDI.ps1"

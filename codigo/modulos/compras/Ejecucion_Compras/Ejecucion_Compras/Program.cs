@@ -1,5 +1,4 @@
 ﻿using CapaVista_Compras;
-using CapaVista_Ventas;
 using System;
 using System.Collections.Generic;
 using System.Linq;

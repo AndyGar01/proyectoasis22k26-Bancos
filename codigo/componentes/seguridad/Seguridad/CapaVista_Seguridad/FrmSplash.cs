@@ -1,6 +1,6 @@
 ﻿using CapaControlador_Seguridad.Objetos_de_valor;
-using CapaVista_Bancos.Formularios;
-using CapaVista_Rrhh.Formularios;
+//using CapaVista_Bancos.Formularios;
+//using CapaVista_Rrhh.Formularios;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -68,22 +68,25 @@ namespace CapaVista_Seguridad
                 _TimerCarga.Stop();
                 this.Hide();
 
-                Form principal;
+                Form principal = null;
                 switch (_Destino)
                 {
-                    case "Bancos":
-                        var MdiBancos = new FrmMDIBancos();
-                        MdiBancos.BancosMetActualizarInfoUsuario(
-                            ClsSesionSeguridad.NombreEmpleado,
-                            ClsSesionSeguridad.SeguridadMetRolesComoTexto());
-                        principal = MdiBancos;
-                        break;
-                    case "RRHH":
-                        var MdiRrhh = new FrmMDIRrhh();
-                        MdiRrhh.RrhhMetActualizarInfoUsuario(
-                            ClsSesionSeguridad.NombreEmpleado,
-                            ClsSesionSeguridad.SeguridadMetRolesComoTexto());
-                        principal = MdiRrhh;
+                    //case "Bancos":
+                        //var MdiBancos = new FrmMDIBancos();
+                        //MdiBancos.BancosMetActualizarInfoUsuario(
+                        //ClsSesionSeguridad.NombreEmpleado,
+                        //ClsSesionSeguridad.SeguridadMetRolesComoTexto());
+                        //principal = MdiBancos;
+                        //break;
+                    //case "RRHH":
+                        //var MdiRrhh = now FrmMDIRrhh();
+                        //MdiRrhh.RrhhMetActualizarInfoUsuario(
+                        //ClsSesionSeguridad.NombreEmpleado,
+                        //ClsSesionSeguridad.SeguridadMetRolesComoTexto());
+                        //principal = MdiRrhh;
+                        //break;
+                    case "Seguridad":
+                        principal = new FrmMDISeguridad();
                         break;
                     default:
                         principal = new FrmMDISeguridad();

@@ -98,5 +98,14 @@
   <ItemGroup>
     <None Include="Resources\btn_limpiarB.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_ingresarB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_eliminarB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FondoAutorizacionModulo.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

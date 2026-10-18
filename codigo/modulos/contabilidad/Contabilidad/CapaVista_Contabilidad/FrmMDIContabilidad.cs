@@ -12,10 +12,10 @@
  *  ayuda, resumen del sistema con 6 KPIs, información relevante y nota
  *  de integración) con la paleta de Contabilidad.
  * Reglas especificas:
- *  El MDI lee la sesión y permisos existentes de Seguridad mediante el Controlador.
- *  Las ventanas CRUD usan la DLL del Navegador sin configurar tablas.
- *  Los indicadores son valores de presentación del prototipo.
- *  Los procesos contables y el Reporteador todavía no se implementan.
+ *  El MDI lee la sesión y los permisos mediante el Controlador; no toca el Modelo.
+ *  Las cinco pantallas son ventanas modales con su propio controlador.
+ *  Los indicadores son valores de presentación.
+ *  Los procesos contables reales y el Reporteador todavía no se implementan.
  * ===================================================================
 */
 
@@ -29,6 +29,7 @@ using CapaControlador_Contabilidad;
 
 namespace CapaVista_Contabilidad
 {
+    // Ventana principal del módulo.
     public partial class FrmMDIContabilidad : Form
     {
         // Las coordenadas y tamaños son Int32 porque la API de WinForms los exige.
@@ -39,11 +40,16 @@ namespace CapaVista_Contabilidad
         private const int _MargenDashboard = 44;
         private const int _AltoKpiBase = 189;
         private const int _AnchoKpiBase = 172;
+        // Botón de la ventana abierta.
         private Button _BotonActivo;
+        // Botón bajo el mouse.
         private Button _BotonSobre;
+        // Maneja el acceso del menú.
         private readonly ClsPermisosMenuContabilidad _PermisosMenu = new ClsPermisosMenuContabilidad();
+        // Botón de cada código de ventana.
         private readonly Dictionary<int, Button> _BotonesMenu;
 
+        // Prepara el menú, los paneles y los eventos.
         public FrmMDIContabilidad()
         {
             InitializeComponent();
@@ -71,6 +77,7 @@ namespace CapaVista_Contabilidad
             ContabilidadPnlInfo.Resize += (Remitente, Evento) => ContabilidadMetAcomodarInfo();
         }
 
+        // Carga la seguridad y acomoda el dashboard.
         private void ContabilidadMetCargarFormulario(object Remitente, EventArgs Evento)
         {
             ContabilidadMetActualizarSeguridad(true);
@@ -92,6 +99,7 @@ namespace CapaVista_Contabilidad
                 MessageBox.Show(this, Estado.Mensaje, "Seguridad de Contabilidad", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
+        // Reparte el ancho del encabezado.
         private void ContabilidadMetAcomodarEncabezado()
         {
             int AnchoDisponible = Math.Max(0, ContabilidadPnlPrincipal.ClientSize.Width - ContabilidadLblUsuario.Left - 24);
@@ -192,6 +200,7 @@ namespace CapaVista_Contabilidad
             }
         }
 
+        // Ruta con esquinas redondeadas.
         private GraphicsPath ContabilidadFuncRedondearEsquinas(Rectangle Rectangulo, int Radio)
         {
             GraphicsPath RutaGrafica = new GraphicsPath();
@@ -223,7 +232,7 @@ namespace CapaVista_Contabilidad
             ContabilidadPnlLateral.Width = NuevoAncho + _MargenMenu;
         }
 
-        // Los mantenimientos usan la DLL de Navegador y la sesión de Seguridad.
+        // Abre Pólizas locales.
         private void ContabilidadMetAbrirPolizasLocales(object Remitente, EventArgs Evento)
         {
             using (FrmPolizasLocales Formulario = new FrmPolizasLocales())
@@ -232,6 +241,7 @@ namespace CapaVista_Contabilidad
             }
         }
 
+        // Abre Presupuestos.
         private void ContabilidadMetAbrirPresupuestos(object Remitente, EventArgs Evento)
         {
             using (FrmPresupuestos Formulario = new FrmPresupuestos())
@@ -240,6 +250,7 @@ namespace CapaVista_Contabilidad
             }
         }
 
+        // Abre Activos fijos.
         private void ContabilidadMetAbrirActivosFijos(object Remitente, EventArgs Evento)
         {
             using (FrmActivosFijos Formulario = new FrmActivosFijos())
@@ -248,6 +259,7 @@ namespace CapaVista_Contabilidad
             }
         }
 
+        // Abre Cierre contable.
         private void ContabilidadMetAbrirCierreContable(object Remitente, EventArgs Evento)
         {
             using (FrmCierreContable Formulario = new FrmCierreContable())
@@ -256,6 +268,7 @@ namespace CapaVista_Contabilidad
             }
         }
 
+        // Abre Estados financieros.
         private void ContabilidadMetAbrirEstadosFinancieros(object Remitente, EventArgs Evento)
         {
             using (FrmEstadosFinancieros Formulario = new FrmEstadosFinancieros())
@@ -290,6 +303,7 @@ namespace CapaVista_Contabilidad
             }
         }
 
+        // Dibuja el hover, el estado activo y la etiqueta.
         private void ContabilidadMetPintarEstadoMenu(object Remitente, PaintEventArgs Evento)
         {
             Button Boton = (Button)Remitente;
@@ -314,6 +328,7 @@ namespace CapaVista_Contabilidad
                 Etiqueta, Texto, TextFormatFlags.VerticalCenter | TextFormatFlags.HorizontalCenter);
         }
 
+        // Abre la ventana si el usuario tiene acceso.
         private void ContabilidadMetAbrirFormulario(Form Formulario, Button Boton)
         {
             // Volver a consultar evita usar un acceso anterior si cambió la sesión.
@@ -326,6 +341,7 @@ namespace CapaVista_Contabilidad
             Formulario.ShowDialog(this);
         }
 
+        // Avisa que la ayuda aún no está disponible.
         private void ContabilidadMetMostrarAyuda(object Remitente, EventArgs Evento)
         {
             MessageBox.Show("La ayuda del módulo de Contabilidad aún no está disponible.",

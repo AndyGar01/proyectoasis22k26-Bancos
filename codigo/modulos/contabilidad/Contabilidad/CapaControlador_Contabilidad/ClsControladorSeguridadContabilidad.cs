@@ -12,12 +12,14 @@ using System.Collections.Generic;
 using System.Data;
 using System.Globalization;
 using System.Text;
-using CapaModelo_Contabilidad;
+using CapaModelo_Contabilidad.Repositorios;
 
 namespace CapaControlador_Contabilidad
 {
+    // Controlador de los permisos del menú.
     public class ClsControladorSeguridadContabilidad
     {
+        // Código de ventana y nombre de cada aplicación.
         private readonly Dictionary<int, string> _Aplicaciones = new Dictionary<int, string>
         {
             { 10001, "Pólizas locales" }, { 10002, "Presupuestos" },
@@ -25,8 +27,10 @@ namespace CapaControlador_Contabilidad
             { 10005, "Estados financieros" }
         };
 
+        // Arma el estado de la sesión y los accesos.
         public ClsEstadoSeguridadContabilidad ContabilidadFuncObtenerEstado()
         {
+            // Estado inicial sin sesión.
             ClsEstadoSeguridadContabilidad Estado = new ClsEstadoSeguridadContabilidad
             {
                 HaySesion = ClsSesionContabilidad.HaySesionActiva,
@@ -41,6 +45,7 @@ namespace CapaControlador_Contabilidad
             Estado.Roles = ClsSesionContabilidad.ContabilidadFuncRolesComoTexto();
             if (string.IsNullOrWhiteSpace(Estado.Roles)) Estado.Roles = "Sin roles";
 
+            // Consulta los permisos de los roles.
             try
             {
                 ClsRepositorioSeguridadContabilidad Repositorio = new ClsRepositorioSeguridadContabilidad();
@@ -86,6 +91,7 @@ namespace CapaControlador_Contabilidad
             return Estado;
         }
 
+        // Quita tildes y espacios para comparar nombres.
         private static string ContabilidadFuncNormalizarNombre(string Nombre)
         {
             StringBuilder Resultado = new StringBuilder();

@@ -6,18 +6,25 @@ using System.Drawing;
 using System.Windows.Forms;
 using CapaControlador_Contabilidad;
 using CapaVista_Contabilidad.Componentes;
-using Diseno = CapaVista_Contabilidad.Componentes.ClsDisenoPrototiposContabilidad;
+using Diseno = CapaVista_Contabilidad.Componentes.ClsDisenoContabilidad;
 
 namespace CapaVista_Contabilidad
 {
+    // Ventana de activos fijos.
     public partial class FrmActivosFijos : Form
     {
-        private readonly ClsControladorPrototiposContabilidad _Controlador = new ClsControladorPrototiposContabilidad();
+        // Controlador de activos fijos.
+        private readonly ClsControladorActivosFijosContabilidad _Controlador = new ClsControladorActivosFijosContabilidad();
+        // Maestro de vida útil.
         private DataTable _Catalogo;
+        // Errores por campo.
         private readonly ClsValidacionContabilidad _Validacion = new ClsValidacionContabilidad();
+        // Paginación del catálogo.
         private readonly ClsPaginacionContabilidad _Paginacion;
+        // Evita marcar cambios mientras se carga.
         private bool _CargandoDatos;
 
+        // Prepara la ventana y sus eventos.
         public FrmActivosFijos()
         {
             InitializeComponent();
@@ -51,17 +58,20 @@ namespace CapaVista_Contabilidad
             ContabilidadMetCargar(true);
         }
 
+        // Habilita Guardar al cambiar la ficha.
         private void ContabilidadMetCambiarFicha(object Remitente, EventArgs Argumentos)
         {
             if (!_CargandoDatos) ContabilidadBtnGuardar.Enabled = true;
         }
 
+        // Carga los meses del tipo elegido.
         private void ContabilidadMetTipo()
         {
             DataRowView Tipo = ContabilidadCboTipo.SelectedItem as DataRowView;
             if (Tipo != null) ContabilidadNudMeses.Value = (int)Tipo["Meses"];
         }
 
+        // Valida la ficha y la guarda.
         private void ContabilidadMetValidar(object Remitente, EventArgs Argumentos)
         {
             var Errores = _Controlador.ContabilidadFuncErroresActivo(ContabilidadTxtDescripcion.Text, ContabilidadTxtCentro.Text,
@@ -73,9 +83,17 @@ namespace CapaVista_Contabilidad
                 { "Compra", ContabilidadNudCompra }, { "Residual", ContabilidadNudResidual }, { "Meses", ContabilidadNudMeses }
             };
             foreach (var Campo in Campos) _Validacion.ContabilidadFuncValidar(Campo.Value, Errores.ContainsKey(Campo.Key) ? Errores[Campo.Key] : null);
-            if (Errores.Count == 0) Diseno.ContabilidadMetAviso(this, "", "Activo validado correctamente.");
+            if (Errores.Count > 0) return;
+            // El Controlador valida y graba; la Vista solo muestra el mensaje.
+            string Mensaje;
+            bool Grabado = _Controlador.ContabilidadFuncGrabarCambios(EstadoEntidadContabilidad.Agregar, ContabilidadTxtDescripcion.Text,
+                ContabilidadTxtCentro.Text, ContabilidadCboModulo.Text, Convert.ToString(ContabilidadCboTipo.SelectedValue),
+                ContabilidadDtpAdquisicion.Value, ContabilidadDtpInicio.Value, ContabilidadNudCompra.Value,
+                ContabilidadNudResidual.Value, (int)ContabilidadNudMeses.Value, out Mensaje);
+            Diseno.ContabilidadMetAviso(this, Grabado ? string.Empty : Mensaje, Mensaje);
         }
 
+        // Carga una ficha nueva o de ejemplo.
         private void ContabilidadMetCargar(bool Ejemplo)
         {
             _CargandoDatos = true;
@@ -94,6 +112,7 @@ namespace CapaVista_Contabilidad
             ContabilidadMetActualizar();
         }
 
+        // Recalcula el resumen de depreciación.
         private void ContabilidadMetActualizar()
         {
             decimal Compra = ContabilidadNudCompra.Value;

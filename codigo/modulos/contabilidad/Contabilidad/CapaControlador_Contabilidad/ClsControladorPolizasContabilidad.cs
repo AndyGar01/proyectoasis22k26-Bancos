@@ -3,30 +3,33 @@
  * Área : Contabilidad
  * Autor : Gabriel André Guillén Pocón
  * Carné : 0901-23-1998
- * Fecha : 14/10/2026
+ * Fecha : 17/10/2026
  * ==================================================================
  * Propósito :
- *  Reglas de la póliza que no dependen de la pantalla: período
- *  contable a partir de la fecha, totales del debe y del haber,
- *  diferencia, y validación antes de guardar o aplicar.
+ *  Reglas de la póliza que no dependen de la pantalla: catálogos,
+ *  período contable a partir de la fecha, totales del debe y del
+ *  haber, cuadre, validación y grabación según el estado.
  * Reglas especificas:
- *  Una póliza es válida si tiene descripción, al menos dos líneas,
- *  cada línea tiene importe solo en el debe o solo en el haber, y el
- *  total del debe es igual al del haber y mayor que cero.
+ *  La validación vive en ClsModeloPolizaContabilidad (DataAnnotations).
+ *  La Vista solo habla con esta clase, nunca con el Modelo.
  * ===================================================================
 */
 
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using CapaModelo_Contabilidad;
+using CapaModelo_Contabilidad.Contratos;
+using CapaModelo_Contabilidad.Entidades;
+using CapaModelo_Contabilidad.Repositorios;
 
 namespace CapaControlador_Contabilidad
 {
     public class ClsControladorPolizasContabilidad
     {
-        private readonly ClsRepositorioPolizasContabilidad _Repositorio = new ClsRepositorioPolizasContabilidad();
+        // Repositorio de pólizas (hoy en memoria).
+        private readonly IRepositorioPolizasContabilidad _Repositorio = new ClsRepositorioPolizasContabilidad();
 
+        // Cuentas del catálogo, validadas con el formato C.GG.CC.SSS.
         public List<ClsCuentaPolizaContabilidad> ContabilidadFuncObtenerCuentas()
         {
             List<ClsCuentaPolizaContabilidad> Cuentas = _Repositorio.ContabilidadFuncObtenerCuentas()
@@ -38,32 +41,37 @@ namespace CapaControlador_Contabilidad
             return Cuentas;
         }
 
+        // Estados posibles.
         public string[] ContabilidadFuncObtenerEstados()
         {
             return _Repositorio.ContabilidadFuncObtenerEstados();
         }
 
+        // Orígenes posibles.
         public string[] ContabilidadFuncObtenerOrigenes()
         {
             return _Repositorio.ContabilidadFuncObtenerOrigenes();
         }
 
-        // Formato YYYY-MM de poliza_encabezado.periodo_contable
+        // Período con formato yyyy-MM.
         public string ContabilidadFuncObtenerPeriodo(DateTime Fecha)
         {
             return Fecha.ToString("yyyy-MM");
         }
 
+        // Suma del debe.
         public decimal ContabilidadFuncTotalDebe(IEnumerable<ClsLineaPolizaContabilidad> Lineas)
         {
             return Lineas.Sum(Linea => Linea.Debe);
         }
 
+        // Suma del haber.
         public decimal ContabilidadFuncTotalHaber(IEnumerable<ClsLineaPolizaContabilidad> Lineas)
         {
             return Lineas.Sum(Linea => Linea.Haber);
         }
 
+        // Cuadra si el debe es mayor que cero e igual al haber.
         public bool ContabilidadFuncEstaCuadrada(IEnumerable<ClsLineaPolizaContabilidad> Lineas)
         {
             decimal Debe = ContabilidadFuncTotalDebe(Lineas);
@@ -73,18 +81,48 @@ namespace CapaControlador_Contabilidad
         // Devuelve "" si la póliza es válida; si no, el motivo en español.
         public string ContabilidadFuncValidar(string Descripcion, IList<ClsLineaPolizaContabilidad> Lineas)
         {
-            if (string.IsNullOrWhiteSpace(Descripcion)) return "Escriba la descripción de la póliza.";
-            if (Lineas.Count < 2) return "La póliza necesita al menos dos cuentas.";
-            foreach (ClsLineaPolizaContabilidad Linea in Lineas)
+            return ClsValidacionDatosContabilidad.ContabilidadFuncPrimerError(
+                new ClsModeloPolizaContabilidad { Descripcion = Descripcion, Lineas = Lineas });
+        }
+
+        // Valida el modelo y lo graba, modifica o borra según el estado.
+        public bool ContabilidadFuncGrabarCambios(EstadoEntidadContabilidad Estado, ClsModeloPolizaContabilidad Modelo, out string Mensaje)
+        {
+            Mensaje = ClsValidacionDatosContabilidad.ContabilidadFuncPrimerError(Modelo);
+            if (Mensaje != string.Empty) return false;
+
+            // Se pasa del modelo validado a la entidad del Modelo.
+            ClsPolizaContabilidad Entidad = new ClsPolizaContabilidad
             {
-                if (Linea.Debe < 0 || Linea.Haber < 0)
-                    return "Los importes no pueden ser negativos (" + Linea.Cuenta + ").";
-                if ((Linea.Debe > 0) == (Linea.Haber > 0))
-                    return "Cada cuenta debe tener importe solo en el debe o solo en el haber (" + Linea.Cuenta + ").";
+                IdPoliza = Modelo.IdPoliza, Fecha = Modelo.Fecha, Estado = Modelo.Estado, Origen = Modelo.Origen,
+                Periodo = ContabilidadFuncObtenerPeriodo(Modelo.Fecha), Descripcion = Modelo.Descripcion.Trim(),
+                Detalle = Modelo.Lineas.Select(Linea => new ClsPolizaDetalleContabilidad
+                    { IdCuenta = Linea.IdCuenta, Cuenta = Linea.Cuenta, Debe = Linea.Debe, Haber = Linea.Haber }).ToList()
+            };
+            try
+            {
+                switch (Estado)
+                {
+                    case EstadoEntidadContabilidad.Agregar:
+                        _Repositorio.ContabilidadFuncAgregar(Entidad);
+                        Mensaje = "Póliza validada correctamente.";
+                        break;
+                    case EstadoEntidadContabilidad.Modificar:
+                        _Repositorio.ContabilidadFuncEditar(Entidad);
+                        Mensaje = "Póliza actualizada correctamente.";
+                        break;
+                    case EstadoEntidadContabilidad.Borrar:
+                        _Repositorio.ContabilidadFuncEliminar(Entidad);
+                        Mensaje = "Póliza eliminada correctamente.";
+                        break;
+                }
+                return true;
             }
-            if (!ContabilidadFuncEstaCuadrada(Lineas))
-                return "La póliza no cuadra: el total del debe debe ser igual al del haber.";
-            return "";
+            catch (Exception Excepcion)
+            {
+                Mensaje = Excepcion.Message;
+                return false;
+            }
         }
     }
 }

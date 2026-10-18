@@ -2,7 +2,7 @@
 
 Módulo Windows Forms .NET Framework 4.8 con tres capas MVC (Modelo, Controlador, Vista) y
 referencias DLL. Es un **prototipo no funcional**: las pantallas se diseñan sobre la
-estructura del esquema `presupuesto_db` pero usan datos de ejemplo y no escriben en la base.
+estructura del esquema `dbContabilidad` pero usan datos de ejemplo y no escriben en la base.
 
 ## Ejecutar
 
@@ -39,11 +39,11 @@ sin modificar otros roles; si encuentra asignaciones a otros roles, revierte su 
 
 ## Base de datos
 
-`scripts/modulos/contabilidad/presupuesto_db.sql` define el esquema nuevo (`cuenta`,
-`modulo`, `pais`, `modulo_cuenta`, `poliza_encabezado`, `poliza_detalle`,
-`presupuesto_encabezado`, `presupuesto_detalle`, `maestro_vida_util`, `activos_fijos`).
-**Todavía no se ejecuta ni se usa desde el código.** El script empieza con
-`DROP DATABASE IF EXISTS presupuesto_db`. Las tablas `tblconta*` anteriores ya no existen.
+`scripts/modulos/contabilidad/dbContabilidad.sql` define el esquema nuevo según EST-01 V1.2
+(`tblPais`, `tblModulo`, `tblCuenta`, `tblModuloCuenta`, `tblPolizaEncabezado`, `tblPolizaDetalle`,
+`tblPresupuestoEncabezado`, `tblPresupuestoDetalle`, `tblMaestroVidaUtil`, `tblActivoFijo`).
+**Todavía no se ejecuta ni se usa desde el código.** Usa `CREATE ... IF NOT EXISTS` y no borra
+nada. Las tablas `tblconta*` anteriores ya no existen.
 
 ## Estado de las pantallas
 
@@ -60,9 +60,9 @@ sin modificar otros roles; si encuentra asignaciones a otros roles, revierte su 
   gastos Q 18,000.00 y resultado Q 37,000.00. La clase contable se deriva de códigos
   `C.GG.CC.SSS` del catálogo de muestra; el catálogo real y su persistencia siguen pendientes.
 
-Las cuatro pantallas nuevas usan `ClsRepositorioPrototiposContabilidad` (muestras),
-`ClsControladorPrototiposContabilidad` (validaciones y cálculos) y los controles de Vista existentes.
-Los botones Guardar y Cerrar período solo validan y muestran el resultado de la validación.
+Cada pantalla usa su controlador (`ClsControladorPolizas`, `Presupuestos`, `ActivosFijos`, `Cierre` y
+`EstadosFinancieros`, todos con sufijo `Contabilidad`), que valida con DataAnnotations y llama a su repositorio en
+memoria. Los botones Guardar llaman a `ContabilidadFuncGrabarCambios`; Cerrar período solo valida.
 La interfaz omite avisos de prototipo y referencias a datos de ejemplo por decisión de presentación;
 esto no cambia el alcance técnico ni agrega persistencia.
 
@@ -97,6 +97,19 @@ Se conservaron los recursos gráficos existentes; no se contrastaron con Teams.
 `scripts/modulos/contabilidad/VerificarEstandarizacionContabilidad.ps1` comprueba estas reglas
 y genera capturas. La matriz detallada local está en
 `manuales/modulos/contabilidad/ESTANDARIZACION_V1_1.md` (carpeta ignorada por Git).
+
+## Arquitectura MVC (capacitación y EST-10)
+
+- **CapaModelo_Contabilidad**: única capa con ODBC y SQL. `Repositorios/` (`ClsRepositorioContabilidad` conecta,
+  `ClsRepositorioMaestroContabilidad` ejecuta sentencias, los demás heredan o implementan contratos),
+  `Contratos/` (`IRepositorioGenericoContabilidad<T>` y una interfaz por repositorio) y `Entidades/` (una clase por tabla).
+  Los repositorios de pólizas, presupuestos y activos trabajan en memoria; al pasar a MySQL solo cambian ellos.
+- **CapaControlador_Contabilidad**: `Modelos/` con las validaciones (DataAnnotations e `IValidatableObject`),
+  `Validacion/` (`EstadoEntidadContabilidad`, límites y el validador común) y un controlador por pantalla.
+- **CapaVista_Contabilidad**: formularios y controles; solo referencia al Controlador.
+- **Ejecucion_Contabilidad**: aplicación Windows Forms que referencia únicamente la Vista.
+
+Orden de compilación y de referencias: Modelo → Controlador → Vista → Ejecución (hasta ver "actualizados").
 
 ## Estructura
 

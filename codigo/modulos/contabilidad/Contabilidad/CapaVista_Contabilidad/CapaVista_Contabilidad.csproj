@@ -115,7 +115,7 @@
     <Compile Include="Componentes\ClsTablaContabilidad.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Componentes\ClsDisenoPrototiposContabilidad.cs" />
+    <Compile Include="Componentes\ClsDisenoContabilidad.cs" />
     <Compile Include="Componentes\ClsDialogosContabilidad.cs" />
     <Compile Include="Componentes\ClsValidacionContabilidad.cs" />
     <Compile Include="Componentes\ClsPaginacionContabilidad.cs" />

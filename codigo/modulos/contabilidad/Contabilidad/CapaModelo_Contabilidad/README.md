@@ -1,11 +1,13 @@
 # CapaModelo_Contabilidad
 
 Proyecto de biblioteca de clases .NET Framework 4.8 con su propia conexión ODBC
-(`ClsConexionContabilidad`, DSN `EmbutidosS.A`) y ejecución de sentencias
-(`ClsSentenciasContabilidad`); no depende de CapaModelo_Seguridad.
+(`ClsRepositorioContabilidad`, DSN `EmbutidosS.A`) y ejecución de sentencias
+(`ClsRepositorioMaestroContabilidad`); no depende de CapaModelo_Seguridad.
+
+Carpetas: `Repositorios`, `Contratos` (interfaces) y `Entidades` (una clase por tabla).
 
 - `ClsRepositorioUsuariosContabilidad`: usuario activo y roles para el login (lecturas).
 - `ClsRepositorioSeguridadContabilidad`: aplicaciones del módulo y permisos por rol (lecturas).
-- `ClsRepositorioPolizasContabilidad` y `ClsCuentaContabilidad`: catálogos de EJEMPLO con la
-  forma de `presupuesto_db` (cuenta, estados y orígenes de póliza). No consulta la base; cuando
-  el prototipo pase a datos reales solo este repositorio cambia.
+- `ClsRepositorioPolizasContabilidad`, `ClsRepositorioPresupuestosContabilidad` y
+  `ClsRepositorioActivosFijosContabilidad`: implementan sus contratos en memoria con datos de EJEMPLO
+  que tienen la forma de `dbContabilidad`. No consultan la base; al pasar a datos reales solo cambian ellos.

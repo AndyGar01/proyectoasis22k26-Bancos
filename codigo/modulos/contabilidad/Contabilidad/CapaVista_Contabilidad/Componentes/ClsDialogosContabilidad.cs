@@ -6,23 +6,28 @@ using System.Windows.Forms;
 
 namespace CapaVista_Contabilidad.Componentes
 {
+    // Diálogos estándar de la norma.
     internal static class ClsDialogosContabilidad
     {
+        // Muestra el diálogo de éxito.
         internal static void ContabilidadMetExito(IWin32Window Propietario, string Mensaje)
         {
             ContabilidadFuncMostrar(Propietario, "Validación completada", Mensaje, "✓", Color.FromArgb(34, 139, 70), false);
         }
 
+        // Muestra el diálogo de error.
         internal static void ContabilidadMetError(IWin32Window Propietario, string Mensaje)
         {
             ContabilidadFuncMostrar(Propietario, "Error", Mensaje, "×", Color.Firebrick, false);
         }
 
+        // Pide confirmación y devuelve la respuesta.
         internal static bool ContabilidadFuncConfirmar(IWin32Window Propietario, string Mensaje, string Accion)
         {
             return ContabilidadFuncMostrar(Propietario, "Confirmar acción", Mensaje, "!", Color.FromArgb(197, 143, 62), true, Accion) == DialogResult.Yes;
         }
 
+        // Construye y muestra el diálogo.
         private static DialogResult ContabilidadFuncMostrar(IWin32Window Propietario, string Titulo, string Mensaje,
             string Simbolo, Color ColorEstado, bool Confirmar, string Accion = "Aceptar")
         {

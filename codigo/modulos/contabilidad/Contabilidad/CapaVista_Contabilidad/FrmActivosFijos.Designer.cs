@@ -185,7 +185,7 @@ namespace CapaVista_Contabilidad
             this.ContabilidadLblCompra.Font = new System.Drawing.Font("Tahoma", 10F);
             this.ContabilidadNudCompra.Name = "ContabilidadNudCompra";
             this.ContabilidadPnlFicha.Controls.Add(this.ContabilidadNudCompra);
-            this.ContabilidadNudCompra.Maximum = 9999999999999.99m;
+            this.ContabilidadNudCompra.Maximum = 99999999.99m;
             this.ContabilidadNudCompra.DecimalPlaces = 2;
             this.ContabilidadNudCompra.ThousandsSeparator = true;
             this.ContabilidadNudCompra.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -202,7 +202,7 @@ namespace CapaVista_Contabilidad
             this.ContabilidadLblResidual.Font = new System.Drawing.Font("Tahoma", 10F);
             this.ContabilidadNudResidual.Name = "ContabilidadNudResidual";
             this.ContabilidadPnlFicha.Controls.Add(this.ContabilidadNudResidual);
-            this.ContabilidadNudResidual.Maximum = 9999999999999.99m;
+            this.ContabilidadNudResidual.Maximum = 99999999.99m;
             this.ContabilidadNudResidual.DecimalPlaces = 2;
             this.ContabilidadNudResidual.ThousandsSeparator = true;
             this.ContabilidadNudResidual.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;

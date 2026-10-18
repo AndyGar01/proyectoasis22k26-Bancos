@@ -4,7 +4,7 @@
  * Carné: 0901-23-1998
  * Fecha: 14/10/2026
  * Propósito: prototipo no funcional de pólizas locales de Embutidos de Calidad,
- * basado en cuenta, poliza_encabezado y poliza_detalle de presupuesto_db.
+ * basado en tblCuenta, tblPolizaEncabezado y tblPolizaDetalle de dbContabilidad.
  */
 namespace CapaVista_Contabilidad
 {

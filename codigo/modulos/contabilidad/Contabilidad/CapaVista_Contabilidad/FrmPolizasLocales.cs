@@ -4,7 +4,7 @@
  * Carné: 0901-23-1998
  * Fecha: 14/10/2026
  * Propósito: prototipo no funcional de pólizas locales de Embutidos de Calidad,
- * basado en cuenta, poliza_encabezado y poliza_detalle de presupuesto_db.
+ * basado en tblCuenta, tblPolizaEncabezado y tblPolizaDetalle de dbContabilidad.
  */
 using System;
 using System.ComponentModel;
@@ -17,13 +17,19 @@ using CapaVista_Contabilidad.Componentes;
 
 namespace CapaVista_Contabilidad
 {
+    // Ventana de pólizas locales.
     public partial class FrmPolizasLocales : Form
     {
+        // Controlador de pólizas.
         private readonly ClsControladorPolizasContabilidad _Controlador = new ClsControladorPolizasContabilidad();
+        // Líneas del detalle.
         private readonly BindingList<ClsLineaPolizaContabilidad> _Lineas = new BindingList<ClsLineaPolizaContabilidad>();
+        // Cultura es-GT para los importes.
         private readonly CultureInfo _Cultura = CultureInfo.GetCultureInfo("es-GT");
+        // Errores por campo.
         private readonly ClsValidacionContabilidad _Validacion = new ClsValidacionContabilidad();
 
+        // Prepara la ventana y sus eventos.
         public FrmPolizasLocales()
         {
             InitializeComponent();
@@ -51,6 +57,7 @@ namespace CapaVista_Contabilidad
             ContabilidadMetNueva(this, EventArgs.Empty);
         }
 
+        // Llena cuentas, estados y orígenes.
         private void ContabilidadMetCargarCatalogos()
         {
             ContabilidadCboCuenta.DisplayMember = "Descripcion";
@@ -60,11 +67,13 @@ namespace CapaVista_Contabilidad
             ContabilidadCboOrigen.DataSource = _Controlador.ContabilidadFuncObtenerOrigenes();
         }
 
+        // Muestra el período de la fecha.
         private void ContabilidadMetActualizarPeriodo(object Remitente, EventArgs Argumentos)
         {
             ContabilidadTxtPeriodo.Text = _Controlador.ContabilidadFuncObtenerPeriodo(ContabilidadDtpFecha.Value);
         }
 
+        // Agrega la cuenta elegida al detalle.
         private void ContabilidadMetAgregarCuenta(object Remitente, EventArgs Argumentos)
         {
             ContabilidadDgvDetalle.EndEdit();
@@ -95,6 +104,7 @@ namespace CapaVista_Contabilidad
             ContabilidadCboCuenta.Text = string.Empty;
         }
 
+        // Quita la línea seleccionada.
         private void ContabilidadMetQuitarCuenta(object Remitente, DataGridViewCellEventArgs Argumentos)
         {
             if (Argumentos.RowIndex < 0 || Argumentos.ColumnIndex != ContabilidadColQuitar.Index) return;
@@ -103,6 +113,7 @@ namespace CapaVista_Contabilidad
             if (Linea != null) _Lineas.Remove(Linea);
         }
 
+        // Convierte el texto a importe con dos decimales.
         private void ContabilidadMetInterpretarImporte(object Remitente, DataGridViewCellParsingEventArgs Argumentos)
         {
             if (Argumentos.ColumnIndex != ContabilidadColDebe.Index && Argumentos.ColumnIndex != ContabilidadColHaber.Index) return;
@@ -110,8 +121,8 @@ namespace CapaVista_Contabilidad
             decimal Importe;
             if (string.IsNullOrWhiteSpace(Texto)) Importe = 0m;
             else if (!decimal.TryParse(Texto, NumberStyles.Number, _Cultura, out Importe)) return;
-            // DECIMAL(15,2): conservar dos decimales también en el valor enlazado.
-            if (Importe < -9999999999999.99m || Importe > 9999999999999.99m)
+            // Dentro del límite de EST-01 y con dos decimales también en el valor enlazado.
+            if (Importe < -ClsLimitesContabilidad.MaximoMonetario || Importe > ClsLimitesContabilidad.MaximoMonetario)
             {
                 Argumentos.Value = "Importe fuera de rango";
                 return;
@@ -120,6 +131,7 @@ namespace CapaVista_Contabilidad
             Argumentos.ParsingApplied = true;
         }
 
+        // Avisa si el importe no es válido.
         private void ContabilidadMetErrorImporte(object Remitente, DataGridViewDataErrorEventArgs Argumentos)
         {
             Argumentos.ThrowException = false;
@@ -135,19 +147,22 @@ namespace CapaVista_Contabilidad
                 _Lineas.ResetItem(Argumentos.RowIndex);
             }
             ContabilidadMetRecalcularTotales();
-            ClsDialogosContabilidad.ContabilidadMetError(this, "Importe inválido. Ingrese un número dentro del rango DECIMAL(15,2). Se asignó 0.00.");
+            ClsDialogosContabilidad.ContabilidadMetError(this, "Importe inválido. Ingrese un número dentro del rango permitido. Se asignó 0.00.");
         }
 
+        // Recalcula al terminar de editar.
         private void ContabilidadMetTerminarEdicion(object Remitente, DataGridViewCellEventArgs Argumentos)
         {
             ContabilidadMetRecalcularTotales();
         }
 
+        // Recalcula al cambiar el detalle.
         private void ContabilidadMetCambiarDetalle(object Remitente, ListChangedEventArgs Argumentos)
         {
             ContabilidadMetRecalcularTotales();
         }
 
+        // Actualiza totales, cuadre y botones.
         private void ContabilidadMetRecalcularTotales()
         {
             decimal Debe = _Controlador.ContabilidadFuncTotalDebe(_Lineas);
@@ -171,6 +186,7 @@ namespace CapaVista_Contabilidad
             ContabilidadMetAlinearTotales(this, EventArgs.Empty);
         }
 
+        // Alinea los totales con sus columnas.
         private void ContabilidadMetAlinearTotales(object Remitente, EventArgs Argumentos)
         {
             if (Disposing || IsDisposed || ContabilidadDgvDetalle.Disposing || ContabilidadDgvDetalle.IsDisposed ||
@@ -183,12 +199,14 @@ namespace CapaVista_Contabilidad
             ContabilidadLblTotalHaber.Width = AreaHaber.Width;
         }
 
+        // Vacía el detalle.
         private void ContabilidadMetLimpiarDetalle(object Remitente, EventArgs Argumentos)
         {
             ContabilidadDgvDetalle.CancelEdit();
             _Lineas.Clear();
         }
 
+        // Prepara una póliza nueva.
         private void ContabilidadMetNueva(object Remitente, EventArgs Argumentos)
         {
             _Validacion.ContabilidadMetLimpiar();
@@ -204,17 +222,20 @@ namespace CapaVista_Contabilidad
             ContabilidadTxtDescripcion.Focus();
         }
 
+        // Guarda la póliza.
         private void ContabilidadMetGuardar(object Remitente, EventArgs Argumentos)
         {
-            ContabilidadMetValidarPrototipo(false);
+            ContabilidadMetProcesarPoliza(false);
         }
 
+        // Revisa que la póliza esté lista para aplicar.
         private void ContabilidadMetAplicar(object Remitente, EventArgs Argumentos)
         {
-            ContabilidadMetValidarPrototipo(true);
+            ContabilidadMetProcesarPoliza(true);
         }
 
-        private void ContabilidadMetValidarPrototipo(bool Aplicar)
+        // Valida y, si es Guardar, graba la póliza.
+        private void ContabilidadMetProcesarPoliza(bool Aplicar)
         {
             if (!ContabilidadDgvDetalle.EndEdit()) return;
             ContabilidadMetRecalcularTotales();
@@ -226,8 +247,22 @@ namespace CapaVista_Contabilidad
                 ClsDialogosContabilidad.ContabilidadMetError(this, Motivo);
                 return;
             }
-            string Mensaje = Aplicar ? "La póliza está cuadrada y lista para aplicar." : "Póliza validada correctamente.";
-            ClsDialogosContabilidad.ContabilidadMetExito(this, Mensaje);
+            if (Aplicar)
+            {
+                ClsDialogosContabilidad.ContabilidadMetExito(this, "La póliza está cuadrada y lista para aplicar.");
+                return;
+            }
+            // El Controlador valida y graba; la Vista solo muestra el mensaje.
+            ClsModeloPolizaContabilidad Modelo = new ClsModeloPolizaContabilidad
+            {
+                Descripcion = ContabilidadTxtDescripcion.Text, Fecha = ContabilidadDtpFecha.Value,
+                Estado = ContabilidadCboEstado.Text, Origen = ContabilidadCboOrigen.Text, Lineas = _Lineas
+            };
+            string Mensaje;
+            if (_Controlador.ContabilidadFuncGrabarCambios(EstadoEntidadContabilidad.Agregar, Modelo, out Mensaje))
+                ClsDialogosContabilidad.ContabilidadMetExito(this, Mensaje);
+            else
+                ClsDialogosContabilidad.ContabilidadMetError(this, Mensaje);
         }
     }
 }

@@ -22,28 +22,37 @@ using CapaControlador_Seguridad.Objetos_de_valor;
 
 namespace CapaControlador_Contabilidad
 {
+    // Datos de quien inició sesión.
     public static class ClsSesionContabilidad
     {
+        // Id del usuario.
         public static int IdUsuario { get; private set; }
+        // Nombre de usuario.
         public static string NombreUsuario { get; private set; }
+        // Nombre del empleado.
         public static string NombreEmpleado { get; private set; }
+        // Roles del usuario.
         public static Dictionary<int, string> Roles { get; private set; } = new Dictionary<int, string>();
 
+        // Hay sesión si existe un usuario.
         public static bool HaySesionActiva
         {
             get { return IdUsuario > 0; }
         }
 
+        // Ids de los roles.
         public static List<int> IdsRoles
         {
             get { return Roles.Keys.ToList(); }
         }
 
+        // Roles separados por coma.
         public static string ContabilidadFuncRolesComoTexto()
         {
             return string.Join(", ", Roles.Values);
         }
 
+        // Guarda la sesión y la refleja en Seguridad.
         public static void ContabilidadMetIniciarSesion(int IdUsuarioNuevo, string NombreUsuarioNuevo,
             string NombreEmpleadoNuevo, Dictionary<int, string> RolesNuevos)
         {
@@ -59,6 +68,7 @@ namespace CapaControlador_Contabilidad
             ClsSesionSeguridad.SeguridadMetIniciarSesion(IdUsuario, NombreUsuario, NombreEmpleado, RolesNavegador);
         }
 
+        // Limpia la sesión.
         public static void ContabilidadMetCerrarSesion()
         {
             IdUsuario = 0;

@@ -11,8 +11,10 @@ using System.Windows.Forms;
 
 namespace CapaVista_Contabilidad
 {
+    // Reglas de presentación comunes de las ventanas.
     internal static class ClsPresentacionContabilidad
     {
+        // Ícono del módulo.
         private static readonly Icon _IconoContabilidad = (Icon)new ComponentResourceManager(
             typeof(FrmMDIContabilidad)).GetObject("$this.Icon");
 
@@ -35,6 +37,7 @@ namespace CapaVista_Contabilidad
             ContabilidadMetAplicarTipografia(Formulario);
         }
 
+        // Aplica Tahoma a las etiquetas y Segoe UI a los campos.
         internal static void ContabilidadMetAplicarTipografia(Control Contenedor)
         {
             foreach (Control Elemento in Contenedor.Controls)

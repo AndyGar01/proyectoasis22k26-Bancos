@@ -6,16 +6,21 @@ using System.Drawing;
 using System.Windows.Forms;
 using CapaControlador_Contabilidad;
 using CapaVista_Contabilidad.Componentes;
-using Diseno = CapaVista_Contabilidad.Componentes.ClsDisenoPrototiposContabilidad;
+using Diseno = CapaVista_Contabilidad.Componentes.ClsDisenoContabilidad;
 
 namespace CapaVista_Contabilidad
 {
+    // Ventana del cierre contable.
     public partial class FrmCierreContable : Form
     {
-        private readonly ClsControladorPrototiposContabilidad _Controlador = new ClsControladorPrototiposContabilidad();
+        // Controlador del cierre.
+        private readonly ClsControladorCierreContabilidad _Controlador = new ClsControladorCierreContabilidad();
+        // Pólizas del período.
         private DataTable _Polizas;
+        // Paginación de las pólizas.
         private readonly ClsPaginacionContabilidad _Paginacion;
 
+        // Prepara la ventana y sus eventos.
         public FrmCierreContable()
         {
             InitializeComponent();
@@ -35,6 +40,7 @@ namespace CapaVista_Contabilidad
             ContabilidadMetRevisar();
         }
 
+        // Revisa el período y muestra el diagnóstico.
         private void ContabilidadMetRevisar()
         {
             DataTable Anterior = _Polizas;

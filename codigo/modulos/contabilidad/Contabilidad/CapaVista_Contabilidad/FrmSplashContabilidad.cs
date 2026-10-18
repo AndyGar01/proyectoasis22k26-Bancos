@@ -13,13 +13,17 @@ using System.Windows.Forms;
 
 namespace CapaVista_Contabilidad
 {
+    // Pantalla de carga.
     public partial class FrmSplashContabilidad : Form
     {
+        // Permite colorear la barra de progreso.
         [DllImport("uxtheme.dll", ExactSpelling = true, CharSet = CharSet.Unicode)]
         private static extern int SetWindowTheme(IntPtr Ventana, string NombreAplicacion, string ListaIdentificadores);
 
+        // Porcentaje de avance.
         private int _Progreso;
 
+        // Prepara la pantalla e inicia la carga.
         public FrmSplashContabilidad()
         {
             InitializeComponent();
@@ -27,18 +31,21 @@ namespace CapaVista_Contabilidad
             ContabilidadMetIniciarCarga();
         }
 
+        // Pinta la barra de progreso.
         private void ContabilidadMetAplicarColorBarra()
         {
             SetWindowTheme(ContabilidadPgbCarga.Handle, "", "");
             ContabilidadPgbCarga.ForeColor = Color.FromArgb(197, 143, 62);
         }
 
+        // Inicia el temporizador.
         private void ContabilidadMetIniciarCarga()
         {
             _Progreso = 0;
             _TimerCarga.Start();
         }
 
+        // Avanza la barra y abre el MDI al terminar.
         private void ContabilidadMetActualizarCarga(object Remitente, EventArgs Evento)
         {
             _Progreso += 1;

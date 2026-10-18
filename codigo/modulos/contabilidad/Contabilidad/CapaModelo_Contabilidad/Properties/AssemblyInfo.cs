@@ -1,4 +1,15 @@
-﻿using System.Reflection;
+﻿/*
+ * ==================================================================
+ * Área : Contabilidad
+ * Autor : Gabriel André Guillén Pocón
+ * Carné : 0901-23-1998
+ * Fecha : 17/10/2026
+ * ==================================================================
+ * Propósito : datos del ensamblado de la capa Modelo.
+ * ===================================================================
+*/
+
+using System.Reflection;
 using System.Runtime.InteropServices;
 
 [assembly: AssemblyTitle("CapaModelo_Contabilidad")]

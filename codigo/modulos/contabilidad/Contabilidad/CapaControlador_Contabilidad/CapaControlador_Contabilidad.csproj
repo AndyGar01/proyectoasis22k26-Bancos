@@ -44,6 +44,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
   </ItemGroup>
@@ -52,11 +53,21 @@
     <Compile Include="ClsControladorLoginContabilidad.cs" />
     <Compile Include="ClsEstadoSeguridadContabilidad.cs" />
     <Compile Include="ClsControladorSeguridadContabilidad.cs" />
-    <Compile Include="ClsCuentaPolizaContabilidad.cs" />
-    <Compile Include="ClsLineaPolizaContabilidad.cs" />
     <Compile Include="ClsControladorPolizasContabilidad.cs" />
-    <Compile Include="ClsControladorPrototiposContabilidad.cs" />
+    <Compile Include="ClsControladorPresupuestosContabilidad.cs" />
+    <Compile Include="ClsControladorActivosFijosContabilidad.cs" />
+    <Compile Include="ClsControladorCierreContabilidad.cs" />
+    <Compile Include="ClsControladorEstadosFinancierosContabilidad.cs" />
     <Compile Include="ClsCodigoCuentaContabilidad.cs" />
+    <Compile Include="Modelos\ClsCuentaPolizaContabilidad.cs" />
+    <Compile Include="Modelos\ClsLineaPolizaContabilidad.cs" />
+    <Compile Include="Modelos\ClsModeloPolizaContabilidad.cs" />
+    <Compile Include="Modelos\ClsModeloPresupuestoContabilidad.cs" />
+    <Compile Include="Modelos\ClsModeloActivoFijoContabilidad.cs" />
+    <Compile Include="Modelos\ClsResumenCierreContabilidad.cs" />
+    <Compile Include="Validacion\EstadoEntidadContabilidad.cs" />
+    <Compile Include="Validacion\ClsLimitesContabilidad.cs" />
+    <Compile Include="Validacion\ClsValidacionDatosContabilidad.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <None Include="README.md" />
   </ItemGroup>

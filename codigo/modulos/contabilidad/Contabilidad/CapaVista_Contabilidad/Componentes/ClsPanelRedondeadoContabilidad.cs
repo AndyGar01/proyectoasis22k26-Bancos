@@ -19,12 +19,17 @@ using System.Windows.Forms;
 
 namespace CapaVista_Contabilidad.Componentes
 {
+    // Panel con esquinas redondeadas.
     public class ClsPanelRedondeadoContabilidad : Panel
     {
+        // Radio de las esquinas.
         private int _Radio = 18;
+        // Color del borde.
         private Color _ColorBorde = Color.FromArgb(212, 222, 228);
+        // Color del relleno.
         private Color _ColorRelleno = Color.White;
 
+        // Configura el dibujo propio.
         public ClsPanelRedondeadoContabilidad()
         {
             SetStyle(ControlStyles.UserPaint | ControlStyles.AllPaintingInWmPaint |
@@ -33,6 +38,7 @@ namespace CapaVista_Contabilidad.Componentes
             BackColor = Color.Transparent;
         }
 
+        // Radio de las esquinas.
         [Category("Contabilidad"), DefaultValue(18)]
         public int Radio
         {
@@ -40,6 +46,7 @@ namespace CapaVista_Contabilidad.Componentes
             set { _Radio = Math.Max(0, value); Invalidate(); }
         }
 
+        // Color del borde.
         [Category("Contabilidad")]
         public Color ColorBorde
         {
@@ -47,6 +54,7 @@ namespace CapaVista_Contabilidad.Componentes
             set { _ColorBorde = value; Invalidate(); }
         }
 
+        // Color del relleno.
         [Category("Contabilidad")]
         public Color ColorRelleno
         {
@@ -54,9 +62,11 @@ namespace CapaVista_Contabilidad.Componentes
             set { _ColorRelleno = value; Invalidate(); }
         }
 
+        // Evita guardar el valor por defecto.
         private bool ShouldSerializeColorBorde() { return _ColorBorde != Color.FromArgb(212, 222, 228); }
         private bool ShouldSerializeColorRelleno() { return _ColorRelleno != Color.White; }
 
+        // Dibuja el relleno y el borde.
         protected override void OnPaint(PaintEventArgs Evento)
         {
             base.OnPaintBackground(Evento);
@@ -73,6 +83,7 @@ namespace CapaVista_Contabilidad.Componentes
             }
         }
 
+        // Ruta con esquinas redondeadas.
         private static GraphicsPath ContabilidadFuncRuta(Rectangle Rectangulo, int Radio)
         {
             GraphicsPath Ruta = new GraphicsPath();

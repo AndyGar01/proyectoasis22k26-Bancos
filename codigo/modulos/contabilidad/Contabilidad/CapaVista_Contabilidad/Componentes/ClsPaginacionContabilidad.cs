@@ -7,20 +7,33 @@ using System.Windows.Forms;
 
 namespace CapaVista_Contabilidad.Componentes
 {
+    // Pagina y ordena una tabla de diez en diez.
     internal sealed class ClsPaginacionContabilidad : IDisposable
     {
+        // Tabla que se pagina.
         private readonly ClsTablaContabilidad _Tabla;
+        // Pie con los controles.
         private readonly Panel _Pie;
+        // Texto con el total de registros.
         private readonly Label _Resumen;
+        // Botón de página anterior.
         private readonly ClsBotonContabilidad _Anterior;
+        // Botón de página siguiente.
         private readonly ClsBotonContabilidad _Siguiente;
+        // Datos ordenados.
         private DataView _Vista;
+        // Página que se muestra.
         private DataTable _PaginaVisible;
+        // Número de página actual.
         private int _Pagina = 1;
+        // Registros por página.
         private const int _TamanoPagina = 10;
+        // Columna de orden.
         private string _CampoOrden = string.Empty;
+        // Sentido del orden.
         private bool _Descendente;
 
+        // Prepara el pie y los eventos.
         internal ClsPaginacionContabilidad(ClsTablaContabilidad Tabla)
         {
             _Tabla = Tabla;
@@ -41,6 +54,7 @@ namespace CapaVista_Contabilidad.Componentes
             Tabla.ColumnHeaderMouseClick += ContabilidadMetOrdenar;
         }
 
+        // Carga los datos y vuelve a la primera página.
         internal void ContabilidadMetCargar(DataTable Datos)
         {
             if (_Vista != null) _Vista.Dispose();
@@ -51,6 +65,7 @@ namespace CapaVista_Contabilidad.Componentes
             ContabilidadMetActualizar();
         }
 
+        // Devuelve la fila seleccionada.
         internal DataRow ContabilidadFuncFilaActual()
         {
             if (_Vista == null || _Tabla.CurrentRow == null) return null;
@@ -58,6 +73,7 @@ namespace CapaVista_Contabilidad.Componentes
             return Indice < _Vista.Count ? _Vista[Indice].Row : null;
         }
 
+        // Vacía la tabla.
         internal void ContabilidadMetLimpiar()
         {
             _Tabla.DataSource = null;
@@ -68,6 +84,7 @@ namespace CapaVista_Contabilidad.Componentes
             _Siguiente.Enabled = false;
         }
 
+        // Redibuja la página actual.
         internal void ContabilidadMetActualizar()
         {
             if (_Vista == null) return;
@@ -89,16 +106,19 @@ namespace CapaVista_Contabilidad.Componentes
             _Siguiente.Enabled = _Pagina < Paginas;
         }
 
+        // Va a la página anterior.
         private void ContabilidadMetAnterior(object Remitente, EventArgs Argumentos)
         {
             if (_Pagina > 1) { _Pagina--; ContabilidadMetActualizar(); }
         }
 
+        // Va a la página siguiente.
         private void ContabilidadMetSiguiente(object Remitente, EventArgs Argumentos)
         {
             if (_Vista != null && _Pagina * _TamanoPagina < _Vista.Count) { _Pagina++; ContabilidadMetActualizar(); }
         }
 
+        // Ordena al hacer clic en el encabezado.
         private void ContabilidadMetOrdenar(object Remitente, DataGridViewCellMouseEventArgs Argumentos)
         {
             if (_Vista == null || Argumentos.ColumnIndex < 0) return;
@@ -111,6 +131,7 @@ namespace CapaVista_Contabilidad.Componentes
             ContabilidadMetActualizar();
         }
 
+        // Libera los controles creados.
         public void Dispose()
         {
             _Tabla.ColumnHeaderMouseClick -= ContabilidadMetOrdenar;

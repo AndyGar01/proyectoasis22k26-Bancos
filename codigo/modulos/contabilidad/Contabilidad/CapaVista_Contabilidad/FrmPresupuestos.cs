@@ -6,19 +6,27 @@ using System.Drawing;
 using System.Windows.Forms;
 using CapaControlador_Contabilidad;
 using CapaVista_Contabilidad.Componentes;
-using Diseno = CapaVista_Contabilidad.Componentes.ClsDisenoPrototiposContabilidad;
+using Diseno = CapaVista_Contabilidad.Componentes.ClsDisenoContabilidad;
 
 namespace CapaVista_Contabilidad
 {
+    // Ventana de presupuestos.
     public partial class FrmPresupuestos : Form
     {
-        private readonly ClsControladorPrototiposContabilidad _Controlador = new ClsControladorPrototiposContabilidad();
+        // Controlador de presupuestos.
+        private readonly ClsControladorPresupuestosContabilidad _Controlador = new ClsControladorPresupuestosContabilidad();
+        // Partidas del presupuesto.
         private DataTable _Detalle;
+        // Errores por campo.
         private readonly ClsValidacionContabilidad _Validacion = new ClsValidacionContabilidad();
+        // Paginación de las partidas.
         private readonly ClsPaginacionContabilidad _Paginacion;
+        // Evita marcar cambios mientras se carga.
         private bool _CargandoDatos;
+        // Indica si hay cambios sin guardar.
         private bool _HayCambios;
 
+        // Prepara la ventana y sus eventos.
         public FrmPresupuestos()
         {
             InitializeComponent();
@@ -44,15 +52,19 @@ namespace CapaVista_Contabilidad
             ContabilidadBtnEjemplo.Click += (Remitente, Argumentos) => ContabilidadMetCargar(true);
             ContabilidadBtnGuardar.Click += (Remitente, Argumentos) =>
             {
-                string Error = _Controlador.ContabilidadFuncValidarPresupuesto(ContabilidadDtpInicio.Value,
-                    ContabilidadDtpCierre.Checked ? (DateTime?)ContabilidadDtpCierre.Value : null, _Detalle);
+                DateTime? Cierre = ContabilidadDtpCierre.Checked ? (DateTime?)ContabilidadDtpCierre.Value : null;
                 string ErrorFecha = ContabilidadDtpCierre.Checked ? _Controlador.ContabilidadFuncErrorFechas(ContabilidadDtpInicio.Value, ContabilidadDtpCierre.Value) : string.Empty;
                 if (!_Validacion.ContabilidadFuncValidar(ContabilidadDtpCierre, ErrorFecha)) return;
-                Diseno.ContabilidadMetAviso(this, Error, "Presupuesto validado correctamente.");
+                // El Controlador valida y graba; la Vista solo muestra el mensaje.
+                string Mensaje;
+                bool Grabado = _Controlador.ContabilidadFuncGrabarCambios(EstadoEntidadContabilidad.Agregar, ContabilidadDtpInicio.Value,
+                    Cierre, ContabilidadNudGastado.Value, _Detalle, out Mensaje);
+                Diseno.ContabilidadMetAviso(this, Grabado ? string.Empty : Mensaje, Mensaje);
             };
             ContabilidadMetCargar(true);
         }
 
+        // Carga un presupuesto nuevo o de ejemplo.
         private void ContabilidadMetCargar(bool Ejemplo)
         {
             _CargandoDatos = true;
@@ -73,12 +85,14 @@ namespace CapaVista_Contabilidad
             ContabilidadMetActualizar();
         }
 
+        // Marca que hay cambios en el encabezado.
         private void ContabilidadMetCambiarEncabezado(object Remitente, EventArgs Argumentos)
         {
             if (!_CargandoDatos) _HayCambios = true;
             ContabilidadMetActualizar();
         }
 
+        // Agrega una partida al detalle.
         private void ContabilidadMetAgregar(object Remitente, EventArgs Argumentos)
         {
             var Errores = _Controlador.ContabilidadFuncErroresPartida(ContabilidadTxtNombre.Text, ContabilidadCboModulo.Text, ContabilidadNudCantidad.Value, _Detalle);
@@ -93,6 +107,7 @@ namespace CapaVista_Contabilidad
             ContabilidadMetActualizar();
         }
 
+        // Recalcula totales y botones.
         private void ContabilidadMetActualizar()
         {
             if (_Detalle == null) return;

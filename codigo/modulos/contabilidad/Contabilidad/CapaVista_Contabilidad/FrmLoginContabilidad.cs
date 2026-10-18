@@ -15,9 +15,12 @@ using CapaVista_Contabilidad.Componentes;
 
 namespace CapaVista_Contabilidad
 {
+    // Ventana de inicio de sesión.
     public partial class FrmLoginContabilidad : Form
     {
+        // Errores por campo.
         private readonly ClsValidacionContabilidad _Validacion = new ClsValidacionContabilidad();
+        // Prepara la ventana y los campos.
         public FrmLoginContabilidad()
         {
             InitializeComponent();
@@ -30,6 +33,7 @@ namespace CapaVista_Contabilidad
             Disposed += (Remitente, Argumentos) => _Validacion.Dispose();
         }
 
+        // Redondea las esquinas de un control.
         private void ContabilidadMetRedondearEsquinas(Control Control, int Radio)
         {
             Rectangle Limites = Control.ClientRectangle;
@@ -47,11 +51,13 @@ namespace CapaVista_Contabilidad
             }
         }
 
+        // Redondea el panel al pintarlo.
         private void ContabilidadMetPintarPanel(object Remitente, PaintEventArgs Evento)
         {
             ContabilidadMetRedondearEsquinas(ContabilidadPnlInterfazLogin, 20);
         }
 
+        // Valida los datos y abre la pantalla de carga.
         private void ContabilidadMetIniciarSesion(object Remitente, EventArgs Evento)
         {
             bool UsuarioValido = _Validacion.ContabilidadFuncValidar(ContabilidadTxtUsuario,
@@ -85,6 +91,7 @@ namespace CapaVista_Contabilidad
             }
         }
 
+        // Muestra u oculta la contraseña.
         private void ContabilidadMetMostrarContrasena(object Remitente, EventArgs Evento)
         {
             ContabilidadTxtContrasena.PasswordChar = ContabilidadChkMostrarContra.Checked ? '\0' : '*';

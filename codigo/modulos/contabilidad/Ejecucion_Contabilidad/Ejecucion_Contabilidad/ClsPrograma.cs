@@ -1,8 +1,20 @@
+/*
+ * ==================================================================
+ * Área : Contabilidad
+ * Autor : Gabriel André Guillén Pocón
+ * Carné : 0901-23-1998
+ * Fecha : 17/10/2026
+ * ==================================================================
+ * Propósito : arranca el módulo con el login, la pantalla de carga y el MDI.
+ * ===================================================================
+*/
+
 using System;
 using System.Windows.Forms;
 
 namespace Ejecucion_Contabilidad
 {
+    // Punto de entrada del ejecutable.
     internal static class ClsPrograma
     {
         /// <summary>

@@ -3,7 +3,7 @@
  * Área : Contabilidad
  * Autor : Gabriel André Guillén Pocón
  * Carné : 0901-23-1998
- * Fecha : 14/10/2026
+ * Fecha : 17/10/2026
  * ==================================================================
  * Propósito :
  *  Consulta el registro de aplicaciones de Contabilidad y los permisos
@@ -17,10 +17,11 @@ using System.Data;
 using System.Data.Odbc;
 using System.Text;
 
-namespace CapaModelo_Contabilidad
+namespace CapaModelo_Contabilidad.Repositorios
 {
-    public class ClsRepositorioSeguridadContabilidad : ClsSentenciasContabilidad
+    public class ClsRepositorioSeguridadContabilidad : ClsRepositorioMaestroContabilidad
     {
+        // Aplicaciones registradas para el módulo Contabilidad.
         public DataTable ContabilidadFuncObtenerAplicaciones()
         {
             return ContabilidadFuncEjecutarConsulta(
@@ -36,6 +37,7 @@ namespace CapaModelo_Contabilidad
         {
             if (IdsRoles == null || IdsRoles.Count == 0) return false;
 
+            // Un comodín por cada rol.
             StringBuilder Marcadores = new StringBuilder();
             List<OdbcParameter> Parametros = new List<OdbcParameter>();
             foreach (int IdRol in IdsRoles)

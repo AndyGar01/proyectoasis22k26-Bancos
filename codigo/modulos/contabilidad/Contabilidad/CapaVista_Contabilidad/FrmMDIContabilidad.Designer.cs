@@ -1,3 +1,14 @@
+/*
+ * ==================================================================
+ * Área : Contabilidad
+ * Autor : Gabriel André Guillén Pocón
+ * Carné : 0901-23-1998
+ * Fecha : 17/10/2026
+ * ==================================================================
+ * Propósito : diseño generado de la ventana principal; no se edita a mano.
+ * ===================================================================
+*/
+
 namespace CapaVista_Contabilidad
 {
     partial class FrmMDIContabilidad

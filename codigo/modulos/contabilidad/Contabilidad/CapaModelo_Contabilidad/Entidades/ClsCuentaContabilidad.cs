@@ -3,27 +3,29 @@
  * Área : Contabilidad
  * Autor : Gabriel André Guillén Pocón
  * Carné : 0901-23-1998
- * Fecha : 14/10/2026
+ * Fecha : 17/10/2026
  * ==================================================================
  * Propósito :
- *  Cuenta tal como la necesita la Vista para elegirla en una póliza.
- *  Es el tipo que expone el Controlador, de modo que la Vista no
- *  depende de las clases del Modelo.
+ *  Entidad que coincide con la tabla de cuentas contables: id, código
+ *  con formato C.GG.CC.SSS y nombre.
  * ===================================================================
 */
 
-namespace CapaControlador_Contabilidad
+namespace CapaModelo_Contabilidad.Entidades
 {
-    public class ClsCuentaPolizaContabilidad
+    public class ClsCuentaContabilidad
     {
+        // Llave de la cuenta.
         public int IdCuenta { get; set; }
+        // Código con formato C.GG.CC.SSS.
         public string Codigo { get; set; }
+        // Nombre de la cuenta.
         public string Nombre { get; set; }
-        public string Descripcion { get { return Codigo + " - " + Nombre; } }
 
+        // Se muestra el nombre en los listados.
         public override string ToString()
         {
-            return Descripcion;
+            return Nombre;
         }
     }
 }

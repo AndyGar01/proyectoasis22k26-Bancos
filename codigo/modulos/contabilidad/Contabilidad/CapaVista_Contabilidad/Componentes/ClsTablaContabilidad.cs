@@ -17,8 +17,10 @@ using System.Windows.Forms;
 
 namespace CapaVista_Contabilidad.Componentes
 {
+    // Tabla con el estilo del módulo.
     public class ClsTablaContabilidad : DataGridView
     {
+        // Aplica colores y opciones.
         public ClsTablaContabilidad()
         {
             DoubleBuffered = true;

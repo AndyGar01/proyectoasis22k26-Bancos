@@ -85,5 +85,17 @@
   <ItemGroup>
     <None Include="Resources\conci_butti1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_salirB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_ayudaB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_corte_conciliacion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_marcar_conciliacion.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

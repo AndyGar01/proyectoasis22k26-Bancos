@@ -1206,7 +1206,7 @@ namespace CapaVista_TipoCambio.Formularios
             this.MaximizeBox = false;
             this.Name = "FrmTipoCambio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "8005 – Tipo de Cambio";
+            this.Text = "8005–TipoDeCambio";
             this.BancosPnlFondo.ResumeLayout(false);
             this.BancosTabControl.ResumeLayout(false);
             this.BancosTabTasasActuales.ResumeLayout(false);

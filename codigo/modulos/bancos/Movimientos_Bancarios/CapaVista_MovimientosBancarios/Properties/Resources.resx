@@ -118,26 +118,26 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="movbac_btn2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resouces\movbac_btn2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="btn_salirB" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resouces\btn_salirB.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_registrar_movimiento_bancario" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resouces\btn_registrar_movimiento_bancario.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="movbac_movbac" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resouces\movbac_movbac.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="movbac_navegador" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resouces\movbac_navegador.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="movbac_titulo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resouces\movbac_titulo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="btn_ayudaB" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resouces\btn_ayudaB.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bancos_logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resouces\bancos_logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="movbac_contenedor1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resouces\movbac_contenedor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="movbac_butti3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resouces\movbac_butti3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="movbac_btn1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resouces\movbac_btn1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="movbac_titulo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resouces\movbac_titulo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="movbac_contenedor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resouces\movbac_contenedor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -145,7 +145,19 @@
   <data name="movbac_btn3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resouces\movbac_btn3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="movbac_butti3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resouces\movbac_butti3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="movbac_btn1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resouces\movbac_btn1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="movbac_contenedor1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resouces\movbac_contenedor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="movbac_btn2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resouces\movbac_btn2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="movbac_navegador" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resouces\movbac_navegador.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_limpiarB" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resouces\btn_limpiarB.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

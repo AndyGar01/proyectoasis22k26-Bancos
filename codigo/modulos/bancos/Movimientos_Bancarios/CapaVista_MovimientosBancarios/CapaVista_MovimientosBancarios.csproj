@@ -127,5 +127,17 @@
   <ItemGroup>
     <None Include="Resouces\movbac_butti3.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resouces\btn_registrar_movimiento_bancario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resouces\btn_salirB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resouces\btn_ayudaB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resouces\btn_limpiarB.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,18 +1,16 @@
--- BASE DE DATOS: EMBUTIDOS LOGÍSTICA
 
-CREATE DATABASE IF NOT EXISTS dbEmbutidosLogistica;
-USE dbEmbutidosLogistica;
+use dbsistemaembutidos;
+
 
 -- BLOQUE 1: SUCURSALES
 
-CREATE TABLE tblSucursal (
+CREATE TABLE tblSucursal(
     idSucursal INT AUTO_INCREMENT PRIMARY KEY,
     nombreSucursal VARCHAR(100) NOT NULL,
     descripcionSucursal VARCHAR(255),
     ubicacionSucursal VARCHAR(500) NOT NULL,
     paisSucursal VARCHAR(100) NOT NULL,
     estadoSucursal BOOLEAN DEFAULT TRUE,
-    isActive BOOLEAN DEFAULT TRUE,
     createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );
@@ -20,28 +18,26 @@ CREATE TABLE tblSucursal (
 -- BLOQUE 2: BODEGAS
 -- La ubicación se administra desde la sucursal.
 
-CREATE TABLE tblBodega (
+CREATE TABLE tblBodega(
     idBodega INT AUTO_INCREMENT PRIMARY KEY,
     nombreBodega VARCHAR(100) NOT NULL,
     fkSucursalIdSucursal INT NOT NULL,
     paisBodega VARCHAR(100) NOT NULL,
     estadoBodega BOOLEAN DEFAULT TRUE,
-    isActive BOOLEAN DEFAULT TRUE,
     createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
 	
-    UNIQUE KEY UQ_Bodega_Sucursal (idBodega,fkSucursalIdSucursal
-),
+    UNIQUE KEY UQ_Bodega_Sucursal (idBodega,fkSucursalIdSucursal),
     CONSTRAINT FK_Bodega_Sucursal FOREIGN KEY (fkSucursalIdSucursal) REFERENCES tblSucursal(idSucursal)
 );
 
 -- BLOQUE 3: CATÁLOGOS DE PRODUCTOS
 
-CREATE TABLE tblCategoria (
+CREATE TABLE tblCategoria(
     idCategoria INT AUTO_INCREMENT PRIMARY KEY,
     nombreCategoria VARCHAR(100) NOT NULL UNIQUE,
     porcentajeComisionCategoria DECIMAL(3,2) NOT NULL,
-    isActive BOOLEAN DEFAULT TRUE,
+    estadoCategoria BOOLEAN DEFAULT TRUE,
     createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );
@@ -50,23 +46,23 @@ CREATE TABLE tblLinea (
     idLinea INT AUTO_INCREMENT PRIMARY KEY,
     nombreLinea VARCHAR(100) NOT NULL UNIQUE,
     porcentajeComisionLinea DECIMAL(3,2) NOT NULL,
-    isActive BOOLEAN DEFAULT TRUE,
+    estadoLinea BOOLEAN DEFAULT TRUE,
     createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );
 
-CREATE TABLE tblMarca (
+CREATE TABLE tblMarca(
     idMarca INT AUTO_INCREMENT PRIMARY KEY,
     nombreMarca VARCHAR(100) NOT NULL UNIQUE,
     porcentajeComisionMarca DECIMAL(3,2) NOT NULL,
-    isActive BOOLEAN DEFAULT TRUE,
+    estadoMarca BOOLEAN DEFAULT TRUE,
     createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );
 
 -- BLOQUE 4: PRODUCTOS
 
-CREATE TABLE tblProducto (
+CREATE TABLE tblProducto(
     idProducto INT AUTO_INCREMENT PRIMARY KEY,
     skuProducto VARCHAR(30) NOT NULL UNIQUE,
     clasificacionProducto VARCHAR(5) NOT NULL DEFAULT '?????',
@@ -85,7 +81,7 @@ CREATE TABLE tblProducto (
     stockMaximoProducto INT NOT NULL ,
     pesoProducto DECIMAL(4,2) NOT NULL,
 
-    isActive BOOLEAN DEFAULT TRUE,
+    estadoProducto BOOLEAN DEFAULT TRUE,
     createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
 
@@ -99,7 +95,7 @@ CREATE TABLE tblProducto (
 -- No se utiliza idStock.
 -- La clave primaria es compuesta.
 
-CREATE TABLE tblStock (
+CREATE TABLE tblStock(
     fkSucursalIdSucursal INT NOT NULL,
     fkBodegaIdBodega INT NOT NULL,
     fkProductoIdProducto INT NOT NULL,
@@ -110,7 +106,7 @@ CREATE TABLE tblStock (
     estadoVentaStock BOOLEAN DEFAULT TRUE,
     estadoCompraStock BOOLEAN DEFAULT TRUE,
 
-    isActive BOOLEAN DEFAULT TRUE,
+    estadoStock BOOLEAN DEFAULT TRUE,
     createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
 
@@ -127,13 +123,13 @@ CREATE TABLE tblStock (
 -- BLOQUE6: TIPOS DE MOVIMIENTO
 -- Cada tipo de movimiento tiene un efecto asociado.
 
-CREATE TABLE tblTipoMovimiento (
+CREATE TABLE tblTipoMovimiento(
     idTipoMovimiento INT AUTO_INCREMENT PRIMARY KEY,
     nombreTipoMovimiento VARCHAR(50) NOT NULL UNIQUE,
     descripcionTipoMovimiento VARCHAR(255),
 	signoTipoMovimiento CHAR(1) NOT NULL,
     
-    isActive BOOLEAN DEFAULT TRUE,
+    estadoTipoMovimiento BOOLEAN DEFAULT TRUE,
     createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 
@@ -141,20 +137,20 @@ CREATE TABLE tblTipoMovimiento (
 
 -- BLOQUE 7 TRANSPORTE
 
-CREATE TABLE tblTransporte (
+CREATE TABLE tblTransporte(
     idTransporte INT AUTO_INCREMENT PRIMARY KEY,
     placaVehiculoTransporte VARCHAR(30) NOT NULL,
     conductorTransporte VARCHAR(100) NOT NULL,
     empresaTransporteTransporte VARCHAR(100) NOT NULL,
 
-    isActive BOOLEAN DEFAULT TRUE,
+    estadoTransporte BOOLEAN DEFAULT TRUE,
     createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );
 
 -- BLOQUE 8: MOVIMIENTOS DE INVENTARIO
 
-CREATE TABLE tblMovimientoInventario (
+CREATE TABLE tblMovimientoInventario(
     idMovimientoInventario INT AUTO_INCREMENT PRIMARY KEY,
     fkTipoMovimientoIdTipoMovimiento INT NOT NULL,
 
@@ -165,7 +161,7 @@ CREATE TABLE tblMovimientoInventario (
 
     observacionesMovimientoInventario VARCHAR(500) NOT NULL,
     
-    isActive BOOLEAN DEFAULT TRUE,
+    estadoMovimientoInventario BOOLEAN DEFAULT TRUE,
     createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
 
@@ -185,14 +181,14 @@ CREATE TABLE tblMovimientoInventario (
 
 -- BLOQUE 9: DETALLE DE MOVIMIENTOS
 
-CREATE TABLE tblDetalleMovimiento (
+CREATE TABLE tblDetalleMovimiento(
     idDetalleMovimiento INT AUTO_INCREMENT PRIMARY KEY,
     fkMovimientoInventarioIdMovimientoInventario INT NOT NULL,
 	loteMovimientoInventario VARCHAR(30),
     fkProductoIdProducto INT NOT NULL,
     cantidadDetalleMovimiento INT NOT NULL,
     precioCompraDetalleMovimiento DECIMAL(6,2) NOT NULL,
-    isActive BOOLEAN DEFAULT TRUE,
+    estadoDetalleMovimiento BOOLEAN DEFAULT TRUE,
     createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP
         ON UPDATE CURRENT_TIMESTAMP,

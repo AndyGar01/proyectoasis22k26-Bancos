@@ -22,15 +22,21 @@ namespace CapaVista_Logistica
 
         private void LogisticaBtnUbicaciones_Click(object sender, EventArgs e)
         {
-            CapaVista_Inventario_Logistica.FrmEstructurayUbicaciones frmEstructurayUbicaciones = new CapaVista_Inventario_Logistica.FrmEstructurayUbicaciones();
-            frmEstructurayUbicaciones.ShowDialog();
+            CapaVista_Inventario_Logistica.Formas.FrmMantenimientoSucursales frmMantenimientoSucursales = new CapaVista_Inventario_Logistica.Formas.FrmMantenimientoSucursales();
+            frmMantenimientoSucursales.ShowDialog();
         }
 
         private void LogisticaBtnCatalogo_Click(object sender, EventArgs e)
         {
-            CapaVista_Inventario_Logistica.Formas.FrmMantenimientoSucursales frmMantenimientoSucursales = new CapaVista_Inventario_Logistica.Formas.FrmMantenimientoSucursales();
-            frmMantenimientoSucursales.ShowDialog();
+            
 
         }
-    }
+
+        private void LogisticaMetActualizarInfoUsuario(string Nombre, string Rol)
+            {
+            LogisticaLblUsuario.Text = Nombre;
+            LogisticaLblRolUsuario.Text = Rol;  
+            LogisticaLbUsuarioRol.Left = LogisticaLblUsuario.Right + 30;
+        }
+}
 }

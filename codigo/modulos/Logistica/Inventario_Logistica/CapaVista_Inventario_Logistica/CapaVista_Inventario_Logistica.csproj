@@ -55,12 +55,6 @@
     <Compile Include="Formas\FrmMantenimientoSucursales.Designer.cs">
       <DependentUpon>FrmMantenimientoSucursales.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmEstructurayUbicaciones.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmEstructurayUbicaciones.Designer.cs">
-      <DependentUpon>FrmEstructurayUbicaciones.cs</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -71,9 +65,6 @@
   <ItemGroup>
     <EmbeddedResource Include="Formas\FrmMantenimientoSucursales.resx">
       <DependentUpon>FrmMantenimientoSucursales.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmEstructurayUbicaciones.resx">
-      <DependentUpon>FrmEstructurayUbicaciones.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -103,6 +94,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\btn_estructuraN_sintexto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panelestandarizado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FondoLogistica.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FondoLogistica1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FondoLogica2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

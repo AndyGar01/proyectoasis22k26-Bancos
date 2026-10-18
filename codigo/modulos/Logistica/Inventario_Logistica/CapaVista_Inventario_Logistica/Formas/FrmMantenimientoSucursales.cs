@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CapaVista_Navegador;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,7 +8,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using CapaVista_Navegador;
 
 namespace CapaVista_Inventario_Logistica.Formas
 {
@@ -15,10 +15,13 @@ namespace CapaVista_Inventario_Logistica.Formas
     {
         public FrmMantenimientoSucursales()
         {
-            InitializeComponent();
-            LogisticaNavSucursales.NavegadorMetConfigurar("tblsucursal", 4, 5);
-        
+            InitializeComponent(); // <-- Esta es la única llamada necesaria a InitializeComponent
+        }
 
-    }
+        private void LogisticaNavSucursales_Load(object sender, EventArgs e)
+        {
+            // Se eliminó la llamada duplicada a InitializeComponent()
+            LogisticaNavSucursales.NavegadorMetConfigurar("tblSucursal", 4, 5);
+        }
     }
 }

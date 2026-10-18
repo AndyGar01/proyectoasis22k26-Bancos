@@ -93,6 +93,26 @@ namespace CapaVista_GeneracionPagos.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap btn_emitir {
+            get {
+                object obj = ResourceManager.GetObject("btn_emitir", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap btn_enviar {
+            get {
+                object obj = ResourceManager.GetObject("btn_enviar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap btn_limpiarB {
             get {
                 object obj = ResourceManager.GetObject("btn_limpiarB", resourceCulture);
@@ -103,9 +123,29 @@ namespace CapaVista_GeneracionPagos.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap btn_preparar_orden {
+            get {
+                object obj = ResourceManager.GetObject("btn_preparar_orden", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap btn_rechazarB {
             get {
                 object obj = ResourceManager.GetObject("btn_rechazarB", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap btn_registrar_movimiento_bancario {
+            get {
+                object obj = ResourceManager.GetObject("btn_registrar_movimiento_bancario", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

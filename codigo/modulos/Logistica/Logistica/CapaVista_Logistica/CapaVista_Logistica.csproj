@@ -133,5 +133,122 @@
   <ItemGroup>
     <None Include="Resources\btn_menuN.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnEstructurayUbicaciones.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnCatalogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnInventario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnTransporte.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnTraslado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnEstructurayUbicaciones1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnAuditoria.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnCierre.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnEnlace.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnCerrarSesion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FondoNavegador.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FondoPanel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\71.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hamburguesa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nota.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ResumenAuditoria.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\resumenCatalogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\resumenCierreInventario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\resumenEnlace.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\resumenTransporte.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\resumenTraslado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\resumenUbi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\resumenInventario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panelestandarizado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnhamburguesa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnhamburguesa2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_ayuda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnhamburguesa3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\resumenUbi1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\resumenCatalogo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\resumenInventario1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\resumenTransporte1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\resumenTraslado1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ResumenAuditoria1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\resumenCierreInventario1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\resumenEnlace1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgnota.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_hamburguesa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_menuN1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

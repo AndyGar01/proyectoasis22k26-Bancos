@@ -6,17 +6,23 @@ using System.Drawing;
 using System.Windows.Forms;
 using CapaControlador_Contabilidad;
 using CapaVista_Contabilidad.Componentes;
-using Diseno = CapaVista_Contabilidad.Componentes.ClsDisenoPrototiposContabilidad;
+using Diseno = CapaVista_Contabilidad.Componentes.ClsDisenoContabilidad;
 
 namespace CapaVista_Contabilidad
 {
+    // Ventana del estado de resultados.
     public partial class FrmEstadosFinancieros : Form
     {
-        private readonly ClsControladorPrototiposContabilidad _Controlador = new ClsControladorPrototiposContabilidad();
+        // Controlador de estados financieros.
+        private readonly ClsControladorEstadosFinancierosContabilidad _Controlador = new ClsControladorEstadosFinancierosContabilidad();
+        // Resultado del informe.
         private DataTable _Resultado;
+        // Paginación del informe.
         private readonly ClsPaginacionContabilidad _Paginacion;
+        // Errores por campo.
         private readonly ClsValidacionContabilidad _Validacion = new ClsValidacionContabilidad();
 
+        // Prepara la ventana y sus eventos.
         public FrmEstadosFinancieros()
         {
             InitializeComponent();
@@ -33,6 +39,7 @@ namespace CapaVista_Contabilidad
             ContabilidadMetConsultar();
         }
 
+        // Retira el informe cuando cambian los filtros.
         private void ContabilidadMetInvalidar()
         {
             _Paginacion.ContabilidadMetLimpiar();
@@ -42,6 +49,7 @@ namespace CapaVista_Contabilidad
             ContabilidadLblResumen.Text = string.Empty;
         }
 
+        // Genera el informe del rango.
         private void ContabilidadMetConsultar()
         {
             string ErrorFechas = _Controlador.ContabilidadFuncErrorFechas(ContabilidadDtpDesde.Value, ContabilidadDtpHasta.Value);

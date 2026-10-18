@@ -3,35 +3,37 @@
  * Área : Contabilidad
  * Autor : Gabriel André Guillén Pocón
  * Carné : 0901-23-1998
- * Fecha : 14/10/2026
+ * Fecha : 17/10/2026
  * ==================================================================
  * Propósito :
- *  Clase base para conectarse a la base de datos por ODBC usando el
- *  DSN EmbutidosS.A, igual que la conexión de Seguridad pero propia
- *  de Contabilidad: no depende de CapaModelo_Seguridad. De aquí
- *  heredan los repositorios del módulo.
+ *  Clase base abstracta que sabe conectarse a la base de datos por
+ *  ODBC usando el DSN EmbutidosS.A. De aquí heredan los repositorios.
  * ===================================================================
 */
 
 using System;
 using System.Data.Odbc;
 
-namespace CapaModelo_Contabilidad
+namespace CapaModelo_Contabilidad.Repositorios
 {
-    public abstract class ClsConexionContabilidad
+    public abstract class ClsRepositorioContabilidad
     {
+        // Nombre del DSN configurado en ODBC.
         protected readonly string _CadenaConexion;
 
-        protected ClsConexionContabilidad()
+        // Asigna el DSN estándar del proyecto.
+        protected ClsRepositorioContabilidad()
         {
             _CadenaConexion = "Dsn=EmbutidosS.A";
         }
 
+        // Crea la conexión sin abrirla.
         protected OdbcConnection ContabilidadFuncObtenerConexion()
         {
             return new OdbcConnection(_CadenaConexion);
         }
 
+        // Cierra la conexión recibida.
         public void ContabilidadMetDesconexion(OdbcConnection ConexionOdbc)
         {
             try

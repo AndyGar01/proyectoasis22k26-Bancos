@@ -2,7 +2,7 @@
 :: BUILD CONTABILIDAD - VISUAL STUDIO 2022
 :: ============================================================================
 :: Compila Modelo -> Controlador -> Vista -> Ejecucion, con referencias DLL.
-:: Contabilidad tiene su propio login y ya no depende de la Vista de Seguridad.
+:: Contabilidad abre directamente en el MDI (sin login ni splash).
 ::
 :: REQUISITO: CapaVista_Contabilidad referencia CapaVista_Navegador.dll por
 :: HintPath (igual que CapaVista_Seguridad), por lo que primero hay que haber

@@ -166,27 +166,6 @@ namespace CapaVista_Contabilidad.Properties {
             }
         }
 
-        internal static System.Drawing.Bitmap fondoLogin {
-            get {
-                object obj = ResourceManager.GetObject("fondoLogin", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-
-        internal static System.Drawing.Bitmap fondoSplash {
-            get {
-                object obj = ResourceManager.GetObject("fondoSplash", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-
-        internal static System.Drawing.Bitmap DonButiLogin {
-            get {
-                object obj = ResourceManager.GetObject("DonButiLogin", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-
         internal static System.Drawing.Bitmap ico_aplicar {
             get {
                 object obj = ResourceManager.GetObject("ico_aplicar", resourceCulture);

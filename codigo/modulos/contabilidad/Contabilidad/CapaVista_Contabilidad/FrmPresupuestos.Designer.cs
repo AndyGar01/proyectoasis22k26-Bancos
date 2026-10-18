@@ -109,7 +109,7 @@ namespace CapaVista_Contabilidad
             this.ContabilidadLblGastado.Font = new System.Drawing.Font("Tahoma", 10F);
             this.ContabilidadNudGastado.Name = "ContabilidadNudGastado";
             this.ContabilidadPnlEncabezado.Controls.Add(this.ContabilidadNudGastado);
-            this.ContabilidadNudGastado.Maximum = 9999999999999.99m;
+            this.ContabilidadNudGastado.Maximum = 99999999.99m;
             this.ContabilidadNudGastado.DecimalPlaces = 2;
             this.ContabilidadNudGastado.ThousandsSeparator = true;
             this.ContabilidadNudGastado.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -162,7 +162,7 @@ namespace CapaVista_Contabilidad
             this.ContabilidadLblCantidad.Font = new System.Drawing.Font("Tahoma", 10F);
             this.ContabilidadNudCantidad.Name = "ContabilidadNudCantidad";
             this.ContabilidadPnlDetalle.Controls.Add(this.ContabilidadNudCantidad);
-            this.ContabilidadNudCantidad.Maximum = 9999999999999.99m;
+            this.ContabilidadNudCantidad.Maximum = 99999999.99m;
             this.ContabilidadNudCantidad.DecimalPlaces = 2;
             this.ContabilidadNudCantidad.ThousandsSeparator = true;
             this.ContabilidadNudCantidad.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;

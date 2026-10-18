@@ -9,8 +9,10 @@ using System.Windows.Forms;
 
 namespace CapaVista_Contabilidad.Componentes
 {
-    internal static class ClsDisenoPrototiposContabilidad
+    // Ayudas para armar las ventanas.
+    internal static class ClsDisenoContabilidad
     {
+        // Crea una etiqueta.
         internal static Label ContabilidadFuncEtiqueta(Control Padre, string Nombre, string Texto, int X, int Y, int Ancho, int Alto = 24)
         {
             Label Etiqueta = new Label { Name = Nombre, Text = Texto, Location = new Point(X, Y), Size = new Size(Ancho, Alto),
@@ -19,6 +21,7 @@ namespace CapaVista_Contabilidad.Componentes
             return Etiqueta;
         }
 
+        // Crea el título de la ventana.
         internal static void ContabilidadMetTitulo(Form Ventana, string Titulo)
         {
             Ventana.AutoScaleMode = AutoScaleMode.None;
@@ -27,6 +30,7 @@ namespace CapaVista_Contabilidad.Componentes
             Etiqueta.Font = new Font("Lucida Fax", 20F, FontStyle.Bold | FontStyle.Italic);
         }
 
+        // Crea una tarjeta.
         internal static ClsPanelRedondeadoContabilidad ContabilidadFuncTarjeta(Control Padre, string Nombre, int Y, int Alto)
         {
             ClsPanelRedondeadoContabilidad Tarjeta = new ClsPanelRedondeadoContabilidad { Name = Nombre,
@@ -36,6 +40,7 @@ namespace CapaVista_Contabilidad.Componentes
             return Tarjeta;
         }
 
+        // Agrega un campo con su etiqueta.
         internal static T ContabilidadFuncCampo<T>(Control Padre, T Campo, string Nombre, string Titulo, int X, int Y, int Ancho) where T : Control
         {
             ContabilidadFuncEtiqueta(Padre, "ContabilidadLbl" + Nombre.Substring(15), Titulo, X, Y, Ancho);
@@ -47,21 +52,25 @@ namespace CapaVista_Contabilidad.Componentes
             return Campo;
         }
 
+        // Crea un campo de importe.
         internal static NumericUpDown ContabilidadFuncImporte()
         {
-            return new NumericUpDown { DecimalPlaces = 2, Maximum = 9999999999999.99m, ThousandsSeparator = true, TextAlign = HorizontalAlignment.Right };
+            return new NumericUpDown { DecimalPlaces = 2, Maximum = 99999999.99m, ThousandsSeparator = true, TextAlign = HorizontalAlignment.Right };
         }
 
+        // Crea un selector de fecha.
         internal static DateTimePicker ContabilidadFuncFecha()
         {
             return new DateTimePicker { Format = DateTimePickerFormat.Custom, CustomFormat = "dd/MM/yyyy" };
         }
 
+        // Crea una lista desplegable.
         internal static ComboBox ContabilidadFuncLista()
         {
             return new ComboBox { DropDownStyle = ComboBoxStyle.DropDownList };
         }
 
+        // Crea un botón del módulo.
         internal static ClsBotonContabilidad ContabilidadFuncBoton(Control Padre, string Nombre, string Texto, int X, int Y, int Ancho,
             EstiloBotonContabilidad Estilo = EstiloBotonContabilidad.Principal)
         {
@@ -71,6 +80,7 @@ namespace CapaVista_Contabilidad.Componentes
             return Boton;
         }
 
+        // Crea una tabla con sus columnas.
         internal static ClsTablaContabilidad ContabilidadFuncTabla(Control Padre, string Nombre, int Y, int Alto, string[] Campos, string[] Titulos)
         {
             ClsTablaContabilidad Tabla = new ClsTablaContabilidad { Name = Nombre, Location = new Point(20, Y), Size = new Size(1092, Alto),
@@ -92,11 +102,13 @@ namespace CapaVista_Contabilidad.Componentes
             return Tabla;
         }
 
+        // Da formato de quetzales.
         internal static string ContabilidadFuncMoneda(decimal Importe)
         {
             return "Q " + Importe.ToString("N2", CultureInfo.GetCultureInfo("es-GT"));
         }
 
+        // Muestra éxito o error.
         internal static void ContabilidadMetAviso(Form Ventana, string Error, string Accion)
         {
             if (string.IsNullOrEmpty(Error)) ClsDialogosContabilidad.ContabilidadMetExito(Ventana, Accion);

@@ -8,11 +8,15 @@ using System.Windows.Forms;
 
 namespace CapaVista_Contabilidad.Componentes
 {
+    // Muestra los errores de validación por campo.
     internal sealed class ClsValidacionContabilidad : IDisposable
     {
+        // Etiqueta de error de cada campo.
         private readonly Dictionary<Control, Label> _Errores = new Dictionary<Control, Label>();
+        // Bordes rojos de cada campo.
         private readonly Dictionary<Control, Control[]> _Bordes = new Dictionary<Control, Control[]>();
 
+        // Marca el campo con asterisco rojo.
         internal void ContabilidadMetObligatorio(Control Campo)
         {
             Label Etiqueta = Campo.Parent.Controls.OfType<Label>()
@@ -31,6 +35,7 @@ namespace CapaVista_Contabilidad.Componentes
             Asterisco.BringToFront();
         }
 
+        // Muestra u oculta el error del campo.
         internal bool ContabilidadFuncValidar(Control Campo, string Mensaje)
         {
             Label Error;
@@ -70,6 +75,7 @@ namespace CapaVista_Contabilidad.Componentes
             return string.IsNullOrEmpty(Mensaje);
         }
 
+        // Quita el error al editar el campo.
         private void ContabilidadMetCorregir(object Remitente, EventArgs Argumentos)
         {
             Control Campo = (Control)Remitente;
@@ -78,6 +84,7 @@ namespace CapaVista_Contabilidad.Componentes
             Campo.Parent.Invalidate();
         }
 
+        // Quita todos los errores.
         internal void ContabilidadMetLimpiar()
         {
             foreach (Label Error in _Errores.Values) Error.Visible = false;
@@ -85,6 +92,7 @@ namespace CapaVista_Contabilidad.Componentes
                 foreach (Control Borde in Bordes) Borde.Visible = false;
         }
 
+        // Libera los controles creados.
         public void Dispose()
         {
             foreach (KeyValuePair<Control, Label> Entrada in _Errores)

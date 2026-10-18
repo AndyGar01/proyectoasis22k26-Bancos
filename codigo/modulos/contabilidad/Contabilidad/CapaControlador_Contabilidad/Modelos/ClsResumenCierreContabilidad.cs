@@ -3,21 +3,24 @@
  * Área : Contabilidad
  * Autor : Gabriel André Guillén Pocón
  * Carné : 0901-23-1998
- * Fecha : 14/10/2026
+ * Fecha : 17/10/2026
  * ==================================================================
  * Propósito :
- *  Una línea del detalle de una póliza (poliza_detalle): cuenta, debe
- *  y haber. Los importes son decimal, nunca double.
+ *  Resumen del período que la pantalla de cierre muestra al usuario.
  * ===================================================================
 */
 
 namespace CapaControlador_Contabilidad
 {
-    public class ClsLineaPolizaContabilidad
+    public sealed class ClsResumenCierreContabilidad
     {
-        public int IdCuenta { get; set; }
-        public string Cuenta { get; set; }
+        // Pólizas aplicadas.
+        public int Aplicadas { get; set; }
+        // Pólizas en borrador.
+        public int Borradores { get; set; }
+        // Total del debe aplicado.
         public decimal Debe { get; set; }
+        // Total del haber aplicado.
         public decimal Haber { get; set; }
     }
 }

@@ -22,6 +22,7 @@ using System.Windows.Forms;
 
 namespace CapaVista_Contabilidad.Componentes
 {
+    // Estilos del botón.
     public enum EstiloBotonContabilidad
     {
         Principal,   // #23323D, texto claro
@@ -30,14 +31,21 @@ namespace CapaVista_Contabilidad.Componentes
         Dorado       // #C58F3E, texto claro
     }
 
+    // Botón con esquinas redondeadas.
     public class ClsBotonContabilidad : Button
     {
+        // Estilo actual.
         private EstiloBotonContabilidad _Estilo = EstiloBotonContabilidad.Principal;
+        // Ícono opcional.
         private Image _Icono;
+        // Radio de las esquinas.
         private int _Radio = 10;
+        // El mouse está encima.
         private bool _Sobre;
+        // El botón está presionado.
         private bool _Presionado;
 
+        // Configura el dibujo propio.
         public ClsBotonContabilidad()
         {
             SetStyle(ControlStyles.UserPaint | ControlStyles.AllPaintingInWmPaint |
@@ -49,6 +57,7 @@ namespace CapaVista_Contabilidad.Componentes
             Size = new Size(150, 40);
         }
 
+        // Estilo del botón.
         [Category("Contabilidad"), DefaultValue(EstiloBotonContabilidad.Principal)]
         public EstiloBotonContabilidad Estilo
         {
@@ -56,6 +65,7 @@ namespace CapaVista_Contabilidad.Componentes
             set { _Estilo = value; Invalidate(); }
         }
 
+        // Ícono a la izquierda del texto.
         [Category("Contabilidad"), DefaultValue(null)]
         public Image Icono
         {
@@ -63,6 +73,7 @@ namespace CapaVista_Contabilidad.Componentes
             set { _Icono = value; Invalidate(); }
         }
 
+        // Radio de las esquinas.
         [Category("Contabilidad"), DefaultValue(10)]
         public int Radio
         {
@@ -70,12 +81,14 @@ namespace CapaVista_Contabilidad.Componentes
             set { _Radio = Math.Max(0, value); Invalidate(); }
         }
 
+        // Eventos que cambian el aspecto del botón.
         protected override void OnMouseEnter(EventArgs Evento) { _Sobre = true; Invalidate(); base.OnMouseEnter(Evento); }
         protected override void OnMouseLeave(EventArgs Evento) { _Sobre = false; _Presionado = false; Invalidate(); base.OnMouseLeave(Evento); }
         protected override void OnMouseDown(MouseEventArgs Evento) { _Presionado = true; Invalidate(); base.OnMouseDown(Evento); }
         protected override void OnMouseUp(MouseEventArgs Evento) { _Presionado = false; Invalidate(); base.OnMouseUp(Evento); }
         protected override void OnEnabledChanged(EventArgs Evento) { Invalidate(); base.OnEnabledChanged(Evento); }
 
+        // Color de fondo según estilo y estado.
         private Color ContabilidadFuncColorRelleno()
         {
             if (!Enabled) return Color.FromArgb(230, 235, 239);
@@ -94,12 +107,14 @@ namespace CapaVista_Contabilidad.Componentes
             return _Presionado ? Presion : (_Sobre ? Sobre : Base);
         }
 
+        // Color del texto según el estado.
         private Color ContabilidadFuncColorTexto()
         {
             if (!Enabled) return Color.FromArgb(154, 169, 180);
             return _Estilo == EstiloBotonContabilidad.Secundario ? Color.FromArgb(35, 50, 61) : Color.White;
         }
 
+        // Dibuja el botón.
         protected override void OnPaint(PaintEventArgs Evento)
         {
             Graphics Lienzo = Evento.Graphics;
@@ -157,6 +172,7 @@ namespace CapaVista_Contabilidad.Componentes
             return SystemColors.Control;
         }
 
+        // Ruta con esquinas redondeadas.
         private static GraphicsPath ContabilidadFuncRuta(Rectangle Rectangulo, int Radio)
         {
             GraphicsPath Ruta = new GraphicsPath();

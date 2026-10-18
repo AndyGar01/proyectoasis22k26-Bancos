@@ -34,9 +34,6 @@
     <Reference Include="CapaControlador_GeneracionPagos">
       <HintPath>..\CapaControlador_GeneracionPagos\bin\Debug\CapaControlador_GeneracionPagos.dll</HintPath>
     </Reference>
-    <Reference Include="CapaModelo_GeneracionPagos">
-      <HintPath>..\CapaModelo_GeneracionPagos\bin\Debug\CapaModelo_GeneracionPagos.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />

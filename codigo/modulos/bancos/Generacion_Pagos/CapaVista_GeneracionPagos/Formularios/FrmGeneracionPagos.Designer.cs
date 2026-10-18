@@ -2048,7 +2048,7 @@
             this.MaximizeBox = false;
             this.Name = "FrmGeneracionPagos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "8007 – Generación de Pagos";
+            this.Text = "8007–GeneraciónDePagos";
             ((System.ComponentModel.ISupportInitialize)(this.BancosDgvObligaciones)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BancosDgvOrdenes)).EndInit();
             this.BancosTbcProceso.ResumeLayout(false);

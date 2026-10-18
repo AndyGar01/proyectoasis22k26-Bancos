@@ -35,11 +35,9 @@
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.BancLblTipoPeriodo = new System.Windows.Forms.Label();
-            this.BancBtnConsultarMovimientos = new System.Windows.Forms.Button();
             this.BancLblFechaFinal = new System.Windows.Forms.Label();
             this.BancLblFechaInicial = new System.Windows.Forms.Label();
             this.BancLblTituloPanel = new System.Windows.Forms.Label();
-            this.BancPbxFondoEnlace = new System.Windows.Forms.PictureBox();
             this.BancLblMovimientos = new System.Windows.Forms.Label();
             this.BancDgvMovimientos = new System.Windows.Forms.DataGridView();
             this.Estatus = new System.Windows.Forms.DataGridViewCheckBoxColumn();
@@ -58,34 +56,36 @@
             this.BancLblTotalHaber = new System.Windows.Forms.Label();
             this.BancLblDiferencia = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.BancosBtnAdvertencia = new System.Windows.Forms.Button();
             this.BancPbxMascota = new System.Windows.Forms.PictureBox();
             this.BancPbxBalanza = new System.Windows.Forms.PictureBox();
             this.BancPbxBolsa = new System.Windows.Forms.PictureBox();
-            this.BancPbxMoneda = new System.Windows.Forms.PictureBox();
+            this.BancosPbxMoneda = new System.Windows.Forms.PictureBox();
             this.BancPbxDiferencia = new System.Windows.Forms.PictureBox();
-            this.BancPbxHaber = new System.Windows.Forms.PictureBox();
-            this.BancPbxDebe = new System.Windows.Forms.PictureBox();
+            this.BancosPbxHaber = new System.Windows.Forms.PictureBox();
+            this.BancosPbxDebe = new System.Windows.Forms.PictureBox();
             this.BancBtnCerrar = new System.Windows.Forms.Button();
-            this.BancBtnEnviar = new System.Windows.Forms.Button();
-            this.BancBtnLimpiar = new System.Windows.Forms.Button();
+            this.BancosBtnEnviar = new System.Windows.Forms.Button();
+            this.BancosBtnLimpiar = new System.Windows.Forms.Button();
             this.BancPbxFondoPartida = new System.Windows.Forms.PictureBox();
             this.BancBtnGenerarPartida = new System.Windows.Forms.Button();
             this.BancPbxFondoMovimientos = new System.Windows.Forms.PictureBox();
+            this.BancBtnConsultarMovimientos = new System.Windows.Forms.Button();
+            this.BancPbxFondoEnlace = new System.Windows.Forms.PictureBox();
             this.BancPbxFondo = new System.Windows.Forms.PictureBox();
             this.BancPnlFiltros.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.BancPbxFondoEnlace)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BancDgvMovimientos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BancDgvPartidaContable)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BancPbxMascota)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BancPbxBalanza)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BancPbxBolsa)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BancPbxMoneda)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BancosPbxMoneda)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BancPbxDiferencia)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BancPbxHaber)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BancPbxDebe)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BancosPbxHaber)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BancosPbxDebe)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BancPbxFondoPartida)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BancPbxFondoMovimientos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BancPbxFondoEnlace)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BancPbxFondo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -156,20 +156,6 @@
             this.BancLblTipoPeriodo.TabIndex = 9;
             this.BancLblTipoPeriodo.Text = "Tipo de periodo";
             // 
-            // BancBtnConsultarMovimientos
-            // 
-            this.BancBtnConsultarMovimientos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(138)))), ((int)(((byte)(85)))));
-            this.BancBtnConsultarMovimientos.BackgroundImage = global::CapaVista_EnlaceB.Properties.Resources.btn_consultarV;
-            this.BancBtnConsultarMovimientos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BancBtnConsultarMovimientos.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BancBtnConsultarMovimientos.ForeColor = System.Drawing.Color.White;
-            this.BancBtnConsultarMovimientos.Location = new System.Drawing.Point(749, 13);
-            this.BancBtnConsultarMovimientos.Margin = new System.Windows.Forms.Padding(2);
-            this.BancBtnConsultarMovimientos.Name = "BancBtnConsultarMovimientos";
-            this.BancBtnConsultarMovimientos.Size = new System.Drawing.Size(67, 62);
-            this.BancBtnConsultarMovimientos.TabIndex = 8;
-            this.BancBtnConsultarMovimientos.UseVisualStyleBackColor = false;
-            // 
             // BancLblFechaFinal
             // 
             this.BancLblFechaFinal.AutoSize = true;
@@ -208,16 +194,6 @@
             this.BancLblTituloPanel.Size = new System.Drawing.Size(472, 31);
             this.BancLblTituloPanel.TabIndex = 3;
             this.BancLblTituloPanel.Text = "Traslado de partida a Contabilidad";
-            // 
-            // BancPbxFondoEnlace
-            // 
-            this.BancPbxFondoEnlace.Image = global::CapaVista_EnlaceB.Properties.Resources.FondoEnlaceotrosModulo;
-            this.BancPbxFondoEnlace.Location = new System.Drawing.Point(0, 0);
-            this.BancPbxFondoEnlace.Margin = new System.Windows.Forms.Padding(2);
-            this.BancPbxFondoEnlace.Name = "BancPbxFondoEnlace";
-            this.BancPbxFondoEnlace.Size = new System.Drawing.Size(830, 87);
-            this.BancPbxFondoEnlace.TabIndex = 0;
-            this.BancPbxFondoEnlace.TabStop = false;
             // 
             // BancLblMovimientos
             // 
@@ -379,15 +355,15 @@
             this.label1.TabIndex = 28;
             this.label1.Text = "El traslado solicitará confirmación.";
             // 
-            // button1
+            // BancosBtnAdvertencia
             // 
-            this.button1.BackgroundImage = global::CapaVista_EnlaceB.Properties.Resources.btn_advertenciaV;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Location = new System.Drawing.Point(585, 499);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(23, 26);
-            this.button1.TabIndex = 29;
-            this.button1.UseVisualStyleBackColor = true;
+            this.BancosBtnAdvertencia.BackgroundImage = global::CapaVista_EnlaceB.Properties.Resources.btn_advertenciaV;
+            this.BancosBtnAdvertencia.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BancosBtnAdvertencia.Location = new System.Drawing.Point(585, 499);
+            this.BancosBtnAdvertencia.Name = "BancosBtnAdvertencia";
+            this.BancosBtnAdvertencia.Size = new System.Drawing.Size(23, 26);
+            this.BancosBtnAdvertencia.TabIndex = 29;
+            this.BancosBtnAdvertencia.UseVisualStyleBackColor = true;
             // 
             // BancPbxMascota
             // 
@@ -424,16 +400,16 @@
             this.BancPbxBolsa.TabIndex = 22;
             this.BancPbxBolsa.TabStop = false;
             // 
-            // BancPbxMoneda
+            // BancosPbxMoneda
             // 
-            this.BancPbxMoneda.Image = global::CapaVista_EnlaceB.Properties.Resources.MonedaOro;
-            this.BancPbxMoneda.Location = new System.Drawing.Point(81, 420);
-            this.BancPbxMoneda.Margin = new System.Windows.Forms.Padding(2);
-            this.BancPbxMoneda.Name = "BancPbxMoneda";
-            this.BancPbxMoneda.Size = new System.Drawing.Size(56, 53);
-            this.BancPbxMoneda.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.BancPbxMoneda.TabIndex = 21;
-            this.BancPbxMoneda.TabStop = false;
+            this.BancosPbxMoneda.Image = global::CapaVista_EnlaceB.Properties.Resources.MonedaOro;
+            this.BancosPbxMoneda.Location = new System.Drawing.Point(81, 420);
+            this.BancosPbxMoneda.Margin = new System.Windows.Forms.Padding(2);
+            this.BancosPbxMoneda.Name = "BancosPbxMoneda";
+            this.BancosPbxMoneda.Size = new System.Drawing.Size(56, 53);
+            this.BancosPbxMoneda.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.BancosPbxMoneda.TabIndex = 21;
+            this.BancosPbxMoneda.TabStop = false;
             // 
             // BancPbxDiferencia
             // 
@@ -445,30 +421,30 @@
             this.BancPbxDiferencia.TabIndex = 20;
             this.BancPbxDiferencia.TabStop = false;
             // 
-            // BancPbxHaber
+            // BancosPbxHaber
             // 
-            this.BancPbxHaber.Image = global::CapaVista_EnlaceB.Properties.Resources.FondoEnlaceotrosModulo;
-            this.BancPbxHaber.Location = new System.Drawing.Point(272, 420);
-            this.BancPbxHaber.Margin = new System.Windows.Forms.Padding(2);
-            this.BancPbxHaber.Name = "BancPbxHaber";
-            this.BancPbxHaber.Size = new System.Drawing.Size(142, 53);
-            this.BancPbxHaber.TabIndex = 19;
-            this.BancPbxHaber.TabStop = false;
+            this.BancosPbxHaber.Image = global::CapaVista_EnlaceB.Properties.Resources.FondoEnlaceotrosModulo;
+            this.BancosPbxHaber.Location = new System.Drawing.Point(272, 420);
+            this.BancosPbxHaber.Margin = new System.Windows.Forms.Padding(2);
+            this.BancosPbxHaber.Name = "BancosPbxHaber";
+            this.BancosPbxHaber.Size = new System.Drawing.Size(142, 53);
+            this.BancosPbxHaber.TabIndex = 19;
+            this.BancosPbxHaber.TabStop = false;
             // 
-            // BancPbxDebe
+            // BancosPbxDebe
             // 
-            this.BancPbxDebe.Image = global::CapaVista_EnlaceB.Properties.Resources.FondoEnlaceotrosModulo;
-            this.BancPbxDebe.Location = new System.Drawing.Point(81, 420);
-            this.BancPbxDebe.Margin = new System.Windows.Forms.Padding(2);
-            this.BancPbxDebe.Name = "BancPbxDebe";
-            this.BancPbxDebe.Size = new System.Drawing.Size(144, 53);
-            this.BancPbxDebe.TabIndex = 18;
-            this.BancPbxDebe.TabStop = false;
+            this.BancosPbxDebe.Image = global::CapaVista_EnlaceB.Properties.Resources.FondoEnlaceotrosModulo;
+            this.BancosPbxDebe.Location = new System.Drawing.Point(81, 420);
+            this.BancosPbxDebe.Margin = new System.Windows.Forms.Padding(2);
+            this.BancosPbxDebe.Name = "BancosPbxDebe";
+            this.BancosPbxDebe.Size = new System.Drawing.Size(144, 53);
+            this.BancosPbxDebe.TabIndex = 18;
+            this.BancosPbxDebe.TabStop = false;
             // 
             // BancBtnCerrar
             // 
             this.BancBtnCerrar.BackColor = System.Drawing.Color.Green;
-            this.BancBtnCerrar.BackgroundImage = global::CapaVista_EnlaceB.Properties.Resources.btn_salirV;
+            this.BancBtnCerrar.BackgroundImage = global::CapaVista_EnlaceB.Properties.Resources.btn_salirB;
             this.BancBtnCerrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BancBtnCerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BancBtnCerrar.ForeColor = System.Drawing.Color.White;
@@ -479,33 +455,33 @@
             this.BancBtnCerrar.TabIndex = 16;
             this.BancBtnCerrar.UseVisualStyleBackColor = false;
             // 
-            // BancBtnEnviar
+            // BancosBtnEnviar
             // 
-            this.BancBtnEnviar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(138)))), ((int)(((byte)(85)))));
-            this.BancBtnEnviar.BackgroundImage = global::CapaVista_EnlaceB.Properties.Resources.btn_enviarV;
-            this.BancBtnEnviar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BancBtnEnviar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BancBtnEnviar.ForeColor = System.Drawing.Color.White;
-            this.BancBtnEnviar.Location = new System.Drawing.Point(547, 337);
-            this.BancBtnEnviar.Margin = new System.Windows.Forms.Padding(2);
-            this.BancBtnEnviar.Name = "BancBtnEnviar";
-            this.BancBtnEnviar.Size = new System.Drawing.Size(55, 54);
-            this.BancBtnEnviar.TabIndex = 15;
-            this.BancBtnEnviar.UseVisualStyleBackColor = false;
+            this.BancosBtnEnviar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(138)))), ((int)(((byte)(85)))));
+            this.BancosBtnEnviar.BackgroundImage = global::CapaVista_EnlaceB.Properties.Resources.btn_enviar;
+            this.BancosBtnEnviar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BancosBtnEnviar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BancosBtnEnviar.ForeColor = System.Drawing.Color.White;
+            this.BancosBtnEnviar.Location = new System.Drawing.Point(547, 337);
+            this.BancosBtnEnviar.Margin = new System.Windows.Forms.Padding(2);
+            this.BancosBtnEnviar.Name = "BancosBtnEnviar";
+            this.BancosBtnEnviar.Size = new System.Drawing.Size(55, 54);
+            this.BancosBtnEnviar.TabIndex = 15;
+            this.BancosBtnEnviar.UseVisualStyleBackColor = false;
             // 
-            // BancBtnLimpiar
+            // BancosBtnLimpiar
             // 
-            this.BancBtnLimpiar.BackColor = System.Drawing.Color.Green;
-            this.BancBtnLimpiar.BackgroundImage = global::CapaVista_EnlaceB.Properties.Resources.btn_limpiarV;
-            this.BancBtnLimpiar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BancBtnLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BancBtnLimpiar.ForeColor = System.Drawing.Color.White;
-            this.BancBtnLimpiar.Location = new System.Drawing.Point(617, 337);
-            this.BancBtnLimpiar.Margin = new System.Windows.Forms.Padding(2);
-            this.BancBtnLimpiar.Name = "BancBtnLimpiar";
-            this.BancBtnLimpiar.Size = new System.Drawing.Size(55, 54);
-            this.BancBtnLimpiar.TabIndex = 14;
-            this.BancBtnLimpiar.UseVisualStyleBackColor = false;
+            this.BancosBtnLimpiar.BackColor = System.Drawing.Color.Green;
+            this.BancosBtnLimpiar.BackgroundImage = global::CapaVista_EnlaceB.Properties.Resources.btn_limpiarV;
+            this.BancosBtnLimpiar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BancosBtnLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BancosBtnLimpiar.ForeColor = System.Drawing.Color.White;
+            this.BancosBtnLimpiar.Location = new System.Drawing.Point(617, 337);
+            this.BancosBtnLimpiar.Margin = new System.Windows.Forms.Padding(2);
+            this.BancosBtnLimpiar.Name = "BancosBtnLimpiar";
+            this.BancosBtnLimpiar.Size = new System.Drawing.Size(55, 54);
+            this.BancosBtnLimpiar.TabIndex = 14;
+            this.BancosBtnLimpiar.UseVisualStyleBackColor = false;
             // 
             // BancPbxFondoPartida
             // 
@@ -541,6 +517,30 @@
             this.BancPbxFondoMovimientos.TabIndex = 9;
             this.BancPbxFondoMovimientos.TabStop = false;
             // 
+            // BancBtnConsultarMovimientos
+            // 
+            this.BancBtnConsultarMovimientos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(138)))), ((int)(((byte)(85)))));
+            this.BancBtnConsultarMovimientos.BackgroundImage = global::CapaVista_EnlaceB.Properties.Resources.btn_consultarV;
+            this.BancBtnConsultarMovimientos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BancBtnConsultarMovimientos.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BancBtnConsultarMovimientos.ForeColor = System.Drawing.Color.White;
+            this.BancBtnConsultarMovimientos.Location = new System.Drawing.Point(749, 13);
+            this.BancBtnConsultarMovimientos.Margin = new System.Windows.Forms.Padding(2);
+            this.BancBtnConsultarMovimientos.Name = "BancBtnConsultarMovimientos";
+            this.BancBtnConsultarMovimientos.Size = new System.Drawing.Size(67, 62);
+            this.BancBtnConsultarMovimientos.TabIndex = 8;
+            this.BancBtnConsultarMovimientos.UseVisualStyleBackColor = false;
+            // 
+            // BancPbxFondoEnlace
+            // 
+            this.BancPbxFondoEnlace.Image = global::CapaVista_EnlaceB.Properties.Resources.FondoEnlaceotrosModulo;
+            this.BancPbxFondoEnlace.Location = new System.Drawing.Point(0, 0);
+            this.BancPbxFondoEnlace.Margin = new System.Windows.Forms.Padding(2);
+            this.BancPbxFondoEnlace.Name = "BancPbxFondoEnlace";
+            this.BancPbxFondoEnlace.Size = new System.Drawing.Size(830, 87);
+            this.BancPbxFondoEnlace.TabIndex = 0;
+            this.BancPbxFondoEnlace.TabStop = false;
+            // 
             // BancPbxFondo
             // 
             this.BancPbxFondo.Image = global::CapaVista_EnlaceB.Properties.Resources.FondoEnlaceotrosModulo;
@@ -557,7 +557,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(918, 542);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.BancosBtnAdvertencia);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.BancPbxMascota);
             this.Controls.Add(this.BancLblDiferencia);
@@ -565,14 +565,14 @@
             this.Controls.Add(this.BancLblTotalDebe);
             this.Controls.Add(this.BancPbxBalanza);
             this.Controls.Add(this.BancPbxBolsa);
-            this.Controls.Add(this.BancPbxMoneda);
+            this.Controls.Add(this.BancosPbxMoneda);
             this.Controls.Add(this.BancPbxDiferencia);
-            this.Controls.Add(this.BancPbxHaber);
-            this.Controls.Add(this.BancPbxDebe);
+            this.Controls.Add(this.BancosPbxHaber);
+            this.Controls.Add(this.BancosPbxDebe);
             this.Controls.Add(this.BancDgvPartidaContable);
             this.Controls.Add(this.BancBtnCerrar);
-            this.Controls.Add(this.BancBtnEnviar);
-            this.Controls.Add(this.BancBtnLimpiar);
+            this.Controls.Add(this.BancosBtnEnviar);
+            this.Controls.Add(this.BancosBtnLimpiar);
             this.Controls.Add(this.BancLblPartidaContable);
             this.Controls.Add(this.BancPbxFondoPartida);
             this.Controls.Add(this.BancBtnGenerarPartida);
@@ -587,21 +587,21 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "FrmEnlaceOtrosModulos";
-            this.Text = "8003 – Enlace con Otros Modulos";
+            this.Text = "8003–Enlace con Otros Modulos";
             this.BancPnlFiltros.ResumeLayout(false);
             this.BancPnlFiltros.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.BancPbxFondoEnlace)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BancDgvMovimientos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BancDgvPartidaContable)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BancPbxMascota)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BancPbxBalanza)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BancPbxBolsa)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BancPbxMoneda)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BancosPbxMoneda)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BancPbxDiferencia)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BancPbxHaber)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BancPbxDebe)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BancosPbxHaber)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BancosPbxDebe)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BancPbxFondoPartida)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BancPbxFondoMovimientos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BancPbxFondoEnlace)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BancPbxFondo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -629,8 +629,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Importe_GTQ;
         private System.Windows.Forms.Button BancBtnGenerarPartida;
         private System.Windows.Forms.Label BancLblPartidaContable;
-        private System.Windows.Forms.Button BancBtnLimpiar;
-        private System.Windows.Forms.Button BancBtnEnviar;
+        private System.Windows.Forms.Button BancosBtnLimpiar;
+        private System.Windows.Forms.Button BancosBtnEnviar;
         private System.Windows.Forms.Button BancBtnCerrar;
         private System.Windows.Forms.DataGridView BancDgvPartidaContable;
         private System.Windows.Forms.DataGridViewTextBoxColumn Código_de_Cuenta;
@@ -638,10 +638,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Debe;
         private System.Windows.Forms.DataGridViewTextBoxColumn Haber;
         private System.Windows.Forms.PictureBox BancPbxFondoPartida;
-        private System.Windows.Forms.PictureBox BancPbxDebe;
-        private System.Windows.Forms.PictureBox BancPbxHaber;
+        private System.Windows.Forms.PictureBox BancosPbxDebe;
+        private System.Windows.Forms.PictureBox BancosPbxHaber;
         private System.Windows.Forms.PictureBox BancPbxDiferencia;
-        private System.Windows.Forms.PictureBox BancPbxMoneda;
+        private System.Windows.Forms.PictureBox BancosPbxMoneda;
         private System.Windows.Forms.PictureBox BancPbxBolsa;
         private System.Windows.Forms.PictureBox BancPbxBalanza;
         private System.Windows.Forms.Label BancLblTotalDebe;
@@ -653,6 +653,6 @@
         private System.Windows.Forms.ComboBox BancCbxPeriodo;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button BancosBtnAdvertencia;
     }
 }

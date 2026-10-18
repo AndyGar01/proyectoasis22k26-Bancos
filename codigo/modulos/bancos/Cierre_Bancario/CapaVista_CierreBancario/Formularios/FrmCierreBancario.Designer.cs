@@ -482,7 +482,7 @@
             this.MinimizeBox = false;
             this.Name = "FrmCierreBancario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "8008 - CierreBancario";
+            this.Text = "8008-CierreBancario";
             this.BancosPnlPeriodoCierre.ResumeLayout(false);
             this.BancosPnlPeriodoCierre.PerformLayout();
             this.BancosPnlResumenCuentasCierre.ResumeLayout(false);

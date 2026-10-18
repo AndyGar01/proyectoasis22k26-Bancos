@@ -109,5 +109,11 @@
   <ItemGroup>
     <None Include="Resources\Mascota bancaria.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_enviar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_salirB.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

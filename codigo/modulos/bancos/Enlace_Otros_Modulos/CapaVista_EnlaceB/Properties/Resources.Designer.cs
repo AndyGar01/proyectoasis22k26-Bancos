@@ -113,6 +113,16 @@ namespace CapaVista_EnlaceB.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap btn_enviar {
+            get {
+                object obj = ResourceManager.GetObject("btn_enviar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap btn_enviarV {
             get {
                 object obj = ResourceManager.GetObject("btn_enviarV", resourceCulture);
@@ -136,6 +146,16 @@ namespace CapaVista_EnlaceB.Properties {
         internal static System.Drawing.Bitmap btn_limpiarV {
             get {
                 object obj = ResourceManager.GetObject("btn_limpiarV", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap btn_salirB {
+            get {
+                object obj = ResourceManager.GetObject("btn_salirB", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

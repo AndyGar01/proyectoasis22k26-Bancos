@@ -31,10 +31,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CapaControlador_Navegador, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
     <Reference Include="CapaControlador_Seguridad, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\CapaControlador_Seguridad\bin\Debug\CapaControlador_Seguridad.dll</HintPath>
     </Reference>
+    <Reference Include="CapaModelo_Navegador, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference Include="CapaVista_Consultas, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
     <Reference Include="CapaVista_Navegador">
       <HintPath>..\..\..\navegador\Navegador\CapaVista_Navegador\bin\Debug\CapaVista_Navegador.dll</HintPath>
     </Reference>
@@ -136,6 +139,12 @@
     </Compile>
     <Compile Include="FrmModulosNavegador.Designer.cs">
       <DependentUpon>FrmModulosNavegador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPerfilesNavegador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPerfilesNavegador.Designer.cs">
+      <DependentUpon>FrmPerfilesNavegador.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmRecuperacion.cs">
       <SubType>Form</SubType>
@@ -262,6 +271,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmModulosNavegador.resx">
       <DependentUpon>FrmModulosNavegador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPerfilesNavegador.resx">
+      <DependentUpon>FrmPerfilesNavegador.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmRecuperacion.resx">
       <DependentUpon>FrmRecuperacion.cs</DependentUpon>

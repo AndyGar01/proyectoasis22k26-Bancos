@@ -211,8 +211,10 @@ namespace CapaVista_Seguridad
                     "Acceso denegado", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            FrmMantenimientoPerfiles MantenimientoPerfiles = new FrmMantenimientoPerfiles();
-            MantenimientoPerfiles.ShowDialog();
+            //FrmMantenimientoPerfiles MantenimientoPerfiles = new FrmMantenimientoPerfiles();
+            //MantenimientoPerfiles.ShowDialog();
+            FrmPerfilesNavegador MantenimientoPerfilesNavegador = new FrmPerfilesNavegador();
+            MantenimientoPerfilesNavegador.ShowDialog();
         }
 
         private void SeguridadBtnUsuarios_Click(object sender, EventArgs e)

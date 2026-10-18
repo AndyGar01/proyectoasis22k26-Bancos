@@ -734,7 +734,7 @@
             this.MaximizeBox = false;
             this.Name = "FrmPercepcionesDeducciones";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "9601 - Percepciones y Deducciones";
+            this.Text = "9601 - PercepcionesDeducciones";
             this.Load += new System.EventHandler(this.FrmNominas_Load);
             this.RrhhPnlDatosInfoConcep.ResumeLayout(false);
             this.RrhhPnlDatosInfoConcep.PerformLayout();

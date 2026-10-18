@@ -561,7 +561,7 @@
             this.MaximizeBox = false;
             this.Name = "FrmCierreNominas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "9602 - Cierre de Nóminas";
+            this.Text = "9701 - CierreDeNóminas";
             ((System.ComponentModel.ISupportInitialize)(this.RrhhDgvVistaCierreNomina)).EndInit();
             this.RrhhPnlInicio.ResumeLayout(false);
             this.RrhhPnlInicio.PerformLayout();

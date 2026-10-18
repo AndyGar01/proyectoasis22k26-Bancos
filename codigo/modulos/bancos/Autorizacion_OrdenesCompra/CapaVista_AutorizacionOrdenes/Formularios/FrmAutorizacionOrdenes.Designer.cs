@@ -84,13 +84,13 @@
             this.BancosBtnAyuda = new System.Windows.Forms.Button();
             this.BancosPnlAsignacionCuenta = new System.Windows.Forms.Panel();
             this.BancosDgvAsignacionCuenta = new System.Windows.Forms.DataGridView();
+            this.BancosLblAsignacionCuenta = new System.Windows.Forms.Label();
             this.BancosColBanco = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BancosColCuenta = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BancosColMonedaAsig = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BancosColSaldoDisponible = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label1 = new System.Windows.Forms.Label();
+            this.BancosColTipoCambio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BancosColMontoAsignado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BancosPnlOrdenesPendientes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BancosDgvOrdenesPendientes)).BeginInit();
             this.BancosPnlDisponibilidadAsignacion.SuspendLayout();
@@ -676,8 +676,8 @@
             this.BancosColCuenta,
             this.BancosColMonedaAsig,
             this.BancosColSaldoDisponible,
-            this.dataGridViewTTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6});
+            this.BancosColTipoCambio,
+            this.BancosColMontoAsignado});
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(231)))), ((int)(((byte)(211)))));
             dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -694,6 +694,18 @@
             this.BancosDgvAsignacionCuenta.RowTemplate.Height = 24;
             this.BancosDgvAsignacionCuenta.Size = new System.Drawing.Size(769, 270);
             this.BancosDgvAsignacionCuenta.TabIndex = 1;
+            // 
+            // BancosLblAsignacionCuenta
+            // 
+            this.BancosLblAsignacionCuenta.AutoSize = true;
+            this.BancosLblAsignacionCuenta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(169)))), ((int)(((byte)(59)))));
+            this.BancosLblAsignacionCuenta.Font = new System.Drawing.Font("Tahoma", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BancosLblAsignacionCuenta.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
+            this.BancosLblAsignacionCuenta.Location = new System.Drawing.Point(36, 511);
+            this.BancosLblAsignacionCuenta.Name = "BancosLblAsignacionCuenta";
+            this.BancosLblAsignacionCuenta.Size = new System.Drawing.Size(226, 27);
+            this.BancosLblAsignacionCuenta.TabIndex = 17;
+            this.BancosLblAsignacionCuenta.Text = "Asignación por cuenta";
             // 
             // BancosColBanco
             // 
@@ -725,31 +737,19 @@
             this.BancosColSaldoDisponible.MinimumWidth = 6;
             this.BancosColSaldoDisponible.Name = "BancosColSaldoDisponible";
             // 
-            // dataGridViewTTextBoxColumn5
+            // BancosColTipoCambio
             // 
-            this.dataGridViewTTextBoxColumn5.FillWeight = 59.42896F;
-            this.dataGridViewTTextBoxColumn5.HeaderText = "T. Cambio";
-            this.dataGridViewTTextBoxColumn5.MinimumWidth = 6;
-            this.dataGridViewTTextBoxColumn5.Name = "dataGridViewTTextBoxColumn5";
+            this.BancosColTipoCambio.FillWeight = 59.42896F;
+            this.BancosColTipoCambio.HeaderText = "T. Cambio";
+            this.BancosColTipoCambio.MinimumWidth = 6;
+            this.BancosColTipoCambio.Name = "BancosColTipoCambio";
             // 
-            // dataGridViewTextBoxColumn6
+            // BancosColMontoAsignado
             // 
-            this.dataGridViewTextBoxColumn6.FillWeight = 62F;
-            this.dataGridViewTextBoxColumn6.HeaderText = "Monto Asig.";
-            this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(169)))), ((int)(((byte)(59)))));
-            this.label1.Font = new System.Drawing.Font("Tahoma", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
-            this.label1.Location = new System.Drawing.Point(36, 511);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(226, 27);
-            this.label1.TabIndex = 17;
-            this.label1.Text = "Asignación por cuenta";
+            this.BancosColMontoAsignado.FillWeight = 62F;
+            this.BancosColMontoAsignado.HeaderText = "Monto Asig.";
+            this.BancosColMontoAsignado.MinimumWidth = 6;
+            this.BancosColMontoAsignado.Name = "BancosColMontoAsignado";
             // 
             // FrmAutorizacionOrdenes
             // 
@@ -758,7 +758,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(248)))), ((int)(((byte)(243)))));
             this.BackgroundImage = global::CapaVista_AutorizacionOrdenes.Properties.Resources.FondoAutorizacionModulo;
             this.ClientSize = new System.Drawing.Size(1398, 855);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.BancosLblAsignacionCuenta);
             this.Controls.Add(this.BancosPnlAsignacionCuenta);
             this.Controls.Add(this.BancosPnlBotones);
             this.Controls.Add(this.BancosPnlEncabezado);
@@ -772,7 +772,7 @@
             this.MinimizeBox = false;
             this.Name = "FrmAutorizacionOrdenes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "8006 – Autorización de órdenes de compra";
+            this.Text = "8006 – AutorizaciónOrdenCompra";
             this.Load += new System.EventHandler(this.FrmAutorizacionOrdenes_Load);
             this.BancosPnlOrdenesPendientes.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.BancosDgvOrdenesPendientes)).EndInit();
@@ -828,7 +828,7 @@
         private System.Windows.Forms.DataGridView BancosDgvAsignacionCuenta;
         private System.Windows.Forms.Button BancosBtnEliminar;
         private System.Windows.Forms.Button BancosBtnIngresar;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label BancosLblAsignacionCuenta;
         private System.Windows.Forms.Label BancosLblValorNoAutorizacion;
         private System.Windows.Forms.Label BancosLblNoAutorizacion;
         private System.Windows.Forms.Label BancosLblValorDiferencia;
@@ -846,7 +846,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn BancosColCuenta;
         private System.Windows.Forms.DataGridViewTextBoxColumn BancosColMonedaAsig;
         private System.Windows.Forms.DataGridViewTextBoxColumn BancosColSaldoDisponible;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn BancosColTipoCambio;
+        private System.Windows.Forms.DataGridViewTextBoxColumn BancosColMontoAsignado;
     }
 }

@@ -131,17 +131,6 @@
     <value>..\Resources\info.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 
-  <data name="fondoLogin" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fondoLogin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-
-  <data name="fondoSplash" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fondoSplash.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-
-  <data name="DonButiLogin" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DonButiLogin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="ico_aplicar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ico_aplicar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>

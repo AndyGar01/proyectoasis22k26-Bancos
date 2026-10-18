@@ -46,13 +46,10 @@
     <Compile Include="Contratos\IRepositorioActivosFijosContabilidad.cs" />
     <Compile Include="Repositorios\ClsRepositorioContabilidad.cs" />
     <Compile Include="Repositorios\ClsRepositorioMaestroContabilidad.cs" />
-    <Compile Include="Repositorios\ClsRepositorioUsuariosContabilidad.cs" />
-    <Compile Include="Repositorios\ClsRepositorioSeguridadContabilidad.cs" />
     <Compile Include="Repositorios\ClsRepositorioPolizasContabilidad.cs" />
     <Compile Include="Repositorios\ClsRepositorioPresupuestosContabilidad.cs" />
     <Compile Include="Repositorios\ClsRepositorioActivosFijosContabilidad.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <None Include="README.md" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

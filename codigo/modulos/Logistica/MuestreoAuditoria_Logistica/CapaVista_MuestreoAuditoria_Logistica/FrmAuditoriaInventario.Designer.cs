@@ -55,6 +55,12 @@
             this.colResultado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colEstado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colObservaciones = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MuestreoBtnAnterior = new System.Windows.Forms.Button();
+            this.MuestreoBtnSiguiente = new System.Windows.Forms.Button();
+            this.MuestreoBtnConsultar = new System.Windows.Forms.Button();
+            this.MuestreoBtnEditar = new System.Windows.Forms.Button();
+            this.MuestreoBtnActualizar = new System.Windows.Forms.Button();
+            this.MuestreoLblPagina = new System.Windows.Forms.Label();
             this.MuestreoPnlOpciones.SuspendLayout();
             this.MuestreoGpbNuevaAuditoria.SuspendLayout();
             this.MuestreoGpbConsulta.SuspendLayout();
@@ -97,7 +103,7 @@
             this.MuestreoPnlOpciones.Controls.Add(this.MuestreoGpbNuevaAuditoria);
             this.MuestreoPnlOpciones.Location = new System.Drawing.Point(70, 124);
             this.MuestreoPnlOpciones.Name = "MuestreoPnlOpciones";
-            this.MuestreoPnlOpciones.Size = new System.Drawing.Size(1150, 195);
+            this.MuestreoPnlOpciones.Size = new System.Drawing.Size(1155, 195);
             this.MuestreoPnlOpciones.TabIndex = 2;
             // 
             // MuestreoGpbNuevaAuditoria
@@ -227,11 +233,17 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.MuestreoPnlHistorial.BackColor = System.Drawing.Color.White;
             this.MuestreoPnlHistorial.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.MuestreoPnlHistorial.Controls.Add(this.MuestreoLblPagina);
+            this.MuestreoPnlHistorial.Controls.Add(this.MuestreoBtnActualizar);
+            this.MuestreoPnlHistorial.Controls.Add(this.MuestreoBtnEditar);
+            this.MuestreoPnlHistorial.Controls.Add(this.MuestreoBtnConsultar);
+            this.MuestreoPnlHistorial.Controls.Add(this.MuestreoBtnSiguiente);
+            this.MuestreoPnlHistorial.Controls.Add(this.MuestreoBtnAnterior);
             this.MuestreoPnlHistorial.Controls.Add(this.MuestreoDgvAuditorias);
             this.MuestreoPnlHistorial.Controls.Add(this.MuestreoLblHistorial);
             this.MuestreoPnlHistorial.Location = new System.Drawing.Point(70, 444);
             this.MuestreoPnlHistorial.Name = "MuestreoPnlHistorial";
-            this.MuestreoPnlHistorial.Size = new System.Drawing.Size(1150, 330);
+            this.MuestreoPnlHistorial.Size = new System.Drawing.Size(1155, 330);
             this.MuestreoPnlHistorial.TabIndex = 3;
             // 
             // MuestreoLblHistorial
@@ -286,7 +298,7 @@
             this.MuestreoDgvAuditorias.RowHeadersWidth = 51;
             this.MuestreoDgvAuditorias.RowTemplate.Height = 30;
             this.MuestreoDgvAuditorias.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.MuestreoDgvAuditorias.Size = new System.Drawing.Size(1105, 205);
+            this.MuestreoDgvAuditorias.Size = new System.Drawing.Size(1110, 205);
             this.MuestreoDgvAuditorias.TabIndex = 1;
             // 
             // colCodigo
@@ -345,13 +357,82 @@
             this.colObservaciones.Name = "colObservaciones";
             this.colObservaciones.ReadOnly = true;
             // 
+            // MuestreoBtnAnterior
+            // 
+            this.MuestreoBtnAnterior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(216)))), ((int)(((byte)(197)))));
+            this.MuestreoBtnAnterior.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.MuestreoBtnAnterior.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(44)))), ((int)(((byte)(18)))));
+            this.MuestreoBtnAnterior.Location = new System.Drawing.Point(20, 275);
+            this.MuestreoBtnAnterior.Name = "MuestreoBtnAnterior";
+            this.MuestreoBtnAnterior.Size = new System.Drawing.Size(105, 35);
+            this.MuestreoBtnAnterior.TabIndex = 2;
+            this.MuestreoBtnAnterior.Text = "Anterior";
+            this.MuestreoBtnAnterior.UseVisualStyleBackColor = false;
+            // 
+            // MuestreoBtnSiguiente
+            // 
+            this.MuestreoBtnSiguiente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(216)))), ((int)(((byte)(197)))));
+            this.MuestreoBtnSiguiente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.MuestreoBtnSiguiente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(44)))), ((int)(((byte)(18)))));
+            this.MuestreoBtnSiguiente.Location = new System.Drawing.Point(245, 275);
+            this.MuestreoBtnSiguiente.Name = "MuestreoBtnSiguiente";
+            this.MuestreoBtnSiguiente.Size = new System.Drawing.Size(105, 35);
+            this.MuestreoBtnSiguiente.TabIndex = 3;
+            this.MuestreoBtnSiguiente.Text = "Siguiente";
+            this.MuestreoBtnSiguiente.UseVisualStyleBackColor = false;
+            // 
+            // MuestreoBtnConsultar
+            // 
+            this.MuestreoBtnConsultar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(216)))), ((int)(((byte)(197)))));
+            this.MuestreoBtnConsultar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.MuestreoBtnConsultar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(44)))), ((int)(((byte)(18)))));
+            this.MuestreoBtnConsultar.Location = new System.Drawing.Point(645, 275);
+            this.MuestreoBtnConsultar.Name = "MuestreoBtnConsultar";
+            this.MuestreoBtnConsultar.Size = new System.Drawing.Size(145, 35);
+            this.MuestreoBtnConsultar.TabIndex = 4;
+            this.MuestreoBtnConsultar.Text = "Consultar";
+            this.MuestreoBtnConsultar.UseVisualStyleBackColor = false;
+            // 
+            // MuestreoBtnEditar
+            // 
+            this.MuestreoBtnEditar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(216)))), ((int)(((byte)(197)))));
+            this.MuestreoBtnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.MuestreoBtnEditar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(44)))), ((int)(((byte)(18)))));
+            this.MuestreoBtnEditar.Location = new System.Drawing.Point(800, 275);
+            this.MuestreoBtnEditar.Name = "MuestreoBtnEditar";
+            this.MuestreoBtnEditar.Size = new System.Drawing.Size(145, 35);
+            this.MuestreoBtnEditar.TabIndex = 5;
+            this.MuestreoBtnEditar.Text = "Editar";
+            this.MuestreoBtnEditar.UseVisualStyleBackColor = false;
+            // 
+            // MuestreoBtnActualizar
+            // 
+            this.MuestreoBtnActualizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(216)))), ((int)(((byte)(197)))));
+            this.MuestreoBtnActualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.MuestreoBtnActualizar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(44)))), ((int)(((byte)(18)))));
+            this.MuestreoBtnActualizar.Location = new System.Drawing.Point(955, 275);
+            this.MuestreoBtnActualizar.Name = "MuestreoBtnActualizar";
+            this.MuestreoBtnActualizar.Size = new System.Drawing.Size(145, 35);
+            this.MuestreoBtnActualizar.TabIndex = 6;
+            this.MuestreoBtnActualizar.Text = "Actualizar";
+            this.MuestreoBtnActualizar.UseVisualStyleBackColor = false;
+            // 
+            // MuestreoLblPagina
+            // 
+            this.MuestreoLblPagina.AutoSize = true;
+            this.MuestreoLblPagina.Location = new System.Drawing.Point(145, 284);
+            this.MuestreoLblPagina.Name = "MuestreoLblPagina";
+            this.MuestreoLblPagina.Size = new System.Drawing.Size(89, 16);
+            this.MuestreoLblPagina.TabIndex = 7;
+            this.MuestreoLblPagina.Text = "Página 1 de 1";
+            // 
             // FrmAuditoriaInventario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::CapaVista_MuestreoAuditoria_Logistica.Properties.Resources.FondoLogistica;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1525, 912);
+            this.ClientSize = new System.Drawing.Size(1265, 912);
             this.Controls.Add(this.MuestreoPnlHistorial);
             this.Controls.Add(this.MuestreoPnlOpciones);
             this.Controls.Add(this.MuestreoLblDescripcion);
@@ -360,7 +441,7 @@
             this.MaximizeBox = false;
             this.Name = "FrmAuditoriaInventario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Muestreo y Auditoría de Inventario";
+            this.Text = "5011 - Auditoría y muestreo de inventario";
             this.UseWaitCursor = true;
             this.MuestreoPnlOpciones.ResumeLayout(false);
             this.MuestreoGpbNuevaAuditoria.ResumeLayout(false);
@@ -401,5 +482,11 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn colResultado;
         private System.Windows.Forms.DataGridViewTextBoxColumn colEstado;
         private System.Windows.Forms.DataGridViewTextBoxColumn colObservaciones;
+        private System.Windows.Forms.Button MuestreoBtnActualizar;
+        private System.Windows.Forms.Button MuestreoBtnEditar;
+        private System.Windows.Forms.Button MuestreoBtnConsultar;
+        private System.Windows.Forms.Button MuestreoBtnSiguiente;
+        private System.Windows.Forms.Button MuestreoBtnAnterior;
+        private System.Windows.Forms.Label MuestreoLblPagina;
     }
 }

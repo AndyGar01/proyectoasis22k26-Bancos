@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.MuestreoLblTitulo = new System.Windows.Forms.Label();
             this.MuestreoLblDescripcion = new System.Windows.Forms.Label();
             this.MuestreoPnlOpciones = new System.Windows.Forms.Panel();
@@ -42,10 +44,22 @@
             this.MuestreoCboEstado = new System.Windows.Forms.ComboBox();
             this.MuestreoTxtBuscar = new System.Windows.Forms.TextBox();
             this.MuestreoBtnBuscar = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.MuestreoPnlHistorial = new System.Windows.Forms.Panel();
+            this.MuestreoLblHistorial = new System.Windows.Forms.Label();
+            this.MuestreoDgvAuditorias = new System.Windows.Forms.DataGridView();
+            this.colCodigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colFecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colBodega = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colTipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colProductos = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colResultado = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colEstado = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colObservaciones = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MuestreoPnlOpciones.SuspendLayout();
             this.MuestreoGpbNuevaAuditoria.SuspendLayout();
             this.MuestreoGpbConsulta.SuspendLayout();
+            this.MuestreoPnlHistorial.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.MuestreoDgvAuditorias)).BeginInit();
             this.SuspendLayout();
             // 
             // MuestreoLblTitulo
@@ -206,12 +220,130 @@
             this.MuestreoBtnBuscar.Text = "Buscar";
             this.MuestreoBtnBuscar.UseVisualStyleBackColor = true;
             // 
-            // panel1
+            // MuestreoPnlHistorial
             // 
-            this.panel1.Location = new System.Drawing.Point(70, 444);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1150, 340);
-            this.panel1.TabIndex = 3;
+            this.MuestreoPnlHistorial.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.MuestreoPnlHistorial.BackColor = System.Drawing.Color.White;
+            this.MuestreoPnlHistorial.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.MuestreoPnlHistorial.Controls.Add(this.MuestreoDgvAuditorias);
+            this.MuestreoPnlHistorial.Controls.Add(this.MuestreoLblHistorial);
+            this.MuestreoPnlHistorial.Location = new System.Drawing.Point(70, 444);
+            this.MuestreoPnlHistorial.Name = "MuestreoPnlHistorial";
+            this.MuestreoPnlHistorial.Size = new System.Drawing.Size(1150, 330);
+            this.MuestreoPnlHistorial.TabIndex = 3;
+            // 
+            // MuestreoLblHistorial
+            // 
+            this.MuestreoLblHistorial.AutoSize = true;
+            this.MuestreoLblHistorial.BackColor = System.Drawing.Color.Transparent;
+            this.MuestreoLblHistorial.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MuestreoLblHistorial.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(44)))), ((int)(((byte)(18)))));
+            this.MuestreoLblHistorial.Location = new System.Drawing.Point(20, 15);
+            this.MuestreoLblHistorial.Name = "MuestreoLblHistorial";
+            this.MuestreoLblHistorial.Size = new System.Drawing.Size(232, 24);
+            this.MuestreoLblHistorial.TabIndex = 0;
+            this.MuestreoLblHistorial.Text = "Historial de auditorías";
+            // 
+            // MuestreoDgvAuditorias
+            // 
+            this.MuestreoDgvAuditorias.AllowUserToAddRows = false;
+            this.MuestreoDgvAuditorias.AllowUserToDeleteRows = false;
+            this.MuestreoDgvAuditorias.AllowUserToResizeRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(246)))), ((int)(((byte)(242)))));
+            this.MuestreoDgvAuditorias.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.MuestreoDgvAuditorias.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.MuestreoDgvAuditorias.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.MuestreoDgvAuditorias.BackgroundColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(44)))), ((int)(((byte)(18)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(138)))), ((int)(((byte)(132)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.MuestreoDgvAuditorias.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.MuestreoDgvAuditorias.ColumnHeadersHeight = 38;
+            this.MuestreoDgvAuditorias.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.MuestreoDgvAuditorias.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.colCodigo,
+            this.colFecha,
+            this.colBodega,
+            this.colTipo,
+            this.colProductos,
+            this.colResultado,
+            this.colEstado,
+            this.colObservaciones});
+            this.MuestreoDgvAuditorias.EnableHeadersVisualStyles = false;
+            this.MuestreoDgvAuditorias.Location = new System.Drawing.Point(20, 50);
+            this.MuestreoDgvAuditorias.MultiSelect = false;
+            this.MuestreoDgvAuditorias.Name = "MuestreoDgvAuditorias";
+            this.MuestreoDgvAuditorias.ReadOnly = true;
+            this.MuestreoDgvAuditorias.RowHeadersVisible = false;
+            this.MuestreoDgvAuditorias.RowHeadersWidth = 51;
+            this.MuestreoDgvAuditorias.RowTemplate.Height = 30;
+            this.MuestreoDgvAuditorias.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.MuestreoDgvAuditorias.Size = new System.Drawing.Size(1105, 205);
+            this.MuestreoDgvAuditorias.TabIndex = 1;
+            // 
+            // colCodigo
+            // 
+            this.colCodigo.HeaderText = "Código";
+            this.colCodigo.MinimumWidth = 6;
+            this.colCodigo.Name = "colCodigo";
+            this.colCodigo.ReadOnly = true;
+            // 
+            // colFecha
+            // 
+            this.colFecha.HeaderText = "Fecha";
+            this.colFecha.MinimumWidth = 6;
+            this.colFecha.Name = "colFecha";
+            this.colFecha.ReadOnly = true;
+            // 
+            // colBodega
+            // 
+            this.colBodega.HeaderText = "Bodega";
+            this.colBodega.MinimumWidth = 6;
+            this.colBodega.Name = "colBodega";
+            this.colBodega.ReadOnly = true;
+            // 
+            // colTipo
+            // 
+            this.colTipo.HeaderText = "Tipo de auditoría";
+            this.colTipo.MinimumWidth = 6;
+            this.colTipo.Name = "colTipo";
+            this.colTipo.ReadOnly = true;
+            // 
+            // colProductos
+            // 
+            this.colProductos.HeaderText = "Productos";
+            this.colProductos.MinimumWidth = 6;
+            this.colProductos.Name = "colProductos";
+            this.colProductos.ReadOnly = true;
+            // 
+            // colResultado
+            // 
+            this.colResultado.HeaderText = "Resultado";
+            this.colResultado.MinimumWidth = 6;
+            this.colResultado.Name = "colResultado";
+            this.colResultado.ReadOnly = true;
+            // 
+            // colEstado
+            // 
+            this.colEstado.HeaderText = "Estado";
+            this.colEstado.MinimumWidth = 6;
+            this.colEstado.Name = "colEstado";
+            this.colEstado.ReadOnly = true;
+            // 
+            // colObservaciones
+            // 
+            this.colObservaciones.HeaderText = "Observaciones";
+            this.colObservaciones.MinimumWidth = 6;
+            this.colObservaciones.Name = "colObservaciones";
+            this.colObservaciones.ReadOnly = true;
             // 
             // FrmAuditoriaInventario
             // 
@@ -220,7 +352,7 @@
             this.BackgroundImage = global::CapaVista_MuestreoAuditoria_Logistica.Properties.Resources.FondoLogistica;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1525, 912);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.MuestreoPnlHistorial);
             this.Controls.Add(this.MuestreoPnlOpciones);
             this.Controls.Add(this.MuestreoLblDescripcion);
             this.Controls.Add(this.MuestreoLblTitulo);
@@ -234,6 +366,9 @@
             this.MuestreoGpbNuevaAuditoria.ResumeLayout(false);
             this.MuestreoGpbConsulta.ResumeLayout(false);
             this.MuestreoGpbConsulta.PerformLayout();
+            this.MuestreoPnlHistorial.ResumeLayout(false);
+            this.MuestreoPnlHistorial.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.MuestreoDgvAuditorias)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -255,6 +390,16 @@
         private System.Windows.Forms.Label MuestreoLblBodega;
         private System.Windows.Forms.Button MuestreoBtnBuscar;
         private System.Windows.Forms.TextBox MuestreoTxtBuscar;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel MuestreoPnlHistorial;
+        private System.Windows.Forms.DataGridView MuestreoDgvAuditorias;
+        private System.Windows.Forms.Label MuestreoLblHistorial;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colCodigo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colFecha;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colBodega;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colTipo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colProductos;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colResultado;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colEstado;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colObservaciones;
     }
 }

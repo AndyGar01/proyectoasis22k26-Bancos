@@ -55,6 +55,10 @@
     <Reference Include="CapaVista_MovimientosBancarios">
       <HintPath>..\..\Movimientos_Bancarios\CapaVista_MovimientosBancarios\bin\Debug\CapaVista_MovimientosBancarios.dll</HintPath>
     </Reference>
+    <Reference Include="CapaVista_Navegador, Version=0.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\componentes\navegador\Navegador\CapaVista_Navegador\bin\Debug\CapaVista_Navegador.dll</HintPath>
+    </Reference>
     <Reference Include="CapaVista_TipoCambio">
       <HintPath>..\..\TipoCambio\CapaVista_TipoCambio\bin\Debug\CapaVista_TipoCambio.dll</HintPath>
     </Reference>

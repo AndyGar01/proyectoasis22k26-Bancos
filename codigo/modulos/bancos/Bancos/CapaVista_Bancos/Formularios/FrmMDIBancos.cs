@@ -103,5 +103,11 @@ namespace CapaVista_Bancos.Formularios
             FrmCierreBancario CierreBancario = new FrmCierreBancario();
             CierreBancario.ShowDialog();
         }
+
+        private void BancosBtnTipoTransaccion_Click(object sender, EventArgs e)
+        {
+            FrmTipoTransaccionNavegador TipoTransaccion = new FrmTipoTransaccionNavegador();
+            TipoTransaccion.ShowDialog();
+        }
     }
 }

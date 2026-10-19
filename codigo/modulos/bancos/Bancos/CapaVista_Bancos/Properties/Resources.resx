@@ -118,73 +118,94 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="kpi" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\kpi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bancos_kpi6" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bancos_kpi6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bancos_kpi4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bancos_kpi4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bancos_btn5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bancos_btn5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bancos_btn6" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bancos_btn6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="bancos_ayudas" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bancos_ayudas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bancos_logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bancos_logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bancos_kpi3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bancos_kpi3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bancos_butti" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bancos_butti.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bancos_kpi2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bancos_kpi2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bancos_btn2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bancos_btn2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="burger" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\burger.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bancos_navegador" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bancos_navegador.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bancos_btn8" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bancos_btn8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bancos_dashboard" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bancos_dashboard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bancos_btn3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bancos_btn3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bancos_btn1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bancos_btn1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bancos_kpi1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bancos_kpi1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bancos_btn7" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bancos_btn7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="bancos_mante_btn2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bancos_mante_btn2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bancos_butti" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bancos_butti.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bancos_kpi4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bancos_kpi4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bancos_pnlbtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bancos_pnlbtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bancos_kpi1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bancos_kpi1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kpi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kpi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bancos_btn3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bancos_btn3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bancos_kpi6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bancos_kpi6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bancos_btn6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bancos_btn6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bancos_mante_btn3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bancos_mante_btn3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="bancos_contexto" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bancos_contexto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bancos_btn2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bancos_btn2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bancos_kpi5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bancos_kpi5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bancos_btn4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bancos_btn4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bancos_pnl2btn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bancos_pnl2btn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bancos_btn9" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bancos_btn9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bancos_kpi2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bancos_kpi2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="burger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\burger.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bancos_btn8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bancos_btn8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bancos_mante_btn1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bancos_mante_btn1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bancos_kpi3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bancos_kpi3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bancos_logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bancos_logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bancos_btn5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bancos_btn5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bancos_mante_btn4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bancos_mante_btn4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bancos_navegador" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bancos_navegador.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bancos_btn1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bancos_btn1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bancos_dashboard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bancos_dashboard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bancos_btn4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bancos_btn4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bancos_mante_btn5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bancos_mante_btn5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -169,5 +169,26 @@
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bancos_pnlbtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bancos_pnl2btn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bancos_mante_btn1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bancos_mante_btn2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bancos_mante_btn3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bancos_mante_btn4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bancos_mante_btn5.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

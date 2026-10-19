@@ -263,9 +263,79 @@ namespace CapaVista_Bancos.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bancos_mante_btn1 {
+            get {
+                object obj = ResourceManager.GetObject("bancos_mante_btn1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bancos_mante_btn2 {
+            get {
+                object obj = ResourceManager.GetObject("bancos_mante_btn2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bancos_mante_btn3 {
+            get {
+                object obj = ResourceManager.GetObject("bancos_mante_btn3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bancos_mante_btn4 {
+            get {
+                object obj = ResourceManager.GetObject("bancos_mante_btn4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bancos_mante_btn5 {
+            get {
+                object obj = ResourceManager.GetObject("bancos_mante_btn5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bancos_navegador {
             get {
                 object obj = ResourceManager.GetObject("bancos_navegador", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bancos_pnl2btn {
+            get {
+                object obj = ResourceManager.GetObject("bancos_pnl2btn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bancos_pnlbtn {
+            get {
+                object obj = ResourceManager.GetObject("bancos_pnlbtn", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

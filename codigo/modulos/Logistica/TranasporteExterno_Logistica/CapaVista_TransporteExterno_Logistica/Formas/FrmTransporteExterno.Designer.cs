@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmTransporteExterno));
             this.LogisticaPnlInfoTransporteExterno = new System.Windows.Forms.GroupBox();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.LogisticaPnlEncabezadoInfTransporteExterno = new System.Windows.Forms.Panel();
             this.LogisticaLblTituloTransporteExterno = new System.Windows.Forms.Label();
             this.LogisticaTxtNumeroGuia = new System.Windows.Forms.TextBox();
             this.LogisticaCboTipoServicio = new System.Windows.Forms.ComboBox();
@@ -65,6 +65,7 @@
             this.LogisticaLblFechaEstimada = new System.Windows.Forms.Label();
             this.LogisticaLblFechaContratacion = new System.Windows.Forms.Label();
             this.LogisticaPnlTransporteExterno = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.LogisticaDvglListadoTransportes = new System.Windows.Forms.DataGridView();
             this.LogisticaPnlListadoTransportes = new System.Windows.Forms.Panel();
@@ -162,7 +163,7 @@
             this.LogisticaLblMoneda = new System.Windows.Forms.Label();
             this.LogisticaLblTarifa = new System.Windows.Forms.Label();
             this.LogisticaPnlInfoTransporteExterno.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.LogisticaPnlEncabezadoInfTransporteExterno.SuspendLayout();
             this.LogisticaPnlOrigenDestino.SuspendLayout();
             this.LogisticaPnlEncabezadoOrigenDestino.SuspendLayout();
             this.LogisticaPnlFechasServicio.SuspendLayout();
@@ -197,7 +198,7 @@
             // 
             // LogisticaPnlInfoTransporteExterno
             // 
-            this.LogisticaPnlInfoTransporteExterno.Controls.Add(this.panel1);
+            this.LogisticaPnlInfoTransporteExterno.Controls.Add(this.LogisticaPnlEncabezadoInfTransporteExterno);
             this.LogisticaPnlInfoTransporteExterno.Controls.Add(this.LogisticaTxtNumeroGuia);
             this.LogisticaPnlInfoTransporteExterno.Controls.Add(this.LogisticaCboTipoServicio);
             this.LogisticaPnlInfoTransporteExterno.Controls.Add(this.LogisticaCboEstado);
@@ -218,24 +219,24 @@
             this.LogisticaPnlInfoTransporteExterno.TabIndex = 0;
             this.LogisticaPnlInfoTransporteExterno.TabStop = false;
             // 
-            // panel1
+            // LogisticaPnlEncabezadoInfTransporteExterno
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(44)))), ((int)(((byte)(18)))));
-            this.panel1.Controls.Add(this.LogisticaLblTituloTransporteExterno);
-            this.panel1.Location = new System.Drawing.Point(1, 9);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(485, 36);
-            this.panel1.TabIndex = 18;
+            this.LogisticaPnlEncabezadoInfTransporteExterno.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(138)))), ((int)(((byte)(132)))));
+            this.LogisticaPnlEncabezadoInfTransporteExterno.Controls.Add(this.LogisticaLblTituloTransporteExterno);
+            this.LogisticaPnlEncabezadoInfTransporteExterno.Location = new System.Drawing.Point(1, 9);
+            this.LogisticaPnlEncabezadoInfTransporteExterno.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.LogisticaPnlEncabezadoInfTransporteExterno.Name = "LogisticaPnlEncabezadoInfTransporteExterno";
+            this.LogisticaPnlEncabezadoInfTransporteExterno.Size = new System.Drawing.Size(485, 36);
+            this.LogisticaPnlEncabezadoInfTransporteExterno.TabIndex = 18;
             // 
             // LogisticaLblTituloTransporteExterno
             // 
             this.LogisticaLblTituloTransporteExterno.AutoSize = true;
-            this.LogisticaLblTituloTransporteExterno.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.LogisticaLblTituloTransporteExterno.Font = new System.Drawing.Font("Tahoma", 13.2F);
             this.LogisticaLblTituloTransporteExterno.ForeColor = System.Drawing.Color.White;
-            this.LogisticaLblTituloTransporteExterno.Location = new System.Drawing.Point(63, 9);
+            this.LogisticaLblTituloTransporteExterno.Location = new System.Drawing.Point(63, 4);
             this.LogisticaLblTituloTransporteExterno.Name = "LogisticaLblTituloTransporteExterno";
-            this.LogisticaLblTituloTransporteExterno.Size = new System.Drawing.Size(264, 20);
+            this.LogisticaLblTituloTransporteExterno.Size = new System.Drawing.Size(352, 27);
             this.LogisticaLblTituloTransporteExterno.TabIndex = 9;
             this.LogisticaLblTituloTransporteExterno.Text = "Información del transporte externo";
             // 
@@ -419,7 +420,7 @@
             // 
             // LogisticaPnlEncabezadoOrigenDestino
             // 
-            this.LogisticaPnlEncabezadoOrigenDestino.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(44)))), ((int)(((byte)(18)))));
+            this.LogisticaPnlEncabezadoOrigenDestino.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(138)))), ((int)(((byte)(132)))));
             this.LogisticaPnlEncabezadoOrigenDestino.Controls.Add(this.LogisticaLblTituloOrigenDestino);
             this.LogisticaPnlEncabezadoOrigenDestino.Location = new System.Drawing.Point(0, 9);
             this.LogisticaPnlEncabezadoOrigenDestino.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -430,11 +431,11 @@
             // LogisticaLblTituloOrigenDestino
             // 
             this.LogisticaLblTituloOrigenDestino.AutoSize = true;
-            this.LogisticaLblTituloOrigenDestino.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.LogisticaLblTituloOrigenDestino.Font = new System.Drawing.Font("Tahoma", 13.2F);
             this.LogisticaLblTituloOrigenDestino.ForeColor = System.Drawing.Color.White;
-            this.LogisticaLblTituloOrigenDestino.Location = new System.Drawing.Point(63, 9);
+            this.LogisticaLblTituloOrigenDestino.Location = new System.Drawing.Point(64, 5);
             this.LogisticaLblTituloOrigenDestino.Name = "LogisticaLblTituloOrigenDestino";
-            this.LogisticaLblTituloOrigenDestino.Size = new System.Drawing.Size(131, 20);
+            this.LogisticaLblTituloOrigenDestino.Size = new System.Drawing.Size(172, 27);
             this.LogisticaLblTituloOrigenDestino.TabIndex = 9;
             this.LogisticaLblTituloOrigenDestino.Text = "Origen y destino";
             // 
@@ -551,7 +552,7 @@
             // 
             // LogisticaPnlEncabezadoFechasServicio
             // 
-            this.LogisticaPnlEncabezadoFechasServicio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(44)))), ((int)(((byte)(18)))));
+            this.LogisticaPnlEncabezadoFechasServicio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(138)))), ((int)(((byte)(132)))));
             this.LogisticaPnlEncabezadoFechasServicio.Controls.Add(this.LogisticaLblTituloFechasServicio);
             this.LogisticaPnlEncabezadoFechasServicio.Location = new System.Drawing.Point(0, 9);
             this.LogisticaPnlEncabezadoFechasServicio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -562,11 +563,11 @@
             // LogisticaLblTituloFechasServicio
             // 
             this.LogisticaLblTituloFechasServicio.AutoSize = true;
-            this.LogisticaLblTituloFechasServicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.LogisticaLblTituloFechasServicio.Font = new System.Drawing.Font("Tahoma", 13.2F);
             this.LogisticaLblTituloFechasServicio.ForeColor = System.Drawing.Color.White;
-            this.LogisticaLblTituloFechasServicio.Location = new System.Drawing.Point(63, 9);
+            this.LogisticaLblTituloFechasServicio.Location = new System.Drawing.Point(63, 5);
             this.LogisticaLblTituloFechasServicio.Name = "LogisticaLblTituloFechasServicio";
-            this.LogisticaLblTituloFechasServicio.Size = new System.Drawing.Size(154, 20);
+            this.LogisticaLblTituloFechasServicio.Size = new System.Drawing.Size(195, 27);
             this.LogisticaLblTituloFechasServicio.TabIndex = 9;
             this.LogisticaLblTituloFechasServicio.Text = "Fechas del servicio";
             // 
@@ -603,6 +604,7 @@
             // LogisticaPnlTransporteExterno
             // 
             this.LogisticaPnlTransporteExterno.AutoSize = true;
+            this.LogisticaPnlTransporteExterno.Controls.Add(this.label1);
             this.LogisticaPnlTransporteExterno.Controls.Add(this.groupBox2);
             this.LogisticaPnlTransporteExterno.Controls.Add(this.groupBox4);
             this.LogisticaPnlTransporteExterno.Controls.Add(this.LogisticaPnlVehiculoConductor);
@@ -610,13 +612,24 @@
             this.LogisticaPnlTransporteExterno.Controls.Add(this.LogisticaPnlInfoTransporteExterno);
             this.LogisticaPnlTransporteExterno.Controls.Add(this.LogisticaPnlFechasServicio);
             this.LogisticaPnlTransporteExterno.Controls.Add(this.LogisticaPnlOrigenDestino);
-            this.LogisticaPnlTransporteExterno.Location = new System.Drawing.Point(12, 11);
+            this.LogisticaPnlTransporteExterno.Location = new System.Drawing.Point(1, 2);
             this.LogisticaPnlTransporteExterno.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.LogisticaPnlTransporteExterno.Name = "LogisticaPnlTransporteExterno";
             this.LogisticaPnlTransporteExterno.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.LogisticaPnlTransporteExterno.Size = new System.Drawing.Size(1920, 1018);
+            this.LogisticaPnlTransporteExterno.Size = new System.Drawing.Size(1841, 941);
             this.LogisticaPnlTransporteExterno.TabIndex = 18;
             this.LogisticaPnlTransporteExterno.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Tahoma", 22.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(138)))), ((int)(((byte)(132)))));
+            this.label1.Location = new System.Drawing.Point(11, 29);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(461, 45);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "TRANSPORTE EXTERNO";
             // 
             // groupBox2
             // 
@@ -626,7 +639,7 @@
             this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox2.Size = new System.Drawing.Size(817, 223);
+            this.groupBox2.Size = new System.Drawing.Size(817, 214);
             this.groupBox2.TabIndex = 23;
             this.groupBox2.TabStop = false;
             // 
@@ -637,12 +650,12 @@
             this.LogisticaDvglListadoTransportes.Name = "LogisticaDvglListadoTransportes";
             this.LogisticaDvglListadoTransportes.RowHeadersWidth = 51;
             this.LogisticaDvglListadoTransportes.RowTemplate.Height = 24;
-            this.LogisticaDvglListadoTransportes.Size = new System.Drawing.Size(942, 167);
+            this.LogisticaDvglListadoTransportes.Size = new System.Drawing.Size(804, 153);
             this.LogisticaDvglListadoTransportes.TabIndex = 19;
             // 
             // LogisticaPnlListadoTransportes
             // 
-            this.LogisticaPnlListadoTransportes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(44)))), ((int)(((byte)(18)))));
+            this.LogisticaPnlListadoTransportes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(138)))), ((int)(((byte)(132)))));
             this.LogisticaPnlListadoTransportes.Controls.Add(this.LogisticaLblTituloListadoTransportes);
             this.LogisticaPnlListadoTransportes.Location = new System.Drawing.Point(7, 10);
             this.LogisticaPnlListadoTransportes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -653,11 +666,11 @@
             // LogisticaLblTituloListadoTransportes
             // 
             this.LogisticaLblTituloListadoTransportes.AutoSize = true;
-            this.LogisticaLblTituloListadoTransportes.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.LogisticaLblTituloListadoTransportes.Font = new System.Drawing.Font("Tahoma", 13.2F);
             this.LogisticaLblTituloListadoTransportes.ForeColor = System.Drawing.Color.White;
-            this.LogisticaLblTituloListadoTransportes.Location = new System.Drawing.Point(63, 9);
+            this.LogisticaLblTituloListadoTransportes.Location = new System.Drawing.Point(63, 4);
             this.LogisticaLblTituloListadoTransportes.Name = "LogisticaLblTituloListadoTransportes";
-            this.LogisticaLblTituloListadoTransportes.Size = new System.Drawing.Size(246, 20);
+            this.LogisticaLblTituloListadoTransportes.Size = new System.Drawing.Size(320, 27);
             this.LogisticaLblTituloListadoTransportes.TabIndex = 9;
             this.LogisticaLblTituloListadoTransportes.Text = "Listado de transportes externos";
             // 
@@ -767,7 +780,7 @@
             // 
             // LogisticaPnlUbicacionActual
             // 
-            this.LogisticaPnlUbicacionActual.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(44)))), ((int)(((byte)(18)))));
+            this.LogisticaPnlUbicacionActual.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(138)))), ((int)(((byte)(132)))));
             this.LogisticaPnlUbicacionActual.Controls.Add(this.LogisticaLblTituloUbicacionActual);
             this.LogisticaPnlUbicacionActual.Location = new System.Drawing.Point(0, 9);
             this.LogisticaPnlUbicacionActual.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -778,11 +791,11 @@
             // LogisticaLblTituloUbicacionActual
             // 
             this.LogisticaLblTituloUbicacionActual.AutoSize = true;
-            this.LogisticaLblTituloUbicacionActual.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.LogisticaLblTituloUbicacionActual.Font = new System.Drawing.Font("Tahoma", 13.2F);
             this.LogisticaLblTituloUbicacionActual.ForeColor = System.Drawing.Color.White;
-            this.LogisticaLblTituloUbicacionActual.Location = new System.Drawing.Point(63, 9);
+            this.LogisticaLblTituloUbicacionActual.Location = new System.Drawing.Point(63, 5);
             this.LogisticaLblTituloUbicacionActual.Name = "LogisticaLblTituloUbicacionActual";
-            this.LogisticaLblTituloUbicacionActual.Size = new System.Drawing.Size(135, 20);
+            this.LogisticaLblTituloUbicacionActual.Size = new System.Drawing.Size(170, 27);
             this.LogisticaLblTituloUbicacionActual.TabIndex = 9;
             this.LogisticaLblTituloUbicacionActual.Text = "Ubicación Actual";
             // 
@@ -804,7 +817,7 @@
             this.LogisticaPnlVehiculoConductor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.LogisticaPnlVehiculoConductor.Name = "LogisticaPnlVehiculoConductor";
             this.LogisticaPnlVehiculoConductor.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.LogisticaPnlVehiculoConductor.Size = new System.Drawing.Size(983, 540);
+            this.LogisticaPnlVehiculoConductor.Size = new System.Drawing.Size(983, 531);
             this.LogisticaPnlVehiculoConductor.TabIndex = 19;
             this.LogisticaPnlVehiculoConductor.TabStop = false;
             // 
@@ -814,6 +827,7 @@
             this.LogisticaTbcTransporteExterno.Controls.Add(this.LogisticaTabIncidencias);
             this.LogisticaTbcTransporteExterno.Controls.Add(this.LogisticaTabHistorial);
             this.LogisticaTbcTransporteExterno.Controls.Add(this.LogisticaTbclListadoTransportes);
+            this.LogisticaTbcTransporteExterno.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LogisticaTbcTransporteExterno.Location = new System.Drawing.Point(4, 180);
             this.LogisticaTbcTransporteExterno.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.LogisticaTbcTransporteExterno.Name = "LogisticaTbcTransporteExterno";
@@ -823,15 +837,16 @@
             // 
             // LogisticaTabProductos
             // 
+            this.LogisticaTabProductos.AutoScroll = true;
             this.LogisticaTabProductos.Controls.Add(this.LogisticaBtnEliminarProducto);
             this.LogisticaTabProductos.Controls.Add(this.LogisticaBtnModificarProducto);
             this.LogisticaTabProductos.Controls.Add(this.LogisticaBtnAgregarProducto);
             this.LogisticaTabProductos.Controls.Add(this.LogisticaDgvProductos);
-            this.LogisticaTabProductos.Location = new System.Drawing.Point(4, 25);
+            this.LogisticaTabProductos.Location = new System.Drawing.Point(4, 30);
             this.LogisticaTabProductos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.LogisticaTabProductos.Name = "LogisticaTabProductos";
             this.LogisticaTabProductos.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.LogisticaTabProductos.Size = new System.Drawing.Size(964, 312);
+            this.LogisticaTabProductos.Size = new System.Drawing.Size(964, 307);
             this.LogisticaTabProductos.TabIndex = 0;
             this.LogisticaTabProductos.Text = "Productos a trasladar";
             this.LogisticaTabProductos.UseVisualStyleBackColor = true;
@@ -893,11 +908,11 @@
             // 
             this.LogisticaTabIncidencias.AutoScroll = true;
             this.LogisticaTabIncidencias.Controls.Add(this.groupBox3);
-            this.LogisticaTabIncidencias.Location = new System.Drawing.Point(4, 25);
+            this.LogisticaTabIncidencias.Location = new System.Drawing.Point(4, 30);
             this.LogisticaTabIncidencias.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.LogisticaTabIncidencias.Name = "LogisticaTabIncidencias";
             this.LogisticaTabIncidencias.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.LogisticaTabIncidencias.Size = new System.Drawing.Size(964, 312);
+            this.LogisticaTabIncidencias.Size = new System.Drawing.Size(964, 307);
             this.LogisticaTabIncidencias.TabIndex = 2;
             this.LogisticaTabIncidencias.Text = "Incidencias";
             this.LogisticaTabIncidencias.UseVisualStyleBackColor = true;
@@ -940,7 +955,7 @@
             this.LogisticaCboTipoIncidencia.Location = new System.Drawing.Point(147, 107);
             this.LogisticaCboTipoIncidencia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.LogisticaCboTipoIncidencia.Name = "LogisticaCboTipoIncidencia";
-            this.LogisticaCboTipoIncidencia.Size = new System.Drawing.Size(266, 24);
+            this.LogisticaCboTipoIncidencia.Size = new System.Drawing.Size(266, 29);
             this.LogisticaCboTipoIncidencia.TabIndex = 20;
             // 
             // LogisticaDtpFechaIncidencia
@@ -950,7 +965,7 @@
             this.LogisticaDtpFechaIncidencia.Location = new System.Drawing.Point(147, 79);
             this.LogisticaDtpFechaIncidencia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.LogisticaDtpFechaIncidencia.Name = "LogisticaDtpFechaIncidencia";
-            this.LogisticaDtpFechaIncidencia.Size = new System.Drawing.Size(266, 22);
+            this.LogisticaDtpFechaIncidencia.Size = new System.Drawing.Size(266, 28);
             this.LogisticaDtpFechaIncidencia.TabIndex = 22;
             // 
             // LogisticaDgvIncidencias
@@ -969,7 +984,7 @@
             // 
             // LogisticaPnlListadoIncidencias
             // 
-            this.LogisticaPnlListadoIncidencias.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(44)))), ((int)(((byte)(18)))));
+            this.LogisticaPnlListadoIncidencias.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(138)))), ((int)(((byte)(132)))));
             this.LogisticaPnlListadoIncidencias.Controls.Add(this.LogisticaLblTituloListadoIncidencias);
             this.LogisticaPnlListadoIncidencias.Location = new System.Drawing.Point(0, 197);
             this.LogisticaPnlListadoIncidencias.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -980,11 +995,11 @@
             // LogisticaLblTituloListadoIncidencias
             // 
             this.LogisticaLblTituloListadoIncidencias.AutoSize = true;
-            this.LogisticaLblTituloListadoIncidencias.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.LogisticaLblTituloListadoIncidencias.Font = new System.Drawing.Font("Tahoma", 13.2F);
             this.LogisticaLblTituloListadoIncidencias.ForeColor = System.Drawing.Color.White;
-            this.LogisticaLblTituloListadoIncidencias.Location = new System.Drawing.Point(63, 9);
+            this.LogisticaLblTituloListadoIncidencias.Location = new System.Drawing.Point(63, 6);
             this.LogisticaLblTituloListadoIncidencias.Name = "LogisticaLblTituloListadoIncidencias";
-            this.LogisticaLblTituloListadoIncidencias.Size = new System.Drawing.Size(176, 20);
+            this.LogisticaLblTituloListadoIncidencias.Size = new System.Drawing.Size(224, 27);
             this.LogisticaLblTituloListadoIncidencias.TabIndex = 9;
             this.LogisticaLblTituloListadoIncidencias.Text = "Listado de incidencias";
             // 
@@ -1077,7 +1092,7 @@
             // 
             // LogisticaPnlRegistroIncidencia
             // 
-            this.LogisticaPnlRegistroIncidencia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(44)))), ((int)(((byte)(18)))));
+            this.LogisticaPnlRegistroIncidencia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(138)))), ((int)(((byte)(132)))));
             this.LogisticaPnlRegistroIncidencia.Controls.Add(this.LogisticaLblTituloRegistroIncidencia);
             this.LogisticaPnlRegistroIncidencia.Location = new System.Drawing.Point(1, 9);
             this.LogisticaPnlRegistroIncidencia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1088,11 +1103,11 @@
             // LogisticaLblTituloRegistroIncidencia
             // 
             this.LogisticaLblTituloRegistroIncidencia.AutoSize = true;
-            this.LogisticaLblTituloRegistroIncidencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.LogisticaLblTituloRegistroIncidencia.Font = new System.Drawing.Font("Tahoma", 13.2F);
             this.LogisticaLblTituloRegistroIncidencia.ForeColor = System.Drawing.Color.White;
-            this.LogisticaLblTituloRegistroIncidencia.Location = new System.Drawing.Point(63, 9);
+            this.LogisticaLblTituloRegistroIncidencia.Location = new System.Drawing.Point(63, 5);
             this.LogisticaLblTituloRegistroIncidencia.Name = "LogisticaLblTituloRegistroIncidencia";
-            this.LogisticaLblTituloRegistroIncidencia.Size = new System.Drawing.Size(184, 20);
+            this.LogisticaLblTituloRegistroIncidencia.Size = new System.Drawing.Size(235, 27);
             this.LogisticaLblTituloRegistroIncidencia.TabIndex = 9;
             this.LogisticaLblTituloRegistroIncidencia.Text = "Registro de incidencias";
             // 
@@ -1159,11 +1174,11 @@
             this.LogisticaTabHistorial.Controls.Add(this.LogisticaDtpHistorialDesde);
             this.LogisticaTabHistorial.Controls.Add(this.LogisticaLblHistorialDesde);
             this.LogisticaTabHistorial.Controls.Add(this.LogisticaPnlFiltroHistorial);
-            this.LogisticaTabHistorial.Location = new System.Drawing.Point(4, 25);
+            this.LogisticaTabHistorial.Location = new System.Drawing.Point(4, 30);
             this.LogisticaTabHistorial.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.LogisticaTabHistorial.Name = "LogisticaTabHistorial";
             this.LogisticaTabHistorial.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.LogisticaTabHistorial.Size = new System.Drawing.Size(964, 312);
+            this.LogisticaTabHistorial.Size = new System.Drawing.Size(964, 307);
             this.LogisticaTabHistorial.TabIndex = 3;
             this.LogisticaTabHistorial.Text = "Historial";
             this.LogisticaTabHistorial.UseVisualStyleBackColor = true;
@@ -1196,7 +1211,7 @@
             // 
             // LogisticaPnlHistorial
             // 
-            this.LogisticaPnlHistorial.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(44)))), ((int)(((byte)(18)))));
+            this.LogisticaPnlHistorial.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(138)))), ((int)(((byte)(132)))));
             this.LogisticaPnlHistorial.Controls.Add(this.LogisticaLblTituloHistorial);
             this.LogisticaPnlHistorial.Location = new System.Drawing.Point(5, 110);
             this.LogisticaPnlHistorial.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1207,11 +1222,11 @@
             // LogisticaLblTituloHistorial
             // 
             this.LogisticaLblTituloHistorial.AutoSize = true;
-            this.LogisticaLblTituloHistorial.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.LogisticaLblTituloHistorial.Font = new System.Drawing.Font("Tahoma", 13.2F);
             this.LogisticaLblTituloHistorial.ForeColor = System.Drawing.Color.White;
-            this.LogisticaLblTituloHistorial.Location = new System.Drawing.Point(63, 9);
+            this.LogisticaLblTituloHistorial.Location = new System.Drawing.Point(63, 5);
             this.LogisticaLblTituloHistorial.Name = "LogisticaLblTituloHistorial";
-            this.LogisticaLblTituloHistorial.Size = new System.Drawing.Size(176, 20);
+            this.LogisticaLblTituloHistorial.Size = new System.Drawing.Size(229, 27);
             this.LogisticaLblTituloHistorial.TabIndex = 9;
             this.LogisticaLblTituloHistorial.Text = "Historial de transporte";
             // 
@@ -1242,16 +1257,16 @@
             this.LogisticaDtpHistorialHasta.Location = new System.Drawing.Point(409, 54);
             this.LogisticaDtpHistorialHasta.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.LogisticaDtpHistorialHasta.Name = "LogisticaDtpHistorialHasta";
-            this.LogisticaDtpHistorialHasta.Size = new System.Drawing.Size(156, 22);
+            this.LogisticaDtpHistorialHasta.Size = new System.Drawing.Size(156, 28);
             this.LogisticaDtpHistorialHasta.TabIndex = 27;
             // 
             // LogisticaLblHistorialHasta
             // 
             this.LogisticaLblHistorialHasta.AutoSize = true;
-            this.LogisticaLblHistorialHasta.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.LogisticaLblHistorialHasta.Font = new System.Drawing.Font("Tahoma", 8F);
             this.LogisticaLblHistorialHasta.Location = new System.Drawing.Point(301, 57);
             this.LogisticaLblHistorialHasta.Name = "LogisticaLblHistorialHasta";
-            this.LogisticaLblHistorialHasta.Size = new System.Drawing.Size(101, 17);
+            this.LogisticaLblHistorialHasta.Size = new System.Drawing.Size(96, 17);
             this.LogisticaLblHistorialHasta.TabIndex = 26;
             this.LogisticaLblHistorialHasta.Text = "Fechas hasta: ";
             // 
@@ -1262,22 +1277,22 @@
             this.LogisticaDtpHistorialDesde.Location = new System.Drawing.Point(127, 54);
             this.LogisticaDtpHistorialDesde.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.LogisticaDtpHistorialDesde.Name = "LogisticaDtpHistorialDesde";
-            this.LogisticaDtpHistorialDesde.Size = new System.Drawing.Size(156, 22);
+            this.LogisticaDtpHistorialDesde.Size = new System.Drawing.Size(156, 28);
             this.LogisticaDtpHistorialDesde.TabIndex = 25;
             // 
             // LogisticaLblHistorialDesde
             // 
             this.LogisticaLblHistorialDesde.AutoSize = true;
-            this.LogisticaLblHistorialDesde.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.LogisticaLblHistorialDesde.Font = new System.Drawing.Font("Tahoma", 8F);
             this.LogisticaLblHistorialDesde.Location = new System.Drawing.Point(15, 57);
             this.LogisticaLblHistorialDesde.Name = "LogisticaLblHistorialDesde";
-            this.LogisticaLblHistorialDesde.Size = new System.Drawing.Size(105, 17);
+            this.LogisticaLblHistorialDesde.Size = new System.Drawing.Size(99, 17);
             this.LogisticaLblHistorialDesde.TabIndex = 24;
             this.LogisticaLblHistorialDesde.Text = "Fechas desde: ";
             // 
             // LogisticaPnlFiltroHistorial
             // 
-            this.LogisticaPnlFiltroHistorial.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(44)))), ((int)(((byte)(18)))));
+            this.LogisticaPnlFiltroHistorial.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(138)))), ((int)(((byte)(132)))));
             this.LogisticaPnlFiltroHistorial.Controls.Add(this.LogisticaLblTituloFiltrosHistorial);
             this.LogisticaPnlFiltroHistorial.Location = new System.Drawing.Point(5, 5);
             this.LogisticaPnlFiltroHistorial.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1288,21 +1303,21 @@
             // LogisticaLblTituloFiltrosHistorial
             // 
             this.LogisticaLblTituloFiltrosHistorial.AutoSize = true;
-            this.LogisticaLblTituloFiltrosHistorial.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.LogisticaLblTituloFiltrosHistorial.Font = new System.Drawing.Font("Tahoma", 13.2F);
             this.LogisticaLblTituloFiltrosHistorial.ForeColor = System.Drawing.Color.White;
-            this.LogisticaLblTituloFiltrosHistorial.Location = new System.Drawing.Point(63, 9);
+            this.LogisticaLblTituloFiltrosHistorial.Location = new System.Drawing.Point(63, 5);
             this.LogisticaLblTituloFiltrosHistorial.Name = "LogisticaLblTituloFiltrosHistorial";
-            this.LogisticaLblTituloFiltrosHistorial.Size = new System.Drawing.Size(156, 20);
+            this.LogisticaLblTituloFiltrosHistorial.Size = new System.Drawing.Size(202, 27);
             this.LogisticaLblTituloFiltrosHistorial.TabIndex = 9;
             this.LogisticaLblTituloFiltrosHistorial.Text = "Filtros de búsqueda";
             // 
             // LogisticaTbclListadoTransportes
             // 
             this.LogisticaTbclListadoTransportes.Controls.Add(this.groupBox1);
-            this.LogisticaTbclListadoTransportes.Location = new System.Drawing.Point(4, 25);
+            this.LogisticaTbclListadoTransportes.Location = new System.Drawing.Point(4, 30);
             this.LogisticaTbclListadoTransportes.Name = "LogisticaTbclListadoTransportes";
             this.LogisticaTbclListadoTransportes.Padding = new System.Windows.Forms.Padding(3);
-            this.LogisticaTbclListadoTransportes.Size = new System.Drawing.Size(964, 312);
+            this.LogisticaTbclListadoTransportes.Size = new System.Drawing.Size(964, 307);
             this.LogisticaTbclListadoTransportes.TabIndex = 4;
             this.LogisticaTbclListadoTransportes.Text = "Solicitud de pagos";
             this.LogisticaTbclListadoTransportes.UseVisualStyleBackColor = true;
@@ -1410,7 +1425,7 @@
             // 
             // LogisticaPnlSolicitudDePagos
             // 
-            this.LogisticaPnlSolicitudDePagos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(44)))), ((int)(((byte)(18)))));
+            this.LogisticaPnlSolicitudDePagos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(138)))), ((int)(((byte)(132)))));
             this.LogisticaPnlSolicitudDePagos.Controls.Add(this.LogisticaLblTituloSolicitudDePagos);
             this.LogisticaPnlSolicitudDePagos.Location = new System.Drawing.Point(-3, 10);
             this.LogisticaPnlSolicitudDePagos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1421,11 +1436,11 @@
             // LogisticaLblTituloSolicitudDePagos
             // 
             this.LogisticaLblTituloSolicitudDePagos.AutoSize = true;
-            this.LogisticaLblTituloSolicitudDePagos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.LogisticaLblTituloSolicitudDePagos.Font = new System.Drawing.Font("Tahoma", 13.2F);
             this.LogisticaLblTituloSolicitudDePagos.ForeColor = System.Drawing.Color.White;
-            this.LogisticaLblTituloSolicitudDePagos.Location = new System.Drawing.Point(63, 9);
+            this.LogisticaLblTituloSolicitudDePagos.Location = new System.Drawing.Point(63, 5);
             this.LogisticaLblTituloSolicitudDePagos.Name = "LogisticaLblTituloSolicitudDePagos";
-            this.LogisticaLblTituloSolicitudDePagos.Size = new System.Drawing.Size(146, 20);
+            this.LogisticaLblTituloSolicitudDePagos.Size = new System.Drawing.Size(188, 27);
             this.LogisticaLblTituloSolicitudDePagos.TabIndex = 9;
             this.LogisticaLblTituloSolicitudDePagos.Text = "Solicitud de pagos";
             // 
@@ -1461,7 +1476,7 @@
             // 
             // LogisticaPnlEncabezadoVehiculoConductor
             // 
-            this.LogisticaPnlEncabezadoVehiculoConductor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(44)))), ((int)(((byte)(18)))));
+            this.LogisticaPnlEncabezadoVehiculoConductor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(138)))), ((int)(((byte)(132)))));
             this.LogisticaPnlEncabezadoVehiculoConductor.Controls.Add(this.LogisticaLblTituloVehiculoConductor);
             this.LogisticaPnlEncabezadoVehiculoConductor.Location = new System.Drawing.Point(1, 9);
             this.LogisticaPnlEncabezadoVehiculoConductor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1472,11 +1487,11 @@
             // LogisticaLblTituloVehiculoConductor
             // 
             this.LogisticaLblTituloVehiculoConductor.AutoSize = true;
-            this.LogisticaLblTituloVehiculoConductor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.LogisticaLblTituloVehiculoConductor.Font = new System.Drawing.Font("Tahoma", 13.2F);
             this.LogisticaLblTituloVehiculoConductor.ForeColor = System.Drawing.Color.White;
-            this.LogisticaLblTituloVehiculoConductor.Location = new System.Drawing.Point(63, 9);
+            this.LogisticaLblTituloVehiculoConductor.Location = new System.Drawing.Point(63, 4);
             this.LogisticaLblTituloVehiculoConductor.Name = "LogisticaLblTituloVehiculoConductor";
-            this.LogisticaLblTituloVehiculoConductor.Size = new System.Drawing.Size(165, 20);
+            this.LogisticaLblTituloVehiculoConductor.Size = new System.Drawing.Size(213, 27);
             this.LogisticaLblTituloVehiculoConductor.TabIndex = 9;
             this.LogisticaLblTituloVehiculoConductor.Text = "Vehículo y conductor";
             // 
@@ -1533,20 +1548,20 @@
             // LogisticaLblTipoVehiculo
             // 
             this.LogisticaLblTipoVehiculo.AutoSize = true;
-            this.LogisticaLblTipoVehiculo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.LogisticaLblTipoVehiculo.Font = new System.Drawing.Font("Tahoma", 8F);
             this.LogisticaLblTipoVehiculo.Location = new System.Drawing.Point(7, 103);
             this.LogisticaLblTipoVehiculo.Name = "LogisticaLblTipoVehiculo";
-            this.LogisticaLblTipoVehiculo.Size = new System.Drawing.Size(116, 17);
+            this.LogisticaLblTipoVehiculo.Size = new System.Drawing.Size(112, 17);
             this.LogisticaLblTipoVehiculo.TabIndex = 1;
             this.LogisticaLblTipoVehiculo.Text = "Tipo de vehículo:";
             // 
             // LogisticaLblPlaca
             // 
             this.LogisticaLblPlaca.AutoSize = true;
-            this.LogisticaLblPlaca.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.LogisticaLblPlaca.Font = new System.Drawing.Font("Tahoma", 8F);
             this.LogisticaLblPlaca.Location = new System.Drawing.Point(7, 73);
             this.LogisticaLblPlaca.Name = "LogisticaLblPlaca";
-            this.LogisticaLblPlaca.Size = new System.Drawing.Size(47, 17);
+            this.LogisticaLblPlaca.Size = new System.Drawing.Size(44, 17);
             this.LogisticaLblPlaca.TabIndex = 0;
             this.LogisticaLblPlaca.Text = "Placa:";
             // 
@@ -1660,7 +1675,7 @@
             // 
             // LogisticaPnlEncabezadoCostosServicio
             // 
-            this.LogisticaPnlEncabezadoCostosServicio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(44)))), ((int)(((byte)(18)))));
+            this.LogisticaPnlEncabezadoCostosServicio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(138)))), ((int)(((byte)(132)))));
             this.LogisticaPnlEncabezadoCostosServicio.Controls.Add(this.LogisticaLblTituloCostoServicio);
             this.LogisticaPnlEncabezadoCostosServicio.Location = new System.Drawing.Point(0, 9);
             this.LogisticaPnlEncabezadoCostosServicio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1671,11 +1686,11 @@
             // LogisticaLblTituloCostoServicio
             // 
             this.LogisticaLblTituloCostoServicio.AutoSize = true;
-            this.LogisticaLblTituloCostoServicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.LogisticaLblTituloCostoServicio.Font = new System.Drawing.Font("Tahoma", 13.2F);
             this.LogisticaLblTituloCostoServicio.ForeColor = System.Drawing.Color.White;
-            this.LogisticaLblTituloCostoServicio.Location = new System.Drawing.Point(63, 9);
+            this.LogisticaLblTituloCostoServicio.Location = new System.Drawing.Point(63, 4);
             this.LogisticaLblTituloCostoServicio.Name = "LogisticaLblTituloCostoServicio";
-            this.LogisticaLblTituloCostoServicio.Size = new System.Drawing.Size(143, 20);
+            this.LogisticaLblTituloCostoServicio.Size = new System.Drawing.Size(182, 27);
             this.LogisticaLblTituloCostoServicio.TabIndex = 9;
             this.LogisticaLblTituloCostoServicio.Text = "Costo del servicio";
             // 
@@ -1703,16 +1718,21 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(246)))), ((int)(((byte)(242)))));
-            this.ClientSize = new System.Drawing.Size(1924, 967);
+            this.ClientSize = new System.Drawing.Size(1823, 938);
             this.Controls.Add(this.LogisticaPnlTransporteExterno);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MaximizeBox = false;
             this.Name = "FrmTransporteExterno";
-            this.Text = "Transporte Externo";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "5012 - Transporte Externo";
             this.LogisticaPnlInfoTransporteExterno.ResumeLayout(false);
             this.LogisticaPnlInfoTransporteExterno.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.LogisticaPnlEncabezadoInfTransporteExterno.ResumeLayout(false);
+            this.LogisticaPnlEncabezadoInfTransporteExterno.PerformLayout();
             this.LogisticaPnlOrigenDestino.ResumeLayout(false);
             this.LogisticaPnlOrigenDestino.PerformLayout();
             this.LogisticaPnlEncabezadoOrigenDestino.ResumeLayout(false);
@@ -1722,6 +1742,7 @@
             this.LogisticaPnlEncabezadoFechasServicio.ResumeLayout(false);
             this.LogisticaPnlEncabezadoFechasServicio.PerformLayout();
             this.LogisticaPnlTransporteExterno.ResumeLayout(false);
+            this.LogisticaPnlTransporteExterno.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.LogisticaDvglListadoTransportes)).EndInit();
             this.LogisticaPnlListadoTransportes.ResumeLayout(false);
@@ -1792,7 +1813,7 @@
         private System.Windows.Forms.Label LogisticaLblDireccionOrigen;
         private System.Windows.Forms.Label LogisticaLblOrigen;
         private System.Windows.Forms.Panel LogisticaPnlEncabezadoOrigenDestino;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel LogisticaPnlEncabezadoInfTransporteExterno;
         private System.Windows.Forms.Label LogisticaLblTituloTransporteExterno;
         private System.Windows.Forms.GroupBox LogisticaPnlFechasServicio;
         private System.Windows.Forms.Panel LogisticaPnlEncabezadoFechasServicio;
@@ -1900,6 +1921,7 @@
         private System.Windows.Forms.ComboBox LogisticaCboMoneda;
         private System.Windows.Forms.ComboBox LogisticaCboTipoPago;
         private System.Windows.Forms.Label LogisticaLblTipoPago;
+        private System.Windows.Forms.Label label1;
     }
 }
 

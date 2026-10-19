@@ -465,7 +465,7 @@
             this.MaximizeBox = false;
             this.Name = "FrmCapacitacion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "9401 - Capacitaciones";
+            this.Text = "9301 - Capacitaciones";
             this.RrhhPnlInstCapacitacion.ResumeLayout(false);
             this.RrhhPnlInstCapacitacion.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.RrhhPbTipPCapacitacion)).EndInit();

@@ -2294,7 +2294,7 @@ namespace CapaVista_PermisosVacaciones.Formularios
             this.MaximizeBox = false;
             this.Name = "FrmPermisosVacaciones";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "9301 - PermisosVacaciones";
+            this.Text = "9201 - PermisosVacaciones";
             this.RrhhTabPermisosVacaciones.ResumeLayout(false);
             this.RrhhTabPagPermisos.ResumeLayout(false);
             this.RrhhPnlDetallePermiso.ResumeLayout(false);

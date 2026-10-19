@@ -523,7 +523,7 @@
             this.MaximizeBox = false;
             this.Name = "FrmLiquidacionEmpleados";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "9801 - LiquidacionDeEmpleados";
+            this.Text = "9701 - LiquidacionDeEmpleados";
             this.RrhhPnlPrincipal.ResumeLayout(false);
             this.RrhhPnlPrincipal.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.RrhhDtvLiquidacionDetalle)).EndInit();

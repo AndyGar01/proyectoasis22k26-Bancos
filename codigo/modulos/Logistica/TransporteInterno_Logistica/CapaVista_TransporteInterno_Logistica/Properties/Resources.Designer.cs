@@ -73,6 +73,16 @@ namespace CapaVista_TransporteInterno_Logistica.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap f844b316_02c8_41af_9c16_226a1ef14d22 {
+            get {
+                object obj = ResourceManager.GetObject("f844b316-02c8-41af-9c16-226a1ef14d22", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap FondoLogistica {
             get {
                 object obj = ResourceManager.GetObject("FondoLogistica", resourceCulture);

@@ -1,11 +1,11 @@
-﻿using CapaModelo_TipoCuentaBancaria.Entidades;
+﻿using CapaModelo_AutorizacionOrdenes.Entidades;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CapaModelo_TipoCuentaBancaria.Contratos
+namespace CapaModelo_AutorizacionOrdenes.Contratos
 {
     public interface IRepositorioTipoCuentaBancaria : IRepositorioGenerico<ClsTipoCuentaBancaria>
     {

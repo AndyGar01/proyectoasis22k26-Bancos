@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CapaModelo_TipoCuentaBancaria.Repositorios
+namespace CapaModelo_AutorizacionOrdenes.Repositorios
 {
     public abstract class ClsConexion
     {
@@ -13,7 +13,7 @@ namespace CapaModelo_TipoCuentaBancaria.Repositorios
 
         public ClsConexion()
         {
-            _ConnectionString = "Dsn=EmbutidosS.A_Bancos";
+            _ConnectionString = "Dsn=EmbutidosS.A";
         }
 
         protected OdbcConnection BancosMetObtenerConexion()

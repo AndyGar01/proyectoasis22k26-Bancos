@@ -1,5 +1,5 @@
-﻿using CapaModelo_TipoCuentaBancaria.Contratos;
-using CapaModelo_TipoCuentaBancaria.Entidades;
+﻿using CapaModelo_AutorizacionOrdenes.Contratos;
+using CapaModelo_AutorizacionOrdenes.Entidades;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CapaModelo_TipoCuentaBancaria.Repositorios
+namespace CapaModelo_AutorizacionOrdenes.Repositorios
 {
     public class ClsRepositorioTipoCuentaBancaria : ClsSentencias, IRepositorioTipoCuentaBancaria
     {

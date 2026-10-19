@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CapaModelo_TipoCuentaBancaria.Repositorios
+namespace CapaModelo_AutorizacionOrdenes.Repositorios
 {
     public abstract class ClsSentencias : ClsConexion
     {
@@ -77,5 +77,4 @@ namespace CapaModelo_TipoCuentaBancaria.Repositorios
             }
         }
     }
-    }
-
+}

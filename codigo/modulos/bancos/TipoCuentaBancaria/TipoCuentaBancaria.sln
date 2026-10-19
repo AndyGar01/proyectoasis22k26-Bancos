@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.37614.0 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaVista_TipoCuentaBancaria", "CapaVista_TipoCuentaBancaria\CapaVista_TipoCuentaBancaria.csproj", "{025A2E03-76AB-4EF5-8E64-2A9DD544E113}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaControlador_TipoCuentaBancaria", "CapaControlador_TipoCuentaBancaria\CapaControlador_TipoCuentaBancaria.csproj", "{786636C5-DF44-4883-AA75-0B6588E619D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaModelo_TipoCuentaBancaria", "CapaModelo_TipoCuentaBancaria\CapaModelo_TipoCuentaBancaria.csproj", "{E13DAAE1-E2C7-4D27-8B68-9D56676992CA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{025A2E03-76AB-4EF5-8E64-2A9DD544E113}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{025A2E03-76AB-4EF5-8E64-2A9DD544E113}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{025A2E03-76AB-4EF5-8E64-2A9DD544E113}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{025A2E03-76AB-4EF5-8E64-2A9DD544E113}.Release|Any CPU.Build.0 = Release|Any CPU
+		{786636C5-DF44-4883-AA75-0B6588E619D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{786636C5-DF44-4883-AA75-0B6588E619D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{786636C5-DF44-4883-AA75-0B6588E619D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{786636C5-DF44-4883-AA75-0B6588E619D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E13DAAE1-E2C7-4D27-8B68-9D56676992CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E13DAAE1-E2C7-4D27-8B68-9D56676992CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E13DAAE1-E2C7-4D27-8B68-9D56676992CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E13DAAE1-E2C7-4D27-8B68-9D56676992CA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6F2AE745-A8A8-4B62-A55E-02AE6FA5F2D6}
+	EndGlobalSection
+EndGlobal

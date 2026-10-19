@@ -57,9 +57,9 @@
             this.LogisticaLblBodegaDestino = new System.Windows.Forms.Label();
             this.LogisticaLblBodegaOrigen = new System.Windows.Forms.Label();
             this.LogisticaPnlEncabezadoDetalleTraslado = new System.Windows.Forms.Panel();
+            this.LogisticaBtnAyudaTraslados = new System.Windows.Forms.Button();
             this.LogisticaLblSubtituloDetalleTraslados = new System.Windows.Forms.Label();
             this.LogisticaLblTituloDetalleTraslados = new System.Windows.Forms.Label();
-            this.LogisticaBtnAyudaTraslados = new System.Windows.Forms.Button();
             this.LogisticaPnlDetalleTraslados.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LogisticaDgvDetalleTraslados)).BeginInit();
             this.LogisticaPnlDatosTraslados.SuspendLayout();
@@ -356,6 +356,19 @@
             this.LogisticaPnlEncabezadoDetalleTraslado.Size = new System.Drawing.Size(1154, 122);
             this.LogisticaPnlEncabezadoDetalleTraslado.TabIndex = 3;
             // 
+            // LogisticaBtnAyudaTraslados
+            // 
+            this.LogisticaBtnAyudaTraslados.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(216)))), ((int)(((byte)(197)))));
+            this.LogisticaBtnAyudaTraslados.BackgroundImage = global::CapaVista_Traslados_Logistica.Properties.Resources.btn_ayuda;
+            this.LogisticaBtnAyudaTraslados.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.LogisticaBtnAyudaTraslados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.LogisticaBtnAyudaTraslados.ForeColor = System.Drawing.Color.Transparent;
+            this.LogisticaBtnAyudaTraslados.Location = new System.Drawing.Point(1054, 30);
+            this.LogisticaBtnAyudaTraslados.Name = "LogisticaBtnAyudaTraslados";
+            this.LogisticaBtnAyudaTraslados.Size = new System.Drawing.Size(65, 65);
+            this.LogisticaBtnAyudaTraslados.TabIndex = 24;
+            this.LogisticaBtnAyudaTraslados.UseVisualStyleBackColor = false;
+            // 
             // LogisticaLblSubtituloDetalleTraslados
             // 
             this.LogisticaLblSubtituloDetalleTraslados.AutoSize = true;
@@ -378,19 +391,6 @@
             this.LogisticaLblTituloDetalleTraslados.TabIndex = 2;
             this.LogisticaLblTituloDetalleTraslados.Text = "DETALLE TRASLADOS";
             // 
-            // LogisticaBtnAyudaTraslados
-            // 
-            this.LogisticaBtnAyudaTraslados.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(216)))), ((int)(((byte)(197)))));
-            this.LogisticaBtnAyudaTraslados.BackgroundImage = global::CapaVista_Traslados_Logistica.Properties.Resources.btn_ayuda;
-            this.LogisticaBtnAyudaTraslados.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.LogisticaBtnAyudaTraslados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.LogisticaBtnAyudaTraslados.ForeColor = System.Drawing.Color.Transparent;
-            this.LogisticaBtnAyudaTraslados.Location = new System.Drawing.Point(1054, 30);
-            this.LogisticaBtnAyudaTraslados.Name = "LogisticaBtnAyudaTraslados";
-            this.LogisticaBtnAyudaTraslados.Size = new System.Drawing.Size(65, 65);
-            this.LogisticaBtnAyudaTraslados.TabIndex = 24;
-            this.LogisticaBtnAyudaTraslados.UseVisualStyleBackColor = false;
-            // 
             // FrmDetalleTraslados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -400,10 +400,12 @@
             this.Controls.Add(this.LogisticaPnlDetalleTraslados);
             this.Controls.Add(this.LogisticaPnlDatosTraslados);
             this.Controls.Add(this.LogisticaPnlEncabezadoDetalleTraslado);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "FrmDetalleTraslados";
-            this.Text = "5006 - FrmDetalleTraslados";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "5017 - FrmDetalleTraslados";
             this.LogisticaPnlDetalleTraslados.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.LogisticaDgvDetalleTraslados)).EndInit();
             this.LogisticaPnlDatosTraslados.ResumeLayout(false);

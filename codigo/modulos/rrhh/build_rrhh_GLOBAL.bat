@@ -74,6 +74,7 @@ set "FALLIDOS=%LOG_DIR%\fallidos.txt"
 set "FALL_PASS=%LOG_DIR%\fallidos_pasada.txt"
 set "FALT=%LOG_DIR%\referencias_faltantes.txt"
 set "FALT_DET=%LOG_DIR%\referencias_faltantes_detalle.txt"
+set "IDX=%LOG_DIR%\indice_csproj.txt"
 if exist "%FALLIDOS%" del "%FALLIDOS%"
 if exist "%FALL_PASS%" del "%FALL_PASS%"
 echo Compilacion iniciada: %date% %time% > "%LOG_FILE%"
@@ -152,6 +153,11 @@ goto FIN_ERROR
 :MSBUILD_LISTO
 echo MSBuild: %MSBUILD_PATH%
 echo MSBuild: %MSBUILD_PATH% >> "%LOG_FILE%"
+
+:: Indice de todos los .csproj del repositorio (se recorre el disco UNA sola vez;
+:: las busquedas de dependencias consultan este archivo y son instantaneas).
+echo Indexando proyectos del repositorio...
+dir /s /b "%REPO_ROOT%\*.csproj" > "%IDX%" 2>nul
 
 :: --------------------------------------------------------------------------
 :: 4) COMPILAR EN ORDEN: CONSULTAS, NAVEGADOR, SEGURIDAD
@@ -476,7 +482,14 @@ exit /b 0
 
 :BuscarProyecto
 set "BP=%~1"
-for /r "%REPO_ROOT%" %%c in (%BP%.csproj) do call :CompilarExterno "%%~fc"
+set "ENC_ACUM=%ENCONTRADO%"
+set "ENCONTRADO=0"
+:: 1) por nombre del .csproj
+for /f "usebackq delims=" %%c in (`findstr /i /l /e /c:"\%BP%.csproj" "%IDX%"`) do call :CompilarExterno "%%c"
+:: 2) si no existe asi, por nombre de carpeta (carpetas con error de tipeo, ej.
+::    CapaContolador_CierreNominas que contiene CapaControlador_CierreNominas.csproj)
+if "%ENCONTRADO%"=="0" for /f "usebackq delims=" %%c in (`findstr /i /r /c:"\\%BP%\\.*\.csproj$" "%IDX%"`) do call :CompilarExterno "%%c"
+if "%ENC_ACUM%"=="1" set "ENCONTRADO=1"
 exit /b 0
 
 :CompilarExterno

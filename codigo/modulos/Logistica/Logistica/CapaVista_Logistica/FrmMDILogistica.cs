@@ -28,8 +28,8 @@ namespace CapaVista_Logistica
 
         private void LogisticaBtnCatalogo_Click(object sender, EventArgs e)
         {
-            
-
+            CapaVista_Inventario_Logistica.Formas.FrmMantenimientoProducto frmMantenimientoProducto = new CapaVista_Inventario_Logistica.Formas.FrmMantenimientoProducto();
+            frmMantenimientoProducto.ShowDialog();
         }
 
         private void LogisticaMetActualizarInfoUsuario(string Nombre, string Rol)
@@ -38,5 +38,11 @@ namespace CapaVista_Logistica
             LogisticaLblRolUsuario.Text = Rol;  
             LogisticaLbUsuarioRol.Left = LogisticaLblUsuario.Right + 30;
         }
-}
+
+        private void LogisticaBtnInventario_Click(object sender, EventArgs e)
+        {
+            CapaVista_Inventario_Logistica.Formas.FrmMantenimientoStock frmMantenimientoStock = new CapaVista_Inventario_Logistica.Formas.FrmMantenimientoStock();
+            frmMantenimientoStock.ShowDialog();
+        }
+    }
 }

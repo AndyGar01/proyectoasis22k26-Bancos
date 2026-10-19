@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMDILogistica));
             this.LogisticaPnlMDI = new System.Windows.Forms.Panel();
-            this.LogisticaLbUsuarioRol = new System.Windows.Forms.Label();
             this.LogisticaLblRolUsuario = new System.Windows.Forms.Label();
             this.LogisticaLblUsuario = new System.Windows.Forms.Label();
             this.LogisticaPnlNavegador = new System.Windows.Forms.Panel();
@@ -45,6 +44,7 @@
             this.LogisticaBtnUbicaciones = new System.Windows.Forms.Button();
             this.LogisticaPbLogo = new System.Windows.Forms.PictureBox();
             this.LogisticaPnlBanner = new System.Windows.Forms.Panel();
+            this.LogisticaLbUsuarioRol = new System.Windows.Forms.Label();
             this.LogisticaPbInformacion = new System.Windows.Forms.PictureBox();
             this.LogisticaBtnAyuda = new System.Windows.Forms.Button();
             this.LogisticaLblResumen = new System.Windows.Forms.Label();
@@ -60,7 +60,15 @@
             this.LogisticaLblModuloLogistica = new System.Windows.Forms.Label();
             this.LogisticaLblBienvenida = new System.Windows.Forms.Label();
             this.LogisticaPbDonButti = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.LogisticaBtnHamburguesa = new System.Windows.Forms.Button();
+            this.LogisticaLblResumenEstructura = new System.Windows.Forms.Label();
+            this.LogisticaLblResumenCatalogo = new System.Windows.Forms.Label();
+            this.LogisticaLblResumenGestionTransporte = new System.Windows.Forms.Label();
+            this.LogisticaLblResumenInventario = new System.Windows.Forms.Label();
+            this.LogisticaLblResumenAuditoria = new System.Windows.Forms.Label();
+            this.LogisticaLblResumenGestionTraslado = new System.Windows.Forms.Label();
+            this.LogisticaLblResumenEnlaces = new System.Windows.Forms.Label();
+            this.LogisticaLblResumenCierreInventario = new System.Windows.Forms.Label();
             this.LogisticaPnlMDI.SuspendLayout();
             this.LogisticaPnlNavegador.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LogisticaPbLogo)).BeginInit();
@@ -80,43 +88,39 @@
             // LogisticaPnlMDI
             // 
             this.LogisticaPnlMDI.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(246)))), ((int)(((byte)(242)))));
-            this.LogisticaPnlMDI.Controls.Add(this.LogisticaLbUsuarioRol);
             this.LogisticaPnlMDI.Controls.Add(this.LogisticaLblRolUsuario);
             this.LogisticaPnlMDI.Controls.Add(this.LogisticaLblUsuario);
             this.LogisticaPnlMDI.Controls.Add(this.LogisticaPnlNavegador);
             this.LogisticaPnlMDI.Controls.Add(this.LogisticaPnlBanner);
-            this.LogisticaPnlMDI.Controls.Add(this.button1);
+            this.LogisticaPnlMDI.Controls.Add(this.LogisticaBtnHamburguesa);
             this.LogisticaPnlMDI.Location = new System.Drawing.Point(3, 1);
             this.LogisticaPnlMDI.Name = "LogisticaPnlMDI";
             this.LogisticaPnlMDI.Size = new System.Drawing.Size(1554, 1061);
             this.LogisticaPnlMDI.TabIndex = 0;
             // 
-            // LogisticaLbUsuarioRol
-            // 
-            this.LogisticaLbUsuarioRol.AutoSize = true;
-            this.LogisticaLbUsuarioRol.Location = new System.Drawing.Point(501, 8);
-            this.LogisticaLbUsuarioRol.Name = "LogisticaLbUsuarioRol";
-            this.LogisticaLbUsuarioRol.Size = new System.Drawing.Size(35, 13);
-            this.LogisticaLbUsuarioRol.TabIndex = 13;
-            this.LogisticaLbUsuarioRol.Text = "label1";
-            // 
             // LogisticaLblRolUsuario
             // 
             this.LogisticaLblRolUsuario.AutoSize = true;
-            this.LogisticaLblRolUsuario.Location = new System.Drawing.Point(404, 8);
+            this.LogisticaLblRolUsuario.BackColor = System.Drawing.Color.Transparent;
+            this.LogisticaLblRolUsuario.Font = new System.Drawing.Font("Lucida Fax", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LogisticaLblRolUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(138)))), ((int)(((byte)(132)))));
+            this.LogisticaLblRolUsuario.Location = new System.Drawing.Point(612, 7);
             this.LogisticaLblRolUsuario.Name = "LogisticaLblRolUsuario";
-            this.LogisticaLblRolUsuario.Size = new System.Drawing.Size(35, 13);
+            this.LogisticaLblRolUsuario.Size = new System.Drawing.Size(51, 24);
             this.LogisticaLblRolUsuario.TabIndex = 12;
-            this.LogisticaLblRolUsuario.Text = "label1";
+            this.LogisticaLblRolUsuario.Text = "Rol:";
             // 
             // LogisticaLblUsuario
             // 
             this.LogisticaLblUsuario.AutoSize = true;
-            this.LogisticaLblUsuario.Location = new System.Drawing.Point(347, 9);
+            this.LogisticaLblUsuario.BackColor = System.Drawing.Color.Transparent;
+            this.LogisticaLblUsuario.Font = new System.Drawing.Font("Lucida Fax", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LogisticaLblUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(138)))), ((int)(((byte)(132)))));
+            this.LogisticaLblUsuario.Location = new System.Drawing.Point(311, 8);
             this.LogisticaLblUsuario.Name = "LogisticaLblUsuario";
-            this.LogisticaLblUsuario.Size = new System.Drawing.Size(35, 13);
+            this.LogisticaLblUsuario.Size = new System.Drawing.Size(105, 24);
             this.LogisticaLblUsuario.TabIndex = 11;
-            this.LogisticaLblUsuario.Text = "label1";
+            this.LogisticaLblUsuario.Text = "Usuario: ";
             // 
             // LogisticaPnlNavegador
             // 
@@ -235,6 +239,7 @@
             this.LogisticaBtnInventario.Size = new System.Drawing.Size(264, 42);
             this.LogisticaBtnInventario.TabIndex = 3;
             this.LogisticaBtnInventario.UseVisualStyleBackColor = false;
+            this.LogisticaBtnInventario.Click += new System.EventHandler(this.LogisticaBtnInventario_Click);
             // 
             // LogisticaBtnCatalogo
             // 
@@ -283,6 +288,15 @@
             this.LogisticaPnlBanner.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(246)))), ((int)(((byte)(242)))));
             this.LogisticaPnlBanner.BackgroundImage = global::CapaVista_Logistica.Properties.Resources.panelestandarizado;
             this.LogisticaPnlBanner.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.LogisticaPnlBanner.Controls.Add(this.LogisticaLblResumenEnlaces);
+            this.LogisticaPnlBanner.Controls.Add(this.LogisticaLblResumenCierreInventario);
+            this.LogisticaPnlBanner.Controls.Add(this.LogisticaLblResumenAuditoria);
+            this.LogisticaPnlBanner.Controls.Add(this.LogisticaLblResumenGestionTraslado);
+            this.LogisticaPnlBanner.Controls.Add(this.LogisticaLblResumenGestionTransporte);
+            this.LogisticaPnlBanner.Controls.Add(this.LogisticaLblResumenInventario);
+            this.LogisticaPnlBanner.Controls.Add(this.LogisticaLblResumenCatalogo);
+            this.LogisticaPnlBanner.Controls.Add(this.LogisticaLblResumenEstructura);
+            this.LogisticaPnlBanner.Controls.Add(this.LogisticaLbUsuarioRol);
             this.LogisticaPnlBanner.Controls.Add(this.LogisticaPbInformacion);
             this.LogisticaPnlBanner.Controls.Add(this.LogisticaBtnAyuda);
             this.LogisticaPnlBanner.Controls.Add(this.LogisticaLblResumen);
@@ -303,6 +317,17 @@
             this.LogisticaPnlBanner.Name = "LogisticaPnlBanner";
             this.LogisticaPnlBanner.Size = new System.Drawing.Size(1086, 711);
             this.LogisticaPnlBanner.TabIndex = 2;
+            // 
+            // LogisticaLbUsuarioRol
+            // 
+            this.LogisticaLbUsuarioRol.AutoSize = true;
+            this.LogisticaLbUsuarioRol.BackColor = System.Drawing.Color.Transparent;
+            this.LogisticaLbUsuarioRol.Font = new System.Drawing.Font("Lucida Fax", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LogisticaLbUsuarioRol.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(138)))), ((int)(((byte)(132)))));
+            this.LogisticaLbUsuarioRol.Location = new System.Drawing.Point(549, -25);
+            this.LogisticaLbUsuarioRol.Name = "LogisticaLbUsuarioRol";
+            this.LogisticaLbUsuarioRol.Size = new System.Drawing.Size(0, 24);
+            this.LogisticaLbUsuarioRol.TabIndex = 14;
             // 
             // LogisticaPbInformacion
             // 
@@ -467,17 +492,113 @@
             this.LogisticaPbDonButti.TabIndex = 0;
             this.LogisticaPbDonButti.TabStop = false;
             // 
-            // button1
+            // LogisticaBtnHamburguesa
             // 
-            this.button1.BackgroundImage = global::CapaVista_Logistica.Properties.Resources.btnhamburguesa3;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(279, 8);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(20, 25);
-            this.button1.TabIndex = 10;
-            this.button1.UseVisualStyleBackColor = true;
+            this.LogisticaBtnHamburguesa.BackgroundImage = global::CapaVista_Logistica.Properties.Resources.btnhamburguesa_menu;
+            this.LogisticaBtnHamburguesa.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.LogisticaBtnHamburguesa.FlatAppearance.BorderSize = 0;
+            this.LogisticaBtnHamburguesa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.LogisticaBtnHamburguesa.Location = new System.Drawing.Point(279, 8);
+            this.LogisticaBtnHamburguesa.Name = "LogisticaBtnHamburguesa";
+            this.LogisticaBtnHamburguesa.Size = new System.Drawing.Size(20, 25);
+            this.LogisticaBtnHamburguesa.TabIndex = 10;
+            this.LogisticaBtnHamburguesa.UseVisualStyleBackColor = true;
+            // 
+            // LogisticaLblResumenEstructura
+            // 
+            this.LogisticaLblResumenEstructura.AutoSize = true;
+            this.LogisticaLblResumenEstructura.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(216)))), ((int)(((byte)(197)))));
+            this.LogisticaLblResumenEstructura.Font = new System.Drawing.Font("Lucida Fax", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LogisticaLblResumenEstructura.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(44)))), ((int)(((byte)(18)))));
+            this.LogisticaLblResumenEstructura.Location = new System.Drawing.Point(79, 495);
+            this.LogisticaLblResumenEstructura.Name = "LogisticaLblResumenEstructura";
+            this.LogisticaLblResumenEstructura.Size = new System.Drawing.Size(24, 24);
+            this.LogisticaLblResumenEstructura.TabIndex = 23;
+            this.LogisticaLblResumenEstructura.Text = "0";
+            // 
+            // LogisticaLblResumenCatalogo
+            // 
+            this.LogisticaLblResumenCatalogo.AutoSize = true;
+            this.LogisticaLblResumenCatalogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(216)))), ((int)(((byte)(197)))));
+            this.LogisticaLblResumenCatalogo.Font = new System.Drawing.Font("Lucida Fax", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LogisticaLblResumenCatalogo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(44)))), ((int)(((byte)(18)))));
+            this.LogisticaLblResumenCatalogo.Location = new System.Drawing.Point(206, 495);
+            this.LogisticaLblResumenCatalogo.Name = "LogisticaLblResumenCatalogo";
+            this.LogisticaLblResumenCatalogo.Size = new System.Drawing.Size(24, 24);
+            this.LogisticaLblResumenCatalogo.TabIndex = 24;
+            this.LogisticaLblResumenCatalogo.Text = "0";
+            // 
+            // LogisticaLblResumenGestionTransporte
+            // 
+            this.LogisticaLblResumenGestionTransporte.AutoSize = true;
+            this.LogisticaLblResumenGestionTransporte.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(216)))), ((int)(((byte)(197)))));
+            this.LogisticaLblResumenGestionTransporte.Font = new System.Drawing.Font("Lucida Fax", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LogisticaLblResumenGestionTransporte.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(44)))), ((int)(((byte)(18)))));
+            this.LogisticaLblResumenGestionTransporte.Location = new System.Drawing.Point(460, 495);
+            this.LogisticaLblResumenGestionTransporte.Name = "LogisticaLblResumenGestionTransporte";
+            this.LogisticaLblResumenGestionTransporte.Size = new System.Drawing.Size(24, 24);
+            this.LogisticaLblResumenGestionTransporte.TabIndex = 26;
+            this.LogisticaLblResumenGestionTransporte.Text = "0";
+            // 
+            // LogisticaLblResumenInventario
+            // 
+            this.LogisticaLblResumenInventario.AutoSize = true;
+            this.LogisticaLblResumenInventario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(216)))), ((int)(((byte)(197)))));
+            this.LogisticaLblResumenInventario.Font = new System.Drawing.Font("Lucida Fax", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LogisticaLblResumenInventario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(44)))), ((int)(((byte)(18)))));
+            this.LogisticaLblResumenInventario.Location = new System.Drawing.Point(333, 495);
+            this.LogisticaLblResumenInventario.Name = "LogisticaLblResumenInventario";
+            this.LogisticaLblResumenInventario.Size = new System.Drawing.Size(24, 24);
+            this.LogisticaLblResumenInventario.TabIndex = 25;
+            this.LogisticaLblResumenInventario.Text = "0";
+            // 
+            // LogisticaLblResumenAuditoria
+            // 
+            this.LogisticaLblResumenAuditoria.AutoSize = true;
+            this.LogisticaLblResumenAuditoria.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(216)))), ((int)(((byte)(197)))));
+            this.LogisticaLblResumenAuditoria.Font = new System.Drawing.Font("Lucida Fax", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LogisticaLblResumenAuditoria.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(44)))), ((int)(((byte)(18)))));
+            this.LogisticaLblResumenAuditoria.Location = new System.Drawing.Point(709, 495);
+            this.LogisticaLblResumenAuditoria.Name = "LogisticaLblResumenAuditoria";
+            this.LogisticaLblResumenAuditoria.Size = new System.Drawing.Size(24, 24);
+            this.LogisticaLblResumenAuditoria.TabIndex = 28;
+            this.LogisticaLblResumenAuditoria.Text = "0";
+            // 
+            // LogisticaLblResumenGestionTraslado
+            // 
+            this.LogisticaLblResumenGestionTraslado.AutoSize = true;
+            this.LogisticaLblResumenGestionTraslado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(216)))), ((int)(((byte)(197)))));
+            this.LogisticaLblResumenGestionTraslado.Font = new System.Drawing.Font("Lucida Fax", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LogisticaLblResumenGestionTraslado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(44)))), ((int)(((byte)(18)))));
+            this.LogisticaLblResumenGestionTraslado.Location = new System.Drawing.Point(586, 495);
+            this.LogisticaLblResumenGestionTraslado.Name = "LogisticaLblResumenGestionTraslado";
+            this.LogisticaLblResumenGestionTraslado.Size = new System.Drawing.Size(24, 24);
+            this.LogisticaLblResumenGestionTraslado.TabIndex = 27;
+            this.LogisticaLblResumenGestionTraslado.Text = "0";
+            // 
+            // LogisticaLblResumenEnlaces
+            // 
+            this.LogisticaLblResumenEnlaces.AutoSize = true;
+            this.LogisticaLblResumenEnlaces.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(216)))), ((int)(((byte)(197)))));
+            this.LogisticaLblResumenEnlaces.Font = new System.Drawing.Font("Lucida Fax", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LogisticaLblResumenEnlaces.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(44)))), ((int)(((byte)(18)))));
+            this.LogisticaLblResumenEnlaces.Location = new System.Drawing.Point(965, 495);
+            this.LogisticaLblResumenEnlaces.Name = "LogisticaLblResumenEnlaces";
+            this.LogisticaLblResumenEnlaces.Size = new System.Drawing.Size(24, 24);
+            this.LogisticaLblResumenEnlaces.TabIndex = 30;
+            this.LogisticaLblResumenEnlaces.Text = "0";
+            // 
+            // LogisticaLblResumenCierreInventario
+            // 
+            this.LogisticaLblResumenCierreInventario.AutoSize = true;
+            this.LogisticaLblResumenCierreInventario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(216)))), ((int)(((byte)(197)))));
+            this.LogisticaLblResumenCierreInventario.Font = new System.Drawing.Font("Lucida Fax", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LogisticaLblResumenCierreInventario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(44)))), ((int)(((byte)(18)))));
+            this.LogisticaLblResumenCierreInventario.Location = new System.Drawing.Point(838, 495);
+            this.LogisticaLblResumenCierreInventario.Name = "LogisticaLblResumenCierreInventario";
+            this.LogisticaLblResumenCierreInventario.Size = new System.Drawing.Size(24, 24);
+            this.LogisticaLblResumenCierreInventario.TabIndex = 29;
+            this.LogisticaLblResumenCierreInventario.Text = "0";
             // 
             // FrmMDILogistica
             // 
@@ -531,10 +652,9 @@
         private System.Windows.Forms.Label LogisticaLblDescripcion;
         private System.Windows.Forms.Label LogisticaLblModuloLogistica;
         private System.Windows.Forms.Label LogisticaLblBienvenida;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button LogisticaBtnHamburguesa;
         private System.Windows.Forms.Label LogisticaLblUsuario;
         private System.Windows.Forms.Label LogisticaLblRolUsuario;
-        private System.Windows.Forms.Label LogisticaLbUsuarioRol;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.PictureBox LogisticaPbGestionTransporte;
         private System.Windows.Forms.PictureBox LogisticaPbAuditoria;
@@ -546,5 +666,14 @@
         private System.Windows.Forms.Button LogisticaBtnAyuda;
         private System.Windows.Forms.Label LogisticaLblResumen;
         private System.Windows.Forms.PictureBox LogisticaPbInformacion;
+        private System.Windows.Forms.Label LogisticaLbUsuarioRol;
+        private System.Windows.Forms.Label LogisticaLblResumenEnlaces;
+        private System.Windows.Forms.Label LogisticaLblResumenCierreInventario;
+        private System.Windows.Forms.Label LogisticaLblResumenAuditoria;
+        private System.Windows.Forms.Label LogisticaLblResumenGestionTraslado;
+        private System.Windows.Forms.Label LogisticaLblResumenGestionTransporte;
+        private System.Windows.Forms.Label LogisticaLblResumenInventario;
+        private System.Windows.Forms.Label LogisticaLblResumenCatalogo;
+        private System.Windows.Forms.Label LogisticaLblResumenEstructura;
     }
 }

@@ -49,11 +49,65 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Formas\FrmMantenimientoBodegas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\FrmMantenimientoBodegas.Designer.cs">
+      <DependentUpon>FrmMantenimientoBodegas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\FrmMantenimientoCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\FrmMantenimientoCategoria.Designer.cs">
+      <DependentUpon>FrmMantenimientoCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\FrmMantenimientoDetalleMovimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\FrmMantenimientoDetalleMovimiento.Designer.cs">
+      <DependentUpon>FrmMantenimientoDetalleMovimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\FrmMantenimientoLinea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\FrmMantenimientoLinea.Designer.cs">
+      <DependentUpon>FrmMantenimientoLinea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\FrmMantenimientoMarca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\FrmMantenimientoMarca.Designer.cs">
+      <DependentUpon>FrmMantenimientoMarca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\FrmMantenimientoMovimientoInventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\FrmMantenimientoMovimientoInventario.Designer.cs">
+      <DependentUpon>FrmMantenimientoMovimientoInventario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\FrmMantenimientoProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\FrmMantenimientoProducto.Designer.cs">
+      <DependentUpon>FrmMantenimientoProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\FrmMantenimientoStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\FrmMantenimientoStock.Designer.cs">
+      <DependentUpon>FrmMantenimientoStock.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formas\FrmMantenimientoSucursales.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formas\FrmMantenimientoSucursales.Designer.cs">
       <DependentUpon>FrmMantenimientoSucursales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\FrmMantenimientoTipoMovimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\FrmMantenimientoTipoMovimiento.Designer.cs">
+      <DependentUpon>FrmMantenimientoTipoMovimiento.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -63,8 +117,35 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Formas\FrmMantenimientoBodegas.resx">
+      <DependentUpon>FrmMantenimientoBodegas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\FrmMantenimientoCategoria.resx">
+      <DependentUpon>FrmMantenimientoCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\FrmMantenimientoDetalleMovimiento.resx">
+      <DependentUpon>FrmMantenimientoDetalleMovimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\FrmMantenimientoLinea.resx">
+      <DependentUpon>FrmMantenimientoLinea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\FrmMantenimientoMarca.resx">
+      <DependentUpon>FrmMantenimientoMarca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\FrmMantenimientoMovimientoInventario.resx">
+      <DependentUpon>FrmMantenimientoMovimientoInventario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\FrmMantenimientoProducto.resx">
+      <DependentUpon>FrmMantenimientoProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\FrmMantenimientoStock.resx">
+      <DependentUpon>FrmMantenimientoStock.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formas\FrmMantenimientoSucursales.resx">
       <DependentUpon>FrmMantenimientoSucursales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\FrmMantenimientoTipoMovimiento.resx">
+      <DependentUpon>FrmMantenimientoTipoMovimiento.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -106,6 +187,45 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\FondoLogica2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PanelTabla.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FondoDatagriedview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_refrescar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_consultar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_cancelar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_cancelar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_inicio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_anterior.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_siguiente.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_fin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_salir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_imprimir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_bodega.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -28,7 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMantenimientoSucursales));
             this.LogisticaPnlSucursales = new System.Windows.Forms.Panel();
+            this.LogisticaBtnBodega = new System.Windows.Forms.Button();
             this.LogisticaNavSucursales = new CapaVista_Navegador.Navegador();
             this.LogisticaLblDescripcionSucursales = new System.Windows.Forms.Label();
             this.LogisticaLblTituloSucursales = new System.Windows.Forms.Label();
@@ -39,6 +41,7 @@
             // 
             this.LogisticaPnlSucursales.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(246)))), ((int)(((byte)(242)))));
             this.LogisticaPnlSucursales.BackgroundImage = global::CapaVista_Inventario_Logistica.Properties.Resources.FondoLogica2;
+            this.LogisticaPnlSucursales.Controls.Add(this.LogisticaBtnBodega);
             this.LogisticaPnlSucursales.Controls.Add(this.LogisticaNavSucursales);
             this.LogisticaPnlSucursales.Controls.Add(this.LogisticaLblDescripcionSucursales);
             this.LogisticaPnlSucursales.Controls.Add(this.LogisticaLblTituloSucursales);
@@ -48,6 +51,20 @@
             this.LogisticaPnlSucursales.Size = new System.Drawing.Size(1144, 741);
             this.LogisticaPnlSucursales.TabIndex = 0;
             // 
+            // LogisticaBtnBodega
+            // 
+            this.LogisticaBtnBodega.BackColor = System.Drawing.Color.Transparent;
+            this.LogisticaBtnBodega.BackgroundImage = global::CapaVista_Inventario_Logistica.Properties.Resources.btn_bodega;
+            this.LogisticaBtnBodega.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.LogisticaBtnBodega.FlatAppearance.BorderSize = 0;
+            this.LogisticaBtnBodega.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.LogisticaBtnBodega.Location = new System.Drawing.Point(1044, 23);
+            this.LogisticaBtnBodega.Name = "LogisticaBtnBodega";
+            this.LogisticaBtnBodega.Size = new System.Drawing.Size(60, 66);
+            this.LogisticaBtnBodega.TabIndex = 3;
+            this.LogisticaBtnBodega.UseVisualStyleBackColor = false;
+            this.LogisticaBtnBodega.Click += new System.EventHandler(this.LogisticaBtnBodega_Click);
+            // 
             // LogisticaNavSucursales
             // 
             this.LogisticaNavSucursales.BackColor = System.Drawing.Color.Transparent;
@@ -56,7 +73,6 @@
             this.LogisticaNavSucursales.Name = "LogisticaNavSucursales";
             this.LogisticaNavSucursales.Size = new System.Drawing.Size(1073, 99);
             this.LogisticaNavSucursales.TabIndex = 2;
-            this.LogisticaNavSucursales.Load += new System.EventHandler(this.LogisticaNavSucursales_Load);
             // 
             // LogisticaLblDescripcionSucursales
             // 
@@ -88,6 +104,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1144, 741);
             this.Controls.Add(this.LogisticaPnlSucursales);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "FrmMantenimientoSucursales";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "5001 -  Sucursales";
@@ -103,5 +122,6 @@
         private System.Windows.Forms.Label LogisticaLblDescripcionSucursales;
         private System.Windows.Forms.Label LogisticaLblTituloSucursales;
         private CapaVista_Navegador.Navegador LogisticaNavSucursales;
+        private System.Windows.Forms.Button LogisticaBtnBodega;
     }
 }

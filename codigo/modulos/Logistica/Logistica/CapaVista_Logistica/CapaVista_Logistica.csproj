@@ -250,5 +250,8 @@
   <ItemGroup>
     <None Include="Resources\btn_menuN1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnhamburguesa_menu.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

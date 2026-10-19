@@ -428,7 +428,7 @@
             this.LogisticaLblCantidadTraslados.AutoSize = true;
             this.LogisticaLblCantidadTraslados.Font = new System.Drawing.Font("Tahoma", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LogisticaLblCantidadTraslados.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(138)))), ((int)(((byte)(132)))));
-            this.LogisticaLblCantidadTraslados.Location = new System.Drawing.Point(102, 231);
+            this.LogisticaLblCantidadTraslados.Location = new System.Drawing.Point(99, 231);
             this.LogisticaLblCantidadTraslados.Name = "LogisticaLblCantidadTraslados";
             this.LogisticaLblCantidadTraslados.Size = new System.Drawing.Size(105, 27);
             this.LogisticaLblCantidadTraslados.TabIndex = 52;
@@ -449,7 +449,7 @@
             this.LogisticaLblProductoTraslados.AutoSize = true;
             this.LogisticaLblProductoTraslados.Font = new System.Drawing.Font("Tahoma", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LogisticaLblProductoTraslados.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(138)))), ((int)(((byte)(132)))));
-            this.LogisticaLblProductoTraslados.Location = new System.Drawing.Point(102, 179);
+            this.LogisticaLblProductoTraslados.Location = new System.Drawing.Point(99, 179);
             this.LogisticaLblProductoTraslados.Name = "LogisticaLblProductoTraslados";
             this.LogisticaLblProductoTraslados.Size = new System.Drawing.Size(105, 27);
             this.LogisticaLblProductoTraslados.TabIndex = 50;
@@ -501,7 +501,7 @@
             this.LogisticaLblFechaSalidaTraslados.AutoSize = true;
             this.LogisticaLblFechaSalidaTraslados.Font = new System.Drawing.Font("Tahoma", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LogisticaLblFechaSalidaTraslados.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(138)))), ((int)(((byte)(132)))));
-            this.LogisticaLblFechaSalidaTraslados.Location = new System.Drawing.Point(102, 128);
+            this.LogisticaLblFechaSalidaTraslados.Location = new System.Drawing.Point(99, 128);
             this.LogisticaLblFechaSalidaTraslados.Name = "LogisticaLblFechaSalidaTraslados";
             this.LogisticaLblFechaSalidaTraslados.Size = new System.Drawing.Size(142, 27);
             this.LogisticaLblFechaSalidaTraslados.TabIndex = 44;
@@ -533,7 +533,7 @@
             this.LogisticaLblCodigoTraslado.AutoSize = true;
             this.LogisticaLblCodigoTraslado.Font = new System.Drawing.Font("Tahoma", 13.2F);
             this.LogisticaLblCodigoTraslado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(138)))), ((int)(((byte)(132)))));
-            this.LogisticaLblCodigoTraslado.Location = new System.Drawing.Point(102, 25);
+            this.LogisticaLblCodigoTraslado.Location = new System.Drawing.Point(99, 25);
             this.LogisticaLblCodigoTraslado.Name = "LogisticaLblCodigoTraslado";
             this.LogisticaLblCodigoTraslado.Size = new System.Drawing.Size(177, 27);
             this.LogisticaLblCodigoTraslado.TabIndex = 40;
@@ -555,7 +555,7 @@
             this.LogisticaLblBodegaOrigenTraslados.AutoSize = true;
             this.LogisticaLblBodegaOrigenTraslados.Font = new System.Drawing.Font("Tahoma", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LogisticaLblBodegaOrigenTraslados.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(138)))), ((int)(((byte)(132)))));
-            this.LogisticaLblBodegaOrigenTraslados.Location = new System.Drawing.Point(102, 76);
+            this.LogisticaLblBodegaOrigenTraslados.Location = new System.Drawing.Point(99, 76);
             this.LogisticaLblBodegaOrigenTraslados.Name = "LogisticaLblBodegaOrigenTraslados";
             this.LogisticaLblBodegaOrigenTraslados.Size = new System.Drawing.Size(165, 27);
             this.LogisticaLblBodegaOrigenTraslados.TabIndex = 38;

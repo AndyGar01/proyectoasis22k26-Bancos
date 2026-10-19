@@ -213,7 +213,7 @@
             // 
             this.LogisticaTxtFechaRecibido.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.LogisticaTxtFechaRecibido.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LogisticaTxtFechaRecibido.Location = new System.Drawing.Point(223, 229);
+            this.LogisticaTxtFechaRecibido.Location = new System.Drawing.Point(224, 229);
             this.LogisticaTxtFechaRecibido.Name = "LogisticaTxtFechaRecibido";
             this.LogisticaTxtFechaRecibido.Size = new System.Drawing.Size(300, 38);
             this.LogisticaTxtFechaRecibido.TabIndex = 31;
@@ -222,7 +222,7 @@
             // 
             this.LogisticaTxtFechaSolicitud.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.LogisticaTxtFechaSolicitud.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LogisticaTxtFechaSolicitud.Location = new System.Drawing.Point(223, 169);
+            this.LogisticaTxtFechaSolicitud.Location = new System.Drawing.Point(224, 169);
             this.LogisticaTxtFechaSolicitud.Name = "LogisticaTxtFechaSolicitud";
             this.LogisticaTxtFechaSolicitud.Size = new System.Drawing.Size(300, 38);
             this.LogisticaTxtFechaSolicitud.TabIndex = 30;
@@ -231,7 +231,7 @@
             // 
             this.LogisticaTxtBodegaOrigen.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.LogisticaTxtBodegaOrigen.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LogisticaTxtBodegaOrigen.Location = new System.Drawing.Point(223, 108);
+            this.LogisticaTxtBodegaOrigen.Location = new System.Drawing.Point(224, 108);
             this.LogisticaTxtBodegaOrigen.Name = "LogisticaTxtBodegaOrigen";
             this.LogisticaTxtBodegaOrigen.Size = new System.Drawing.Size(300, 38);
             this.LogisticaTxtBodegaOrigen.TabIndex = 29;
@@ -304,7 +304,7 @@
             // 
             this.LogisticaTxtCodigoTraslado.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.LogisticaTxtCodigoTraslado.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LogisticaTxtCodigoTraslado.Location = new System.Drawing.Point(223, 42);
+            this.LogisticaTxtCodigoTraslado.Location = new System.Drawing.Point(224, 42);
             this.LogisticaTxtCodigoTraslado.Name = "LogisticaTxtCodigoTraslado";
             this.LogisticaTxtCodigoTraslado.Size = new System.Drawing.Size(300, 38);
             this.LogisticaTxtCodigoTraslado.TabIndex = 17;

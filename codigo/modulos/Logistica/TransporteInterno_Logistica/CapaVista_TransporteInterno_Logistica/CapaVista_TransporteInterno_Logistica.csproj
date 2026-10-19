@@ -46,6 +46,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Formas\FrmControlTransporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\FrmControlTransporte.Designer.cs">
+      <DependentUpon>FrmControlTransporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\FrmGestionViajes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\FrmGestionViajes.Designer.cs">
+      <DependentUpon>FrmGestionViajes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\FrmConsultaTransporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\FrmConsultaTransporte.Designer.cs">
+      <DependentUpon>FrmConsultaTransporte.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formas\FrmTransporteInterno.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +81,15 @@
     <Folder Include="Reportes\" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Formas\FrmControlTransporte.resx">
+      <DependentUpon>FrmControlTransporte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\FrmGestionViajes.resx">
+      <DependentUpon>FrmGestionViajes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\FrmConsultaTransporte.resx">
+      <DependentUpon>FrmConsultaTransporte.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formas\FrmTransporteInterno.resx">
       <DependentUpon>FrmTransporteInterno.cs</DependentUpon>
     </EmbeddedResource>
@@ -77,6 +104,7 @@
     <None Include="Resources\FondoLogistica1.png" />
     <None Include="Resources\panelestandarizado1.png" />
     <None Include="Resources\71.png" />
+    <None Include="Resources\f844b316-02c8-41af-9c16-226a1ef14d22.png" />
     <Content Include="Resources\FondoLogistica.png" />
     <Content Include="Resources\panelestandarizado.png" />
     <Content Include="Resources\resumenTransporte.png" />

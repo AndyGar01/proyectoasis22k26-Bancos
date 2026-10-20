@@ -64,6 +64,12 @@
     <Compile Include="Formas\FrmConsultaTransporte.Designer.cs">
       <DependentUpon>FrmConsultaTransporte.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formas\FrmSeleccionTipoTraslado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\FrmSeleccionTipoTraslado.Designer.cs">
+      <DependentUpon>FrmSeleccionTipoTraslado.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formas\FrmTransporteInterno.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +95,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formas\FrmConsultaTransporte.resx">
       <DependentUpon>FrmConsultaTransporte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\FrmSeleccionTipoTraslado.resx">
+      <DependentUpon>FrmSeleccionTipoTraslado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formas\FrmTransporteInterno.resx">
       <DependentUpon>FrmTransporteInterno.cs</DependentUpon>

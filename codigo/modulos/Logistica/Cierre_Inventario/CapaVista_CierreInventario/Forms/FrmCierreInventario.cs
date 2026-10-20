@@ -17,24 +17,12 @@ namespace CapaVista_CierreInventario.Forms
             InitializeComponent();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        
+
+        private void button4_Click(object sender, EventArgs e)
         {
-            Form formularioPrincipal = Application.OpenForms["FrmCierreInventario"];
-
-            
-            if (formularioPrincipal != null)
-            {
-                formularioPrincipal.Show();
-            }
-            else
-            {
-             
-                FrmCierreInventario nuevoPrincipal = new FrmCierreInventario();
-                nuevoPrincipal.Show();
-            }
-
-         
-            this.Close();
+            FrmConsultaCierres frmConsultas = new FrmConsultaCierres();
+            frmConsultas.ShowDialog();
         }
     }
     

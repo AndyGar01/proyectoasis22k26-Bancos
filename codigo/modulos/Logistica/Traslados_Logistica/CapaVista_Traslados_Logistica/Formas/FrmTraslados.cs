@@ -16,5 +16,11 @@ namespace CapaVista_Traslados_Logistica.Formas
         {
             InitializeComponent();
         }
+
+        private void LogisticaBtnVerDetalleTraslados_Click(object sender, EventArgs e)
+        {
+            FrmDetalleTraslados detalleTraslados = new FrmDetalleTraslados();
+            detalleTraslados.ShowDialog();
+        }
     }
 }

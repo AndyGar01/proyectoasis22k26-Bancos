@@ -13,7 +13,7 @@ namespace CapaModelo_Bancos.Repositorio
 
         public ClsConexion()
         {
-            _ConnectionString = "Dsn=EmbutidosS.A_Bancos";
+            _ConnectionString = "Dsn=EmbutidosS.A";
         }
 
         protected OdbcConnection BancosMetObtenerConexion()

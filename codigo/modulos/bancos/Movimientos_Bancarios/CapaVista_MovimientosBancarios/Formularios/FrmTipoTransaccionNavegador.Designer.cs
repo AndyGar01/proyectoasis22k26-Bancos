@@ -48,7 +48,7 @@
             this.Controls.Add(this.navegador1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmTipoTransaccionNavegador";
-            this.Text = "MantenimientoTipoTransacción";
+            this.Text = "8004-MantenimientoTipoTransacción";
             this.ResumeLayout(false);
 
         }

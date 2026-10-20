@@ -145,7 +145,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "FrmMovimientosBancarios";
-            this.Text = "8001-MovimientosBancarios";
+            this.Text = "8006-MovimientosBancarios";
             this.Load += new System.EventHandler(this.FrmMovimientosBancarios_Load);
             this.BancosPnlFondo.ResumeLayout(false);
             this.BancosScContenedor.Panel1.ResumeLayout(false);

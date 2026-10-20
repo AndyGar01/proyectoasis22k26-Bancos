@@ -1193,7 +1193,7 @@ namespace CapaVista_TipoCambio.Formularios
             this.BancosLblTitulo.Name = "BancosLblTitulo";
             this.BancosLblTitulo.Size = new System.Drawing.Size(276, 32);
             this.BancosLblTitulo.TabIndex = 0;
-            this.BancosLblTitulo.Text = "8003 – Tipo de Cambio";
+            this.BancosLblTitulo.Text = "8010 – Tipo de Cambio";
             // 
             // FrmTipoCambio
             // 
@@ -1206,7 +1206,7 @@ namespace CapaVista_TipoCambio.Formularios
             this.MaximizeBox = false;
             this.Name = "FrmTipoCambio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "8005–TipoDeCambio";
+            this.Text = "8010–TipoDeCambio";
             this.BancosPnlFondo.ResumeLayout(false);
             this.BancosTabControl.ResumeLayout(false);
             this.BancosTabTasasActuales.ResumeLayout(false);

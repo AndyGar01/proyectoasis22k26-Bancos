@@ -31,15 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CapaControlador_Navegador, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
-    <Reference Include="CapaControlador_Seguridad, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
-    <Reference Include="CapaModelo_Navegador, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
-    <Reference Include="CapaVista_Consultas, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
-    <Reference Include="CapaVista_Navegador, Version=0.0.0.0, Culture=neutral, processorArchitecture=AMD64">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\CapaVista_Navegador.dll</HintPath>
+    <Reference Include="CapaControlador_Traslados_Logistica">
+      <HintPath>..\CapaControlador_Traslados_Logistica\bin\Debug\CapaControlador_Traslados_Logistica.dll</HintPath>
     </Reference>
-    <Reference Include="CapaVista_Reporteador, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -58,12 +52,6 @@
     </Compile>
     <Compile Include="Formas\FrmDetalleTraslados.Designer.cs">
       <DependentUpon>FrmDetalleTraslados.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formas\FrmTrasladoNavegador.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formas\FrmTrasladoNavegador.Designer.cs">
-      <DependentUpon>FrmTrasladoNavegador.cs</DependentUpon>
     </Compile>
     <Compile Include="Formas\FrmTraslados.cs">
       <SubType>Form</SubType>
@@ -84,9 +72,6 @@
   <ItemGroup>
     <EmbeddedResource Include="Formas\FrmDetalleTraslados.resx">
       <DependentUpon>FrmDetalleTraslados.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formas\FrmTrasladoNavegador.resx">
-      <DependentUpon>FrmTrasladoNavegador.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formas\FrmTraslados.resx">
       <DependentUpon>FrmTraslados.cs</DependentUpon>

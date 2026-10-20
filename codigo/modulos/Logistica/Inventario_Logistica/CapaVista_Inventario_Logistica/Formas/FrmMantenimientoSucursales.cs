@@ -15,13 +15,20 @@ namespace CapaVista_Inventario_Logistica.Formas
     {
         public FrmMantenimientoSucursales()
         {
-            InitializeComponent(); // <-- Esta es la única llamada necesaria a InitializeComponent
+            InitializeComponent();
         }
 
-        private void LogisticaNavSucursales_Load(object sender, EventArgs e)
+        private void LogisticaProcAbrirMantenimientoBodegas()
         {
-            // Se eliminó la llamada duplicada a InitializeComponent()
-            LogisticaNavSucursales.NavegadorMetConfigurar("tblSucursal", 4, 5);
+            using (FrmMantenimientoBodegas FrmBodega = new FrmMantenimientoBodegas())
+            {
+                FrmBodega.ShowDialog(this);
+            }
+        }
+
+        private void LogisticaBtnBodega_Click(object sender, EventArgs e)
+        {
+               LogisticaProcAbrirMantenimientoBodegas();
         }
     }
 }

@@ -31,5 +31,23 @@ namespace CapaVista_TransporteInterno_Logistica.Formas
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FrmGestionViajes frmGestionViajes = new FrmGestionViajes();
+            frmGestionViajes.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            FrmControlTransporte frmControlTransporte = new FrmControlTransporte();
+            frmControlTransporte.ShowDialog();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            FrmConsultaTransporte frmConsultaTransporte = new FrmConsultaTransporte();
+            frmConsultaTransporte.ShowDialog();
+        }
     }
 }

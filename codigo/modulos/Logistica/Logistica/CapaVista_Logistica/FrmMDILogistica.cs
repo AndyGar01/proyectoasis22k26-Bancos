@@ -9,7 +9,10 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using CapaVista_Inventario_Logistica;
 using CapaVista_Inventario_Logistica.Formas;
-
+using CapaVista_TransporteInterno_Logistica.Formas;
+using CapaVista_Traslados_Logistica;
+using CapaVista_MuestreoAuditoria_Logistica;
+using CapaVista_CierreInventario.Forms;
 
 namespace CapaVista_Logistica
 {
@@ -28,8 +31,8 @@ namespace CapaVista_Logistica
 
         private void LogisticaBtnCatalogo_Click(object sender, EventArgs e)
         {
-            
-
+            CapaVista_Inventario_Logistica.Formas.FrmMantenimientoProducto frmMantenimientoProducto = new CapaVista_Inventario_Logistica.Formas.FrmMantenimientoProducto();
+            frmMantenimientoProducto.ShowDialog();
         }
 
         private void LogisticaMetActualizarInfoUsuario(string Nombre, string Rol)
@@ -38,5 +41,36 @@ namespace CapaVista_Logistica
             LogisticaLblRolUsuario.Text = Rol;  
             LogisticaLbUsuarioRol.Left = LogisticaLblUsuario.Right + 30;
         }
-}
+
+        private void LogisticaBtnInventario_Click(object sender, EventArgs e)
+        {
+            CapaVista_Inventario_Logistica.Formas.FrmMantenimientoStock frmMantenimientoStock = new CapaVista_Inventario_Logistica.Formas.FrmMantenimientoStock();
+            frmMantenimientoStock.ShowDialog();
+        }
+
+        private void LogisticaBtnGestionTransporte_Click(object sender, EventArgs e)
+        {
+           CapaVista_TransporteInterno_Logistica.Formas.FrmTransporteInterno frmTransporteInterno = new CapaVista_TransporteInterno_Logistica.Formas.FrmTransporteInterno();
+            frmTransporteInterno.ShowDialog();
+        }
+
+        private void LogisticaBtnTraslado_Click(object sender, EventArgs e)
+        {
+            CapaVista_Traslados_Logistica.Formas.FrmTraslados frmTraslado = new CapaVista_Traslados_Logistica.Formas.FrmTraslados();
+            frmTraslado.ShowDialog();
+        }
+
+        private void LogisticaBtnAuditoria_Click(object sender, EventArgs e)
+        {
+            CapaVista_MuestreoAuditoria_Logistica.FrmAuditoriaInventario frmAuditoriaInventario = new CapaVista_MuestreoAuditoria_Logistica.FrmAuditoriaInventario();
+            frmAuditoriaInventario.ShowDialog();
+
+        }
+
+        private void LogisticaBtnCierredeInventario_Click(object sender, EventArgs e)
+        {
+            CapaVista_CierreInventario.Forms.FrmCierreInventario frmCierreInventario = new CapaVista_CierreInventario.Forms.FrmCierreInventario();
+            frmCierreInventario.ShowDialog();
+        }
+    }
 }

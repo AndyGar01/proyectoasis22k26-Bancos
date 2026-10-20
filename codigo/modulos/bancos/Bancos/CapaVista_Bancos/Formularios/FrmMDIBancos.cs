@@ -109,5 +109,11 @@ namespace CapaVista_Bancos.Formularios
             FrmTipoTransaccionNavegador TipoTransaccion = new FrmTipoTransaccionNavegador();
             TipoTransaccion.ShowDialog();
         }
+
+        private void BancosBtnTipoCuentaBancaria_Click(object sender, EventArgs e)
+        {
+            FrmTipoCuentaBancariaNavegador TipoCuentaBancariaNavegador = new FrmTipoCuentaBancariaNavegador();
+            TipoCuentaBancariaNavegador.ShowDialog();
+        }
     }
 }

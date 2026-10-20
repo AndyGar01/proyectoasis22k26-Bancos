@@ -171,7 +171,7 @@ namespace CapaVista_DisponibilidadDiaria.Formularios
             this.BancosLblStatusMoneda.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(80)))), ((int)(((byte)(70)))));
             this.BancosLblStatusMoneda.Location = new System.Drawing.Point(220, 6);
             this.BancosLblStatusMoneda.Name = "BancosLblStatusMoneda";
-            this.BancosLblStatusMoneda.Size = new System.Drawing.Size(110, 15);
+            this.BancosLblStatusMoneda.Size = new System.Drawing.Size(111, 15);
             this.BancosLblStatusMoneda.TabIndex = 1;
             this.BancosLblStatusMoneda.Text = "•   Importes en GTQ";
             // 
@@ -937,7 +937,7 @@ namespace CapaVista_DisponibilidadDiaria.Formularios
             this.BancosLblTitulo.Name = "BancosLblTitulo";
             this.BancosLblTitulo.Size = new System.Drawing.Size(338, 32);
             this.BancosLblTitulo.TabIndex = 0;
-            this.BancosLblTitulo.Text = "8002 – Disponibilidad Diaria";
+            this.BancosLblTitulo.Text = "8009 – Disponibilidad Diaria";
             // 
             // FrmDisponibilidadDiaria
             // 
@@ -950,7 +950,7 @@ namespace CapaVista_DisponibilidadDiaria.Formularios
             this.MaximizeBox = false;
             this.Name = "FrmDisponibilidadDiaria";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "8004–DisponibilidadDiaria";
+            this.Text = "8009–DisponibilidadDiaria";
             this.BancosPnlFondo.ResumeLayout(false);
             this.BancosPnlFondo.PerformLayout();
             this.BancosPnlStatus.ResumeLayout(false);

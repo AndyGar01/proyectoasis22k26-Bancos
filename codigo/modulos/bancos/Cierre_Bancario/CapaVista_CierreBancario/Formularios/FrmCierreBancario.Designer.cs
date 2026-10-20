@@ -108,35 +108,35 @@
             this.BancosCboTipoCierre.FormattingEnabled = true;
             this.BancosCboTipoCierre.Location = new System.Drawing.Point(154, 28);
             this.BancosCboTipoCierre.Name = "BancosCboTipoCierre";
-            this.BancosCboTipoCierre.Size = new System.Drawing.Size(218, 24);
+            this.BancosCboTipoCierre.Size = new System.Drawing.Size(218, 20);
             this.BancosCboTipoCierre.TabIndex = 15;
             // 
             // BancosTxFechaFinal
             // 
             this.BancosTxFechaFinal.Location = new System.Drawing.Point(537, 69);
             this.BancosTxFechaFinal.Name = "BancosTxFechaFinal";
-            this.BancosTxFechaFinal.Size = new System.Drawing.Size(218, 23);
+            this.BancosTxFechaFinal.Size = new System.Drawing.Size(218, 20);
             this.BancosTxFechaFinal.TabIndex = 14;
             // 
             // BancosTxtAlcance
             // 
             this.BancosTxtAlcance.Location = new System.Drawing.Point(863, 48);
             this.BancosTxtAlcance.Name = "BancosTxtAlcance";
-            this.BancosTxtAlcance.Size = new System.Drawing.Size(218, 23);
+            this.BancosTxtAlcance.Size = new System.Drawing.Size(218, 20);
             this.BancosTxtAlcance.TabIndex = 13;
             // 
             // BancosTxtFechaInicial
             // 
             this.BancosTxtFechaInicial.Location = new System.Drawing.Point(537, 27);
             this.BancosTxtFechaInicial.Name = "BancosTxtFechaInicial";
-            this.BancosTxtFechaInicial.Size = new System.Drawing.Size(218, 23);
+            this.BancosTxtFechaInicial.Size = new System.Drawing.Size(218, 20);
             this.BancosTxtFechaInicial.TabIndex = 12;
             // 
             // BancosTxtEstadoPeriodo
             // 
             this.BancosTxtEstadoPeriodo.Location = new System.Drawing.Point(187, 69);
             this.BancosTxtEstadoPeriodo.Name = "BancosTxtEstadoPeriodo";
-            this.BancosTxtEstadoPeriodo.Size = new System.Drawing.Size(185, 23);
+            this.BancosTxtEstadoPeriodo.Size = new System.Drawing.Size(185, 20);
             this.BancosTxtEstadoPeriodo.TabIndex = 11;
             // 
             // BancosLblFechaFinal
@@ -145,7 +145,7 @@
             this.BancosLblFechaFinal.Font = new System.Drawing.Font("Tahoma", 11F);
             this.BancosLblFechaFinal.Location = new System.Drawing.Point(417, 69);
             this.BancosLblFechaFinal.Name = "BancosLblFechaFinal";
-            this.BancosLblFechaFinal.Size = new System.Drawing.Size(105, 23);
+            this.BancosLblFechaFinal.Size = new System.Drawing.Size(80, 18);
             this.BancosLblFechaFinal.TabIndex = 9;
             this.BancosLblFechaFinal.Text = "Fecha Final";
             // 
@@ -155,7 +155,7 @@
             this.BancosLblAlcance.Font = new System.Drawing.Font("Tahoma", 11F);
             this.BancosLblAlcance.Location = new System.Drawing.Point(779, 46);
             this.BancosLblAlcance.Name = "BancosLblAlcance";
-            this.BancosLblAlcance.Size = new System.Drawing.Size(74, 23);
+            this.BancosLblAlcance.Size = new System.Drawing.Size(57, 18);
             this.BancosLblAlcance.TabIndex = 8;
             this.BancosLblAlcance.Text = "Alcance";
             // 
@@ -165,7 +165,7 @@
             this.BancosLblFechaInicial.Font = new System.Drawing.Font("Tahoma", 11F);
             this.BancosLblFechaInicial.Location = new System.Drawing.Point(416, 28);
             this.BancosLblFechaInicial.Name = "BancosLblFechaInicial";
-            this.BancosLblFechaInicial.Size = new System.Drawing.Size(115, 23);
+            this.BancosLblFechaInicial.Size = new System.Drawing.Size(87, 18);
             this.BancosLblFechaInicial.TabIndex = 7;
             this.BancosLblFechaInicial.Text = "Fecha Inicial";
             // 
@@ -175,7 +175,7 @@
             this.BancosLblEstadoPeriodo.Font = new System.Drawing.Font("Tahoma", 11F);
             this.BancosLblEstadoPeriodo.Location = new System.Drawing.Point(15, 69);
             this.BancosLblEstadoPeriodo.Name = "BancosLblEstadoPeriodo";
-            this.BancosLblEstadoPeriodo.Size = new System.Drawing.Size(166, 23);
+            this.BancosLblEstadoPeriodo.Size = new System.Drawing.Size(127, 18);
             this.BancosLblEstadoPeriodo.TabIndex = 6;
             this.BancosLblEstadoPeriodo.Text = "Estado del periodo";
             // 
@@ -185,7 +185,7 @@
             this.BancosLblTipoCierre.Font = new System.Drawing.Font("Tahoma", 11F);
             this.BancosLblTipoCierre.Location = new System.Drawing.Point(15, 30);
             this.BancosLblTipoCierre.Name = "BancosLblTipoCierre";
-            this.BancosLblTipoCierre.Size = new System.Drawing.Size(126, 23);
+            this.BancosLblTipoCierre.Size = new System.Drawing.Size(97, 18);
             this.BancosLblTipoCierre.TabIndex = 5;
             this.BancosLblTipoCierre.Text = "Tipo de cierre";
             // 
@@ -197,7 +197,7 @@
             this.BancosLblPeriodoCierre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
             this.BancosLblPeriodoCierre.Location = new System.Drawing.Point(23, 76);
             this.BancosLblPeriodoCierre.Name = "BancosLblPeriodoCierre";
-            this.BancosLblPeriodoCierre.Size = new System.Drawing.Size(178, 27);
+            this.BancosLblPeriodoCierre.Size = new System.Drawing.Size(142, 22);
             this.BancosLblPeriodoCierre.TabIndex = 4;
             this.BancosLblPeriodoCierre.Text = "Período de cierre";
             // 
@@ -209,7 +209,7 @@
             this.BancosLblTitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
             this.BancosLblTitulo.Location = new System.Drawing.Point(89, 12);
             this.BancosLblTitulo.Name = "BancosLblTitulo";
-            this.BancosLblTitulo.Size = new System.Drawing.Size(298, 40);
+            this.BancosLblTitulo.Size = new System.Drawing.Size(237, 32);
             this.BancosLblTitulo.TabIndex = 3;
             this.BancosLblTitulo.Text = "Cierre bancario";
             // 
@@ -241,7 +241,7 @@
             this.BancosLblResumenCuentas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
             this.BancosLblResumenCuentas.Location = new System.Drawing.Point(21, 215);
             this.BancosLblResumenCuentas.Name = "BancosLblResumenCuentas";
-            this.BancosLblResumenCuentas.Size = new System.Drawing.Size(301, 27);
+            this.BancosLblResumenCuentas.Size = new System.Drawing.Size(240, 22);
             this.BancosLblResumenCuentas.TabIndex = 10;
             this.BancosLblResumenCuentas.Text = "Resumen de cuentas al cierre";
             // 
@@ -267,7 +267,7 @@
             this.BancosTxtAdvertencia.Font = new System.Drawing.Font("Tahoma", 10F);
             this.BancosTxtAdvertencia.Location = new System.Drawing.Point(13, 266);
             this.BancosTxtAdvertencia.Name = "BancosTxtAdvertencia";
-            this.BancosTxtAdvertencia.Size = new System.Drawing.Size(431, 21);
+            this.BancosTxtAdvertencia.Size = new System.Drawing.Size(354, 17);
             this.BancosTxtAdvertencia.TabIndex = 17;
             this.BancosTxtAdvertencia.Text = "Al cerrar los docuentos del periodo quedaran bloqueados";
             // 
@@ -278,7 +278,7 @@
             this.BancosTxtResultadoValidacionesCierre.Font = new System.Drawing.Font("Tahoma", 10F);
             this.BancosTxtResultadoValidacionesCierre.Location = new System.Drawing.Point(13, 91);
             this.BancosTxtResultadoValidacionesCierre.Name = "BancosTxtResultadoValidacionesCierre";
-            this.BancosTxtResultadoValidacionesCierre.Size = new System.Drawing.Size(217, 21);
+            this.BancosTxtResultadoValidacionesCierre.Size = new System.Drawing.Size(176, 17);
             this.BancosTxtResultadoValidacionesCierre.TabIndex = 16;
             this.BancosTxtResultadoValidacionesCierre.Text = "Resultado: Listo para cerrar";
             // 
@@ -297,7 +297,7 @@
             this.BancosLblObservaciones.Font = new System.Drawing.Font("Tahoma", 13F);
             this.BancosLblObservaciones.Location = new System.Drawing.Point(12, 129);
             this.BancosLblObservaciones.Name = "BancosLblObservaciones";
-            this.BancosLblObservaciones.Size = new System.Drawing.Size(154, 27);
+            this.BancosLblObservaciones.Size = new System.Drawing.Size(123, 22);
             this.BancosLblObservaciones.TabIndex = 10;
             this.BancosLblObservaciones.Text = "Observaciones";
             // 
@@ -308,7 +308,7 @@
             this.BancosChkSaldosVerificados.ForeColor = System.Drawing.Color.Black;
             this.BancosChkSaldosVerificados.Location = new System.Drawing.Point(14, 55);
             this.BancosChkSaldosVerificados.Name = "BancosChkSaldosVerificados";
-            this.BancosChkSaldosVerificados.Size = new System.Drawing.Size(276, 25);
+            this.BancosChkSaldosVerificados.Size = new System.Drawing.Size(223, 21);
             this.BancosChkSaldosVerificados.TabIndex = 14;
             this.BancosChkSaldosVerificados.Text = "Saldos de las cuentas verificadas";
             this.BancosChkSaldosVerificados.UseVisualStyleBackColor = true;
@@ -320,7 +320,7 @@
             this.BancosChkConciliacionesVerificadas.ForeColor = System.Drawing.Color.Black;
             this.BancosChkConciliacionesVerificadas.Location = new System.Drawing.Point(300, 20);
             this.BancosChkConciliacionesVerificadas.Name = "BancosChkConciliacionesVerificadas";
-            this.BancosChkConciliacionesVerificadas.Size = new System.Drawing.Size(220, 25);
+            this.BancosChkConciliacionesVerificadas.Size = new System.Drawing.Size(177, 21);
             this.BancosChkConciliacionesVerificadas.TabIndex = 13;
             this.BancosChkConciliacionesVerificadas.Text = "Conciliaciones verificadas";
             this.BancosChkConciliacionesVerificadas.UseVisualStyleBackColor = true;
@@ -332,7 +332,7 @@
             this.BancosChkPeriodoValido.ForeColor = System.Drawing.Color.Black;
             this.BancosChkPeriodoValido.Location = new System.Drawing.Point(16, 20);
             this.BancosChkPeriodoValido.Name = "BancosChkPeriodoValido";
-            this.BancosChkPeriodoValido.Size = new System.Drawing.Size(271, 25);
+            this.BancosChkPeriodoValido.Size = new System.Drawing.Size(223, 21);
             this.BancosChkPeriodoValido.TabIndex = 12;
             this.BancosChkPeriodoValido.Text = "Período válido y sin cierre previo";
             this.BancosChkPeriodoValido.UseVisualStyleBackColor = true;
@@ -345,7 +345,7 @@
             this.BancosLblValidaciones.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
             this.BancosLblValidaciones.Location = new System.Drawing.Point(23, 416);
             this.BancosLblValidaciones.Name = "BancosLblValidaciones";
-            this.BancosLblValidaciones.Size = new System.Drawing.Size(230, 27);
+            this.BancosLblValidaciones.Size = new System.Drawing.Size(183, 22);
             this.BancosLblValidaciones.TabIndex = 11;
             this.BancosLblValidaciones.Text = "Validaciones del cierre";
             // 
@@ -459,7 +459,7 @@
             // 
             // FrmCierreBancario
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::CapaVista_CierreBancario.Properties.Resources.FondoAutorizacionModulo;
@@ -482,7 +482,7 @@
             this.MinimizeBox = false;
             this.Name = "FrmCierreBancario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "8008-CierreBancario";
+            this.Text = "8013-CierreBancario";
             this.BancosPnlPeriodoCierre.ResumeLayout(false);
             this.BancosPnlPeriodoCierre.PerformLayout();
             this.BancosPnlResumenCuentasCierre.ResumeLayout(false);

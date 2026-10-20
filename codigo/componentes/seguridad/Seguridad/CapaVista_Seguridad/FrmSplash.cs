@@ -1,5 +1,5 @@
 ﻿using CapaControlador_Seguridad.Objetos_de_valor;
-//using CapaVista_Bancos.Formularios;
+using CapaVista_Bancos.Formularios;
 //using CapaVista_Rrhh.Formularios;
 using System;
 using System.Collections.Generic;
@@ -99,13 +99,13 @@ namespace CapaVista_Seguridad
                         //principal = MDIVentas;
                         //break;
 
-                    //case "Bancos":
-                        //var MdiBancos = new FrmMDIBancos();
-                        //MdiBancos.BancosMetActualizarInfoUsuario(
-                        //ClsSesionSeguridad.NombreEmpleado,
-                        //ClsSesionSeguridad.SeguridadMetRolesComoTexto());
-                        //principal = MdiBancos;
-                        //break;
+                    case "Bancos":
+                        var MdiBancos = new FrmMDIBancos();
+                        MdiBancos.BancosMetActualizarInfoUsuario(
+                        ClsSesionSeguridad.NombreEmpleado,
+                        ClsSesionSeguridad.SeguridadMetRolesComoTexto());
+                        principal = MdiBancos;
+                        break;
 
                     //case "Contabilidad":
                         //var MDIContabilidad = new FrmMDIContabilidad();

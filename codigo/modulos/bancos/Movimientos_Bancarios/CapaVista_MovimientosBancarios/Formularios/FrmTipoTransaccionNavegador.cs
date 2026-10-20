@@ -15,7 +15,7 @@ namespace CapaVista_MovimientosBancarios.Formularios
         public FrmTipoTransaccionNavegador()
         {
             InitializeComponent();
-            navegador1.NavegadorMetConfigurar("tblmodulo", 4, 6);
+            navegador1.NavegadorMetConfigurar("tblTipoTransaccion", 8000, 8004);
         }
     }
 }

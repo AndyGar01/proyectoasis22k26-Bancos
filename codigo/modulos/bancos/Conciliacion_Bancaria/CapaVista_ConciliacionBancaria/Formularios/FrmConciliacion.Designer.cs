@@ -447,7 +447,7 @@
             this.MaximizeBox = false;
             this.Name = "FrmConciliacion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "8002-ConciliaciónBancaria";
+            this.Text = "8007-ConciliaciónBancaria";
             this.BancosPnlFondo.ResumeLayout(false);
             this.BancosPnlInfo.ResumeLayout(false);
             this.BancosPnlInfo.PerformLayout();

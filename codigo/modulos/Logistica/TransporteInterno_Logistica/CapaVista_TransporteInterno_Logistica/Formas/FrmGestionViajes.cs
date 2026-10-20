@@ -16,5 +16,30 @@ namespace CapaVista_TransporteInterno_Logistica.Formas
         {
             InitializeComponent();
         }
+
+        private void cboSolicitudTraslado_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cboRutaAsignacion_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabAsignarTransporte_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

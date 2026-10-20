@@ -107,7 +107,7 @@
             this.BancosPnlOrdenesPendientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(248)))), ((int)(((byte)(243)))));
             this.BancosPnlOrdenesPendientes.Controls.Add(this.BancosDgvOrdenesPendientes);
             this.BancosPnlOrdenesPendientes.Location = new System.Drawing.Point(10, 159);
-            this.BancosPnlOrdenesPendientes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BancosPnlOrdenesPendientes.Margin = new System.Windows.Forms.Padding(2);
             this.BancosPnlOrdenesPendientes.Name = "BancosPnlOrdenesPendientes";
             this.BancosPnlOrdenesPendientes.Size = new System.Drawing.Size(602, 243);
             this.BancosPnlOrdenesPendientes.TabIndex = 0;
@@ -149,7 +149,7 @@
             this.BancosDgvOrdenesPendientes.EnableHeadersVisualStyles = false;
             this.BancosDgvOrdenesPendientes.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(231)))), ((int)(((byte)(211)))));
             this.BancosDgvOrdenesPendientes.Location = new System.Drawing.Point(14, 18);
-            this.BancosDgvOrdenesPendientes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BancosDgvOrdenesPendientes.Margin = new System.Windows.Forms.Padding(2);
             this.BancosDgvOrdenesPendientes.Name = "BancosDgvOrdenesPendientes";
             this.BancosDgvOrdenesPendientes.RowHeadersWidth = 51;
             this.BancosDgvOrdenesPendientes.RowTemplate.Height = 24;
@@ -228,7 +228,7 @@
             this.BancosPnlDisponibilidadAsignacion.Controls.Add(this.BancosTxtMontoAsignado);
             this.BancosPnlDisponibilidadAsignacion.Controls.Add(this.BancosCboBanco);
             this.BancosPnlDisponibilidadAsignacion.Location = new System.Drawing.Point(626, 159);
-            this.BancosPnlDisponibilidadAsignacion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BancosPnlDisponibilidadAsignacion.Margin = new System.Windows.Forms.Padding(2);
             this.BancosPnlDisponibilidadAsignacion.Name = "BancosPnlDisponibilidadAsignacion";
             this.BancosPnlDisponibilidadAsignacion.Size = new System.Drawing.Size(309, 531);
             this.BancosPnlDisponibilidadAsignacion.TabIndex = 1;
@@ -322,7 +322,7 @@
             this.BancosTxtMotivoRechazo.BackColor = System.Drawing.Color.White;
             this.BancosTxtMotivoRechazo.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.BancosTxtMotivoRechazo.Location = new System.Drawing.Point(14, 409);
-            this.BancosTxtMotivoRechazo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BancosTxtMotivoRechazo.Margin = new System.Windows.Forms.Padding(2);
             this.BancosTxtMotivoRechazo.Multiline = true;
             this.BancosTxtMotivoRechazo.Name = "BancosTxtMotivoRechazo";
             this.BancosTxtMotivoRechazo.Size = new System.Drawing.Size(264, 68);
@@ -462,7 +462,7 @@
             this.BancosTxtMontoAsignado.BackColor = System.Drawing.Color.White;
             this.BancosTxtMontoAsignado.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.BancosTxtMontoAsignado.Location = new System.Drawing.Point(14, 219);
-            this.BancosTxtMontoAsignado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BancosTxtMontoAsignado.Margin = new System.Windows.Forms.Padding(2);
             this.BancosTxtMontoAsignado.Name = "BancosTxtMontoAsignado";
             this.BancosTxtMontoAsignado.Size = new System.Drawing.Size(266, 25);
             this.BancosTxtMontoAsignado.TabIndex = 1;
@@ -473,7 +473,7 @@
             this.BancosCboBanco.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.BancosCboBanco.FormattingEnabled = true;
             this.BancosCboBanco.Location = new System.Drawing.Point(14, 51);
-            this.BancosCboBanco.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BancosCboBanco.Margin = new System.Windows.Forms.Padding(2);
             this.BancosCboBanco.Name = "BancosCboBanco";
             this.BancosCboBanco.Size = new System.Drawing.Size(271, 25);
             this.BancosCboBanco.TabIndex = 0;
@@ -536,7 +536,7 @@
             this.BancosPnlEncabezado.Controls.Add(this.BancosLblSubtitulo);
             this.BancosPnlEncabezado.Controls.Add(this.BancosLblTitulo);
             this.BancosPnlEncabezado.Location = new System.Drawing.Point(-2, -1);
-            this.BancosPnlEncabezado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BancosPnlEncabezado.Margin = new System.Windows.Forms.Padding(2);
             this.BancosPnlEncabezado.Name = "BancosPnlEncabezado";
             this.BancosPnlEncabezado.Size = new System.Drawing.Size(1050, 124);
             this.BancosPnlEncabezado.TabIndex = 14;
@@ -546,7 +546,7 @@
             this.BancosPbMascota.BackgroundImage = global::CapaVista_AutorizacionOrdenes.Properties.Resources._10;
             this.BancosPbMascota.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BancosPbMascota.Location = new System.Drawing.Point(952, -1);
-            this.BancosPbMascota.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BancosPbMascota.Margin = new System.Windows.Forms.Padding(2);
             this.BancosPbMascota.Name = "BancosPbMascota";
             this.BancosPbMascota.Size = new System.Drawing.Size(98, 122);
             this.BancosPbMascota.TabIndex = 13;
@@ -557,7 +557,7 @@
             this.BancosPbLogo.BackgroundImage = global::CapaVista_AutorizacionOrdenes.Properties.Resources.bancos_logo;
             this.BancosPbLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BancosPbLogo.Location = new System.Drawing.Point(12, 2);
-            this.BancosPbLogo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BancosPbLogo.Margin = new System.Windows.Forms.Padding(2);
             this.BancosPbLogo.Name = "BancosPbLogo";
             this.BancosPbLogo.Size = new System.Drawing.Size(112, 122);
             this.BancosPbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -576,7 +576,7 @@
             this.BancosPnlBotones.Controls.Add(this.BancosBtnRechazar);
             this.BancosPnlBotones.Controls.Add(this.BancosBtnAyuda);
             this.BancosPnlBotones.Location = new System.Drawing.Point(948, 123);
-            this.BancosPnlBotones.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BancosPnlBotones.Margin = new System.Windows.Forms.Padding(2);
             this.BancosPnlBotones.Name = "BancosPnlBotones";
             this.BancosPnlBotones.Size = new System.Drawing.Size(100, 567);
             this.BancosPnlBotones.TabIndex = 15;
@@ -588,7 +588,7 @@
             this.BancosBtnEliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BancosBtnEliminar.Font = new System.Drawing.Font("Segoe UI", 13F);
             this.BancosBtnEliminar.Location = new System.Drawing.Point(26, 206);
-            this.BancosBtnEliminar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BancosBtnEliminar.Margin = new System.Windows.Forms.Padding(2);
             this.BancosBtnEliminar.Name = "BancosBtnEliminar";
             this.BancosBtnEliminar.Size = new System.Drawing.Size(56, 61);
             this.BancosBtnEliminar.TabIndex = 7;
@@ -601,7 +601,7 @@
             this.BancosBtnIngresar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BancosBtnIngresar.Font = new System.Drawing.Font("Segoe UI", 13F);
             this.BancosBtnIngresar.Location = new System.Drawing.Point(26, 142);
-            this.BancosBtnIngresar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BancosBtnIngresar.Margin = new System.Windows.Forms.Padding(2);
             this.BancosBtnIngresar.Name = "BancosBtnIngresar";
             this.BancosBtnIngresar.Size = new System.Drawing.Size(56, 61);
             this.BancosBtnIngresar.TabIndex = 6;
@@ -614,7 +614,7 @@
             this.BancosBtnLimpiar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BancosBtnLimpiar.Font = new System.Drawing.Font("Segoe UI", 13F);
             this.BancosBtnLimpiar.Location = new System.Drawing.Point(26, 355);
-            this.BancosBtnLimpiar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BancosBtnLimpiar.Margin = new System.Windows.Forms.Padding(2);
             this.BancosBtnLimpiar.Name = "BancosBtnLimpiar";
             this.BancosBtnLimpiar.Size = new System.Drawing.Size(56, 61);
             this.BancosBtnLimpiar.TabIndex = 5;
@@ -627,7 +627,7 @@
             this.BancosBtnReporte.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BancosBtnReporte.Font = new System.Drawing.Font("Segoe UI", 13F);
             this.BancosBtnReporte.Location = new System.Drawing.Point(26, 289);
-            this.BancosBtnReporte.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BancosBtnReporte.Margin = new System.Windows.Forms.Padding(2);
             this.BancosBtnReporte.Name = "BancosBtnReporte";
             this.BancosBtnReporte.Size = new System.Drawing.Size(56, 61);
             this.BancosBtnReporte.TabIndex = 3;
@@ -640,7 +640,7 @@
             this.BancosBtnAutorizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BancosBtnAutorizar.Font = new System.Drawing.Font("Segoe UI", 13F);
             this.BancosBtnAutorizar.Location = new System.Drawing.Point(26, 15);
-            this.BancosBtnAutorizar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BancosBtnAutorizar.Margin = new System.Windows.Forms.Padding(2);
             this.BancosBtnAutorizar.Name = "BancosBtnAutorizar";
             this.BancosBtnAutorizar.Size = new System.Drawing.Size(56, 61);
             this.BancosBtnAutorizar.TabIndex = 0;
@@ -653,7 +653,7 @@
             this.BancosBtnSalir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BancosBtnSalir.Font = new System.Drawing.Font("Segoe UI", 13F);
             this.BancosBtnSalir.Location = new System.Drawing.Point(26, 487);
-            this.BancosBtnSalir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BancosBtnSalir.Margin = new System.Windows.Forms.Padding(2);
             this.BancosBtnSalir.Name = "BancosBtnSalir";
             this.BancosBtnSalir.Size = new System.Drawing.Size(56, 61);
             this.BancosBtnSalir.TabIndex = 2;
@@ -666,7 +666,7 @@
             this.BancosBtnRechazar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BancosBtnRechazar.Font = new System.Drawing.Font("Segoe UI", 13F);
             this.BancosBtnRechazar.Location = new System.Drawing.Point(26, 79);
-            this.BancosBtnRechazar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BancosBtnRechazar.Margin = new System.Windows.Forms.Padding(2);
             this.BancosBtnRechazar.Name = "BancosBtnRechazar";
             this.BancosBtnRechazar.Size = new System.Drawing.Size(56, 61);
             this.BancosBtnRechazar.TabIndex = 1;
@@ -679,7 +679,7 @@
             this.BancosBtnAyuda.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BancosBtnAyuda.Font = new System.Drawing.Font("Segoe UI", 13F);
             this.BancosBtnAyuda.Location = new System.Drawing.Point(26, 421);
-            this.BancosBtnAyuda.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BancosBtnAyuda.Margin = new System.Windows.Forms.Padding(2);
             this.BancosBtnAyuda.Name = "BancosBtnAyuda";
             this.BancosBtnAyuda.Size = new System.Drawing.Size(56, 61);
             this.BancosBtnAyuda.TabIndex = 4;
@@ -689,7 +689,7 @@
             // 
             this.BancosPnlAsignacionCuenta.Controls.Add(this.BancosDgvAsignacionCuenta);
             this.BancosPnlAsignacionCuenta.Location = new System.Drawing.Point(10, 431);
-            this.BancosPnlAsignacionCuenta.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BancosPnlAsignacionCuenta.Margin = new System.Windows.Forms.Padding(2);
             this.BancosPnlAsignacionCuenta.Name = "BancosPnlAsignacionCuenta";
             this.BancosPnlAsignacionCuenta.Size = new System.Drawing.Size(602, 259);
             this.BancosPnlAsignacionCuenta.TabIndex = 16;
@@ -730,7 +730,7 @@
             this.BancosDgvAsignacionCuenta.EnableHeadersVisualStyles = false;
             this.BancosDgvAsignacionCuenta.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(231)))), ((int)(((byte)(211)))));
             this.BancosDgvAsignacionCuenta.Location = new System.Drawing.Point(14, 22);
-            this.BancosDgvAsignacionCuenta.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BancosDgvAsignacionCuenta.Margin = new System.Windows.Forms.Padding(2);
             this.BancosDgvAsignacionCuenta.Name = "BancosDgvAsignacionCuenta";
             this.BancosDgvAsignacionCuenta.RowHeadersWidth = 51;
             this.BancosDgvAsignacionCuenta.RowTemplate.Height = 24;
@@ -811,12 +811,12 @@
             this.Controls.Add(this.BancosPnlOrdenesPendientes);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmAutorizacionOrdenes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "8006–AutorizaciónOrdenCompra";
+            this.Text = "8011–AutorizaciónOrdenCompra";
             this.Load += new System.EventHandler(this.FrmAutorizacionOrdenes_Load);
             this.BancosPnlOrdenesPendientes.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.BancosDgvOrdenesPendientes)).EndInit();

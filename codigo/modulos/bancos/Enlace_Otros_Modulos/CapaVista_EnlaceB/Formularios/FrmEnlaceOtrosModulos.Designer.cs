@@ -587,7 +587,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "FrmEnlaceOtrosModulos";
-            this.Text = "8003–EnlaceConOtrosModulos";
+            this.Text = "8008-EnlaceOtrosMódulos";
             this.BancPnlFiltros.ResumeLayout(false);
             this.BancPnlFiltros.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BancPbxFondoEnlace)).EndInit();

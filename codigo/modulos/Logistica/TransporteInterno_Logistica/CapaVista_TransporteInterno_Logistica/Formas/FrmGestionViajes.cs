@@ -16,5 +16,10 @@ namespace CapaVista_TransporteInterno_Logistica.Formas
         {
             InitializeComponent();
         }
+
+        private void tabGestionViajes_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

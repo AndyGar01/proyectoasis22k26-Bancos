@@ -6,6 +6,7 @@ namespace CapaModelo_DisponibilidadDiaria.Entidades
     {
         public string Banco { get; set; }
         public string NumeroCuenta { get; set; }
+        public string TipoCuenta { get; set; }  // "Monetaria", "Ahorro", etc.
         public string Moneda { get; set; }      // "GTQ", "USD", "EUR"
         public DateTime FechaCorte { get; set; }
 

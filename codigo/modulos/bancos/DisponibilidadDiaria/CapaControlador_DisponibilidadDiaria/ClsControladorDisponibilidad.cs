@@ -41,21 +41,23 @@ namespace CapaControlador_DisponibilidadDiaria
                 fechaCorte, banco, numeroCuenta, moneda);
 
             var tabla = new DataTable();
-            tabla.Columns.Add("Banco",        typeof(string));
-            tabla.Columns.Add("Cuenta",       typeof(string));
-            tabla.Columns.Add("Moneda",       typeof(string));
-            tabla.Columns.Add("Saldo Inicial",typeof(decimal));
-            tabla.Columns.Add("Ingresos",     typeof(decimal));
-            tabla.Columns.Add("Egresos",      typeof(decimal));
-            tabla.Columns.Add("Comprometido", typeof(decimal));
-            tabla.Columns.Add("Restringido",  typeof(decimal));
-            tabla.Columns.Add("Disponible",   typeof(decimal));
+            tabla.Columns.Add("Banco",          typeof(string));
+            tabla.Columns.Add("Cuenta",         typeof(string));
+            tabla.Columns.Add("Tipo de cuenta", typeof(string));
+            tabla.Columns.Add("Moneda",         typeof(string));
+            tabla.Columns.Add("Saldo Inicial",  typeof(decimal));
+            tabla.Columns.Add("Ingresos",       typeof(decimal));
+            tabla.Columns.Add("Egresos",        typeof(decimal));
+            tabla.Columns.Add("Comprometido",   typeof(decimal));
+            tabla.Columns.Add("Restringido",    typeof(decimal));
+            tabla.Columns.Add("Disponible",     typeof(decimal));
 
             foreach (var d in lista)
             {
                 tabla.Rows.Add(
                     d.Banco,
                     d.NumeroCuenta,
+                    d.TipoCuenta ?? "Monetaria",
                     d.Moneda,
                     d.SaldoInicial,
                     d.Ingresos,

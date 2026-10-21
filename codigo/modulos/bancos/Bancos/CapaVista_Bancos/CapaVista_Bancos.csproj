@@ -47,6 +47,12 @@
     <Reference Include="CapaVista_DisponibilidadDiaria">
       <HintPath>..\..\DisponibilidadDiaria\CapaVista_DisponibilidadDiaria\bin\Debug\CapaVista_DisponibilidadDiaria.dll</HintPath>
     </Reference>
+    <Reference Include="CapaControlador_EnlaceB">
+      <HintPath>..\..\Enlace_Otros_Modulos\CapaControlador_EnlaceB\bin\Debug\CapaControlador_EnlaceB.dll</HintPath>
+    </Reference>
+    <Reference Include="CapaModelo_EnlaceB">
+      <HintPath>..\..\Enlace_Otros_Modulos\CapaModelo_EnlaceB\bin\Debug\CapaModelo_EnlaceB.dll</HintPath>
+    </Reference>
     <Reference Include="CapaVista_EnlaceB">
       <HintPath>..\..\Enlace_Otros_Modulos\CapaVista_EnlaceB\bin\Debug\CapaVista_EnlaceB.dll</HintPath>
     </Reference>

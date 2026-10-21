@@ -35,7 +35,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using CapaVista_Logistica;
+
 
 namespace CapaVista_Seguridad
 {
@@ -307,11 +307,7 @@ namespace CapaVista_Seguridad
             Help.ShowHelp(this, "C:/SeguridadAyudas/SeguridadAyudas.chm", "MDI_Seguridad.html");
         }
 
-        private void LogisticaBtnMDILogistica_Click(object sender, EventArgs e)
-        {
-            CapaVista_Logistica.FrmMDILogistica Logistica = new CapaVista_Logistica.FrmMDILogistica();
-            Logistica.Show();
-        }
+      
     }
 }
 

@@ -34,7 +34,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CapaVista_Bancos">
+    <Reference Include="CapaVista_Bancos, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\Bancos\CapaVista_Bancos\bin\Debug\CapaVista_Bancos.dll</HintPath>
     </Reference>
     <Reference Include="System" />

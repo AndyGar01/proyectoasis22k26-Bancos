@@ -1,4 +1,4 @@
-﻿namespace CapaVista_Bancos.Formularios
+namespace CapaVista_Bancos.Formularios
 {
     partial class FrmMDIBancos
     {
@@ -621,6 +621,7 @@
             this.BancosBtnCuentaBancaria.Size = new System.Drawing.Size(248, 41);
             this.BancosBtnCuentaBancaria.TabIndex = 5;
             this.BancosBtnCuentaBancaria.UseVisualStyleBackColor = false;
+            this.BancosBtnCuentaBancaria.Click += new System.EventHandler(this.BancosBtnCuentaBancaria_Click);
             // 
             // BancosPnlNavegador3
             // 

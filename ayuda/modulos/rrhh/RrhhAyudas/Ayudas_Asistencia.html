@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <title>Ayudas - Asistencia</title>
+</head>
+
+<body>
+    <br>
+    <center>
+        <img class="imgLogo" src="Imagenes/LogoYMascota/logo.png">
+        <img class="imgButti" src="Imagenes/LogoYMascota/5.png">
+        <h1>Ayudas - Asistencia</h1>
+    </center>
+    <br>
+    <div class="container">
+        <h2>Descripción general</h2>
+        <p> El módulo de Asistencia registra la hora de entrada y salida de cada empleado, calcula las horas trabajadas y señala llegadas tarde, ausencias y horas extra. Esta información alimenta el cálculo de la nómina.</p>
+        <br>
+        <p> Por ejemplo, si un empleado con horario de 8:00 a 17:00 marca entrada a las 8:20, el sistema registra una llegada tarde de 20 minutos. Si trabaja hasta las 19:00, se contabilizan 2 horas extra pendientes de autorización.</p>
+        <img class="imgVentana" src="Imagenes/Asistencia/Asistencia_general.png" alt="Vista general">
+        <br><br><br>
+
+        <h2>¿Cómo funciona la ventana?</h2>
+        <br>
+        <p> Presione Ingresar, seleccione el empleado, la fecha, y escriba la hora de entrada y de salida. Marque los checkbox de tardanza, ausencia justificada u hora extra según corresponda y agregue una observación si es necesario.</p>
+        <img class="imgVentana" src="Imagenes/Asistencia/Asistencia_ingresar.png" alt="Ingresar">
+        <br><br><br>
+
+        <h2>Guardar un registro</h2>
+        <br>
+        <p> Una vez completados los datos, presione el botón Guardar. Si el registro es único, el sistema mostrará un mensaje confirmando que la grabación fue exitosa.</p>
+        <img class="imgVentana" src="Imagenes/Asistencia/Asistencia_guardar_exitoso.png" alt="Guardado exitoso">
+        <br><br><br>
+
+        <p> Si deja campos vacíos, el sistema lo validará y no permitirá guardar, mostrando un mensaje de aviso.</p>
+        <img class="imgVentana" src="Imagenes/Asistencia/Asistencia_campos_vacios.png" alt="Campos vacíos">
+        <br><br><br>
+
+        <p> Si intenta ingresar un registro que ya existe, el sistema lo detectará e indicará que ya hay un registro igual.</p>
+        <img class="imgVentana" src="Imagenes/Asistencia/Asistencia_registro_duplicado.png" alt="Registro duplicado">
+        <br><br><br>
+
+        <h2>Modificar un registro</h2>
+        <br>
+        <p> Seleccione la fila completa que desea cambiar, actualice los datos necesarios y presione Modificar.</p>
+        <img class="imgVentana" src="Imagenes/Asistencia/Asistencia_modificar.png" alt="Modificar">
+        <br><br><br>
+
+        <h2>Botones de navegación</h2>
+        <br>
+        <p> En el formulario se encuentran los botones de navegación, que le permiten desplazarse entre los registros: primero, anterior, siguiente y último.</p>
+        <img class="imgVentana" src="Imagenes/Asistencia/Asistencia_navegacion.png" alt="Navegación">
+        <br><br><br>
+
+        <h2>Filtrado de datos</h2>
+        <br>
+        <p> Escriba en el textbox el nombre del empleado o fecha que desea buscar. No importan las mayúsculas o minúsculas. Luego presione el botón Consultar y se mostrarán todos los resultados que coincidan.</p>
+        <img class="imgVentana" src="Imagenes/Asistencia/Asistencia_filtrado.png" alt="Filtrado">
+        <br><br><br>
+
+        <p> También se incluye un cuadro de control de registros para mejor accesibilidad y orden en la tabla.</p>
+        <img class="imgVentana" src="Imagenes/Asistencia/Asistencia_contador_registros.png" alt="Contador de registros">
+        <br><br><br>
+
+        <h2>Reporte</h2>
+        <br>
+        <p> Presione el botón Reporte para abrir una ventana con el listado de registros del módulo: empleado, fecha, hora de entrada, hora de salida, horas trabajadas, tardanza y horas extra.</p>
+        <br>
+        <p> Desde la barra superior del reporte puede desplazarse entre páginas, actualizar la información, ajustar el zoom, buscar un texto, imprimirlo o exportarlo.</p>
+        <img class="imgVentana" src="Imagenes/Asistencia/Asistencia_reporte.png" alt="Reporte">
+        <br><br><br>
+    </div>
+</body>
+
+</html>

@@ -15,7 +15,7 @@ namespace CapaVista_Empleado.Formularios
         public FrmInstructoresNavegador()
         {
             InitializeComponent();
-            RrhhNavInstructores.NavegadorMetConfigurar("tblinstructores", 9000, 9303);
+            RrhhNavInstructores.NavegadorMetConfigurar("tblInstructor", 9000, 9303);
         }
 
     }

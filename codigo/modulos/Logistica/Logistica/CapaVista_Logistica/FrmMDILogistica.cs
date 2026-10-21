@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using CapaVista_Inventario_Logistica;
 using CapaVista_Inventario_Logistica.Formas;
-using CapaVista_TransporteInterno_Logistica.Formas;
+
 using CapaVista_Traslados_Logistica;
 using CapaVista_MuestreoAuditoria_Logistica;
 using CapaVista_CierreInventario.Forms;
@@ -21,6 +21,14 @@ namespace CapaVista_Logistica
         public FrmMDILogistica()
         {
             InitializeComponent();
+
+
+        }
+        public void LogisticaMetActualizarInfoUsuario(string Nombre, string Rol)
+        {
+            LogisticaLblUsuario.Text = Nombre;
+            LogisticaLblRolUsuario.Text = Rol;
+            LogisticaLbUsuarioRol.Left = LogisticaLblUsuario.Right + 30;
         }
 
         private void LogisticaBtnUbicaciones_Click(object sender, EventArgs e)
@@ -35,12 +43,7 @@ namespace CapaVista_Logistica
             frmMantenimientoProducto.ShowDialog();
         }
 
-        private void LogisticaMetActualizarInfoUsuario(string Nombre, string Rol)
-            {
-            LogisticaLblUsuario.Text = Nombre;
-            LogisticaLblRolUsuario.Text = Rol;  
-            LogisticaLbUsuarioRol.Left = LogisticaLblUsuario.Right + 30;
-        }
+       
 
         private void LogisticaBtnInventario_Click(object sender, EventArgs e)
         {
@@ -50,8 +53,6 @@ namespace CapaVista_Logistica
 
         private void LogisticaBtnGestionTransporte_Click(object sender, EventArgs e)
         {
-           CapaVista_TransporteInterno_Logistica.Formas.FrmTransporteInterno frmTransporteInterno = new CapaVista_TransporteInterno_Logistica.Formas.FrmTransporteInterno();
-            frmTransporteInterno.ShowDialog();
         }
 
         private void LogisticaBtnTraslado_Click(object sender, EventArgs e)

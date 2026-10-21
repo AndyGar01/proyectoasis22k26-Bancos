@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TranasporteExterno_Logistica
+namespace TransporteExterno_Logistica
 {
     public class Class1
     {

@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{CB3F871A-28E2-4B45-B959-533294C11A01}</ProjectGuid>
+    <ProjectGuid>{C01E36DD-C3C6-404A-8FC1-A079179D662B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>CapaModelo_TransporteExterno_Logistica</RootNamespace>

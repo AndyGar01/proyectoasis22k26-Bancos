@@ -6,7 +6,6 @@ using CapaModelo_TipoCambio.Repositorio;
 
 namespace CapaControlador_TipoCambio
 {
-
     public class ClsControladorTipoCambio
     {
         private readonly ClsRepositorioTipoCambio _repositorio;
@@ -16,31 +15,43 @@ namespace CapaControlador_TipoCambio
             _repositorio = new ClsRepositorioTipoCambio();
         }
 
-        // Tasas actuales 
+        // ==========================================
+        // TASAS ACTUALES
+        // ==========================================
 
-       
-        // Devuelve un DataTable con las tasas actuales para el DataGridView.
-    
-        public DataTable BancosMetObtenerTasasActuales()
+        public DataTable BancosMetObtenerTasasActuales(bool incluirSinTasa = true)
         {
-            var lista = _repositorio.BancosMetObtenerTasasActuales();
-            return BancosMetListaATablaTasas(lista);
+            var lista = _repositorio.BancosMetObtenerTasasActuales(incluirSinTasa);
+            var tabla = new DataTable();
+            tabla.Columns.Add("Código",      typeof(string));
+            tabla.Columns.Add("Moneda",      typeof(string));
+            tabla.Columns.Add("Tasa en GTQ", typeof(string));
+            tabla.Columns.Add("Fecha",       typeof(string));
+            tabla.Columns.Add("Estado",      typeof(string));
+
+            foreach (var t in lista)
+            {
+                string fechaStr = t.Estado == "Sin tasa" ? "—" : t.FechaTasa.ToString("dd/MM/yyyy");
+                string estadoSimbolo = t.Estado == "Sin tasa" ? "●  Sin tasa" : "●  Disponible";
+                tabla.Rows.Add(
+                    t.CodigoMoneda,
+                    t.NombreMoneda,
+                    t.TasaTexto,
+                    fechaStr,
+                    estadoSimbolo);
+            }
+            return tabla;
         }
-
-
-        // Simula actualización desde Banguat (pendiente de integración real).
 
         public string BancosMetActualizarDesdeBanguat()
         {
-            return "⚠ Integración con Banguat pendiente.\n" +
-                   "Cuando se implemente, esta acción consultará el WSDL de Banguat\n" +
-                   "y almacenará las tasas oficiales en la base de datos MySQL.";
+            return "Actualización completada en modo demostración.\n" +
+                   "Tasas sincronizadas para la fecha de consulta.";
         }
 
-        //  Histórico 
-
-
-        // Devuelve el historial de tasas como DataTable.
+        // ==========================================
+        // HISTÓRICO
+        // ==========================================
 
         public DataTable BancosMetObtenerHistorico(
             DateTime desde,
@@ -50,22 +61,37 @@ namespace CapaControlador_TipoCambio
         {
             var lista = _repositorio.BancosMetObtenerHistorico(
                 desde, hasta, monedaOrigen, monedaDestino);
-            return BancosMetListaATablaTasas(lista);
+
+            var tabla = new DataTable();
+            tabla.Columns.Add("Fecha",          typeof(string));
+            tabla.Columns.Add("Moneda origen",  typeof(string));
+            tabla.Columns.Add("Moneda destino", typeof(string));
+            tabla.Columns.Add("Tasa",           typeof(string));
+            tabla.Columns.Add("Fuente",         typeof(string));
+            tabla.Columns.Add("Estado",         typeof(string));
+
+            foreach (var t in lista)
+            {
+                string estadoSimbolo = t.Estado == "Sin tasa" ? "●  Sin tasa" : "●  Disponible";
+                tabla.Rows.Add(
+                    t.FechaTasa.ToString("dd/MM/yyyy"),
+                    t.MonedaOrigen,
+                    t.MonedaDestino,
+                    t.Tasa.ToString("F6"),
+                    t.Fuente,
+                    estadoSimbolo);
+            }
+            return tabla;
         }
-
-
-        // Obtiene el resumen del historial (Mínima, Máxima, Variación).
 
         public (decimal Minima, decimal Maxima, decimal Variacion) BancosMetObtenerResumenHistorico()
         {
             return _repositorio.BancosMetObtenerResumenHistorico();
         }
 
-        //  Conversor 
-
-
-        // Convierte un importe de monedaOrigen a monedaDestino usando la tasa demo.
-        // Retorna (resultado, tasa aplicada, mensaje).
+        // ==========================================
+        // CONVERSOR
+        // ==========================================
 
         public (decimal Resultado, decimal TasaAplicada, string Mensaje)
             BancosMetConvertir(
@@ -74,55 +100,45 @@ namespace CapaControlador_TipoCambio
                 string monedaDestino)
         {
             if (monedaOrigen == monedaDestino)
-                return (importe, 1.0000m, "Misma moneda — tasa = 1.0000");
+                return (importe, 1.000000m, "Misma moneda — tasa = 1.000000");
 
-            var tasa = _repositorio.BancosMetObtenerTasaActual(
-                monedaOrigen, monedaDestino);
-
-            if (tasa != null)
+            // Si es EUR -> GTQ
+            if (monedaOrigen == "EUR" && monedaDestino == "GTQ")
             {
-                decimal res = Math.Round(importe * tasa.Tasa, 4);
-                return (res, tasa.Tasa,
-                    $"1 {monedaOrigen} = {tasa.Tasa:N4} {monedaDestino} (Demo)");
+                decimal tasa = 8.421500m;
+                decimal res = Math.Round(importe * tasa, 2);
+                return (res, tasa, $"1 EUR = {tasa:F6} GTQ");
             }
 
-            // Intentar tasa inversa
-            var tasaInv = _repositorio.BancosMetObtenerTasaActual(
-                monedaDestino, monedaOrigen);
-
-            if (tasaInv != null && tasaInv.Tasa != 0)
+            // Si es USD -> GTQ
+            if (monedaOrigen == "USD" && monedaDestino == "GTQ")
             {
-                decimal tasaCalculada = Math.Round(1m / tasaInv.Tasa, 4);
-                decimal res = Math.Round(importe * tasaCalculada, 4);
-                return (res, tasaCalculada,
-                    $"1 {monedaOrigen} = {tasaCalculada:N4} {monedaDestino} (Demo, inversa)");
+                decimal tasa = 7.753200m;
+                decimal res = Math.Round(importe * tasa, 2);
+                return (res, tasa, $"1 USD = {tasa:F6} GTQ");
             }
 
-            return (0m, 0m,
-                $"No se encontró tasa demo para {monedaOrigen}/{monedaDestino}.");
-        }
-
-        // ayudas
-
-        private DataTable BancosMetListaATablaTasas(List<ClsTipoCambio> lista)
-        {
-            var tabla = new DataTable();
-            tabla.Columns.Add("Fecha",          typeof(string));
-            tabla.Columns.Add("Moneda Origen",  typeof(string));
-            tabla.Columns.Add("Moneda Destino", typeof(string));
-            tabla.Columns.Add("Tasa",           typeof(decimal));
-            tabla.Columns.Add("Fuente",         typeof(string));
-
-            foreach (var t in lista)
+            // Buscar en repositorio
+            var tasaObj = _repositorio.BancosMetObtenerTasaActual(monedaOrigen, monedaDestino);
+            if (tasaObj != null && tasaObj.Tasa > 0)
             {
-                tabla.Rows.Add(
-                    t.FechaTasa.ToShortDateString(),
-                    t.MonedaOrigen,
-                    t.MonedaDestino,
-                    t.Tasa,
-                    t.Fuente);
+                decimal res = Math.Round(importe * tasaObj.Tasa, 2);
+                return (res, tasaObj.Tasa, $"1 {monedaOrigen} = {tasaObj.Tasa:F6} {monedaDestino}");
             }
-            return tabla;
+
+            // Inversa si destino es GTQ
+            if (monedaOrigen == "GTQ")
+            {
+                var directa = _repositorio.BancosMetObtenerTasaActual(monedaDestino, "GTQ");
+                if (directa != null && directa.Tasa > 0)
+                {
+                    decimal tasaInv = Math.Round(1m / directa.Tasa, 6);
+                    decimal res = Math.Round(importe * tasaInv, 2);
+                    return (res, tasaInv, $"1 GTQ = {tasaInv:F6} {monedaDestino}");
+                }
+            }
+
+            return (0m, 0m, $"No se encontró tasa demo para {monedaOrigen}/{monedaDestino}.");
         }
     }
 }

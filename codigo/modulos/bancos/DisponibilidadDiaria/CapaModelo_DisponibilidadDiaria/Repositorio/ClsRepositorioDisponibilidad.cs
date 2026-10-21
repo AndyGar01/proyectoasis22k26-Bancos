@@ -18,6 +18,7 @@ namespace CapaModelo_DisponibilidadDiaria.Repositorio
                 {
                     Banco          = "Industrial",
                     NumeroCuenta   = "001-123456-7",
+                    TipoCuenta     = "Monetaria",
                     Moneda         = "GTQ",
                     FechaCorte     = fechaCorte,
                     SaldoInicial   = 250000.00m,
@@ -31,6 +32,7 @@ namespace CapaModelo_DisponibilidadDiaria.Repositorio
                 {
                     Banco          = "Agromercantil",
                     NumeroCuenta   = "002-654321-8",
+                    TipoCuenta     = "Monetaria",
                     Moneda         = "GTQ",
                     FechaCorte     = fechaCorte,
                     SaldoInicial   = 180000.00m,

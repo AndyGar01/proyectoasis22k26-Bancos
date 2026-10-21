@@ -16,5 +16,10 @@ namespace CapaVista_TransporteInterno_Logistica.Formas
         {
             InitializeComponent();
         }
+
+        private void txtObservacionesInspeccion_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

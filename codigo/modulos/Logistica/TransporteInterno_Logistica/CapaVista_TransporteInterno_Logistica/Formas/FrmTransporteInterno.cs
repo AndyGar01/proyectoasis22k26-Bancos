@@ -49,5 +49,10 @@ namespace CapaVista_TransporteInterno_Logistica.Formas
             FrmConsultaTransporte frmConsultaTransporte = new FrmConsultaTransporte();
             frmConsultaTransporte.ShowDialog();
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

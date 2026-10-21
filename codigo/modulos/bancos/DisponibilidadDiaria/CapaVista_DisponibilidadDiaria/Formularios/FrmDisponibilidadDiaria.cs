@@ -14,11 +14,23 @@ namespace CapaVista_DisponibilidadDiaria.Formularios
         {
             InitializeComponent();
             _controlador = new ClsControladorDisponibilidad();
+
+            try
+            {
+                if (Properties.Resources.Bancario != null)
+                {
+                    this.Icon = Icon.FromHandle(Properties.Resources.Bancario.GetHicon());
+                }
+            }
+            catch { }
+
             BancosMetCargarCatalogos();
             BancosBtnConsultar_Click(this, EventArgs.Empty);
         }
 
-        // Carga inicial
+        // ==========================================
+        // CARGA INICIAL Y EVENTOS DE INTERFAZ
+        // ==========================================
 
         private void BancosMetCargarCatalogos()
         {
@@ -27,14 +39,17 @@ namespace CapaVista_DisponibilidadDiaria.Formularios
             {
                 BancosCboBanco.Items.Add(b);
             }
-            BancosCboBanco.SelectedIndex = 0; // "Todos"
+            if (BancosCboBanco.Items.Count > 0)
+            {
+                BancosCboBanco.SelectedIndex = 0; // "Todos"
+            }
 
             BancosCboMoneda.Items.Clear();
             BancosCboMoneda.Items.Add("Todas");
             BancosCboMoneda.Items.Add("GTQ");
             BancosCboMoneda.Items.Add("USD");
             BancosCboMoneda.Items.Add("EUR");
-            BancosCboMoneda.SelectedIndex = 1; // "GTQ" por defecto según requerimiento
+            BancosCboMoneda.SelectedIndex = 1; // "GTQ"
 
             BancosDtpFechaCorte.Value = new DateTime(2026, 10, 13);
         }
@@ -47,10 +62,11 @@ namespace CapaVista_DisponibilidadDiaria.Formularios
             {
                 BancosCboCuenta.Items.Add(c);
             }
-            BancosCboCuenta.SelectedIndex = 0;
+            if (BancosCboCuenta.Items.Count > 0)
+            {
+                BancosCboCuenta.SelectedIndex = 0;
+            }
         }
-
-        // Botón Consultar 
 
         private void BancosBtnConsultar_Click(object sender, EventArgs e)
         {
@@ -79,8 +95,7 @@ namespace CapaVista_DisponibilidadDiaria.Formularios
                 BancosLblValorDisponible.Text   = $"{pref}{res.Disponible:N2}";
 
                 BancosLblMonedaResumen.Text = $"Resumen en {monedaRes}";
-                BancosLblStatusCuentas.Text = $"{dt.Rows.Count} cuentas";
-                BancosLblStatusMoneda.Text  = $"•   Importes en {monedaRes}";
+                BancosLblStatusLine.Text    = $"{dt.Rows.Count} cuentas   •   Importes en {monedaRes}";
 
                 // Cargar compromisos y resumen para la cuenta seleccionada
                 BancosMetActualizarPanelesInferiores();
@@ -91,8 +106,6 @@ namespace CapaVista_DisponibilidadDiaria.Formularios
                     "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-        // Cambio de selección en la tabla principal
 
         private void BancosDgvDisponibilidad_SelectionChanged(object sender, EventArgs e)
         {
@@ -122,8 +135,6 @@ namespace CapaVista_DisponibilidadDiaria.Formularios
             BancosMetFormatearGrillaResumenCuenta();
         }
 
-        // Botón Exportar 
-
         private void BancosBtnExportar_Click(object sender, EventArgs e)
         {
             MessageBox.Show(
@@ -134,87 +145,107 @@ namespace CapaVista_DisponibilidadDiaria.Formularios
                 MessageBoxIcon.Information);
         }
 
-        // Formateo de DataGridViews
+        private void BancosBtnFooterAyuda_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(
+                "Módulo: 8002 – Disponibilidad Diaria\n" +
+                "Empresa: Embutidos de Calidad S.A.\n\n" +
+                "Permite consultar los saldos consolidados por banco y cuenta bancaria, " +
+                "así como los cobros acreditados, pagos programados y fondos en reserva.",
+                "Ayuda del Sistema",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information);
+        }
+
+        private void BancosBtnFooterReporte_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(
+                "Generación de reportes de Disponibilidad Diaria.\n" +
+                "Los reportes oficiales se emiten al cierre del día.",
+                "Reportes",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information);
+        }
+
+        private void BancosBtnFooterSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        // ==========================================
+        // FORMATEO DE GRIDVIEWS
+        // ==========================================
 
         private void BancosMetFormatearGrillaDisponibilidad()
         {
-            BancosDgvDisponibilidad.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            BancosDgvDisponibilidad.RowHeadersVisible   = false;
-            BancosDgvDisponibilidad.AllowUserToAddRows  = false;
-            BancosDgvDisponibilidad.ReadOnly            = true;
+            if (BancosDgvDisponibilidad.Columns.Count == 0) return;
 
-            string[] colsNum = { "Saldo Inicial", "Ingresos", "Egresos",
-                                  "Comprometido",  "Restringido", "Disponible" };
-            foreach (string col in colsNum)
+            string[] colsNumericas = { "Saldo inicial", "Ingresos", "Egresos", "Comprometido", "Restringido", "Disponible" };
+            foreach (string col in colsNumericas)
             {
                 if (BancosDgvDisponibilidad.Columns.Contains(col))
                 {
-                    BancosDgvDisponibilidad.Columns[col].DefaultCellStyle.Format    = "N2";
                     BancosDgvDisponibilidad.Columns[col].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+                    BancosDgvDisponibilidad.Columns[col].DefaultCellStyle.Format = "N2";
                 }
             }
 
-            foreach (DataGridViewRow row in BancosDgvDisponibilidad.Rows)
+            if (BancosDgvDisponibilidad.Columns.Contains("Banco"))
+                BancosDgvDisponibilidad.Columns["Banco"].Width = 110;
+            if (BancosDgvDisponibilidad.Columns.Contains("Cuenta"))
+                BancosDgvDisponibilidad.Columns["Cuenta"].Width = 110;
+            if (BancosDgvDisponibilidad.Columns.Contains("Tipo de cuenta"))
             {
-                row.DefaultCellStyle.BackColor = row.Index % 2 == 0
-                    ? Color.White
-                    : Color.FromArgb(248, 252, 248);
+                BancosDgvDisponibilidad.Columns["Tipo de cuenta"].Width = 110;
+                BancosDgvDisponibilidad.Columns["Tipo de cuenta"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            }
+            if (BancosDgvDisponibilidad.Columns.Contains("Moneda"))
+            {
+                BancosDgvDisponibilidad.Columns["Moneda"].Width = 70;
+                BancosDgvDisponibilidad.Columns["Moneda"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            }
+
+            if (BancosDgvDisponibilidad.Columns.Contains("Disponible"))
+            {
+                BancosDgvDisponibilidad.Columns["Disponible"].DefaultCellStyle.Font = new Font("Segoe UI", 8.5F, FontStyle.Bold);
+                BancosDgvDisponibilidad.Columns["Disponible"].DefaultCellStyle.ForeColor = Color.FromArgb(28, 74, 48);
             }
         }
 
         private void BancosMetFormatearGrillaCompromisos()
         {
-            BancosDgvCompromisos.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            BancosDgvCompromisos.RowHeadersVisible   = false;
-            BancosDgvCompromisos.AllowUserToAddRows  = false;
-            BancosDgvCompromisos.ReadOnly            = true;
-
-            if (BancosDgvCompromisos.Columns.Contains("Fecha"))
-            {
-                BancosDgvCompromisos.Columns["Fecha"].DefaultCellStyle.Format = "dd/MM/yyyy";
-            }
+            if (BancosDgvCompromisos.Columns.Count == 0) return;
 
             if (BancosDgvCompromisos.Columns.Contains("Monto"))
             {
-                BancosDgvCompromisos.Columns["Monto"].DefaultCellStyle.Format    = "Q#,##0.00";
                 BancosDgvCompromisos.Columns["Monto"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
             }
-
-            foreach (DataGridViewRow row in BancosDgvCompromisos.Rows)
+            if (BancosDgvCompromisos.Columns.Contains("Fecha"))
             {
-                row.DefaultCellStyle.BackColor = row.Index % 2 == 0
-                    ? Color.White
-                    : Color.FromArgb(248, 252, 248);
+                BancosDgvCompromisos.Columns["Fecha"].Width = 85;
+                BancosDgvCompromisos.Columns["Fecha"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             }
+            if (BancosDgvCompromisos.Columns.Contains("Concepto"))
+                BancosDgvCompromisos.Columns["Concepto"].Width = 135;
+            if (BancosDgvCompromisos.Columns.Contains("Beneficiario"))
+                BancosDgvCompromisos.Columns["Beneficiario"].Width = 145;
         }
 
         private void BancosMetFormatearGrillaResumenCuenta()
         {
-            BancosDgvResumenCuenta.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            BancosDgvResumenCuenta.RowHeadersVisible   = false;
-            BancosDgvResumenCuenta.AllowUserToAddRows  = false;
-            BancosDgvResumenCuenta.ReadOnly            = true;
+            if (BancosDgvResumenCuenta.Columns.Count == 0) return;
 
             if (BancosDgvResumenCuenta.Columns.Contains("Monto"))
             {
-                BancosDgvResumenCuenta.Columns["Monto"].DefaultCellStyle.Format    = "Q#,##0.00";
                 BancosDgvResumenCuenta.Columns["Monto"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
             }
 
             foreach (DataGridViewRow row in BancosDgvResumenCuenta.Rows)
             {
-                string concepto = row.Cells["Concepto"]?.Value?.ToString() ?? "";
-                if (concepto.Equals("Disponible", StringComparison.OrdinalIgnoreCase))
+                if (row.Cells["Concepto"]?.Value?.ToString() == "Disponible")
                 {
-                    row.DefaultCellStyle.BackColor = Color.FromArgb(230, 244, 235);
+                    row.DefaultCellStyle.Font = new Font("Segoe UI", 8.25F, FontStyle.Bold);
                     row.DefaultCellStyle.ForeColor = Color.FromArgb(28, 74, 48);
-                    row.DefaultCellStyle.Font      = new Font("Segoe UI", 9F, FontStyle.Bold);
-                }
-                else
-                {
-                    row.DefaultCellStyle.BackColor = row.Index % 2 == 0
-                        ? Color.White
-                        : Color.FromArgb(248, 252, 248);
                 }
             }
         }

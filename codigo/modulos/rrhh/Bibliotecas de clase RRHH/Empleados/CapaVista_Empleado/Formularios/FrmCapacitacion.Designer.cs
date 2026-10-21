@@ -129,7 +129,7 @@
             this.RrhhPnlInstCapacitacion.Controls.Add(this.RrhhLblInstructoresCapacitacion);
             this.RrhhPnlInstCapacitacion.Controls.Add(this.RrhhLblTipPCapacitacion);
             this.RrhhPnlInstCapacitacion.Controls.Add(this.RrhhPbTipPCapacitacion);
-            this.RrhhPnlInstCapacitacion.Location = new System.Drawing.Point(817, 193);
+            this.RrhhPnlInstCapacitacion.Location = new System.Drawing.Point(288, 196);
             this.RrhhPnlInstCapacitacion.Name = "RrhhPnlInstCapacitacion";
             this.RrhhPnlInstCapacitacion.Size = new System.Drawing.Size(246, 301);
             this.RrhhPnlInstCapacitacion.TabIndex = 17;
@@ -145,6 +145,7 @@
             this.RrhhBtnInstrucCapacitacion.TabIndex = 5;
             this.RrhhBtnInstrucCapacitacion.Text = "Abrir";
             this.RrhhBtnInstrucCapacitacion.UseVisualStyleBackColor = false;
+            this.RrhhBtnInstrucCapacitacion.Click += new System.EventHandler(this.RrhhBtnInstructores_Click);
             // 
             // RrhhLblSubInsCapacitacion
             // 
@@ -202,7 +203,7 @@
             this.RrhhPnlEvalCapacitacion.Controls.Add(this.RrhhLblSubEvaluacionCapacitacion);
             this.RrhhPnlEvalCapacitacion.Controls.Add(this.RrhhLblEvaluacionesCapacitacion);
             this.RrhhPnlEvalCapacitacion.Controls.Add(this.RrhhPbPuestosCapacitacion);
-            this.RrhhPnlEvalCapacitacion.Location = new System.Drawing.Point(549, 193);
+            this.RrhhPnlEvalCapacitacion.Location = new System.Drawing.Point(556, 193);
             this.RrhhPnlEvalCapacitacion.Name = "RrhhPnlEvalCapacitacion";
             this.RrhhPnlEvalCapacitacion.Size = new System.Drawing.Size(246, 301);
             this.RrhhPnlEvalCapacitacion.TabIndex = 15;
@@ -279,6 +280,7 @@
             this.RrhhBtnCapacitacion.TabIndex = 4;
             this.RrhhBtnCapacitacion.Text = "Abrir";
             this.RrhhBtnCapacitacion.UseVisualStyleBackColor = false;
+            this.RrhhBtnCapacitacion.Click += new System.EventHandler(this.RrhhBtnCapacitacion_Click);
             // 
             // RrhhLblSubCapacitacion
             // 
@@ -324,7 +326,7 @@
             this.RrhhPnlAsigCapacitacion.Controls.Add(this.RrhhLblSubAsigCapacitacion);
             this.RrhhPnlAsigCapacitacion.Controls.Add(this.RrhhLblAsigCapacitacion);
             this.RrhhPnlAsigCapacitacion.Controls.Add(this.RrhhPbJornadaCapacitacion);
-            this.RrhhPnlAsigCapacitacion.Location = new System.Drawing.Point(283, 193);
+            this.RrhhPnlAsigCapacitacion.Location = new System.Drawing.Point(823, 196);
             this.RrhhPnlAsigCapacitacion.Name = "RrhhPnlAsigCapacitacion";
             this.RrhhPnlAsigCapacitacion.Size = new System.Drawing.Size(246, 301);
             this.RrhhPnlAsigCapacitacion.TabIndex = 13;

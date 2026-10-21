@@ -1,4 +1,4 @@
-﻿namespace pruaeba
+﻿namespace CapaVista_TransporteExterno_Logistica.Formas
 {
     partial class RutaYSeguimiento
     {

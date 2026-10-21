@@ -32,5 +32,10 @@ namespace CapaVista_GeneracionPagos.Formularios
             FrmReporteMoneda Reporte = new FrmReporteMoneda();
             Reporte.Show();
         }
+
+        private void BancosbtnAyudas_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, "C:/BancosAyudas/CapaBancos.chm", "Moneda_Bancos.html");
+        }
     }
 }

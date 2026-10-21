@@ -133,5 +133,10 @@ namespace CapaVista_Bancos.Formularios
             FrmMonedaNavegador Moneda = new FrmMonedaNavegador();
             Moneda.ShowDialog();
         }
+
+        private void BancosBtnAyuda_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, "C:/BancosAyudas/CapaBancos.chm", "MDI_Bancos.html");
+        }
     }
 }

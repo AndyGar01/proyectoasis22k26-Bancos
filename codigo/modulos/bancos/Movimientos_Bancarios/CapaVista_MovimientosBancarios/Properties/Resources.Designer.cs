@@ -83,6 +83,16 @@ namespace CapaVista_MovimientosBancarios.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap btn_ayudaB1 {
+            get {
+                object obj = ResourceManager.GetObject("btn_ayudaB1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap btn_limpiarB {
             get {
                 object obj = ResourceManager.GetObject("btn_limpiarB", resourceCulture);
@@ -96,6 +106,16 @@ namespace CapaVista_MovimientosBancarios.Properties {
         internal static System.Drawing.Bitmap btn_registrar_movimiento_bancario {
             get {
                 object obj = ResourceManager.GetObject("btn_registrar_movimiento_bancario", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap btn_reporteB {
+            get {
+                object obj = ResourceManager.GetObject("btn_reporteB", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

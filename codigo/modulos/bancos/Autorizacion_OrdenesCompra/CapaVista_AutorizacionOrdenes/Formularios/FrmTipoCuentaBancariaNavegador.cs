@@ -34,5 +34,9 @@ namespace CapaVista_AutorizacionOrdenes.Formularios
             Reporte.Show();
         }
 
+        private void BancosBtnAyuda_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, "C:/BancosAyudas/CapaBancos.chm", "TipoCuentaBancaria_Bancos.html");
+        }
     }
 }

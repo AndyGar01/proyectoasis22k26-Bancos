@@ -24,6 +24,21 @@ namespace CapaVista_EnlaceB.Formularios
                     inner.BackColor = Color.FromArgb(46, 138, 85);
                 }
             }
+
+            navegador1.NavegadorAccionSolicitada += (Accion) =>
+            {
+                BeginInvoke((Action)(() =>
+                {
+                    BancosbtnReportes.BringToFront();
+                    BancosbtnAyudas.BringToFront();
+                }));
+            };
+
+        }
+
+        private void BancosbtnAyudas_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, "C:/BancosAyudas/CapaBancos.chm", "Bancos_Bancos.html");
         }
     }
 }

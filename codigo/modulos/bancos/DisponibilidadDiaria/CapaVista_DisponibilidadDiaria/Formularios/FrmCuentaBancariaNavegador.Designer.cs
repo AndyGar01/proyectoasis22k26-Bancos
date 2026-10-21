@@ -50,10 +50,10 @@
             this.BancosBtnFooterReporte.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.BancosBtnFooterReporte.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.BancosBtnFooterReporte.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BancosBtnFooterReporte.Location = new System.Drawing.Point(116, 738);
+            this.BancosBtnFooterReporte.Location = new System.Drawing.Point(726, 40);
             this.BancosBtnFooterReporte.Margin = new System.Windows.Forms.Padding(4);
             this.BancosBtnFooterReporte.Name = "BancosBtnFooterReporte";
-            this.BancosBtnFooterReporte.Size = new System.Drawing.Size(69, 64);
+            this.BancosBtnFooterReporte.Size = new System.Drawing.Size(94, 77);
             this.BancosBtnFooterReporte.TabIndex = 3;
             this.BancosBtnFooterReporte.UseVisualStyleBackColor = false;
             this.BancosBtnFooterReporte.Click += new System.EventHandler(this.BancosBtnFooterReporte_Click);
@@ -68,10 +68,10 @@
             this.BancosBtnFooterAyuda.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.BancosBtnFooterAyuda.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.BancosBtnFooterAyuda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BancosBtnFooterAyuda.Location = new System.Drawing.Point(33, 738);
+            this.BancosBtnFooterAyuda.Location = new System.Drawing.Point(828, 40);
             this.BancosBtnFooterAyuda.Margin = new System.Windows.Forms.Padding(4);
             this.BancosBtnFooterAyuda.Name = "BancosBtnFooterAyuda";
-            this.BancosBtnFooterAyuda.Size = new System.Drawing.Size(69, 64);
+            this.BancosBtnFooterAyuda.Size = new System.Drawing.Size(93, 77);
             this.BancosBtnFooterAyuda.TabIndex = 2;
             this.BancosBtnFooterAyuda.UseVisualStyleBackColor = false;
             this.BancosBtnFooterAyuda.Click += new System.EventHandler(this.BancosBtnFooterAyuda_Click);

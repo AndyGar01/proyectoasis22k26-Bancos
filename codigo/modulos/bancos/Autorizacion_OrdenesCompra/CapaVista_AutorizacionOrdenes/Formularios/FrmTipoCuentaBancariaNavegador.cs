@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CapaVista_AutorizacionOrdenes.frmReportes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,6 +17,22 @@ namespace CapaVista_AutorizacionOrdenes.Formularios
         {
             InitializeComponent();
             navegador1.NavegadorMetConfigurar("tblTipoCuentaBancaria", 8000, 8003);
+
+            navegador1.NavegadorAccionSolicitada += (Accion) =>
+            {
+                BeginInvoke((Action)(() =>
+                {
+                    BancosBtnReporte.BringToFront();
+                    BancosBtnAyuda.BringToFront();
+                }));
+            };
         }
+
+        private void BancosBtnReporte_Click(object sender, EventArgs e)
+        {
+            FrmReporteTipoCuentaBancaria Reporte = new FrmReporteTipoCuentaBancaria();
+            Reporte.Show();
+        }
+
     }
 }

@@ -16,5 +16,19 @@ namespace CapaVista_Empleado.Formularios
         {
             InitializeComponent();
         }
+
+        private void RrhhBtnCapacitacion_Click(object sender, EventArgs e)
+        {
+
+            FrmCapacitacionesNavegador Empleados = new FrmCapacitacionesNavegador();
+            Empleados.ShowDialog();
+        }
+
+        private void RrhhBtnInstructores_Click(object sender, EventArgs e)
+        {
+
+            FrmInstructoresNavegador Instructores = new FrmInstructoresNavegador();
+            Instructores.ShowDialog();
+        }
     }
 }

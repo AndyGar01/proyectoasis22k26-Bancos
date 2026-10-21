@@ -75,6 +75,8 @@ set "FALL_PASS=%LOG_DIR%\fallidos_pasada.txt"
 set "FALT=%LOG_DIR%\referencias_faltantes.txt"
 set "FALT_DET=%LOG_DIR%\referencias_faltantes_detalle.txt"
 set "IDX=%LOG_DIR%\indice_csproj.txt"
+set "COMPLIST=%LOG_DIR%\lista_componentes.txt"
+set "MAXRONDAS=5"
 if exist "%FALLIDOS%" del "%FALLIDOS%"
 if exist "%FALL_PASS%" del "%FALL_PASS%"
 echo Compilacion iniciada: %date% %time% > "%LOG_FILE%"
@@ -159,8 +161,14 @@ echo MSBuild: %MSBUILD_PATH% >> "%LOG_FILE%"
 echo Indexando proyectos del repositorio...
 dir /s /b "%REPO_ROOT%\*.csproj" > "%IDX%" 2>nul
 
+:: Lista de componentes a compilar (se arma sola, asi un componente nuevo que
+:: se agregue al repositorio -como reporteador- se compila sin tocar este .bat):
+::   consultas -> cualquier otro componente nuevo -> navegador -> seguridad
+::   -> todos los modulos (codigo\modulos\*, ej. rrhh)
+call :ArmarLista
+
 :: --------------------------------------------------------------------------
-:: 4) COMPILAR EN ORDEN: CONSULTAS, NAVEGADOR, SEGURIDAD
+:: 4) COMPILAR EN ORDEN: CONSULTAS, (NUEVOS), NAVEGADOR, SEGURIDAD, MODULOS
 :: --------------------------------------------------------------------------
 :: El segundo parametro indica si tambien se compilan los proyectos "Ejecucion*"
 :: de ese componente (1 = si, 0 = no). En seguridad siempre se compilan.
@@ -170,7 +178,8 @@ dir /s /b "%REPO_ROOT%\*.csproj" > "%IDX%" 2>nul
 ::   CapaVista_Seguridad       -> CapaVista_Navegador
 :: Para evitar errores de la primera ronda, antes de empezar se compilan
 :: CapaModelo_Seguridad y CapaControlador_Seguridad (no dependen de nadie).
-:: Aun asi, si algo falla se repite TODO el ciclo (maximo 3 rondas).
+:: Aun asi, si algo falla se repite TODO el ciclo (hasta %MAXRONDAS% rondas, o
+:: menos si en una ronda fallan exactamente los mismos proyectos que en la anterior).
 echo.
 echo ============================================
 echo PRE-COMPILACION: capas base de Seguridad (las usa Navegador)
@@ -187,27 +196,26 @@ set /a total=0
 set /a ok=0
 set /a fail=0
 if exist "%FALLIDOS%" del "%FALLIDOS%"
-call :CompilarComponente consultas %EJECUTABLES_TODOS%
-call :CompilarComponente navegador %EJECUTABLES_TODOS%
-call :CompilarComponente seguridad 1
-if exist "%MODULOS_DIR%\rrhh\" call :CompilarComponente rrhh 1 "%MODULOS_DIR%\rrhh"
-if not exist "%MODULOS_DIR%\rrhh\" echo [PENDIENTE] No existe %MODULOS_DIR%\rrhh : se omite RRHH.
+for /f "usebackq tokens=1,* delims=|" %%a in ("%COMPLIST%") do call :CompilarComponente "%%a" %EJECUTABLES_TODOS% "%%b"
 if %fail% EQU 0 goto RONDA_FIN
-if %RONDA% GEQ 3 goto RONDA_FIN
+if %RONDA% GEQ %MAXRONDAS% goto RONDA_FIN
 if exist "%FALL_PREV%" fc /b "%FALLIDOS%" "%FALL_PREV%" >nul 2>&1 && goto RONDA_SIN_PROGRESO
 copy /y "%FALLIDOS%" "%FALL_PREV%" >nul 2>&1
 set /a RONDA+=1
 echo.
 echo ============================================
-echo Hubo errores. Se repite todo el ciclo: RONDA %RONDA% de 3
-echo (navegador y seguridad dependen entre si)
+echo Hubo errores. Se repite todo el ciclo: RONDA %RONDA% de %MAXRONDAS%
+echo (los componentes dependen unos de otros)
 echo ============================================
 goto RONDA
 
 :RONDA_SIN_PROGRESO
 echo.
 echo Los mismos proyectos siguen fallando que en la ronda anterior:
-echo no se repite mas. Revisa los errores de abajo.
+echo no se repite mas.
+echo Si los errores son CS0246 sobre capas que SI compilan en otro lado, lo mas
+echo probable es una REFERENCIA CIRCULAR entre proyectos (A usa B, B usa C y C usa A):
+echo ningun script puede compilar eso desde cero; hay que romper el ciclo en el codigo.
 
 :RONDA_FIN
 
@@ -231,19 +239,13 @@ echo.
 echo ============================================
 echo VERIFICANDO DLLs (bin\Debug)
 echo ============================================
-call :VerificarComponente consultas
-call :VerificarComponente navegador
-call :VerificarComponente seguridad
-if exist "%MODULOS_DIR%\rrhh\" call :VerificarComponente rrhh "%MODULOS_DIR%\rrhh"
+for /f "usebackq tokens=1,* delims=|" %%a in ("%COMPLIST%") do call :VerificarComponente "%%a" "%%b"
 
 echo.
 echo ============================================
 echo REFERENCIAS A DLL QUE SIGUEN SIN EXISTIR
 echo ============================================
-call :ListarFaltantes consultas
-call :ListarFaltantes navegador
-call :ListarFaltantes seguridad
-if exist "%MODULOS_DIR%\rrhh\" call :ListarFaltantes rrhh "%MODULOS_DIR%\rrhh"
+for /f "usebackq tokens=1,* delims=|" %%a in ("%COMPLIST%") do call :ListarFaltantes "%%a" "%%b"
 
 echo.
 echo ============================================
@@ -271,6 +273,42 @@ exit /b 1
 
 :: ==========================================================================
 :: FUNCION: COMPILAR UN COMPONENTE COMPLETO (con una segunda pasada si falla)
+:: ==========================================================================
+:: FUNCION: ARMAR LA LISTA DE COMPONENTES (archivo "nombre|ruta" por linea)
+:: ==========================================================================
+:ArmarLista
+if exist "%COMPLIST%" del "%COMPLIST%"
+if exist "%COMPONENTES_DIR%\consultas\" >>"%COMPLIST%" echo consultas^|%COMPONENTES_DIR%\consultas
+if not exist "%COMPONENTES_DIR%\consultas\" echo [PENDIENTE] No existe la carpeta consultas : se omite.
+for /d %%d in ("%COMPONENTES_DIR%\*") do call :AgregarNuevo "%%~nxd" "%%~fd"
+if exist "%COMPONENTES_DIR%\navegador\" >>"%COMPLIST%" echo navegador^|%COMPONENTES_DIR%\navegador
+if not exist "%COMPONENTES_DIR%\navegador\" echo [PENDIENTE] No existe la carpeta navegador : se omite.
+if exist "%COMPONENTES_DIR%\seguridad\" >>"%COMPLIST%" echo seguridad^|%COMPONENTES_DIR%\seguridad
+if not exist "%COMPONENTES_DIR%\seguridad\" echo [PENDIENTE] No existe la carpeta seguridad : se omite.
+if exist "%MODULOS_DIR%\" for /d %%d in ("%MODULOS_DIR%\*") do call :AgregarModulo "%%~nxd" "%%~fd"
+if not exist "%MODULOS_DIR%\" echo [PENDIENTE] No existe %MODULOS_DIR% : se omiten los modulos ^(rrhh^).
+exit /b 0
+
+:: Componentes de codigo\componentes distintos de consultas/navegador/seguridad
+:AgregarNuevo
+set "AN_N=%~1"
+if "%AN_N:~0,1%"=="." exit /b 0
+if /i "%AN_N%"=="consultas" exit /b 0
+if /i "%AN_N%"=="navegador" exit /b 0
+if /i "%AN_N%"=="seguridad" exit /b 0
+findstr /i /r /c:"\\componentes\\%AN_N%\\.*csproj$" "%IDX%" >nul 2>&1 || exit /b 0
+>>"%COMPLIST%" echo %~1^|%~2
+exit /b 0
+
+:: Modulos de codigo\modulos (rrhh y los que se agreguen)
+:AgregarModulo
+set "AM_N=%~1"
+if "%AM_N:~0,1%"=="." exit /b 0
+findstr /i /r /c:"\\modulos\\%AM_N%\\.*csproj$" "%IDX%" >nul 2>&1 || exit /b 0
+>>"%COMPLIST%" echo %~1^|%~2
+exit /b 0
+
+
 :: Uso: call :CompilarComponente CARPETA 1o0 [RUTA_COMPLETA]
 :: ==========================================================================
 :CompilarComponente

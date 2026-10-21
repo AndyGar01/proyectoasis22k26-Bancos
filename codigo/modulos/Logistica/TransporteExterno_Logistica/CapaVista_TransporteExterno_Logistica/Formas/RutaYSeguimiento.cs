@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace FrmTransporteExterno
+namespace CapaVista_TransporteExterno_Logistica.Formas
 {
-    public partial class FrmTransporteExterno : Form
+    public partial class RutaYSeguimiento : Form
     {
-        public FrmTransporteExterno()
+        public RutaYSeguimiento()
         {
             InitializeComponent();
         }

@@ -29,7 +29,7 @@ color 0A
 :: ---------------------------------------------------------------------------
 :: Si tienes Professional o Enterprise, cambia "Community" por la edicion.
 set "MSBUILD_PATH=C:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Current\Bin\MSBuild.exe"
-set "COMP=C:\proyectoasis22k26\codigo\componentes"
+set "COMP=C:\proyectoasis22k26-Bancos\codigo\componentes"
 
 set "ROOT_DIR=%~dp0"
 cd /d "%ROOT_DIR%"

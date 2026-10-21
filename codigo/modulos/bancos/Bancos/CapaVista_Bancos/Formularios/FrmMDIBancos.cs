@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -114,6 +114,12 @@ namespace CapaVista_Bancos.Formularios
         {
             FrmTipoCuentaBancariaNavegador TipoCuentaBancariaNavegador = new FrmTipoCuentaBancariaNavegador();
             TipoCuentaBancariaNavegador.ShowDialog();
+        }
+
+        private void BancosBtnBancos_Click(object sender, EventArgs e)
+        {
+            FrmBancoNavegador Banco = new FrmBancoNavegador();
+            Banco.ShowDialog();
         }
 
         private void BancosBtnCuentaBancaria_Click(object sender, EventArgs e)

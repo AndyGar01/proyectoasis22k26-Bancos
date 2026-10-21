@@ -139,6 +139,9 @@
   <data name="mascota11" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mascota11.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="btn_registrar_movimiento_bancario" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_registrar_movimiento_bancario.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="btn_salirB" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btn_salirB.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -151,7 +154,7 @@
   <data name="btn_preparar_orden" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btn_preparar_orden.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="btn_registrar_movimiento_bancario" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btn_registrar_movimiento_bancario.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="btn_ayudaB1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_ayudaB.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

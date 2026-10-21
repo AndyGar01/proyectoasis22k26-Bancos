@@ -29,17 +29,10 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmTipoCuentaBancariaNavegador));
-            this.navegador1 = new CapaVista_Navegador.Navegador();
             this.BancosBtnAyuda = new System.Windows.Forms.Button();
             this.BancosBtnReporte = new System.Windows.Forms.Button();
+            this.navegador1 = new CapaVista_Navegador.Navegador();
             this.SuspendLayout();
-            // 
-            // navegador1
-            // 
-            this.navegador1.Location = new System.Drawing.Point(12, 12);
-            this.navegador1.Name = "navegador1";
-            this.navegador1.Size = new System.Drawing.Size(1438, 108);
-            this.navegador1.TabIndex = 0;
             // 
             // BancosBtnAyuda
             // 
@@ -50,6 +43,7 @@
             this.BancosBtnAyuda.Size = new System.Drawing.Size(98, 77);
             this.BancosBtnAyuda.TabIndex = 1;
             this.BancosBtnAyuda.UseVisualStyleBackColor = true;
+            this.BancosBtnAyuda.Click += new System.EventHandler(this.BancosBtnAyuda_Click);
             // 
             // BancosBtnReporte
             // 
@@ -61,6 +55,13 @@
             this.BancosBtnReporte.TabIndex = 2;
             this.BancosBtnReporte.UseVisualStyleBackColor = true;
             this.BancosBtnReporte.Click += new System.EventHandler(this.BancosBtnReporte_Click);
+            // 
+            // navegador1
+            // 
+            this.navegador1.Location = new System.Drawing.Point(12, 12);
+            this.navegador1.Name = "navegador1";
+            this.navegador1.Size = new System.Drawing.Size(1438, 108);
+            this.navegador1.TabIndex = 0;
             // 
             // FrmTipoCuentaBancariaNavegador
             // 

@@ -34,11 +34,8 @@
             // 
             // navegador1
             // 
-<<<<<<< HEAD:codigo/componentes/seguridad/Seguridad/CapaVista_Seguridad/FrmNavegador.Designer.cs
             this.navegador1.Location = new System.Drawing.Point(2, 21);
-=======
             this.navegador1.Location = new System.Drawing.Point(11, 11);
->>>>>>> upstream/main:codigo/componentes/seguridad/Seguridad/CapaVista_Seguridad/FrmModulosNavegador.Designer.cs
             this.navegador1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.navegador1.Name = "navegador1";
             this.navegador1.Size = new System.Drawing.Size(1078, 90);
@@ -48,20 +45,17 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-<<<<<<< HEAD:codigo/componentes/seguridad/Seguridad/CapaVista_Seguridad/FrmNavegador.Designer.cs
             this.ClientSize = new System.Drawing.Size(1028, 364);
             this.Controls.Add(this.navegador1);
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FrmNavegador";
             this.Text = "2001 - FrmNavegador";
-=======
             this.ClientSize = new System.Drawing.Size(1099, 711);
             this.Controls.Add(this.navegador1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "FrmModulosNavegador";
             this.Text = "2006 - MantenimientoModulo";
->>>>>>> upstream/main:codigo/componentes/seguridad/Seguridad/CapaVista_Seguridad/FrmModulosNavegador.Designer.cs
             this.ResumeLayout(false);
 
         }

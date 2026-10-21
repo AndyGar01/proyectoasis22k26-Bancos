@@ -159,7 +159,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::CapaVista_TransporteInterno_Logistica.Properties.Resources._7;
-            this.pictureBox1.Location = new System.Drawing.Point(1230, 102);
+            this.pictureBox1.Location = new System.Drawing.Point(1091, 89);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(283, 322);
@@ -171,7 +171,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Tahoma", 12.75F);
-            this.label1.Location = new System.Drawing.Point(345, 100);
+            this.label1.Location = new System.Drawing.Point(345, 111);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(696, 27);
             this.label1.TabIndex = 9;
@@ -183,7 +183,7 @@
             this.LogisticaLblTituloTransporteInterno.BackColor = System.Drawing.Color.Transparent;
             this.LogisticaLblTituloTransporteInterno.Font = new System.Drawing.Font("Lucida Fax", 20.25F, System.Drawing.FontStyle.Bold);
             this.LogisticaLblTituloTransporteInterno.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(138)))), ((int)(((byte)(132)))));
-            this.LogisticaLblTituloTransporteInterno.Location = new System.Drawing.Point(12, 89);
+            this.LogisticaLblTituloTransporteInterno.Location = new System.Drawing.Point(12, 100);
             this.LogisticaLblTituloTransporteInterno.Name = "LogisticaLblTituloTransporteInterno";
             this.LogisticaLblTituloTransporteInterno.Size = new System.Drawing.Size(327, 40);
             this.LogisticaLblTituloTransporteInterno.TabIndex = 8;

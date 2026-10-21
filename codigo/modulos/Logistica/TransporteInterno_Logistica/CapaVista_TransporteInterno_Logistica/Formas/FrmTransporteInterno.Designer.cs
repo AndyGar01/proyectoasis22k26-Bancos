@@ -122,10 +122,10 @@
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.BackgroundImage = global::CapaVista_TransporteInterno_Logistica.Properties.Resources.f844b316_02c8_41af_9c16_226a1ef14d22;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(19, 235);
+            this.pictureBox2.Location = new System.Drawing.Point(112, 246);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(977, 167);
+            this.pictureBox2.Size = new System.Drawing.Size(964, 221);
             this.pictureBox2.TabIndex = 19;
             this.pictureBox2.TabStop = false;
             // 

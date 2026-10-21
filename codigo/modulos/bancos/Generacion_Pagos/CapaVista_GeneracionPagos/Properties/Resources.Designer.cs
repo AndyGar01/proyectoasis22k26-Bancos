@@ -83,6 +83,16 @@ namespace CapaVista_GeneracionPagos.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap btn_ayudaB1 {
+            get {
+                object obj = ResourceManager.GetObject("btn_ayudaB1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap btn_consultarB {
             get {
                 object obj = ResourceManager.GetObject("btn_consultarB", resourceCulture);

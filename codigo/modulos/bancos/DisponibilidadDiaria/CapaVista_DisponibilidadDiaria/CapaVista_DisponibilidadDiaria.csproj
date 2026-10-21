@@ -34,6 +34,24 @@
     <Reference Include="CapaControlador_DisponibilidadDiaria">
       <HintPath>..\CapaControlador_DisponibilidadDiaria\bin\Debug\CapaControlador_DisponibilidadDiaria.dll</HintPath>
     </Reference>
+    <Reference Include="CapaVista_Navegador">
+      <HintPath>..\..\..\..\componentes\navegador\Navegador\CapaVista_Navegador\bin\Debug\CapaVista_Navegador.dll</HintPath>
+    </Reference>
+    <Reference Include="CapaControlador_Navegador">
+      <HintPath>..\..\..\..\componentes\navegador\Navegador\CapaControlador_Navegador\bin\Debug\CapaControlador_Navegador.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common">
+      <HintPath>..\..\..\..\componentes\seguridad\Seguridad\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms">
+      <HintPath>..\..\..\..\componentes\seguridad\Seguridad\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel">
+      <HintPath>..\..\..\..\componentes\seguridad\Seguridad\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization">
+      <HintPath>..\..\..\..\componentes\seguridad\Seguridad\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
@@ -46,18 +64,56 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Formularios\FrmCuentaBancariaNavegador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmCuentaBancariaNavegador.Designer.cs">
+      <DependentUpon>FrmCuentaBancariaNavegador.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\FrmDisponibilidadDiaria.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\FrmDisponibilidadDiaria.Designer.cs">
       <DependentUpon>FrmDisponibilidadDiaria.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reportes\ClsReporteCuentaBancaria.cs" />
+    <Compile Include="Reportes\FrmReporteCuentaBancaria.cs"><SubType>Form</SubType></Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Formularios\FrmCuentaBancariaNavegador.resx">
+      <DependentUpon>FrmCuentaBancariaNavegador.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmDisponibilidadDiaria.resx">
       <DependentUpon>FrmDisponibilidadDiaria.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resouces\11.jpg" />
+    <None Include="Resouces\FondoDiponibilidadDiaria.png" />
+    <None Include="Resouces\kpiSaldoInicial.png" />
+    <None Include="Resouces\kpiIngresos.png" />
+    <None Include="Resouces\kpiEgresos.png" />
+    <None Include="Resouces\kpiComprometido.png" />
+    <None Include="Resouces\kpiRestringido.png" />
+    <None Include="Resouces\kpiDisponible.png" />
+    <None Include="Resouces\btn_consultarB.png" />
+    <None Include="Resouces\btn_exportarsinN.jpeg" />
+    <None Include="Resouces\btn_exportar.png" />
+    <None Include="Resouces\btn_ayuda.png" />
+    <None Include="Resouces\btn_reporteB.png" />
+    <None Include="Resouces\btn_salir.png" />
+    <None Include="Resouces\bancos_logo.png" />
+    <None Include="Resouces\Bancario.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

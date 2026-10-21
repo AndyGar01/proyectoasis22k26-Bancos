@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F6A7B8C9-D0E1-4F2A-3B4C-5D6E7F8A9B0C}</ProjectGuid>
+    <ProjectGuid>{6789ABCD-EF01-2345-6789-ABCDEF012345}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>CapaVista_TipoCambio</RootNamespace>
@@ -34,6 +34,9 @@
     <Reference Include="CapaControlador_TipoCambio">
       <HintPath>..\CapaControlador_TipoCambio\bin\Debug\CapaControlador_TipoCambio.dll</HintPath>
     </Reference>
+    <Reference Include="CapaModelo_TipoCambio">
+      <HintPath>..\CapaModelo_TipoCambio\bin\Debug\CapaModelo_TipoCambio.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
@@ -53,11 +56,34 @@
       <DependentUpon>FrmTipoCambio.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Formularios\FrmTipoCambio.resx">
       <DependentUpon>FrmTipoCambio.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resouces\11.jpg" />
+    <None Include="Resouces\FondoTipoCambio.png" />
+    <None Include="Resouces\btn_consultarB.png" />
+    <None Include="Resouces\btn_exportar.png" />
+    <None Include="Resouces\btn_Actu_Banguat.png" />
+    <None Include="Resouces\btn_Calcular.jpeg" />
+    <None Include="Resouces\btn_ayuda.png" />
+    <None Include="Resouces\btn_reporteB.png" />
+    <None Include="Resouces\btn_salir.png" />
+    <None Include="Resouces\bancos_logo.png" />
+    <None Include="Resouces\Bancario.png" />
+    <None Include="Resouces\Banderas\*.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

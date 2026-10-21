@@ -29,22 +29,18 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmTraslados));
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.LogisticaPnlBotonesTraslados = new System.Windows.Forms.Panel();
+            this.LogisticaBtnInicioTraslados = new System.Windows.Forms.Button();
+            this.LogisticaBtnAnteriorTraslados = new System.Windows.Forms.Button();
+            this.LogisticaBtnSiguienteTraslados = new System.Windows.Forms.Button();
+            this.LogisticaBtnFinTraslados = new System.Windows.Forms.Button();
+            this.LogisticaBtnVerDetalleTraslados = new System.Windows.Forms.Button();
+            this.LogisticaBtnImprimirTraslados = new System.Windows.Forms.Button();
+            this.LogisticaBtnCancelarTraslados = new System.Windows.Forms.Button();
+            this.LogisticaBtnGuardarTraslados = new System.Windows.Forms.Button();
+            this.LogisticaBtnModificarTraslado = new System.Windows.Forms.Button();
+            this.LogisticaPnlListaTraslados = new System.Windows.Forms.Panel();
+            this.LogisticaDgvListaTraslados = new System.Windows.Forms.DataGridView();
             this.codigoTraslado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fechaSolicitud = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bodegaOrigen = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -53,259 +49,210 @@
             this.fechaEntrega = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.codigoTransporte = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.estadoTraslado = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.button16 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.LogisticaPnlDatosTraslados = new System.Windows.Forms.Panel();
+            this.LogisticaCboTransporteTraslado = new System.Windows.Forms.ComboBox();
+            this.LogisticaCboEstadoTraslado = new System.Windows.Forms.ComboBox();
+            this.LogisticaBtnAgregarTraslados = new System.Windows.Forms.Button();
+            this.LogisticaDgvProductoTraslados = new System.Windows.Forms.DataGridView();
             this.codigoProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombreProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cantidadProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.LogisticaLblProducto = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.LogisticaCboBodegaDestino = new System.Windows.Forms.ComboBox();
+            this.LogisticaTxtCantidadTraslados = new System.Windows.Forms.TextBox();
+            this.LogisticaLblCantidadTraslados = new System.Windows.Forms.Label();
+            this.LogisticaCboProductoTraslados = new System.Windows.Forms.ComboBox();
+            this.LogisticaLblProductoTraslados = new System.Windows.Forms.Label();
+            this.LogisticaDtpFechaSalidaTraslados = new System.Windows.Forms.DateTimePicker();
+            this.LogisticaCboBodegaDestinoTraslados = new System.Windows.Forms.ComboBox();
             this.LogisticaCboBodegaOrigen = new System.Windows.Forms.ComboBox();
-            this.LogisticaTxtFechaRecibido = new System.Windows.Forms.TextBox();
-            this.LogisticaLblFechaRecibido = new System.Windows.Forms.Label();
-            this.LogisticaLblFechaSalida = new System.Windows.Forms.Label();
+            this.LogisticaLblTransporteTraslados = new System.Windows.Forms.Label();
+            this.LogisticaLblFechaSalidaTraslados = new System.Windows.Forms.Label();
             this.LogisticaLblEstadoTraslado = new System.Windows.Forms.Label();
             this.LogisticaTxtCodigoTraslado = new System.Windows.Forms.TextBox();
             this.LogisticaLblCodigoTraslado = new System.Windows.Forms.Label();
-            this.LogisticaLblBodegaDestino = new System.Windows.Forms.Label();
-            this.LogisticaLblBodegaOrigen = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.label3 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.button17 = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            this.panel5.SuspendLayout();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.LogisticaLblBodegaDestinoTraslados = new System.Windows.Forms.Label();
+            this.LogisticaLblBodegaOrigenTraslados = new System.Windows.Forms.Label();
+            this.LogisticaPnlFiltrosTraslados = new System.Windows.Forms.Panel();
+            this.LogisticaLblFechaAlFiltro = new System.Windows.Forms.Label();
+            this.LogisitcaLblFechaDelFiltro = new System.Windows.Forms.Label();
+            this.LogisticaDtpFechaAlFiltro = new System.Windows.Forms.DateTimePicker();
+            this.LogisticaDtpFechaDelFiltro = new System.Windows.Forms.DateTimePicker();
+            this.LogisticaLblEstadoTrasladoFiltro = new System.Windows.Forms.Label();
+            this.LogisticaCboEstadoFiltro = new System.Windows.Forms.ComboBox();
+            this.LogisticaBtnBuscarTraslados = new System.Windows.Forms.Button();
+            this.LogisticaPnlEncabezadoTraslado = new System.Windows.Forms.Panel();
+            this.LogisticaBtnAyudaTraslados = new System.Windows.Forms.Button();
+            this.LogisticaLblSubtituloTraslados = new System.Windows.Forms.Label();
+            this.LogisticaLblTituloTraslados = new System.Windows.Forms.Label();
+            this.LogisticaPnlBotonesTraslados.SuspendLayout();
+            this.LogisticaPnlListaTraslados.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.LogisticaDgvListaTraslados)).BeginInit();
+            this.LogisticaPnlDatosTraslados.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.LogisticaDgvProductoTraslados)).BeginInit();
+            this.LogisticaPnlFiltrosTraslados.SuspendLayout();
+            this.LogisticaPnlEncabezadoTraslado.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel2
+            // LogisticaPnlBotonesTraslados
             // 
-            this.panel2.Controls.Add(this.button1);
-            this.panel2.Controls.Add(this.button14);
-            this.panel2.Controls.Add(this.button13);
-            this.panel2.Controls.Add(this.button12);
-            this.panel2.Controls.Add(this.button11);
-            this.panel2.Controls.Add(this.button10);
-            this.panel2.Controls.Add(this.button9);
-            this.panel2.Controls.Add(this.button8);
-            this.panel2.Controls.Add(this.button6);
-            this.panel2.Controls.Add(this.button5);
-            this.panel2.Controls.Add(this.button3);
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.button4);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 181);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1245, 70);
-            this.panel2.TabIndex = 1;
+            this.LogisticaPnlBotonesTraslados.Controls.Add(this.LogisticaBtnInicioTraslados);
+            this.LogisticaPnlBotonesTraslados.Controls.Add(this.LogisticaBtnAnteriorTraslados);
+            this.LogisticaPnlBotonesTraslados.Controls.Add(this.LogisticaBtnSiguienteTraslados);
+            this.LogisticaPnlBotonesTraslados.Controls.Add(this.LogisticaBtnFinTraslados);
+            this.LogisticaPnlBotonesTraslados.Controls.Add(this.LogisticaBtnImprimirTraslados);
+            this.LogisticaPnlBotonesTraslados.Controls.Add(this.LogisticaBtnCancelarTraslados);
+            this.LogisticaPnlBotonesTraslados.Controls.Add(this.LogisticaBtnGuardarTraslados);
+            this.LogisticaPnlBotonesTraslados.Controls.Add(this.LogisticaBtnModificarTraslado);
+            this.LogisticaPnlBotonesTraslados.Dock = System.Windows.Forms.DockStyle.Top;
+            this.LogisticaPnlBotonesTraslados.Location = new System.Drawing.Point(0, 99);
+            this.LogisticaPnlBotonesTraslados.Margin = new System.Windows.Forms.Padding(2);
+            this.LogisticaPnlBotonesTraslados.Name = "LogisticaPnlBotonesTraslados";
+            this.LogisticaPnlBotonesTraslados.Size = new System.Drawing.Size(934, 57);
+            this.LogisticaPnlBotonesTraslados.TabIndex = 1;
             // 
-            // button1
+            // LogisticaBtnInicioTraslados
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(216)))), ((int)(((byte)(197)))));
-            this.button1.BackgroundImage = global::CapaVista_Traslados_Logistica.Properties.Resources.btn_ayuda;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.Transparent;
-            this.button1.Location = new System.Drawing.Point(1017, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(65, 65);
-            this.button1.TabIndex = 22;
-            this.button1.UseVisualStyleBackColor = false;
+            this.LogisticaBtnInicioTraslados.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(216)))), ((int)(((byte)(197)))));
+            this.LogisticaBtnInicioTraslados.BackgroundImage = global::CapaVista_Traslados_Logistica.Properties.Resources.btn_inicio;
+            this.LogisticaBtnInicioTraslados.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.LogisticaBtnInicioTraslados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.LogisticaBtnInicioTraslados.ForeColor = System.Drawing.Color.Transparent;
+            this.LogisticaBtnInicioTraslados.Location = new System.Drawing.Point(443, 2);
+            this.LogisticaBtnInicioTraslados.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.LogisticaBtnInicioTraslados.Name = "LogisticaBtnInicioTraslados";
+            this.LogisticaBtnInicioTraslados.Size = new System.Drawing.Size(49, 53);
+            this.LogisticaBtnInicioTraslados.TabIndex = 19;
+            this.LogisticaBtnInicioTraslados.UseVisualStyleBackColor = false;
             // 
-            // button14
+            // LogisticaBtnAnteriorTraslados
             // 
-            this.button14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(216)))), ((int)(((byte)(197)))));
-            this.button14.BackgroundImage = global::CapaVista_Traslados_Logistica.Properties.Resources.btn_ingresar;
-            this.button14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button14.ForeColor = System.Drawing.Color.Transparent;
-            this.button14.Location = new System.Drawing.Point(165, 3);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(65, 65);
-            this.button14.TabIndex = 21;
-            this.button14.UseVisualStyleBackColor = false;
+            this.LogisticaBtnAnteriorTraslados.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(216)))), ((int)(((byte)(197)))));
+            this.LogisticaBtnAnteriorTraslados.BackgroundImage = global::CapaVista_Traslados_Logistica.Properties.Resources.btn_anterior;
+            this.LogisticaBtnAnteriorTraslados.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.LogisticaBtnAnteriorTraslados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.LogisticaBtnAnteriorTraslados.ForeColor = System.Drawing.Color.Transparent;
+            this.LogisticaBtnAnteriorTraslados.Location = new System.Drawing.Point(496, 2);
+            this.LogisticaBtnAnteriorTraslados.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.LogisticaBtnAnteriorTraslados.Name = "LogisticaBtnAnteriorTraslados";
+            this.LogisticaBtnAnteriorTraslados.Size = new System.Drawing.Size(49, 53);
+            this.LogisticaBtnAnteriorTraslados.TabIndex = 18;
+            this.LogisticaBtnAnteriorTraslados.UseVisualStyleBackColor = false;
             // 
-            // button13
+            // LogisticaBtnSiguienteTraslados
             // 
-            this.button13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(216)))), ((int)(((byte)(197)))));
-            this.button13.BackgroundImage = global::CapaVista_Traslados_Logistica.Properties.Resources.btn_salir;
-            this.button13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button13.ForeColor = System.Drawing.Color.Transparent;
-            this.button13.Location = new System.Drawing.Point(591, 3);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(65, 65);
-            this.button13.TabIndex = 20;
-            this.button13.UseVisualStyleBackColor = false;
+            this.LogisticaBtnSiguienteTraslados.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(216)))), ((int)(((byte)(197)))));
+            this.LogisticaBtnSiguienteTraslados.BackgroundImage = global::CapaVista_Traslados_Logistica.Properties.Resources.btn_siguiente;
+            this.LogisticaBtnSiguienteTraslados.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.LogisticaBtnSiguienteTraslados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.LogisticaBtnSiguienteTraslados.ForeColor = System.Drawing.Color.Transparent;
+            this.LogisticaBtnSiguienteTraslados.Location = new System.Drawing.Point(550, 2);
+            this.LogisticaBtnSiguienteTraslados.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.LogisticaBtnSiguienteTraslados.Name = "LogisticaBtnSiguienteTraslados";
+            this.LogisticaBtnSiguienteTraslados.Size = new System.Drawing.Size(49, 53);
+            this.LogisticaBtnSiguienteTraslados.TabIndex = 17;
+            this.LogisticaBtnSiguienteTraslados.UseVisualStyleBackColor = false;
             // 
-            // button12
+            // LogisticaBtnFinTraslados
             // 
-            this.button12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(216)))), ((int)(((byte)(197)))));
-            this.button12.BackgroundImage = global::CapaVista_Traslados_Logistica.Properties.Resources.btn_inicio;
-            this.button12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button12.ForeColor = System.Drawing.Color.Transparent;
-            this.button12.Location = new System.Drawing.Point(662, 3);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(65, 65);
-            this.button12.TabIndex = 19;
-            this.button12.UseVisualStyleBackColor = false;
+            this.LogisticaBtnFinTraslados.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(216)))), ((int)(((byte)(197)))));
+            this.LogisticaBtnFinTraslados.BackgroundImage = global::CapaVista_Traslados_Logistica.Properties.Resources.btn_fin;
+            this.LogisticaBtnFinTraslados.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.LogisticaBtnFinTraslados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.LogisticaBtnFinTraslados.ForeColor = System.Drawing.Color.Transparent;
+            this.LogisticaBtnFinTraslados.Location = new System.Drawing.Point(603, 2);
+            this.LogisticaBtnFinTraslados.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.LogisticaBtnFinTraslados.Name = "LogisticaBtnFinTraslados";
+            this.LogisticaBtnFinTraslados.Size = new System.Drawing.Size(49, 53);
+            this.LogisticaBtnFinTraslados.TabIndex = 16;
+            this.LogisticaBtnFinTraslados.UseVisualStyleBackColor = false;
             // 
-            // button11
+            // LogisticaBtnVerDetalleTraslados
             // 
-            this.button11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(216)))), ((int)(((byte)(197)))));
-            this.button11.BackgroundImage = global::CapaVista_Traslados_Logistica.Properties.Resources.btn_anterior;
-            this.button11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.ForeColor = System.Drawing.Color.Transparent;
-            this.button11.Location = new System.Drawing.Point(733, 3);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(65, 65);
-            this.button11.TabIndex = 18;
-            this.button11.UseVisualStyleBackColor = false;
+            this.LogisticaBtnVerDetalleTraslados.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(216)))), ((int)(((byte)(197)))));
+            this.LogisticaBtnVerDetalleTraslados.BackgroundImage = global::CapaVista_Traslados_Logistica.Properties.Resources.btn_verdetalleN;
+            this.LogisticaBtnVerDetalleTraslados.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.LogisticaBtnVerDetalleTraslados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.LogisticaBtnVerDetalleTraslados.ForeColor = System.Drawing.Color.Transparent;
+            this.LogisticaBtnVerDetalleTraslados.Location = new System.Drawing.Point(860, 24);
+            this.LogisticaBtnVerDetalleTraslados.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.LogisticaBtnVerDetalleTraslados.Name = "LogisticaBtnVerDetalleTraslados";
+            this.LogisticaBtnVerDetalleTraslados.Size = new System.Drawing.Size(49, 53);
+            this.LogisticaBtnVerDetalleTraslados.TabIndex = 15;
+            this.LogisticaBtnVerDetalleTraslados.UseVisualStyleBackColor = false;
+            this.LogisticaBtnVerDetalleTraslados.Click += new System.EventHandler(this.LogisticaBtnVerDetalleTraslados_Click);
             // 
-            // button10
+            // LogisticaBtnImprimirTraslados
             // 
-            this.button10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(216)))), ((int)(((byte)(197)))));
-            this.button10.BackgroundImage = global::CapaVista_Traslados_Logistica.Properties.Resources.btn_siguiente;
-            this.button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.ForeColor = System.Drawing.Color.Transparent;
-            this.button10.Location = new System.Drawing.Point(804, 3);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(65, 65);
-            this.button10.TabIndex = 17;
-            this.button10.UseVisualStyleBackColor = false;
+            this.LogisticaBtnImprimirTraslados.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(216)))), ((int)(((byte)(197)))));
+            this.LogisticaBtnImprimirTraslados.BackgroundImage = global::CapaVista_Traslados_Logistica.Properties.Resources.btn_imprimir;
+            this.LogisticaBtnImprimirTraslados.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.LogisticaBtnImprimirTraslados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.LogisticaBtnImprimirTraslados.ForeColor = System.Drawing.Color.Transparent;
+            this.LogisticaBtnImprimirTraslados.Location = new System.Drawing.Point(390, 2);
+            this.LogisticaBtnImprimirTraslados.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.LogisticaBtnImprimirTraslados.Name = "LogisticaBtnImprimirTraslados";
+            this.LogisticaBtnImprimirTraslados.Size = new System.Drawing.Size(49, 53);
+            this.LogisticaBtnImprimirTraslados.TabIndex = 13;
+            this.LogisticaBtnImprimirTraslados.UseVisualStyleBackColor = false;
             // 
-            // button9
+            // LogisticaBtnCancelarTraslados
             // 
-            this.button9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(216)))), ((int)(((byte)(197)))));
-            this.button9.BackgroundImage = global::CapaVista_Traslados_Logistica.Properties.Resources.btn_fin;
-            this.button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.ForeColor = System.Drawing.Color.Transparent;
-            this.button9.Location = new System.Drawing.Point(875, 3);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(65, 65);
-            this.button9.TabIndex = 16;
-            this.button9.UseVisualStyleBackColor = false;
+            this.LogisticaBtnCancelarTraslados.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(216)))), ((int)(((byte)(197)))));
+            this.LogisticaBtnCancelarTraslados.BackgroundImage = global::CapaVista_Traslados_Logistica.Properties.Resources.btn_cancelar;
+            this.LogisticaBtnCancelarTraslados.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.LogisticaBtnCancelarTraslados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.LogisticaBtnCancelarTraslados.ForeColor = System.Drawing.Color.Transparent;
+            this.LogisticaBtnCancelarTraslados.Location = new System.Drawing.Point(337, 2);
+            this.LogisticaBtnCancelarTraslados.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.LogisticaBtnCancelarTraslados.Name = "LogisticaBtnCancelarTraslados";
+            this.LogisticaBtnCancelarTraslados.Size = new System.Drawing.Size(49, 53);
+            this.LogisticaBtnCancelarTraslados.TabIndex = 11;
+            this.LogisticaBtnCancelarTraslados.UseVisualStyleBackColor = false;
             // 
-            // button8
+            // LogisticaBtnGuardarTraslados
             // 
-            this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(216)))), ((int)(((byte)(197)))));
-            this.button8.BackgroundImage = global::CapaVista_Traslados_Logistica.Properties.Resources.btn_verdetalleN;
-            this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.ForeColor = System.Drawing.Color.Transparent;
-            this.button8.Location = new System.Drawing.Point(946, 3);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(65, 65);
-            this.button8.TabIndex = 15;
-            this.button8.UseVisualStyleBackColor = false;
+            this.LogisticaBtnGuardarTraslados.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(216)))), ((int)(((byte)(197)))));
+            this.LogisticaBtnGuardarTraslados.BackgroundImage = global::CapaVista_Traslados_Logistica.Properties.Resources.btn_guardar;
+            this.LogisticaBtnGuardarTraslados.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.LogisticaBtnGuardarTraslados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.LogisticaBtnGuardarTraslados.ForeColor = System.Drawing.Color.Transparent;
+            this.LogisticaBtnGuardarTraslados.Location = new System.Drawing.Point(284, 2);
+            this.LogisticaBtnGuardarTraslados.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.LogisticaBtnGuardarTraslados.Name = "LogisticaBtnGuardarTraslados";
+            this.LogisticaBtnGuardarTraslados.Size = new System.Drawing.Size(49, 53);
+            this.LogisticaBtnGuardarTraslados.TabIndex = 10;
+            this.LogisticaBtnGuardarTraslados.UseVisualStyleBackColor = false;
             // 
-            // button6
+            // LogisticaBtnModificarTraslado
             // 
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(216)))), ((int)(((byte)(197)))));
-            this.button6.BackgroundImage = global::CapaVista_Traslados_Logistica.Properties.Resources.btn_imprimir;
-            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.ForeColor = System.Drawing.Color.Transparent;
-            this.button6.Location = new System.Drawing.Point(520, 3);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(65, 65);
-            this.button6.TabIndex = 13;
-            this.button6.UseVisualStyleBackColor = false;
+            this.LogisticaBtnModificarTraslado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(216)))), ((int)(((byte)(197)))));
+            this.LogisticaBtnModificarTraslado.BackgroundImage = global::CapaVista_Traslados_Logistica.Properties.Resources.btn_modificar;
+            this.LogisticaBtnModificarTraslado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.LogisticaBtnModificarTraslado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.LogisticaBtnModificarTraslado.ForeColor = System.Drawing.Color.Transparent;
+            this.LogisticaBtnModificarTraslado.Location = new System.Drawing.Point(230, 2);
+            this.LogisticaBtnModificarTraslado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.LogisticaBtnModificarTraslado.Name = "LogisticaBtnModificarTraslado";
+            this.LogisticaBtnModificarTraslado.Size = new System.Drawing.Size(49, 53);
+            this.LogisticaBtnModificarTraslado.TabIndex = 9;
+            this.LogisticaBtnModificarTraslado.UseVisualStyleBackColor = false;
             // 
-            // button5
+            // LogisticaPnlListaTraslados
             // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(216)))), ((int)(((byte)(197)))));
-            this.button5.BackgroundImage = global::CapaVista_Traslados_Logistica.Properties.Resources.btn_eliminar;
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.ForeColor = System.Drawing.Color.Transparent;
-            this.button5.Location = new System.Drawing.Point(449, 3);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(65, 65);
-            this.button5.TabIndex = 12;
-            this.button5.UseVisualStyleBackColor = false;
+            this.LogisticaPnlListaTraslados.Controls.Add(this.LogisticaDgvListaTraslados);
+            this.LogisticaPnlListaTraslados.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.LogisticaPnlListaTraslados.Location = new System.Drawing.Point(0, 369);
+            this.LogisticaPnlListaTraslados.Margin = new System.Windows.Forms.Padding(2);
+            this.LogisticaPnlListaTraslados.Name = "LogisticaPnlListaTraslados";
+            this.LogisticaPnlListaTraslados.Size = new System.Drawing.Size(934, 240);
+            this.LogisticaPnlListaTraslados.TabIndex = 2;
             // 
-            // button3
+            // LogisticaDgvListaTraslados
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(216)))), ((int)(((byte)(197)))));
-            this.button3.BackgroundImage = global::CapaVista_Traslados_Logistica.Properties.Resources.btn_cancelar;
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.ForeColor = System.Drawing.Color.Transparent;
-            this.button3.Location = new System.Drawing.Point(378, 3);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(65, 65);
-            this.button3.TabIndex = 11;
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(216)))), ((int)(((byte)(197)))));
-            this.button2.BackgroundImage = global::CapaVista_Traslados_Logistica.Properties.Resources.btn_guardar;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.Color.Transparent;
-            this.button2.Location = new System.Drawing.Point(307, 3);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(65, 65);
-            this.button2.TabIndex = 10;
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(216)))), ((int)(((byte)(197)))));
-            this.button4.BackgroundImage = global::CapaVista_Traslados_Logistica.Properties.Resources.btn_modificar;
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.ForeColor = System.Drawing.Color.Transparent;
-            this.button4.Location = new System.Drawing.Point(236, 3);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(65, 65);
-            this.button4.TabIndex = 9;
-            this.button4.UseVisualStyleBackColor = false;
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.dataGridView1);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 686);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1245, 250);
-            this.panel3.TabIndex = 2;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.LogisticaDgvListaTraslados.AllowUserToAddRows = false;
+            this.LogisticaDgvListaTraslados.AllowUserToDeleteRows = false;
+            this.LogisticaDgvListaTraslados.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.LogisticaDgvListaTraslados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.LogisticaDgvListaTraslados.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.codigoTraslado,
             this.fechaSolicitud,
             this.bodegaOrigen,
@@ -314,13 +261,14 @@
             this.fechaEntrega,
             this.codigoTransporte,
             this.estadoTraslado});
-            this.dataGridView1.Location = new System.Drawing.Point(3, 3);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1239, 394);
-            this.dataGridView1.TabIndex = 0;
+            this.LogisticaDgvListaTraslados.Location = new System.Drawing.Point(2, 111);
+            this.LogisticaDgvListaTraslados.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.LogisticaDgvListaTraslados.Name = "LogisticaDgvListaTraslados";
+            this.LogisticaDgvListaTraslados.ReadOnly = true;
+            this.LogisticaDgvListaTraslados.RowHeadersWidth = 51;
+            this.LogisticaDgvListaTraslados.RowTemplate.Height = 24;
+            this.LogisticaDgvListaTraslados.Size = new System.Drawing.Size(929, 126);
+            this.LogisticaDgvListaTraslados.TabIndex = 0;
             // 
             // codigoTraslado
             // 
@@ -378,213 +326,214 @@
             this.estadoTraslado.Name = "estadoTraslado";
             this.estadoTraslado.ReadOnly = true;
             // 
-            // panel4
+            // LogisticaPnlDatosTraslados
             // 
-            this.panel4.Controls.Add(this.comboBox3);
-            this.panel4.Controls.Add(this.button16);
-            this.panel4.Controls.Add(this.button15);
-            this.panel4.Controls.Add(this.dataGridView2);
-            this.panel4.Controls.Add(this.textBox1);
-            this.panel4.Controls.Add(this.label4);
-            this.panel4.Controls.Add(this.comboBox1);
-            this.panel4.Controls.Add(this.LogisticaLblProducto);
-            this.panel4.Controls.Add(this.dateTimePicker1);
-            this.panel4.Controls.Add(this.LogisticaCboBodegaDestino);
-            this.panel4.Controls.Add(this.LogisticaCboBodegaOrigen);
-            this.panel4.Controls.Add(this.LogisticaTxtFechaRecibido);
-            this.panel4.Controls.Add(this.LogisticaLblFechaRecibido);
-            this.panel4.Controls.Add(this.LogisticaLblFechaSalida);
-            this.panel4.Controls.Add(this.LogisticaLblEstadoTraslado);
-            this.panel4.Controls.Add(this.LogisticaTxtCodigoTraslado);
-            this.panel4.Controls.Add(this.LogisticaLblCodigoTraslado);
-            this.panel4.Controls.Add(this.LogisticaLblBodegaDestino);
-            this.panel4.Controls.Add(this.LogisticaLblBodegaOrigen);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 251);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1245, 365);
-            this.panel4.TabIndex = 3;
+            this.LogisticaPnlDatosTraslados.Controls.Add(this.LogisticaCboTransporteTraslado);
+            this.LogisticaPnlDatosTraslados.Controls.Add(this.LogisticaCboEstadoTraslado);
+            this.LogisticaPnlDatosTraslados.Controls.Add(this.LogisticaBtnAgregarTraslados);
+            this.LogisticaPnlDatosTraslados.Controls.Add(this.LogisticaDgvProductoTraslados);
+            this.LogisticaPnlDatosTraslados.Controls.Add(this.LogisticaTxtCantidadTraslados);
+            this.LogisticaPnlDatosTraslados.Controls.Add(this.LogisticaLblCantidadTraslados);
+            this.LogisticaPnlDatosTraslados.Controls.Add(this.LogisticaCboProductoTraslados);
+            this.LogisticaPnlDatosTraslados.Controls.Add(this.LogisticaLblProductoTraslados);
+            this.LogisticaPnlDatosTraslados.Controls.Add(this.LogisticaDtpFechaSalidaTraslados);
+            this.LogisticaPnlDatosTraslados.Controls.Add(this.LogisticaCboBodegaDestinoTraslados);
+            this.LogisticaPnlDatosTraslados.Controls.Add(this.LogisticaCboBodegaOrigen);
+            this.LogisticaPnlDatosTraslados.Controls.Add(this.LogisticaLblTransporteTraslados);
+            this.LogisticaPnlDatosTraslados.Controls.Add(this.LogisticaLblFechaSalidaTraslados);
+            this.LogisticaPnlDatosTraslados.Controls.Add(this.LogisticaLblEstadoTraslado);
+            this.LogisticaPnlDatosTraslados.Controls.Add(this.LogisticaTxtCodigoTraslado);
+            this.LogisticaPnlDatosTraslados.Controls.Add(this.LogisticaLblCodigoTraslado);
+            this.LogisticaPnlDatosTraslados.Controls.Add(this.LogisticaLblBodegaDestinoTraslados);
+            this.LogisticaPnlDatosTraslados.Controls.Add(this.LogisticaLblBodegaOrigenTraslados);
+            this.LogisticaPnlDatosTraslados.Dock = System.Windows.Forms.DockStyle.Top;
+            this.LogisticaPnlDatosTraslados.Location = new System.Drawing.Point(0, 156);
+            this.LogisticaPnlDatosTraslados.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.LogisticaPnlDatosTraslados.Name = "LogisticaPnlDatosTraslados";
+            this.LogisticaPnlDatosTraslados.Size = new System.Drawing.Size(934, 306);
+            this.LogisticaPnlDatosTraslados.TabIndex = 3;
             // 
-            // comboBox3
+            // LogisticaCboTransporteTraslado
             // 
-            this.comboBox3.Font = new System.Drawing.Font("Segoe UI", 13.8F);
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(841, 25);
-            this.comboBox3.Margin = new System.Windows.Forms.Padding(10);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(300, 39);
-            this.comboBox3.TabIndex = 58;
+            this.LogisticaCboTransporteTraslado.Font = new System.Drawing.Font("Segoe UI", 13.8F);
+            this.LogisticaCboTransporteTraslado.FormattingEnabled = true;
+            this.LogisticaCboTransporteTraslado.Location = new System.Drawing.Point(631, 104);
+            this.LogisticaCboTransporteTraslado.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.LogisticaCboTransporteTraslado.Name = "LogisticaCboTransporteTraslado";
+            this.LogisticaCboTransporteTraslado.Size = new System.Drawing.Size(226, 33);
+            this.LogisticaCboTransporteTraslado.TabIndex = 59;
             // 
-            // button16
+            // LogisticaCboEstadoTraslado
             // 
-            this.button16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(216)))), ((int)(((byte)(197)))));
-            this.button16.BackgroundImage = global::CapaVista_Traslados_Logistica.Properties.Resources.btn_eliminar;
-            this.button16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button16.ForeColor = System.Drawing.Color.Transparent;
-            this.button16.Location = new System.Drawing.Point(449, 285);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(65, 65);
-            this.button16.TabIndex = 57;
-            this.button16.UseVisualStyleBackColor = false;
+            this.LogisticaCboEstadoTraslado.Font = new System.Drawing.Font("Segoe UI", 13.8F);
+            this.LogisticaCboEstadoTraslado.FormattingEnabled = true;
+            this.LogisticaCboEstadoTraslado.Location = new System.Drawing.Point(631, 20);
+            this.LogisticaCboEstadoTraslado.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.LogisticaCboEstadoTraslado.Name = "LogisticaCboEstadoTraslado";
+            this.LogisticaCboEstadoTraslado.Size = new System.Drawing.Size(226, 33);
+            this.LogisticaCboEstadoTraslado.TabIndex = 58;
             // 
-            // button15
+            // LogisticaBtnAgregarTraslados
             // 
-            this.button15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(216)))), ((int)(((byte)(197)))));
-            this.button15.BackgroundImage = global::CapaVista_Traslados_Logistica.Properties.Resources.btn_nuevo;
-            this.button15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button15.ForeColor = System.Drawing.Color.Transparent;
-            this.button15.Location = new System.Drawing.Point(307, 285);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(65, 65);
-            this.button15.TabIndex = 56;
-            this.button15.UseVisualStyleBackColor = false;
+            this.LogisticaBtnAgregarTraslados.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(216)))), ((int)(((byte)(197)))));
+            this.LogisticaBtnAgregarTraslados.BackgroundImage = global::CapaVista_Traslados_Logistica.Properties.Resources.btn_nuevo;
+            this.LogisticaBtnAgregarTraslados.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.LogisticaBtnAgregarTraslados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.LogisticaBtnAgregarTraslados.ForeColor = System.Drawing.Color.Transparent;
+            this.LogisticaBtnAgregarTraslados.Location = new System.Drawing.Point(298, 232);
+            this.LogisticaBtnAgregarTraslados.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.LogisticaBtnAgregarTraslados.Name = "LogisticaBtnAgregarTraslados";
+            this.LogisticaBtnAgregarTraslados.Size = new System.Drawing.Size(49, 53);
+            this.LogisticaBtnAgregarTraslados.TabIndex = 56;
+            this.LogisticaBtnAgregarTraslados.UseVisualStyleBackColor = false;
             // 
-            // dataGridView2
+            // LogisticaDgvProductoTraslados
             // 
-            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.LogisticaDgvProductoTraslados.AllowUserToAddRows = false;
+            this.LogisticaDgvProductoTraslados.AllowUserToDeleteRows = false;
+            this.LogisticaDgvProductoTraslados.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.LogisticaDgvProductoTraslados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.LogisticaDgvProductoTraslados.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.codigoProducto,
             this.nombreProducto,
             this.cantidadProducto});
-            this.dataGridView2.Location = new System.Drawing.Point(657, 179);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowHeadersWidth = 51;
-            this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(484, 171);
-            this.dataGridView2.TabIndex = 55;
+            this.LogisticaDgvProductoTraslados.Location = new System.Drawing.Point(493, 145);
+            this.LogisticaDgvProductoTraslados.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.LogisticaDgvProductoTraslados.Name = "LogisticaDgvProductoTraslados";
+            this.LogisticaDgvProductoTraslados.ReadOnly = true;
+            this.LogisticaDgvProductoTraslados.RowHeadersWidth = 51;
+            this.LogisticaDgvProductoTraslados.RowTemplate.Height = 24;
+            this.LogisticaDgvProductoTraslados.Size = new System.Drawing.Size(363, 139);
+            this.LogisticaDgvProductoTraslados.TabIndex = 55;
             // 
             // codigoProducto
             // 
             this.codigoProducto.HeaderText = "Codigo Producto";
             this.codigoProducto.MinimumWidth = 6;
             this.codigoProducto.Name = "codigoProducto";
+            this.codigoProducto.ReadOnly = true;
             // 
             // nombreProducto
             // 
             this.nombreProducto.HeaderText = "Nombre Producto";
             this.nombreProducto.MinimumWidth = 6;
             this.nombreProducto.Name = "nombreProducto";
+            this.nombreProducto.ReadOnly = true;
             // 
             // cantidadProducto
             // 
             this.cantidadProducto.HeaderText = "Cantidad";
             this.cantidadProducto.MinimumWidth = 6;
             this.cantidadProducto.Name = "cantidadProducto";
+            this.cantidadProducto.ReadOnly = true;
             // 
-            // textBox1
+            // LogisticaTxtCantidadTraslados
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(287, 231);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(300, 38);
-            this.textBox1.TabIndex = 53;
+            this.LogisticaTxtCantidadTraslados.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.LogisticaTxtCantidadTraslados.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LogisticaTxtCantidadTraslados.Location = new System.Drawing.Point(218, 188);
+            this.LogisticaTxtCantidadTraslados.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.LogisticaTxtCantidadTraslados.Name = "LogisticaTxtCantidadTraslados";
+            this.LogisticaTxtCantidadTraslados.Size = new System.Drawing.Size(226, 32);
+            this.LogisticaTxtCantidadTraslados.TabIndex = 53;
             // 
-            // label4
+            // LogisticaLblCantidadTraslados
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Tahoma", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(138)))), ((int)(((byte)(132)))));
-            this.label4.Location = new System.Drawing.Point(104, 231);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(105, 27);
-            this.label4.TabIndex = 52;
-            this.label4.Text = "Cantidad:";
+            this.LogisticaLblCantidadTraslados.AutoSize = true;
+            this.LogisticaLblCantidadTraslados.Font = new System.Drawing.Font("Tahoma", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LogisticaLblCantidadTraslados.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(138)))), ((int)(((byte)(132)))));
+            this.LogisticaLblCantidadTraslados.Location = new System.Drawing.Point(74, 188);
+            this.LogisticaLblCantidadTraslados.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LogisticaLblCantidadTraslados.Name = "LogisticaLblCantidadTraslados";
+            this.LogisticaLblCantidadTraslados.Size = new System.Drawing.Size(85, 22);
+            this.LogisticaLblCantidadTraslados.TabIndex = 52;
+            this.LogisticaLblCantidadTraslados.Text = "Cantidad:";
             // 
-            // comboBox1
+            // LogisticaCboProductoTraslados
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 13.8F);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(287, 179);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(10);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(300, 39);
-            this.comboBox1.TabIndex = 51;
+            this.LogisticaCboProductoTraslados.Font = new System.Drawing.Font("Segoe UI", 13.8F);
+            this.LogisticaCboProductoTraslados.FormattingEnabled = true;
+            this.LogisticaCboProductoTraslados.Location = new System.Drawing.Point(218, 145);
+            this.LogisticaCboProductoTraslados.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.LogisticaCboProductoTraslados.Name = "LogisticaCboProductoTraslados";
+            this.LogisticaCboProductoTraslados.Size = new System.Drawing.Size(226, 33);
+            this.LogisticaCboProductoTraslados.TabIndex = 51;
             // 
-            // LogisticaLblProducto
+            // LogisticaLblProductoTraslados
             // 
-            this.LogisticaLblProducto.AutoSize = true;
-            this.LogisticaLblProducto.Font = new System.Drawing.Font("Tahoma", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LogisticaLblProducto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(138)))), ((int)(((byte)(132)))));
-            this.LogisticaLblProducto.Location = new System.Drawing.Point(104, 179);
-            this.LogisticaLblProducto.Name = "LogisticaLblProducto";
-            this.LogisticaLblProducto.Size = new System.Drawing.Size(105, 27);
-            this.LogisticaLblProducto.TabIndex = 50;
-            this.LogisticaLblProducto.Text = "Producto:";
+            this.LogisticaLblProductoTraslados.AutoSize = true;
+            this.LogisticaLblProductoTraslados.Font = new System.Drawing.Font("Tahoma", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LogisticaLblProductoTraslados.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(138)))), ((int)(((byte)(132)))));
+            this.LogisticaLblProductoTraslados.Location = new System.Drawing.Point(74, 145);
+            this.LogisticaLblProductoTraslados.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LogisticaLblProductoTraslados.Name = "LogisticaLblProductoTraslados";
+            this.LogisticaLblProductoTraslados.Size = new System.Drawing.Size(86, 22);
+            this.LogisticaLblProductoTraslados.TabIndex = 50;
+            this.LogisticaLblProductoTraslados.Text = "Producto:";
             // 
-            // dateTimePicker1
+            // LogisticaDtpFechaSalidaTraslados
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 13.8F);
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(287, 128);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(10);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(300, 38);
-            this.dateTimePicker1.TabIndex = 49;
+            this.LogisticaDtpFechaSalidaTraslados.Font = new System.Drawing.Font("Segoe UI", 13.8F);
+            this.LogisticaDtpFechaSalidaTraslados.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.LogisticaDtpFechaSalidaTraslados.Location = new System.Drawing.Point(218, 104);
+            this.LogisticaDtpFechaSalidaTraslados.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.LogisticaDtpFechaSalidaTraslados.Name = "LogisticaDtpFechaSalidaTraslados";
+            this.LogisticaDtpFechaSalidaTraslados.Size = new System.Drawing.Size(226, 32);
+            this.LogisticaDtpFechaSalidaTraslados.TabIndex = 49;
             // 
-            // LogisticaCboBodegaDestino
+            // LogisticaCboBodegaDestinoTraslados
             // 
-            this.LogisticaCboBodegaDestino.Font = new System.Drawing.Font("Segoe UI", 13.8F);
-            this.LogisticaCboBodegaDestino.FormattingEnabled = true;
-            this.LogisticaCboBodegaDestino.Location = new System.Drawing.Point(841, 76);
-            this.LogisticaCboBodegaDestino.Margin = new System.Windows.Forms.Padding(10);
-            this.LogisticaCboBodegaDestino.Name = "LogisticaCboBodegaDestino";
-            this.LogisticaCboBodegaDestino.Size = new System.Drawing.Size(300, 39);
-            this.LogisticaCboBodegaDestino.TabIndex = 48;
+            this.LogisticaCboBodegaDestinoTraslados.Font = new System.Drawing.Font("Segoe UI", 13.8F);
+            this.LogisticaCboBodegaDestinoTraslados.FormattingEnabled = true;
+            this.LogisticaCboBodegaDestinoTraslados.Location = new System.Drawing.Point(631, 62);
+            this.LogisticaCboBodegaDestinoTraslados.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.LogisticaCboBodegaDestinoTraslados.Name = "LogisticaCboBodegaDestinoTraslados";
+            this.LogisticaCboBodegaDestinoTraslados.Size = new System.Drawing.Size(226, 33);
+            this.LogisticaCboBodegaDestinoTraslados.TabIndex = 48;
             // 
             // LogisticaCboBodegaOrigen
             // 
             this.LogisticaCboBodegaOrigen.Font = new System.Drawing.Font("Segoe UI", 13.8F);
             this.LogisticaCboBodegaOrigen.FormattingEnabled = true;
-            this.LogisticaCboBodegaOrigen.Location = new System.Drawing.Point(287, 76);
-            this.LogisticaCboBodegaOrigen.Margin = new System.Windows.Forms.Padding(10);
+            this.LogisticaCboBodegaOrigen.Location = new System.Drawing.Point(218, 62);
+            this.LogisticaCboBodegaOrigen.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
             this.LogisticaCboBodegaOrigen.Name = "LogisticaCboBodegaOrigen";
-            this.LogisticaCboBodegaOrigen.Size = new System.Drawing.Size(300, 39);
+            this.LogisticaCboBodegaOrigen.Size = new System.Drawing.Size(226, 33);
             this.LogisticaCboBodegaOrigen.TabIndex = 47;
             // 
-            // LogisticaTxtFechaRecibido
+            // LogisticaLblTransporteTraslados
             // 
-            this.LogisticaTxtFechaRecibido.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.LogisticaTxtFechaRecibido.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LogisticaTxtFechaRecibido.Location = new System.Drawing.Point(841, 128);
-            this.LogisticaTxtFechaRecibido.Margin = new System.Windows.Forms.Padding(10);
-            this.LogisticaTxtFechaRecibido.Name = "LogisticaTxtFechaRecibido";
-            this.LogisticaTxtFechaRecibido.Size = new System.Drawing.Size(300, 38);
-            this.LogisticaTxtFechaRecibido.TabIndex = 46;
+            this.LogisticaLblTransporteTraslados.AutoSize = true;
+            this.LogisticaLblTransporteTraslados.Font = new System.Drawing.Font("Tahoma", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LogisticaLblTransporteTraslados.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(138)))), ((int)(((byte)(132)))));
+            this.LogisticaLblTransporteTraslados.Location = new System.Drawing.Point(489, 104);
+            this.LogisticaLblTransporteTraslados.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LogisticaLblTransporteTraslados.Name = "LogisticaLblTransporteTraslados";
+            this.LogisticaLblTransporteTraslados.Size = new System.Drawing.Size(101, 22);
+            this.LogisticaLblTransporteTraslados.TabIndex = 45;
+            this.LogisticaLblTransporteTraslados.Text = "Transporte:";
             // 
-            // LogisticaLblFechaRecibido
+            // LogisticaLblFechaSalidaTraslados
             // 
-            this.LogisticaLblFechaRecibido.AutoSize = true;
-            this.LogisticaLblFechaRecibido.Font = new System.Drawing.Font("Tahoma", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LogisticaLblFechaRecibido.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(138)))), ((int)(((byte)(132)))));
-            this.LogisticaLblFechaRecibido.Location = new System.Drawing.Point(652, 128);
-            this.LogisticaLblFechaRecibido.Name = "LogisticaLblFechaRecibido";
-            this.LogisticaLblFechaRecibido.Size = new System.Drawing.Size(126, 27);
-            this.LogisticaLblFechaRecibido.TabIndex = 45;
-            this.LogisticaLblFechaRecibido.Text = "Transporte:";
-            // 
-            // LogisticaLblFechaSalida
-            // 
-            this.LogisticaLblFechaSalida.AutoSize = true;
-            this.LogisticaLblFechaSalida.Font = new System.Drawing.Font("Tahoma", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LogisticaLblFechaSalida.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(138)))), ((int)(((byte)(132)))));
-            this.LogisticaLblFechaSalida.Location = new System.Drawing.Point(104, 128);
-            this.LogisticaLblFechaSalida.Name = "LogisticaLblFechaSalida";
-            this.LogisticaLblFechaSalida.Size = new System.Drawing.Size(142, 27);
-            this.LogisticaLblFechaSalida.TabIndex = 44;
-            this.LogisticaLblFechaSalida.Text = "Fecha Salida:";
+            this.LogisticaLblFechaSalidaTraslados.AutoSize = true;
+            this.LogisticaLblFechaSalidaTraslados.Font = new System.Drawing.Font("Tahoma", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LogisticaLblFechaSalidaTraslados.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(138)))), ((int)(((byte)(132)))));
+            this.LogisticaLblFechaSalidaTraslados.Location = new System.Drawing.Point(74, 104);
+            this.LogisticaLblFechaSalidaTraslados.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LogisticaLblFechaSalidaTraslados.Name = "LogisticaLblFechaSalidaTraslados";
+            this.LogisticaLblFechaSalidaTraslados.Size = new System.Drawing.Size(113, 22);
+            this.LogisticaLblFechaSalidaTraslados.TabIndex = 44;
+            this.LogisticaLblFechaSalidaTraslados.Text = "Fecha Salida:";
             // 
             // LogisticaLblEstadoTraslado
             // 
             this.LogisticaLblEstadoTraslado.AutoSize = true;
             this.LogisticaLblEstadoTraslado.Font = new System.Drawing.Font("Tahoma", 13.2F);
             this.LogisticaLblEstadoTraslado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(138)))), ((int)(((byte)(132)))));
-            this.LogisticaLblEstadoTraslado.Location = new System.Drawing.Point(652, 25);
+            this.LogisticaLblEstadoTraslado.Location = new System.Drawing.Point(489, 20);
+            this.LogisticaLblEstadoTraslado.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LogisticaLblEstadoTraslado.Name = "LogisticaLblEstadoTraslado";
-            this.LogisticaLblEstadoTraslado.Size = new System.Drawing.Size(176, 27);
+            this.LogisticaLblEstadoTraslado.Size = new System.Drawing.Size(142, 22);
             this.LogisticaLblEstadoTraslado.TabIndex = 42;
             this.LogisticaLblEstadoTraslado.Text = "Estado Traslado:";
             // 
@@ -592,10 +541,10 @@
             // 
             this.LogisticaTxtCodigoTraslado.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.LogisticaTxtCodigoTraslado.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LogisticaTxtCodigoTraslado.Location = new System.Drawing.Point(287, 25);
-            this.LogisticaTxtCodigoTraslado.Margin = new System.Windows.Forms.Padding(10);
+            this.LogisticaTxtCodigoTraslado.Location = new System.Drawing.Point(218, 20);
+            this.LogisticaTxtCodigoTraslado.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
             this.LogisticaTxtCodigoTraslado.Name = "LogisticaTxtCodigoTraslado";
-            this.LogisticaTxtCodigoTraslado.Size = new System.Drawing.Size(300, 38);
+            this.LogisticaTxtCodigoTraslado.Size = new System.Drawing.Size(226, 32);
             this.LogisticaTxtCodigoTraslado.TabIndex = 41;
             // 
             // LogisticaLblCodigoTraslado
@@ -603,210 +552,226 @@
             this.LogisticaLblCodigoTraslado.AutoSize = true;
             this.LogisticaLblCodigoTraslado.Font = new System.Drawing.Font("Tahoma", 13.2F);
             this.LogisticaLblCodigoTraslado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(138)))), ((int)(((byte)(132)))));
-            this.LogisticaLblCodigoTraslado.Location = new System.Drawing.Point(104, 25);
+            this.LogisticaLblCodigoTraslado.Location = new System.Drawing.Point(74, 20);
+            this.LogisticaLblCodigoTraslado.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LogisticaLblCodigoTraslado.Name = "LogisticaLblCodigoTraslado";
-            this.LogisticaLblCodigoTraslado.Size = new System.Drawing.Size(177, 27);
+            this.LogisticaLblCodigoTraslado.Size = new System.Drawing.Size(144, 22);
             this.LogisticaLblCodigoTraslado.TabIndex = 40;
             this.LogisticaLblCodigoTraslado.Text = "Código Traslado:";
             // 
-            // LogisticaLblBodegaDestino
+            // LogisticaLblBodegaDestinoTraslados
             // 
-            this.LogisticaLblBodegaDestino.AutoSize = true;
-            this.LogisticaLblBodegaDestino.Font = new System.Drawing.Font("Tahoma", 13.2F);
-            this.LogisticaLblBodegaDestino.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(138)))), ((int)(((byte)(132)))));
-            this.LogisticaLblBodegaDestino.Location = new System.Drawing.Point(652, 76);
-            this.LogisticaLblBodegaDestino.Name = "LogisticaLblBodegaDestino";
-            this.LogisticaLblBodegaDestino.Size = new System.Drawing.Size(173, 27);
-            this.LogisticaLblBodegaDestino.TabIndex = 39;
-            this.LogisticaLblBodegaDestino.Text = "Bodega Destino:";
+            this.LogisticaLblBodegaDestinoTraslados.AutoSize = true;
+            this.LogisticaLblBodegaDestinoTraslados.Font = new System.Drawing.Font("Tahoma", 13.2F);
+            this.LogisticaLblBodegaDestinoTraslados.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(138)))), ((int)(((byte)(132)))));
+            this.LogisticaLblBodegaDestinoTraslados.Location = new System.Drawing.Point(489, 62);
+            this.LogisticaLblBodegaDestinoTraslados.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LogisticaLblBodegaDestinoTraslados.Name = "LogisticaLblBodegaDestinoTraslados";
+            this.LogisticaLblBodegaDestinoTraslados.Size = new System.Drawing.Size(140, 22);
+            this.LogisticaLblBodegaDestinoTraslados.TabIndex = 39;
+            this.LogisticaLblBodegaDestinoTraslados.Text = "Bodega Destino:";
             // 
-            // LogisticaLblBodegaOrigen
+            // LogisticaLblBodegaOrigenTraslados
             // 
-            this.LogisticaLblBodegaOrigen.AutoSize = true;
-            this.LogisticaLblBodegaOrigen.Font = new System.Drawing.Font("Tahoma", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LogisticaLblBodegaOrigen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(138)))), ((int)(((byte)(132)))));
-            this.LogisticaLblBodegaOrigen.Location = new System.Drawing.Point(104, 76);
-            this.LogisticaLblBodegaOrigen.Name = "LogisticaLblBodegaOrigen";
-            this.LogisticaLblBodegaOrigen.Size = new System.Drawing.Size(165, 27);
-            this.LogisticaLblBodegaOrigen.TabIndex = 38;
-            this.LogisticaLblBodegaOrigen.Text = "Bodega Origen:";
+            this.LogisticaLblBodegaOrigenTraslados.AutoSize = true;
+            this.LogisticaLblBodegaOrigenTraslados.Font = new System.Drawing.Font("Tahoma", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LogisticaLblBodegaOrigenTraslados.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(138)))), ((int)(((byte)(132)))));
+            this.LogisticaLblBodegaOrigenTraslados.Location = new System.Drawing.Point(74, 62);
+            this.LogisticaLblBodegaOrigenTraslados.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LogisticaLblBodegaOrigenTraslados.Name = "LogisticaLblBodegaOrigenTraslados";
+            this.LogisticaLblBodegaOrigenTraslados.Size = new System.Drawing.Size(133, 22);
+            this.LogisticaLblBodegaOrigenTraslados.TabIndex = 38;
+            this.LogisticaLblBodegaOrigenTraslados.Text = "Bodega Origen:";
             // 
-            // panel5
+            // LogisticaPnlFiltrosTraslados
             // 
-            this.panel5.Controls.Add(this.label6);
-            this.panel5.Controls.Add(this.label5);
-            this.panel5.Controls.Add(this.dateTimePicker3);
-            this.panel5.Controls.Add(this.dateTimePicker2);
-            this.panel5.Controls.Add(this.label3);
-            this.panel5.Controls.Add(this.comboBox2);
-            this.panel5.Controls.Add(this.button17);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(0, 616);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1245, 70);
-            this.panel5.TabIndex = 4;
+            this.LogisticaPnlFiltrosTraslados.Controls.Add(this.LogisticaLblFechaAlFiltro);
+            this.LogisticaPnlFiltrosTraslados.Controls.Add(this.LogisitcaLblFechaDelFiltro);
+            this.LogisticaPnlFiltrosTraslados.Controls.Add(this.LogisticaDtpFechaAlFiltro);
+            this.LogisticaPnlFiltrosTraslados.Controls.Add(this.LogisticaDtpFechaDelFiltro);
+            this.LogisticaPnlFiltrosTraslados.Controls.Add(this.LogisticaLblEstadoTrasladoFiltro);
+            this.LogisticaPnlFiltrosTraslados.Controls.Add(this.LogisticaCboEstadoFiltro);
+            this.LogisticaPnlFiltrosTraslados.Controls.Add(this.LogisticaBtnBuscarTraslados);
+            this.LogisticaPnlFiltrosTraslados.Dock = System.Windows.Forms.DockStyle.Top;
+            this.LogisticaPnlFiltrosTraslados.Location = new System.Drawing.Point(0, 462);
+            this.LogisticaPnlFiltrosTraslados.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.LogisticaPnlFiltrosTraslados.Name = "LogisticaPnlFiltrosTraslados";
+            this.LogisticaPnlFiltrosTraslados.Size = new System.Drawing.Size(934, 59);
+            this.LogisticaPnlFiltrosTraslados.TabIndex = 4;
             // 
-            // label6
+            // LogisticaLblFechaAlFiltro
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Tahoma", 13.2F);
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(138)))), ((int)(((byte)(132)))));
-            this.label6.Location = new System.Drawing.Point(397, 15);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(38, 27);
-            this.label6.TabIndex = 63;
-            this.label6.Text = "Al:";
+            this.LogisticaLblFechaAlFiltro.AutoSize = true;
+            this.LogisticaLblFechaAlFiltro.Font = new System.Drawing.Font("Tahoma", 13.2F);
+            this.LogisticaLblFechaAlFiltro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(138)))), ((int)(((byte)(132)))));
+            this.LogisticaLblFechaAlFiltro.Location = new System.Drawing.Point(298, 12);
+            this.LogisticaLblFechaAlFiltro.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LogisticaLblFechaAlFiltro.Name = "LogisticaLblFechaAlFiltro";
+            this.LogisticaLblFechaAlFiltro.Size = new System.Drawing.Size(31, 22);
+            this.LogisticaLblFechaAlFiltro.TabIndex = 63;
+            this.LogisticaLblFechaAlFiltro.Text = "Al:";
             // 
-            // label5
+            // LogisitcaLblFechaDelFiltro
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Tahoma", 13.2F);
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(138)))), ((int)(((byte)(132)))));
-            this.label5.Location = new System.Drawing.Point(104, 15);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(52, 27);
-            this.label5.TabIndex = 62;
-            this.label5.Text = "Del:";
+            this.LogisitcaLblFechaDelFiltro.AutoSize = true;
+            this.LogisitcaLblFechaDelFiltro.Font = new System.Drawing.Font("Tahoma", 13.2F);
+            this.LogisitcaLblFechaDelFiltro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(138)))), ((int)(((byte)(132)))));
+            this.LogisitcaLblFechaDelFiltro.Location = new System.Drawing.Point(78, 12);
+            this.LogisitcaLblFechaDelFiltro.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LogisitcaLblFechaDelFiltro.Name = "LogisitcaLblFechaDelFiltro";
+            this.LogisitcaLblFechaDelFiltro.Size = new System.Drawing.Size(41, 22);
+            this.LogisitcaLblFechaDelFiltro.TabIndex = 62;
+            this.LogisitcaLblFechaDelFiltro.Text = "Del:";
             // 
-            // dateTimePicker3
+            // LogisticaDtpFechaAlFiltro
             // 
-            this.dateTimePicker3.Font = new System.Drawing.Font("Segoe UI", 13.8F);
-            this.dateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker3.Location = new System.Drawing.Point(448, 15);
-            this.dateTimePicker3.Margin = new System.Windows.Forms.Padding(10);
-            this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(200, 38);
-            this.dateTimePicker3.TabIndex = 61;
+            this.LogisticaDtpFechaAlFiltro.Font = new System.Drawing.Font("Segoe UI", 13.8F);
+            this.LogisticaDtpFechaAlFiltro.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.LogisticaDtpFechaAlFiltro.Location = new System.Drawing.Point(336, 12);
+            this.LogisticaDtpFechaAlFiltro.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.LogisticaDtpFechaAlFiltro.Name = "LogisticaDtpFechaAlFiltro";
+            this.LogisticaDtpFechaAlFiltro.Size = new System.Drawing.Size(151, 32);
+            this.LogisticaDtpFechaAlFiltro.TabIndex = 61;
             // 
-            // dateTimePicker2
+            // LogisticaDtpFechaDelFiltro
             // 
-            this.dateTimePicker2.Font = new System.Drawing.Font("Segoe UI", 13.8F);
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker2.Location = new System.Drawing.Point(169, 15);
-            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(10);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(200, 38);
-            this.dateTimePicker2.TabIndex = 59;
+            this.LogisticaDtpFechaDelFiltro.Font = new System.Drawing.Font("Segoe UI", 13.8F);
+            this.LogisticaDtpFechaDelFiltro.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.LogisticaDtpFechaDelFiltro.Location = new System.Drawing.Point(127, 12);
+            this.LogisticaDtpFechaDelFiltro.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.LogisticaDtpFechaDelFiltro.Name = "LogisticaDtpFechaDelFiltro";
+            this.LogisticaDtpFechaDelFiltro.Size = new System.Drawing.Size(151, 32);
+            this.LogisticaDtpFechaDelFiltro.TabIndex = 59;
             // 
-            // label3
+            // LogisticaLblEstadoTrasladoFiltro
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Tahoma", 13.2F);
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(138)))), ((int)(((byte)(132)))));
-            this.label3.Location = new System.Drawing.Point(674, 15);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(176, 27);
-            this.label3.TabIndex = 60;
-            this.label3.Text = "Estado Traslado:";
+            this.LogisticaLblEstadoTrasladoFiltro.AutoSize = true;
+            this.LogisticaLblEstadoTrasladoFiltro.Font = new System.Drawing.Font("Tahoma", 13.2F);
+            this.LogisticaLblEstadoTrasladoFiltro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(138)))), ((int)(((byte)(132)))));
+            this.LogisticaLblEstadoTrasladoFiltro.Location = new System.Drawing.Point(506, 12);
+            this.LogisticaLblEstadoTrasladoFiltro.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LogisticaLblEstadoTrasladoFiltro.Name = "LogisticaLblEstadoTrasladoFiltro";
+            this.LogisticaLblEstadoTrasladoFiltro.Size = new System.Drawing.Size(142, 22);
+            this.LogisticaLblEstadoTrasladoFiltro.TabIndex = 60;
+            this.LogisticaLblEstadoTrasladoFiltro.Text = "Estado Traslado:";
             // 
-            // comboBox2
+            // LogisticaCboEstadoFiltro
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Segoe UI", 13.8F);
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(863, 15);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(200, 39);
-            this.comboBox2.TabIndex = 59;
+            this.LogisticaCboEstadoFiltro.Font = new System.Drawing.Font("Segoe UI", 13.8F);
+            this.LogisticaCboEstadoFiltro.FormattingEnabled = true;
+            this.LogisticaCboEstadoFiltro.Location = new System.Drawing.Point(647, 12);
+            this.LogisticaCboEstadoFiltro.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.LogisticaCboEstadoFiltro.Name = "LogisticaCboEstadoFiltro";
+            this.LogisticaCboEstadoFiltro.Size = new System.Drawing.Size(151, 33);
+            this.LogisticaCboEstadoFiltro.TabIndex = 59;
             // 
-            // button17
+            // LogisticaBtnBuscarTraslados
             // 
-            this.button17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(216)))), ((int)(((byte)(197)))));
-            this.button17.BackgroundImage = global::CapaVista_Traslados_Logistica.Properties.Resources.btn_buscar;
-            this.button17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button17.ForeColor = System.Drawing.Color.Transparent;
-            this.button17.Location = new System.Drawing.Point(1076, 3);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(65, 65);
-            this.button17.TabIndex = 58;
-            this.button17.UseVisualStyleBackColor = false;
+            this.LogisticaBtnBuscarTraslados.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(216)))), ((int)(((byte)(197)))));
+            this.LogisticaBtnBuscarTraslados.BackgroundImage = global::CapaVista_Traslados_Logistica.Properties.Resources.btn_buscar;
+            this.LogisticaBtnBuscarTraslados.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.LogisticaBtnBuscarTraslados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.LogisticaBtnBuscarTraslados.ForeColor = System.Drawing.Color.Transparent;
+            this.LogisticaBtnBuscarTraslados.Location = new System.Drawing.Point(807, 2);
+            this.LogisticaBtnBuscarTraslados.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.LogisticaBtnBuscarTraslados.Name = "LogisticaBtnBuscarTraslados";
+            this.LogisticaBtnBuscarTraslados.Size = new System.Drawing.Size(49, 53);
+            this.LogisticaBtnBuscarTraslados.TabIndex = 58;
+            this.LogisticaBtnBuscarTraslados.UseVisualStyleBackColor = false;
             // 
-            // panel1
+            // LogisticaPnlEncabezadoTraslado
             // 
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1245, 181);
-            this.panel1.TabIndex = 0;
+            this.LogisticaPnlEncabezadoTraslado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.LogisticaPnlEncabezadoTraslado.Controls.Add(this.LogisticaBtnAyudaTraslados);
+            this.LogisticaPnlEncabezadoTraslado.Controls.Add(this.LogisticaLblSubtituloTraslados);
+            this.LogisticaPnlEncabezadoTraslado.Controls.Add(this.LogisticaLblTituloTraslados);
+            this.LogisticaPnlEncabezadoTraslado.Controls.Add(this.LogisticaBtnVerDetalleTraslados);
+            this.LogisticaPnlEncabezadoTraslado.Dock = System.Windows.Forms.DockStyle.Top;
+            this.LogisticaPnlEncabezadoTraslado.Location = new System.Drawing.Point(0, 0);
+            this.LogisticaPnlEncabezadoTraslado.Margin = new System.Windows.Forms.Padding(2);
+            this.LogisticaPnlEncabezadoTraslado.Name = "LogisticaPnlEncabezadoTraslado";
+            this.LogisticaPnlEncabezadoTraslado.Size = new System.Drawing.Size(934, 99);
+            this.LogisticaPnlEncabezadoTraslado.TabIndex = 0;
             // 
-            // label2
+            // LogisticaBtnAyudaTraslados
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Tahoma", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(138)))), ((int)(((byte)(132)))));
-            this.label2.Location = new System.Drawing.Point(135, 93);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(286, 27);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Llegamos a Nuestro Destino";
+            this.LogisticaBtnAyudaTraslados.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(216)))), ((int)(((byte)(197)))));
+            this.LogisticaBtnAyudaTraslados.BackgroundImage = global::CapaVista_Traslados_Logistica.Properties.Resources.btn_ayuda;
+            this.LogisticaBtnAyudaTraslados.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.LogisticaBtnAyudaTraslados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.LogisticaBtnAyudaTraslados.ForeColor = System.Drawing.Color.Transparent;
+            this.LogisticaBtnAyudaTraslados.Location = new System.Drawing.Point(807, 24);
+            this.LogisticaBtnAyudaTraslados.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.LogisticaBtnAyudaTraslados.Name = "LogisticaBtnAyudaTraslados";
+            this.LogisticaBtnAyudaTraslados.Size = new System.Drawing.Size(49, 53);
+            this.LogisticaBtnAyudaTraslados.TabIndex = 23;
+            this.LogisticaBtnAyudaTraslados.UseVisualStyleBackColor = false;
             // 
-            // label1
+            // LogisticaLblSubtituloTraslados
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(138)))), ((int)(((byte)(132)))));
-            this.label1.Location = new System.Drawing.Point(77, 55);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(389, 38);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "LISTA DE TRASLADOS";
+            this.LogisticaLblSubtituloTraslados.AutoSize = true;
+            this.LogisticaLblSubtituloTraslados.Font = new System.Drawing.Font("Tahoma", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LogisticaLblSubtituloTraslados.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(138)))), ((int)(((byte)(132)))));
+            this.LogisticaLblSubtituloTraslados.Location = new System.Drawing.Point(101, 55);
+            this.LogisticaLblSubtituloTraslados.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LogisticaLblSubtituloTraslados.Name = "LogisticaLblSubtituloTraslados";
+            this.LogisticaLblSubtituloTraslados.Size = new System.Drawing.Size(315, 22);
+            this.LogisticaLblSubtituloTraslados.TabIndex = 3;
+            this.LogisticaLblSubtituloTraslados.Text = "Administra los traslados entre bodegas";
             // 
-            // pictureBox1
+            // LogisticaLblTituloTraslados
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(738, 15);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(202, 153);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.LogisticaLblTituloTraslados.AutoSize = true;
+            this.LogisticaLblTituloTraslados.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LogisticaLblTituloTraslados.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(138)))), ((int)(((byte)(132)))));
+            this.LogisticaLblTituloTraslados.Location = new System.Drawing.Point(58, 24);
+            this.LogisticaLblTituloTraslados.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LogisticaLblTituloTraslados.Name = "LogisticaLblTituloTraslados";
+            this.LogisticaLblTituloTraslados.Size = new System.Drawing.Size(325, 31);
+            this.LogisticaLblTituloTraslados.TabIndex = 2;
+            this.LogisticaLblTituloTraslados.Text = "LISTA DE TRASLADOS";
             // 
             // FrmTraslados
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(246)))), ((int)(((byte)(242)))));
-            this.ClientSize = new System.Drawing.Size(1245, 936);
-            this.Controls.Add(this.panel5);
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.ClientSize = new System.Drawing.Size(934, 609);
+            this.Controls.Add(this.LogisticaPnlFiltrosTraslados);
+            this.Controls.Add(this.LogisticaPnlDatosTraslados);
+            this.Controls.Add(this.LogisticaPnlListaTraslados);
+            this.Controls.Add(this.LogisticaPnlBotonesTraslados);
+            this.Controls.Add(this.LogisticaPnlEncabezadoTraslado);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.Name = "FrmTraslados";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "xxxx - FrmTraslados";
-            this.panel2.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Text = "5018 - FrmTraslados";
+            this.LogisticaPnlBotonesTraslados.ResumeLayout(false);
+            this.LogisticaPnlListaTraslados.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.LogisticaDgvListaTraslados)).EndInit();
+            this.LogisticaPnlDatosTraslados.ResumeLayout(false);
+            this.LogisticaPnlDatosTraslados.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.LogisticaDgvProductoTraslados)).EndInit();
+            this.LogisticaPnlFiltrosTraslados.ResumeLayout(false);
+            this.LogisticaPnlFiltrosTraslados.PerformLayout();
+            this.LogisticaPnlEncabezadoTraslado.ResumeLayout(false);
+            this.LogisticaPnlEncabezadoTraslado.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Panel LogisticaPnlEncabezadoTraslado;
+        private System.Windows.Forms.Panel LogisticaPnlBotonesTraslados;
+        private System.Windows.Forms.Panel LogisticaPnlListaTraslados;
+        private System.Windows.Forms.DataGridView LogisticaDgvListaTraslados;
+        private System.Windows.Forms.Label LogisticaLblTituloTraslados;
+        private System.Windows.Forms.Label LogisticaLblSubtituloTraslados;
+        private System.Windows.Forms.Button LogisticaBtnModificarTraslado;
         private System.Windows.Forms.DataGridViewTextBoxColumn codigoTraslado;
         private System.Windows.Forms.DataGridViewTextBoxColumn fechaSolicitud;
         private System.Windows.Forms.DataGridViewTextBoxColumn bodegaOrigen;
@@ -815,48 +780,44 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn fechaEntrega;
         private System.Windows.Forms.DataGridViewTextBoxColumn codigoTransporte;
         private System.Windows.Forms.DataGridViewTextBoxColumn estadoTraslado;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label LogisticaLblProducto;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.ComboBox LogisticaCboBodegaDestino;
+        private System.Windows.Forms.Panel LogisticaPnlDatosTraslados;
+        private System.Windows.Forms.TextBox LogisticaTxtCantidadTraslados;
+        private System.Windows.Forms.Label LogisticaLblCantidadTraslados;
+        private System.Windows.Forms.ComboBox LogisticaCboProductoTraslados;
+        private System.Windows.Forms.Label LogisticaLblProductoTraslados;
+        private System.Windows.Forms.DateTimePicker LogisticaDtpFechaSalidaTraslados;
+        private System.Windows.Forms.ComboBox LogisticaCboBodegaDestinoTraslados;
         private System.Windows.Forms.ComboBox LogisticaCboBodegaOrigen;
-        private System.Windows.Forms.TextBox LogisticaTxtFechaRecibido;
-        private System.Windows.Forms.Label LogisticaLblFechaRecibido;
-        private System.Windows.Forms.Label LogisticaLblFechaSalida;
+        private System.Windows.Forms.Label LogisticaLblTransporteTraslados;
+        private System.Windows.Forms.Label LogisticaLblFechaSalidaTraslados;
         private System.Windows.Forms.Label LogisticaLblEstadoTraslado;
         private System.Windows.Forms.TextBox LogisticaTxtCodigoTraslado;
         private System.Windows.Forms.Label LogisticaLblCodigoTraslado;
-        private System.Windows.Forms.Label LogisticaLblBodegaDestino;
-        private System.Windows.Forms.Label LogisticaLblBodegaOrigen;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button16;
-        private System.Windows.Forms.Button button15;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Label LogisticaLblBodegaDestinoTraslados;
+        private System.Windows.Forms.Label LogisticaLblBodegaOrigenTraslados;
+        private System.Windows.Forms.Button LogisticaBtnImprimirTraslados;
+        private System.Windows.Forms.Button LogisticaBtnCancelarTraslados;
+        private System.Windows.Forms.Button LogisticaBtnGuardarTraslados;
+        private System.Windows.Forms.Button LogisticaBtnInicioTraslados;
+        private System.Windows.Forms.Button LogisticaBtnAnteriorTraslados;
+        private System.Windows.Forms.Button LogisticaBtnSiguienteTraslados;
+        private System.Windows.Forms.Button LogisticaBtnFinTraslados;
+        private System.Windows.Forms.Button LogisticaBtnVerDetalleTraslados;
+        private System.Windows.Forms.Button LogisticaBtnAgregarTraslados;
+        private System.Windows.Forms.DataGridView LogisticaDgvProductoTraslados;
+        private System.Windows.Forms.Panel LogisticaPnlFiltrosTraslados;
         private System.Windows.Forms.DataGridViewTextBoxColumn codigoProducto;
         private System.Windows.Forms.DataGridViewTextBoxColumn nombreProducto;
         private System.Windows.Forms.DataGridViewTextBoxColumn cantidadProducto;
-        private System.Windows.Forms.Button button17;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.DateTimePicker dateTimePicker3;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button LogisticaBtnBuscarTraslados;
+        private System.Windows.Forms.ComboBox LogisticaCboEstadoFiltro;
+        private System.Windows.Forms.ComboBox LogisticaCboEstadoTraslado;
+        private System.Windows.Forms.Label LogisticaLblEstadoTrasladoFiltro;
+        private System.Windows.Forms.Label LogisitcaLblFechaDelFiltro;
+        private System.Windows.Forms.DateTimePicker LogisticaDtpFechaAlFiltro;
+        private System.Windows.Forms.DateTimePicker LogisticaDtpFechaDelFiltro;
+        private System.Windows.Forms.Label LogisticaLblFechaAlFiltro;
+        private System.Windows.Forms.ComboBox LogisticaCboTransporteTraslado;
+        private System.Windows.Forms.Button LogisticaBtnAyudaTraslados;
     }
 }

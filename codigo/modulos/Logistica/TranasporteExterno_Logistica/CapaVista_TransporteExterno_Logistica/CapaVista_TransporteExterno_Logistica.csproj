@@ -46,7 +46,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Formas\FrmTransporteExterno.cs" />
+    <Compile Include="Formas\FrmTransporteExterno.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Formas\FrmTransporteExterno.Designer.cs">
       <DependentUpon>FrmTransporteExterno.cs</DependentUpon>
     </Compile>

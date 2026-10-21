@@ -59,8 +59,7 @@
     <Reference Include="CapaVista_GeneracionPagos">
       <HintPath>..\..\Generacion_Pagos\CapaVista_GeneracionPagos\bin\Debug\CapaVista_GeneracionPagos.dll</HintPath>
     </Reference>
-    <Reference Include="CapaVista_MovimientosBancarios, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="CapaVista_MovimientosBancarios">
       <HintPath>..\..\Movimientos_Bancarios\CapaVista_MovimientosBancarios\bin\Debug\CapaVista_MovimientosBancarios.dll</HintPath>
     </Reference>
     <Reference Include="CapaVista_Navegador, Version=0.0.0.0, Culture=neutral, processorArchitecture=AMD64">

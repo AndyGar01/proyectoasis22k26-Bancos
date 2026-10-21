@@ -34,6 +34,9 @@
     <Reference Include="CapaControlador_EnlaceB">
       <HintPath>..\CapaControlador_EnlaceB\bin\Debug\CapaControlador_EnlaceB.dll</HintPath>
     </Reference>
+    <Reference Include="CapaVista_Navegador">
+      <HintPath>..\..\..\..\componentes\navegador\Navegador\CapaVista_Navegador\bin\Debug\CapaVista_Navegador.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
@@ -46,6 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Formularios\FrmBancoNavegador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmBancoNavegador.Designer.cs">
+      <DependentUpon>FrmBancoNavegador.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\FrmEnlaceOtrosModulos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,6 +74,9 @@
     <Folder Include="Reportes\" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Formularios\FrmBancoNavegador.resx">
+      <DependentUpon>FrmBancoNavegador.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmEnlaceOtrosModulos.resx">
       <DependentUpon>FrmEnlaceOtrosModulos.cs</DependentUpon>
     </EmbeddedResource>
@@ -114,6 +126,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\btn_salirB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bancario.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

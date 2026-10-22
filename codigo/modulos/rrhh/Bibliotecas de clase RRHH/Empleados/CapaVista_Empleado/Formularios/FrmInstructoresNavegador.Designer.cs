@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmInstructoresNavegador));
             this.RrhhNavInstructores = new CapaVista_Navegador.Navegador();
             this.SuspendLayout();
             // 
@@ -44,8 +45,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1459, 562);
             this.Controls.Add(this.RrhhNavInstructores);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmInstructoresNavegador";
-            this.Text = "FrmInstructoresNavegador";
+            this.Text = "9303 - FrmInstructoresNavegador";
             this.ResumeLayout(false);
 
         }

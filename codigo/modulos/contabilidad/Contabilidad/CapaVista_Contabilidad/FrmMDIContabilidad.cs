@@ -7,7 +7,7 @@
  * ==================================================================
  * Propósito :
  *  MDI del prototipo no funcional de Contabilidad. Solo diseño: los botones
- *  del menú abren las cinco pantallas y no hacen nada más.
+ *  del menú abren las cinco pantallas y el botón de menú contrae el panel lateral.
  * ===================================================================
 */
 
@@ -19,10 +19,24 @@ namespace CapaVista_Contabilidad
     // Ventana principal del módulo.
     public partial class FrmMDIContabilidad : Form
     {
+        // Ancho del menú expandido y contraído, y margen del panel lateral.
+        private const int _AnchoMenuExpandido = 270;
+        private const int _AnchoMenuContraido = 64;
+        private const int _MargenMenu = 32;
+
         // Crea los controles del diseño.
         public FrmMDIContabilidad()
         {
             InitializeComponent();
+        }
+
+        // Contrae o expande el menú lateral.
+        private void ContabilidadMetAlternarMenu(object Remitente, EventArgs Evento)
+        {
+            bool Expandido = ContabilidadPnlNavegador.Width == _AnchoMenuExpandido;
+            int NuevoAncho = Expandido ? _AnchoMenuContraido : _AnchoMenuExpandido;
+            ContabilidadPnlNavegador.Width = NuevoAncho;
+            ContabilidadPnlLateral.Width = NuevoAncho + _MargenMenu;
         }
 
         // Abre Pólizas locales.

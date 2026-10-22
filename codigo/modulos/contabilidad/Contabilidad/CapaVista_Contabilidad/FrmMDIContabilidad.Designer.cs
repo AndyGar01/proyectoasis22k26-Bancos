@@ -137,6 +137,7 @@ namespace CapaVista_Contabilidad
             this.ContabilidadBtnBurger.Size = new System.Drawing.Size(45, 34);
             this.ContabilidadBtnBurger.TabIndex = 0;
             this.ContabilidadBtnBurger.UseVisualStyleBackColor = false;
+            this.ContabilidadBtnBurger.Click += new System.EventHandler(this.ContabilidadMetAlternarMenu);
             // 
             // ContabilidadPnlLateral
             // 

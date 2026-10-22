@@ -30,21 +30,35 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMotivoBajaNavegador));
             this.RrhhNavMotivoBaja = new CapaVista_Navegador.Navegador();
+            this.RrhhBtnReporteLiqui = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // RrhhNavMotivoBaja
             // 
-            this.RrhhNavMotivoBaja.Location = new System.Drawing.Point(6, 13);
+            this.RrhhNavMotivoBaja.Location = new System.Drawing.Point(8, 88);
             this.RrhhNavMotivoBaja.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.RrhhNavMotivoBaja.Name = "RrhhNavMotivoBaja";
             this.RrhhNavMotivoBaja.Size = new System.Drawing.Size(1078, 90);
             this.RrhhNavMotivoBaja.TabIndex = 0;
+            // 
+            // RrhhBtnReporteLiqui
+            // 
+            this.RrhhBtnReporteLiqui.BackgroundImage = global::CapaVista_Liquidacion_Rrhh.Properties.Resources.boton_reporte_sin_bordes;
+            this.RrhhBtnReporteLiqui.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.RrhhBtnReporteLiqui.Location = new System.Drawing.Point(688, 0);
+            this.RrhhBtnReporteLiqui.Margin = new System.Windows.Forms.Padding(2);
+            this.RrhhBtnReporteLiqui.Name = "RrhhBtnReporteLiqui";
+            this.RrhhBtnReporteLiqui.Size = new System.Drawing.Size(70, 70);
+            this.RrhhBtnReporteLiqui.TabIndex = 5;
+            this.RrhhBtnReporteLiqui.UseVisualStyleBackColor = true;
+            this.RrhhBtnReporteLiqui.Click += new System.EventHandler(this.RrhhBtnReporteLiqui_Click);
             // 
             // FrmMotivoBajaNavegador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1087, 625);
+            this.Controls.Add(this.RrhhBtnReporteLiqui);
             this.Controls.Add(this.RrhhNavMotivoBaja);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -59,5 +73,6 @@
         #endregion
 
         private CapaVista_Navegador.Navegador RrhhNavMotivoBaja;
+        private System.Windows.Forms.Button RrhhBtnReporteLiqui;
     }
 }

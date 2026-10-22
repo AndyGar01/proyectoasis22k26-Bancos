@@ -1,3 +1,5 @@
+﻿using CapaVista_EvaluacionDesempeño.Formularios;
+using CapaVista_PlanMejora.Formularios;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,20 +18,36 @@ using System.Windows.Forms;
  * Fecha : 12/10/2026
  * ==================================================================
  * Propósito :
- *  Prototipo NO funcional de la ventana 9501 - EvaluacionDesempeño.
- *  Solo contiene el diseño de la pantalla (sin datos de ejemplo,
- *  eventos, validaciones ni acceso a datos). La lógica se conectará
- *  después a CapaControlador_EvaluacionDesempeño.
+ *  Ventana 9202 - Evaluación de Desempeño
+ *  Menú de opciones relacionadas, sin eventos ni lógica.
  * ===================================================================
 */
 
-namespace CapaVista_EvaluacionDesempeño.Formularios
+namespace CapaVista_EvaluacionDesempeno.Formularios
 {
     public partial class FrmEvaluacionDesempeño : Form
     {
         public FrmEvaluacionDesempeño()
         {
             InitializeComponent();
+        }
+
+        private void RrhhBtnAbrirRealizarEvaluacion_Click(object sender, EventArgs e)
+        {
+            frmRealizarEvaluacion RrhhFrmEvaluacion = new frmRealizarEvaluacion();
+            RrhhFrmEvaluacion.ShowDialog();
+        }
+
+        private void RrhhBtnAbrirPlanMejora_Click(object sender, EventArgs e)
+        {
+            FrmPlanMejora RrhhFrmPlan = new FrmPlanMejora();
+            RrhhFrmPlan.ShowDialog();
+        }
+
+        private void RrhhBtnAbrirVerEvaluaciones_Click(object sender, EventArgs e)
+        {
+            FrmVerEvaluaciones RrhhFrmPlan = new FrmVerEvaluaciones();
+            RrhhFrmPlan.ShowDialog();
         }
     }
 }

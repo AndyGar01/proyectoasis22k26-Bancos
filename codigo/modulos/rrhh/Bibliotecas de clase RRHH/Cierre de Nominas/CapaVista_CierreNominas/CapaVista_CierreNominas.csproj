@@ -61,6 +61,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Ayudas\" />
+    <Folder Include="frmReportes\" />
+    <Folder Include="Reportes\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Fomularios\FrmCierreNominas.resx">

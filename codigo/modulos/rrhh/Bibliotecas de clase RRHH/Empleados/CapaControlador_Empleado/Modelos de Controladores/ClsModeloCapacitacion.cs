@@ -29,7 +29,7 @@ namespace CapaControlador_Empleado.Modelos_de_Controladores
         public int CupoCapacitacion { get => _CupoCapacitacion; set => _CupoCapacitacion = value; }
         public bool EstadoCapacitacion { get => _EstadoCapacitacion; set => _EstadoCapacitacion = value; }
 
-        // Texto listo para mostrar en el reporte
+
         public string EstadoTexto { get => _EstadoCapacitacion ? "Activa" : "Inactiva"; }
 
         private ClsRepositorioCapacitacion _RepositorioCapacitacion = new ClsRepositorioCapacitacion();

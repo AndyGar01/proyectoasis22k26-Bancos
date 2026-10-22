@@ -219,6 +219,7 @@
             this.RrhhBtnEvaluaCapacitacion.TabIndex = 4;
             this.RrhhBtnEvaluaCapacitacion.Text = "Abrir";
             this.RrhhBtnEvaluaCapacitacion.UseVisualStyleBackColor = false;
+            this.RrhhBtnEvaluaCapacitacion.Click += new System.EventHandler(this.RrhhBtnEvaluaCapacitacion_click);
             // 
             // RrhhLblSubEvaluacionCapacitacion
             // 

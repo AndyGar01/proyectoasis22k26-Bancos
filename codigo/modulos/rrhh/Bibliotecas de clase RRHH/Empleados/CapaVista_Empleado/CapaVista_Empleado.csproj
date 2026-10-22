@@ -94,6 +94,12 @@
     <Compile Include="Formularios\FrmCapacitacion.Designer.cs">
       <DependentUpon>FrmCapacitacion.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\FrmEvaluacionNavegador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmEvaluacionNavegador.Designer.cs">
+      <DependentUpon>FrmEvaluacionNavegador.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\FrmInstructoresNavegador.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -135,6 +141,12 @@
     </Compile>
     <Compile Include="frmReportes\FrmReporteCapacitacion.Designer.cs">
       <DependentUpon>FrmReporteCapacitacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportes\FrmReporteInstructor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportes\FrmReporteInstructor.Designer.cs">
+      <DependentUpon>FrmReporteInstructor.cs</DependentUpon>
     </Compile>
     <Compile Include="frmReportes\FrmReporteDepartamentos.cs">
       <SubType>Form</SubType>
@@ -194,6 +206,9 @@
     <EmbeddedResource Include="Formularios\FrmCapacitacion.resx">
       <DependentUpon>FrmCapacitacion.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmEvaluacionNavegador.resx">
+      <DependentUpon>FrmEvaluacionNavegador.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmInstructoresNavegador.resx">
       <DependentUpon>FrmInstructoresNavegador.cs</DependentUpon>
     </EmbeddedResource>
@@ -215,6 +230,9 @@
     <EmbeddedResource Include="frmReportes\FrmReporteCapacitacion.resx">
       <DependentUpon>FrmReporteCapacitacion.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmReportes\FrmReporteInstructor.resx">
+      <DependentUpon>FrmReporteInstructor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmReportes\FrmReporteDepartamentos.resx">
       <DependentUpon>FrmReporteDepartamentos.cs</DependentUpon>
     </EmbeddedResource>
@@ -235,6 +253,7 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\RpCapacitacion.rdlc" />
+    <EmbeddedResource Include="Reportes\RpInstructor.rdlc" />
     <EmbeddedResource Include="Reportes\RpDepartamento.rdlc" />
     <EmbeddedResource Include="Reportes\RpTipoPuesto.rdlc" />
     <EmbeddedResource Include="Reportes\RpPuesto.rdlc" />

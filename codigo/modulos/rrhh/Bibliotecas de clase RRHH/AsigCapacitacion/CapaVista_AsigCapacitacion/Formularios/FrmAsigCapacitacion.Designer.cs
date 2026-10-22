@@ -370,8 +370,10 @@
             this.ClientSize = new System.Drawing.Size(1051, 692);
             this.Controls.Add(this.RrhhPlFondoEncabezado);
             this.Controls.Add(this.RRHHPnlFondoBase);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FrmAsigCapacitacion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmAsigCapacitacion";

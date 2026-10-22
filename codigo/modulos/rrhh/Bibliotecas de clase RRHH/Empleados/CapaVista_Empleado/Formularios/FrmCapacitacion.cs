@@ -38,5 +38,11 @@ namespace CapaVista_Empleado.Formularios
             FrmAsigCapacitacion AsigCapacitacion = new FrmAsigCapacitacion();
             AsigCapacitacion.ShowDialog(this);
         }
+
+        private void RrhhBtnEvaluaCapacitacion_click(object sender, EventArgs e)
+        {
+            FrmEvaluacionNavegador Evaluacion = new FrmEvaluacionNavegador();
+            Evaluacion.ShowDialog(this);
+        }
     }
 }

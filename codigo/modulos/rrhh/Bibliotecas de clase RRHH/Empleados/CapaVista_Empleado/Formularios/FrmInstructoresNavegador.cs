@@ -18,5 +18,15 @@ namespace CapaVista_Empleado.Formularios
             RrhhNavInstructores.NavegadorMetConfigurar("tblInstructor", 9000, 9303);
         }
 
+        private void RrhhBtnReporteInstructor_Click(object sender, EventArgs e)
+        {
+            frmReportes.FrmReporteInstructor Instructor = new frmReportes.FrmReporteInstructor();
+            Instructor.ShowDialog();
+        }
+
+        private void RrhhBtnAyudaInstructor_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

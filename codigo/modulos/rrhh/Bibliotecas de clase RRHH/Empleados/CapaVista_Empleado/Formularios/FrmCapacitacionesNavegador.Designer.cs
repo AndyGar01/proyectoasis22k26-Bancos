@@ -70,6 +70,7 @@
             this.Controls.Add(this.RrhhBtnReporteCapacitacion);
             this.Controls.Add(this.RrhhBtnAyudaCapacitacion);
             this.Controls.Add(this.RrhhNavCapacitaciones);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmCapacitacionesNavegador";
             this.Text = "9302 - FrmCapacitacionesNavegador";

@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Modelos de Controladores\ClsModeloCapacitacion.cs" />
+    <Compile Include="Modelos de Controladores\ClsModeloInstructor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

@@ -73,8 +73,8 @@
             this.Controls.Add(this.navegador1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.MinimizeBox = false;
             this.Name = "FrmTipoCuentaBancariaNavegador";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "8003-FrmTipoCuentaBancaria";
             this.ResumeLayout(false);
 

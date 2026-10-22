@@ -166,6 +166,13 @@ namespace CapaVista_Contabilidad.Properties {
             }
         }
 
+        internal static System.Drawing.Icon Icono_Contabilidad {
+            get {
+                object obj = ResourceManager.GetObject("Icono_Contabilidad", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+
         internal static System.Drawing.Bitmap ico_aplicar {
             get {
                 object obj = ResourceManager.GetObject("ico_aplicar", resourceCulture);

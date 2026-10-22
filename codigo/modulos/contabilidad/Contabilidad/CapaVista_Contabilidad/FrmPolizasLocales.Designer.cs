@@ -1,4 +1,4 @@
-/*
+﻿/*
  * Área: Contabilidad
  * Autor: Gabriel André Guillén Pocón
  * Carné: 0901-23-1998
@@ -25,7 +25,7 @@ namespace CapaVista_Contabilidad
 
         private void InitializeComponent()
         {
-            this.ContabilidadPnlEncabezado = new Componentes.ClsPanelRedondeadoContabilidad();
+            this.ContabilidadPnlEncabezado = new System.Windows.Forms.Panel();
             this.ContabilidadLblTitulo = new System.Windows.Forms.Label();
             this.ContabilidadLblFecha = new System.Windows.Forms.Label();
             this.ContabilidadLblPeriodo = new System.Windows.Forms.Label();
@@ -37,11 +37,11 @@ namespace CapaVista_Contabilidad
             this.ContabilidadCboOrigen = new System.Windows.Forms.ComboBox();
             this.ContabilidadLblDescripcion = new System.Windows.Forms.Label();
             this.ContabilidadTxtDescripcion = new System.Windows.Forms.TextBox();
-            this.ContabilidadPnlDetalle = new Componentes.ClsPanelRedondeadoContabilidad();
+            this.ContabilidadPnlDetalle = new System.Windows.Forms.Panel();
             this.ContabilidadLblAgregarCuenta = new System.Windows.Forms.Label();
             this.ContabilidadCboCuenta = new System.Windows.Forms.ComboBox();
-            this.ContabilidadBtnAgregar = new Componentes.ClsBotonContabilidad();
-            this.ContabilidadDgvDetalle = new Componentes.ClsTablaContabilidad();
+            this.ContabilidadBtnAgregar = new System.Windows.Forms.Button();
+            this.ContabilidadDgvDetalle = new System.Windows.Forms.DataGridView();
             this.ContabilidadColCuenta = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ContabilidadColDebe = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ContabilidadColHaber = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -50,10 +50,15 @@ namespace CapaVista_Contabilidad
             this.ContabilidadLblTotalDebe = new System.Windows.Forms.Label();
             this.ContabilidadLblTotalHaber = new System.Windows.Forms.Label();
             this.ContabilidadLblEmpresa = new System.Windows.Forms.Label();
-            this.ContabilidadBtnNueva = new Componentes.ClsBotonContabilidad();
-            this.ContabilidadBtnLimpiarDetalle = new Componentes.ClsBotonContabilidad();
-            this.ContabilidadBtnGuardar = new Componentes.ClsBotonContabilidad();
-            this.ContabilidadBtnAplicar = new Componentes.ClsBotonContabilidad();
+            this.ContabilidadBtnNueva = new System.Windows.Forms.Button();
+            this.ContabilidadBtnLimpiarDetalle = new System.Windows.Forms.Button();
+            this.ContabilidadBtnGuardar = new System.Windows.Forms.Button();
+            this.ContabilidadBtnAplicar = new System.Windows.Forms.Button();
+            this.ContabilidadLblObligatorioOrigen = new System.Windows.Forms.Label();
+            this.ContabilidadLblObligatorioEstado = new System.Windows.Forms.Label();
+            this.ContabilidadLblObligatorioFecha = new System.Windows.Forms.Label();
+            this.ContabilidadLblObligatorioDescripcion = new System.Windows.Forms.Label();
+            this.ContabilidadLblObligatorioCuenta = new System.Windows.Forms.Label();
             System.Windows.Forms.DataGridViewCellStyle ContabilidadEstiloDebe = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle ContabilidadEstiloHaber = new System.Windows.Forms.DataGridViewCellStyle();
             ContabilidadEstiloDebe.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
@@ -71,10 +76,7 @@ namespace CapaVista_Contabilidad
             this.ContabilidadPnlEncabezado.Location = new System.Drawing.Point(24, 24);
             this.ContabilidadPnlEncabezado.Size = new System.Drawing.Size(1132, 640);
             this.ContabilidadPnlEncabezado.TabIndex = 0;
-            this.ContabilidadPnlEncabezado.BackColor = System.Drawing.Color.Transparent;
-            this.ContabilidadPnlEncabezado.ColorRelleno = System.Drawing.Color.White;
-            this.ContabilidadPnlEncabezado.ColorBorde = System.Drawing.Color.FromArgb(212, 222, 228);
-            this.ContabilidadPnlEncabezado.Radio = 18;
+            this.ContabilidadPnlEncabezado.BackColor = System.Drawing.Color.White;
             // ContabilidadLblTitulo
             this.ContabilidadLblTitulo.Name = "ContabilidadLblTitulo";
             this.ContabilidadLblTitulo.Location = new System.Drawing.Point(24, 18);
@@ -142,6 +144,7 @@ namespace CapaVista_Contabilidad
             this.ContabilidadTxtPeriodo.TabIndex = 1;
             this.ContabilidadTxtPeriodo.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.ContabilidadTxtPeriodo.ReadOnly = true;
+            this.ContabilidadTxtPeriodo.Text = "2026-10";
             this.ContabilidadTxtPeriodo.BackColor = System.Drawing.Color.FromArgb(246, 247, 248);
             this.ContabilidadTxtPeriodo.TabStop = false;
             this.ContabilidadPnlEncabezado.Controls.Add(this.ContabilidadTxtPeriodo);
@@ -186,10 +189,7 @@ namespace CapaVista_Contabilidad
             this.ContabilidadPnlDetalle.Location = new System.Drawing.Point(24, 220);
             this.ContabilidadPnlDetalle.Size = new System.Drawing.Size(1084, 336);
             this.ContabilidadPnlDetalle.TabIndex = 0;
-            this.ContabilidadPnlDetalle.BackColor = System.Drawing.Color.Transparent;
-            this.ContabilidadPnlDetalle.ColorRelleno = System.Drawing.Color.White;
-            this.ContabilidadPnlDetalle.ColorBorde = System.Drawing.Color.FromArgb(212, 222, 228);
-            this.ContabilidadPnlDetalle.Radio = 18;
+            this.ContabilidadPnlDetalle.BackColor = System.Drawing.Color.White;
             this.ContabilidadPnlEncabezado.Controls.Add(this.ContabilidadPnlDetalle);
             // ContabilidadLblAgregarCuenta
             this.ContabilidadLblAgregarCuenta.Name = "ContabilidadLblAgregarCuenta";
@@ -220,15 +220,60 @@ namespace CapaVista_Contabilidad
             this.ContabilidadBtnAgregar.TabIndex = 1;
             this.ContabilidadBtnAgregar.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.ContabilidadBtnAgregar.Text = "Agregar";
-            this.ContabilidadBtnAgregar.Estilo = Componentes.EstiloBotonContabilidad.Dorado;
-            this.ContabilidadBtnAgregar.Icono = global::CapaVista_Contabilidad.Properties.Resources.ico_mas;
-            this.ContabilidadBtnAgregar.Radio = 10;
+            this.ContabilidadBtnAgregar.BackColor = System.Drawing.Color.FromArgb(197, 143, 62);
+            this.ContabilidadBtnAgregar.ForeColor = System.Drawing.Color.FromArgb(255, 255, 255);
+            this.ContabilidadBtnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ContabilidadBtnAgregar.FlatAppearance.BorderSize = 0;
+            this.ContabilidadBtnAgregar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(214, 160, 80);
+            this.ContabilidadBtnAgregar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(169, 120, 50);
+            this.ContabilidadBtnAgregar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ContabilidadBtnAgregar.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.ContabilidadBtnAgregar.UseVisualStyleBackColor = false;
+            this.ContabilidadBtnAgregar.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ContabilidadBtnAgregar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ContabilidadBtnAgregar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.ContabilidadBtnAgregar.Image = global::CapaVista_Contabilidad.Properties.Resources.ico_mas;
             this.ContabilidadBtnAgregar.UseVisualStyleBackColor = false;
             this.ContabilidadPnlDetalle.Controls.Add(this.ContabilidadBtnAgregar);
             // ContabilidadDgvDetalle
             this.ContabilidadDgvDetalle.Name = "ContabilidadDgvDetalle";
             this.ContabilidadDgvDetalle.Location = new System.Drawing.Point(20, 94);
             this.ContabilidadDgvDetalle.Size = new System.Drawing.Size(1044, 182);
+            System.Windows.Forms.DataGridViewCellStyle EstiloEncabezadoContabilidadDgvDetalle = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle EstiloCeldasContabilidadDgvDetalle = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle EstiloAlternaContabilidadDgvDetalle = new System.Windows.Forms.DataGridViewCellStyle();
+            this.ContabilidadDgvDetalle.BackgroundColor = System.Drawing.Color.White;
+            this.ContabilidadDgvDetalle.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.ContabilidadDgvDetalle.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ContabilidadDgvDetalle.GridColor = System.Drawing.Color.FromArgb(212, 222, 228);
+            this.ContabilidadDgvDetalle.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.ContabilidadDgvDetalle.RowHeadersVisible = false;
+            this.ContabilidadDgvDetalle.AllowUserToAddRows = false;
+            this.ContabilidadDgvDetalle.AllowUserToDeleteRows = false;
+            this.ContabilidadDgvDetalle.AllowUserToResizeRows = false;
+            this.ContabilidadDgvDetalle.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.ContabilidadDgvDetalle.MultiSelect = false;
+            this.ContabilidadDgvDetalle.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.ContabilidadDgvDetalle.EnableHeadersVisualStyles = false;
+            this.ContabilidadDgvDetalle.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.ContabilidadDgvDetalle.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.ContabilidadDgvDetalle.ColumnHeadersHeight = 38;
+            EstiloEncabezadoContabilidadDgvDetalle.BackColor = System.Drawing.Color.FromArgb(35, 50, 61);
+            EstiloEncabezadoContabilidadDgvDetalle.ForeColor = System.Drawing.Color.White;
+            EstiloEncabezadoContabilidadDgvDetalle.SelectionBackColor = System.Drawing.Color.FromArgb(35, 50, 61);
+            EstiloEncabezadoContabilidadDgvDetalle.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            EstiloEncabezadoContabilidadDgvDetalle.Padding = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.ContabilidadDgvDetalle.ColumnHeadersDefaultCellStyle = EstiloEncabezadoContabilidadDgvDetalle;
+            this.ContabilidadDgvDetalle.RowTemplate.Height = 34;
+            EstiloCeldasContabilidadDgvDetalle.Font = new System.Drawing.Font("Segoe UI", 10F);
+            EstiloCeldasContabilidadDgvDetalle.ForeColor = System.Drawing.Color.FromArgb(35, 50, 61);
+            EstiloCeldasContabilidadDgvDetalle.BackColor = System.Drawing.Color.White;
+            EstiloCeldasContabilidadDgvDetalle.SelectionBackColor = System.Drawing.Color.FromArgb(212, 222, 228);
+            EstiloCeldasContabilidadDgvDetalle.SelectionForeColor = System.Drawing.Color.FromArgb(35, 50, 61);
+            EstiloCeldasContabilidadDgvDetalle.Padding = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.ContabilidadDgvDetalle.DefaultCellStyle = EstiloCeldasContabilidadDgvDetalle;
+            EstiloAlternaContabilidadDgvDetalle.BackColor = System.Drawing.Color.FromArgb(246, 247, 248);
+            this.ContabilidadDgvDetalle.AlternatingRowsDefaultCellStyle = EstiloAlternaContabilidadDgvDetalle;
             this.ContabilidadDgvDetalle.TabIndex = 2;
             this.ContabilidadDgvDetalle.AutoGenerateColumns = false;
             this.ContabilidadDgvDetalle.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
@@ -282,9 +327,9 @@ namespace CapaVista_Contabilidad
             this.ContabilidadLblCuadre.Location = new System.Drawing.Point(20, 290);
             this.ContabilidadLblCuadre.Size = new System.Drawing.Size(500, 28);
             this.ContabilidadLblCuadre.TabIndex = 0;
-            this.ContabilidadLblCuadre.Text = "Descuadrada · diferencia Q 0.00";
+            this.ContabilidadLblCuadre.Text = "Agregue las cuentas de la póliza";
             this.ContabilidadLblCuadre.BackColor = System.Drawing.Color.White;
-            this.ContabilidadLblCuadre.ForeColor = System.Drawing.Color.FromArgb(197, 143, 62);
+            this.ContabilidadLblCuadre.ForeColor = System.Drawing.Color.FromArgb(70, 104, 125);
             this.ContabilidadLblCuadre.Font = new System.Drawing.Font("Tahoma", 10F);
             this.ContabilidadPnlDetalle.Controls.Add(this.ContabilidadLblCuadre);
             // ContabilidadLblTotalDebe
@@ -326,9 +371,19 @@ namespace CapaVista_Contabilidad
             this.ContabilidadBtnNueva.TabIndex = 5;
             this.ContabilidadBtnNueva.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.ContabilidadBtnNueva.Text = "Nueva";
-            this.ContabilidadBtnNueva.Estilo = Componentes.EstiloBotonContabilidad.Secundario;
-            this.ContabilidadBtnNueva.Icono = global::CapaVista_Contabilidad.Properties.Resources.ico_nuevo_oscuro;
-            this.ContabilidadBtnNueva.Radio = 10;
+            this.ContabilidadBtnNueva.BackColor = System.Drawing.Color.FromArgb(212, 222, 228);
+            this.ContabilidadBtnNueva.ForeColor = System.Drawing.Color.FromArgb(35, 50, 61);
+            this.ContabilidadBtnNueva.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ContabilidadBtnNueva.FlatAppearance.BorderSize = 0;
+            this.ContabilidadBtnNueva.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(195, 209, 218);
+            this.ContabilidadBtnNueva.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(176, 193, 205);
+            this.ContabilidadBtnNueva.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ContabilidadBtnNueva.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.ContabilidadBtnNueva.UseVisualStyleBackColor = false;
+            this.ContabilidadBtnNueva.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ContabilidadBtnNueva.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ContabilidadBtnNueva.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.ContabilidadBtnNueva.Image = global::CapaVista_Contabilidad.Properties.Resources.ico_nuevo_oscuro;
             this.ContabilidadBtnNueva.UseVisualStyleBackColor = false;
             this.ContabilidadPnlEncabezado.Controls.Add(this.ContabilidadBtnNueva);
             // ContabilidadBtnLimpiarDetalle
@@ -338,9 +393,19 @@ namespace CapaVista_Contabilidad
             this.ContabilidadBtnLimpiarDetalle.TabIndex = 6;
             this.ContabilidadBtnLimpiarDetalle.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.ContabilidadBtnLimpiarDetalle.Text = "Limpiar detalle";
-            this.ContabilidadBtnLimpiarDetalle.Estilo = Componentes.EstiloBotonContabilidad.Secundario;
-            this.ContabilidadBtnLimpiarDetalle.Icono = global::CapaVista_Contabilidad.Properties.Resources.ico_limpiar_oscuro;
-            this.ContabilidadBtnLimpiarDetalle.Radio = 10;
+            this.ContabilidadBtnLimpiarDetalle.BackColor = System.Drawing.Color.FromArgb(212, 222, 228);
+            this.ContabilidadBtnLimpiarDetalle.ForeColor = System.Drawing.Color.FromArgb(35, 50, 61);
+            this.ContabilidadBtnLimpiarDetalle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ContabilidadBtnLimpiarDetalle.FlatAppearance.BorderSize = 0;
+            this.ContabilidadBtnLimpiarDetalle.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(195, 209, 218);
+            this.ContabilidadBtnLimpiarDetalle.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(176, 193, 205);
+            this.ContabilidadBtnLimpiarDetalle.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ContabilidadBtnLimpiarDetalle.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.ContabilidadBtnLimpiarDetalle.UseVisualStyleBackColor = false;
+            this.ContabilidadBtnLimpiarDetalle.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ContabilidadBtnLimpiarDetalle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ContabilidadBtnLimpiarDetalle.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.ContabilidadBtnLimpiarDetalle.Image = global::CapaVista_Contabilidad.Properties.Resources.ico_limpiar_oscuro;
             this.ContabilidadBtnLimpiarDetalle.UseVisualStyleBackColor = false;
             this.ContabilidadPnlEncabezado.Controls.Add(this.ContabilidadBtnLimpiarDetalle);
             // ContabilidadBtnGuardar
@@ -350,9 +415,19 @@ namespace CapaVista_Contabilidad
             this.ContabilidadBtnGuardar.TabIndex = 7;
             this.ContabilidadBtnGuardar.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.ContabilidadBtnGuardar.Text = "Guardar borrador";
-            this.ContabilidadBtnGuardar.Estilo = Componentes.EstiloBotonContabilidad.Acento;
-            this.ContabilidadBtnGuardar.Icono = global::CapaVista_Contabilidad.Properties.Resources.ico_guardar;
-            this.ContabilidadBtnGuardar.Radio = 10;
+            this.ContabilidadBtnGuardar.BackColor = System.Drawing.Color.FromArgb(70, 104, 125);
+            this.ContabilidadBtnGuardar.ForeColor = System.Drawing.Color.FromArgb(255, 255, 255);
+            this.ContabilidadBtnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ContabilidadBtnGuardar.FlatAppearance.BorderSize = 0;
+            this.ContabilidadBtnGuardar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(88, 123, 145);
+            this.ContabilidadBtnGuardar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(52, 77, 93);
+            this.ContabilidadBtnGuardar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ContabilidadBtnGuardar.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.ContabilidadBtnGuardar.UseVisualStyleBackColor = false;
+            this.ContabilidadBtnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ContabilidadBtnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ContabilidadBtnGuardar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.ContabilidadBtnGuardar.Image = global::CapaVista_Contabilidad.Properties.Resources.ico_guardar;
             this.ContabilidadBtnGuardar.UseVisualStyleBackColor = false;
             this.ContabilidadPnlEncabezado.Controls.Add(this.ContabilidadBtnGuardar);
             // ContabilidadBtnAplicar
@@ -362,9 +437,19 @@ namespace CapaVista_Contabilidad
             this.ContabilidadBtnAplicar.TabIndex = 8;
             this.ContabilidadBtnAplicar.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.ContabilidadBtnAplicar.Text = "Aplicar";
-            this.ContabilidadBtnAplicar.Estilo = Componentes.EstiloBotonContabilidad.Principal;
-            this.ContabilidadBtnAplicar.Icono = global::CapaVista_Contabilidad.Properties.Resources.ico_aplicar;
-            this.ContabilidadBtnAplicar.Radio = 10;
+            this.ContabilidadBtnAplicar.BackColor = System.Drawing.Color.FromArgb(35, 50, 61);
+            this.ContabilidadBtnAplicar.ForeColor = System.Drawing.Color.FromArgb(255, 255, 255);
+            this.ContabilidadBtnAplicar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ContabilidadBtnAplicar.FlatAppearance.BorderSize = 0;
+            this.ContabilidadBtnAplicar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(52, 77, 93);
+            this.ContabilidadBtnAplicar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(28, 40, 49);
+            this.ContabilidadBtnAplicar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ContabilidadBtnAplicar.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.ContabilidadBtnAplicar.UseVisualStyleBackColor = false;
+            this.ContabilidadBtnAplicar.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ContabilidadBtnAplicar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ContabilidadBtnAplicar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.ContabilidadBtnAplicar.Image = global::CapaVista_Contabilidad.Properties.Resources.ico_aplicar;
             this.ContabilidadBtnAplicar.UseVisualStyleBackColor = false;
             this.ContabilidadPnlEncabezado.Controls.Add(this.ContabilidadBtnAplicar);
             // FrmPolizasLocales
@@ -375,8 +460,53 @@ namespace CapaVista_Contabilidad
             this.ForeColor = System.Drawing.Color.FromArgb(35, 50, 61);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
+            this.ContabilidadLblObligatorioOrigen.Name = "ContabilidadLblObligatorioOrigen";
+            this.ContabilidadPnlEncabezado.Controls.Add(this.ContabilidadLblObligatorioOrigen);
+            this.ContabilidadLblObligatorioOrigen.AutoSize = true;
+            this.ContabilidadLblObligatorioOrigen.Text = "*";
+            this.ContabilidadLblObligatorioOrigen.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
+            this.ContabilidadLblObligatorioOrigen.ForeColor = System.Drawing.Color.Firebrick;
+            this.ContabilidadLblObligatorioOrigen.BackColor = System.Drawing.Color.Transparent;
+            this.ContabilidadLblObligatorioOrigen.Location = new System.Drawing.Point(854, 72);
+            this.ContabilidadLblObligatorioEstado.Name = "ContabilidadLblObligatorioEstado";
+            this.ContabilidadPnlEncabezado.Controls.Add(this.ContabilidadLblObligatorioEstado);
+            this.ContabilidadLblObligatorioEstado.AutoSize = true;
+            this.ContabilidadLblObligatorioEstado.Text = "*";
+            this.ContabilidadLblObligatorioEstado.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
+            this.ContabilidadLblObligatorioEstado.ForeColor = System.Drawing.Color.Firebrick;
+            this.ContabilidadLblObligatorioEstado.BackColor = System.Drawing.Color.Transparent;
+            this.ContabilidadLblObligatorioEstado.Location = new System.Drawing.Point(566, 72);
+            this.ContabilidadLblObligatorioFecha.Name = "ContabilidadLblObligatorioFecha";
+            this.ContabilidadPnlEncabezado.Controls.Add(this.ContabilidadLblObligatorioFecha);
+            this.ContabilidadLblObligatorioFecha.AutoSize = true;
+            this.ContabilidadLblObligatorioFecha.Text = "*";
+            this.ContabilidadLblObligatorioFecha.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
+            this.ContabilidadLblObligatorioFecha.ForeColor = System.Drawing.Color.Firebrick;
+            this.ContabilidadLblObligatorioFecha.BackColor = System.Drawing.Color.Transparent;
+            this.ContabilidadLblObligatorioFecha.Location = new System.Drawing.Point(80, 72);
+            this.ContabilidadLblObligatorioDescripcion.Name = "ContabilidadLblObligatorioDescripcion";
+            this.ContabilidadPnlEncabezado.Controls.Add(this.ContabilidadLblObligatorioDescripcion);
+            this.ContabilidadLblObligatorioDescripcion.AutoSize = true;
+            this.ContabilidadLblObligatorioDescripcion.Text = "*";
+            this.ContabilidadLblObligatorioDescripcion.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
+            this.ContabilidadLblObligatorioDescripcion.ForeColor = System.Drawing.Color.Firebrick;
+            this.ContabilidadLblObligatorioDescripcion.BackColor = System.Drawing.Color.Transparent;
+            this.ContabilidadLblObligatorioDescripcion.Location = new System.Drawing.Point(114, 144);
+            this.ContabilidadLblObligatorioCuenta.Name = "ContabilidadLblObligatorioCuenta";
+            this.ContabilidadPnlDetalle.Controls.Add(this.ContabilidadLblObligatorioCuenta);
+            this.ContabilidadLblObligatorioCuenta.AutoSize = true;
+            this.ContabilidadLblObligatorioCuenta.Text = "*";
+            this.ContabilidadLblObligatorioCuenta.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
+            this.ContabilidadLblObligatorioCuenta.ForeColor = System.Drawing.Color.Firebrick;
+            this.ContabilidadLblObligatorioCuenta.BackColor = System.Drawing.Color.Transparent;
+            this.ContabilidadLblObligatorioCuenta.Location = new System.Drawing.Point(146, 16);
             this.Name = "FrmPolizasLocales";
-            this.Text = "Pólizas locales";
+            this.Text = "10001 - PolizasLocales";
+            this.Icon = global::CapaVista_Contabilidad.Properties.Resources.Icono_Contabilidad;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = true;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Controls.Add(this.ContabilidadPnlEncabezado);
             this.ContabilidadPnlEncabezado.ResumeLayout(false);
             this.ContabilidadPnlEncabezado.PerformLayout();
@@ -387,7 +517,7 @@ namespace CapaVista_Contabilidad
 
         #endregion
 
-        private Componentes.ClsPanelRedondeadoContabilidad ContabilidadPnlEncabezado;
+        private System.Windows.Forms.Panel ContabilidadPnlEncabezado;
         private System.Windows.Forms.Label ContabilidadLblTitulo;
         private System.Windows.Forms.Label ContabilidadLblFecha;
         private System.Windows.Forms.Label ContabilidadLblPeriodo;
@@ -399,11 +529,11 @@ namespace CapaVista_Contabilidad
         private System.Windows.Forms.ComboBox ContabilidadCboOrigen;
         private System.Windows.Forms.Label ContabilidadLblDescripcion;
         private System.Windows.Forms.TextBox ContabilidadTxtDescripcion;
-        private Componentes.ClsPanelRedondeadoContabilidad ContabilidadPnlDetalle;
+        private System.Windows.Forms.Panel ContabilidadPnlDetalle;
         private System.Windows.Forms.Label ContabilidadLblAgregarCuenta;
         private System.Windows.Forms.ComboBox ContabilidadCboCuenta;
-        private Componentes.ClsBotonContabilidad ContabilidadBtnAgregar;
-        private Componentes.ClsTablaContabilidad ContabilidadDgvDetalle;
+        private System.Windows.Forms.Button ContabilidadBtnAgregar;
+        private System.Windows.Forms.DataGridView ContabilidadDgvDetalle;
         private System.Windows.Forms.DataGridViewTextBoxColumn ContabilidadColCuenta;
         private System.Windows.Forms.DataGridViewTextBoxColumn ContabilidadColDebe;
         private System.Windows.Forms.DataGridViewTextBoxColumn ContabilidadColHaber;
@@ -412,9 +542,14 @@ namespace CapaVista_Contabilidad
         private System.Windows.Forms.Label ContabilidadLblTotalDebe;
         private System.Windows.Forms.Label ContabilidadLblTotalHaber;
         private System.Windows.Forms.Label ContabilidadLblEmpresa;
-        private Componentes.ClsBotonContabilidad ContabilidadBtnNueva;
-        private Componentes.ClsBotonContabilidad ContabilidadBtnLimpiarDetalle;
-        private Componentes.ClsBotonContabilidad ContabilidadBtnGuardar;
-        private Componentes.ClsBotonContabilidad ContabilidadBtnAplicar;
+        private System.Windows.Forms.Button ContabilidadBtnNueva;
+        private System.Windows.Forms.Button ContabilidadBtnLimpiarDetalle;
+        private System.Windows.Forms.Button ContabilidadBtnGuardar;
+        private System.Windows.Forms.Button ContabilidadBtnAplicar;
+        private System.Windows.Forms.Label ContabilidadLblObligatorioOrigen;
+        private System.Windows.Forms.Label ContabilidadLblObligatorioEstado;
+        private System.Windows.Forms.Label ContabilidadLblObligatorioFecha;
+        private System.Windows.Forms.Label ContabilidadLblObligatorioDescripcion;
+        private System.Windows.Forms.Label ContabilidadLblObligatorioCuenta;
     }
 }

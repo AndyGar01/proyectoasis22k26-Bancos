@@ -11,7 +11,9 @@
  * ===================================================================
 */
 
+using System;
 using System.Windows.Forms;
+using CapaVista_Empleado.frmReportes;
 
 namespace CapaVista_Empleado.Formularios
 {
@@ -21,6 +23,11 @@ namespace CapaVista_Empleado.Formularios
         {
             InitializeComponent();
             RrhhNavAsigPuestos.NavegadorMetConfigurar("tblPuestoEmpleado", 9000, 9006);
+        }
+
+        private void RrhhBtnReporteAsigPuestos_Click(object sender, EventArgs e)
+        {
+            new FrmReporteAsigPuestos().ShowDialog(this);
         }
     }
 }

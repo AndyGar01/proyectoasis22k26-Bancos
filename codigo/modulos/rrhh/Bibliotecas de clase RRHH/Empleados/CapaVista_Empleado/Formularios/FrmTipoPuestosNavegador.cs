@@ -11,7 +11,9 @@
  * ===================================================================
 */
 
+using System;
 using System.Windows.Forms;
+using CapaVista_Empleado.frmReportes;
 
 namespace CapaVista_Empleado.Formularios
 {
@@ -21,6 +23,11 @@ namespace CapaVista_Empleado.Formularios
         {
             InitializeComponent();
             RrhhNavTipoPuestos.NavegadorMetConfigurar("tblTipoPuesto", 9000, 9003);
+        }
+
+        private void RrhhBtnReporteTipoPuestos_Click(object sender, EventArgs e)
+        {
+            new FrmReporteTipoPuestos().ShowDialog(this);
         }
     }
 }

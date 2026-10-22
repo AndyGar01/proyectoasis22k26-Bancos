@@ -11,7 +11,9 @@
  * ===================================================================
 */
 
+using System;
 using System.Windows.Forms;
+using CapaVista_Empleado.frmReportes;
 
 namespace CapaVista_Empleado.Formularios
 {
@@ -21,6 +23,11 @@ namespace CapaVista_Empleado.Formularios
         {
             InitializeComponent();
             RrhhNavJornadas.NavegadorMetConfigurar("tblJornada", 9000, 9005);
+        }
+
+        private void RrhhBtnReporteJornadas_Click(object sender, EventArgs e)
+        {
+            new FrmReporteJornadas().ShowDialog(this);
         }
     }
 }

@@ -11,7 +11,9 @@
  * ===================================================================
 */
 
+using System;
 using System.Windows.Forms;
+using CapaVista_Empleado.frmReportes;
 
 namespace CapaVista_Empleado.Formularios
 {
@@ -21,6 +23,11 @@ namespace CapaVista_Empleado.Formularios
         {
             InitializeComponent();
             RrhhNavDepartamentos.NavegadorMetConfigurar("tblDepartamento", 9000, 9002);
+        }
+
+        private void RrhhBtnReporteDepartamentos_Click(object sender, EventArgs e)
+        {
+            new FrmReporteDepartamentos().ShowDialog(this);
         }
     }
 }

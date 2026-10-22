@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -106,6 +106,36 @@
     <Compile Include="Formularios\FrmInstructoresNavegador.Designer.cs">
       <DependentUpon>FrmInstructoresNavegador.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\FrmDepartamentosNavegador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmDepartamentosNavegador.Designer.cs">
+      <DependentUpon>FrmDepartamentosNavegador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmTipoPuestosNavegador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmTipoPuestosNavegador.Designer.cs">
+      <DependentUpon>FrmTipoPuestosNavegador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmPuestosNavegador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmPuestosNavegador.Designer.cs">
+      <DependentUpon>FrmPuestosNavegador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmJornadasNavegador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmJornadasNavegador.Designer.cs">
+      <DependentUpon>FrmJornadasNavegador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmAsigPuestosNavegador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmAsigPuestosNavegador.Designer.cs">
+      <DependentUpon>FrmAsigPuestosNavegador.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmReportes\FrmReporteCapacitacion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,6 +159,11 @@
   <ItemGroup>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\CapaControlador_Empleado.Modelos_de_Controladores.ClsModeloCapacitacion.datasource" />
+    <None Include="Properties\DataSources\CapaControlador_Empleado.Modelos_de_Controladores.ClsModeloDepartamento.datasource" />
+    <None Include="Properties\DataSources\CapaControlador_Empleado.Modelos_de_Controladores.ClsModeloTipoPuesto.datasource" />
+    <None Include="Properties\DataSources\CapaControlador_Empleado.Modelos_de_Controladores.ClsModeloPuesto.datasource" />
+    <None Include="Properties\DataSources\CapaControlador_Empleado.Modelos_de_Controladores.ClsModeloJornada.datasource" />
+    <None Include="Properties\DataSources\CapaControlador_Empleado.Modelos_de_Controladores.ClsModeloPuestoEmpleado.datasource" />
     <None Include="Resources\icono_rrhh.png" />
   </ItemGroup>
   <ItemGroup>
@@ -146,6 +181,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmInstructoresNavegador.resx">
       <DependentUpon>FrmInstructoresNavegador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmDepartamentosNavegador.resx">
+      <DependentUpon>FrmDepartamentosNavegador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmTipoPuestosNavegador.resx">
+      <DependentUpon>FrmTipoPuestosNavegador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmPuestosNavegador.resx">
+      <DependentUpon>FrmPuestosNavegador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmJornadasNavegador.resx">
+      <DependentUpon>FrmJornadasNavegador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmAsigPuestosNavegador.resx">
+      <DependentUpon>FrmAsigPuestosNavegador.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmReportes\FrmReporteCapacitacion.resx">
       <DependentUpon>FrmReporteCapacitacion.cs</DependentUpon>

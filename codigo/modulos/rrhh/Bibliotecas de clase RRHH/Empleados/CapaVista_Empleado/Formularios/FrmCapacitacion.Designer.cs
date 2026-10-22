@@ -342,6 +342,7 @@
             this.RrhhBtnAsigCapacitacion.TabIndex = 5;
             this.RrhhBtnAsigCapacitacion.Text = "Abrir";
             this.RrhhBtnAsigCapacitacion.UseVisualStyleBackColor = false;
+            this.RrhhBtnAsigCapacitacion.Click += new System.EventHandler(this.RrhhBtnAsigCap_Click);
             // 
             // RrhhLblSubAsigCapacitacion
             // 

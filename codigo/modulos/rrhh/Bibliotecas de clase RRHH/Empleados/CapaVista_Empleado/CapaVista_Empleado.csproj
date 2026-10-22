@@ -136,6 +136,36 @@
     <Compile Include="frmReportes\FrmReporteCapacitacion.Designer.cs">
       <DependentUpon>FrmReporteCapacitacion.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmReportes\FrmReporteDepartamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportes\FrmReporteDepartamentos.Designer.cs">
+      <DependentUpon>FrmReporteDepartamentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportes\FrmReporteTipoPuestos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportes\FrmReporteTipoPuestos.Designer.cs">
+      <DependentUpon>FrmReporteTipoPuestos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportes\FrmReportePuestos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportes\FrmReportePuestos.Designer.cs">
+      <DependentUpon>FrmReportePuestos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportes\FrmReporteJornadas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportes\FrmReporteJornadas.Designer.cs">
+      <DependentUpon>FrmReporteJornadas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportes\FrmReporteAsigPuestos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportes\FrmReporteAsigPuestos.Designer.cs">
+      <DependentUpon>FrmReporteAsigPuestos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -147,6 +177,11 @@
   <ItemGroup>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\CapaControlador_Empleado.Modelos_de_Controladores.ClsModeloCapacitacion.datasource" />
+    <None Include="Properties\DataSources\CapaControlador_Empleado.Modelos_de_Controladores.ClsModeloDepartamento.datasource" />
+    <None Include="Properties\DataSources\CapaControlador_Empleado.Modelos_de_Controladores.ClsModeloTipoPuesto.datasource" />
+    <None Include="Properties\DataSources\CapaControlador_Empleado.Modelos_de_Controladores.ClsModeloPuesto.datasource" />
+    <None Include="Properties\DataSources\CapaControlador_Empleado.Modelos_de_Controladores.ClsModeloJornada.datasource" />
+    <None Include="Properties\DataSources\CapaControlador_Empleado.Modelos_de_Controladores.ClsModeloPuestoEmpleado.datasource" />
     <None Include="Resources\icono_rrhh.png" />
   </ItemGroup>
   <ItemGroup>
@@ -180,11 +215,31 @@
     <EmbeddedResource Include="frmReportes\FrmReporteCapacitacion.resx">
       <DependentUpon>FrmReporteCapacitacion.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmReportes\FrmReporteDepartamentos.resx">
+      <DependentUpon>FrmReporteDepartamentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportes\FrmReporteTipoPuestos.resx">
+      <DependentUpon>FrmReporteTipoPuestos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportes\FrmReportePuestos.resx">
+      <DependentUpon>FrmReportePuestos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportes\FrmReporteJornadas.resx">
+      <DependentUpon>FrmReporteJornadas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportes\FrmReporteAsigPuestos.resx">
+      <DependentUpon>FrmReporteAsigPuestos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\RpCapacitacion.rdlc" />
+    <EmbeddedResource Include="Reportes\RpDepartamento.rdlc" />
+    <EmbeddedResource Include="Reportes\RpTipoPuesto.rdlc" />
+    <EmbeddedResource Include="Reportes\RpPuesto.rdlc" />
+    <EmbeddedResource Include="Reportes\RpJornada.rdlc" />
+    <EmbeddedResource Include="Reportes\RpPuestoEmpleado.rdlc" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Pnl_fondo.png" />

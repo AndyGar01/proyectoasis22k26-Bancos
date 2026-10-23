@@ -28,7 +28,7 @@ namespace CapaModelo_Nominas.Repositorios
             }
         }
 
-        // PARA NAVEGADOR
+       
         public int RrhhMetEjecucionNonQuery(string ComandoTexto, List<OdbcParameter> Parametros, CommandType ComandoTipo, OdbcConnection Conexion, OdbcTransaction Transaccion)
         {
             using (var Comando = new OdbcCommand())
@@ -41,7 +41,7 @@ namespace CapaModelo_Nominas.Repositorios
                 return Comando.ExecuteNonQuery();
             }
         }
-        // PARA NAVEGADOR
+        
 
         public DataTable RrhhMetEjecucionConsulta(string ComandoTexto, CommandType ComandoTipo)
         {

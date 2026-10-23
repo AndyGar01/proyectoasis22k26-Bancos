@@ -28,7 +28,7 @@ namespace CapaControlador_Nomina.Modelos_de_controladores
         public EstadoEntidad Estado { private get; set; }
         private List<ClsModeloPercepcionDeduccion> _ListaPercepcionDeduccion;
 
-        // Autoincremental: sin validaciones, solo se exige en Modified/Deleted
+        // Autoincrement
         public int IdPercepcionDeduccion { get => _IdPercepcionDeduccion; set => _IdPercepcionDeduccion = value; }
 
         [Required(ErrorMessage = "El campo Nombre es requerido")]

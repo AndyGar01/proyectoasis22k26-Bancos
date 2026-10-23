@@ -1,6 +1,6 @@
 ﻿namespace CapaVista_PermisosVacaciones.Formularios
 {
-    partial class frmPermisos
+    partial class FrmPermisos
     {
         /// <summary>
         /// Required designer variable.
@@ -28,33 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPermisos));
-            this.navegador1 = new CapaVista_Navegador.Navegador();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPermisos));
+            this.RrhhNavPermisos = new CapaVista_Navegador.Navegador();
             this.SuspendLayout();
             // 
-            // navegador1
+            // RrhhNavPermisos
             // 
-            this.navegador1.Location = new System.Drawing.Point(12, 52);
-            this.navegador1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.navegador1.Name = "navegador1";
-            this.navegador1.Size = new System.Drawing.Size(1618, 139);
-            this.navegador1.TabIndex = 0;
+            this.RrhhNavPermisos.Location = new System.Drawing.Point(12, 92);
+            this.RrhhNavPermisos.Name = "RrhhNavPermisos";
+            this.RrhhNavPermisos.Size = new System.Drawing.Size(1435, 107);
+            this.RrhhNavPermisos.TabIndex = 0;
             // 
-            // frmPermisos
+            // FrmPermisos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1631, 627);
-            this.Controls.Add(this.navegador1);
+            this.ClientSize = new System.Drawing.Size(1462, 640);
+            this.Controls.Add(this.RrhhNavPermisos);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "frmPermisos";
-            this.Text = "9202 - Permisos ";
+            this.MaximizeBox = false;
+            this.Name = "FrmPermisos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "9202 – Permisos";
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private CapaVista_Navegador.Navegador navegador1;
+        private CapaVista_Navegador.Navegador RrhhNavPermisos;
     }
 }

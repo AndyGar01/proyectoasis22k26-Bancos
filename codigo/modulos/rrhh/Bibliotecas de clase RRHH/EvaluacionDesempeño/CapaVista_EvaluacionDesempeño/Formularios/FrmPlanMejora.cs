@@ -16,7 +16,7 @@ using System.Windows.Forms;
  * Fecha : 12/10/2026
  * ==================================================================
  * Propósito :
- *  Ventana 9302 - Plan de Mejora (solo diseño).
+ *  Ventana 9403 - Plan de Mejora (solo diseño).
  *  Menú de opciones relacionadas, sin eventos ni lógica.
  * ===================================================================
 */
@@ -28,6 +28,11 @@ namespace CapaVista_PlanMejora.Formularios
         public FrmPlanMejora()
         {
             InitializeComponent();
+        }
+
+        private void RrhhBtnSalir_Click(object sender, EventArgs e)
+        {
+            Close();
         }
 
 

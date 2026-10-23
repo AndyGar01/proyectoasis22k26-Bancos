@@ -32,15 +32,14 @@ namespace CapaVista_PermisosVacaciones.Formularios
 
         private void RrhhBtnAbrirPermisos_Click(object sender, EventArgs e)
         {
-            frmPermisos RrhhFrmPermisos = new frmPermisos();
-            RrhhFrmPermisos.ShowDialog();
+            FrmPermisos RrhhFrmPermisos = new FrmPermisos();
+            RrhhFrmPermisos.ShowDialog(this);
         }
 
-        // Abre el mantenimiento de vacaciones
         private void RrhhBtnAbrirVacaciones_Click(object sender, EventArgs e)
         {
-            frmVacaciones RrhhFrmVacaciones = new frmVacaciones();
-            RrhhFrmVacaciones.ShowDialog();
+            FrmVacaciones RrhhFrmVacaciones = new FrmVacaciones();
+            RrhhFrmVacaciones.ShowDialog(this);
         }
     }
 }

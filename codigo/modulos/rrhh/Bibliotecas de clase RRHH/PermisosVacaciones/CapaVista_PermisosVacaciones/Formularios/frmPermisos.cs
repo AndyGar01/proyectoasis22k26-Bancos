@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CapaVista_PermisosVacaciones.Formularios
 {
-    public partial class frmPermisos : Form
+    public partial class FrmPermisos : Form
     {
-        public frmPermisos()
+        public FrmPermisos()
         {
             InitializeComponent();
         }

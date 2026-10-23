@@ -1,4 +1,18 @@
-﻿using System;
+﻿/*
+ * ================================================================
+ * Área   : Bancos
+ * Autor  : Victor Josue Ortiz Samayoa
+ * Carné  : 0901-23-3424
+ * Fecha  : 23/10/2026
+ * ================================================================
+ * Propósito :
+ *  Formulario navegador del módulo Cuenta Bancaria. Inicializa
+ *  el control de navegación apuntando a la tabla tblCuentaBancaria,
+ *  dentro del módulo Bancos (8000), aplicación 8005.
+ * ================================================================
+ */
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,48 +34,7 @@ namespace CapaVista_DisponibilidadDiaria.Formularios
         public FrmCuentaBancariaNavegador()
         {
             InitializeComponent();
-            navegador1.NavegadorMetConfigurar("tblCuentaBancaria", 8000, 8005);
-        }
-
-        private void BancosBtnFooterReporte_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                using (var datos = new ClsCtrlTabla().NavegadorFuncLlenarDgv("tblCuentaBancaria"))
-                using (var reporte = new FrmReporteCuentaBancaria(datos))
-                    reporte.ShowDialog(this);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(this, "No se pudo cargar el reporte de cuentas bancarias.\n" + ex.Message,
-                    "Reporte de cuentas bancarias", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
-        private void BancosBtnFooterAyuda_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                var directorio = new DirectoryInfo(AppDomain.CurrentDomain.BaseDirectory);
-                while (directorio != null)
-                {
-                    string ruta = Path.Combine(directorio.FullName, "ayuda", "modulos", "bancos",
-                        "BancosAyudas", "CuentaBancaria_Bancos.html");
-                    if (File.Exists(ruta))
-                    {
-                        Process.Start(new ProcessStartInfo(ruta) { UseShellExecute = true });
-                        return;
-                    }
-                    directorio = directorio.Parent;
-                }
-                MessageBox.Show(this, "No se encontró CuentaBancaria_Bancos.html en ayuda/modulos/bancos/BancosAyudas.",
-                    "Ayuda de cuentas bancarias", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(this, "No se pudo abrir la ayuda.\n" + ex.Message,
-                    "Ayuda de cuentas bancarias", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            BancosNavCuentaBancaria.NavegadorMetConfigurar("tblCuentaBancaria", 8000, 8005);
         }
     }
 }

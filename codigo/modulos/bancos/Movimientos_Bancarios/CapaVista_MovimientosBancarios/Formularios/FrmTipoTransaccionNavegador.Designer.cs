@@ -29,62 +29,35 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmTipoTransaccionNavegador));
-            this.navegador1 = new CapaVista_Navegador.Navegador();
-            this.BancosbtnAyudas = new System.Windows.Forms.Button();
-            this.BancosbtnReportes = new System.Windows.Forms.Button();
+            this.BancosNavTipoTransaccion = new CapaVista_Navegador.Navegador();
             this.SuspendLayout();
             // 
-            // navegador1
+            // BancosNavTipoTransaccion
             // 
-            this.navegador1.Location = new System.Drawing.Point(15, 14);
-            this.navegador1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.navegador1.Name = "navegador1";
-            this.navegador1.Size = new System.Drawing.Size(1437, 111);
-            this.navegador1.TabIndex = 0;
-            // 
-            // BancosbtnAyudas
-            // 
-            this.BancosbtnAyudas.BackgroundImage = global::CapaVista_MovimientosBancarios.Properties.Resources.btn_ayudaB1;
-            this.BancosbtnAyudas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BancosbtnAyudas.Location = new System.Drawing.Point(834, 33);
-            this.BancosbtnAyudas.Name = "BancosbtnAyudas";
-            this.BancosbtnAyudas.Size = new System.Drawing.Size(100, 75);
-            this.BancosbtnAyudas.TabIndex = 2;
-            this.BancosbtnAyudas.UseVisualStyleBackColor = true;
-            this.BancosbtnAyudas.Click += new System.EventHandler(this.BancosbtnAyudas_Click);
-            // 
-            // BancosbtnReportes
-            // 
-            this.BancosbtnReportes.BackgroundImage = global::CapaVista_MovimientosBancarios.Properties.Resources.btn_reporteB;
-            this.BancosbtnReportes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BancosbtnReportes.Location = new System.Drawing.Point(735, 33);
-            this.BancosbtnReportes.Margin = new System.Windows.Forms.Padding(4);
-            this.BancosbtnReportes.Name = "BancosbtnReportes";
-            this.BancosbtnReportes.Size = new System.Drawing.Size(100, 75);
-            this.BancosbtnReportes.TabIndex = 1;
-            this.BancosbtnReportes.UseVisualStyleBackColor = true;
-            this.BancosbtnReportes.Click += new System.EventHandler(this.BancosbtnReportes_Click);
+            this.BancosNavTipoTransaccion.Location = new System.Drawing.Point(11, 11);
+            this.BancosNavTipoTransaccion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BancosNavTipoTransaccion.Name = "BancosNavTipoTransaccion";
+            this.BancosNavTipoTransaccion.Size = new System.Drawing.Size(1078, 90);
+            this.BancosNavTipoTransaccion.TabIndex = 0;
             // 
             // FrmTipoTransaccionNavegador
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1465, 875);
-            this.Controls.Add(this.BancosbtnAyudas);
-            this.Controls.Add(this.BancosbtnReportes);
-            this.Controls.Add(this.navegador1);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(1089, 609);
+            this.Controls.Add(this.BancosNavTipoTransaccion);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MaximizeBox = false;
             this.Name = "FrmTipoTransaccionNavegador";
-            this.Text = "8004-MantenimientoTipoTransacción";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "8004-MantenimientoTipoTransaccion";
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private CapaVista_Navegador.Navegador navegador1;
-        private System.Windows.Forms.Button BancosbtnReportes;
-        private System.Windows.Forms.Button BancosbtnAyudas;
+        private CapaVista_Navegador.Navegador BancosNavTipoTransaccion;
     }
 }

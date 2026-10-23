@@ -1,3 +1,25 @@
+/*
+ * ================================================================
+ * Área   : Bancos
+ * Autor  : Oscar Emilio Morales Lemus
+ * Carné  : 9959-23-3070
+ * Autor  : Evelyn Sofía Andrade Luna
+ * Carné  : 9959-23-1224
+ * Fecha  : 23/10/2026
+ * ================================================================
+ * Propósito :
+ *  Formulario MDI principal del módulo Bancos. Contiene el panel
+ *  de navegación colapsable (botón burger) y centraliza el acceso
+ *  a todos los subformularios del módulo: Mantenimientos (Moneda,
+ *  Bancos, Tipo de Cuenta Bancaria, Tipo de Transacción, Cuenta
+ *  Bancaria) y Procesos (Movimientos Bancarios, Autorización de
+ *  Órdenes, Conciliación Bancaria, Disponibilidad Diaria, Tipo de
+ *  Cambio, Generación de Pagos, Cierre Bancario, Enlace a Otros
+ *  Módulos). Muestra el usuario y rol activo, incluye acceso a la
+ *  ayuda del módulo y permite cerrar la sesión.
+ * ================================================================
+ */
+
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -138,5 +160,20 @@ namespace CapaVista_Bancos.Formularios
         {
             Help.ShowHelp(this, "C:/BancosAyudas/CapaBancos.chm", "MDI_Bancos.html");
         }
+
+        private void BancosBtnCerrarP_Click(object sender, EventArgs e)
+        {
+            DialogResult resultado = MessageBox.Show(
+                 "¿Seguro que deseas cerrar sesión?",
+                 "Cerrar sesión",
+                 MessageBoxButtons.YesNo,
+                 MessageBoxIcon.Question);
+
+            if (resultado == DialogResult.Yes)
+            {
+                this.Close();
+            }
+        }
+    
     }
 }

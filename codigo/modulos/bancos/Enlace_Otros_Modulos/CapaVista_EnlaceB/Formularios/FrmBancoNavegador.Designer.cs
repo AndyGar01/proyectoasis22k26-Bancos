@@ -29,51 +29,28 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmBancoNavegador));
-            this.navegador1 = new CapaVista_Navegador.Navegador();
-            this.BancosbtnAyudas = new System.Windows.Forms.Button();
-            this.BancosbtnReportes = new System.Windows.Forms.Button();
+            this.BancosNavBanco = new CapaVista_Navegador.Navegador();
             this.SuspendLayout();
             // 
-            // navegador1
+            // BancosNavBanco
             // 
-            this.navegador1.Location = new System.Drawing.Point(0, 1);
-            this.navegador1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.navegador1.Name = "navegador1";
-            this.navegador1.Size = new System.Drawing.Size(1437, 111);
-            this.navegador1.TabIndex = 0;
-            // 
-            // BancosbtnAyudas
-            // 
-            this.BancosbtnAyudas.BackgroundImage = global::CapaVista_EnlaceB.Properties.Resources.btn_ayudaB;
-            this.BancosbtnAyudas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BancosbtnAyudas.Location = new System.Drawing.Point(824, 19);
-            this.BancosbtnAyudas.Name = "BancosbtnAyudas";
-            this.BancosbtnAyudas.Size = new System.Drawing.Size(99, 78);
-            this.BancosbtnAyudas.TabIndex = 2;
-            this.BancosbtnAyudas.UseVisualStyleBackColor = true;
-            this.BancosbtnAyudas.Click += new System.EventHandler(this.BancosbtnAyudas_Click);
-            // 
-            // BancosbtnReportes
-            // 
-            this.BancosbtnReportes.BackgroundImage = global::CapaVista_EnlaceB.Properties.Resources.btn_reporteB1;
-            this.BancosbtnReportes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BancosbtnReportes.Location = new System.Drawing.Point(720, 19);
-            this.BancosbtnReportes.Name = "BancosbtnReportes";
-            this.BancosbtnReportes.Size = new System.Drawing.Size(99, 78);
-            this.BancosbtnReportes.TabIndex = 1;
-            this.BancosbtnReportes.UseVisualStyleBackColor = true;
+            this.BancosNavBanco.Location = new System.Drawing.Point(0, 1);
+            this.BancosNavBanco.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BancosNavBanco.Name = "BancosNavBanco";
+            this.BancosNavBanco.Size = new System.Drawing.Size(1078, 90);
+            this.BancosNavBanco.TabIndex = 0;
             // 
             // FrmBancoNavegador
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1451, 599);
-            this.Controls.Add(this.BancosbtnAyudas);
-            this.Controls.Add(this.BancosbtnReportes);
-            this.Controls.Add(this.navegador1);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(1085, 487);
+            this.Controls.Add(this.BancosNavBanco);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MaximizeBox = false;
             this.Name = "FrmBancoNavegador";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmBancoNavegador";
             this.ResumeLayout(false);
 
@@ -81,8 +58,6 @@
 
         #endregion
 
-        private CapaVista_Navegador.Navegador navegador1;
-        private System.Windows.Forms.Button BancosbtnReportes;
-        private System.Windows.Forms.Button BancosbtnAyudas;
+        private CapaVista_Navegador.Navegador BancosNavBanco;
     }
 }

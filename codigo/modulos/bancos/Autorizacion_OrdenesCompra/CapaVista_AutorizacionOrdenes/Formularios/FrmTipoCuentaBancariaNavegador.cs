@@ -1,4 +1,18 @@
-﻿using CapaVista_AutorizacionOrdenes.frmReportes;
+﻿/*
+ * ================================================================
+ * Área   : Autorización de Órdenes
+ * Autor  : Andy Alfonso Garcia Lopez
+ * Carné  : 9959-23-1494
+ * Fecha  : 23/10/2026
+ * ================================================================
+ * Propósito :
+ *  Formulario navegador del módulo Tipo de Cuenta Bancaria.
+ *  Inicializa el control de navegación apuntando a la tabla
+ *  tblTipoCuentaBancaria, dentro del módulo Bancos (8000),
+ *  aplicación 8003 (Tipo de Cuenta Bancaria).
+ * ================================================================
+ */
+
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,27 +30,10 @@ namespace CapaVista_AutorizacionOrdenes.Formularios
         public FrmTipoCuentaBancariaNavegador()
         {
             InitializeComponent();
-            navegador1.NavegadorMetConfigurar("tblTipoCuentaBancaria", 8000, 8003);
+            BancosNavTipoCuenta.NavegadorMetConfigurar("tblTipoCuentaBancaria", 8000, 8003);
 
-            navegador1.NavegadorAccionSolicitada += (Accion) =>
-            {
-                BeginInvoke((Action)(() =>
-                {
-                    BancosBtnReporte.BringToFront();
-                    BancosBtnAyuda.BringToFront();
-                }));
-            };
         }
 
-        private void BancosBtnReporte_Click(object sender, EventArgs e)
-        {
-            FrmReporteTipoCuentaBancaria Reporte = new FrmReporteTipoCuentaBancaria();
-            Reporte.Show();
-        }
-
-        private void BancosBtnAyuda_Click(object sender, EventArgs e)
-        {
-            Help.ShowHelp(this, "C:/BancosAyudas/CapaBancos.chm", "TipoCuentaBancaria_Bancos.html");
-        }
+        
     }
 }

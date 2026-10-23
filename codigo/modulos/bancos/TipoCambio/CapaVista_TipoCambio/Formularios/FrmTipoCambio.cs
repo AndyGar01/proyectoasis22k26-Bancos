@@ -1,3 +1,23 @@
+/*
+ * ================================================================
+ * Área   : Bancos
+ * Autor  : Victor Josue Ortiz Samayoa
+ * Carné  : 0901-23-3424
+ * Fecha  : 23/10/2026
+ * ================================================================
+ * Propósito :
+ *  Formulario principal del módulo Tipo de Cambio. Gestiona tres
+ *  pestañas: Tasas Actuales (consulta y filtrado de tipos de cambio
+ *  de referencia del Banguat), Histórico (seguimiento de variaciones
+ *  por par de monedas en un rango de fechas) y Conversor (cálculo
+ *  de equivalencias multimoneda con visualización de banderas).
+ *  Permite exportar datos, actualizar tasas desde el Banguat,
+ *  mostrar detalle por moneda seleccionada e intercambiar el par
+ *  de conversión. Incluye acceso a ayuda, reportes y cierre del
+ *  formulario desde la barra inferior.
+ * ================================================================
+ */
+
 using System;
 using System.Data;
 using System.Drawing;

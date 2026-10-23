@@ -29,61 +29,36 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmTipoCuentaBancariaNavegador));
-            this.BancosBtnAyuda = new System.Windows.Forms.Button();
-            this.BancosBtnReporte = new System.Windows.Forms.Button();
-            this.navegador1 = new CapaVista_Navegador.Navegador();
+            this.BancosNavTipoCuenta = new CapaVista_Navegador.Navegador();
             this.SuspendLayout();
             // 
-            // BancosBtnAyuda
+            // BancosNavTipoCuenta
             // 
-            this.BancosBtnAyuda.BackgroundImage = global::CapaVista_AutorizacionOrdenes.Properties.Resources.btn_ayuda;
-            this.BancosBtnAyuda.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BancosBtnAyuda.Location = new System.Drawing.Point(833, 28);
-            this.BancosBtnAyuda.Name = "BancosBtnAyuda";
-            this.BancosBtnAyuda.Size = new System.Drawing.Size(98, 77);
-            this.BancosBtnAyuda.TabIndex = 1;
-            this.BancosBtnAyuda.UseVisualStyleBackColor = true;
-            this.BancosBtnAyuda.Click += new System.EventHandler(this.BancosBtnAyuda_Click);
-            // 
-            // BancosBtnReporte
-            // 
-            this.BancosBtnReporte.BackgroundImage = global::CapaVista_AutorizacionOrdenes.Properties.Resources.btn_reporteB;
-            this.BancosBtnReporte.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BancosBtnReporte.Location = new System.Drawing.Point(733, 28);
-            this.BancosBtnReporte.Name = "BancosBtnReporte";
-            this.BancosBtnReporte.Size = new System.Drawing.Size(94, 77);
-            this.BancosBtnReporte.TabIndex = 2;
-            this.BancosBtnReporte.UseVisualStyleBackColor = true;
-            this.BancosBtnReporte.Click += new System.EventHandler(this.BancosBtnReporte_Click);
-            // 
-            // navegador1
-            // 
-            this.navegador1.Location = new System.Drawing.Point(12, 12);
-            this.navegador1.Name = "navegador1";
-            this.navegador1.Size = new System.Drawing.Size(1438, 108);
-            this.navegador1.TabIndex = 0;
+            this.BancosNavTipoCuenta.Location = new System.Drawing.Point(9, 10);
+            this.BancosNavTipoCuenta.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BancosNavTipoCuenta.Name = "BancosNavTipoCuenta";
+            this.BancosNavTipoCuenta.Size = new System.Drawing.Size(1078, 88);
+            this.BancosNavTipoCuenta.TabIndex = 0;
             // 
             // FrmTipoCuentaBancariaNavegador
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1488, 799);
-            this.Controls.Add(this.BancosBtnReporte);
-            this.Controls.Add(this.BancosBtnAyuda);
-            this.Controls.Add(this.navegador1);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(1085, 609);
+            this.Controls.Add(this.BancosNavTipoCuenta);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "FrmTipoCuentaBancariaNavegador";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "8003-FrmTipoCuentaBancaria";
+            this.Text = "8003-TipoCuentaBancaria";
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private CapaVista_Navegador.Navegador navegador1;
-        private System.Windows.Forms.Button BancosBtnAyuda;
-        private System.Windows.Forms.Button BancosBtnReporte;
+        private CapaVista_Navegador.Navegador BancosNavTipoCuenta;
     }
 }

@@ -1,4 +1,18 @@
-﻿using System;
+﻿/*
+ * ================================================================
+ * Área   : Bancos
+ * Autor  : Evelyn Sofía Andrade Luna
+ * Carné  : 9959-23-1224
+ * Fecha  : 23/10/2026
+ * ================================================================
+ * Propósito :
+ *  Formulario navegador del módulo Moneda. Inicializa el control
+ *  de navegación apuntando a la tabla tblMoneda, dentro del módulo
+ *  Bancos (8000), aplicación 8001.
+ * ================================================================
+ */
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,7 +21,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using CapaVista_GeneracionPagos.FrmReportes;
 
 namespace CapaVista_GeneracionPagos.Formularios
 {
@@ -18,24 +31,6 @@ namespace CapaVista_GeneracionPagos.Formularios
             InitializeComponent();
             BancosNavMoneda.NavegadorMetConfigurar("tblMoneda", 8000, 8001);
 
-            BancosNavMoneda.NavegadorAccionSolicitada += (Accion) =>
-            {
-                BeginInvoke((Action)(() =>
-                {
-                    BancosBtnReporte.BringToFront();
-                }));
-            };
-        }
-
-        private void BancosBtnReporte_Click_1(object sender, EventArgs e)
-        {
-            FrmReporteMoneda Reporte = new FrmReporteMoneda();
-            Reporte.Show();
-        }
-
-        private void BancosbtnAyudas_Click(object sender, EventArgs e)
-        {
-            Help.ShowHelp(this, "C:/BancosAyudas/CapaBancos.chm", "Moneda_Bancos.html");
         }
     }
 }

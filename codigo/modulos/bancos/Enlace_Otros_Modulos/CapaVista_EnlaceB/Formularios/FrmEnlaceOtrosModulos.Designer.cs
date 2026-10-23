@@ -587,6 +587,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "FrmEnlaceOtrosModulos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "8008-EnlaceOtrosMódulos";
             this.BancPnlFiltros.ResumeLayout(false);
             this.BancPnlFiltros.PerformLayout();

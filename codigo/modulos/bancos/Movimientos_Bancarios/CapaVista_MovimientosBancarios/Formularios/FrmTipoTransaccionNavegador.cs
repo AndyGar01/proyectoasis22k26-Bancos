@@ -1,4 +1,17 @@
-﻿using CapaVista_MovimientosBancarios.FrmReportes;
+﻿/*
+ * ================================================================
+ * Área   : Bancos
+ * Autor  : Oscar Emilio Morales Lemus
+ * Carné  : 9959-23-3070
+ * Fecha  : 23/10/2026
+ * ================================================================
+ * Propósito :
+ *  Formulario navegador del módulo Tipo de Transacción. Inicializa
+ *  el control de navegación apuntando a la tabla tblTipoTransaccion,
+ *  dentro del módulo Bancos (8000), aplicación 8004.
+ * ================================================================
+ */
+
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,28 +29,8 @@ namespace CapaVista_MovimientosBancarios.Formularios
         public FrmTipoTransaccionNavegador()
         {
             InitializeComponent();
-            navegador1.NavegadorMetConfigurar("tblTipoTransaccion", 8000, 8004);
+            BancosNavTipoTransaccion.NavegadorMetConfigurar("tblTipoTransaccion", 8000, 8004);
 
-            navegador1.NavegadorAccionSolicitada += (Accion) =>
-            {
-                BeginInvoke((Action)(() =>
-                {
-                    BancosbtnReportes.BringToFront();
-                    BancosbtnAyudas.BringToFront();
-                }));
-            };
-
-        }
-
-        private void BancosbtnReportes_Click(object sender, EventArgs e)
-        {
-            FrmTipoTransaccion reporte = new FrmTipoTransaccion();
-            reporte.Show();
-        }
-
-        private void BancosbtnAyudas_Click(object sender, EventArgs e)
-        {
-            Help.ShowHelp(this, "C:/BancosAyudas/CapaBancos.chm", "TipoTransaccion_Bancos.html");
         }
     }
 }

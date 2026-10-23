@@ -25,9 +25,5 @@ namespace CapaVista_Empleado.Formularios
             RrhhNavJornadas.NavegadorMetConfigurar("tblJornada", 9000, 9005);
         }
 
-        private void RrhhBtnReporteJornadas_Click(object sender, EventArgs e)
-        {
-            new FrmReporteJornadas().ShowDialog(this);
-        }
     }
 }

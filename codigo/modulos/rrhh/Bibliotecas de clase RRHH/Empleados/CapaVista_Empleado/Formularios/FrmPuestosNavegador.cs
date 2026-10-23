@@ -24,10 +24,5 @@ namespace CapaVista_Empleado.Formularios
             InitializeComponent();
             RrhhNavPuestos.NavegadorMetConfigurar("tblPuesto", 9000, 9004);
         }
-
-        private void RrhhBtnReportePuestos_Click(object sender, EventArgs e)
-        {
-            new FrmReportePuestos().ShowDialog(this);
-        }
     }
 }

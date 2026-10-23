@@ -25,9 +25,5 @@ namespace CapaVista_Empleado.Formularios
             RrhhNavTipoPuestos.NavegadorMetConfigurar("tblTipoPuesto", 9000, 9003);
         }
 
-        private void RrhhBtnReporteTipoPuestos_Click(object sender, EventArgs e)
-        {
-            new FrmReporteTipoPuestos().ShowDialog(this);
-        }
     }
 }

@@ -25,9 +25,5 @@ namespace CapaVista_Empleado.Formularios
             RrhhNavAsigPuestos.NavegadorMetConfigurar("tblPuestoEmpleado", 9000, 9006);
         }
 
-        private void RrhhBtnReporteAsigPuestos_Click(object sender, EventArgs e)
-        {
-            new FrmReporteAsigPuestos().ShowDialog(this);
-        }
     }
 }

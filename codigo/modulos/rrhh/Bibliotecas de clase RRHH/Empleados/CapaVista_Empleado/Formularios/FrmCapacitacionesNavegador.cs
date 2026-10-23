@@ -17,26 +17,8 @@ namespace CapaVista_Empleado.Formularios
         {
             InitializeComponent();
             RrhhNavCapacitaciones.NavegadorMetConfigurar("tblCapacitacion", 9000, 9302);
-
-            RrhhNavCapacitaciones.NavegadorAccionSolicitada += (Accion) =>
-            {
-                BeginInvoke((Action)(() => RrhhMetTraerBotonesAlFrente()));
-            };
-
-            this.Shown += (s, e) => RrhhMetTraerBotonesAlFrente();
         }
 
-        private void RrhhMetTraerBotonesAlFrente()
-        {
-            RrhhBtnReporteCapacitacion.BringToFront();
-            RrhhBtnAyudaCapacitacion.BringToFront();
-        }
-
-        private void RrhhBtnReporteCapacitacion_Click(object sender, EventArgs e)
-        {
-            frmReportes.FrmReporteCapacitacion reporte = new frmReportes.FrmReporteCapacitacion();
-            reporte.ShowDialog();
-        }
 
     }
      

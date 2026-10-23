@@ -17,14 +17,6 @@ namespace CapaVista_Empleado.Formularios
             InitializeComponent();
         }
 
-        private void RrhhBtnReporteEvaluacion_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void RrhhBtnAyudaEvaluacion_Click(object sender, EventArgs e)
-        {
-
-        }
+      
     }
 }

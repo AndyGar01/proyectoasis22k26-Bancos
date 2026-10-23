@@ -15,6 +15,7 @@ namespace CapaVista_Empleado.Formularios
         public FrmEvaluacionNavegador()
         {
             InitializeComponent();
+            RrhhNavCapacitaciones.NavegadorMetConfigurar("tblCapacitacion", 9000, 9003);
         }
 
       

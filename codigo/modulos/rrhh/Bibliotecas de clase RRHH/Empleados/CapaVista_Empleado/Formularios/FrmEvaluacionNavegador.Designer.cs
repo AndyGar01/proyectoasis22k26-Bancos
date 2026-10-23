@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmEvaluacionNavegador));
             this.RrhhNavCapacitaciones = new CapaVista_Navegador.Navegador();
             this.SuspendLayout();
             // 
@@ -42,11 +43,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1471, 450);
+            this.ClientSize = new System.Drawing.Size(1462, 640);
             this.Controls.Add(this.RrhhNavCapacitaciones);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "FrmEvaluacionNavegador";
-            this.Text = "FrmEvaluacion";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "9304- FrmEvaluacionCapacitacion";
             this.ResumeLayout(false);
 
         }

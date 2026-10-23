@@ -164,6 +164,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\btn_nuevo.png" />
+    <None Include="Resources\btn_cancelar.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\btn_realizarEvaluacion.png" />

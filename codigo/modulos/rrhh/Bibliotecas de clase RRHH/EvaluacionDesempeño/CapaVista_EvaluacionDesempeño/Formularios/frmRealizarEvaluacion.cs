@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CapaVista_EvaluacionDesempeño.Formularios
 {
-    public partial class frmRealizarEvaluacion : Form
+    public partial class FrmRealizarEvaluacion : Form
     {
-        public frmRealizarEvaluacion()
+        public FrmRealizarEvaluacion()
         {
             InitializeComponent();
         }

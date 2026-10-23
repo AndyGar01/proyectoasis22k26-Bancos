@@ -34,14 +34,9 @@ namespace CapaVista_EvaluacionDesempeño.Formularios
             InitializeComponent();
         }
 
-        private void RrhhLblTitulo_Click(object sender, EventArgs e)
+        private void RrhhBtnSalir_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void RrhhLblSubtitulo_Click(object sender, EventArgs e)
-        {
-
+            Close();
         }
     }
 }

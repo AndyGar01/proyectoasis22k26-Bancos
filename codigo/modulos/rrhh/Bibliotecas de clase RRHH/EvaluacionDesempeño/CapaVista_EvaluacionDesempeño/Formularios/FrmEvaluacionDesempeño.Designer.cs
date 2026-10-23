@@ -72,21 +72,21 @@
             this.RrhhPnlOpciones.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
             this.RrhhPnlOpciones.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.RrhhPnlOpciones.Controls.Add(this.RrhhLblOpciones);
-            this.RrhhPnlOpciones.Location = new System.Drawing.Point(13, 278);
-            this.RrhhPnlOpciones.Margin = new System.Windows.Forms.Padding(4);
+            this.RrhhPnlOpciones.Location = new System.Drawing.Point(8, 167);
+            this.RrhhPnlOpciones.Margin = new System.Windows.Forms.Padding(2);
             this.RrhhPnlOpciones.Name = "RrhhPnlOpciones";
-            this.RrhhPnlOpciones.Size = new System.Drawing.Size(1858, 68);
+            this.RrhhPnlOpciones.Size = new System.Drawing.Size(1107, 41);
             this.RrhhPnlOpciones.TabIndex = 1;
             // 
             // RrhhLblOpciones
             // 
             this.RrhhLblOpciones.BackColor = System.Drawing.Color.Transparent;
-            this.RrhhLblOpciones.Font = new System.Drawing.Font("Tahoma", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RrhhLblOpciones.Font = new System.Drawing.Font("Tahoma", 11.52F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RrhhLblOpciones.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(76)))), ((int)(((byte)(85)))));
-            this.RrhhLblOpciones.Location = new System.Drawing.Point(27, 8);
-            this.RrhhLblOpciones.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.RrhhLblOpciones.Location = new System.Drawing.Point(16, 5);
+            this.RrhhLblOpciones.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.RrhhLblOpciones.Name = "RrhhLblOpciones";
-            this.RrhhLblOpciones.Size = new System.Drawing.Size(681, 51);
+            this.RrhhLblOpciones.Size = new System.Drawing.Size(409, 31);
             this.RrhhLblOpciones.TabIndex = 0;
             this.RrhhLblOpciones.Text = "Opciones Relacionadas";
             // 
@@ -98,20 +98,20 @@
             this.RrhhPnlRealizarEvaluacion.Controls.Add(this.RrhhLblRealizarEvaluacionTitulo);
             this.RrhhPnlRealizarEvaluacion.Controls.Add(this.RrhhLblRealizarEvaluacionDescripcion);
             this.RrhhPnlRealizarEvaluacion.Controls.Add(this.RrhhBtnAbrirRealizarEvaluacion);
-            this.RrhhPnlRealizarEvaluacion.Location = new System.Drawing.Point(42, 364);
-            this.RrhhPnlRealizarEvaluacion.Margin = new System.Windows.Forms.Padding(4);
+            this.RrhhPnlRealizarEvaluacion.Location = new System.Drawing.Point(8, 218);
+            this.RrhhPnlRealizarEvaluacion.Margin = new System.Windows.Forms.Padding(2);
             this.RrhhPnlRealizarEvaluacion.Name = "RrhhPnlRealizarEvaluacion";
-            this.RrhhPnlRealizarEvaluacion.Size = new System.Drawing.Size(592, 617);
+            this.RrhhPnlRealizarEvaluacion.Size = new System.Drawing.Size(357, 370);
             this.RrhhPnlRealizarEvaluacion.TabIndex = 2;
             // 
             // RrhhPbRealizarEvaluacion
             // 
             this.RrhhPbRealizarEvaluacion.BackColor = System.Drawing.Color.Transparent;
             this.RrhhPbRealizarEvaluacion.Image = global::CapaVista_EvaluacionDesempeño.Properties.Resources.btn_realizarEvaluacion;
-            this.RrhhPbRealizarEvaluacion.Location = new System.Drawing.Point(34, 30);
-            this.RrhhPbRealizarEvaluacion.Margin = new System.Windows.Forms.Padding(4);
+            this.RrhhPbRealizarEvaluacion.Location = new System.Drawing.Point(20, 18);
+            this.RrhhPbRealizarEvaluacion.Margin = new System.Windows.Forms.Padding(2);
             this.RrhhPbRealizarEvaluacion.Name = "RrhhPbRealizarEvaluacion";
-            this.RrhhPbRealizarEvaluacion.Size = new System.Drawing.Size(206, 214);
+            this.RrhhPbRealizarEvaluacion.Size = new System.Drawing.Size(124, 128);
             this.RrhhPbRealizarEvaluacion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.RrhhPbRealizarEvaluacion.TabIndex = 0;
             this.RrhhPbRealizarEvaluacion.TabStop = false;
@@ -119,24 +119,24 @@
             // RrhhLblRealizarEvaluacionTitulo
             // 
             this.RrhhLblRealizarEvaluacionTitulo.BackColor = System.Drawing.Color.Transparent;
-            this.RrhhLblRealizarEvaluacionTitulo.Font = new System.Drawing.Font("Tahoma", 17.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RrhhLblRealizarEvaluacionTitulo.Font = new System.Drawing.Font("Tahoma", 12.6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RrhhLblRealizarEvaluacionTitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(76)))), ((int)(((byte)(85)))));
-            this.RrhhLblRealizarEvaluacionTitulo.Location = new System.Drawing.Point(40, 260);
-            this.RrhhLblRealizarEvaluacionTitulo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.RrhhLblRealizarEvaluacionTitulo.Location = new System.Drawing.Point(24, 156);
+            this.RrhhLblRealizarEvaluacionTitulo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.RrhhLblRealizarEvaluacionTitulo.Name = "RrhhLblRealizarEvaluacionTitulo";
-            this.RrhhLblRealizarEvaluacionTitulo.Size = new System.Drawing.Size(536, 108);
+            this.RrhhLblRealizarEvaluacionTitulo.Size = new System.Drawing.Size(322, 65);
             this.RrhhLblRealizarEvaluacionTitulo.TabIndex = 1;
             this.RrhhLblRealizarEvaluacionTitulo.Text = "Realizar Evaluación\r\nde Desempeño";
             // 
             // RrhhLblRealizarEvaluacionDescripcion
             // 
             this.RrhhLblRealizarEvaluacionDescripcion.BackColor = System.Drawing.Color.Transparent;
-            this.RrhhLblRealizarEvaluacionDescripcion.Font = new System.Drawing.Font("Tahoma", 14.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RrhhLblRealizarEvaluacionDescripcion.Font = new System.Drawing.Font("Tahoma", 10.44F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RrhhLblRealizarEvaluacionDescripcion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.RrhhLblRealizarEvaluacionDescripcion.Location = new System.Drawing.Point(42, 374);
-            this.RrhhLblRealizarEvaluacionDescripcion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.RrhhLblRealizarEvaluacionDescripcion.Location = new System.Drawing.Point(25, 224);
+            this.RrhhLblRealizarEvaluacionDescripcion.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.RrhhLblRealizarEvaluacionDescripcion.Name = "RrhhLblRealizarEvaluacionDescripcion";
-            this.RrhhLblRealizarEvaluacionDescripcion.Size = new System.Drawing.Size(536, 123);
+            this.RrhhLblRealizarEvaluacionDescripcion.Size = new System.Drawing.Size(322, 74);
             this.RrhhLblRealizarEvaluacionDescripcion.TabIndex = 2;
             this.RrhhLblRealizarEvaluacionDescripcion.Text = "Registra y evalúa el desempeño del personal según los criterios establecidos para" +
     " cada ciclo.";
@@ -148,12 +148,12 @@
             this.RrhhBtnAbrirRealizarEvaluacion.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
             this.RrhhBtnAbrirRealizarEvaluacion.FlatAppearance.BorderSize = 2;
             this.RrhhBtnAbrirRealizarEvaluacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.RrhhBtnAbrirRealizarEvaluacion.Font = new System.Drawing.Font("Tahoma", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RrhhBtnAbrirRealizarEvaluacion.Font = new System.Drawing.Font("Tahoma", 11.52F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RrhhBtnAbrirRealizarEvaluacion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.RrhhBtnAbrirRealizarEvaluacion.Location = new System.Drawing.Point(183, 514);
-            this.RrhhBtnAbrirRealizarEvaluacion.Margin = new System.Windows.Forms.Padding(4);
+            this.RrhhBtnAbrirRealizarEvaluacion.Location = new System.Drawing.Point(112, 308);
+            this.RrhhBtnAbrirRealizarEvaluacion.Margin = new System.Windows.Forms.Padding(2);
             this.RrhhBtnAbrirRealizarEvaluacion.Name = "RrhhBtnAbrirRealizarEvaluacion";
-            this.RrhhBtnAbrirRealizarEvaluacion.Size = new System.Drawing.Size(222, 70);
+            this.RrhhBtnAbrirRealizarEvaluacion.Size = new System.Drawing.Size(133, 42);
             this.RrhhBtnAbrirRealizarEvaluacion.TabIndex = 3;
             this.RrhhBtnAbrirRealizarEvaluacion.Text = "Abrir";
             this.RrhhBtnAbrirRealizarEvaluacion.UseVisualStyleBackColor = false;
@@ -167,20 +167,20 @@
             this.RrhhPnlPlanMejora.Controls.Add(this.RrhhLblPlanMejoraTitulo);
             this.RrhhPnlPlanMejora.Controls.Add(this.RrhhLblPlanMejoraDescripcion);
             this.RrhhPnlPlanMejora.Controls.Add(this.RrhhBtnAbrirPlanMejora);
-            this.RrhhPnlPlanMejora.Location = new System.Drawing.Point(664, 364);
-            this.RrhhPnlPlanMejora.Margin = new System.Windows.Forms.Padding(4);
+            this.RrhhPnlPlanMejora.Location = new System.Drawing.Point(383, 218);
+            this.RrhhPnlPlanMejora.Margin = new System.Windows.Forms.Padding(2);
             this.RrhhPnlPlanMejora.Name = "RrhhPnlPlanMejora";
-            this.RrhhPnlPlanMejora.Size = new System.Drawing.Size(562, 617);
+            this.RrhhPnlPlanMejora.Size = new System.Drawing.Size(357, 370);
             this.RrhhPnlPlanMejora.TabIndex = 3;
             // 
             // RrhhPbPlanMejora
             // 
             this.RrhhPbPlanMejora.BackColor = System.Drawing.Color.Transparent;
             this.RrhhPbPlanMejora.Image = global::CapaVista_EvaluacionDesempeño.Properties.Resources.btn_plan;
-            this.RrhhPbPlanMejora.Location = new System.Drawing.Point(42, 30);
-            this.RrhhPbPlanMejora.Margin = new System.Windows.Forms.Padding(4);
+            this.RrhhPbPlanMejora.Location = new System.Drawing.Point(25, 18);
+            this.RrhhPbPlanMejora.Margin = new System.Windows.Forms.Padding(2);
             this.RrhhPbPlanMejora.Name = "RrhhPbPlanMejora";
-            this.RrhhPbPlanMejora.Size = new System.Drawing.Size(208, 219);
+            this.RrhhPbPlanMejora.Size = new System.Drawing.Size(125, 131);
             this.RrhhPbPlanMejora.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.RrhhPbPlanMejora.TabIndex = 0;
             this.RrhhPbPlanMejora.TabStop = false;
@@ -188,24 +188,24 @@
             // RrhhLblPlanMejoraTitulo
             // 
             this.RrhhLblPlanMejoraTitulo.BackColor = System.Drawing.Color.Transparent;
-            this.RrhhLblPlanMejoraTitulo.Font = new System.Drawing.Font("Tahoma", 17.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RrhhLblPlanMejoraTitulo.Font = new System.Drawing.Font("Tahoma", 12.6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RrhhLblPlanMejoraTitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(76)))), ((int)(((byte)(85)))));
-            this.RrhhLblPlanMejoraTitulo.Location = new System.Drawing.Point(46, 260);
-            this.RrhhLblPlanMejoraTitulo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.RrhhLblPlanMejoraTitulo.Location = new System.Drawing.Point(28, 156);
+            this.RrhhLblPlanMejoraTitulo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.RrhhLblPlanMejoraTitulo.Name = "RrhhLblPlanMejoraTitulo";
-            this.RrhhLblPlanMejoraTitulo.Size = new System.Drawing.Size(488, 62);
+            this.RrhhLblPlanMejoraTitulo.Size = new System.Drawing.Size(293, 37);
             this.RrhhLblPlanMejoraTitulo.TabIndex = 1;
             this.RrhhLblPlanMejoraTitulo.Text = "Plan de Mejora";
             // 
             // RrhhLblPlanMejoraDescripcion
             // 
             this.RrhhLblPlanMejoraDescripcion.BackColor = System.Drawing.Color.Transparent;
-            this.RrhhLblPlanMejoraDescripcion.Font = new System.Drawing.Font("Tahoma", 14.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RrhhLblPlanMejoraDescripcion.Font = new System.Drawing.Font("Tahoma", 10.44F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RrhhLblPlanMejoraDescripcion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.RrhhLblPlanMejoraDescripcion.Location = new System.Drawing.Point(46, 339);
-            this.RrhhLblPlanMejoraDescripcion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.RrhhLblPlanMejoraDescripcion.Location = new System.Drawing.Point(28, 203);
+            this.RrhhLblPlanMejoraDescripcion.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.RrhhLblPlanMejoraDescripcion.Name = "RrhhLblPlanMejoraDescripcion";
-            this.RrhhLblPlanMejoraDescripcion.Size = new System.Drawing.Size(488, 123);
+            this.RrhhLblPlanMejoraDescripcion.Size = new System.Drawing.Size(293, 74);
             this.RrhhLblPlanMejoraDescripcion.TabIndex = 2;
             this.RrhhLblPlanMejoraDescripcion.Text = "Define acciones y da seguimiento a los planes de mejora de los colaboradores.";
             // 
@@ -216,12 +216,12 @@
             this.RrhhBtnAbrirPlanMejora.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
             this.RrhhBtnAbrirPlanMejora.FlatAppearance.BorderSize = 2;
             this.RrhhBtnAbrirPlanMejora.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.RrhhBtnAbrirPlanMejora.Font = new System.Drawing.Font("Tahoma", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RrhhBtnAbrirPlanMejora.Font = new System.Drawing.Font("Tahoma", 11.52F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RrhhBtnAbrirPlanMejora.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.RrhhBtnAbrirPlanMejora.Location = new System.Drawing.Point(168, 513);
-            this.RrhhBtnAbrirPlanMejora.Margin = new System.Windows.Forms.Padding(4);
+            this.RrhhBtnAbrirPlanMejora.Location = new System.Drawing.Point(112, 308);
+            this.RrhhBtnAbrirPlanMejora.Margin = new System.Windows.Forms.Padding(2);
             this.RrhhBtnAbrirPlanMejora.Name = "RrhhBtnAbrirPlanMejora";
-            this.RrhhBtnAbrirPlanMejora.Size = new System.Drawing.Size(222, 72);
+            this.RrhhBtnAbrirPlanMejora.Size = new System.Drawing.Size(133, 43);
             this.RrhhBtnAbrirPlanMejora.TabIndex = 3;
             this.RrhhBtnAbrirPlanMejora.Text = "Abrir";
             this.RrhhBtnAbrirPlanMejora.UseVisualStyleBackColor = false;
@@ -235,20 +235,20 @@
             this.RrhhPnlVerEvaluaciones.Controls.Add(this.RrhhLblVerEvaluacionesTitulo);
             this.RrhhPnlVerEvaluaciones.Controls.Add(this.RrhhLblVerEvaluacionesDescripcion);
             this.RrhhPnlVerEvaluaciones.Controls.Add(this.RrhhBtnAbrirVerEvaluaciones);
-            this.RrhhPnlVerEvaluaciones.Location = new System.Drawing.Point(1252, 364);
-            this.RrhhPnlVerEvaluaciones.Margin = new System.Windows.Forms.Padding(4);
+            this.RrhhPnlVerEvaluaciones.Location = new System.Drawing.Point(758, 218);
+            this.RrhhPnlVerEvaluaciones.Margin = new System.Windows.Forms.Padding(2);
             this.RrhhPnlVerEvaluaciones.Name = "RrhhPnlVerEvaluaciones";
-            this.RrhhPnlVerEvaluaciones.Size = new System.Drawing.Size(587, 617);
+            this.RrhhPnlVerEvaluaciones.Size = new System.Drawing.Size(357, 370);
             this.RrhhPnlVerEvaluaciones.TabIndex = 4;
             // 
             // RrhhPbVerEvaluaciones
             // 
             this.RrhhPbVerEvaluaciones.BackColor = System.Drawing.Color.Transparent;
             this.RrhhPbVerEvaluaciones.Image = global::CapaVista_EvaluacionDesempeño.Properties.Resources.btn_resultados;
-            this.RrhhPbVerEvaluaciones.Location = new System.Drawing.Point(40, 30);
-            this.RrhhPbVerEvaluaciones.Margin = new System.Windows.Forms.Padding(4);
+            this.RrhhPbVerEvaluaciones.Location = new System.Drawing.Point(24, 18);
+            this.RrhhPbVerEvaluaciones.Margin = new System.Windows.Forms.Padding(2);
             this.RrhhPbVerEvaluaciones.Name = "RrhhPbVerEvaluaciones";
-            this.RrhhPbVerEvaluaciones.Size = new System.Drawing.Size(210, 219);
+            this.RrhhPbVerEvaluaciones.Size = new System.Drawing.Size(126, 131);
             this.RrhhPbVerEvaluaciones.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.RrhhPbVerEvaluaciones.TabIndex = 0;
             this.RrhhPbVerEvaluaciones.TabStop = false;
@@ -256,24 +256,24 @@
             // RrhhLblVerEvaluacionesTitulo
             // 
             this.RrhhLblVerEvaluacionesTitulo.BackColor = System.Drawing.Color.Transparent;
-            this.RrhhLblVerEvaluacionesTitulo.Font = new System.Drawing.Font("Tahoma", 17.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RrhhLblVerEvaluacionesTitulo.Font = new System.Drawing.Font("Tahoma", 12.6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RrhhLblVerEvaluacionesTitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(76)))), ((int)(((byte)(85)))));
-            this.RrhhLblVerEvaluacionesTitulo.Location = new System.Drawing.Point(44, 262);
-            this.RrhhLblVerEvaluacionesTitulo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.RrhhLblVerEvaluacionesTitulo.Location = new System.Drawing.Point(26, 157);
+            this.RrhhLblVerEvaluacionesTitulo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.RrhhLblVerEvaluacionesTitulo.Name = "RrhhLblVerEvaluacionesTitulo";
-            this.RrhhLblVerEvaluacionesTitulo.Size = new System.Drawing.Size(512, 62);
+            this.RrhhLblVerEvaluacionesTitulo.Size = new System.Drawing.Size(307, 37);
             this.RrhhLblVerEvaluacionesTitulo.TabIndex = 1;
             this.RrhhLblVerEvaluacionesTitulo.Text = "Ver Evaluaciones";
             // 
             // RrhhLblVerEvaluacionesDescripcion
             // 
             this.RrhhLblVerEvaluacionesDescripcion.BackColor = System.Drawing.Color.Transparent;
-            this.RrhhLblVerEvaluacionesDescripcion.Font = new System.Drawing.Font("Tahoma", 14.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RrhhLblVerEvaluacionesDescripcion.Font = new System.Drawing.Font("Tahoma", 10.44F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RrhhLblVerEvaluacionesDescripcion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.RrhhLblVerEvaluacionesDescripcion.Location = new System.Drawing.Point(45, 339);
-            this.RrhhLblVerEvaluacionesDescripcion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.RrhhLblVerEvaluacionesDescripcion.Location = new System.Drawing.Point(27, 203);
+            this.RrhhLblVerEvaluacionesDescripcion.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.RrhhLblVerEvaluacionesDescripcion.Name = "RrhhLblVerEvaluacionesDescripcion";
-            this.RrhhLblVerEvaluacionesDescripcion.Size = new System.Drawing.Size(512, 123);
+            this.RrhhLblVerEvaluacionesDescripcion.Size = new System.Drawing.Size(307, 74);
             this.RrhhLblVerEvaluacionesDescripcion.TabIndex = 2;
             this.RrhhLblVerEvaluacionesDescripcion.Text = "Consulta tus resultados, puntajes y retroalimentación de desempeño.";
             // 
@@ -284,12 +284,12 @@
             this.RrhhBtnAbrirVerEvaluaciones.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
             this.RrhhBtnAbrirVerEvaluaciones.FlatAppearance.BorderSize = 2;
             this.RrhhBtnAbrirVerEvaluaciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.RrhhBtnAbrirVerEvaluaciones.Font = new System.Drawing.Font("Tahoma", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RrhhBtnAbrirVerEvaluaciones.Font = new System.Drawing.Font("Tahoma", 11.52F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RrhhBtnAbrirVerEvaluaciones.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.RrhhBtnAbrirVerEvaluaciones.Location = new System.Drawing.Point(182, 513);
-            this.RrhhBtnAbrirVerEvaluaciones.Margin = new System.Windows.Forms.Padding(4);
+            this.RrhhBtnAbrirVerEvaluaciones.Location = new System.Drawing.Point(112, 308);
+            this.RrhhBtnAbrirVerEvaluaciones.Margin = new System.Windows.Forms.Padding(2);
             this.RrhhBtnAbrirVerEvaluaciones.Name = "RrhhBtnAbrirVerEvaluaciones";
-            this.RrhhBtnAbrirVerEvaluaciones.Size = new System.Drawing.Size(222, 72);
+            this.RrhhBtnAbrirVerEvaluaciones.Size = new System.Drawing.Size(133, 43);
             this.RrhhBtnAbrirVerEvaluaciones.TabIndex = 3;
             this.RrhhBtnAbrirVerEvaluaciones.Text = "Abrir";
             this.RrhhBtnAbrirVerEvaluaciones.UseVisualStyleBackColor = false;
@@ -300,33 +300,33 @@
             this.RrhhPnlInformacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
             this.RrhhPnlInformacion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.RrhhPnlInformacion.Controls.Add(this.RrhhLblInformacionTitulo);
-            this.RrhhPnlInformacion.Location = new System.Drawing.Point(13, 999);
-            this.RrhhPnlInformacion.Margin = new System.Windows.Forms.Padding(4);
+            this.RrhhPnlInformacion.Location = new System.Drawing.Point(8, 598);
+            this.RrhhPnlInformacion.Margin = new System.Windows.Forms.Padding(2);
             this.RrhhPnlInformacion.Name = "RrhhPnlInformacion";
-            this.RrhhPnlInformacion.Size = new System.Drawing.Size(1858, 74);
+            this.RrhhPnlInformacion.Size = new System.Drawing.Size(1107, 44);
             this.RrhhPnlInformacion.TabIndex = 5;
             // 
             // RrhhLblInformacionTitulo
             // 
             this.RrhhLblInformacionTitulo.BackColor = System.Drawing.Color.Transparent;
-            this.RrhhLblInformacionTitulo.Font = new System.Drawing.Font("Tahoma", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RrhhLblInformacionTitulo.Font = new System.Drawing.Font("Tahoma", 11.52F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RrhhLblInformacionTitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(76)))), ((int)(((byte)(85)))));
-            this.RrhhLblInformacionTitulo.Location = new System.Drawing.Point(27, 15);
-            this.RrhhLblInformacionTitulo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.RrhhLblInformacionTitulo.Location = new System.Drawing.Point(16, 9);
+            this.RrhhLblInformacionTitulo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.RrhhLblInformacionTitulo.Name = "RrhhLblInformacionTitulo";
-            this.RrhhLblInformacionTitulo.Size = new System.Drawing.Size(488, 51);
+            this.RrhhLblInformacionTitulo.Size = new System.Drawing.Size(293, 31);
             this.RrhhLblInformacionTitulo.TabIndex = 0;
             this.RrhhLblInformacionTitulo.Text = "Información";
             // 
             // RrhhLblInformacionTexto
             // 
             this.RrhhLblInformacionTexto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(240)))), ((int)(((byte)(238)))));
-            this.RrhhLblInformacionTexto.Font = new System.Drawing.Font("Tahoma", 14.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RrhhLblInformacionTexto.Font = new System.Drawing.Font("Tahoma", 10.44F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RrhhLblInformacionTexto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.RrhhLblInformacionTexto.Location = new System.Drawing.Point(29, 1089);
-            this.RrhhLblInformacionTexto.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.RrhhLblInformacionTexto.Location = new System.Drawing.Point(8, 648);
+            this.RrhhLblInformacionTexto.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.RrhhLblInformacionTexto.Name = "RrhhLblInformacionTexto";
-            this.RrhhLblInformacionTexto.Size = new System.Drawing.Size(1826, 100);
+            this.RrhhLblInformacionTexto.Size = new System.Drawing.Size(1107, 60);
             this.RrhhLblInformacionTexto.TabIndex = 6;
             this.RrhhLblInformacionTexto.Text = "Estas opciones permiten gestionar las evaluaciones de desempeño, los planes de me" +
     "jora y la consulta de resultados del personal. Seleccione el apartado que desea " +
@@ -341,20 +341,20 @@
             this.RrhhPnlEncabezado.Controls.Add(this.RrhhLblTitulo);
             this.RrhhPnlEncabezado.Controls.Add(this.RrhhLblSubtitulo);
             this.RrhhPnlEncabezado.Controls.Add(this.RrhhPbMascota);
-            this.RrhhPnlEncabezado.Location = new System.Drawing.Point(13, 13);
-            this.RrhhPnlEncabezado.Margin = new System.Windows.Forms.Padding(4);
+            this.RrhhPnlEncabezado.Location = new System.Drawing.Point(8, 8);
+            this.RrhhPnlEncabezado.Margin = new System.Windows.Forms.Padding(2);
             this.RrhhPnlEncabezado.Name = "RrhhPnlEncabezado";
-            this.RrhhPnlEncabezado.Size = new System.Drawing.Size(1858, 257);
+            this.RrhhPnlEncabezado.Size = new System.Drawing.Size(1107, 154);
             this.RrhhPnlEncabezado.TabIndex = 0;
             // 
             // RrhhPbIconoEvaluacionDesempeno
             // 
             this.RrhhPbIconoEvaluacionDesempeno.BackColor = System.Drawing.Color.Transparent;
             this.RrhhPbIconoEvaluacionDesempeno.Image = global::CapaVista_EvaluacionDesempeño.Properties.Resources.Icn_EvaluacionDesempeño;
-            this.RrhhPbIconoEvaluacionDesempeno.Location = new System.Drawing.Point(46, 32);
-            this.RrhhPbIconoEvaluacionDesempeno.Margin = new System.Windows.Forms.Padding(4);
+            this.RrhhPbIconoEvaluacionDesempeno.Location = new System.Drawing.Point(28, 19);
+            this.RrhhPbIconoEvaluacionDesempeno.Margin = new System.Windows.Forms.Padding(2);
             this.RrhhPbIconoEvaluacionDesempeno.Name = "RrhhPbIconoEvaluacionDesempeno";
-            this.RrhhPbIconoEvaluacionDesempeno.Size = new System.Drawing.Size(195, 201);
+            this.RrhhPbIconoEvaluacionDesempeno.Size = new System.Drawing.Size(117, 121);
             this.RrhhPbIconoEvaluacionDesempeno.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.RrhhPbIconoEvaluacionDesempeno.TabIndex = 0;
             this.RrhhPbIconoEvaluacionDesempeno.TabStop = false;
@@ -362,24 +362,24 @@
             // RrhhLblTitulo
             // 
             this.RrhhLblTitulo.BackColor = System.Drawing.Color.Transparent;
-            this.RrhhLblTitulo.Font = new System.Drawing.Font("Lucida Bright", 25.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RrhhLblTitulo.Font = new System.Drawing.Font("Lucida Bright", 18.36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RrhhLblTitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(76)))), ((int)(((byte)(85)))));
-            this.RrhhLblTitulo.Location = new System.Drawing.Point(270, 32);
-            this.RrhhLblTitulo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.RrhhLblTitulo.Location = new System.Drawing.Point(162, 19);
+            this.RrhhLblTitulo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.RrhhLblTitulo.Name = "RrhhLblTitulo";
-            this.RrhhLblTitulo.Size = new System.Drawing.Size(876, 78);
+            this.RrhhLblTitulo.Size = new System.Drawing.Size(526, 47);
             this.RrhhLblTitulo.TabIndex = 1;
             this.RrhhLblTitulo.Text = "Evaluación de Desempeño";
             // 
             // RrhhLblSubtitulo
             // 
             this.RrhhLblSubtitulo.BackColor = System.Drawing.Color.Transparent;
-            this.RrhhLblSubtitulo.Font = new System.Drawing.Font("Tahoma", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RrhhLblSubtitulo.Font = new System.Drawing.Font("Tahoma", 9.36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RrhhLblSubtitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.RrhhLblSubtitulo.Location = new System.Drawing.Point(249, 135);
-            this.RrhhLblSubtitulo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.RrhhLblSubtitulo.Location = new System.Drawing.Point(162, 81);
+            this.RrhhLblSubtitulo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.RrhhLblSubtitulo.Name = "RrhhLblSubtitulo";
-            this.RrhhLblSubtitulo.Size = new System.Drawing.Size(1095, 40);
+            this.RrhhLblSubtitulo.Size = new System.Drawing.Size(657, 24);
             this.RrhhLblSubtitulo.TabIndex = 2;
             this.RrhhLblSubtitulo.Text = "Gestiona y consulta el desempeño del personal y sus oportunidades de mejora.";
             // 
@@ -387,20 +387,20 @@
             // 
             this.RrhhPbMascota.BackColor = System.Drawing.Color.Transparent;
             this.RrhhPbMascota.Image = global::CapaVista_EvaluacionDesempeño.Properties.Resources.mascota;
-            this.RrhhPbMascota.Location = new System.Drawing.Point(1506, 4);
-            this.RrhhPbMascota.Margin = new System.Windows.Forms.Padding(4);
+            this.RrhhPbMascota.Location = new System.Drawing.Point(904, 2);
+            this.RrhhPbMascota.Margin = new System.Windows.Forms.Padding(2);
             this.RrhhPbMascota.Name = "RrhhPbMascota";
-            this.RrhhPbMascota.Size = new System.Drawing.Size(184, 249);
+            this.RrhhPbMascota.Size = new System.Drawing.Size(110, 149);
             this.RrhhPbMascota.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.RrhhPbMascota.TabIndex = 3;
             this.RrhhPbMascota.TabStop = false;
             // 
             // FrmEvaluacionDesempeño
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
-            this.ClientSize = new System.Drawing.Size(1872, 1218);
+            this.ClientSize = new System.Drawing.Size(1123, 716);
             this.Controls.Add(this.RrhhPnlEncabezado);
             this.Controls.Add(this.RrhhPnlOpciones);
             this.Controls.Add(this.RrhhPnlRealizarEvaluacion);
@@ -410,11 +410,11 @@
             this.Controls.Add(this.RrhhLblInformacionTexto);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "FrmEvaluacionDesempeño";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "9401 - Evaluación de Desempeño";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "9401 – EvaluacionDesempeño";
             this.RrhhPnlOpciones.ResumeLayout(false);
             this.RrhhPnlRealizarEvaluacion.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.RrhhPbRealizarEvaluacion)).EndInit();

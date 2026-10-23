@@ -18,7 +18,7 @@ using System.Windows.Forms;
  * Fecha : 12/10/2026
  * ==================================================================
  * Propósito :
- *  Ventana 9202 - Evaluación de Desempeño
+ *  Ventana 9401 - Evaluación de Desempeño
  *  Menú de opciones relacionadas, sin eventos ni lógica.
  * ===================================================================
 */
@@ -34,20 +34,20 @@ namespace CapaVista_EvaluacionDesempeno.Formularios
 
         private void RrhhBtnAbrirRealizarEvaluacion_Click(object sender, EventArgs e)
         {
-            frmRealizarEvaluacion RrhhFrmEvaluacion = new frmRealizarEvaluacion();
-            RrhhFrmEvaluacion.ShowDialog();
+            FrmRealizarEvaluacion RrhhFrmEvaluacion = new FrmRealizarEvaluacion();
+            RrhhFrmEvaluacion.ShowDialog(this);
         }
 
         private void RrhhBtnAbrirPlanMejora_Click(object sender, EventArgs e)
         {
             FrmPlanMejora RrhhFrmPlan = new FrmPlanMejora();
-            RrhhFrmPlan.ShowDialog();
+            RrhhFrmPlan.ShowDialog(this);
         }
 
         private void RrhhBtnAbrirVerEvaluaciones_Click(object sender, EventArgs e)
         {
-            FrmVerEvaluaciones RrhhFrmPlan = new FrmVerEvaluaciones();
-            RrhhFrmPlan.ShowDialog();
+            FrmVerEvaluaciones RrhhFrmVer = new FrmVerEvaluaciones();
+            RrhhFrmVer.ShowDialog(this);
         }
     }
 }

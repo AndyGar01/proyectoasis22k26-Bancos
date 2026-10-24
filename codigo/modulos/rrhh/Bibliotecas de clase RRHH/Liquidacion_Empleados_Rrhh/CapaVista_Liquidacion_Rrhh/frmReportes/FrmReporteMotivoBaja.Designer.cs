@@ -45,8 +45,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.reportViewer1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Name = "FrmReporteMotivoBaja";
-            this.Text = "FrmReporteMotivoBaja";
+            this.Text = "9702 – ReporteMotivoBaja";
             this.Load += new System.EventHandler(this.FrmReporteMotivoBaja_Load);
             this.ResumeLayout(false);
 

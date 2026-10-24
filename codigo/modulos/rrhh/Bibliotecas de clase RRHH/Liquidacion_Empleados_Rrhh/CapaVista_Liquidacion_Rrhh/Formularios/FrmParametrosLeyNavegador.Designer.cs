@@ -29,35 +29,35 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmParametrosLeyNavegador));
-            this.RrhhNavParemetroLey = new CapaVista_Navegador.Navegador();
+            this.RrhhNavParametroLey = new CapaVista_Navegador.Navegador();
             this.SuspendLayout();
             // 
-            // RrhhNavParemetroLey
+            // RrhhNavParametroLey
             // 
-            this.RrhhNavParemetroLey.Location = new System.Drawing.Point(16, 16);
-            this.RrhhNavParemetroLey.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.RrhhNavParemetroLey.Name = "RrhhNavParemetroLey";
-            this.RrhhNavParemetroLey.Size = new System.Drawing.Size(1437, 111);
-            this.RrhhNavParemetroLey.TabIndex = 0;
+            this.RrhhNavParametroLey.Location = new System.Drawing.Point(16, 16);
+            this.RrhhNavParametroLey.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.RrhhNavParametroLey.Name = "RrhhNavParametroLey";
+            this.RrhhNavParametroLey.Size = new System.Drawing.Size(1437, 111);
+            this.RrhhNavParametroLey.TabIndex = 0;
             // 
             // FrmParametrosLeyNavegador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1444, 913);
-            this.Controls.Add(this.RrhhNavParemetroLey);
+            this.Controls.Add(this.RrhhNavParametroLey);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.Name = "FrmParametrosLeyNavegador";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "9703 - FrmParametrosLeyNavegador";
+            this.Text = "9703 – ParametrosLey";
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private CapaVista_Navegador.Navegador RrhhNavParemetroLey;
+        private CapaVista_Navegador.Navegador RrhhNavParametroLey;
     }
 }

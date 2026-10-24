@@ -52,7 +52,7 @@
             this.MinimizeBox = false;
             this.Name = "FrmMotivoBajaNavegador";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "9702 - FrmMotivoBajaNavegador";
+            this.Text = "9702 – MotivoBaja";
             this.ResumeLayout(false);
 
         }

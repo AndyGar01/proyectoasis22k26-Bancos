@@ -1,6 +1,6 @@
 ﻿using CapaControlador_Nomina.ObjetosdeValor;
-using CapaModelo_Nominas.Entidades;
-using CapaModelo_Nominas.Repositorios;
+using CapaModelo_Nomina.Entidades;
+using CapaModelo_Nomina.Repositorios;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;

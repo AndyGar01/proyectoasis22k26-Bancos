@@ -29,34 +29,34 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmEvaluacionNavegador));
-            this.RrhhNavCapacitaciones = new CapaVista_Navegador.Navegador();
+            this.RrhhNavEvaluaciones = new CapaVista_Navegador.Navegador();
             this.SuspendLayout();
             // 
-            // RrhhNavCapacitaciones
+            // RrhhNavEvaluaciones
             // 
-            this.RrhhNavCapacitaciones.Location = new System.Drawing.Point(3, 12);
-            this.RrhhNavCapacitaciones.Name = "RrhhNavCapacitaciones";
-            this.RrhhNavCapacitaciones.Size = new System.Drawing.Size(1435, 107);
-            this.RrhhNavCapacitaciones.TabIndex = 1;
+            this.RrhhNavEvaluaciones.Location = new System.Drawing.Point(3, 12);
+            this.RrhhNavEvaluaciones.Name = "RrhhNavEvaluaciones";
+            this.RrhhNavEvaluaciones.Size = new System.Drawing.Size(1435, 107);
+            this.RrhhNavEvaluaciones.TabIndex = 1;
             // 
             // FrmEvaluacionNavegador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1462, 640);
-            this.Controls.Add(this.RrhhNavCapacitaciones);
+            this.Controls.Add(this.RrhhNavEvaluaciones);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "FrmEvaluacionNavegador";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "9304- FrmEvaluacionCapacitacion";
+            this.Text = "9304 – EvaluacionCapacitacion";
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private CapaVista_Navegador.Navegador RrhhNavCapacitaciones;
+        private CapaVista_Navegador.Navegador RrhhNavEvaluaciones;
     }
-}
+}

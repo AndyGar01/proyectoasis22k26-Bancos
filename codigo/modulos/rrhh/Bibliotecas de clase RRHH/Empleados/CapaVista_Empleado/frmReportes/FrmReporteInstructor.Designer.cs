@@ -48,8 +48,10 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.reportViewer1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Name = "FrmReporteInstructor";
-            this.Text = "FrmReporteInstructor";
+            this.Text = "9303 – ReporteInstructores";
             this.Load += new System.EventHandler(this.FrmReporteInstructor_Load);
             this.ResumeLayout(false);
 

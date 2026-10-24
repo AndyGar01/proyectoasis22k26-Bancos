@@ -1,6 +1,4 @@
-﻿using CapaVista_EvaluacionDesempeño.Formularios;
-using CapaVista_PlanMejora.Formularios;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -23,7 +21,7 @@ using System.Windows.Forms;
  * ===================================================================
 */
 
-namespace CapaVista_EvaluacionDesempeno.Formularios
+namespace CapaVista_EvaluacionDesempeño.Formularios
 {
     public partial class FrmEvaluacionDesempeño : Form
     {

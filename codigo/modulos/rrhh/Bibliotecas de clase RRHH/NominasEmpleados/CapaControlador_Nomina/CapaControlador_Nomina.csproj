@@ -31,8 +31,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CapaModelo_Nominas">
-      <HintPath>..\CapaModelo_Nominas\bin\Debug\CapaModelo_Nominas.dll</HintPath>
+    <Reference Include="CapaModelo_Nomina">
+      <HintPath>..\CapaModelo_Nomina\bin\Debug\CapaModelo_Nomina.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -51,4 +51,4 @@
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-</Project>
+</Project>

@@ -61,11 +61,11 @@
     <Compile Include="Formularios\FrmPlanMejora.Designer.cs">
       <DependentUpon>FrmPlanMejora.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\frmRealizarEvaluacion.cs">
+    <Compile Include="Formularios\FrmRealizarEvaluacion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\frmRealizarEvaluacion.Designer.cs">
-      <DependentUpon>frmRealizarEvaluacion.cs</DependentUpon>
+    <Compile Include="Formularios\FrmRealizarEvaluacion.Designer.cs">
+      <DependentUpon>FrmRealizarEvaluacion.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\FrmVerEvaluaciones.cs">
       <SubType>Form</SubType>
@@ -87,8 +87,8 @@
     <EmbeddedResource Include="Formularios\FrmPlanMejora.resx">
       <DependentUpon>FrmPlanMejora.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\frmRealizarEvaluacion.resx">
-      <DependentUpon>frmRealizarEvaluacion.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\FrmRealizarEvaluacion.resx">
+      <DependentUpon>FrmRealizarEvaluacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmVerEvaluaciones.resx">
       <DependentUpon>FrmVerEvaluaciones.cs</DependentUpon>

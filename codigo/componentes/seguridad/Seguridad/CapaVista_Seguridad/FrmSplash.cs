@@ -1,5 +1,5 @@
 ﻿using CapaControlador_Seguridad.Objetos_de_valor;
-using CapaVista_Bancos.Formularios;
+//using CapaVista_Bancos.Formularios;
 //using CapaVista_Rrhh.Formularios;
 using System;
 using System.Collections.Generic;
@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CapaVista_Logistica;
 
 /*
  * ============================================================
@@ -75,13 +76,13 @@ namespace CapaVista_Seguridad
                         principal = new FrmMDISeguridad();
                         break;
                     
-                    //case "Logistica":
-                        //var MDILogistica = new FrmMDILogistica();
-                        //MDILogistica.LogisticaMetActualizarInfoUsuario(
-                        //ClsSesionSeguridad.NombreEmpleado,
-                        //ClsSesionSeguridad.SeguridadMetRolesComoTexto());
-                        //principal = MDILogistica;
-                        //break;
+                    case "Logistica":
+                        var MDILogistica = new FrmMDILogistica();
+                        MDILogistica.LogisticaMetActualizarInfoUsuario(
+                        ClsSesionSeguridad.NombreEmpleado,
+                        ClsSesionSeguridad.SeguridadMetRolesComoTexto());
+                        principal = MDILogistica;
+                        break;
 
                     //case "Compras":
                         //var MDICompras = new FrmMDICompras();
@@ -99,13 +100,13 @@ namespace CapaVista_Seguridad
                         //principal = MDIVentas;
                         //break;
 
-                    case "Bancos":
-                        var MdiBancos = new FrmMDIBancos();
-                        MdiBancos.BancosMetActualizarInfoUsuario(
-                        ClsSesionSeguridad.NombreEmpleado,
-                        ClsSesionSeguridad.SeguridadMetRolesComoTexto());
-                        principal = MdiBancos;
-                        break;
+                    //case "Bancos":
+                        //var MdiBancos = new FrmMDIBancos();
+                        //MdiBancos.BancosMetActualizarInfoUsuario(
+                        //ClsSesionSeguridad.NombreEmpleado,
+                        //ClsSesionSeguridad.SeguridadMetRolesComoTexto());
+                        //principal = MdiBancos;
+                        //break;
 
                     //case "Contabilidad":
                         //var MDIContabilidad = new FrmMDIContabilidad();

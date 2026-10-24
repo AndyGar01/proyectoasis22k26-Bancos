@@ -83,7 +83,9 @@
     <None Include="Resouces\btn_salir.png" />
     <None Include="Resouces\bancos_logo.png" />
     <None Include="Resouces\Bancario.png" />
-    <None Include="Resouces\Banderas\*.png" />
+    <None Include="Resouces\Banderas\*.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

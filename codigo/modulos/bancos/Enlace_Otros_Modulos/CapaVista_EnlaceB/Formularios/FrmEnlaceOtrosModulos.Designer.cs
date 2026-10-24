@@ -57,7 +57,7 @@
             this.BancLblTotalDebe = new System.Windows.Forms.Label();
             this.BancLblTotalHaber = new System.Windows.Forms.Label();
             this.BancLblDiferencia = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.BancLblAvisoTraslado = new System.Windows.Forms.Label();
             this.BancosBtnAdvertencia = new System.Windows.Forms.Button();
             this.BancPbxMascota = new System.Windows.Forms.PictureBox();
             this.BancPbxBalanza = new System.Windows.Forms.PictureBox();
@@ -368,16 +368,16 @@
             this.BancLblDiferencia.TabIndex = 26;
             this.BancLblDiferencia.Text = "Diferencia";
             // 
-            // label1
+            // BancLblAvisoTraslado
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(248)))), ((int)(((byte)(243)))));
-            this.label1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(614, 504);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(228, 16);
-            this.label1.TabIndex = 28;
-            this.label1.Text = "El traslado solicitará confirmación.";
+            this.BancLblAvisoTraslado.AutoSize = true;
+            this.BancLblAvisoTraslado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(248)))), ((int)(((byte)(243)))));
+            this.BancLblAvisoTraslado.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BancLblAvisoTraslado.Location = new System.Drawing.Point(614, 504);
+            this.BancLblAvisoTraslado.Name = "BancLblAvisoTraslado";
+            this.BancLblAvisoTraslado.Size = new System.Drawing.Size(228, 16);
+            this.BancLblAvisoTraslado.TabIndex = 28;
+            this.BancLblAvisoTraslado.Text = "El traslado solicitará confirmación.";
             // 
             // BancosBtnAdvertencia
             // 
@@ -558,7 +558,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(918, 542);
             this.Controls.Add(this.BancosBtnAdvertencia);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.BancLblAvisoTraslado);
             this.Controls.Add(this.BancPbxMascota);
             this.Controls.Add(this.BancLblDiferencia);
             this.Controls.Add(this.BancLblTotalHaber);
@@ -653,7 +653,7 @@
         private System.Windows.Forms.Label BancLblTipoPeriodo;
         private System.Windows.Forms.ComboBox BancCbxPeriodo;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label BancLblAvisoTraslado;
         private System.Windows.Forms.Button BancosBtnAdvertencia;
     }
 }

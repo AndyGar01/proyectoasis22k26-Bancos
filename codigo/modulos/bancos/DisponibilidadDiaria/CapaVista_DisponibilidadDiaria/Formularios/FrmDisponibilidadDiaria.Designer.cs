@@ -35,6 +35,7 @@ namespace CapaVista_DisponibilidadDiaria.Formularios
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmDisponibilidadDiaria));
+            this.BancosPnlAreaDesplazable = new System.Windows.Forms.Panel();
             this.BancosPnlFondo = new System.Windows.Forms.Panel();
             this.BancosLblStatusDemo = new System.Windows.Forms.Label();
             this.BancosLblStatusLine = new System.Windows.Forms.Label();
@@ -102,6 +103,7 @@ namespace CapaVista_DisponibilidadDiaria.Formularios
             this.BancosBtnFooterSalir = new System.Windows.Forms.Button();
             this.BancosBtnFooterReporte = new System.Windows.Forms.Button();
             this.BancosBtnFooterAyuda = new System.Windows.Forms.Button();
+            this.BancosPnlAreaDesplazable.SuspendLayout();
             this.BancosPnlFondo.SuspendLayout();
             this.BancosPnlMascota.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BancosPicMascota)).BeginInit();
@@ -127,6 +129,16 @@ namespace CapaVista_DisponibilidadDiaria.Formularios
             this.BancosPnlFooterBar.SuspendLayout();
             this.SuspendLayout();
             // 
+            // BancosPnlAreaDesplazable
+            // 
+            this.BancosPnlAreaDesplazable.AutoScroll = true;
+            this.BancosPnlAreaDesplazable.Controls.Add(this.BancosPnlFondo);
+            this.BancosPnlAreaDesplazable.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BancosPnlAreaDesplazable.Location = new System.Drawing.Point(0, 0);
+            this.BancosPnlAreaDesplazable.Name = "BancosPnlAreaDesplazable";
+            this.BancosPnlAreaDesplazable.Size = new System.Drawing.Size(1028, 650);
+            this.BancosPnlAreaDesplazable.TabIndex = 0;
+            // 
             // BancosPnlFondo
             // 
             this.BancosPnlFondo.BackgroundImage = global::CapaVista_DisponibilidadDiaria.Properties.Resources.FondoDiponibilidadDiaria;
@@ -149,10 +161,10 @@ namespace CapaVista_DisponibilidadDiaria.Formularios
             this.BancosPnlFondo.Controls.Add(this.BancosPnlFiltros);
             this.BancosPnlFondo.Controls.Add(this.BancosPnlSepHeader);
             this.BancosPnlFondo.Controls.Add(this.BancosPnlHeader);
-            this.BancosPnlFondo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BancosPnlFondo.Location = new System.Drawing.Point(0, 0);
+            this.BancosPnlFondo.MinimumSize = new System.Drawing.Size(1028, 650);
             this.BancosPnlFondo.Name = "BancosPnlFondo";
-            this.BancosPnlFondo.Size = new System.Drawing.Size(1028, 544);
+            this.BancosPnlFondo.Size = new System.Drawing.Size(1028, 650);
             this.BancosPnlFondo.TabIndex = 0;
             // 
             // BancosLblStatusDemo
@@ -186,9 +198,9 @@ namespace CapaVista_DisponibilidadDiaria.Formularios
             this.BancosPnlMascota.BackColor = System.Drawing.Color.White;
             this.BancosPnlMascota.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.BancosPnlMascota.Controls.Add(this.BancosPicMascota);
-            this.BancosPnlMascota.Location = new System.Drawing.Point(792, 428);
+            this.BancosPnlMascota.Location = new System.Drawing.Point(854, 428);
             this.BancosPnlMascota.Name = "BancosPnlMascota";
-            this.BancosPnlMascota.Size = new System.Drawing.Size(220, 190);
+            this.BancosPnlMascota.Size = new System.Drawing.Size(158, 190);
             this.BancosPnlMascota.TabIndex = 15;
             // 
             // BancosPicMascota
@@ -197,7 +209,7 @@ namespace CapaVista_DisponibilidadDiaria.Formularios
             this.BancosPicMascota.Image = global::CapaVista_DisponibilidadDiaria.Properties.Resources._11;
             this.BancosPicMascota.Location = new System.Drawing.Point(0, 0);
             this.BancosPicMascota.Name = "BancosPicMascota";
-            this.BancosPicMascota.Size = new System.Drawing.Size(218, 188);
+            this.BancosPicMascota.Size = new System.Drawing.Size(156, 188);
             this.BancosPicMascota.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.BancosPicMascota.TabIndex = 0;
             this.BancosPicMascota.TabStop = false;
@@ -210,7 +222,7 @@ namespace CapaVista_DisponibilidadDiaria.Formularios
             this.BancosPnlResumenCuenta.Controls.Add(this.BancosLblResumenCuentaTitulo);
             this.BancosPnlResumenCuenta.Location = new System.Drawing.Point(538, 428);
             this.BancosPnlResumenCuenta.Name = "BancosPnlResumenCuenta";
-            this.BancosPnlResumenCuenta.Size = new System.Drawing.Size(274, 190);
+            this.BancosPnlResumenCuenta.Size = new System.Drawing.Size(300, 190);
             this.BancosPnlResumenCuenta.TabIndex = 14;
             // 
             // BancosDgvResumenCuenta
@@ -222,6 +234,7 @@ namespace CapaVista_DisponibilidadDiaria.Formularios
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.BancosDgvResumenCuenta.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.BancosDgvResumenCuenta.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.BancosDgvResumenCuenta.BackgroundColor = System.Drawing.Color.White;
             this.BancosDgvResumenCuenta.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.BancosDgvResumenCuenta.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
@@ -241,7 +254,7 @@ namespace CapaVista_DisponibilidadDiaria.Formularios
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(231)))), ((int)(((byte)(211)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.BancosDgvResumenCuenta.DefaultCellStyle = dataGridViewCellStyle2;
             this.BancosDgvResumenCuenta.EnableHeadersVisualStyles = false;
             this.BancosDgvResumenCuenta.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(232)))), ((int)(((byte)(222)))));
@@ -253,7 +266,7 @@ namespace CapaVista_DisponibilidadDiaria.Formularios
             this.BancosDgvResumenCuenta.RowHeadersWidth = 51;
             this.BancosDgvResumenCuenta.RowTemplate.Height = 24;
             this.BancosDgvResumenCuenta.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.BancosDgvResumenCuenta.Size = new System.Drawing.Size(248, 146);
+            this.BancosDgvResumenCuenta.Size = new System.Drawing.Size(274, 146);
             this.BancosDgvResumenCuenta.TabIndex = 1;
             // 
             // BancosLblResumenCuentaTitulo
@@ -287,6 +300,7 @@ namespace CapaVista_DisponibilidadDiaria.Formularios
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.BancosDgvCompromisos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.BancosDgvCompromisos.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.BancosDgvCompromisos.BackgroundColor = System.Drawing.Color.White;
             this.BancosDgvCompromisos.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.BancosDgvCompromisos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
@@ -306,7 +320,7 @@ namespace CapaVista_DisponibilidadDiaria.Formularios
             dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(231)))), ((int)(((byte)(211)))));
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(74)))), ((int)(((byte)(48)))));
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.BancosDgvCompromisos.DefaultCellStyle = dataGridViewCellStyle4;
             this.BancosDgvCompromisos.EnableHeadersVisualStyles = false;
             this.BancosDgvCompromisos.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(232)))), ((int)(((byte)(222)))));
@@ -394,9 +408,9 @@ namespace CapaVista_DisponibilidadDiaria.Formularios
             this.BancosPnlKpiDisponible.Controls.Add(this.BancosLblTituloKpiDisp);
             this.BancosPnlKpiDisponible.Controls.Add(this.BancosLblValorDisponible);
             this.BancosPnlKpiDisponible.Controls.Add(this.BancosLblMonedaKpiDisp);
-            this.BancosPnlKpiDisponible.Location = new System.Drawing.Point(849, 198);
+            this.BancosPnlKpiDisponible.Location = new System.Drawing.Point(851, 198);
             this.BancosPnlKpiDisponible.Name = "BancosPnlKpiDisponible";
-            this.BancosPnlKpiDisponible.Size = new System.Drawing.Size(163, 74);
+            this.BancosPnlKpiDisponible.Size = new System.Drawing.Size(161, 74);
             this.BancosPnlKpiDisponible.TabIndex = 10;
             // 
             // BancosPicIconoDisp
@@ -451,9 +465,9 @@ namespace CapaVista_DisponibilidadDiaria.Formularios
             this.BancosPnlKpiRestringido.Controls.Add(this.BancosLblTituloKpiRest);
             this.BancosPnlKpiRestringido.Controls.Add(this.BancosLblValorRestringido);
             this.BancosPnlKpiRestringido.Controls.Add(this.BancosLblMonedaKpiRest);
-            this.BancosPnlKpiRestringido.Location = new System.Drawing.Point(708, 198);
+            this.BancosPnlKpiRestringido.Location = new System.Drawing.Point(684, 198);
             this.BancosPnlKpiRestringido.Name = "BancosPnlKpiRestringido";
-            this.BancosPnlKpiRestringido.Size = new System.Drawing.Size(163, 74);
+            this.BancosPnlKpiRestringido.Size = new System.Drawing.Size(161, 74);
             this.BancosPnlKpiRestringido.TabIndex = 9;
             // 
             // BancosPicIconoRest
@@ -508,9 +522,9 @@ namespace CapaVista_DisponibilidadDiaria.Formularios
             this.BancosPnlKpiComprometido.Controls.Add(this.BancosLblTituloKpiComp);
             this.BancosPnlKpiComprometido.Controls.Add(this.BancosLblValorComprometido);
             this.BancosPnlKpiComprometido.Controls.Add(this.BancosLblMonedaKpiComp);
-            this.BancosPnlKpiComprometido.Location = new System.Drawing.Point(535, 198);
+            this.BancosPnlKpiComprometido.Location = new System.Drawing.Point(517, 198);
             this.BancosPnlKpiComprometido.Name = "BancosPnlKpiComprometido";
-            this.BancosPnlKpiComprometido.Size = new System.Drawing.Size(163, 74);
+            this.BancosPnlKpiComprometido.Size = new System.Drawing.Size(161, 74);
             this.BancosPnlKpiComprometido.TabIndex = 8;
             // 
             // BancosPicIconoComp
@@ -565,9 +579,9 @@ namespace CapaVista_DisponibilidadDiaria.Formularios
             this.BancosPnlKpiEgresos.Controls.Add(this.BancosLblTituloKpiEgresos);
             this.BancosPnlKpiEgresos.Controls.Add(this.BancosLblValorEgresos);
             this.BancosPnlKpiEgresos.Controls.Add(this.BancosLblMonedaKpiEgresos);
-            this.BancosPnlKpiEgresos.Location = new System.Drawing.Point(362, 198);
+            this.BancosPnlKpiEgresos.Location = new System.Drawing.Point(350, 198);
             this.BancosPnlKpiEgresos.Name = "BancosPnlKpiEgresos";
-            this.BancosPnlKpiEgresos.Size = new System.Drawing.Size(163, 74);
+            this.BancosPnlKpiEgresos.Size = new System.Drawing.Size(161, 74);
             this.BancosPnlKpiEgresos.TabIndex = 7;
             // 
             // BancosPicIconoEg
@@ -622,9 +636,9 @@ namespace CapaVista_DisponibilidadDiaria.Formularios
             this.BancosPnlKpiIngresos.Controls.Add(this.BancosLblTituloKpiIngresos);
             this.BancosPnlKpiIngresos.Controls.Add(this.BancosLblValorIngresos);
             this.BancosPnlKpiIngresos.Controls.Add(this.BancosLblMonedaKpiIngresos);
-            this.BancosPnlKpiIngresos.Location = new System.Drawing.Point(189, 198);
+            this.BancosPnlKpiIngresos.Location = new System.Drawing.Point(183, 198);
             this.BancosPnlKpiIngresos.Name = "BancosPnlKpiIngresos";
-            this.BancosPnlKpiIngresos.Size = new System.Drawing.Size(163, 74);
+            this.BancosPnlKpiIngresos.Size = new System.Drawing.Size(161, 74);
             this.BancosPnlKpiIngresos.TabIndex = 6;
             // 
             // BancosPicIconoIng
@@ -681,7 +695,7 @@ namespace CapaVista_DisponibilidadDiaria.Formularios
             this.BancosPnlKpiSaldoInicial.Controls.Add(this.BancosLblMonedaKpiSaldo);
             this.BancosPnlKpiSaldoInicial.Location = new System.Drawing.Point(16, 198);
             this.BancosPnlKpiSaldoInicial.Name = "BancosPnlKpiSaldoInicial";
-            this.BancosPnlKpiSaldoInicial.Size = new System.Drawing.Size(163, 74);
+            this.BancosPnlKpiSaldoInicial.Size = new System.Drawing.Size(161, 74);
             this.BancosPnlKpiSaldoInicial.TabIndex = 5;
             // 
             // BancosPicIconoSaldo
@@ -983,7 +997,7 @@ namespace CapaVista_DisponibilidadDiaria.Formularios
             this.BancosPnlFooterBar.Controls.Add(this.BancosBtnFooterReporte);
             this.BancosPnlFooterBar.Controls.Add(this.BancosBtnFooterAyuda);
             this.BancosPnlFooterBar.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.BancosPnlFooterBar.Location = new System.Drawing.Point(0, 544);
+            this.BancosPnlFooterBar.Location = new System.Drawing.Point(0, 650);
             this.BancosPnlFooterBar.Name = "BancosPnlFooterBar";
             this.BancosPnlFooterBar.Size = new System.Drawing.Size(1028, 65);
             this.BancosPnlFooterBar.TabIndex = 1;
@@ -1045,14 +1059,15 @@ namespace CapaVista_DisponibilidadDiaria.Formularios
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(248)))), ((int)(((byte)(243)))));
-            this.ClientSize = new System.Drawing.Size(1028, 609);
-            this.Controls.Add(this.BancosPnlFondo);
+            this.ClientSize = new System.Drawing.Size(1028, 715);
+            this.Controls.Add(this.BancosPnlAreaDesplazable);
             this.Controls.Add(this.BancosPnlFooterBar);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "FrmDisponibilidadDiaria";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "8002 – Disponibilidad Diaria";
+            this.Text = "8002-DisponibilidadDiaria";
+            this.BancosPnlAreaDesplazable.ResumeLayout(false);
             this.BancosPnlFondo.ResumeLayout(false);
             this.BancosPnlFondo.PerformLayout();
             this.BancosPnlMascota.ResumeLayout(false);
@@ -1093,6 +1108,7 @@ namespace CapaVista_DisponibilidadDiaria.Formularios
 
         #endregion
 
+        private System.Windows.Forms.Panel BancosPnlAreaDesplazable;
         private System.Windows.Forms.Panel BancosPnlFondo;
         private System.Windows.Forms.Panel BancosPnlHeader;
         private System.Windows.Forms.Label BancosLblTitulo;

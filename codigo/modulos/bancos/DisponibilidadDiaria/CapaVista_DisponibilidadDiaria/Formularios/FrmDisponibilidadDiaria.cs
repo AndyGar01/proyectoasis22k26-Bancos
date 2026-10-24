@@ -218,17 +218,21 @@ namespace CapaVista_DisponibilidadDiaria.Formularios
 
             if (BancosDgvCompromisos.Columns.Contains("Monto"))
             {
+                BancosDgvCompromisos.Columns["Monto"].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
                 BancosDgvCompromisos.Columns["Monto"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+                BancosDgvCompromisos.Columns["Monto"].DefaultCellStyle.Format = "N2";
+                BancosDgvCompromisos.Columns["Monto"].DefaultCellStyle.WrapMode = DataGridViewTriState.False;
             }
             if (BancosDgvCompromisos.Columns.Contains("Fecha"))
             {
-                BancosDgvCompromisos.Columns["Fecha"].Width = 85;
+                BancosDgvCompromisos.Columns["Fecha"].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
                 BancosDgvCompromisos.Columns["Fecha"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                BancosDgvCompromisos.Columns["Fecha"].DefaultCellStyle.WrapMode = DataGridViewTriState.False;
             }
             if (BancosDgvCompromisos.Columns.Contains("Concepto"))
-                BancosDgvCompromisos.Columns["Concepto"].Width = 135;
+                BancosDgvCompromisos.Columns["Concepto"].FillWeight = 45;
             if (BancosDgvCompromisos.Columns.Contains("Beneficiario"))
-                BancosDgvCompromisos.Columns["Beneficiario"].Width = 145;
+                BancosDgvCompromisos.Columns["Beneficiario"].FillWeight = 55;
         }
 
         private void BancosMetFormatearGrillaResumenCuenta()
@@ -237,7 +241,10 @@ namespace CapaVista_DisponibilidadDiaria.Formularios
 
             if (BancosDgvResumenCuenta.Columns.Contains("Monto"))
             {
+                BancosDgvResumenCuenta.Columns["Monto"].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
                 BancosDgvResumenCuenta.Columns["Monto"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+                BancosDgvResumenCuenta.Columns["Monto"].DefaultCellStyle.Format = "N2";
+                BancosDgvResumenCuenta.Columns["Monto"].DefaultCellStyle.WrapMode = DataGridViewTriState.False;
             }
 
             foreach (DataGridViewRow row in BancosDgvResumenCuenta.Rows)

@@ -792,7 +792,6 @@
             this.Name = "FrmAutorizacionOrdenes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "8011–AutorizaciónOrdenCompra";
-            this.Load += new System.EventHandler(this.FrmAutorizacionOrdenes_Load);
             this.BancosPnlOrdenesPendientes.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.BancosDgvOrdenesPendientes)).EndInit();
             this.BancosPnlDisponibilidadAsignacion.ResumeLayout(false);

@@ -16,10 +16,5 @@ namespace CapaVista_AutorizacionOrdenes.Formularios
         {
             InitializeComponent();
         }
-
-        private void FrmAutorizacionOrdenes_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

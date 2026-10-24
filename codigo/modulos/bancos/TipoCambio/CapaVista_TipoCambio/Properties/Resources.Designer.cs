@@ -150,5 +150,194 @@ namespace CapaVista_TipoCambio.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        internal static System.Drawing.Bitmap ARS {
+            get {
+                object obj = ResourceManager.GetObject("ARS", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap BRL {
+            get {
+                object obj = ResourceManager.GetObject("BRL", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap CAD {
+            get {
+                object obj = ResourceManager.GetObject("CAD", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap CHF {
+            get {
+                object obj = ResourceManager.GetObject("CHF", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap CNY {
+            get {
+                object obj = ResourceManager.GetObject("CNY", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap COP {
+            get {
+                object obj = ResourceManager.GetObject("COP", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap CRC {
+            get {
+                object obj = ResourceManager.GetObject("CRC", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap DKK {
+            get {
+                object obj = ResourceManager.GetObject("DKK", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap DOP {
+            get {
+                object obj = ResourceManager.GetObject("DOP", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap GBP {
+            get {
+                object obj = ResourceManager.GetObject("GBP", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap HKD {
+            get {
+                object obj = ResourceManager.GetObject("HKD", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap HNL {
+            get {
+                object obj = ResourceManager.GetObject("HNL", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap INR {
+            get {
+                object obj = ResourceManager.GetObject("INR", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap JPY {
+            get {
+                object obj = ResourceManager.GetObject("JPY", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap KRW {
+            get {
+                object obj = ResourceManager.GetObject("KRW", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap MXN {
+            get {
+                object obj = ResourceManager.GetObject("MXN", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap MYR {
+            get {
+                object obj = ResourceManager.GetObject("MYR", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap NIO {
+            get {
+                object obj = ResourceManager.GetObject("NIO", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap NOK {
+            get {
+                object obj = ResourceManager.GetObject("NOK", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap PKR {
+            get {
+                object obj = ResourceManager.GetObject("PKR", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap SEK {
+            get {
+                object obj = ResourceManager.GetObject("SEK", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap SVC {
+            get {
+                object obj = ResourceManager.GetObject("SVC", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap TWD {
+            get {
+                object obj = ResourceManager.GetObject("TWD", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap VEB {
+            get {
+                object obj = ResourceManager.GetObject("VEB", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap VEF {
+            get {
+                object obj = ResourceManager.GetObject("VEF", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap VES {
+            get {
+                object obj = ResourceManager.GetObject("VES", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap XDR {
+            get {
+                object obj = ResourceManager.GetObject("XDR", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

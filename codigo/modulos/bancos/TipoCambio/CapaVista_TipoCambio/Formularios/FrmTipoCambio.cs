@@ -47,20 +47,6 @@ namespace CapaVista_TipoCambio.Formularios
         {
             _inicializando = true;
 
-            // Ícono de formulario
-            try
-            {
-                if (Properties.Resources._11 != null)
-                {
-                    using (Bitmap bmp = new Bitmap(Properties.Resources._11, 32, 32))
-                    {
-                        IntPtr hIcon = bmp.GetHicon();
-                        this.Icon = Icon.FromHandle(hIcon);
-                    }
-                }
-            }
-            catch { }
-
             // Configurar grillas
             BancosDgvTasasActuales.CellFormatting += BancosDgvTasasActuales_CellFormatting;
             BancosDgvHistorico.CellFormatting += BancosDgvHistorico_CellFormatting;
@@ -428,8 +414,7 @@ namespace CapaVista_TipoCambio.Formularios
             {
                 Path.Combine(baseDir, "Resouces", "Banderas", $"{codigoMoneda}.png"),
                 Path.Combine(baseDir, "..", "..", "Resouces", "Banderas", $"{codigoMoneda}.png"),
-                Path.Combine(baseDir, "..", "..", "TipoCambio", "CapaVista_TipoCambio", "Resouces", "Banderas", $"{codigoMoneda}.png"),
-                @"c:\Users\josue\Desktop\Bancos  Embutitods S.A\proyectoasis22k26-Bancos\codigo\modulos\bancos\TipoCambio\CapaVista_TipoCambio\Resouces\Banderas\" + $"{codigoMoneda}.png"
+                Path.Combine(baseDir, "..", "..", "TipoCambio", "CapaVista_TipoCambio", "Resouces", "Banderas", $"{codigoMoneda}.png")
             };
 
             foreach (var r in rutas)

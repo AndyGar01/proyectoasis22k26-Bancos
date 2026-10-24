@@ -101,4 +101,85 @@
   <data name="USD" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resouces\Banderas\USD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="ARS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resouces\Banderas\ARS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BRL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resouces\Banderas\BRL.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CAD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resouces\Banderas\CAD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CHF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resouces\Banderas\CHF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CNY" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resouces\Banderas\CNY.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="COP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resouces\Banderas\COP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CRC" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resouces\Banderas\CRC.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DKK" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resouces\Banderas\DKK.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DOP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resouces\Banderas\DOP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GBP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resouces\Banderas\GBP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HKD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resouces\Banderas\HKD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HNL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resouces\Banderas\HNL.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="INR" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resouces\Banderas\INR.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="JPY" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resouces\Banderas\JPY.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KRW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resouces\Banderas\KRW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MXN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resouces\Banderas\MXN.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MYR" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resouces\Banderas\MYR.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NIO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resouces\Banderas\NIO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NOK" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resouces\Banderas\NOK.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PKR" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resouces\Banderas\PKR.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SEK" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resouces\Banderas\SEK.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SVC" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resouces\Banderas\SVC.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TWD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resouces\Banderas\TWD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VEB" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resouces\Banderas\VEB.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VEF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resouces\Banderas\VEF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VES" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resouces\Banderas\VES.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="XDR" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resouces\Banderas\XDR.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

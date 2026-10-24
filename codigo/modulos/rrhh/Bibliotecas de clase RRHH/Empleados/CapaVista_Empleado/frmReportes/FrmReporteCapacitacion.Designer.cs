@@ -47,8 +47,10 @@
             this.ClientSize = new System.Drawing.Size(1186, 507);
             this.Controls.Add(this.reportViewer1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Name = "FrmReporteCapacitacion";
-            this.Text = "FrmReporteCapacitacion";
+            this.Text = "9302 – ReporteCapacitaciones";
             this.Load += new System.EventHandler(this.FrmReporteCapacitacion_Load);
             this.ResumeLayout(false);
 

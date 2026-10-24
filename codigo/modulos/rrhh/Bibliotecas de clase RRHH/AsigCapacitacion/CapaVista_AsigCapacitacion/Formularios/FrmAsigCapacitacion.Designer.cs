@@ -376,7 +376,7 @@
             this.MinimizeBox = false;
             this.Name = "FrmAsigCapacitacion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmAsigCapacitacion";
+            this.Text = "9305 – AsignacionCapacitacion";
             this.RrhhPlFondoEncabezado.ResumeLayout(false);
             this.RrhhPlFondoEncabezado.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.RrhhPblogoAsigC)).EndInit();

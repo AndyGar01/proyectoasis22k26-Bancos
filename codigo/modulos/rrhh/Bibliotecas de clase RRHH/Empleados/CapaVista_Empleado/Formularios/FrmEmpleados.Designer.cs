@@ -523,7 +523,7 @@
             this.MaximizeBox = false;
             this.Name = "FrmEmpleados";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "9001 - Empleados";
+            this.Text = "9001 – Empleados";
             this.RrhhPnlAsigP.ResumeLayout(false);
             this.RrhhPnlAsigP.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.RrhhPbAsigP)).EndInit();

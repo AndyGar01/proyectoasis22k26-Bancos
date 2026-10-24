@@ -50,7 +50,7 @@
             this.MaximizeBox = false;
             this.Name = "FrmInstructoresNavegador";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "9303 - FrmInstructoresNavegador";
+            this.Text = "9303 – Instructores";
             this.ResumeLayout(false);
 
         }

@@ -1,4 +1,4 @@
-﻿namespace CapaVista_PlanMejora.Formularios
+﻿namespace CapaVista_EvaluacionDesempeño.Formularios
 {
     partial class FrmPlanMejora
     {

@@ -15,7 +15,7 @@ namespace CapaVista_Liquidacion_Rrhh.Formularios
         public FrmParametrosLeyNavegador()
         {
             InitializeComponent();
-            RrhhNavParemetroLey.NavegadorMetConfigurar("tblParametroLey", 9000, 9702);
+            RrhhNavParametroLey.NavegadorMetConfigurar("tblParametroLey", 9000, 9703);
         }
     }
 }

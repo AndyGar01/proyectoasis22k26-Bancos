@@ -21,9 +21,9 @@
  * ===================================================================
 */
 
-using CapaVista_CierreNominas.Fomularios;
+using CapaVista_CierreNominas.Formularios;
 using CapaVista_Empleado.Formularios;
-using CapaVista_EvaluacionDesempeno.Formularios;
+using CapaVista_EvaluacionDesempeño.Formularios;
 using CapaVista_Nomina.Formularios;
 using System;
 using System.Collections.Generic;
@@ -44,6 +44,7 @@ namespace CapaVista_Rrhh.Formularios
         private Bitmap _FondoNavegadorEscalado;
 
         private bool _MedidasListas;
+        // float porque Scale(), SizeF y Font de WinForms solo trabajan con float
         private float _Zoom = 1f;
         private int _Margen, _Separacion, _AnchoKpiBase, _AltoKpiBase, _TopResumen, _OffsetKpi, _OffsetInfo;
         private int _AltoHeroMin, _MascotaAbajo, _AltoInfoBase, _InfoPad, _DxIcono, _DxNota;

@@ -143,7 +143,6 @@ call :Vistas "%MODULOS_DIR%\rrhh\Bibliotecas de clase RRHH\Recursos Humanos"
 set "INCLUIR_EXE=1"
 for %%C in (consultas reporteador navegador seguridad) do call :Ejecutables "%COMPONENTES_DIR%\%%C"
 call :Ejecutables "%MODULOS_DIR%\rrhh\Bibliotecas de clase RRHH"
-call :Ejecutables "%MODULOS_DIR%\rrhh\Ejecutable_Rrhh"
 set /a total=P_OK+P_FAIL, ok=P_OK, fail=P_FAIL
 if exist "%FALL_PASS%" type "%FALL_PASS%" >> "%FALLIDOS%"
 if %fail% EQU 0 goto RONDA_FIN
@@ -325,4 +324,4 @@ set "FIX_TARGETS=%LOG_DIR%\reporteador_sin_class1.targets"
 >> "%FIX_TARGETS%" echo ^</Project^>
 set FIX_ARG=/p:CustomAfterMicrosoftCommonTargets="%FIX_TARGETS%"
 echo   [AJUSTE] Se omite Class1.cs ausente sin modificar Reporteador.csproj.
-exit /b 0
+exit /b 0

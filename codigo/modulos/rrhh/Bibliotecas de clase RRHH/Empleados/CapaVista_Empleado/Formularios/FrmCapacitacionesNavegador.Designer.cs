@@ -49,7 +49,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "FrmCapacitacionesNavegador";
-            this.Text = "9302 - FrmCapacitacionesNavegador";
+            this.Text = "9302 – Capacitaciones";
             this.ResumeLayout(false);
 
         }

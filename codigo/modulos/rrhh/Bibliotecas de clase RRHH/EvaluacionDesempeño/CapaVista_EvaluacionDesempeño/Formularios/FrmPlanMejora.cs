@@ -21,7 +21,7 @@ using System.Windows.Forms;
  * ===================================================================
 */
 
-namespace CapaVista_PlanMejora.Formularios
+namespace CapaVista_EvaluacionDesempeño.Formularios
 {
     public partial class FrmPlanMejora : Form
     {

@@ -41,10 +41,5 @@ namespace CapaVista_MovimientosBancarios.Formularios
             BancosScContenedor.Panel2.Controls.Add(frm);
             frm.Show();
         }
-
-        private void FrmMovimientosBancarios_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

@@ -28,26 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.BancosDgvMovimientos = new System.Windows.Forms.DataGridView();
             this.BancosPnlListaMov = new System.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BancosDgvMovimientos)).BeginInit();
             this.BancosPnlListaMov.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // BancosDgvMovimientos
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(40, 151);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(653, 427);
-            this.dataGridView1.TabIndex = 0;
+            this.BancosDgvMovimientos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.BancosDgvMovimientos.Location = new System.Drawing.Point(40, 151);
+            this.BancosDgvMovimientos.Name = "BancosDgvMovimientos";
+            this.BancosDgvMovimientos.Size = new System.Drawing.Size(653, 427);
+            this.BancosDgvMovimientos.TabIndex = 0;
             // 
             // BancosPnlListaMov
             // 
             this.BancosPnlListaMov.BackColor = System.Drawing.Color.Transparent;
             this.BancosPnlListaMov.BackgroundImage = global::CapaVista_MovimientosBancarios.Properties.Resources.movbac_contenedor1;
             this.BancosPnlListaMov.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BancosPnlListaMov.Controls.Add(this.dataGridView1);
+            this.BancosPnlListaMov.Controls.Add(this.BancosDgvMovimientos);
             this.BancosPnlListaMov.Location = new System.Drawing.Point(0, 0);
             this.BancosPnlListaMov.Name = "BancosPnlListaMov";
             this.BancosPnlListaMov.Size = new System.Drawing.Size(737, 608);
@@ -62,7 +62,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmListaMovimientos";
             this.Text = "Lista de Movimientos";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BancosDgvMovimientos)).EndInit();
             this.BancosPnlListaMov.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -70,7 +70,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView BancosDgvMovimientos;
         private System.Windows.Forms.Panel BancosPnlListaMov;
     }
 }

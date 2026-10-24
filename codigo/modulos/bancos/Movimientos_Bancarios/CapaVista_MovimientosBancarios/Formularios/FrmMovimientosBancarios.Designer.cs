@@ -146,7 +146,6 @@
             this.MaximizeBox = false;
             this.Name = "FrmMovimientosBancarios";
             this.Text = "8006-MovimientosBancarios";
-            this.Load += new System.EventHandler(this.FrmMovimientosBancarios_Load);
             this.BancosPnlFondo.ResumeLayout(false);
             this.BancosScContenedor.Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.BancosScContenedor)).EndInit();

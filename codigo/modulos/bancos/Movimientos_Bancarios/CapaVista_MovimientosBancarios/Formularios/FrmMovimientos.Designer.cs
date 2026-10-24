@@ -97,7 +97,6 @@
             this.BancosPnlMovimientos.Name = "BancosPnlMovimientos";
             this.BancosPnlMovimientos.Size = new System.Drawing.Size(737, 608);
             this.BancosPnlMovimientos.TabIndex = 1;
-            this.BancosPnlMovimientos.Paint += new System.Windows.Forms.PaintEventHandler(this.BancosPnlMovimientos_Paint);
             // 
             // BancosBtnSalir
             // 
@@ -109,7 +108,6 @@
             this.BancosBtnSalir.Size = new System.Drawing.Size(75, 81);
             this.BancosBtnSalir.TabIndex = 23;
             this.BancosBtnSalir.UseVisualStyleBackColor = true;
-            this.BancosBtnSalir.Click += new System.EventHandler(this.button5_Click);
             // 
             // BancosBtnAyudaS
             // 
@@ -121,7 +119,6 @@
             this.BancosBtnAyudaS.Size = new System.Drawing.Size(75, 81);
             this.BancosBtnAyudaS.TabIndex = 22;
             this.BancosBtnAyudaS.UseVisualStyleBackColor = true;
-            this.BancosBtnAyudaS.Click += new System.EventHandler(this.button4_Click);
             // 
             // BancosBtnLimpiar
             // 
@@ -133,7 +130,6 @@
             this.BancosBtnLimpiar.Size = new System.Drawing.Size(75, 81);
             this.BancosBtnLimpiar.TabIndex = 20;
             this.BancosBtnLimpiar.UseVisualStyleBackColor = true;
-            this.BancosBtnLimpiar.Click += new System.EventHandler(this.button2_Click);
             // 
             // BancosBtnRegistra
             // 
@@ -145,7 +141,6 @@
             this.BancosBtnRegistra.Size = new System.Drawing.Size(75, 81);
             this.BancosBtnRegistra.TabIndex = 19;
             this.BancosBtnRegistra.UseVisualStyleBackColor = true;
-            this.BancosBtnRegistra.Click += new System.EventHandler(this.button1_Click);
             // 
             // BancosPnlSec5
             // 
@@ -292,7 +287,6 @@
             this.BancosDtpFechaApl.Name = "BancosDtpFechaApl";
             this.BancosDtpFechaApl.Size = new System.Drawing.Size(151, 20);
             this.BancosDtpFechaApl.TabIndex = 17;
-            this.BancosDtpFechaApl.ValueChanged += new System.EventHandler(this.dateTimePicker2_ValueChanged);
             // 
             // BancosLblFechaRegistro
             // 
@@ -313,7 +307,6 @@
             this.BancosLblFechaAplicacion.Size = new System.Drawing.Size(155, 16);
             this.BancosLblFechaAplicacion.TabIndex = 3;
             this.BancosLblFechaAplicacion.Text = "Fecha de Aplicación";
-            this.BancosLblFechaAplicacion.Click += new System.EventHandler(this.BancosLblFechaAplicacion_Click);
             // 
             // BancosDtpFechaReg
             // 
@@ -354,7 +347,6 @@
             this.BancosLblMetodo.Size = new System.Drawing.Size(115, 16);
             this.BancosLblMetodo.TabIndex = 2;
             this.BancosLblMetodo.Text = "Forma de Pago";
-            this.BancosLblMetodo.Click += new System.EventHandler(this.BancosLblMetodo_Click);
             // 
             // BancosCbMetodo
             // 
@@ -364,7 +356,6 @@
             this.BancosCbMetodo.Name = "BancosCbMetodo";
             this.BancosCbMetodo.Size = new System.Drawing.Size(126, 21);
             this.BancosCbMetodo.TabIndex = 14;
-            this.BancosCbMetodo.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // BancosPnlSec1
             // 
@@ -486,7 +477,6 @@
             this.SeguridadLbl2Modulo.Size = new System.Drawing.Size(314, 18);
             this.SeguridadLbl2Modulo.TabIndex = 28;
             this.SeguridadLbl2Modulo.Text = "Realiza los movimientos orientados a tesoresia.";
-            this.SeguridadLbl2Modulo.Click += new System.EventHandler(this.SeguridadLbl2Modulo_Click);
             // 
             // SeguridadLbl1Modulo
             // 
@@ -499,7 +489,6 @@
             this.SeguridadLbl1Modulo.Size = new System.Drawing.Size(288, 28);
             this.SeguridadLbl1Modulo.TabIndex = 27;
             this.SeguridadLbl1Modulo.Text = "Movimientos Bancarios";
-            this.SeguridadLbl1Modulo.Click += new System.EventHandler(this.SeguridadLbl1Modulo_Click);
             // 
             // FrmMovimientos
             // 

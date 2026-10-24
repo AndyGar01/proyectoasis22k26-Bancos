@@ -174,6 +174,10 @@ namespace CapaVista_Bancos.Formularios
                 this.Close();
             }
         }
-    
+
+        private void FrmMDIBancos_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

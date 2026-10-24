@@ -1,5 +1,5 @@
 @echo off
-:: BUILD RRHH: Consultas, Navegador, Reporteador, Seguridad y RRHH.
+:: BUILD RRHH: Consultas, Navegador, Reporteador, Seguridad, Logistica y RRHH.
 :: Descomprimir el ZIP y colocar este .bat en la raiz del repositorio.
 :: Doble clic: compilar con menu. /auto: terminar con codigo 0 o 1.
 :: Requiere Visual Studio/Build Tools y desarrollo de escritorio .NET.
@@ -10,7 +10,7 @@
 setlocal EnableExtensions DisableDelayedExpansion
 chcp 65001 >nul
 color 0A
-title Compilacion global - Consultas, Navegador, Seguridad y RRHH
+title Compilacion global - Consultas, Navegador, Seguridad, Logistica y RRHH
 
 :: --------------------------------------------------------------------------
 :: OPCIONES (normalmente NO hay que tocar nada)
@@ -30,7 +30,7 @@ set /a P_OK=0
 set /a P_FAIL=0
 
 echo ============================================
-echo COMPILACION GLOBAL - CONSULTAS, NAVEGADOR, SEGURIDAD, RRHH
+echo COMPILACION GLOBAL - CONSULTAS, NAVEGADOR, SEGURIDAD, LOGISTICA, RRHH
 echo ============================================
 
 :: --------------------------------------------------------------------------
@@ -137,12 +137,19 @@ if exist "%FALL_PASS%" del "%FALL_PASS%"
 set "INCLUIR_EXE=0"
 for %%C in (seguridad consultas navegador reporteador) do call :Bases "%COMPONENTES_DIR%\%%C"
 call :Bases "%MODULOS_DIR%\rrhh"
-for %%C in (consultas reporteador navegador seguridad) do call :Vistas "%COMPONENTES_DIR%\%%C"
+call :Bases "%MODULOS_DIR%\Logistica"
+for %%C in (consultas reporteador navegador) do call :Vistas "%COMPONENTES_DIR%\%%C"
+:: Logistica: primero sus vistas y al final su MDI (carpeta Logistica)
+for /d %%D in ("%MODULOS_DIR%\Logistica\*") do if /i not "%%~nxD"=="Logistica" call :Vistas "%%~fD"
+call :Vistas "%MODULOS_DIR%\Logistica\Logistica"
 for /d %%D in ("%MODULOS_DIR%\rrhh\Bibliotecas de clase RRHH\*") do if /i not "%%~nxD"=="Recursos Humanos" call :Vistas "%%~fD"
 call :Vistas "%MODULOS_DIR%\rrhh\Bibliotecas de clase RRHH\Recursos Humanos"
+:: La vista de Seguridad va al final porque el Splash usa el MDI de Logistica
+call :Vistas "%COMPONENTES_DIR%\seguridad"
 set "INCLUIR_EXE=1"
 for %%C in (consultas reporteador navegador seguridad) do call :Ejecutables "%COMPONENTES_DIR%\%%C"
 call :Ejecutables "%MODULOS_DIR%\rrhh\Bibliotecas de clase RRHH"
+call :Ejecutables "%MODULOS_DIR%\Logistica"
 set /a total=P_OK+P_FAIL, ok=P_OK, fail=P_FAIL
 if exist "%FALL_PASS%" type "%FALL_PASS%" >> "%FALLIDOS%"
 if %fail% EQU 0 goto RONDA_FIN
@@ -233,10 +240,10 @@ call :BuscarSln "%PROJ_DIR%"
 set "SDARG="
 if not defined SLN_DIR set "SLN_DIR=%PROJ_DIR%..\"
 set SDARG=/p:SolutionDir="%SLN_DIR%\"
-:: Excluir solo la referencia obsoleta Class1.cs de Reporteador si no existe.
+:: Si un .csproj (Reporteador, Cierre Inventario...) apunta a un Class1.cs que ya no existe, se omite.
 :: El .csproj original no se modifica.
 set "FIX_ARG="
-if /i "%PROJ_NAME%"=="Reporteador" if not exist "%PROJ_DIR%Class1.cs" call :PrepararFixReporteador
+if not exist "%PROJ_DIR%Class1.cs" findstr /i /c:"Class1.cs" "%PROJ%" >nul && call :PrepararFixReporteador
 "%MSBUILD_PATH%" "%PROJ%" %FIX_ARG% /restore /p:RestorePackagesConfig=true %SDARG% /t:Rebuild /p:Configuration=Debug /nologo /verbosity:minimal > "%PLOG%" 2>&1
 set "RC=%errorlevel%"
 >>"%LOG_FILE%" echo ------ %PROJ%
@@ -323,5 +330,5 @@ set "FIX_TARGETS=%LOG_DIR%\reporteador_sin_class1.targets"
 >> "%FIX_TARGETS%" echo   ^</Target^>
 >> "%FIX_TARGETS%" echo ^</Project^>
 set FIX_ARG=/p:CustomAfterMicrosoftCommonTargets="%FIX_TARGETS%"
-echo   [AJUSTE] Se omite Class1.cs ausente sin modificar Reporteador.csproj.
-exit /b 0
+echo   [AJUSTE] Se omite Class1.cs ausente sin modificar %PROJ_NAME%.csproj.
+exit /b 0

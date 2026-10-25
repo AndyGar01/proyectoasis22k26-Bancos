@@ -29,23 +29,23 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMantenimientoAplicacionNavegador));
-            this.navegador7 = new CapaVista_Navegador.Navegador();
+            this.navegador1 = new CapaVista_Navegador.Navegador();
             this.SuspendLayout();
             // 
-            // navegador7
+            // navegador1
             // 
-            this.navegador7.Location = new System.Drawing.Point(13, 14);
-            this.navegador7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.navegador7.Name = "navegador7";
-            this.navegador7.Size = new System.Drawing.Size(1437, 111);
-            this.navegador7.TabIndex = 0;
+            this.navegador1.Location = new System.Drawing.Point(13, 14);
+            this.navegador1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.navegador1.Name = "navegador1";
+            this.navegador1.Size = new System.Drawing.Size(1437, 111);
+            this.navegador1.TabIndex = 0;
             // 
             // FrmMantenimientoAplicacionNavegador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1457, 697);
-            this.Controls.Add(this.navegador7);
+            this.Controls.Add(this.navegador1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
@@ -58,6 +58,6 @@
 
         #endregion
 
-        private CapaVista_Navegador.Navegador navegador7;
+        private CapaVista_Navegador.Navegador navegador1;
     }
 }

@@ -1,5 +1,4 @@
-﻿using CapaControlador_Seguridad;
-using CapaControlador_Seguridad.Modelos_de_controladores;
+﻿
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,7 +19,7 @@ namespace CapaVista_Seguridad
             Dictionary<string, object> fuentes = new Dictionary<string, object>();
 
             InitializeComponent();
-            navegador7.NavegadorMetConfigurar("tblaplicacion", 4, 7);
+            navegador1.NavegadorMetConfigurar("tblaplicacion", 4, 7);
         }
     }
 }

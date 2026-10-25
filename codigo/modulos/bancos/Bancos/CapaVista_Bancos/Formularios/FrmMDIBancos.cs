@@ -163,21 +163,16 @@ namespace CapaVista_Bancos.Formularios
 
         private void BancosBtnCerrarP_Click(object sender, EventArgs e)
         {
-            DialogResult resultado = MessageBox.Show(
+            DialogResult Resultado = MessageBox.Show(
                  "¿Seguro que deseas cerrar sesión?",
                  "Cerrar sesión",
                  MessageBoxButtons.YesNo,
                  MessageBoxIcon.Question);
 
-            if (resultado == DialogResult.Yes)
+            if (Resultado == DialogResult.Yes)
             {
                 this.Close();
             }
-        }
-
-        private void FrmMDIBancos_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

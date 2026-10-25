@@ -486,10 +486,10 @@
             this.BancosBtnEnviar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BancosBtnEnviar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BancosBtnEnviar.ForeColor = System.Drawing.Color.White;
-            this.BancosBtnEnviar.Location = new System.Drawing.Point(547, 337);
+            this.BancosBtnEnviar.Location = new System.Drawing.Point(516, 303);
             this.BancosBtnEnviar.Margin = new System.Windows.Forms.Padding(2);
             this.BancosBtnEnviar.Name = "BancosBtnEnviar";
-            this.BancosBtnEnviar.Size = new System.Drawing.Size(55, 54);
+            this.BancosBtnEnviar.Size = new System.Drawing.Size(90, 96);
             this.BancosBtnEnviar.TabIndex = 15;
             this.BancosBtnEnviar.UseVisualStyleBackColor = false;
             // 
@@ -500,10 +500,10 @@
             this.BancosBtnLimpiar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BancosBtnLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BancosBtnLimpiar.ForeColor = System.Drawing.Color.White;
-            this.BancosBtnLimpiar.Location = new System.Drawing.Point(617, 337);
+            this.BancosBtnLimpiar.Location = new System.Drawing.Point(608, 303);
             this.BancosBtnLimpiar.Margin = new System.Windows.Forms.Padding(2);
             this.BancosBtnLimpiar.Name = "BancosBtnLimpiar";
-            this.BancosBtnLimpiar.Size = new System.Drawing.Size(55, 54);
+            this.BancosBtnLimpiar.Size = new System.Drawing.Size(85, 96);
             this.BancosBtnLimpiar.TabIndex = 14;
             this.BancosBtnLimpiar.UseVisualStyleBackColor = false;
             // 

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CapaControlador_Seguridad;
+using CapaControlador_Seguridad.Modelos_de_controladores;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,10 +14,13 @@ namespace CapaVista_Seguridad
 {
     public partial class FrmMantenimientoAplicacionNavegador : Form
     {
+
         public FrmMantenimientoAplicacionNavegador()
         {
+            Dictionary<string, object> fuentes = new Dictionary<string, object>();
+
             InitializeComponent();
-            navegador1.NavegadorMetConfigurar("tblAplicacion", 4, 7);
+            navegador7.NavegadorMetConfigurar("tblaplicacion", 4, 7);
         }
     }
 }
